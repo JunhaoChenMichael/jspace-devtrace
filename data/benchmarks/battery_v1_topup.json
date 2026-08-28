@@ -1,0 +1,1337 @@
+[
+  {
+    "context": "The lab notebook says the reaction was run at 4 degrees Celsius overnight. A technician spilled coffee on the bench and everyone panicked for ten minutes. The sample was labeled B-7 and stored in the blue rack. The fire alarm went off twice during the week for unrelated drills.",
+    "probe_question": "At what temperature was the reaction run?",
+    "answer": "4 degrees Celsius",
+    "items": [
+      {
+        "concept": "cold",
+        "label": "load_bearing",
+        "role": "temperature is the answer"
+      },
+      {
+        "concept": "coffee",
+        "label": "distractor",
+        "role": "dramatic spill, irrelevant"
+      },
+      {
+        "concept": "alarm",
+        "label": "distractor",
+        "role": "vivid, irrelevant"
+      },
+      {
+        "concept": "rack",
+        "label": "filler",
+        "role": "neutral storage detail"
+      }
+    ]
+  },
+  {
+    "context": "Maria booked a connecting flight through Reykjavik because it was cheaper. The airport cafe had an unforgettable, almost frightening lightning storm outside. Her final destination was Oslo, arriving Tuesday. She lost her favorite scarf on the way.",
+    "probe_question": "In which country will Maria land at her final destination?",
+    "answer": "Norway",
+    "items": [
+      {
+        "concept": "oslo",
+        "label": "load_bearing",
+        "role": "bridge to Norway"
+      },
+      {
+        "concept": "lightning",
+        "label": "distractor",
+        "role": "frightening but useless"
+      },
+      {
+        "concept": "scarf",
+        "label": "distractor",
+        "role": "emotional loss, useless"
+      },
+      {
+        "concept": "cheaper",
+        "label": "filler",
+        "role": "reason for routing"
+      }
+    ]
+  },
+  {
+    "context": "The shipment of chemistry lab equipment arrived at the university loading dock late Thursday afternoon. Due to a scheduling conflict, the campus courier was unable to deliver packages to the science building until Monday. However, the refrigerated centrifuge required to start the research study was labeled for urgent delivery. Maintenance staff reported that the freezer\u2019s temperature rose unexpectedly overnight but was restored by morning.",
+    "probe_question": "On what day will the chemistry lab likely receive the refrigerated centrifuge?",
+    "answer": "Monday",
+    "items": [
+      {
+        "concept": "monday",
+        "label": "load_bearing",
+        "role": "Monday is when deliveries to the science building will resume."
+      },
+      {
+        "concept": "centrifuge",
+        "label": "load_bearing",
+        "role": "The centrifuge is identified as the item needing urgent delivery."
+      },
+      {
+        "concept": "freezer",
+        "label": "distractor",
+        "role": "The freezer incident is dramatic but unrelated to delivery timing."
+      },
+      {
+        "concept": "thursday",
+        "label": "distractor",
+        "role": "Thursday is vivid as the arrival time but not needed for the probe."
+      },
+      {
+        "concept": "equipment",
+        "label": "filler",
+        "role": "General reference to lab supplies."
+      }
+    ]
+  },
+  {
+    "context": "Dr. Perez counseled her patient about the new prescription, warning that the medication should be taken with food. Although the pills are typically well tolerated, she mentioned that some people experience dizziness after the first dose. The pharmacy has recently changed brands, so the tablets are now yellow instead of white. Dr. Perez scheduled a follow-up appointment in three weeks.",
+    "probe_question": "What should the patient be sure to do when taking the new medication?",
+    "answer": "Take it with food",
+    "items": [
+      {
+        "concept": "food",
+        "label": "load_bearing",
+        "role": "Taking with food is specifically required, quietly mentioned."
+      },
+      {
+        "concept": "medication",
+        "label": "load_bearing",
+        "role": "The subject of the prescription; needed for understanding the instruction."
+      },
+      {
+        "concept": "dizziness",
+        "label": "distractor",
+        "role": "A strongly emotional side effect likely to attract attention unnecessarily."
+      },
+      {
+        "concept": "yellow",
+        "label": "distractor",
+        "role": "A vivid change (color) that bears no relevance to the action needed."
+      },
+      {
+        "concept": "appointment",
+        "label": "filler",
+        "role": "Mentioned as routine scheduling, not relevant for remembering proper usage."
+      }
+    ]
+  },
+  {
+    "context": "Annika was planning to fly from Oslo to Berlin for a conference. She discovered that her passport would expire five months after the return date. The conference organizers said all visitors must have at least six months' validity left on entry. Her flight tickets were nonrefundable, but travel insurance might help. The airline emailed her a special baggage discount code.",
+    "probe_question": "Why might Annika not be allowed to attend the conference in Berlin?",
+    "answer": "Her passport expires too soon",
+    "items": [
+      {
+        "concept": "passport",
+        "label": "load_bearing",
+        "role": "Annika's passport validity is central, quietly mentioned."
+      },
+      {
+        "concept": "months",
+        "label": "load_bearing",
+        "role": "Number of validity months is critical for entry requirement."
+      },
+      {
+        "concept": "insurance",
+        "label": "distractor",
+        "role": "Travel insurance is vivid, but not relevant to entry eligibility."
+      },
+      {
+        "concept": "discount",
+        "label": "distractor",
+        "role": "A vivid, but irrelevant, benefit from the airline."
+      },
+      {
+        "concept": "oslo",
+        "label": "filler",
+        "role": "Neutral, just the point of departure."
+      }
+    ]
+  },
+  {
+    "context": "Matthew was debugging a web application built with Flask. The app rendered blank pages whenever users submitted a form. After observing the logs, he noticed an error referencing a missing template file. He checked the 'templates' directory and confirmed that 'result.html' was absent. Matthew's teammate suggested clearing the browser cache, but the bug persisted.",
+    "probe_question": "What file needs to be added to fix the form submission issue?",
+    "answer": "result.html",
+    "items": [
+      {
+        "concept": "template",
+        "label": "load_bearing",
+        "role": "A missing template is the overlooked cause of the bug."
+      },
+      {
+        "concept": "result",
+        "label": "load_bearing",
+        "role": "The specific missing file ('result.html') named in the context."
+      },
+      {
+        "concept": "cache",
+        "label": "distractor",
+        "role": "Cache clearing is a tempting troubleshooting step, but irrelevant."
+      },
+      {
+        "concept": "flask",
+        "label": "distractor",
+        "role": "The framework is vivid tech context, but not needed for the answer."
+      },
+      {
+        "concept": "logs",
+        "label": "filler",
+        "role": "Routine reference, logs are mentioned, but not decisive."
+      }
+    ]
+  },
+  {
+    "context": "For the charity bake sale, Nico decided to make carrot muffins. He realized he ran out of eggs but still had applesauce in the pantry. Following a tip from a friend, he used applesauce as a substitute for eggs. Despite some initial skepticism, the muffins turned out moist and delicious. The event raised over three hundred dollars for the local shelter.",
+    "probe_question": "What ingredient did Nico use instead of eggs in the muffins?",
+    "answer": "applesauce",
+    "items": [
+      {
+        "concept": "applesauce",
+        "label": "load_bearing",
+        "role": "Subtle substitute ingredient required for the answer."
+      },
+      {
+        "concept": "eggs",
+        "label": "load_bearing",
+        "role": "Eggs are implied as the usual ingredient, which was missing."
+      },
+      {
+        "concept": "dollars",
+        "label": "distractor",
+        "role": "The large fundraising sum is emotionally salient, not needed."
+      },
+      {
+        "concept": "shelter",
+        "label": "distractor",
+        "role": "Charity cause is attention-grabbing, does not help answer."
+      },
+      {
+        "concept": "pantry",
+        "label": "filler",
+        "role": "Background location detail."
+      }
+    ]
+  },
+  {
+    "context": "The package for Evergreen Stores must be sent today. Its contents include fragile glassware, so it needs careful handling. The shipment should arrive in Portland before Thursday. There's also a note that the receiving dock closes at 6 pm daily. The courier mentions the box is unusually heavy because of the protective wrapping.",
+    "probe_question": "What is the latest time the courier can deliver the package each day?",
+    "answer": "6 pm",
+    "items": [
+      {
+        "concept": "dock",
+        "label": "load_bearing",
+        "role": "The dock\u2019s closing time sets the delivery deadline."
+      },
+      {
+        "concept": "portland",
+        "label": "distractor",
+        "role": "Geographic location, noticeable but not needed for timing."
+      },
+      {
+        "concept": "glassware",
+        "label": "distractor",
+        "role": "Fragility is vivid but irrelevant to the deadline."
+      },
+      {
+        "concept": "courier",
+        "label": "filler",
+        "role": "Neutral reference to delivery personnel."
+      },
+      {
+        "concept": "wrapping",
+        "label": "distractor",
+        "role": "The heavy wrapping is attention-grabbing but not needed for answering the probe."
+      }
+    ]
+  },
+  {
+    "context": "Dr. Lin updated the medication schedule for Mr. Cobb. He should take the blue pill before breakfast, and the white pill at bedtime. Avoiding overlap between doses is important. The pharmacy will deliver a one-week supply tomorrow. Mr. Cobb joked that the blue pill tastes like chalk.",
+    "probe_question": "Which pill should Mr. Cobb take in the morning?",
+    "answer": "blue pill",
+    "items": [
+      {
+        "concept": "breakfast",
+        "label": "load_bearing",
+        "role": "Timing of breakfast indicates the correct pill for the morning."
+      },
+      {
+        "concept": "chalk",
+        "label": "distractor",
+        "role": "Vivid taste description, tempting but irrelevant to timing."
+      },
+      {
+        "concept": "pharmacy",
+        "label": "filler",
+        "role": "Mentioned as context but not needed for question."
+      },
+      {
+        "concept": "bedtime",
+        "label": "distractor",
+        "role": "Noticeable timing cue, but probe focuses on the morning dose, not nighttime."
+      },
+      {
+        "concept": "overlap",
+        "label": "filler",
+        "role": "Background guideline, not directly used for answer."
+      }
+    ]
+  },
+  {
+    "context": "Laura\u2019s flight to Toronto departs at 7:45 am from terminal B. She must check in at least 1 hour before departure. Security lines are sometimes long, especially on Mondays. Her bag contains a birthday gift for her niece. The airport just installed a new sculpture that everyone is talking about.",
+    "probe_question": "By what time must Laura check in for her flight?",
+    "answer": "6:45 am",
+    "items": [
+      {
+        "concept": "hour",
+        "label": "load_bearing",
+        "role": "Check-in is required 1 hour before departure."
+      },
+      {
+        "concept": "sculpture",
+        "label": "distractor",
+        "role": "A vivid new feature of the airport, tempting to remember."
+      },
+      {
+        "concept": "gift",
+        "label": "distractor",
+        "role": "Personal detail drawing attention but irrelevant to timing."
+      },
+      {
+        "concept": "terminal",
+        "label": "filler",
+        "role": "Neutral mention, not used for the answer."
+      },
+      {
+        "concept": "monday",
+        "label": "distractor",
+        "role": "Potentially vivid due to long lines, but inessential for the specific check-in deadline."
+      }
+    ]
+  },
+  {
+    "context": "Martin noticed his soup kept burning at the bottom of the pot. The recipe says to lower the heat once it starts simmering. He added too much pepper by accident, causing his eyes to water. His phone timer didn't go off. Eventually, he gave up and made a sandwich instead.",
+    "probe_question": "What should Martin do to prevent the soup from burning next time?",
+    "answer": "lower the heat",
+    "items": [
+      {
+        "concept": "heat",
+        "label": "load_bearing",
+        "role": "Lowering the heat is the direct solution to burning."
+      },
+      {
+        "concept": "pepper",
+        "label": "distractor",
+        "role": "Over-seasoning led to vivid discomfort but wasn't the cause of burning."
+      },
+      {
+        "concept": "timer",
+        "label": "distractor",
+        "role": "A failed tool, grabbing attention but unnecessary for the correct fix."
+      },
+      {
+        "concept": "sandwich",
+        "label": "filler",
+        "role": "Neutral outcome following his failed soup."
+      },
+      {
+        "concept": "bottom",
+        "label": "filler",
+        "role": "Describes where burning occurred but not the cause."
+      }
+    ]
+  },
+  {
+    "context": "Alina\u2019s software problem involved a loop that never ended. She realized afterwards that she'd forgotten to update the loop counter variable. The error log filled up with thousands of repeated lines, crashing her terminal. Her colleague laughed and said, 'Infinite loops always test your patience!'",
+    "probe_question": "Which variable did Alina forget to change to fix her code?",
+    "answer": "counter",
+    "items": [
+      {
+        "concept": "counter",
+        "label": "load_bearing",
+        "role": "Adjusting the counter variable fixes the loop."
+      },
+      {
+        "concept": "terminal",
+        "label": "distractor",
+        "role": "The visual crash is dramatic but not a cause."
+      },
+      {
+        "concept": "patience",
+        "label": "distractor",
+        "role": "Emotionally marked in the colleague's remark."
+      },
+      {
+        "concept": "colleague",
+        "label": "filler",
+        "role": "Neutral presence in the dialogue."
+      },
+      {
+        "concept": "lines",
+        "label": "filler",
+        "role": "Background reference to error log content."
+      }
+    ]
+  },
+  {
+    "context": "The delivery truck must follow Route B due to construction on the main road. Packages must be dropped off at the Smith warehouse before noon. The highway is unusually quiet for a Monday, with only a few cars on the road. Marcus, the driver, remembered to fill up on fuel at the last stop. Rain is expected later in the afternoon, but the morning is clear. The dispatcher sent a reminder about the updated schedule yesterday.",
+    "probe_question": "At what type of location must the packages be dropped off before noon?",
+    "answer": "warehouse",
+    "items": [
+      {
+        "concept": "warehouse",
+        "label": "load_bearing",
+        "role": "required for answer; mentioned mundanely as drop-off point"
+      },
+      {
+        "concept": "afternoon",
+        "label": "distractor",
+        "role": "vivid because of weather, but not useful for question"
+      },
+      {
+        "concept": "fuel",
+        "label": "distractor",
+        "role": "driver remembered this distinctly; irrelevant to probe"
+      },
+      {
+        "concept": "construction",
+        "label": "filler",
+        "role": "background cause for route change"
+      },
+      {
+        "concept": "schedule",
+        "label": "filler",
+        "role": "part of logistics context"
+      }
+    ]
+  },
+  {
+    "context": "Patient Turner reports mild nausea but denies headaches. Blood pressure reads 118/74, comfortably within the normal range. She has a history of seasonal allergies and takes loratadine as needed. Dr. Yim notes no new symptoms after the recent medication change. The exam room feels chilly today, and the window is slightly open.",
+    "probe_question": "What medication does Patient Turner use to manage her allergies?",
+    "answer": "loratadine",
+    "items": [
+      {
+        "concept": "loratadine",
+        "label": "load_bearing",
+        "role": "antihistamine, mentioned mundanely in context"
+      },
+      {
+        "concept": "nausea",
+        "label": "distractor",
+        "role": "vivid symptom, tempting to remember"
+      },
+      {
+        "concept": "chilly",
+        "label": "distractor",
+        "role": "attention-grabbing environmental detail"
+      },
+      {
+        "concept": "blood",
+        "label": "filler",
+        "role": "background medical detail about pressure"
+      },
+      {
+        "concept": "history",
+        "label": "filler",
+        "role": "neutral mention of patient background"
+      }
+    ]
+  },
+  {
+    "context": "As soon as the flight landed in Lisbon, Ana realized her power adapter was missing. The hotel reservation listed her check-in time as 3:00 pm. At the airport, she exchanged fifty euros for local currency. The weather forecast predicted sunshine all afternoon. The airport taxi line was unusually short, and Ana quickly reached her destination.",
+    "probe_question": "What city did Ana fly to?",
+    "answer": "Lisbon",
+    "items": [
+      {
+        "concept": "lisbon",
+        "label": "load_bearing",
+        "role": "mundane arrival city, required for probe"
+      },
+      {
+        "concept": "adapter",
+        "label": "distractor",
+        "role": "vivid problem, but not relevant for answer"
+      },
+      {
+        "concept": "euros",
+        "label": "distractor",
+        "role": "memorable financial action, not needed for question"
+      },
+      {
+        "concept": "taxi",
+        "label": "filler",
+        "role": "neutral transportation background"
+      },
+      {
+        "concept": "weather",
+        "label": "filler",
+        "role": "setting context, not important"
+      }
+    ]
+  },
+  {
+    "context": "Tracy wants to make cookies that are both chewy and thin. Her recipe calls for mixing brown sugar and melted butter, then adding one egg. The instruction is to bake them at 350 degrees for exactly ten minutes. Yesterday, Tracy accidentally burnt a batch by setting the timer for too long. The kitchen smells sweet from the vanilla extract.",
+    "probe_question": "Which ingredient is combined with brown sugar at the start of Tracy's recipe?",
+    "answer": "butter",
+    "items": [
+      {
+        "concept": "butter",
+        "label": "load_bearing",
+        "role": "simple ingredient, paired with brown sugar, needed for probe"
+      },
+      {
+        "concept": "vanilla",
+        "label": "distractor",
+        "role": "vivid scent, easy to remember, not useful"
+      },
+      {
+        "concept": "timer",
+        "label": "distractor",
+        "role": "striking incident from yesterday, but irrelevant"
+      },
+      {
+        "concept": "egg",
+        "label": "filler",
+        "role": "neutral recipe step"
+      },
+      {
+        "concept": "degree",
+        "label": "filler",
+        "role": "cooking temperature detail"
+      }
+    ]
+  },
+  {
+    "context": "The team noticed that the unit tests failed after they changed the import statement from 'math' to 'statistics'. The error message pointed to a problem in the calculation function, which used methods not defined in the new module. Despite the setback, morale stayed high. Last week\u2019s release had gone smoothly, so they expected to fix the issue quickly. By lunch, half the team had already submitted bug reports.",
+    "probe_question": "What module did the team switch to that caused the tests to fail?",
+    "answer": "statistics",
+    "items": [
+      {
+        "concept": "statistics",
+        "label": "load_bearing",
+        "role": "module change, mentioned plainly, required for answer"
+      },
+      {
+        "concept": "error",
+        "label": "distractor",
+        "role": "vivid problem but does not answer module question"
+      },
+      {
+        "concept": "morale",
+        "label": "distractor",
+        "role": "emotional tone, tempting but irrelevant"
+      },
+      {
+        "concept": "release",
+        "label": "filler",
+        "role": "neutral project milestone"
+      },
+      {
+        "concept": "bug",
+        "label": "filler",
+        "role": "background engineering activity"
+      }
+    ]
+  },
+  {
+    "context": "The logistics manager sent out the delivery schedule on Tuesday, noting that only vehicles with working refrigeration units could transport produce. One of the vans had its cooling system malfunction last week, but has since been fixed. The schedule shows that electronics are being shipped in cardboard boxes, and apparel is being shipped tomorrow. Jess missed the staff meeting due to a flat tire.",
+    "probe_question": "Which type of cargo requires vans with working refrigeration units?",
+    "answer": "produce",
+    "items": [
+      {
+        "concept": "produce",
+        "label": "load_bearing",
+        "role": "Main cargo needing working refrigeration, per a stated constraint."
+      },
+      {
+        "concept": "refrigeration",
+        "label": "load_bearing",
+        "role": "Bridge detail explaining the requirement for produce transport."
+      },
+      {
+        "concept": "malfunction",
+        "label": "distractor",
+        "role": "Vivid event about van failure, but irrelevant to which cargo requires refrigeration."
+      },
+      {
+        "concept": "tire",
+        "label": "distractor",
+        "role": "Vivid misfortune about Jess missing a meeting, unrelated to the question."
+      },
+      {
+        "concept": "electronics",
+        "label": "filler",
+        "role": "Type of cargo mentioned for different shipping protocols."
+      },
+      {
+        "concept": "apparel",
+        "label": "filler",
+        "role": "Other secondary cargo mentioned, not relevant to probe."
+      }
+    ]
+  },
+  {
+    "context": "Dr. Weir completed her morning rounds, seeing four patients in Room 212. She prescribed a new antihistamine to the patient with persistent sneezing. Her notes also mention that Mrs. Carter in Room 212A needs follow-up for hypertension. The nurse, Sam, accidentally dropped a tray of syringes in the hallway while hurrying to answer a call.",
+    "probe_question": "Which symptom led to the prescription of an antihistamine?",
+    "answer": "sneezing",
+    "items": [
+      {
+        "concept": "sneezing",
+        "label": "load_bearing",
+        "role": "Symptom linked via context to prescription."
+      },
+      {
+        "concept": "antihistamine",
+        "label": "load_bearing",
+        "role": "The medication prescribed, part of the bridge inference."
+      },
+      {
+        "concept": "hypertension",
+        "label": "distractor",
+        "role": "Serious condition mentioned, but unrelated to the antihistamine prescription."
+      },
+      {
+        "concept": "syringe",
+        "label": "distractor",
+        "role": "Dramatic event involving dropped tray, not necessary for answer."
+      },
+      {
+        "concept": "nurse",
+        "label": "filler",
+        "role": "Healthcare staff mentioned as context."
+      },
+      {
+        "concept": "room",
+        "label": "filler",
+        "role": "Background detail for patient locations."
+      }
+    ]
+  },
+  {
+    "context": "Irina booked her train ticket to Marseille, selecting a seat by the window. She chose the direct service departing platform 14 at 8:42 AM. Her email confirmation mistakenly listed her destination as Nice, but she double-checked her booking. On the platform, a street musician played violin while a group of schoolchildren ran past.",
+    "probe_question": "At what time does Irina's direct train leave?",
+    "answer": "8:42 AM",
+    "items": [
+      {
+        "concept": "8:42",
+        "label": "load_bearing",
+        "role": "Specific departure time mentioned, needed for answer."
+      },
+      {
+        "concept": "platform",
+        "label": "filler",
+        "role": "Background information about where the train departs."
+      },
+      {
+        "concept": "window",
+        "label": "distractor",
+        "role": "Vivid but irrelevant detail about seat choice."
+      },
+      {
+        "concept": "musician",
+        "label": "distractor",
+        "role": "Attention-grabbing sensory detail on the platform."
+      },
+      {
+        "concept": "nice",
+        "label": "distractor",
+        "role": "Misleading error in email, but does not affect departure time."
+      },
+      {
+        "concept": "schoolchildren",
+        "label": "filler",
+        "role": "Neutral crowd detail at the station."
+      }
+    ]
+  },
+  {
+    "context": "Seth was trying to debug his Python script that processes CSV files. The error message referenced a missing 'encoding' argument. Last night, thunder rattled the windows, causing a power outage in the neighborhood. Seth added 'encoding=\"utf-8\"' to his open() function and reran the program, which then executed successfully. Afterwards, he found a stray dog on his porch.",
+    "probe_question": "What parameter did Seth add to fix his script?",
+    "answer": "encoding",
+    "items": [
+      {
+        "concept": "encoding",
+        "label": "load_bearing",
+        "role": "Parameter added to resolve the error."
+      },
+      {
+        "concept": "csv",
+        "label": "filler",
+        "role": "Type of file processed, background for the scenario."
+      },
+      {
+        "concept": "thunder",
+        "label": "distractor",
+        "role": "Dramatic environmental event, irrelevant to script fix."
+      },
+      {
+        "concept": "dog",
+        "label": "distractor",
+        "role": "Surprising discovery after debugging, not required for the answer."
+      },
+      {
+        "concept": "python",
+        "label": "filler",
+        "role": "Programming language context."
+      }
+    ]
+  },
+  {
+    "context": "After simmering onions until translucent, Marisol added diced tomatoes and cumin to the pan. While stirring, she accidentally knocked over the salt jar, spilling crystals across the counter. The recipe called for chickpeas, which she rinsed thoroughly and stirred in last. The kitchen radio played a lively salsa tune as she cooked.",
+    "probe_question": "Which ingredient did Marisol rinse before adding to the pan?",
+    "answer": "chickpeas",
+    "items": [
+      {
+        "concept": "chickpeas",
+        "label": "load_bearing",
+        "role": "The ingredient specified as being rinsed."
+      },
+      {
+        "concept": "rinse",
+        "label": "load_bearing",
+        "role": "Action performed on the ingredient, linking chickpeas to probe."
+      },
+      {
+        "concept": "salt",
+        "label": "distractor",
+        "role": "Vivid accident, but unrelated to rinsing."
+      },
+      {
+        "concept": "radio",
+        "label": "distractor",
+        "role": "Engaging sensory background detail, not relevant."
+      },
+      {
+        "concept": "cumin",
+        "label": "filler",
+        "role": "Other ingredient, not rinsed."
+      },
+      {
+        "concept": "onion",
+        "label": "filler",
+        "role": "Ingredient providing context."
+      }
+    ]
+  },
+  {
+    "context": "The supply shipment for the pharmaceutical warehouse arrived at noon with six crates. One crate, marked with a blue label, contained insulin and needed refrigeration. The warehouse manager noted that the refrigeration unit had been serviced last week. Three crates were placed on the second shelf as usual, while the rest were stacked near the entrance for quick access. The driver mentioned she almost missed the turn while talking on the phone.",
+    "probe_question": "Where should the crate with insulin be stored?",
+    "answer": "refrigeration unit",
+    "items": [
+      {
+        "concept": "crates",
+        "label": "filler",
+        "role": "background detail about containers in the shipment"
+      },
+      {
+        "concept": "insulin",
+        "label": "load_bearing",
+        "role": "medical item requiring refrigeration, implied by context"
+      },
+      {
+        "concept": "refrigeration",
+        "label": "load_bearing",
+        "role": "storage unit needed for insulin, mentioned quietly"
+      },
+      {
+        "concept": "phone",
+        "label": "distractor",
+        "role": "driver's near-miss source, an attention-grabbing event"
+      },
+      {
+        "concept": "entrance",
+        "label": "distractor",
+        "role": "visible location for some crates, vivid setting detail"
+      },
+      {
+        "concept": "service",
+        "label": "filler",
+        "role": "routine action for warehouse equipment"
+      }
+    ]
+  },
+  {
+    "context": "Maya prepared her ingredients for the new recipe: she had chicken, rice, turmeric, and zucchini. The instructions recommended slicing the zucchini thinly. Her brother called to say he won the lottery, so she paused to celebrate. Maya later added the turmeric carefully after the chicken was halfway cooked, as written in the notes. She almost forgot to set the timer for the rice.",
+    "probe_question": "At what point should the turmeric be added?",
+    "answer": "when the chicken is halfway cooked",
+    "items": [
+      {
+        "concept": "zucchini",
+        "label": "distractor",
+        "role": "unusual vegetable, explicitly mentioned for slicing"
+      },
+      {
+        "concept": "lottery",
+        "label": "distractor",
+        "role": "emotional surprise, brother's big news"
+      },
+      {
+        "concept": "timer",
+        "label": "filler",
+        "role": "simple kitchen tool, mentioned in passing"
+      },
+      {
+        "concept": "turmeric",
+        "label": "load_bearing",
+        "role": "ingredient added at a specific step, required for answer"
+      },
+      {
+        "concept": "chicken",
+        "label": "load_bearing",
+        "role": "determining when turmeric is added relies on state of chicken"
+      },
+      {
+        "concept": "instructions",
+        "label": "filler",
+        "role": "neutral supporting element, mentioned in context"
+      }
+    ]
+  },
+  {
+    "context": "Dr. Chen reviewed the case files for her morning patients. She noted Mr. Evans, who had a mild cough and reported a headache since Monday. Another patient, Mrs. Landry, described sudden chest pain during exercise and was sent for a cardiac evaluation. The last patient brought homemade cookies for the staff, which delighted everyone in the clinic.",
+    "probe_question": "Which symptom had Mr. Evans experienced the longest?",
+    "answer": "headache",
+    "items": [
+      {
+        "concept": "cough",
+        "label": "distractor",
+        "role": "vivid symptom, attention-grabbing but less relevant for duration"
+      },
+      {
+        "concept": "headache",
+        "label": "load_bearing",
+        "role": "required for answer since Monday, quietly noted"
+      },
+      {
+        "concept": "monday",
+        "label": "load_bearing",
+        "role": "key for inferring symptom duration, mentioned as context"
+      },
+      {
+        "concept": "cookies",
+        "label": "distractor",
+        "role": "emotional, positive gift, memorable but unrelated"
+      },
+      {
+        "concept": "exercise",
+        "label": "filler",
+        "role": "background reason for a different patient's complaint"
+      }
+    ]
+  },
+  {
+    "context": "Javier's trip through Norway required three train connections. He changed trains at Bergen, where the platform signs were in Norwegian. At each station, Javier double-checked the ticket times on his phone. One station was crowded due to a music festival, and he had to stand near a group of performers with face paint. His final destination was Oslo.",
+    "probe_question": "At which station did Javier have to read signs in Norwegian?",
+    "answer": "Bergen",
+    "items": [
+      {
+        "concept": "trains",
+        "label": "filler",
+        "role": "travel modality, general background detail"
+      },
+      {
+        "concept": "bergen",
+        "label": "load_bearing",
+        "role": "specific station with local language signs, needed for answer"
+      },
+      {
+        "concept": "norwegian",
+        "label": "load_bearing",
+        "role": "language of signs, bridge to correct station"
+      },
+      {
+        "concept": "festival",
+        "label": "distractor",
+        "role": "memorable crowded scene, unrelated to required facts"
+      },
+      {
+        "concept": "paint",
+        "label": "distractor",
+        "role": "vivid visual cue at festival, irrelevant to signage"
+      },
+      {
+        "concept": "ticket",
+        "label": "filler",
+        "role": "routine travel process, background"
+      }
+    ]
+  },
+  {
+    "context": "The team was debugging the payment application. Marissa found a bug in the function that updates user balances after withdrawals. While they were discussing fixes, the fire alarm unexpectedly went off, forcing everyone outside. They returned half an hour later. Upon reviewing the logs, Alex noticed that the last failed transaction occurred before the alarm sounded.",
+    "probe_question": "Did any transaction failures happen after the fire alarm?",
+    "answer": "no",
+    "items": [
+      {
+        "concept": "alarm",
+        "label": "load_bearing",
+        "role": "critical time boundary, mentioned undramatically before logs"
+      },
+      {
+        "concept": "transaction",
+        "label": "load_bearing",
+        "role": "object whose timing is queried, implied in the logs"
+      },
+      {
+        "concept": "fire",
+        "label": "distractor",
+        "role": "dramatic event, causes evacuation, memorable but not needed"
+      },
+      {
+        "concept": "function",
+        "label": "filler",
+        "role": "part of software, general coding context"
+      },
+      {
+        "concept": "withdrawals",
+        "label": "distractor",
+        "role": "noted bug in a subset of operations, emotionally relevant"
+      },
+      {
+        "concept": "logs",
+        "label": "filler",
+        "role": "standard practice for bug tracking, neutral background"
+      }
+    ]
+  },
+  {
+    "context": "The delivery truck arrived at the warehouse at 4 AM, earlier than expected. Boxes labeled 'fragile' were stacked in the north corner, while regular supplies were left by the loading dock. The warehouse supervisor, Kim, checked the inventory against the manifest. A minor spill of orange paint was reported but quickly cleaned. The driver mentioned traffic was unusually light and left a signed receipt on Kim\u2019s desk.",
+    "probe_question": "Where should the fragile boxes be found inside the warehouse?",
+    "answer": "north corner",
+    "items": [
+      {
+        "concept": "corner",
+        "label": "load_bearing",
+        "role": "location where fragile boxes were stacked"
+      },
+      {
+        "concept": "manifest",
+        "label": "distractor",
+        "role": "document checked by supervisor, but not needed"
+      },
+      {
+        "concept": "paint",
+        "label": "distractor",
+        "role": "vivid spill detail, not relevant to question"
+      },
+      {
+        "concept": "traffic",
+        "label": "distractor",
+        "role": "attention-grabbing because of unusual lightness"
+      },
+      {
+        "concept": "warehouse",
+        "label": "filler",
+        "role": "neutral background setting"
+      },
+      {
+        "concept": "receipt",
+        "label": "filler",
+        "role": "routine document mentioned"
+      }
+    ]
+  },
+  {
+    "context": "Lorena, a patient recovering from surgery, complained of mild nausea in the afternoon. Her temperature remained steady at 98.6\u00b0F, and she seemed less fatigued than the day before. The nurse noted that Lorena requested more water after lunch. That morning, her incision dressing was changed without any complications. Her husband, visibly anxious, sat by her bed for most of the day.",
+    "probe_question": "What drink did Lorena ask for after her lunch?",
+    "answer": "water",
+    "items": [
+      {
+        "concept": "water",
+        "label": "load_bearing",
+        "role": "drink requested, necessary for question"
+      },
+      {
+        "concept": "nausea",
+        "label": "distractor",
+        "role": "emotional, clinical symptom but irrelevant"
+      },
+      {
+        "concept": "temperature",
+        "label": "distractor",
+        "role": "numeric vital sign, attention-grabbing"
+      },
+      {
+        "concept": "husband",
+        "label": "distractor",
+        "role": "vivid social/emotional presence"
+      },
+      {
+        "concept": "dressing",
+        "label": "filler",
+        "role": "routine medical task"
+      },
+      {
+        "concept": "nurse",
+        "label": "filler",
+        "role": "medical staff member performing care"
+      }
+    ]
+  },
+  {
+    "context": "On the flight to Tokyo, seats 17A and 17B were assigned to a couple traveling on their honeymoon. The in-flight meal was served one hour after takeoff, featuring pasta or fish as options. The movie selection included classic Japanese films and animations. A brief announcement about turbulence interrupted dinner, but the cabin soon returned to calm. The passengers in 17A both ordered pasta.",
+    "probe_question": "Which main course did the passengers in 17A choose?",
+    "answer": "pasta",
+    "items": [
+      {
+        "concept": "pasta",
+        "label": "load_bearing",
+        "role": "meal choice tied to probe"
+      },
+      {
+        "concept": "honeymoon",
+        "label": "distractor",
+        "role": "vivid and dramatic but not relevant"
+      },
+      {
+        "concept": "turbulence",
+        "label": "distractor",
+        "role": "surprising event, unrelated to meal"
+      },
+      {
+        "concept": "fish",
+        "label": "filler",
+        "role": "alternate meal option, neutral"
+      },
+      {
+        "concept": "animation",
+        "label": "filler",
+        "role": "background entertainment detail"
+      }
+    ]
+  },
+  {
+    "context": "When editing the code, Maya noticed the function 'parseReport' was missing a return statement. The error logs from last night showed repeated 'undefined' outputs, but no crashes occurred. She refactored several variable names for clarity. After adding the return statement, the code compiled successfully. A pop-up notification announced her colleague\u2019s work anniversary during her testing session.",
+    "probe_question": "What did Maya add to fix the 'parseReport' function?",
+    "answer": "return statement",
+    "items": [
+      {
+        "concept": "return",
+        "label": "load_bearing",
+        "role": "missing statement that needed to be added"
+      },
+      {
+        "concept": "undefined",
+        "label": "distractor",
+        "role": "attention-grabbing error but not the fix"
+      },
+      {
+        "concept": "anniversary",
+        "label": "distractor",
+        "role": "vivid pop-up, emotionally charged event"
+      },
+      {
+        "concept": "variable",
+        "label": "filler",
+        "role": "neutral, something that was changed as routine"
+      },
+      {
+        "concept": "crash",
+        "label": "filler",
+        "role": "code did not crash, background state"
+      }
+    ]
+  },
+  {
+    "context": "During the science fair, the experiment on photosynthesis was set up next to a colorful volcano model. Posters described the effect of different light sources. Sam spilled grape juice on the entry form but quickly wiped it off. The results table showed that the plants under blue light grew two centimeters taller than those under red light. A loud cheer erupted from the robotics table when their machine finished a maze.",
+    "probe_question": "Under which color light did the plants grow the tallest according to the results?",
+    "answer": "blue",
+    "items": [
+      {
+        "concept": "blue",
+        "label": "load_bearing",
+        "role": "color of light linked to tallest plant growth"
+      },
+      {
+        "concept": "volcano",
+        "label": "distractor",
+        "role": "dramatic project but unrelated"
+      },
+      {
+        "concept": "cheer",
+        "label": "distractor",
+        "role": "vivid event at the robotics table"
+      },
+      {
+        "concept": "grape",
+        "label": "distractor",
+        "role": "memorable spill but irrelevant"
+      },
+      {
+        "concept": "poster",
+        "label": "filler",
+        "role": "neutral background object"
+      },
+      {
+        "concept": "plant",
+        "label": "filler",
+        "role": "generic experiment participant"
+      }
+    ]
+  },
+  {
+    "context": "Sara received a shipment containing both medical gloves and surgical masks. She noticed that the boxes of gloves were blue and stacked on the middle shelf, while the masks were on the top shelf. A new protocol required that only items from the middle shelf be distributed to the east wing. During her shift, a loud crash startled everyone when a lamp fell in the storage room, but nothing seemed broken.",
+    "probe_question": "Which items did Sara distribute to the east wing according to protocol?",
+    "answer": "medical gloves",
+    "items": [
+      {
+        "concept": "shelf",
+        "label": "load_bearing",
+        "role": "shelf location determines which items are distributed by protocol"
+      },
+      {
+        "concept": "gloves",
+        "label": "load_bearing",
+        "role": "gloves are the items located on the middle shelf"
+      },
+      {
+        "concept": "crash",
+        "label": "distractor",
+        "role": "dramatic event in the context that draws attention"
+      },
+      {
+        "concept": "lamp",
+        "label": "distractor",
+        "role": "surprising object involved in the crash"
+      },
+      {
+        "concept": "protocol",
+        "label": "filler",
+        "role": "background rule governing actions"
+      }
+    ]
+  },
+  {
+    "context": "Jin was booking train tickets for her team\u2019s business trip. She noticed that only the 7:15 AM train had available seats together in car 3, while the 8:40 AM train was almost full but offered a complimentary breakfast. She initially preferred the later option, but her manager specifically mentioned the need to arrive before 10:00 AM. A thunderstorm was forecast for that afternoon.",
+    "probe_question": "Which train did Jin choose to book for her team?",
+    "answer": "7:15 AM",
+    "items": [
+      {
+        "concept": "arrival",
+        "label": "load_bearing",
+        "role": "manager's requirement to arrive before 10:00 AM"
+      },
+      {
+        "concept": "time",
+        "label": "load_bearing",
+        "role": "train time needs to match the arrival requirement"
+      },
+      {
+        "concept": "breakfast",
+        "label": "distractor",
+        "role": "attractive offer with the later train but irrelevant to the actual constraint"
+      },
+      {
+        "concept": "thunderstorm",
+        "label": "distractor",
+        "role": "vivid weather detail that does not affect the choice"
+      },
+      {
+        "concept": "car",
+        "label": "filler",
+        "role": "neutral logistical detail about train seating"
+      }
+    ]
+  },
+  {
+    "context": "While debugging her code, Priya noticed that the main function calls a helper named 'trim_data', which in turn uses a library function for sorting. Later, she added a print statement in 'trim_data' to monitor output. Suddenly, her computer emitted a loud beep and restarted, causing her to lose unsaved files. After rebooting, she decided to check which functions the main function directly depends on.",
+    "probe_question": "Which helper function does the main function directly call?",
+    "answer": "trim_data",
+    "items": [
+      {
+        "concept": "main",
+        "label": "load_bearing",
+        "role": "question is about what the main function calls"
+      },
+      {
+        "concept": "helper",
+        "label": "load_bearing",
+        "role": "the name of the directly called helper, 'trim_data'"
+      },
+      {
+        "concept": "beep",
+        "label": "distractor",
+        "role": "attention-grabbing system event"
+      },
+      {
+        "concept": "restart",
+        "label": "distractor",
+        "role": "surprising and memorable computer event"
+      },
+      {
+        "concept": "library",
+        "label": "filler",
+        "role": "background concept for code dependencies"
+      }
+    ]
+  },
+  {
+    "context": "David prepared a salad using spinach leaves, walnuts, and diced pears. He mixed them in a large ceramic bowl and added a dressing containing olive oil and lemon juice. After finishing, he spilled some dressing on his shirt and grumbled about the stain. His friend commented on how fresh the pears tasted.",
+    "probe_question": "Which type of fruit did David include in the salad?",
+    "answer": "pears",
+    "items": [
+      {
+        "concept": "pears",
+        "label": "load_bearing",
+        "role": "the only fruit ingredient mentioned in the context"
+      },
+      {
+        "concept": "salad",
+        "label": "load_bearing",
+        "role": "question is about the contents of the salad"
+      },
+      {
+        "concept": "stain",
+        "label": "distractor",
+        "role": "explicit negative event likely to draw attention"
+      },
+      {
+        "concept": "grumbled",
+        "label": "distractor",
+        "role": "emotional response to an accident"
+      },
+      {
+        "concept": "oil",
+        "label": "filler",
+        "role": "neutral ingredient in the dressing"
+      }
+    ]
+  },
+  {
+    "context": "The quarterly science report highlighted a 12% drop in river oxygen levels but emphasized that water temperature remained stable. Meanwhile, algae growth increased slightly, possibly linked to recent fertilizer runoff. The mayor expressed surprise at the findings during a heated council debate, and several local residents staged a protest in front of city hall.",
+    "probe_question": "Which environmental factor remained unchanged according to the report?",
+    "answer": "water temperature",
+    "items": [
+      {
+        "concept": "temperature",
+        "label": "load_bearing",
+        "role": "it's the environmental factor reported to be stable"
+      },
+      {
+        "concept": "report",
+        "label": "load_bearing",
+        "role": "the question is based on the contents of the official report"
+      },
+      {
+        "concept": "protest",
+        "label": "distractor",
+        "role": "memorable public action"
+      },
+      {
+        "concept": "mayor",
+        "label": "distractor",
+        "role": "surprising high-profile figure reacting"
+      },
+      {
+        "concept": "oxygen",
+        "label": "filler",
+        "role": "another environmental factor, but not the answer"
+      }
+    ]
+  },
+  {
+    "context": "Danielle is assembling orders for the warehouse. The blue crates are stacked by the north wall, next to the repair bench. Perishable goods are always stored in the center aisle cooler. She notices the loading dock door will close at 4:30 PM, and the last truck today leaves at five. Pallet jacks are being used in aisle three for a maintenance project. At lunch, someone spilled coffee near the shipping office.",
+    "probe_question": "Where should Danielle look for the blue crates when preparing for the final shipment?",
+    "answer": "by the north wall",
+    "items": [
+      {
+        "concept": "wall",
+        "label": "load_bearing",
+        "role": "The specific location of the blue crates, needed to answer the question."
+      },
+      {
+        "concept": "truck",
+        "label": "distractor",
+        "role": "Time-related and sounds urgent because of the shipment deadline, but irrelevant to crate location."
+      },
+      {
+        "concept": "coffee",
+        "label": "distractor",
+        "role": "Vivid spill accident that draws attention but is irrelevant to finding the crates."
+      },
+      {
+        "concept": "bench",
+        "label": "filler",
+        "role": "A neutral background item marking location, unrelated to the probe."
+      },
+      {
+        "concept": "jack",
+        "label": "distractor",
+        "role": "Unusual maintenance activity that stands out but is inactive in this scenario."
+      },
+      {
+        "concept": "cooler",
+        "label": "filler",
+        "role": "Mentioned as part of procedure for goods, but not related to blue crates."
+      }
+    ]
+  },
+  {
+    "context": "The patient, Mr. Alvarez, reported chest tightness during mild activity yesterday but denied any dizziness or nausea. His ECG this morning was unchanged from baseline and his blood pressure remained stable at 118/76. He mentioned sleeping poorly due to noise on the ward. Laboratory results show troponin levels within normal limits.",
+    "probe_question": "Based on the report, did Mr. Alvarez show any laboratory evidence of a heart attack this morning?",
+    "answer": "no",
+    "items": [
+      {
+        "concept": "troponin",
+        "label": "load_bearing",
+        "role": "Key lab value that rules out lab evidence of heart attack."
+      },
+      {
+        "concept": "sleep",
+        "label": "distractor",
+        "role": "Symptom-like detail (poor rest) that is vivid but irrelevant for the probe."
+      },
+      {
+        "concept": "chest",
+        "label": "distractor",
+        "role": "Emotional symptom, tempting but not sufficient for the question."
+      },
+      {
+        "concept": "ecg",
+        "label": "filler",
+        "role": "Neutral test result, context for baseline, not needed for probe answer."
+      },
+      {
+        "concept": "pressure",
+        "label": "filler",
+        "role": "Routine vital measurement, not needed for determining lab evidence."
+      },
+      {
+        "concept": "dizziness",
+        "label": "distractor",
+        "role": "Dramatic-sounding symptom, but explicitly denied and useless for the probe."
+      }
+    ]
+  },
+  {
+    "context": "Nina booked her direct flight to Lisbon for May 8th, leaving from gate B22. Her passport renewal just arrived in the mail. Although she prefers window seats, only aisle seats remained when she checked in. She transferred funds to her travel card to avoid ATM fees. Her luggage allowance is one checked bag under 23 kg; she noticed the weather forecast calls for rain during her trip.",
+    "probe_question": "Which seat type did Nina receive for her flight?",
+    "answer": "aisle",
+    "items": [
+      {
+        "concept": "aisle",
+        "label": "load_bearing",
+        "role": "The seat she actually got; needed to answer the question."
+      },
+      {
+        "concept": "window",
+        "label": "distractor",
+        "role": "Her strong preference, vivid and memorable, but not the seat assigned."
+      },
+      {
+        "concept": "passport",
+        "label": "distractor",
+        "role": "A potentially stressful item, newly received, unrelated to seating."
+      },
+      {
+        "concept": "rain",
+        "label": "filler",
+        "role": "Background about weather, neutral for the probe."
+      },
+      {
+        "concept": "luggage",
+        "label": "filler",
+        "role": "Background travel allowance, irrelevant for seat type."
+      }
+    ]
+  }
+]

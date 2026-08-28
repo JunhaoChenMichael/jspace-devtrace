@@ -1,0 +1,1044 @@
+[
+  {
+    "context": "Elena received a phone call at midnight telling her to pack her bags. Within an hour, she caught a flight across the Atlantic and found herself walking in a city filled with gondolas and grand canals. The buildings seemed older than any she had seen in Paris or London. She stopped to enjoy some risotto by the water, marveling at the intricate network of bridges connecting the small islands. The air was filled with the soft sounds of Italian music.",
+    "probe_question": "In which country did Elena arrive after her midnight journey?",
+    "answer": "italy",
+    "items": [
+      {
+        "concept": "gondola",
+        "label": "distractor",
+        "role": "appears in context, vivid but not required for answer"
+      },
+      {
+        "concept": "bridge",
+        "label": "distractor",
+        "role": "appears in context, emotional but useless for probe"
+      },
+      {
+        "concept": "music",
+        "label": "filler",
+        "role": "neutral word from context"
+      },
+      {
+        "concept": "canal",
+        "label": "distractor",
+        "role": "appears in context, vivid but not bridging fact"
+      },
+      {
+        "concept": "italy",
+        "label": "load_bearing",
+        "role": "must be inferred as the country, word absent from context"
+      },
+      {
+        "concept": "city",
+        "label": "filler",
+        "role": "neutral and present in context"
+      }
+    ]
+  },
+  {
+    "context": "The scientist adjusted her goggles before pouring a clear liquid from one beaker to another. A fizzing reaction indicated the mixture was working. She carefully noted the temperature and acidity. Later, she analyzed the results using the periodic table. Her experiments took place in a sterile environment with strict safety protocols.",
+    "probe_question": "In what kind of room did the scientist conduct her experiment?",
+    "answer": "laboratory",
+    "items": [
+      {
+        "concept": "beaker",
+        "label": "distractor",
+        "role": "mentioned and vivid, appears in context"
+      },
+      {
+        "concept": "goggles",
+        "label": "distractor",
+        "role": "vivid, appears in context"
+      },
+      {
+        "concept": "temperature",
+        "label": "filler",
+        "role": "present in context, neutral"
+      },
+      {
+        "concept": "protocol",
+        "label": "filler",
+        "role": "appears in context, neutral"
+      },
+      {
+        "concept": "laboratory",
+        "label": "load_bearing",
+        "role": "must be inferred as the place, not stated"
+      }
+    ]
+  },
+  {
+    "context": "At dawn, the shepherd led his flock up the rocky hillside. The animals stopped frequently to graze on patches of green. The shepherd kept a close watch, wary of any predators that might emerge from the dense forest. When they reached a clearing, he counted each animal to ensure none were lost.",
+    "probe_question": "What kind of animal was the shepherd watching over?",
+    "answer": "sheep",
+    "items": [
+      {
+        "concept": "forest",
+        "label": "distractor",
+        "role": "mentioned in context, vivid but not bridging"
+      },
+      {
+        "concept": "rock",
+        "label": "filler",
+        "role": "neutral, present as 'rocky'"
+      },
+      {
+        "concept": "animal",
+        "label": "filler",
+        "role": "neutral, present in context"
+      },
+      {
+        "concept": "sheep",
+        "label": "load_bearing",
+        "role": "must be inferred from 'shepherd', not stated"
+      },
+      {
+        "concept": "predator",
+        "label": "distractor",
+        "role": "vivid word, appears in context"
+      }
+    ]
+  },
+  {
+    "context": "After a long voyage, the crew of the wooden ship saw snow-covered land on the horizon. They dropped anchor near a place where penguins gathered on the rocky shore. The freezing winds forced everyone to wear heavy parkas. The navigator checked their coordinates, confirming they had reached the southernmost continent known for its ice and wildlife.",
+    "probe_question": "What is the name of the continent where the ship arrived?",
+    "answer": "antarctica",
+    "items": [
+      {
+        "concept": "penguin",
+        "label": "distractor",
+        "role": "emotional animal, found in context"
+      },
+      {
+        "concept": "ice",
+        "label": "filler",
+        "role": "neutral, mentioned directly"
+      },
+      {
+        "concept": "crew",
+        "label": "filler",
+        "role": "neutral, appears in context"
+      },
+      {
+        "concept": "antarctica",
+        "label": "load_bearing",
+        "role": "must be inferred, never directly present"
+      },
+      {
+        "concept": "ship",
+        "label": "distractor",
+        "role": "vivid, mentioned in context"
+      },
+      {
+        "concept": "parkas",
+        "label": "distractor",
+        "role": "word appears in context, emotional, not bridging"
+      }
+    ]
+  },
+  {
+    "context": "The chef sharpened his longest knife before slicing the enormous fish. Everyone in the kitchen gathered to watch, curious about how he would prepare sashimi for tonight's guests. The slicing was precise, his hands moving like a practiced artist's. Afterward, he gently presented the dish with pickled ginger and a tiny pouring bowl. Laughter filled the room as the staff reminisced about last year's culinary festival.",
+    "probe_question": "Which country is this traditional style of slicing raw fish most associated with?",
+    "answer": "japan",
+    "items": [
+      {
+        "concept": "knife",
+        "label": "distractor",
+        "role": "Prominently mentioned as the chef uses it"
+      },
+      {
+        "concept": "fish",
+        "label": "distractor",
+        "role": "Specifically mentioned as the food prepared"
+      },
+      {
+        "concept": "artist",
+        "label": "filler",
+        "role": "Mentioned in a simile about skill"
+      },
+      {
+        "concept": "laughter",
+        "label": "filler",
+        "role": "Describes the atmosphere"
+      },
+      {
+        "concept": "japan",
+        "label": "load_bearing",
+        "role": "Inferred as the origin of sashimi, not written"
+      },
+      {
+        "concept": "festival",
+        "label": "distractor",
+        "role": "Last year's culinary event is referenced"
+      }
+    ]
+  },
+  {
+    "context": "Patients who cannot produce insulin on their own need to carefully monitor their blood sugar. Daily injections and regulated diets are essential to their health. Without such management, they risk a number of serious complications, including nerve and kidney damage. Medical professionals regularly provide guidance about glucose levels and meal planning.",
+    "probe_question": "Which organ in the body is not producing enough insulin for these patients?",
+    "answer": "pancreas",
+    "items": [
+      {
+        "concept": "insulin",
+        "label": "distractor",
+        "role": "Explicitly mentioned as the missing hormone"
+      },
+      {
+        "concept": "blood",
+        "label": "filler",
+        "role": "Referenced in relation to sugar monitoring"
+      },
+      {
+        "concept": "kidney",
+        "label": "distractor",
+        "role": "Mentioned as a possible complication"
+      },
+      {
+        "concept": "pancreas",
+        "label": "load_bearing",
+        "role": "Must be inferred as insulin's source, not stated"
+      },
+      {
+        "concept": "sugar",
+        "label": "distractor",
+        "role": "Mentioned as something to monitor"
+      },
+      {
+        "concept": "organ",
+        "label": "filler",
+        "role": "Neutral reference in the probe"
+      }
+    ]
+  },
+  {
+    "context": "Clara boarded the sleek silver spacecraft, heart pounding with excitement. In less than twelve minutes, she would experience weightlessness beyond Earth's atmosphere. The control panel glowed faintly as countdown commenced. Alongside her, scientists tracking orbital velocity gave reassuring nods. A reporter on the ground marveled at the historic modern launch.",
+    "probe_question": "What force will Clara temporarily escape during her flight?",
+    "answer": "gravity",
+    "items": [
+      {
+        "concept": "spacecraft",
+        "label": "distractor",
+        "role": "Describes what Clara boards"
+      },
+      {
+        "concept": "reporter",
+        "label": "filler",
+        "role": "Mentioned as an observer on the ground"
+      },
+      {
+        "concept": "atmosphere",
+        "label": "distractor",
+        "role": "Referenced as something she leaves"
+      },
+      {
+        "concept": "gravity",
+        "label": "load_bearing",
+        "role": "Can be inferred as the force absent, not stated"
+      },
+      {
+        "concept": "earth",
+        "label": "distractor",
+        "role": "Explicitly in context as something left"
+      },
+      {
+        "concept": "scientist",
+        "label": "filler",
+        "role": "Mentioned as part of the support team"
+      }
+    ]
+  },
+  {
+    "context": "The vase shattered on the tiled floor after Liam brushed past the small table. Fragments slid under the heavy couch, while a few pieces stuck in the rug. Carefully, he picked up the largest shards and placed them in the waste bin. Later, he considered using a special adhesive to repair the broken object.",
+    "probe_question": "What material was the vase most likely made of?",
+    "answer": "glass",
+    "items": [
+      {
+        "concept": "table",
+        "label": "distractor",
+        "role": "Mentioned as the object brushed"
+      },
+      {
+        "concept": "rug",
+        "label": "filler",
+        "role": "Referenced as where pieces ended up"
+      },
+      {
+        "concept": "adhesive",
+        "label": "filler",
+        "role": "Mentioned as a way to repair"
+      },
+      {
+        "concept": "glass",
+        "label": "load_bearing",
+        "role": "Inferable from shattering, not stated"
+      },
+      {
+        "concept": "couch",
+        "label": "distractor",
+        "role": "Named as furniture present"
+      },
+      {
+        "concept": "floor",
+        "label": "distractor",
+        "role": "Describes where the object broke"
+      }
+    ]
+  },
+  {
+    "context": "Sandra sipped her drink while watching the towers of the city disappear below. The gentle rumble and slight tilt signaled the vehicle leaving the ground. She glanced at the fold-out tray and adjusted her seat, enjoying the view through the tiny oval window. A calm voice announced the estimated time of arrival and cruising altitude.",
+    "probe_question": "What kind of vehicle is Sandra traveling in?",
+    "answer": "airplane",
+    "items": [
+      {
+        "concept": "city",
+        "label": "distractor",
+        "role": "Referenced as disappearing below"
+      },
+      {
+        "concept": "altitude",
+        "label": "distractor",
+        "role": "Announced as part of travel details"
+      },
+      {
+        "concept": "window",
+        "label": "filler",
+        "role": "Described as the place Sandra looks through"
+      },
+      {
+        "concept": "tray",
+        "label": "filler",
+        "role": "Mentioned as a seat feature"
+      },
+      {
+        "concept": "airplane",
+        "label": "load_bearing",
+        "role": "Must be inferred, not stated directly"
+      },
+      {
+        "concept": "seat",
+        "label": "distractor",
+        "role": "Adjusted by Sandra during flight"
+      }
+    ]
+  },
+  {
+    "context": "Maria visited the sprawling vineyard in Bordeaux. She admired the rows of grapes stretching across gentle hills. At the end of the tour, she sampled a glass of red liquid produced locally. The region is known for its centuries-old fermentation practices.",
+    "probe_question": "What beverage did Maria taste at the end of the tour?",
+    "answer": "wine",
+    "items": [
+      {
+        "concept": "wine",
+        "label": "load_bearing",
+        "role": "beverage made from grapes"
+      },
+      {
+        "concept": "grapes",
+        "label": "distractor",
+        "role": "main crop in the context"
+      },
+      {
+        "concept": "vineyard",
+        "label": "distractor",
+        "role": "place Maria visited"
+      },
+      {
+        "concept": "bordeaux",
+        "label": "distractor",
+        "role": "region described"
+      },
+      {
+        "concept": "tour",
+        "label": "filler",
+        "role": "neutral word from the context"
+      }
+    ]
+  },
+  {
+    "context": "At the art exhibit, Kayla studied a detailed canvas showing a woman with a mysterious smile. The artist had cleverly used light and shadow, capturing an enigmatic expression that has fascinated people for centuries. Many visitors recognized the piece from books and documentaries.",
+    "probe_question": "What is the nationality of the famous artist who created this painting?",
+    "answer": "italian",
+    "items": [
+      {
+        "concept": "italian",
+        "label": "load_bearing",
+        "role": "nationality of the artist implied"
+      },
+      {
+        "concept": "canvas",
+        "label": "distractor",
+        "role": "medium mentioned in context"
+      },
+      {
+        "concept": "smile",
+        "label": "distractor",
+        "role": "notable feature discussed"
+      },
+      {
+        "concept": "artist",
+        "label": "distractor",
+        "role": "person who painted"
+      },
+      {
+        "concept": "book",
+        "label": "filler",
+        "role": "neutral word from context"
+      },
+      {
+        "concept": "shadow",
+        "label": "filler",
+        "role": "neutral descriptive word"
+      }
+    ]
+  },
+  {
+    "context": "Before boarding the massive vessel, Julia checked her ticket for the departure city. The journey would begin in Yokohama and take her across the Pacific. She was excited to see Honolulu before returning home.",
+    "probe_question": "In which country did Julia's journey start?",
+    "answer": "japan",
+    "items": [
+      {
+        "concept": "japan",
+        "label": "load_bearing",
+        "role": "country where Yokohama is located"
+      },
+      {
+        "concept": "yokohama",
+        "label": "distractor",
+        "role": "city mentioned explicitly"
+      },
+      {
+        "concept": "honolulu",
+        "label": "distractor",
+        "role": "destination city"
+      },
+      {
+        "concept": "vessel",
+        "label": "distractor",
+        "role": "ship Julia boards"
+      },
+      {
+        "concept": "ticket",
+        "label": "filler",
+        "role": "neutral noun in context"
+      },
+      {
+        "concept": "departure",
+        "label": "filler",
+        "role": "neutral word from context"
+      }
+    ]
+  },
+  {
+    "context": "Under the full moon, the howling carried across the snowy forest. Owen shivered, pulling his jacket tighter as the chilling sound echoed from the trees. He remembered campfire tales about fierce predators living in packs during the cold season.",
+    "probe_question": "Which animal was likely making the howling sound Owen heard?",
+    "answer": "wolf",
+    "items": [
+      {
+        "concept": "wolf",
+        "label": "load_bearing",
+        "role": "animal implied by howling in packs"
+      },
+      {
+        "concept": "moon",
+        "label": "distractor",
+        "role": "celestial body described"
+      },
+      {
+        "concept": "forest",
+        "label": "distractor",
+        "role": "location in context"
+      },
+      {
+        "concept": "jacket",
+        "label": "filler",
+        "role": "neutral clothing word"
+      },
+      {
+        "concept": "snow",
+        "label": "filler",
+        "role": "neutral descriptor in context"
+      }
+    ]
+  },
+  {
+    "context": "On her birthday, Maya received a small envelope from her uncle in Milan. She excitedly tore it open and found a beautifully painted postcard featuring the grand Duomo cathedral. The message on the back included a stamp from Poste Italiane. Maya placed the card next to her collection from Kyoto and Toronto. She looked forward to writing a thank-you note in response.",
+    "probe_question": "Which country is Maya's uncle most likely living in?",
+    "answer": "italy",
+    "items": [
+      {
+        "concept": "duomo",
+        "label": "distractor",
+        "role": "Mentioned as a cathedral on the postcard"
+      },
+      {
+        "concept": "milan",
+        "label": "distractor",
+        "role": "Mentioned as the uncle's city"
+      },
+      {
+        "concept": "postcard",
+        "label": "filler",
+        "role": "Maya collects these"
+      },
+      {
+        "concept": "italy",
+        "label": "load_bearing",
+        "role": "Country for Milan, required to answer"
+      },
+      {
+        "concept": "kyoto",
+        "label": "filler",
+        "role": "Referenced as a place Maya collected postcards from"
+      }
+    ]
+  },
+  {
+    "context": "The science museum hosted an evening event with interactive displays. At one exhibit, visitors spun a wheel covered in questions about the solar system. When the arrow stopped, a guide would ask about red storms, icy moons, or the planet with the largest rings. Children lined up, eager to test their space knowledge.",
+    "probe_question": "Which planet's rings were probably featured at the exhibit?",
+    "answer": "saturn",
+    "items": [
+      {
+        "concept": "rings",
+        "label": "distractor",
+        "role": "Mentioned regarding a planet"
+      },
+      {
+        "concept": "exhibit",
+        "label": "filler",
+        "role": "Refers to museum display"
+      },
+      {
+        "concept": "saturn",
+        "label": "load_bearing",
+        "role": "Planet with largest rings, needed to answer"
+      },
+      {
+        "concept": "storm",
+        "label": "distractor",
+        "role": "Appears as 'red storms'"
+      },
+      {
+        "concept": "moon",
+        "label": "filler",
+        "role": "Mentioned as 'icy moons'"
+      }
+    ]
+  },
+  {
+    "context": "Sharon set up a tent in the dense green woods, listening to hushed movements in the undergrowth. When dusk fell, she started a small fire and cooked beans in a pan. The air was cool, filled with the scent of pine. Rather than sleeping inside, Sharon sat by the flames, enjoying the tranquility of being surrounded by nature.",
+    "probe_question": "In what type of environment did Sharon spend the night?",
+    "answer": "forest",
+    "items": [
+      {
+        "concept": "tent",
+        "label": "filler",
+        "role": "Sharon set this up at the location"
+      },
+      {
+        "concept": "fire",
+        "label": "distractor",
+        "role": "Mentioned as source of warmth and light"
+      },
+      {
+        "concept": "forest",
+        "label": "load_bearing",
+        "role": "Environment described by 'woods', needs bridging"
+      },
+      {
+        "concept": "beans",
+        "label": "filler",
+        "role": "Food Sharon cooked"
+      },
+      {
+        "concept": "pine",
+        "label": "distractor",
+        "role": "Mentioned as a scent in the context"
+      }
+    ]
+  },
+  {
+    "context": "On the festival weekend, hundreds gathered along the banks to watch intricately decorated boats race down the wide, muddy waterway. Loud drums echoed as rowers paddled furiously in rhythm. Food stalls lined the shore, selling spicy snacks to excited onlookers. This annual event is the highlight of summer in the city.",
+    "probe_question": "What kind of body of water were the boats racing on?",
+    "answer": "river",
+    "items": [
+      {
+        "concept": "boats",
+        "label": "distractor",
+        "role": "Mentioned as racing down the waterway"
+      },
+      {
+        "concept": "shore",
+        "label": "filler",
+        "role": "Food stalls located here"
+      },
+      {
+        "concept": "city",
+        "label": "distractor",
+        "role": "Event is the highlight of this"
+      },
+      {
+        "concept": "river",
+        "label": "load_bearing",
+        "role": "Waterway inferred from context, never stated directly"
+      },
+      {
+        "concept": "summer",
+        "label": "filler",
+        "role": "Season associated with the event"
+      }
+    ]
+  },
+  {
+    "context": "For the annual peace treaty meeting, representatives gathered in Oslo. The heads of multiple nations attended, bringing with them documents and flags. Norwegian cuisine was served throughout the event. Security was tight around the perimeter, and press from several continents covered the proceedings.",
+    "probe_question": "In which country did the peace treaty meeting take place?",
+    "answer": "norway",
+    "items": [
+      {
+        "concept": "norway",
+        "label": "load_bearing",
+        "role": "Country associated with Oslo, needed for answer"
+      },
+      {
+        "concept": "oslo",
+        "label": "distractor",
+        "role": "City mentioned in context"
+      },
+      {
+        "concept": "security",
+        "label": "distractor",
+        "role": "Word from context, not relevant to probe"
+      },
+      {
+        "concept": "nations",
+        "label": "filler",
+        "role": "Neutral context word"
+      },
+      {
+        "concept": "press",
+        "label": "filler",
+        "role": "Neutral context word"
+      }
+    ]
+  },
+  {
+    "context": "After crossing the finish line with his arms raised, the athlete accepted a gold medal on the podium. He ran the last lap faster than anyone else and was immediately congratulated by his coach. The crowd cheered while he carried his country's flag during the victory lap.",
+    "probe_question": "What is the likely event in which this athlete competed?",
+    "answer": "race",
+    "items": [
+      {
+        "concept": "race",
+        "label": "load_bearing",
+        "role": "General event type deduced from finish line and laps"
+      },
+      {
+        "concept": "medal",
+        "label": "distractor",
+        "role": "Vivid word from context"
+      },
+      {
+        "concept": "coach",
+        "label": "distractor",
+        "role": "Person mentioned in context"
+      },
+      {
+        "concept": "crowd",
+        "label": "filler",
+        "role": "Neutral context word"
+      },
+      {
+        "concept": "lap",
+        "label": "filler",
+        "role": "Neutral word from context"
+      }
+    ]
+  },
+  {
+    "context": "Maria is known for her expertise in the culinary arts and her restaurant was awarded three Michelin stars last year. Every weekend, people line up outside her establishment just to try her risotto. Food critics regularly travel from distant cities to review her dishes. Last spring, she was invited to create the main course at a gala benefiting local farmers.",
+    "probe_question": "What field is Maria prominent in?",
+    "answer": "cooking",
+    "items": [
+      {
+        "concept": "restaurant",
+        "label": "distractor",
+        "role": "appears in context and is a vivid element"
+      },
+      {
+        "concept": "arts",
+        "label": "filler",
+        "role": "neutral word appearing in context"
+      },
+      {
+        "concept": "cooking",
+        "label": "load_bearing",
+        "role": "not stated, but necessary to bridge from 'culinary' and 'restaurant'"
+      },
+      {
+        "concept": "stars",
+        "label": "filler",
+        "role": "neutral and present in the context"
+      },
+      {
+        "concept": "critics",
+        "label": "distractor",
+        "role": "vivid word from context; not useful for the probe"
+      }
+    ]
+  },
+  {
+    "context": "At sunrise, the crew scrambled to check the engines before embarkation. They ensured that all lifeboats were intact and reviewed safety protocols. Captain Hughes examined the navigation charts, while passengers marveled at the massive vessel from the bustling port. The majestic Queen Antares awaited its first journey across the Atlantic.",
+    "probe_question": "What type of transportation is the Queen Antares most likely to be?",
+    "answer": "ship",
+    "items": [
+      {
+        "concept": "captain",
+        "label": "distractor",
+        "role": "vivid and present in the context"
+      },
+      {
+        "concept": "port",
+        "label": "distractor",
+        "role": "evocative, appears in the context"
+      },
+      {
+        "concept": "journey",
+        "label": "filler",
+        "role": "neutral, in context"
+      },
+      {
+        "concept": "ship",
+        "label": "load_bearing",
+        "role": "vehicle implied but not mentioned; necessary bridge"
+      },
+      {
+        "concept": "engines",
+        "label": "filler",
+        "role": "neutral, context-present word"
+      }
+    ]
+  },
+  {
+    "context": "During the lunar eclipse, the sky slowly turned a deep shade of red. Spectators across continents watched as celestial bodies aligned perfectly. Telescopes were focused on the glowing orb as astronomers recorded data from observatories in remote locations. The event lasted for almost two hours before normal nightfall resumed.",
+    "probe_question": "Which heavenly body was eclipsed?",
+    "answer": "moon",
+    "items": [
+      {
+        "concept": "sky",
+        "label": "filler",
+        "role": "neutral and present in context"
+      },
+      {
+        "concept": "moon",
+        "label": "load_bearing",
+        "role": "not literal in the context but inferred by 'lunar' and eclipse description"
+      },
+      {
+        "concept": "red",
+        "label": "distractor",
+        "role": "vivid and present, but useless for the probe"
+      },
+      {
+        "concept": "telescopes",
+        "label": "filler",
+        "role": "neutral, in context"
+      },
+      {
+        "concept": "eclipse",
+        "label": "distractor",
+        "role": "vivid and appears in context"
+      }
+    ]
+  },
+  {
+    "context": "Hannah carried a stethoscope in her white coat pocket and checked her first patient\u2019s chart. She greeted a colleague outside the intensive care unit and washed her hands before entering the room. For ten years, she has specialized in conditions involving electrical impulses and rhythms.",
+    "probe_question": "What organ does Hannah's specialty concern?",
+    "answer": "heart",
+    "items": [
+      {
+        "concept": "patient",
+        "label": "distractor",
+        "role": "appears in context; draws emotional attention"
+      },
+      {
+        "concept": "heart",
+        "label": "load_bearing",
+        "role": "not stated, but required to bridge from 'electrical impulses and rhythms'"
+      },
+      {
+        "concept": "chart",
+        "label": "filler",
+        "role": "neutral, present"
+      },
+      {
+        "concept": "stethoscope",
+        "label": "distractor",
+        "role": "vivid medical object, present in context"
+      },
+      {
+        "concept": "unit",
+        "label": "filler",
+        "role": "neutral word from context"
+      }
+    ]
+  },
+  {
+    "context": "The document was written in Kanji characters and originated from a city near Mount Fuji. Researchers had difficulty translating some of the idioms unique to the region. The manuscript, found in a samurai estate, offers rare insight into court customs from centuries ago.",
+    "probe_question": "What country did the document come from?",
+    "answer": "japan",
+    "items": [
+      {
+        "concept": "kanji",
+        "label": "distractor",
+        "role": "evocative, occurs in context"
+      },
+      {
+        "concept": "manuscript",
+        "label": "filler",
+        "role": "neutral, context word"
+      },
+      {
+        "concept": "japan",
+        "label": "load_bearing",
+        "role": "not in context, but the necessary link from 'Kanji' and 'Mount Fuji'"
+      },
+      {
+        "concept": "samurai",
+        "label": "distractor",
+        "role": "present, vivid and emotional"
+      },
+      {
+        "concept": "city",
+        "label": "filler",
+        "role": "neutral, appears in context"
+      }
+    ]
+  },
+  {
+    "context": "In the chilly waters north of Europe, the fishing industry faces challenges due to overfishing and climate change. The capital city, Reykjavik, is a hub for seafood export in this island nation. Geothermal energy keeps homes warm even during winter storms, and tourists flock to see the geysers and volcanic landscapes.",
+    "probe_question": "Which country is being described in the context?",
+    "answer": "iceland",
+    "items": [
+      {
+        "concept": "island",
+        "label": "distractor",
+        "role": "Found in the phrase 'island nation' in the context."
+      },
+      {
+        "concept": "energy",
+        "label": "filler",
+        "role": "Referenced in relation to heating homes."
+      },
+      {
+        "concept": "tourist",
+        "label": "filler",
+        "role": "Mentioned as people visiting."
+      },
+      {
+        "concept": "iceland",
+        "label": "load_bearing",
+        "role": "Country inferred from Reykjavik and geothermal features."
+      },
+      {
+        "concept": "fish",
+        "label": "distractor",
+        "role": "Appears in 'fishing industry.'"
+      }
+    ]
+  },
+  {
+    "context": "Famous for her discoveries concerning radioactivity, she worked in Paris alongside her husband, Pierre. Her research led to two Nobel Prizes and a legacy in science and medicine. Despite frail health caused by her work with unsafe substances, her impact remains. Hospitals still name departments after her groundbreaking contributions.",
+    "probe_question": "Which element was discovered by the scientist described here?",
+    "answer": "radium",
+    "items": [
+      {
+        "concept": "science",
+        "label": "filler",
+        "role": "Referenced as her main field."
+      },
+      {
+        "concept": "medicine",
+        "label": "distractor",
+        "role": "Explicitly mentioned in 'legacy in science and medicine.'"
+      },
+      {
+        "concept": "hospital",
+        "label": "distractor",
+        "role": "Mentioned regarding departments."
+      },
+      {
+        "concept": "radium",
+        "label": "load_bearing",
+        "role": "Element discovered by Marie Curie, not stated but inferred from context."
+      },
+      {
+        "concept": "paris",
+        "label": "filler",
+        "role": "Location of her work, appears in context."
+      }
+    ]
+  },
+  {
+    "context": "The spacecraft zipped past the red, dusty planet, sending back stunning images of enormous canyons and ancient riverbeds. Scientists believe that, at one time, water might have flowed on its surface. The current climate, frigid and thin-atmosphered, makes it inhospitable for life as we know it.",
+    "probe_question": "Which planet did the spacecraft pass by?",
+    "answer": "mars",
+    "items": [
+      {
+        "concept": "planet",
+        "label": "filler",
+        "role": "Appears as a general noun in the context."
+      },
+      {
+        "concept": "canyon",
+        "label": "distractor",
+        "role": "Explicitly described as a feature."
+      },
+      {
+        "concept": "river",
+        "label": "distractor",
+        "role": "Mentioned as a past feature."
+      },
+      {
+        "concept": "mars",
+        "label": "load_bearing",
+        "role": "Specific planet inferred from 'red, dusty' and environmental clues."
+      },
+      {
+        "concept": "surface",
+        "label": "filler",
+        "role": "Referenced in the passage."
+      }
+    ]
+  },
+  {
+    "context": "During the spring festival, families decorate their homes with red lanterns and give children envelopes filled with money. Fireworks light up the night, scaring away evil spirits, and special dumplings are eaten for good luck. This annual event is celebrated across many Asian countries, but its origins are deeply rooted in one nation's history.",
+    "probe_question": "Which country is most closely associated with these spring festival traditions?",
+    "answer": "china",
+    "items": [
+      {
+        "concept": "festival",
+        "label": "filler",
+        "role": "Mentioned in the context as an event."
+      },
+      {
+        "concept": "lantern",
+        "label": "distractor",
+        "role": "Explicitly referenced as decoration."
+      },
+      {
+        "concept": "money",
+        "label": "distractor",
+        "role": "Mentioned in 'envelopes filled with money.'"
+      },
+      {
+        "concept": "china",
+        "label": "load_bearing",
+        "role": "Country inferred from cultural traditions, but not stated."
+      },
+      {
+        "concept": "luck",
+        "label": "filler",
+        "role": "Referenced as in 'good luck.'"
+      }
+    ]
+  },
+  {
+    "context": "Eleanor loves sketching old buildings. In her latest trip, she visited the Tower of Pisa, amazed by its unusual tilt. She scribbled rapidly in her notebook as tour guides explained its history dating back to the 12th century. Tourists crowded the lawn, each hoping to capture the moment the famous monument seemed to defy physics.",
+    "probe_question": "In which country did Eleanor sketch the famous tower?",
+    "answer": "italy",
+    "items": [
+      {
+        "concept": "italy",
+        "label": "load_bearing",
+        "role": "Country that must be inferred from 'Tower of Pisa'; not stated anywhere"
+      },
+      {
+        "concept": "tower",
+        "label": "distractor",
+        "role": "Literally mentioned, vivid but not a country"
+      },
+      {
+        "concept": "notebook",
+        "label": "distractor",
+        "role": "Literally mentioned, not relevant"
+      },
+      {
+        "concept": "tourists",
+        "label": "distractor",
+        "role": "Appear in context, but not the answer"
+      },
+      {
+        "concept": "lawn",
+        "label": "filler",
+        "role": "Neutral and present in the context"
+      }
+    ]
+  },
+  {
+    "context": "Dr. Chao adjusted his stethoscope and asked his patient to take a deep breath. He listened carefully to the patient's chest, noting the rhythm and pattern of sounds. After the examination, Dr. Chao wrote notes in the chart before recommending follow-up if any chest pain returned.",
+    "probe_question": "What part of the body is Dr. Chao most focused on during the exam?",
+    "answer": "lungs",
+    "items": [
+      {
+        "concept": "lungs",
+        "label": "load_bearing",
+        "role": "Required inference from 'chest' and 'breath'; not written"
+      },
+      {
+        "concept": "breath",
+        "label": "distractor",
+        "role": "Appears in 'take a deep breath'"
+      },
+      {
+        "concept": "pain",
+        "label": "distractor",
+        "role": "Explicit ('chest pain'), irrelevant to the body part focus"
+      },
+      {
+        "concept": "stethoscope",
+        "label": "filler",
+        "role": "Device mentioned, neutral"
+      },
+      {
+        "concept": "chart",
+        "label": "filler",
+        "role": "Mentioned as where notes are written"
+      }
+    ]
+  },
+  {
+    "context": "Pablo loved learning about ancient scripts and was fascinated by the symbols on a rosetta stone replica at the museum. He admired how scholars eventually decoded its inscriptions because the same message was written in three tongues. The fragment, although damaged, held secrets that unlocked the meaning of Egyptian hieroglyphs.",
+    "probe_question": "What skill did scholars use to interpret the Rosetta Stone?",
+    "answer": "translation",
+    "items": [
+      {
+        "concept": "translation",
+        "label": "load_bearing",
+        "role": "Must infer from 'three tongues' and decoding; not stated"
+      },
+      {
+        "concept": "museum",
+        "label": "filler",
+        "role": "Present, neutral"
+      },
+      {
+        "concept": "symbols",
+        "label": "distractor",
+        "role": "Vivid and mentioned"
+      },
+      {
+        "concept": "hieroglyphs",
+        "label": "distractor",
+        "role": "Explicit, vivid, useless for probe"
+      },
+      {
+        "concept": "scholars",
+        "label": "filler",
+        "role": "Neutral, mentioned"
+      },
+      {
+        "concept": "replica",
+        "label": "distractor",
+        "role": "Explicitly named, but not relevant to the probe"
+      }
+    ]
+  }
+]

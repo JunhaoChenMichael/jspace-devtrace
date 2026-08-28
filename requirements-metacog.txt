@@ -1,0 +1,4 @@
+# Campaign-specific environment. Qwen3Config is unavailable in the repository's
+# older host environment, so the capable-scale M0/M1 run needs this stronger pin.
+-r requirements.txt
+transformers>=4.51.3,<5

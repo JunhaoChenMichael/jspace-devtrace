@@ -1,0 +1,1671 @@
+[
+  {
+    "context": "The Plaza Mayor is an impressive open space surrounded by historic buildings. It is renowned for its lively cafes and central statue of King Philip III. The city is famous for its passionate art scene and mouthwatering tapas. Many tourists flock here to enjoy flamenco performances. Pristine avenues bustle with life as the sun sets.",
+    "probe_question": "What language is primarily spoken in the city with the Plaza Mayor?",
+    "answer": "spanish",
+    "items": [
+      {
+        "concept": "statue",
+        "label": "distractor",
+        "role": "central plaza feature"
+      },
+      {
+        "concept": "flamenco",
+        "label": "distractor",
+        "role": "popular attraction"
+      },
+      {
+        "concept": "tapas",
+        "label": "distractor",
+        "role": "local food highlight"
+      },
+      {
+        "concept": "building",
+        "label": "filler",
+        "role": "describes surroundings"
+      },
+      {
+        "concept": "bridge",
+        "label": "filler",
+        "role": "part of city landscape"
+      },
+      {
+        "concept": "madrid",
+        "label": "load_bearing",
+        "role": "the city where Plaza Mayor is located (inferred but not stated)"
+      }
+    ]
+  },
+  {
+    "context": "She arrived at the NASA headquarters to begin her summer internship. Her passion for rockets and planetary exploration drove her to study advanced physics. Every day, she passed photographs of Mars and Saturn lining the hallways. She looked forward to attending a talk by a celebrated astronaut.",
+    "probe_question": "What is the national currency of the country where she interns?",
+    "answer": "dollar",
+    "items": [
+      {
+        "concept": "nasa",
+        "label": "distractor",
+        "role": "organization mentioned"
+      },
+      {
+        "concept": "rocket",
+        "label": "distractor",
+        "role": "her area of interest"
+      },
+      {
+        "concept": "saturn",
+        "label": "distractor",
+        "role": "celestial body in the context"
+      },
+      {
+        "concept": "intern",
+        "label": "filler",
+        "role": "role she assumes"
+      },
+      {
+        "concept": "physics",
+        "label": "filler",
+        "role": "her field of study"
+      },
+      {
+        "concept": "usa",
+        "label": "load_bearing",
+        "role": "the country where NASA headquarters is, not stated"
+      }
+    ]
+  },
+  {
+    "context": "As the actor took the stage at the Steppenwolf Theatre, the audience held its breath. Set pieces reflected the gritty urban vibe famous throughout the city. Applause thundered as the curtain closed, echoing the passion of the region for live performance. The heavy snow outside made the city lights shimmer.",
+    "probe_question": "What freshwater lake lies near the city known for Steppenwolf Theatre?",
+    "answer": "michigan",
+    "items": [
+      {
+        "concept": "actor",
+        "label": "distractor",
+        "role": "main participant in context"
+      },
+      {
+        "concept": "snow",
+        "label": "distractor",
+        "role": "describes weather"
+      },
+      {
+        "concept": "theatre",
+        "label": "distractor",
+        "role": "venue in passage"
+      },
+      {
+        "concept": "stage",
+        "label": "filler",
+        "role": "part of performance"
+      },
+      {
+        "concept": "curtain",
+        "label": "filler",
+        "role": "feature of theater"
+      },
+      {
+        "concept": "chicago",
+        "label": "load_bearing",
+        "role": "city where Steppenwolf Theatre is, inferred"
+      }
+    ]
+  },
+  {
+    "context": "Alex listened attentively as his instructor explained the oxidation process responsible for converting glucose into energy. The seminar room was filled with diagrams of various cell components. At the end, Alex joined his classmates in discussing how mitochondria function. Everyone agreed on the importance of ATP for cellular activities.",
+    "probe_question": "What element is the final electron acceptor in the process described in Alex\u2019s seminar?",
+    "answer": "oxygen",
+    "items": [
+      {
+        "concept": "mitochondria",
+        "label": "distractor",
+        "role": "organelle in context"
+      },
+      {
+        "concept": "glucose",
+        "label": "distractor",
+        "role": "substrate mentioned"
+      },
+      {
+        "concept": "atp",
+        "label": "distractor",
+        "role": "energy molecule discussed"
+      },
+      {
+        "concept": "energy",
+        "label": "filler",
+        "role": "result of oxidation"
+      },
+      {
+        "concept": "cell",
+        "label": "filler",
+        "role": "central context entity"
+      },
+      {
+        "concept": "respiration",
+        "label": "load_bearing",
+        "role": "the biochemical process described, not directly named"
+      }
+    ]
+  },
+  {
+    "context": "During the early morning, the temple bells rang out over the city of Varanasi, calling pilgrims to the river\u2019s edge. Boats drifted gently on the sacred waters as worshippers released flower offerings. The ghats came alive with prayers and chants, steeped in centuries-old traditions. Smoke from incense curled above the crowd.",
+    "probe_question": "Which river are the pilgrims worshipping at?",
+    "answer": "ganges",
+    "items": [
+      {
+        "concept": "temple",
+        "label": "distractor",
+        "role": "site of religious activity"
+      },
+      {
+        "concept": "incense",
+        "label": "distractor",
+        "role": "creates atmosphere in passage"
+      },
+      {
+        "concept": "boat",
+        "label": "distractor",
+        "role": "means of moving on water"
+      },
+      {
+        "concept": "flower",
+        "label": "filler",
+        "role": "item offered by worshippers"
+      },
+      {
+        "concept": "city",
+        "label": "filler",
+        "role": "describes Varanasi"
+      },
+      {
+        "concept": "india",
+        "label": "load_bearing",
+        "role": "country where Varanasi is located, not mentioned explicitly"
+      }
+    ]
+  },
+  {
+    "context": "A shepherd in a remote highland region wakes before dawn to lead his flock to better pasture. The valley is narrow and blanketed in a crisp mist. Over the course of the short summer, grasses grow thick and green. He must remain vigilant for wolves, which have been sighted near his sheep.",
+    "probe_question": "What is the traditional drink commonly consumed to stay warm during chilly mornings in this region?",
+    "answer": "tea",
+    "items": [
+      {
+        "concept": "sheep",
+        "label": "filler",
+        "role": "The main livestock the shepherd guards."
+      },
+      {
+        "concept": "pasture",
+        "label": "distractor",
+        "role": "Place where animals graze."
+      },
+      {
+        "concept": "wolf",
+        "label": "distractor",
+        "role": "Predator threatening the flock."
+      },
+      {
+        "concept": "valley",
+        "label": "filler",
+        "role": "The setting is a valley."
+      },
+      {
+        "concept": "britain",
+        "label": "load_bearing",
+        "role": "Highland with sheep and mist strongly implies Britain, bridge to tea."
+      }
+    ]
+  },
+  {
+    "context": "The coastal town thrives on seafood, with its picturesque harbor filled with colorful boats. Each afternoon, fishermen unload crates of lobster and crab, destined for the bustling market. Local restaurants display daily specials on chalkboards, enticing both residents and tourists. Summers are especially busy due to an influx of vacationers.",
+    "probe_question": "What kind of natural event could threaten the town's boats during hurricane season?",
+    "answer": "flood",
+    "items": [
+      {
+        "concept": "lobster",
+        "label": "distractor",
+        "role": "A main seafood caught at the town."
+      },
+      {
+        "concept": "market",
+        "label": "distractor",
+        "role": "Bustling area for seafood sales."
+      },
+      {
+        "concept": "harbor",
+        "label": "filler",
+        "role": "Describes the picturesque setting."
+      },
+      {
+        "concept": "storm",
+        "label": "load_bearing",
+        "role": "Bridge concept linking hurricanes to flood risks."
+      }
+    ]
+  },
+  {
+    "context": "On the outskirts of the ancient city stood a grand stone amphitheater. Thousands gathered here to watch contests and spectacles. The emperor, seated in a lavish box, signaled the beginning of each event. Spectators cheered as gladiators entered the arena, hoping for victory and favor.",
+    "probe_question": "Which language was primarily spoken in the city during these events?",
+    "answer": "latin",
+    "items": [
+      {
+        "concept": "arena",
+        "label": "filler",
+        "role": "The structure where contests took place."
+      },
+      {
+        "concept": "emperor",
+        "label": "distractor",
+        "role": "The leader who attended the games."
+      },
+      {
+        "concept": "box",
+        "label": "distractor",
+        "role": "The emperor's seating."
+      },
+      {
+        "concept": "gladiator",
+        "label": "distractor",
+        "role": "Participants in the spectacles."
+      },
+      {
+        "concept": "rome",
+        "label": "load_bearing",
+        "role": "Ancient amphitheater, emperor, and gladiators imply Rome."
+      }
+    ]
+  },
+  {
+    "context": "The innovative engineer sketched new circuits late into the night, surrounded by open textbooks and half-empty coffee cups. She recently joined a startup dedicated to clean energy. Her latest design aims to increase the efficiency of solar panels. Colleagues gather each Friday to brainstorm and share breakthroughs.",
+    "probe_question": "Which subatomic particle does her work most directly concern when improving energy flow in solar panels?",
+    "answer": "electron",
+    "items": [
+      {
+        "concept": "engineer",
+        "label": "filler",
+        "role": "Main agent designing circuits."
+      },
+      {
+        "concept": "circuit",
+        "label": "distractor",
+        "role": "Topic of engineer's sketches."
+      },
+      {
+        "concept": "startup",
+        "label": "distractor",
+        "role": "Organization she works for."
+      },
+      {
+        "concept": "semiconductor",
+        "label": "load_bearing",
+        "role": "Key material in solar panels, bridge to electrons."
+      }
+    ]
+  },
+  {
+    "context": "During the annual cherry blossom festival, a crowd gathered near a large shrine to celebrate the changing of the seasons. Street food vendors filled the narrow lanes, selling candied fruit and rice cakes. Nearby, paper lanterns hung from poles, swaying lightly in the evening air. The event concluded with a performance of traditional taiko drums, echoing through the park.",
+    "probe_question": "What is the official currency used for most transactions at this festival?",
+    "answer": "yen",
+    "items": [
+      {
+        "concept": "lantern",
+        "label": "distractor",
+        "role": "colorful object in context"
+      },
+      {
+        "concept": "drum",
+        "label": "distractor",
+        "role": "featured instrument in context"
+      },
+      {
+        "concept": "crowd",
+        "label": "filler",
+        "role": "describes attendees"
+      },
+      {
+        "concept": "shrine",
+        "label": "filler",
+        "role": "location for event"
+      },
+      {
+        "concept": "japan",
+        "label": "load_bearing",
+        "role": "inferred country based on clues"
+      }
+    ]
+  },
+  {
+    "context": "Alex set her alarm early to practice skating at the local rink before school. She wore thick padded gloves and laced up her boots carefully before stepping onto the smooth surface. Sarah joined her after a hot chocolate, and together they rehearsed complex turns near the goalposts. The coach watched approvingly from a bench, jotting notes.",
+    "probe_question": "Which equipment, aside from gloves and boots, is essential for this activity?",
+    "answer": "stick",
+    "items": [
+      {
+        "concept": "bench",
+        "label": "filler",
+        "role": "where coach sits"
+      },
+      {
+        "concept": "goalpost",
+        "label": "distractor",
+        "role": "location on rink"
+      },
+      {
+        "concept": "alarm",
+        "label": "distractor",
+        "role": "device used to wake up"
+      },
+      {
+        "concept": "rink",
+        "label": "filler",
+        "role": "place of activity"
+      },
+      {
+        "concept": "hockey",
+        "label": "load_bearing",
+        "role": "inferred sport"
+      }
+    ]
+  },
+  {
+    "context": "The massive hurricane left the city submerged for several days. Many streets were inaccessible as water levels rose above doorways. Rescue boats navigated the neighborhoods, searching for stranded families. Power outages persisted, disrupting communication. Locals recalled similar devastation occurring seven years ago.",
+    "probe_question": "Which unit did meteorologists use to report the wind speed during this storm?",
+    "answer": "miles per hour",
+    "items": [
+      {
+        "concept": "hurricane",
+        "label": "distractor",
+        "role": "Explicit event in the context"
+      },
+      {
+        "concept": "doorway",
+        "label": "distractor",
+        "role": "Part of submerged buildings"
+      },
+      {
+        "concept": "unit",
+        "label": "filler",
+        "role": "Implied in question, not in context"
+      },
+      {
+        "concept": "united",
+        "label": "load_bearing",
+        "role": "The storm occurs in a U.S. city, but this is unstated and critical for units used"
+      }
+    ]
+  },
+  {
+    "context": "During the patient\u2019s operation, a surgical team worked meticulously through her cranium. Monitoring devices tracked her vital signs. After closing the incision, they transported her to recovery. She was able to recount vivid memories shortly afterward, surprising the nurses.",
+    "probe_question": "Which sense was directly involved in the body part accessed during the procedure?",
+    "answer": "vision",
+    "items": [
+      {
+        "concept": "operation",
+        "label": "distractor",
+        "role": "Central procedure in the context"
+      },
+      {
+        "concept": "cranium",
+        "label": "distractor",
+        "role": "Site of medical attention"
+      },
+      {
+        "concept": "memory",
+        "label": "distractor",
+        "role": "Lost/reported by the patient"
+      },
+      {
+        "concept": "nurse",
+        "label": "filler",
+        "role": "Mentioned professional"
+      },
+      {
+        "concept": "monitor",
+        "label": "filler",
+        "role": "Appears as device"
+      },
+      {
+        "concept": "brain",
+        "label": "load_bearing",
+        "role": "Accessed through the cranium, not stated; link to senses"
+      }
+    ]
+  },
+  {
+    "context": "The red and gold banners fluttered along the ancient city walls, celebrating the annual festival. Crowds sampled steamed dumplings and watched dancers perform under lantern light. The river glimmered beside pagodas as fireworks boomed overhead. Tourists captured the moment to remember their journey.",
+    "probe_question": "Which system of characters is primarily used for public writing during this festival?",
+    "answer": "hanzi",
+    "items": [
+      {
+        "concept": "banners",
+        "label": "distractor",
+        "role": "Decoration mentioned in context"
+      },
+      {
+        "concept": "dumpling",
+        "label": "distractor",
+        "role": "Festival food"
+      },
+      {
+        "concept": "tourist",
+        "label": "filler",
+        "role": "Participants in the event"
+      },
+      {
+        "concept": "firework",
+        "label": "filler",
+        "role": "Festival highlight"
+      },
+      {
+        "concept": "china",
+        "label": "load_bearing",
+        "role": "Implied festival location, necessary for script inference"
+      }
+    ]
+  },
+  {
+    "context": "With hours left until midnight, Laura mixed flour, sugar, eggs, and butter in a bowl. She carefully spread frosting over round cakes. When the guests arrived, she presented the colorful treats on a stand near the window. They clapped and took photos, delighted for her accomplishment.",
+    "probe_question": "What type of clothing accessory did Laura likely use on her head during preparation?",
+    "answer": "hairnet",
+    "items": [
+      {
+        "concept": "cake",
+        "label": "distractor",
+        "role": "Central item described"
+      },
+      {
+        "concept": "butter",
+        "label": "distractor",
+        "role": "Ingredient listed"
+      },
+      {
+        "concept": "window",
+        "label": "distractor",
+        "role": "Location where cakes displayed"
+      },
+      {
+        "concept": "guest",
+        "label": "filler",
+        "role": "Event attendees"
+      },
+      {
+        "concept": "stand",
+        "label": "filler",
+        "role": "Structure for displaying cakes"
+      },
+      {
+        "concept": "bakery",
+        "label": "load_bearing",
+        "role": "Implied setting by activity and presentation, leads to inferred clothing norms"
+      }
+    ]
+  },
+  {
+    "context": "After years of training, Maria received her white coat and began working on the cardiology floor of the hospital. She often consulted with surgeons about complex valve operations and spent her mornings reviewing electrocardiograms for irregularities. Patients trusted her expertise to manage their high blood pressure and cholesterol.",
+    "probe_question": "Which mineral's deficiency can lead to severely impaired heart rhythm?",
+    "answer": "potassium",
+    "items": [
+      {
+        "concept": "surgeon",
+        "label": "distractor",
+        "role": "vivid profession in medical context"
+      },
+      {
+        "concept": "hospital",
+        "label": "filler",
+        "role": "neutral place"
+      },
+      {
+        "concept": "cholesterol",
+        "label": "distractor",
+        "role": "emotional health risk"
+      },
+      {
+        "concept": "valve",
+        "label": "filler",
+        "role": "neutral anatomical structure"
+      },
+      {
+        "concept": "heart",
+        "label": "load_bearing",
+        "role": "organ related to the bridge fact"
+      }
+    ]
+  },
+  {
+    "context": "The rover Perseverance touched down on a dusty plain strewn with strange rocks. Scientists celebrated from the space agency's control room as telemetry confirmed success. Over the next few days, the rover analyzed soil samples and sent high-resolution images back to Earth.",
+    "probe_question": "In which year did the first human set foot on the planet visited by the Perseverance rover?",
+    "answer": "never",
+    "items": [
+      {
+        "concept": "rover",
+        "label": "filler",
+        "role": "neutral machine described"
+      },
+      {
+        "concept": "rock",
+        "label": "distractor",
+        "role": "emotional, environment focus"
+      },
+      {
+        "concept": "scientist",
+        "label": "distractor",
+        "role": "vivid personnel"
+      },
+      {
+        "concept": "earth",
+        "label": "filler",
+        "role": "neutral place"
+      },
+      {
+        "concept": "mars",
+        "label": "load_bearing",
+        "role": "planet inferred from the rover"
+      }
+    ]
+  },
+  {
+    "context": "During the summer, Anna devoted her time to practicing her violin, especially the pieces composed by Tchaikovsky. Her teacher noticed significant improvement in her technique and scheduled her for a recital. The performance took place in a grand hall with elegant chandeliers and velvet seats.",
+    "probe_question": "Which family of musical instruments does Anna's main instrument belong to?",
+    "answer": "strings",
+    "items": [
+      {
+        "concept": "violin",
+        "label": "distractor",
+        "role": "vivid instrument in context"
+      },
+      {
+        "concept": "chandelier",
+        "label": "distractor",
+        "role": "emotional feature of hall"
+      },
+      {
+        "concept": "hall",
+        "label": "filler",
+        "role": "neutral venue"
+      },
+      {
+        "concept": "recital",
+        "label": "filler",
+        "role": "neutral event"
+      },
+      {
+        "concept": "orchestra",
+        "label": "load_bearing",
+        "role": "group typically featuring violins"
+      }
+    ]
+  },
+  {
+    "context": "In a remote region, archaeologists unearthed pottery shards and intricate jewelry attributed to a civilization that flourished along the Nile thousands of years ago. The artifacts revealed advanced craftsmanship and religious iconography, including depictions of falcons and beetles.",
+    "probe_question": "What is the script most commonly associated with texts from the civilization described?",
+    "answer": "hieroglyphs",
+    "items": [
+      {
+        "concept": "pottery",
+        "label": "distractor",
+        "role": "vivid artifact"
+      },
+      {
+        "concept": "jewelry",
+        "label": "distractor",
+        "role": "emotional object"
+      },
+      {
+        "concept": "falcon",
+        "label": "filler",
+        "role": "neutral depicted animal"
+      },
+      {
+        "concept": "nile",
+        "label": "filler",
+        "role": "neutral river"
+      },
+      {
+        "concept": "egypt",
+        "label": "load_bearing",
+        "role": "civilization inferred from context"
+      }
+    ]
+  },
+  {
+    "context": "Isabel spent her vacation hiking through the famous Machu Picchu ruins. She marveled at the impressive stone terraces and steep stairs, all built high in the clouds. The misty air made visibility challenging, but the sun occasionally peeked through. Local guides explained how these architectural marvels were created without the use of wheels or modern tools.",
+    "probe_question": "What language were the ancient builders most likely to have spoken?",
+    "answer": "quechua",
+    "items": [
+      {
+        "concept": "terrace",
+        "label": "distractor",
+        "role": "appears in context as striking feature"
+      },
+      {
+        "concept": "stone",
+        "label": "filler",
+        "role": "neutral material in context"
+      },
+      {
+        "concept": "stairs",
+        "label": "distractor",
+        "role": "appears in context as notable element"
+      },
+      {
+        "concept": "inca",
+        "label": "load_bearing",
+        "role": "ancient group inferred from location and ruins"
+      },
+      {
+        "concept": "mist",
+        "label": "filler",
+        "role": "neutral environmental detail"
+      }
+    ]
+  },
+  {
+    "context": "Jasper prepared a chemistry experiment in the lab. He carefully combined sodium and hydrochloric acid, observing a vigorous reaction that produced fizzing and bubbles. Afterwards, he used pH paper to check the liquid's acidity. He recorded the temperature change and disposed of the mixture in the appropriate container.",
+    "probe_question": "What gas was most likely produced during Jasper's experiment?",
+    "answer": "hydrogen",
+    "items": [
+      {
+        "concept": "sodium",
+        "label": "distractor",
+        "role": "reactant named in context"
+      },
+      {
+        "concept": "bubble",
+        "label": "distractor",
+        "role": "appears in context as observation"
+      },
+      {
+        "concept": "acid",
+        "label": "filler",
+        "role": "neutral chemical named in context"
+      },
+      {
+        "concept": "metal",
+        "label": "load_bearing",
+        "role": "class of element inferred from sodium"
+      },
+      {
+        "concept": "paper",
+        "label": "filler",
+        "role": "neutral object used in context"
+      }
+    ]
+  },
+  {
+    "context": "The ancient monument towers over the city center. Each of its limestone blocks weighs several tons. Tourists gather daily to photograph its massive pillars and listen to guides discuss its history. Legends say a goddess once protected the site with her wisdom. Restoration crews work to keep the structure standing.",
+    "probe_question": "Which continent would you visit to see the Parthenon?",
+    "answer": "europe",
+    "items": [
+      {
+        "concept": "limestone",
+        "label": "distractor",
+        "role": "construction material of monument"
+      },
+      {
+        "concept": "goddess",
+        "label": "distractor",
+        "role": "related to legend"
+      },
+      {
+        "concept": "pillars",
+        "label": "distractor",
+        "role": "feature mentioned"
+      },
+      {
+        "concept": "monument",
+        "label": "filler",
+        "role": "subject of description"
+      },
+      {
+        "concept": "greece",
+        "label": "load_bearing",
+        "role": "country where Parthenon is located"
+      }
+    ]
+  },
+  {
+    "context": "At 8 PM sharp, the curtain rose in the packed theater and a thunderous applause filled the hall. The cast performed a tragedy written centuries ago, their costumes reflecting ancient traditions. After the performance, the director bowed and received a bouquet of roses. Reviews the next day praised the passionate acting.",
+    "probe_question": "What is the main language of the country where Shakespeare was born?",
+    "answer": "english",
+    "items": [
+      {
+        "concept": "theater",
+        "label": "distractor",
+        "role": "venue of the play"
+      },
+      {
+        "concept": "costumes",
+        "label": "distractor",
+        "role": "actor attire"
+      },
+      {
+        "concept": "director",
+        "label": "filler",
+        "role": "mentioned as receiving flowers"
+      },
+      {
+        "concept": "england",
+        "label": "load_bearing",
+        "role": "birthplace of Shakespeare"
+      }
+    ]
+  },
+  {
+    "context": "After weeks of preparation, Lydia finally stood at the summit with her climbing group. The air was crisp, and clouds drifted far below their feet. At that altitude, tiny flags fluttered at a place called Uhuru Peak. Most of the team struggled with fatigue but managed to take photos at sunrise. Their guide congratulated them on reaching Africa\u2019s tallest mountain. The descent would take another day.",
+    "probe_question": "What is the local currency where Lydia reached the summit?",
+    "answer": "shilling",
+    "items": [
+      {
+        "concept": "summit",
+        "label": "distractor",
+        "role": "Mentioned as location reached"
+      },
+      {
+        "concept": "flag",
+        "label": "distractor",
+        "role": "Mentioned as a visible feature"
+      },
+      {
+        "concept": "sunrise",
+        "label": "distractor",
+        "role": "Mentioned as a time for taking photos"
+      },
+      {
+        "concept": "peak",
+        "label": "filler",
+        "role": "Neutral word from Uhuru Peak"
+      },
+      {
+        "concept": "team",
+        "label": "filler",
+        "role": "Mentioned as the climbing group"
+      },
+      {
+        "concept": "kilimanjaro",
+        "label": "load_bearing",
+        "role": "Bridge fact: Africa's tallest mountain is Mount Kilimanjaro"
+      }
+    ]
+  },
+  {
+    "context": "Selim mastered the dhole before he was ten, learning from his grandmother in the kitchen. Each winter, their table overflowed with dishes spiced with sumac. The savory breads and lentil stews attracted relatives from nearby villages. Though his family celebrated Nowruz each year, Selim\u2019s favorite part was always the aromatic tea poured from a curved spout.",
+    "probe_question": "What is the largest city in Selim\u2019s country?",
+    "answer": "tehran",
+    "items": [
+      {
+        "concept": "tea",
+        "label": "distractor",
+        "role": "Appears in description of Selim's favorite thing"
+      },
+      {
+        "concept": "nowruz",
+        "label": "distractor",
+        "role": "Holiday mentioned and celebrated"
+      },
+      {
+        "concept": "sumac",
+        "label": "distractor",
+        "role": "Mentioned as a spice in dishes"
+      },
+      {
+        "concept": "kitchen",
+        "label": "filler",
+        "role": "Neutral term for a common location in context"
+      },
+      {
+        "concept": "steak",
+        "label": "filler",
+        "role": "Mentioned as a dish component"
+      },
+      {
+        "concept": "iran",
+        "label": "load_bearing",
+        "role": "Bridge: Nowruz and sumac dishes marked as Iranian culture"
+      }
+    ]
+  },
+  {
+    "context": "Tamara loves watching thunderstorms. Yesterday, she observed several brilliant bolts and waited for their rumbling echoes. Her dog cowered under the sofa, startled by the loud, sudden booms. Tamara noticed her hair standing slightly on end just before a flash. Moments later, flickering lights on her street went dark for almost an hour.",
+    "probe_question": "Which physical unit is most relevant to the electrical discharge Tamara saw?",
+    "answer": "coulomb",
+    "items": [
+      {
+        "concept": "sofa",
+        "label": "distractor",
+        "role": "Mentioned as where the dog hides"
+      },
+      {
+        "concept": "dog",
+        "label": "distractor",
+        "role": "Mentioned reacting to thunder"
+      },
+      {
+        "concept": "thunderstorm",
+        "label": "distractor",
+        "role": "Main event Tamara watches"
+      },
+      {
+        "concept": "bolt",
+        "label": "filler",
+        "role": "Neutral, describes flashes"
+      },
+      {
+        "concept": "light",
+        "label": "filler",
+        "role": "Mentioned as flickering on Tamara\u2019s street"
+      },
+      {
+        "concept": "charge",
+        "label": "load_bearing",
+        "role": "Bridge: Lightning involves electric charge"
+      }
+    ]
+  },
+  {
+    "context": "In Professor Reed\u2019s seminar, students parsed lines from the ancient play. The characters debated fate near an olive grove outside the city walls, watched by an attentive chorus. Each actor wore a mask and moved in careful patterns around the circular platform at the center. During the festival, crowds gathered at dawn to see these elaborate tragedies performed.",
+    "probe_question": "What language were the original plays most likely written in?",
+    "answer": "greek",
+    "items": [
+      {
+        "concept": "mask",
+        "label": "distractor",
+        "role": "Mentioned as worn by actors"
+      },
+      {
+        "concept": "chorus",
+        "label": "distractor",
+        "role": "Mentioned as observing characters"
+      },
+      {
+        "concept": "dawn",
+        "label": "distractor",
+        "role": "Mentioned as the time of the festival"
+      },
+      {
+        "concept": "platform",
+        "label": "filler",
+        "role": "Neutral, mentioned as the stage"
+      },
+      {
+        "concept": "festival",
+        "label": "filler",
+        "role": "Neutral, event in context"
+      },
+      {
+        "concept": "athens",
+        "label": "load_bearing",
+        "role": "Bridge: Ancient city famous for such plays"
+      }
+    ]
+  },
+  {
+    "context": "The crew aboard the research vessel spotted massive flukes slapping the water. For days, they tracked dark shapes below the surface using hydrophones. In the afternoons, vapor clouds shot skyward as the animals surfaced to breathe. Their broad tails and haunting underwater songs fascinated the scientists. Each migration season, hundreds travel thousands of kilometers across the Pacific.",
+    "probe_question": "What kind of animal did the researchers study?",
+    "answer": "whale",
+    "items": [
+      {
+        "concept": "vapor",
+        "label": "distractor",
+        "role": "Mentioned as clouds from surfacing animals"
+      },
+      {
+        "concept": "tail",
+        "label": "distractor",
+        "role": "Mentioned as broad and slapping"
+      },
+      {
+        "concept": "song",
+        "label": "distractor",
+        "role": "Haunting underwater calls mentioned"
+      },
+      {
+        "concept": "crew",
+        "label": "filler",
+        "role": "Neutral, refers to people on vessel"
+      },
+      {
+        "concept": "kilometer",
+        "label": "filler",
+        "role": "Neutral, refers to migration distance"
+      },
+      {
+        "concept": "humpback",
+        "label": "load_bearing",
+        "role": "Bridge: Fluke and song identify humpback"
+      }
+    ]
+  },
+  {
+    "context": "Elaine carefully measured all ingredients before putting the dough into the oven. The smell of rising bread filled her kitchen as she adjusted the temperature. Her two children waited eagerly at the table, already setting out butter and jam. When everything was ready, she sliced the warm loaf for them.",
+    "probe_question": "What grain was likely most important for Elaine's baking?",
+    "answer": "wheat",
+    "items": [
+      {
+        "concept": "oven",
+        "label": "distractor",
+        "role": "mentioned as part of baking process"
+      },
+      {
+        "concept": "dough",
+        "label": "distractor",
+        "role": "key material noted in context"
+      },
+      {
+        "concept": "loaf",
+        "label": "filler",
+        "role": "food outcome referenced"
+      },
+      {
+        "concept": "jam",
+        "label": "filler",
+        "role": "spread eaten with bread"
+      },
+      {
+        "concept": "flour",
+        "label": "load_bearing",
+        "role": "basic needed ingredient not stated\u2014which must be inferred for bread"
+      }
+    ]
+  },
+  {
+    "context": "On the northern steppes, the reindeer herders journey for miles between camps. Their way of life depends on moving with the animals across snowy plains and surviving the coldest months. They wear fur-lined coats and build circular tents that can be packed up quickly.",
+    "probe_question": "What continent do these herders primarily inhabit?",
+    "answer": "asia",
+    "items": [
+      {
+        "concept": "reindeer",
+        "label": "distractor",
+        "role": "central animal repeatedly described"
+      },
+      {
+        "concept": "fur",
+        "label": "filler",
+        "role": "material for warmth"
+      },
+      {
+        "concept": "tents",
+        "label": "filler",
+        "role": "structure for living"
+      },
+      {
+        "concept": "herders",
+        "label": "distractor",
+        "role": "agent in the passage"
+      },
+      {
+        "concept": "siberia",
+        "label": "load_bearing",
+        "role": "inferred region from context"
+      }
+    ]
+  },
+  {
+    "context": "Vikram peered through his telescope at the shifting bands of color. He waited for the red spot to come into view. Night after night, he carefully recorded changes in cloud formation, hoping to share his findings with the local observatory.",
+    "probe_question": "If Vikram wanted to mail his notes to experts in the capital city of the country where the red spot is located, what city should he address?",
+    "answer": "rome",
+    "items": [
+      {
+        "concept": "telescope",
+        "label": "distractor",
+        "role": "instrument named in context"
+      },
+      {
+        "concept": "cloud",
+        "label": "filler",
+        "role": "feature being recorded"
+      },
+      {
+        "concept": "observatory",
+        "label": "filler",
+        "role": "place relevant for sharing results"
+      },
+      {
+        "concept": "jupiter",
+        "label": "load_bearing",
+        "role": "implicit object with Great Red Spot"
+      },
+      {
+        "concept": "spot",
+        "label": "distractor",
+        "role": "visual focus for Vikram"
+      }
+    ]
+  },
+  {
+    "context": "After hearing the alarm, Maria grabbed her raincoat and ran outside. She joined her neighbors to form a bucket chain on the hillside. The fire had started near the woods, and everyone worked together to prevent the flames from destroying their houses.",
+    "probe_question": "What element did Maria and her neighbors need most for their effort?",
+    "answer": "water",
+    "items": [
+      {
+        "concept": "raincoat",
+        "label": "filler",
+        "role": "worn by Maria"
+      },
+      {
+        "concept": "bucket",
+        "label": "distractor",
+        "role": "object central to their efforts"
+      },
+      {
+        "concept": "fire",
+        "label": "distractor",
+        "role": "the threat they fight"
+      },
+      {
+        "concept": "chain",
+        "label": "filler",
+        "role": "describes how people passed buckets"
+      },
+      {
+        "concept": "liquid",
+        "label": "load_bearing",
+        "role": "unstated but required medium in buckets"
+      }
+    ]
+  },
+  {
+    "context": "The team hiked for hours, finally reaching the jagged black slope. There was a faint smell of sulfur in the air, and small stones crunched beneath their boots. From the summit, they could see a crater filled with steam and the remains of old lava flows.",
+    "probe_question": "What type of natural disaster shaped this landscape?",
+    "answer": "eruption",
+    "items": [
+      {
+        "concept": "crater",
+        "label": "distractor",
+        "role": "feature noticed at summit"
+      },
+      {
+        "concept": "steam",
+        "label": "filler",
+        "role": "seen in the crater"
+      },
+      {
+        "concept": "lava",
+        "label": "distractor",
+        "role": "substance seen at site"
+      },
+      {
+        "concept": "volcano",
+        "label": "load_bearing",
+        "role": "unstated object implied by setting"
+      }
+    ]
+  },
+  {
+    "context": "Maria spent the summer hiking across the rugged wilderness of Patagonia. She marveled at the towering glaciers and vast open plains stretching beneath sweeping skies. The journey included crossing icy rivers and avoiding guanacos. One day, she set up camp overlooking the turquoise expanse of Lake Peho\u00e9. While there, she wrote postcards to friends, describing snow-capped peaks rising from the southern tip of the world.",
+    "probe_question": "What language did Maria likely use when ordering meals at restaurants during her trip?",
+    "answer": "spanish",
+    "items": [
+      {
+        "concept": "glacier",
+        "label": "distractor",
+        "role": "dramatic landscape feature from context"
+      },
+      {
+        "concept": "guanaco",
+        "label": "distractor",
+        "role": "noteworthy animal mentioned in context"
+      },
+      {
+        "concept": "lake",
+        "label": "filler",
+        "role": "common entity present in the text"
+      },
+      {
+        "concept": "postcard",
+        "label": "filler",
+        "role": "neutral object that occurs in the story"
+      },
+      {
+        "concept": "chile",
+        "label": "load_bearing",
+        "role": "bridge needed to know the main country in Patagonia"
+      }
+    ]
+  },
+  {
+    "context": "A large comet blazed across the night sky, visible to stargazers in the coastal city of Durban. Eager astronomers hurried to set up their telescopes on Signal Hill, trying to record images before the celestial object faded. The local observatory, renowned for its research, released a detailed statement about the object\u2019s orbit. Tourists gathered along the beach to witness the rare event, snapping photos by the surf as the comet\u2019s tail shimmered overhead.",
+    "probe_question": "Which hemisphere did people watch the comet from?",
+    "answer": "southern",
+    "items": [
+      {
+        "concept": "comet",
+        "label": "distractor",
+        "role": "central object seen in the sky"
+      },
+      {
+        "concept": "beach",
+        "label": "filler",
+        "role": "neutral place mentioned in the narrative"
+      },
+      {
+        "concept": "astronomer",
+        "label": "distractor",
+        "role": "vivid character observing the event"
+      },
+      {
+        "concept": "africa",
+        "label": "load_bearing",
+        "role": "bridge needed since Durban is a city in Africa"
+      }
+    ]
+  },
+  {
+    "context": "During a fierce winter storm, all flights departing from Oslo\u2019s main airport were delayed or canceled. Travelers crowded into waiting areas, checking screens for updates and listening to announcements in unfamiliar languages. Some passengers sipped hot chocolate while peering outside at thick snow swirling around grounded jets. As hours passed, anxious families gathered their belongings to board a train heading to the city center.",
+    "probe_question": "What currency would travelers need to buy tickets for the train mentioned?",
+    "answer": "krone",
+    "items": [
+      {
+        "concept": "airport",
+        "label": "filler",
+        "role": "neutral location specified in the narrative"
+      },
+      {
+        "concept": "chocolate",
+        "label": "distractor",
+        "role": "vivid item travelers consumed"
+      },
+      {
+        "concept": "train",
+        "label": "filler",
+        "role": "mode of transport present in the text"
+      },
+      {
+        "concept": "norway",
+        "label": "load_bearing",
+        "role": "bridge necessary since Oslo is Norway's capital"
+      }
+    ]
+  },
+  {
+    "context": "Li Jing was thrilled when she received her acceptance letter from Tsinghua. She packed her bags in Chengdu and boarded a high-speed train, excited for her new life. The long ride passed through rolling hills and enormous cities. When she arrived, the campus felt buzzing and vibrant, full of other new faces from all over the country.",
+    "probe_question": "What is the official language spoken in the city where Li Jing is starting college?",
+    "answer": "mandarin",
+    "items": [
+      {
+        "concept": "letter",
+        "label": "distractor",
+        "role": "mentioned as acceptance letter"
+      },
+      {
+        "concept": "bag",
+        "label": "distractor",
+        "role": "she packed her bag"
+      },
+      {
+        "concept": "campus",
+        "label": "filler",
+        "role": "setting for new life"
+      },
+      {
+        "concept": "beijing",
+        "label": "load_bearing",
+        "role": "city where Tsinghua is located; must infer"
+      }
+    ]
+  },
+  {
+    "context": "When the medieval knight returned to his fortress after battle, he gave his battered shield to the blacksmith. That night, a feast was held in the grand hall, where minstrels sang tales of victory. As dawn broke, the knight knelt in the private chapel, seeking guidance for his next quest.",
+    "probe_question": "Which religion did the knight most likely follow?",
+    "answer": "christianity",
+    "items": [
+      {
+        "concept": "knight",
+        "label": "distractor",
+        "role": "subject of the context"
+      },
+      {
+        "concept": "feast",
+        "label": "distractor",
+        "role": "event with celebration"
+      },
+      {
+        "concept": "shield",
+        "label": "filler",
+        "role": "object given to blacksmith"
+      },
+      {
+        "concept": "chapel",
+        "label": "filler",
+        "role": "site of prayer"
+      },
+      {
+        "concept": "europe",
+        "label": "load_bearing",
+        "role": "region where medieval knights resided; must infer"
+      }
+    ]
+  },
+  {
+    "context": "Sara finished her hike before noon and headed downtown for lunch. She tried the famous cheesesteak at a small shop on Market Street, savoring the grilled beef and gooey cheese on a soft roll. Afterward, Sara took a selfie with the cracked monument in the city center.",
+    "probe_question": "What is the state capital closest to where Sara had her lunch?",
+    "answer": "harrisburg",
+    "items": [
+      {
+        "concept": "beef",
+        "label": "distractor",
+        "role": "ingredient in the cheesesteak"
+      },
+      {
+        "concept": "lunch",
+        "label": "distractor",
+        "role": "meal Sara ate downtown"
+      },
+      {
+        "concept": "cheese",
+        "label": "filler",
+        "role": "ingredient on roll"
+      },
+      {
+        "concept": "philadelphia",
+        "label": "load_bearing",
+        "role": "city famous for cheesesteaks and cracked monument; must infer"
+      }
+    ]
+  },
+  {
+    "context": "In the middle of the night, the ship's captain ordered everyone on deck as the sky turned red. Lightning forked above the mast, and the wind howled louder than ever. The sailors scrambled, clutching ropes and shouting to be heard above the storm. Suddenly, a wave sent the vessel lurching to starboard.",
+    "probe_question": "What is the title for the person in charge of the ship's navigation?",
+    "answer": "navigator",
+    "items": [
+      {
+        "concept": "wind",
+        "label": "distractor",
+        "role": "mentioned as a storm element"
+      },
+      {
+        "concept": "lightning",
+        "label": "distractor",
+        "role": "describes the storm"
+      },
+      {
+        "concept": "ship",
+        "label": "filler",
+        "role": "the vessel in danger"
+      },
+      {
+        "concept": "rope",
+        "label": "filler",
+        "role": "object sailors held"
+      },
+      {
+        "concept": "officer",
+        "label": "load_bearing",
+        "role": "role integrated in naval command; must infer as the navigation title"
+      }
+    ]
+  },
+  {
+    "context": "As the sun set over the savanna, a pride slowly approached the dusty watering hole. A few zebras lingered nearby, ever watchful. Suddenly, an alarm call from a hidden bird caused the grazers to scatter, leaving only the big cats drinking under the acacia trees.",
+    "probe_question": "What is the usual term for the young of the animals drinking under the acacia?",
+    "answer": "cub",
+    "items": [
+      {
+        "concept": "zebra",
+        "label": "distractor",
+        "role": "animal that flees the scene"
+      },
+      {
+        "concept": "savanna",
+        "label": "distractor",
+        "role": "type of landscape"
+      },
+      {
+        "concept": "bird",
+        "label": "filler",
+        "role": "animal giving alarm call"
+      },
+      {
+        "concept": "hole",
+        "label": "filler",
+        "role": "watering hole setting"
+      },
+      {
+        "concept": "lion",
+        "label": "load_bearing",
+        "role": "big cat in a pride drinking under acacia; must infer"
+      }
+    ]
+  },
+  {
+    "context": "Jacob enjoys spending his weekends trekking in the lush forests at the foot of the Andes. One year, his adventure was interrupted by a mild earthquake. Later, he celebrated with his friends using local coins to try a card game in a small mountain village. For his day job, Jacob works as a biologist studying hummingbirds in the region.",
+    "probe_question": "What large body of water lies to the west of where Jacob goes trekking?",
+    "answer": "pacific",
+    "items": [
+      {
+        "concept": "forest",
+        "label": "filler",
+        "role": "a feature of the region he explores"
+      },
+      {
+        "concept": "hummingbird",
+        "label": "distractor",
+        "role": "his research subject"
+      },
+      {
+        "concept": "earthquake",
+        "label": "distractor",
+        "role": "event he experienced"
+      },
+      {
+        "concept": "andres",
+        "label": "load_bearing",
+        "role": "mountain range location essential for the answer"
+      },
+      {
+        "concept": "coin",
+        "label": "distractor",
+        "role": "used to play a game"
+      }
+    ]
+  },
+  {
+    "context": "Emily is reading about the legendary ship called Endurance, whose crew survived months trapped in shifting pack ice before embarking on a perilous journey on the lifeboats. The adventure was led by a charismatic explorer who never lost hope. Emily is especially fascinated by the freezing temperatures and endless nights that challenged the crew.",
+    "probe_question": "What continent was the rescue journey of the Endurance crew closest to?",
+    "answer": "antarctica",
+    "items": [
+      {
+        "concept": "ice",
+        "label": "distractor",
+        "role": "environmental obstacle"
+      },
+      {
+        "concept": "lifeboat",
+        "label": "distractor",
+        "role": "mode of escape"
+      },
+      {
+        "concept": "explorer",
+        "label": "filler",
+        "role": "led the crew"
+      },
+      {
+        "concept": "endurance",
+        "label": "filler",
+        "role": "ship's name"
+      },
+      {
+        "concept": "shackleton",
+        "label": "load_bearing",
+        "role": "the crew's leader, needed to link to continent of the voyage"
+      }
+    ]
+  },
+  {
+    "context": "Last season, Sam led his team to victory at Lord\u2019s, a venue famous for the long history of dramatic matches. Their rivals, wearing blue, put up a tough fight but ultimately fell short. After lifting the trophy, the players celebrated with a lap around the field and a spray of confetti.",
+    "probe_question": "Which sport did Sam\u2019s team likely play at this venue?",
+    "answer": "cricket",
+    "items": [
+      {
+        "concept": "trophy",
+        "label": "distractor",
+        "role": "item won by the team"
+      },
+      {
+        "concept": "blue",
+        "label": "distractor",
+        "role": "color of rivals"
+      },
+      {
+        "concept": "confetti",
+        "label": "filler",
+        "role": "used in celebration"
+      },
+      {
+        "concept": "lap",
+        "label": "distractor",
+        "role": "action during celebration"
+      },
+      {
+        "concept": "lord's",
+        "label": "load_bearing",
+        "role": "venue required to identify the sport"
+      }
+    ]
+  },
+  {
+    "context": "The engineer designed the dam to withstand decades of sudden flooding and persistent rain. Daily, she monitored the turbines and walked along the concrete spillway. Her work powered thousands of homes and prevented devastating water surges in the valley below.",
+    "probe_question": "What is a common metal used in the electrical wiring generated by her work?",
+    "answer": "copper",
+    "items": [
+      {
+        "concept": "flood",
+        "label": "distractor",
+        "role": "event the dam must resist"
+      },
+      {
+        "concept": "turbine",
+        "label": "filler",
+        "role": "machinery inside the dam"
+      },
+      {
+        "concept": "dam",
+        "label": "filler",
+        "role": "main structure described"
+      },
+      {
+        "concept": "electricity",
+        "label": "load_bearing",
+        "role": "output implied by 'powered homes' and turbines"
+      },
+      {
+        "concept": "spillway",
+        "label": "distractor",
+        "role": "feature walked by the engineer"
+      }
+    ]
+  },
+  {
+    "context": "Elena drove her electric car through winding mountain roads lined with fir and spruce trees. At a scenic overlook, she paused to take photos of a massive snow-capped peak with waterfalls tumbling down its side. Later, she enjoyed berry pie in a log cabin cafe, watching climbers prepare their gear in the parking area. The local ranger station provided maps and safety tips for hiking around the glacial trails.",
+    "probe_question": "What is the tallest mountain in the state where Elena most likely traveled?",
+    "answer": "rainier",
+    "items": [
+      {
+        "concept": "electric",
+        "label": "distractor",
+        "role": "distinctive feature of her car"
+      },
+      {
+        "concept": "cabin",
+        "label": "filler",
+        "role": "location visited"
+      },
+      {
+        "concept": "hiking",
+        "label": "filler",
+        "role": "activity described"
+      },
+      {
+        "concept": "washington",
+        "label": "load_bearing",
+        "role": "state linked to Mount Rainier"
+      }
+    ]
+  },
+  {
+    "context": "During the championship match, the team in red scored twice before halftime at Old Trafford. Thousands of fans cheered as their favorite players outmaneuvered the opponents in blue. The manager celebrated on the touchline, and at full time, the legendary stadium echoed with songs.",
+    "probe_question": "What sport was most likely being played?",
+    "answer": "soccer",
+    "items": [
+      {
+        "concept": "stadium",
+        "label": "filler",
+        "role": "venue mentioned"
+      },
+      {
+        "concept": "red",
+        "label": "distractor",
+        "role": "jersey color"
+      },
+      {
+        "concept": "songs",
+        "label": "distractor",
+        "role": "element of celebration"
+      },
+      {
+        "concept": "manchester",
+        "label": "load_bearing",
+        "role": "city where Old Trafford is located"
+      },
+      {
+        "concept": "halftime",
+        "label": "filler",
+        "role": "game phase"
+      }
+    ]
+  },
+  {
+    "context": "In 1969, Neil Armstrong stepped onto a barren, dusty surface, leaving footprints that would last for centuries. He famously declared a historic phrase as millions watched on television. His fellow astronaut, Buzz Aldrin, joined him, both wearing bulky suits to survive the airless environment.",
+    "probe_question": "What is the primary force that allowed Neil and Buzz to jump higher than on Earth?",
+    "answer": "gravity",
+    "items": [
+      {
+        "concept": "footprints",
+        "label": "distractor",
+        "role": "mark left on surface"
+      },
+      {
+        "concept": "astronaut",
+        "label": "filler",
+        "role": "profession"
+      },
+      {
+        "concept": "television",
+        "label": "distractor",
+        "role": "broadcast medium"
+      },
+      {
+        "concept": "moon",
+        "label": "load_bearing",
+        "role": "location of the landing"
+      },
+      {
+        "concept": "suits",
+        "label": "filler",
+        "role": "equipment referenced"
+      }
+    ]
+  },
+  {
+    "context": "After months of training, Marcia completed her first marathon last weekend. She ran through scenic streets, cheered by crowds along the way. The course finished near a famous bay, requiring runners to cross a long suspension structure with towers. The weather was foggy, making the orange towers barely visible. Marcia felt exhilarated crossing this landmark toward the finish line.",
+    "probe_question": "What famous US city did Marcia likely finish her race in?",
+    "answer": "san francisco",
+    "items": [
+      {
+        "concept": "marathon",
+        "label": "filler",
+        "role": "mentioned in the context as the event"
+      },
+      {
+        "concept": "bay",
+        "label": "filler",
+        "role": "location word directly in the context"
+      },
+      {
+        "concept": "fog",
+        "label": "distractor",
+        "role": "vivid environmental detail in the context"
+      },
+      {
+        "concept": "orange",
+        "label": "distractor",
+        "role": "color of towers, vivid and visual"
+      },
+      {
+        "concept": "golden",
+        "label": "load_bearing",
+        "role": "key clue, not present in text; needed to bridge to Golden Gate Bridge"
+      }
+    ]
+  },
+  {
+    "context": "Nadia collected a rare type of mineral during her recent trip to southern Africa. The area she visited is famous for its large diamond mines and for a majestic waterfall that attracts many tourists. The falls are named after a British monarch. Nadia took many photos of the spray rising above the dense rainforest before heading back to town.",
+    "probe_question": "The waterfall Nadia saw shares its border with which country to the north?",
+    "answer": "zambia",
+    "items": [
+      {
+        "concept": "diamond",
+        "label": "distractor",
+        "role": "vivid treasure in the context"
+      },
+      {
+        "concept": "town",
+        "label": "filler",
+        "role": "neutral location word from context"
+      },
+      {
+        "concept": "rainforest",
+        "label": "distractor",
+        "role": "memorable environment detail"
+      },
+      {
+        "concept": "spray",
+        "label": "filler",
+        "role": "neutral environmental term in context"
+      },
+      {
+        "concept": "victoria",
+        "label": "load_bearing",
+        "role": "the missing bridge; falls named after Queen Victoria"
+      }
+    ]
+  },
+  {
+    "context": "In her research, Dr. Lin was fascinated by the social behavior of bonobos. She observed them in a lush habitat near the equator, where two major African rivers meet. The local government requires permits for researchers to enter the forest, as it borders one of the largest countries on the continent. The scientists assembled at the station in Kinshasa before driving out.",
+    "probe_question": "What language is likely to be used for official paperwork in this country?",
+    "answer": "french",
+    "items": [
+      {
+        "concept": "bonobo",
+        "label": "filler",
+        "role": "subject of research, in context"
+      },
+      {
+        "concept": "kinshasa",
+        "label": "distractor",
+        "role": "memorable place name, in context"
+      },
+      {
+        "concept": "river",
+        "label": "distractor",
+        "role": "feature in context, but unhelpful"
+      },
+      {
+        "concept": "congo",
+        "label": "load_bearing",
+        "role": "key concept not stated; the country bordering the site"
+      }
+    ]
+  },
+  {
+    "context": "Miguel received a package from a friend who recently returned from a long trip at sea. Inside was a beautifully decorated matryoshka doll and a letter written in Cyrillic script. Miguel admired the intricate floral patterns, which are typical of the region where winters are extremely cold and a famous ballet tradition began.",
+    "probe_question": "What is the traditional alcoholic drink often associated with this matryoshka doll's country of origin?",
+    "answer": "vodka",
+    "items": [
+      {
+        "concept": "doll",
+        "label": "filler",
+        "role": "neutral item described"
+      },
+      {
+        "concept": "ballet",
+        "label": "distractor",
+        "role": "vivid cultural reference, in context"
+      },
+      {
+        "concept": "winter",
+        "label": "distractor",
+        "role": "memorable environmental detail"
+      },
+      {
+        "concept": "script",
+        "label": "distractor",
+        "role": "Cyrillic given, but not a bridge"
+      },
+      {
+        "concept": "russia",
+        "label": "load_bearing",
+        "role": "origin country, not mentioned, needed for answer"
+      }
+    ]
+  }
+]

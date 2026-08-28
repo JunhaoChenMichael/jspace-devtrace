@@ -1,0 +1,1155 @@
+[
+  {
+    "context": "Norah adjusted her chef's hat and sampled a spoonful of her aromatic stew bubbling on the stove. She worked in a busy eatery on the Rue de la Loi, carefully arranging pastry desserts in the glass case each morning. Between lunchtime orders, Norah chatted with regulars about their favorite cheeses and the latest art exhibit at the Magritte Museum. She savored her break with a cup of strong black coffee and a delicate waffle.",
+    "probe_question": "What language did Norah most likely use at work?",
+    "answer": "french",
+    "items": [
+      {
+        "concept": "pastry",
+        "label": "distractor",
+        "role": "dessert mentioned literally in context"
+      },
+      {
+        "concept": "museum",
+        "label": "filler",
+        "role": "neutral noun from the story"
+      },
+      {
+        "concept": "waffle",
+        "label": "distractor",
+        "role": "food item that stands out in context"
+      },
+      {
+        "concept": "brussels",
+        "label": "load_bearing",
+        "role": "essential location inferred from details"
+      },
+      {
+        "concept": "coffee",
+        "label": "filler",
+        "role": "common beverage mentioned in context"
+      }
+    ]
+  },
+  {
+    "context": "Mirai spent months preparing to compete in a demanding event held every four years. She wore ice skates every day while practicing her routines, which included elegant spins and daring jumps. The judges watched her every move as she glided across the frozen surface. Her dream was to take home a gold medal like her childhood hero.",
+    "probe_question": "What city did Mirai hope to travel to after qualifying?",
+    "answer": "beijing",
+    "items": [
+      {
+        "concept": "skates",
+        "label": "distractor",
+        "role": "vivid context word, not helpful"
+      },
+      {
+        "concept": "medal",
+        "label": "distractor",
+        "role": "high impact context noun"
+      },
+      {
+        "concept": "judges",
+        "label": "filler",
+        "role": "neutral context noun"
+      },
+      {
+        "concept": "event",
+        "label": "filler",
+        "role": "neutral, appears in context"
+      },
+      {
+        "concept": "olympics",
+        "label": "load_bearing",
+        "role": "unstated bridge; inferrable from context"
+      }
+    ]
+  },
+  {
+    "context": "Karim inspected the ancient parchment with delicate gloves. He carefully deciphered manuscripts filled with unfamiliar symbols. Years of study in Cairo had taught him the secrets of the Rosetta Stone, and now his expertise helped the museum restore priceless texts. Scholars from around the world eagerly awaited his latest translations.",
+    "probe_question": "In which language could Karim's discoveries be especially useful to historians?",
+    "answer": "greek",
+    "items": [
+      {
+        "concept": "museum",
+        "label": "filler",
+        "role": "neutral context noun"
+      },
+      {
+        "concept": "symbols",
+        "label": "distractor",
+        "role": "emotional/vivid"
+      },
+      {
+        "concept": "parchment",
+        "label": "distractor",
+        "role": "vivid object in context"
+      },
+      {
+        "concept": "translation",
+        "label": "filler",
+        "role": "side context word"
+      },
+      {
+        "concept": "hieroglyphs",
+        "label": "load_bearing",
+        "role": "bridge from Rosetta Stone context"
+      }
+    ]
+  },
+  {
+    "context": "Lars adjusted the pressure gauge for the last time before releasing the valve. Steam hissed and filled the tiled chamber, quickly blurring the faucets and benches. Wrapping a towel around his waist, he joined his friends in their weekly tradition. The rising warmth soothed his muscles after a long day in Helsinki.",
+    "probe_question": "In what kind of room was Lars relaxing?",
+    "answer": "sauna",
+    "items": [
+      {
+        "concept": "steam",
+        "label": "distractor",
+        "role": "vivid sense impression from context"
+      },
+      {
+        "concept": "towel",
+        "label": "filler",
+        "role": "neutral context object"
+      },
+      {
+        "concept": "bench",
+        "label": "filler",
+        "role": "neutral, context item"
+      },
+      {
+        "concept": "valve",
+        "label": "distractor",
+        "role": "emotional/vivid, not helpful"
+      },
+      {
+        "concept": "finland",
+        "label": "load_bearing",
+        "role": "bridge (unstated), links to answer"
+      }
+    ]
+  },
+  {
+    "context": "Mateo spent his evenings at the Teatro alla Scala attending elaborate performances in ornate halls. He often arrived early, chatting with violinists and sopranos backstage. The city outside buzzed with scooters and the aroma of espresso drifted along narrow streets. Mateo began studying the history of the famous composers who had premiered their masterpieces in that city.",
+    "probe_question": "What country did Mateo travel to for his musical interests?",
+    "answer": "italy",
+    "items": [
+      {
+        "concept": "opera",
+        "label": "load_bearing",
+        "role": "unstated bridge: type of performance attended"
+      },
+      {
+        "concept": "espresso",
+        "label": "distractor",
+        "role": "emotional detail in context"
+      },
+      {
+        "concept": "violinist",
+        "label": "filler",
+        "role": "neutral, in context"
+      },
+      {
+        "concept": "scooter",
+        "label": "distractor",
+        "role": "vivid, in context"
+      },
+      {
+        "concept": "teatro",
+        "label": "distractor",
+        "role": "in context, Italian word but not the bridge"
+      },
+      {
+        "concept": "city",
+        "label": "filler",
+        "role": "neutral, in context"
+      }
+    ]
+  },
+  {
+    "context": "Kofi rescued baby turtles at dawn, guiding them down the wide, sandy beach toward the crashing waves. At night, he listened to drumming circles around bonfires, savoring spicy grilled plantains. The days were humid and bright, with fishermen hauling in heavy nets from the turquoise sea. Kofi volunteered to teach local children about protecting the nesting sites.",
+    "probe_question": "What ocean borders Kofi's conservation site?",
+    "answer": "atlantic",
+    "items": [
+      {
+        "concept": "ghana",
+        "label": "load_bearing",
+        "role": "unstated bridge: country implied by context"
+      },
+      {
+        "concept": "turtle",
+        "label": "distractor",
+        "role": "vivid animal, in context"
+      },
+      {
+        "concept": "beach",
+        "label": "filler",
+        "role": "neutral geographic word, in context"
+      },
+      {
+        "concept": "bonfire",
+        "label": "distractor",
+        "role": "emotional, in context"
+      },
+      {
+        "concept": "drum",
+        "label": "filler",
+        "role": "neutral, in context"
+      },
+      {
+        "concept": "net",
+        "label": "distractor",
+        "role": "vivid, in context"
+      }
+    ]
+  },
+  {
+    "context": "Lina started her morning with a paddle along quiet canals, passing beneath stone arches and flower-laden balconies. In the afternoons, she sketched gondolas carried by ripples past colorful buildings. Tourists crowded the narrow walkways, photographing masked performers during the month-long festival. At sunset, Lina enjoyed sipping espresso in the shadow of centuries-old bell towers.",
+    "probe_question": "Which city is Lina most likely visiting?",
+    "answer": "venice",
+    "items": [
+      {
+        "concept": "canal",
+        "label": "distractor",
+        "role": "vivid, appears in context"
+      },
+      {
+        "concept": "gondola",
+        "label": "distractor",
+        "role": "vivid, appears in context"
+      },
+      {
+        "concept": "balcony",
+        "label": "filler",
+        "role": "neutral, appears in context"
+      },
+      {
+        "concept": "espresso",
+        "label": "distractor",
+        "role": "vivid, appears in context"
+      },
+      {
+        "concept": "italy",
+        "label": "load_bearing",
+        "role": "bridge: the country alluded to by features"
+      },
+      {
+        "concept": "tower",
+        "label": "filler",
+        "role": "neutral, appears in context"
+      }
+    ]
+  },
+  {
+    "context": "Ravi spent his Saturday at an open-air market filled with lively stalls. He sampled tangy papaya salad from a vendor, marveling at how the woman tossed it together with a mortar and pestle. Scooters zipped past Buddhist monks in saffron robes along the busy avenue. As the sun set, Ravi heard the distinctive chimes of a passing tuk-tuk.",
+    "probe_question": "What currency did Ravi likely need for his purchases?",
+    "answer": "baht",
+    "items": [
+      {
+        "concept": "fruit",
+        "label": "distractor",
+        "role": "Stalls sold produce, vivid in context"
+      },
+      {
+        "concept": "scooter",
+        "label": "distractor",
+        "role": "Describes scene, emotional local color"
+      },
+      {
+        "concept": "monk",
+        "label": "distractor",
+        "role": "Vivid situational detail"
+      },
+      {
+        "concept": "vendor",
+        "label": "filler",
+        "role": "Neutral participant in the setting"
+      },
+      {
+        "concept": "stall",
+        "label": "filler",
+        "role": "Market structure, neutral presence"
+      },
+      {
+        "concept": "bangkok",
+        "label": "load_bearing",
+        "role": "Bridge: city implied by details, not mentioned"
+      }
+    ]
+  },
+  {
+    "context": "Amina meticulously adjusted the tiny mirror on her telescope before stepping out into the chilly night. It was her second attempt to capture the famous red spot through a break in the clouds. She logged the time and coordinates in her battered notebook, just as the largest planet came into focus.",
+    "probe_question": "What object was Amina aiming to observe closely?",
+    "answer": "jupiter",
+    "items": [
+      {
+        "concept": "telescope",
+        "label": "filler",
+        "role": "Instrument described, neutral"
+      },
+      {
+        "concept": "notebook",
+        "label": "filler",
+        "role": "Logging data, context-neutral"
+      },
+      {
+        "concept": "planet",
+        "label": "distractor",
+        "role": "Vivid context clue, too broad"
+      },
+      {
+        "concept": "spot",
+        "label": "distractor",
+        "role": "Unusual detail, emotional, unhelpful"
+      },
+      {
+        "concept": "mirror",
+        "label": "distractor",
+        "role": "Specific tool, emotional, in context"
+      },
+      {
+        "concept": "jovian",
+        "label": "load_bearing",
+        "role": "Bridge: domain term for the planet targeted"
+      }
+    ]
+  },
+  {
+    "context": "Luisa baked a golden, flaky pastry for a special family meal. She carefully layered minced meat, onions, and hard-boiled eggs between her dough, assembling a traditional recipe from her childhood. After brushing the top with yolk, she baked it until perfectly browned, then served it with a glass of deep red Malbec.",
+    "probe_question": "What city does Luisa\u2019s culinary tradition most likely connect to?",
+    "answer": "buenos aires",
+    "items": [
+      {
+        "concept": "pastry",
+        "label": "distractor",
+        "role": "Vivid food detail"
+      },
+      {
+        "concept": "meat",
+        "label": "distractor",
+        "role": "Describes filling, emotional detail"
+      },
+      {
+        "concept": "egg",
+        "label": "distractor",
+        "role": "Part of recipe, vivid"
+      },
+      {
+        "concept": "wine",
+        "label": "filler",
+        "role": "Served beverage, neutral"
+      },
+      {
+        "concept": "meal",
+        "label": "filler",
+        "role": "General event, neutral word"
+      },
+      {
+        "concept": "empanada",
+        "label": "load_bearing",
+        "role": "Bridge: iconic dish implied, not stated"
+      }
+    ]
+  },
+  {
+    "context": "Shannon spent the afternoon watching elegant horses parade in carefully choreographed patterns. Trumpets announced the arrival of the equerry, and everyone stood as the monarch waved from a high balcony. It was a spectacular celebration of military discipline and tradition, with riders in bright red uniforms.",
+    "probe_question": "What nation\u2019s ceremonial event did Shannon attend?",
+    "answer": "britain",
+    "items": [
+      {
+        "concept": "horse",
+        "label": "distractor",
+        "role": "Main feature, vivid"
+      },
+      {
+        "concept": "monarch",
+        "label": "distractor",
+        "role": "Royalty, emotional"
+      },
+      {
+        "concept": "trumpet",
+        "label": "distractor",
+        "role": "Auditory detail, vivid"
+      },
+      {
+        "concept": "uniform",
+        "label": "filler",
+        "role": "Neutral, describes participants"
+      },
+      {
+        "concept": "balcony",
+        "label": "filler",
+        "role": "Place detail, neutral"
+      },
+      {
+        "concept": "trooping",
+        "label": "load_bearing",
+        "role": "Bridge: event referenced, not said"
+      }
+    ]
+  },
+  {
+    "context": "Mateo carefully poured corn meal into a bowl, then whisked in ricotta, pecorino, and black pepper. After kneading the mixture, he rolled small ovals and pressed them with the back of a fork. For dinner, he simmered the dumplings in tomato sauce and sprinkled them with fresh basil.",
+    "probe_question": "What country is linked to Mateo\u2019s signature dish?",
+    "answer": "italy",
+    "items": [
+      {
+        "concept": "cheese",
+        "label": "distractor",
+        "role": "Vivid part of recipe"
+      },
+      {
+        "concept": "basil",
+        "label": "distractor",
+        "role": "Herb garnish, emotional detail"
+      },
+      {
+        "concept": "sauce",
+        "label": "filler",
+        "role": "Prepared for dish, neutral"
+      },
+      {
+        "concept": "bowl",
+        "label": "filler",
+        "role": "Kitchen tool, neutral"
+      },
+      {
+        "concept": "gnocchi",
+        "label": "load_bearing",
+        "role": "Bridge: dish implied by steps, not stated"
+      }
+    ]
+  },
+  {
+    "context": "Solene checked her helmet and gloves before stepping into the tall chamber lined with colorful holds. Her friend cheered from below as she reached out to grip a blue one with her fingertips, finding balance against the wall. Each movement had to be precise, with careful foot placement between the protruding grips. Once at the top, she tapped a bell to signal her accomplishment.",
+    "probe_question": "What sport is Solene participating in?",
+    "answer": "climbing",
+    "items": [
+      {
+        "concept": "helmet",
+        "label": "filler",
+        "role": "common safety gear in context"
+      },
+      {
+        "concept": "wall",
+        "label": "distractor",
+        "role": "vivid image from context"
+      },
+      {
+        "concept": "grip",
+        "label": "distractor",
+        "role": "appears explicitly, vivid"
+      },
+      {
+        "concept": "bell",
+        "label": "filler",
+        "role": "neutral item in context"
+      },
+      {
+        "concept": "gym",
+        "label": "load_bearing",
+        "role": "unstated location concept needed to answer"
+      }
+    ]
+  },
+  {
+    "context": "Oriana skillfully placed the raw fish slices on a small mound of vinegared rice. She sprinkled a bit of green paste and pressed a thin slice of ginger alongside. Her customers sat at the counter, eagerly awaiting her next creation. Each plate was designed with delicate presentation and bursts of umami flavor.",
+    "probe_question": "What is Oriana's profession?",
+    "answer": "chef",
+    "items": [
+      {
+        "concept": "fish",
+        "label": "distractor",
+        "role": "vivid, explicitly mentioned"
+      },
+      {
+        "concept": "rice",
+        "label": "filler",
+        "role": "neutral, used in context"
+      },
+      {
+        "concept": "counter",
+        "label": "filler",
+        "role": "neutral, appears in context"
+      },
+      {
+        "concept": "sushi",
+        "label": "load_bearing",
+        "role": "unstated bridge concept required for answer"
+      },
+      {
+        "concept": "ginger",
+        "label": "distractor",
+        "role": "vivid and specific, explicit in context"
+      }
+    ]
+  },
+  {
+    "context": "Vikram closed the curtains and dimmed the overhead lights as the opening credits began to roll. The audience settled into plush seats, snacks in hand. The flickering images reflected on his focused face as he waited for the crowd\u2019s reactions. Tonight, his film would debut after months of painstaking editing and sound design.",
+    "probe_question": "Where was Vikram when his latest work was presented to the public?",
+    "answer": "cinema",
+    "items": [
+      {
+        "concept": "credits",
+        "label": "distractor",
+        "role": "vivid, explicitly mentioned in context"
+      },
+      {
+        "concept": "audience",
+        "label": "filler",
+        "role": "neutral, appears in context"
+      },
+      {
+        "concept": "snack",
+        "label": "distractor",
+        "role": "emotional word, appears in context"
+      },
+      {
+        "concept": "screen",
+        "label": "filler",
+        "role": "neutral, implied in context"
+      },
+      {
+        "concept": "premiere",
+        "label": "load_bearing",
+        "role": "unstated bridge connecting context to answer"
+      }
+    ]
+  },
+  {
+    "context": "Gregor meticulously arranged glass slides under the microscope, his gloves powdering the lenses. The distinct hum of refrigeration units kept the serums and samples preserved for months. His white coat brushed the cold steel counter as he logged each observation in his research journal. Gregor kept his citizen badge on display in case the safety inspectors visited his lab at the hospital.",
+    "probe_question": "What item did Gregor probably use frequently at his workplace based on his daily tasks?",
+    "answer": "stethoscope",
+    "items": [
+      {
+        "concept": "slide",
+        "label": "filler",
+        "role": "neutral word from context"
+      },
+      {
+        "concept": "refrigerator",
+        "label": "distractor",
+        "role": "vivid, appears in context, but doesn't answer the probe"
+      },
+      {
+        "concept": "laboratory",
+        "label": "load_bearing",
+        "role": "unstated bridge: workplace is a laboratory in a hospital"
+      },
+      {
+        "concept": "badge",
+        "label": "distractor",
+        "role": "vivid, appears literally, but irrelevant"
+      },
+      {
+        "concept": "counter",
+        "label": "filler",
+        "role": "neutral word appears in context"
+      }
+    ]
+  },
+  {
+    "context": "Oksana carried out an intricate ballet sequence in the candlelit nave, each leap silhouetted by the soaring stained glass behind her. The priest watched approvingly from beside the golden iconostasis. Peals of choral voices echoed above as Oksana matched her steps to the rhythm of the old pipe organ. After the performance, she knelt on the embroidered red runner.",
+    "probe_question": "What type of building was Oksana most likely performing in?",
+    "answer": "cathedral",
+    "items": [
+      {
+        "concept": "icon",
+        "label": "filler",
+        "role": "neutral noun appearing in context"
+      },
+      {
+        "concept": "glass",
+        "label": "distractor",
+        "role": "vivid, appears in context, but no bridge potential"
+      },
+      {
+        "concept": "church",
+        "label": "load_bearing",
+        "role": "unstated bridge: place with nave/iconostasis/organ"
+      },
+      {
+        "concept": "runner",
+        "label": "filler",
+        "role": "neutral from context"
+      },
+      {
+        "concept": "ballet",
+        "label": "distractor",
+        "role": "vivid, appears in context, irrelevant"
+      }
+    ]
+  },
+  {
+    "context": "Sahana left her home early each morning, carrying a bright blue duffel bag. She jogged along the lakeside path and headed toward a large indoor facility. Inside, she changed into a special cap and goggles, then waited by a long tiled structure marked with lanes. The sharp scent of chlorine always filled the air before sunrise.",
+    "probe_question": "What activity does Sahana regularly engage in before dawn?",
+    "answer": "swimming",
+    "items": [
+      {
+        "concept": "facility",
+        "label": "filler",
+        "role": "neutral noun from the context"
+      },
+      {
+        "concept": "bag",
+        "label": "filler",
+        "role": "neutral noun from the context"
+      },
+      {
+        "concept": "chlorine",
+        "label": "distractor",
+        "role": "context's vivid smell, emotional association"
+      },
+      {
+        "concept": "sunrise",
+        "label": "distractor",
+        "role": "context's vivid time, emotional setting"
+      },
+      {
+        "concept": "pool",
+        "label": "load_bearing",
+        "role": "bridge: venue for this activity"
+      },
+      {
+        "concept": "goggles",
+        "label": "distractor",
+        "role": "emotional gear word from context"
+      }
+    ]
+  },
+  {
+    "context": "Nico set up chairs in a circle around the central bonfire. As the sun set, he played a melody on his acoustic guitar, inviting others to sing along. They roasted marshmallows and shared ghost stories while embers floated up into the night sky. The gentle lapping of the lake on the shore provided a relaxing backdrop.",
+    "probe_question": "What weather phenomenon would Nico need to check for before planning another gathering like this?",
+    "answer": "rain",
+    "items": [
+      {
+        "concept": "bonfire",
+        "label": "distractor",
+        "role": "vivid and emotional context word"
+      },
+      {
+        "concept": "chair",
+        "label": "filler",
+        "role": "neutral noun from context"
+      },
+      {
+        "concept": "guitar",
+        "label": "distractor",
+        "role": "emotional; appears in context"
+      },
+      {
+        "concept": "marshmallow",
+        "label": "distractor",
+        "role": "emotional, vivid context word"
+      },
+      {
+        "concept": "outdoors",
+        "label": "load_bearing",
+        "role": "bridge: setting implies vulnerability to weather"
+      },
+      {
+        "concept": "shore",
+        "label": "filler",
+        "role": "neutral location word from context"
+      }
+    ]
+  },
+  {
+    "context": "Mariela carefully arranged dozens of bite-sized appetizers on trays for the guests. The tall wedding cake, topped with sugar flowers, stood in the center of the elegant banquet hall. Waiters in black vests moved deftly among round tables draped with white linens, while a string quartet played softly in the background.",
+    "probe_question": "What role did Mariela most likely have during this event?",
+    "answer": "caterer",
+    "items": [
+      {
+        "concept": "cake",
+        "label": "distractor",
+        "role": "vivid, emotional; appears in context"
+      },
+      {
+        "concept": "waiter",
+        "label": "distractor",
+        "role": "context word, emotional"
+      },
+      {
+        "concept": "hall",
+        "label": "filler",
+        "role": "neutral location from context"
+      },
+      {
+        "concept": "quartet",
+        "label": "filler",
+        "role": "neutral from context"
+      },
+      {
+        "concept": "food",
+        "label": "distractor",
+        "role": "emotional, context word (via appetizers/cake)"
+      },
+      {
+        "concept": "catering",
+        "label": "load_bearing",
+        "role": "bridge: work role inferred from actions described"
+      }
+    ]
+  },
+  {
+    "context": "Leandro practiced deep breathing before standing behind the white painted line on the dusty clay surface. He adjusted his grip on the racquet, bounced the fuzzy yellow ball a few times, and glanced at the net. His opponent stood ready on the other side, eyes focused, waiting for the signal.",
+    "probe_question": "What kind of footwear is most important for Leandro's activity?",
+    "answer": "sneakers",
+    "items": [
+      {
+        "concept": "racquet",
+        "label": "distractor",
+        "role": "context's vivid instrument"
+      },
+      {
+        "concept": "net",
+        "label": "distractor",
+        "role": "context's vivid, emotional object"
+      },
+      {
+        "concept": "ball",
+        "label": "filler",
+        "role": "neutral, context word"
+      },
+      {
+        "concept": "opponent",
+        "label": "filler",
+        "role": "neutral, context word"
+      },
+      {
+        "concept": "tennis",
+        "label": "load_bearing",
+        "role": "bridge: activity inferred from context"
+      }
+    ]
+  },
+  {
+    "context": "Mitzi gazed up at the enormous statue of Christ with outstretched arms towering over the harbor. She snapped a few photos while jostling among tourists near the cable car exit. Later, she wandered down winding streets bordered by houses painted in vibrant blues and yellows. Samba music echoed from a plaza where some children kicked a soccer ball. Mitzi paused to buy a fresh coconut from a street vendor and watched the sun set behind Sugarloaf Mountain.",
+    "probe_question": "What currency would Mitzi need to pay for a local meal?",
+    "answer": "real",
+    "items": [
+      {
+        "concept": "statue",
+        "label": "distractor",
+        "role": "striking element from context"
+      },
+      {
+        "concept": "harbor",
+        "label": "filler",
+        "role": "neutral detail from context"
+      },
+      {
+        "concept": "coconut",
+        "label": "filler",
+        "role": "item bought in context"
+      },
+      {
+        "concept": "mountain",
+        "label": "distractor",
+        "role": "vivid context location"
+      },
+      {
+        "concept": "brazil",
+        "label": "load_bearing",
+        "role": "unstated bridge: country inferred from context"
+      }
+    ]
+  },
+  {
+    "context": "Tahira strained her neck to get a better look at the intricately carved marble latticework that covered the palace window. A gust of searing hot wind pulled the smell of spices from bustling food stalls along the riverbank. Monkeys scampered across the palace gates as a tour guide recounted a tale of a long-ago emperor and his beloved queen. Tahira enjoyed a cup of milky tea as the late afternoon call to prayer echoed across the city.",
+    "probe_question": "What is the official time standard for Tahira\u2019s country?",
+    "answer": "ist",
+    "items": [
+      {
+        "concept": "monkey",
+        "label": "distractor",
+        "role": "vivid animal from context"
+      },
+      {
+        "concept": "palace",
+        "label": "distractor",
+        "role": "striking location in story"
+      },
+      {
+        "concept": "queen",
+        "label": "filler",
+        "role": "mentioned figure in context"
+      },
+      {
+        "concept": "marble",
+        "label": "filler",
+        "role": "neutral object in context"
+      },
+      {
+        "concept": "india",
+        "label": "load_bearing",
+        "role": "unstated bridge: country relevant to context"
+      }
+    ]
+  },
+  {
+    "context": "Liwei carefully adjusted his mitt before stepping up to the plate on the diamond-shaped field. The outfielders chatted as the call of 'strike three!' echoed across the bases. After the final inning ended, he grabbed a massive slice of pepperoni pizza and found a spot among fans waving navy and white hats. As fireworks lit up the night, Liwei smiled, still holding his ticket stub from Yankee Stadium.",
+    "probe_question": "What sport did Liwei participate in during his outing?",
+    "answer": "baseball",
+    "items": [
+      {
+        "concept": "pizza",
+        "label": "distractor",
+        "role": "vivid, familiar food from context"
+      },
+      {
+        "concept": "hat",
+        "label": "filler",
+        "role": "neutral object in context"
+      },
+      {
+        "concept": "stadium",
+        "label": "filler",
+        "role": "neutral place in context"
+      },
+      {
+        "concept": "fireworks",
+        "label": "distractor",
+        "role": "emotional, vivid context event"
+      },
+      {
+        "concept": "yankees",
+        "label": "load_bearing",
+        "role": "unstated bridge: team inferred from location"
+      }
+    ]
+  },
+  {
+    "context": "Svetlana huddled in the frigid morning, breath misting as she waited for the tram beside the grand opera house. As she boarded, an elderly woman offered a piece of dark rye bread, wrapped in waxed paper. Frost covered the banks of the wide river flowing through the city\u2019s center. Church bells tolled as citizens in thick wool coats hurried by painted eggs displayed in a bakery window.",
+    "probe_question": "What alphabet does Svetlana likely use to write?",
+    "answer": "cyrillic",
+    "items": [
+      {
+        "concept": "tram",
+        "label": "filler",
+        "role": "neutral context detail"
+      },
+      {
+        "concept": "opera",
+        "label": "distractor",
+        "role": "vivid landmark from context"
+      },
+      {
+        "concept": "bread",
+        "label": "distractor",
+        "role": "memorable shared food from context"
+      },
+      {
+        "concept": "river",
+        "label": "filler",
+        "role": "neutral element in setting"
+      },
+      {
+        "concept": "ukraine",
+        "label": "load_bearing",
+        "role": "unstated bridge: country inferred from context"
+      }
+    ]
+  },
+  {
+    "context": "Oriane woke up before dawn to measure the water level by the old levee, as part of her daily routine as a hydrologist. Recently, extreme floods had threatened several river towns downstream. Oriane wore her orange safety jacket and jotted down numbers in her weatherproof notebook. She double-checked the pressure gauge, then recorded the data on her tablet before heading back to her truck.",
+    "probe_question": "What continent does Oriane work on for her job?",
+    "answer": "europe",
+    "items": [
+      {
+        "concept": "flood",
+        "label": "distractor",
+        "role": "dramatic weather event in the context"
+      },
+      {
+        "concept": "jacket",
+        "label": "filler",
+        "role": "neutral object worn in context"
+      },
+      {
+        "concept": "levee",
+        "label": "distractor",
+        "role": "conspicuous location in context"
+      },
+      {
+        "concept": "hydrologist",
+        "label": "filler",
+        "role": "neutral job title from the context"
+      },
+      {
+        "concept": "rhine",
+        "label": "load_bearing",
+        "role": "implicit name of river implied by context"
+      },
+      {
+        "concept": "truck",
+        "label": "distractor",
+        "role": "physical object mentioned, evocative but irrelevant"
+      }
+    ]
+  },
+  {
+    "context": "Eladio examined the fossilized frond with delicate tweezers, dusting away grit from the ancient imprint. In his lab, specimens from the Atacama continued to surprise him. Eladio recorded observations about the sediment layers, using a magnifying lens to seek microscopic traces. Later, he logged his findings into the digital archive of the national museum.",
+    "probe_question": "On which continent does Eladio usually conduct research?",
+    "answer": "south america",
+    "items": [
+      {
+        "concept": "frond",
+        "label": "distractor",
+        "role": "prominent fossil type in the context"
+      },
+      {
+        "concept": "lens",
+        "label": "filler",
+        "role": "scientific tool in use in context"
+      },
+      {
+        "concept": "museum",
+        "label": "filler",
+        "role": "place where findings are stored"
+      },
+      {
+        "concept": "atacama",
+        "label": "distractor",
+        "role": "geographical area specifically mentioned"
+      },
+      {
+        "concept": "tweezers",
+        "label": "distractor",
+        "role": "evocative tool from the context"
+      },
+      {
+        "concept": "chile",
+        "label": "load_bearing",
+        "role": "country implicitly linked to the Atacama"
+      }
+    ]
+  },
+  {
+    "context": "Priya fitted the compact battery into her gleaming auto before joining a line of colorful rickshaws at the city square. She greeted customers, adjusting the printed scarf shielding her from the midday sun. As she navigated narrow streets, Priya passed a festive market alive with bright spices and the sound of distant temple bells.",
+    "probe_question": "What is the official currency where Priya works?",
+    "answer": "rupee",
+    "items": [
+      {
+        "concept": "battery",
+        "label": "filler",
+        "role": "technical object used in context"
+      },
+      {
+        "concept": "rickshaw",
+        "label": "filler",
+        "role": "vehicle mentioned in scene"
+      },
+      {
+        "concept": "scarf",
+        "label": "distractor",
+        "role": "colorful clothing item, vivid description"
+      },
+      {
+        "concept": "market",
+        "label": "distractor",
+        "role": "setting element, lively in context"
+      },
+      {
+        "concept": "temple",
+        "label": "distractor",
+        "role": "evocative cultural site in description"
+      },
+      {
+        "concept": "delhi",
+        "label": "load_bearing",
+        "role": "city implied by scene"
+      }
+    ]
+  },
+  {
+    "context": "Priya adjusted her helmet as she entered the lab\u2019s simulation chamber. Today, she was testing a new system designed to help astronauts maintain bone health. The equipment would replicate weightless conditions for several hours. Floating slightly above her seat, Priya calibrated the monitors as the artificial gravity dropped. Later, her team recorded the bone density data with excitement.",
+    "probe_question": "In what kind of environment could Priya's research be especially helpful?",
+    "answer": "space",
+    "items": [
+      {
+        "concept": "helmet",
+        "label": "filler",
+        "role": "object mentioned in context"
+      },
+      {
+        "concept": "gravity",
+        "label": "distractor",
+        "role": "scientific term vividly discussed"
+      },
+      {
+        "concept": "astronauts",
+        "label": "distractor",
+        "role": "emotional human role in context"
+      },
+      {
+        "concept": "density",
+        "label": "filler",
+        "role": "neutral scientific word from context"
+      },
+      {
+        "concept": "microgravity",
+        "label": "load_bearing",
+        "role": "essential unstated bridge concept"
+      }
+    ]
+  },
+  {
+    "context": "Soraya rushed to catch the first show at the festival, arriving as the gates opened. She was eager to see the famous trapeze troupe perform their daring aerial stunts. High above the crowd, the acrobats spun and flipped, drawing gasps from below. The tent was filled with dazzling colors and the scent of popcorn, as children cheered from their seats.",
+    "probe_question": "What kind of event did Soraya attend that often features acts with animals and clowns?",
+    "answer": "circus",
+    "items": [
+      {
+        "concept": "trapeze",
+        "label": "distractor",
+        "role": "emotional act from context"
+      },
+      {
+        "concept": "festival",
+        "label": "filler",
+        "role": "neutral word from context"
+      },
+      {
+        "concept": "tent",
+        "label": "filler",
+        "role": "object mentioned in context"
+      },
+      {
+        "concept": "acrobats",
+        "label": "distractor",
+        "role": "vivid performers from context"
+      },
+      {
+        "concept": "big",
+        "label": "load_bearing",
+        "role": "unstated bridge concept for the event"
+      }
+    ]
+  },
+  {
+    "context": "Liana clasped her badge as she entered the vast, echoing hall, joining others dressed in formal black attire. An orchestra tuned up in front, and she took her seat among the altos, silently rehearsing the Italian lyrics in her head. At the end, after thunderous applause, she handed back her music folder and hurried backstage to find her friends.",
+    "probe_question": "What kind of event had Liana likely participated in that night?",
+    "answer": "concert",
+    "items": [
+      {
+        "concept": "badge",
+        "label": "filler",
+        "role": "neutral object Liana carried"
+      },
+      {
+        "concept": "orchestra",
+        "label": "distractor",
+        "role": "vivid group present"
+      },
+      {
+        "concept": "altos",
+        "label": "distractor",
+        "role": "vivid choral section"
+      },
+      {
+        "concept": "lyrics",
+        "label": "distractor",
+        "role": "vivid detail indicating music"
+      },
+      {
+        "concept": "choir",
+        "label": "load_bearing",
+        "role": "participants in the event; bridge to common type of event"
+      }
+    ]
+  },
+  {
+    "context": "Damaris sketched elaborate scroll patterns along the edges of a sturdy mahogany frame. She brushed a glossy varnish over the wood and set it to dry beside her chisels. The studio floor was scattered with curly shavings as rays of sun filtered through frosted glass. She finally fitted a fine canvas tightly inside.",
+    "probe_question": "What type of professional is Damaris most likely to be identified as?",
+    "answer": "framer",
+    "items": [
+      {
+        "concept": "varnish",
+        "label": "filler",
+        "role": "neutral material"
+      },
+      {
+        "concept": "chisels",
+        "label": "distractor",
+        "role": "vivid crafting tool"
+      },
+      {
+        "concept": "canvas",
+        "label": "distractor",
+        "role": "vivid artistic material"
+      },
+      {
+        "concept": "frame",
+        "label": "distractor",
+        "role": "vivid structural element"
+      },
+      {
+        "concept": "woodworking",
+        "label": "load_bearing",
+        "role": "bridge concept connecting all activities in context"
+      }
+    ]
+  },
+  {
+    "context": "Yusuf triple-checked the temperature gauge on the stainless kettle. Once the water reached a rolling boil, he poured it over the leaves in a delicate ceramic pot. He waited exactly three minutes before pouring the amber liquid into floral cups. His grandmother's recipe specified it had to be Ceylon black for the taste to be authentic.",
+    "probe_question": "What beverage was Yusuf preparing for his guests?",
+    "answer": "tea",
+    "items": [
+      {
+        "concept": "boil",
+        "label": "filler",
+        "role": "neutral process from context"
+      },
+      {
+        "concept": "kettle",
+        "label": "filler",
+        "role": "neutral object from context"
+      },
+      {
+        "concept": "grandmother",
+        "label": "distractor",
+        "role": "vivid word from context"
+      },
+      {
+        "concept": "amber",
+        "label": "distractor",
+        "role": "vivid/visual word from context"
+      },
+      {
+        "concept": "sri",
+        "label": "load_bearing",
+        "role": "unstated bridge: origin of Ceylon black"
+      }
+    ]
+  },
+  {
+    "context": "Mateo eagerly bought a ticket for the El Cl\u00e1sico rivalry. He donned a red and blue jersey, joining a massive crowd roaring with anticipation. The stadium echoed with chants, and tensions rose as players like Benzema and Pedri warmed up. Mateo cheered as the whistle blew for the first half.",
+    "probe_question": "What sport did Mateo watch during his recent outing?",
+    "answer": "soccer",
+    "items": [
+      {
+        "concept": "stadium",
+        "label": "filler",
+        "role": "place of the event in context"
+      },
+      {
+        "concept": "whistle",
+        "label": "filler",
+        "role": "object/event marking the start"
+      },
+      {
+        "concept": "rivalry",
+        "label": "distractor",
+        "role": "refers to the event"
+      },
+      {
+        "concept": "barcelona",
+        "label": "load_bearing",
+        "role": "bridge: known team in El Cl\u00e1sico"
+      },
+      {
+        "concept": "jersey",
+        "label": "distractor",
+        "role": "item Mateo wore"
+      }
+    ]
+  }
+]

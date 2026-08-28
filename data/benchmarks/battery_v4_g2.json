@@ -1,0 +1,135 @@
+[
+  {
+    "context": "Rina took up a new hobby of piloting small aircraft. She enjoyed the sensation of flying high above the clouds. Her latest adventure took her from California to Nevada, crossing over vast desert landscapes. She felt the freedom of the open sky and the thrill of navigating airways. Planning routes and calculating fuel were crucial for safe landings.",
+    "probe_question": "What document might Rina need if her flight crossed the U.S. border?",
+    "answer": "passport",
+    "items": [
+      {
+        "concept": "clouds",
+        "label": "distractor",
+        "role": "vivid element of flying experience"
+      },
+      {
+        "concept": "freedom",
+        "label": "distractor",
+        "role": "emotional concept"
+      },
+      {
+        "concept": "routes",
+        "label": "filler",
+        "role": "neutral aspect of planning"
+      },
+      {
+        "concept": "landings",
+        "label": "filler",
+        "role": "neutral aspect of flying"
+      },
+      {
+        "concept": "international",
+        "label": "load_bearing",
+        "role": "crossing borders implies international travel"
+      }
+    ]
+  },
+  {
+    "context": "Oswald found himself in a city renowned for its delicate porcelain and bustling tea houses. He enjoyed the serene environment of its ancient gardens and the complex architecture surrounding them. An afternoon at the famous shopping streets left him with beautiful handcrafted souvenirs. It was an adventure marked by contrasts of tradition and modernity.",
+    "probe_question": "What type of food staple would be common in Oswald's meal?",
+    "answer": "rice",
+    "items": [
+      {
+        "concept": "porcelain",
+        "label": "distractor",
+        "role": "prominent cultural product"
+      },
+      {
+        "concept": "souvenirs",
+        "label": "distractor",
+        "role": "significant aspect of the text"
+      },
+      {
+        "concept": "tea",
+        "label": "filler",
+        "role": "beverage mentioned in setting"
+      },
+      {
+        "concept": "gardens",
+        "label": "filler",
+        "role": "feature of the city"
+      },
+      {
+        "concept": "china",
+        "label": "load_bearing",
+        "role": "bridge to the staple grain"
+      }
+    ]
+  },
+  {
+    "context": "Jasper was attending a renowned music festival set amidst breathtaking fjords. The venue, surrounded by towering rock formations, offered unique acoustics. Each band resonated deeply with the audience, echoing through the landscapes. Jasper admired the interplay of natural beauty and musical genius.",
+    "probe_question": "What type of fish dish would be likely served at Jasper's location?",
+    "answer": "salmon",
+    "items": [
+      {
+        "concept": "fjords",
+        "label": "distractor",
+        "role": "key geographic feature"
+      },
+      {
+        "concept": "music",
+        "label": "distractor",
+        "role": "central theme of the event"
+      },
+      {
+        "concept": "rock",
+        "label": "filler",
+        "role": "geological aspect of the area"
+      },
+      {
+        "concept": "festival",
+        "label": "filler",
+        "role": "contextual scenario"
+      },
+      {
+        "concept": "norway",
+        "label": "load_bearing",
+        "role": "bridge to the typical fish dish"
+      }
+    ]
+  },
+  {
+    "context": "Thalia walked through the dense forest, her heart pounding with excitement. She was excited to spot some wildlife, especially the elusive lynx known to inhabit this region. Thalia's attention was momentarily diverted by a fleeting shadow above, revealing a majestic eagle soaring effortlessly. She then decided to rest by a tranquil stream to enjoy her surroundings.",
+    "probe_question": "What language might Thalia have encountered signs in during her hike?",
+    "answer": "french",
+    "items": [
+      {
+        "concept": "forest",
+        "label": "filler",
+        "role": "neutral scenery element"
+      },
+      {
+        "concept": "eagle",
+        "label": "distractor",
+        "role": "memorable animal encountered"
+      },
+      {
+        "concept": "shadow",
+        "label": "distractor",
+        "role": "vivid visual element"
+      },
+      {
+        "concept": "stream",
+        "label": "filler",
+        "role": "neutral part of the setting"
+      },
+      {
+        "concept": "lynx",
+        "label": "distractor",
+        "role": "elusive animal mentioned"
+      },
+      {
+        "concept": "france",
+        "label": "load_bearing",
+        "role": "bridge to the answer"
+      }
+    ]
+  }
+]

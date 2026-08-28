@@ -1,0 +1,1336 @@
+[
+  {
+    "context": "Aurelia gazes up as a tiny gold pocket compass dangles from her wrist, flickering sunlight onto the pavement. She peels an orange, careful not to let the sticky juice drip onto her paperback novel. Pigeons strut nearby as a busker strums a haunting melody.",
+    "image": "data/benchmarks/vlm_images/paris.jpg",
+    "probe_question": "What language should Aurelia use to chat with the locals?",
+    "answer": "french",
+    "landmark": "Eiffel Tower",
+    "items": [
+      {
+        "concept": "paris",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "compass",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "orange",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "novel",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Rohan perches on the ancient stones, lacing up his faded red hiking boots while a bright green scarf flaps wildly in the chilly wind. He pulls a granola bar from his backpack and glances at the single white cloud casting a shadow across the vast landscape. His water bottle rests beside him, glinting in the sun.",
+    "image": "data/benchmarks/vlm_images/beijing.jpg",
+    "probe_question": "What language should Rohan use to chat with the locals?",
+    "answer": "chinese",
+    "landmark": "Great Wall of China",
+    "items": [
+      {
+        "concept": "beijing",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "scarf",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "boots",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "bottle",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Maribel holds up a tiny silver bell keychain as she tries to snap a selfie beside a lime green balloon. Seagulls squawk overhead, and she carefully sets her sunglasses on the concrete bench to untangle her headphones. The salty air is everywhere.",
+    "image": "data/benchmarks/vlm_images/newyork.jpg",
+    "probe_question": "What language should Maribel use to chat with the locals?",
+    "answer": "english",
+    "landmark": "Statue of Liberty",
+    "items": [
+      {
+        "concept": "newyork",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "balloon",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "bell",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "bench",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Sana twirls the string of delicate purple beads wrapped around her wrist as she balances a battered sketchbook on her knees. A lush dragonfly lands on her sandal, and she smiles while a straw sunhat rests forgotten beside her bag. The reflecting pool is close by.",
+    "image": "data/benchmarks/vlm_images/agra.jpg",
+    "probe_question": "What language should Sana use to chat with the locals?",
+    "answer": "hindi",
+    "landmark": "Taj Mahal",
+    "items": [
+      {
+        "concept": "agra",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "beads",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "dragonfly",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "sketchbook",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Liam cradles a coffee cup with a tiny red umbrella perched in the lid, letting the breeze tousle his curly hair. His teal scarf catches the sunlight as he sketches waves beside a battered black notebook. A dog leash is tangled at his feet.",
+    "image": "data/benchmarks/vlm_images/sydney.jpg",
+    "probe_question": "What language should Liam use to chat with the locals?",
+    "answer": "english",
+    "landmark": "Sydney Opera House",
+    "items": [
+      {
+        "concept": "sydney",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "umbrella",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "scarf",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "notebook",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Giulia spins a worn copper coin between her fingers as she sits on a stone ledge. A bright orange gelato drips down her hand, sticky and sweet, and she wipes it on a napkin. Her canvas tote bag rests against her sneaker.",
+    "image": "data/benchmarks/vlm_images/rome.jpg",
+    "probe_question": "What language should Giulia use to chat with the locals?",
+    "answer": "italian",
+    "landmark": "Colosseum",
+    "items": [
+      {
+        "concept": "rome",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "coin",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "gelato",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "napkin",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Mateus adjusts his lavender headphones and leans against a railing with a mango smoothie. The breeze sends his blue shoelaces fluttering, and someone nearby drops a tourist map. He quietly pets the ear of a small dog sitting at his feet.",
+    "image": "data/benchmarks/vlm_images/rio.jpg",
+    "probe_question": "What language should Mateus use to chat with the locals?",
+    "answer": "portuguese",
+    "landmark": "Christ the Redeemer",
+    "items": [
+      {
+        "concept": "rio",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "headphones",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "smoothie",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "map",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Harper chews thoughtfully on a strawberry licorice rope while tapping a mechanical pencil against his wristwatch. He adjusts his yellow plaid scarf and glances at the rustling leaves along the sidewalk. A black notebook peeks out from his backpack.",
+    "image": "data/benchmarks/vlm_images/london.jpg",
+    "probe_question": "What language should Harper use to chat with the locals?",
+    "answer": "english",
+    "landmark": "Big Ben",
+    "items": [
+      {
+        "concept": "london",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "licorice",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "scarf",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "notebook",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Laia drapes her blue velvet shawl over her shoulders and bites into a flaky chocolate croissant. She doodles flowers in the corner of a mint-colored journal, her silver ring reflecting the afternoon sunlight. An empty coffee cup balances on the stone ledge.",
+    "image": "data/benchmarks/vlm_images/barcelona.jpg",
+    "probe_question": "What language should Laia use to chat with the locals?",
+    "answer": "catalan",
+    "landmark": "Sagrada Familia",
+    "items": [
+      {
+        "concept": "barcelona",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "shawl",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "croissant",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "journal",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Damon swings his lucky green yo-yo as he waits for his sister to finish a sparkling purple freeze pop. He taps a postcard absentmindedly on the picnic table, glancing at the clouds drifting by. Their water bottle sits between them.",
+    "image": "data/benchmarks/vlm_images/keystone.jpg",
+    "probe_question": "What language should Damon use to chat with the locals?",
+    "answer": "english",
+    "landmark": "Mount Rushmore",
+    "items": [
+      {
+        "concept": "keystone",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "yo-yo",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "freeze",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "postcard",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Greta laces up her rainbow shoelaces just as she bites into a bright red apple, the crunch echoing. She arranges her camera lens cap beside a sketch of horses. Her canvas pouch is heavy with coins.",
+    "image": "data/benchmarks/vlm_images/berlin.jpg",
+    "probe_question": "What language should Greta use to chat with the locals?",
+    "answer": "german",
+    "landmark": "Brandenburg Gate",
+    "items": [
+      {
+        "concept": "berlin",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "shoelaces",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "apple",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "camera",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Anika tightens the violet ribbon on her hat as she leans over the railing to take a photo. Her mint tin clicks shut, echoing softly, and a brown notebook dangles from her wrist. A beige backpack sits on the bench behind her.",
+    "image": "data/benchmarks/vlm_images/schwangau.jpg",
+    "probe_question": "What language should Anika use to chat with the locals?",
+    "answer": "german",
+    "landmark": "Neuschwanstein Castle",
+    "items": [
+      {
+        "concept": "schwangau",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "ribbon",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "mint",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "notebook",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Chenda tucks a yellow marigold behind her ear as she traces patterns in the dust with a stick. Her turquoise water flask is propped beside a charcoal sketch. A dragonfly hovers for an instant over her sandals.",
+    "image": "data/benchmarks/vlm_images/siemreap.jpg",
+    "probe_question": "What language should Chenda use to chat with the locals?",
+    "answer": "khmer",
+    "landmark": "Angkor Wat",
+    "items": [
+      {
+        "concept": "siemreap",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "marigold",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "dragonfly",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "flask",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Kirill balances a jar of crimson raspberry jam on his knee while fussing with a striped scarf. He flicks a tiny wooden bear keychain in his palm, watching the crowd. His worn black umbrella leans against his boot.",
+    "image": "data/benchmarks/vlm_images/moscow.jpg",
+    "probe_question": "What language should Kirill use to chat with the locals?",
+    "answer": "russian",
+    "landmark": "St. Basil's Cathedral",
+    "items": [
+      {
+        "concept": "moscow",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "jam",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "scarf",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "umbrella",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Yasmin sips ice-cold lemonade from a glass adorned with a magenta paper crane while twirling a fuchsia pen. A blue fan whirs quietly beside her, scattering papers on the table. Her leather planner is tucked under her elbow.",
+    "image": "data/benchmarks/vlm_images/dubai.jpg",
+    "probe_question": "What language should Yasmin use to chat with the locals?",
+    "answer": "arabic",
+    "landmark": "Burj Khalifa",
+    "items": [
+      {
+        "concept": "dubai",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "lemonade",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "crane",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "planner",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Inti adjusts the worn green poncho over his shoulders, a copper whistle hanging from his neck. He draws shapes in the red dust with a twig, his well-loved canteen resting on a stone. Single feather flutters down nearby.",
+    "image": "data/benchmarks/vlm_images/cusco.jpg",
+    "probe_question": "What language should Inti use to chat with the locals?",
+    "answer": "quechua",
+    "landmark": "Machu Picchu",
+    "items": [
+      {
+        "concept": "cusco",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "poncho",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "whistle",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "canteen",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "June dangles her sunglasses from one hand, squinting into the wind as a blue kite tumbles overhead. Her hands are stained with cherry slushie, and she leans on a metal bike rack. The wind rattles a shopping bag at her feet.",
+    "image": "data/benchmarks/vlm_images/sanfrancisco.jpg",
+    "probe_question": "What language should June use to chat with the locals?",
+    "answer": "english",
+    "landmark": "Golden Gate Bridge",
+    "items": [
+      {
+        "concept": "sanfrancisco",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "kite",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "slushie",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "rack",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Sotiris sketches the crumbling marble with a pencil capped by an orange eraser as a cicada perches on his blue cap. He smoothes a crumpled map onto the sun-warmed rock, the bristles of his brush sticking out of his tote. A green water bottle lies open near him.",
+    "image": "data/benchmarks/vlm_images/athens.jpg",
+    "probe_question": "What language should Sotiris use to chat with the locals?",
+    "answer": "greek",
+    "landmark": "Acropolis of Athens",
+    "items": [
+      {
+        "concept": "athens",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "cicada",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "eraser",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "map",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Edith steadies her picnic basket as she uncorks a gleaming teal thermos. She plucks a wild daisy from the grass and tucks it behind her ear, her tartan blanket spread underfoot. Her paperback novel wrests gently in the breeze.",
+    "image": "data/benchmarks/vlm_images/amesbury.jpg",
+    "probe_question": "What language should Edith use to chat with the locals?",
+    "answer": "english",
+    "landmark": "Stonehenge",
+    "items": [
+      {
+        "concept": "amesbury",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "daisy",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "thermos",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "basket",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Layla snaps a photo just as a fawn-colored stray cat slips past her purple sandals. Tiny grains of rose quartz gather on her water bottle as she brushes them away. Her canvas tote leans against a worn walking stick.",
+    "image": "data/benchmarks/vlm_images/wadi.jpg",
+    "probe_question": "What language should Layla use to chat with the locals?",
+    "answer": "arabic",
+    "landmark": "Petra",
+    "items": [
+      {
+        "concept": "wadi",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "sandals",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "quartz",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "bottle",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Thabo clutches a battered brass whistle as the wind tugs at the green scarf around his neck. He sips ginger tea from a white enamel mug, watching the clouds drift by. A hiking pole leans on the lichen-streaked rock nearby.",
+    "image": "data/benchmarks/vlm_images/cape.jpg",
+    "probe_question": "What language should Thabo use to chat with the locals?",
+    "answer": "afrikaans",
+    "landmark": "Table Mountain",
+    "items": [
+      {
+        "concept": "cape",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "whistle",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "scarf",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "mug",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Bianca arranges a handful of purple origami cranes around her camera, snapping a picture with a click. Her orange sandals leave prints in the dry grass as she grins. A checked picnic blanket is spread nearby.",
+    "image": "data/benchmarks/vlm_images/pisa.jpg",
+    "probe_question": "What language should Bianca use to chat with the locals?",
+    "answer": "italian",
+    "landmark": "Leaning Tower of Pisa",
+    "items": [
+      {
+        "concept": "pisa",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "origami",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "sandals",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "camera",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Juanita balances a turquoise bracelet on her wrist as she hides from the midday sun under a lemon-yellow umbrella. She draws spirals in the sand with a stick, her canvas shoes resting beside a clay mug. A paperback guidebook faces up at her knee.",
+    "image": "data/benchmarks/vlm_images/valladolid.jpg",
+    "probe_question": "What language should Juanita use to chat with the locals?",
+    "answer": "spanish",
+    "landmark": "Chichen Itza",
+    "items": [
+      {
+        "concept": "valladolid",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "bracelet",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "umbrella",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "guidebook",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "C\u00e9leste carefully fans herself with a painted silk fan, the sunlight bouncing off her rose brooch. She glances down at a pearl-trimmed notebook, sketching in the margins. A glass of iced tea sits delicately beside her lace handkerchief.",
+    "image": "data/benchmarks/vlm_images/versailles.jpg",
+    "probe_question": "What language should C\u00e9leste use to chat with the locals?",
+    "answer": "french",
+    "landmark": "Palace of Versailles",
+    "items": [
+      {
+        "concept": "versailles",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "fan",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "brooch",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "tea",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Aung balances a crimson lotus blossom on his open palm as golden sunlight dapples his straw hat. He sets a painted gourd beside his notebook and bows his head. A bamboo mat is spread beneath his feet.",
+    "image": "data/benchmarks/vlm_images/yangon.jpg",
+    "probe_question": "What language should Aung use to chat with the locals?",
+    "answer": "burmese",
+    "landmark": "Shwedagon Pagoda",
+    "items": [
+      {
+        "concept": "yangon",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "blossom",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "gourd",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "notebook",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Zofie peers through her round spectacles at a delicate brass pocketwatch ticking in her palm. She polishes her well-worn leather shoes with a handkerchief, the metallic gleam reflected in her eyes. A guidebook rests by her elbow on the bench.",
+    "image": "data/benchmarks/vlm_images/prague.jpg",
+    "probe_question": "What language should Zofie use to chat with the locals?",
+    "answer": "czech",
+    "landmark": "Prague Astronomical Clock",
+    "items": [
+      {
+        "concept": "prague",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "spectacles",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "pocketwatch",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "guidebook",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Malik dangles a neon green lanyard from his wrist as he finishes a strawberry smoothie. He taps the screen of his digital camera, adjusting settings for the next shot. Purple earbuds peek from his pocket.",
+    "image": "data/benchmarks/vlm_images/toronto.jpg",
+    "probe_question": "What language should Malik use to chat with the locals?",
+    "answer": "english",
+    "landmark": "CN Tower",
+    "items": [
+      {
+        "concept": "toronto",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "lanyard",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "smoothie",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "camera",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Emi swings a blue bento box by its panda-shaped handle as she runs up the steps, her purple socks sliding. She snaps a photo of her friend holding a paper umbrella. Her polka-dotted coin purse rattles on her belt loop.",
+    "image": "data/benchmarks/vlm_images/tokyo.jpg",
+    "probe_question": "What language should Emi use to chat with the locals?",
+    "answer": "japanese",
+    "landmark": "Tokyo Tower",
+    "items": [
+      {
+        "concept": "tokyo",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "bento",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "umbrella",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "purse",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Elif ties her teal prayer beads to her bag while sipping a tiny glass of apple tea. Her sandals click against the marble as she fans herself with a red notebook. A pigeon flutters past at her feet.",
+    "image": "data/benchmarks/vlm_images/istanbul.jpg",
+    "probe_question": "What language should Elif use to chat with the locals?",
+    "answer": "turkish",
+    "landmark": "Blue Mosque",
+    "items": [
+      {
+        "concept": "istanbul",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "beads",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "tea",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "notebook",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Lucia arranges a fan of tangerine peels on a mosaic bench, their fragrance thick in the air. She sketches geometric shapes in a soft leather journal, brushing pink petals from her lap. Her water bottle glistens at her side.",
+    "image": "data/benchmarks/vlm_images/granada.jpg",
+    "probe_question": "What language should Lucia use to chat with the locals?",
+    "answer": "spanish",
+    "landmark": "Alhambra",
+    "items": [
+      {
+        "concept": "granada",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "peels",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "petals",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "journal",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Jonah spins a tiny copper dreidel on his palm as he bites into a watermelon lolly. His blue windbreaker flaps behind him, and a pair of binoculars dangles from his neck. The vending machine hums beside his bench.",
+    "image": "data/benchmarks/vlm_images/seattle.jpg",
+    "probe_question": "What language should Jonah use to chat with the locals?",
+    "answer": "english",
+    "landmark": "Space Needle",
+    "items": [
+      {
+        "concept": "seattle",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "dreidel",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "lolly",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "binoculars",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Yasser traces the number seven on his notebook with a golden calligraphy pen, the pages flecked with indigo ink. A small velvet pouch rests beside his prayer rug. The soft hum of a portable fan is all around.",
+    "image": "data/benchmarks/vlm_images/mecca.jpg",
+    "probe_question": "What language should Yasser use to chat with the locals?",
+    "answer": "arabic",
+    "landmark": "Mecca Clock Tower",
+    "items": [
+      {
+        "concept": "mecca",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "pen",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "pouch",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "notebook",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Chipo cradles a violet poncho as the spray dampens her green canvas sneakers. She snaps a rubber band twice around her wrist, watching a bright orange dragonfly zigzag nearby. Her water flask rests on a boulder.",
+    "image": "data/benchmarks/vlm_images/livingstone.jpg",
+    "probe_question": "What language should Chipo use to chat with the locals?",
+    "answer": "tonga",
+    "landmark": "Victoria Falls",
+    "items": [
+      {
+        "concept": "livingstone",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "poncho",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "dragonfly",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "flask",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Alba balances a tiny golden lion brooch on her sketchbook as she sips espresso from a delicate blue cup. Her red beret is askew, and a crumpled ticket stub pokes from her pocket. Tourists chatter nearby.",
+    "image": "data/benchmarks/vlm_images/venice.jpg",
+    "probe_question": "What language should Alba use to chat with the locals?",
+    "answer": "italian",
+    "landmark": "Saint Mark's Basilica",
+    "items": [
+      {
+        "concept": "venice",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "brooch",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "beret",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "sketchbook",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Omar shields his eyes from the sunlight with a bright calico scarf as he toys with a blue scarab amulet. His notebook is pressed flat by a silver flask. The wind stirs sand over his suede boots.",
+    "image": "data/benchmarks/vlm_images/giza.jpg",
+    "probe_question": "What language should Omar use to chat with the locals?",
+    "answer": "arabic",
+    "landmark": "Pyramids of Giza",
+    "items": [
+      {
+        "concept": "giza",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "amulet",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "scarf",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "notebook",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Kiri brushes black volcanic pebbles into a neat circle around her blue flip-flops. She tugs at a tangerine tank top, the wind tossing her hair. A green thermos thunks against her knee as she sits.",
+    "image": "data/benchmarks/vlm_images/hanga.jpg",
+    "probe_question": "What language should Kiri use to chat with the locals?",
+    "answer": "rapanui",
+    "landmark": "Moai",
+    "items": [
+      {
+        "concept": "hanga",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "pebbles",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "flip-flops",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "thermos",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Eleno polishes a silver milagro charm as he sits beside an emerald lollipop stuck to a napkin. His battered satchel holds a stack of postcards. A squeaky rubber duck pokes from his pocket.",
+    "image": "data/benchmarks/vlm_images/mexico.jpg",
+    "probe_question": "What language should Eleno use to chat with the locals?",
+    "answer": "spanish",
+    "landmark": "Metropolitan Cathedral (Mexico City)",
+    "items": [
+      {
+        "concept": "mexico",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "milagro",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "lollipop",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "satchel",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Bruno spins a miniature bicycle charm between his fingertips, watching sunlight glint off its silver spokes. He bites into a waffle dusted with powdered sugar while his sketchbook flutters in the breeze. A reusable water bottle sits at his side.",
+    "image": "data/benchmarks/vlm_images/brussels.jpg",
+    "probe_question": "What language should Bruno use to chat with the locals?",
+    "answer": "french",
+    "landmark": "Atomium",
+    "items": [
+      {
+        "concept": "brussels",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "bicycle",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "waffle",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "sketchbook",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Matthias tugs at the end of a striped purple scarf as he dribbles blue ink on his architectural notebook. His green apple tumbles into a clattering cup, splashing purple juice. He wipes at the stains with a cotton handkerchief.",
+    "image": "data/benchmarks/vlm_images/vienna.jpg",
+    "probe_question": "What language should Matthias use to chat with the locals?",
+    "answer": "german",
+    "landmark": "St. Stephen's Cathedral, Vienna",
+    "items": [
+      {
+        "concept": "vienna",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "scarf",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "apple",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "notebook",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Alessia smoothes the edge of a lilac shopping bag, her yellow sunglasses perched atop her head. She jots notes into a tiny pink memo pad, drawing quick hearts. A paper napkin flutters beside her feet.",
+    "image": "data/benchmarks/vlm_images/milan.jpg",
+    "probe_question": "What language should Alessia use to chat with the locals?",
+    "answer": "italian",
+    "landmark": "Milan Cathedral",
+    "items": [
+      {
+        "concept": "milan",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "sunglasses",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "memo",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "napkin",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Azhar smoothes his olive prayer rug while counting blue prayer beads. A violet notebook stuffed with sticky notes balances under his elbow. He sips lemon water from a tall flask.",
+    "image": "data/benchmarks/vlm_images/muscat.jpg",
+    "probe_question": "What language should Azhar use to chat with the locals?",
+    "answer": "arabic",
+    "landmark": "Sultan Qaboos Grand Mosque",
+    "items": [
+      {
+        "concept": "muscat",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "beads",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "rug",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "notebook",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Haruka ties her cherry-print scarf around her ponytail and adjusts a jade pendant. A white thermos peeks from her canvas rucksack, and her hiking boots are stained with dust. Wildflowers brush her ankle.",
+    "image": "data/benchmarks/vlm_images/fujiyoshida.jpg",
+    "probe_question": "What language should Haruka use to chat with the locals?",
+    "answer": "japanese",
+    "landmark": "Mount Fuji",
+    "items": [
+      {
+        "concept": "fujiyoshida",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "scarf",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "pendant",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "thermos",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Maisie crumbles shortbread into her gloved palm as she presses a tartan wallet shut. A scruffy magpie inspects the remains while a jumble of colored pencils rolls across her sketchbook. Her thermos leans against the stone bench.",
+    "image": "data/benchmarks/vlm_images/edinburgh.jpg",
+    "probe_question": "What language should Maisie use to chat with the locals?",
+    "answer": "scots",
+    "landmark": "Edinburgh Castle",
+    "items": [
+      {
+        "concept": "edinburgh",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "shortbread",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "wallet",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "sketchbook",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Basil presses a gold lapel pin onto his jacket, straightening his blue tie. His travel mug sits next to a crumpled set of notes on the granite steps. A robin lands briefly on his black briefcase.",
+    "image": "data/benchmarks/vlm_images/washington.jpg",
+    "probe_question": "What language should Basil use to chat with the locals?",
+    "answer": "english",
+    "landmark": "Capitol Hill",
+    "items": [
+      {
+        "concept": "washington",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "pin",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "robin",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "notes",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Aarav twists a seedpod between his fingers as sweat beads on his brow. His neon pink flip-flops slap the sun-warmed pavement, and a turquoise handkerchief peeks from his pocket. A plastic water bottle jingles in his tote.",
+    "image": "data/benchmarks/vlm_images/delhi.jpg",
+    "probe_question": "What language should Aarav use to chat with the locals?",
+    "answer": "hindi",
+    "landmark": "Lotus Temple",
+    "items": [
+      {
+        "concept": "delhi",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "seedpod",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "flip-flops",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "handkerchief",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Sorcha hums as she sketches swirls on a napkin, her emerald velvet gloves lying across her lap. She twirls a blue felt tip between her fingers. A brown satchel sits on the pew beside her.",
+    "image": "data/benchmarks/vlm_images/dublin.jpg",
+    "probe_question": "What language should Sorcha use to chat with the locals?",
+    "answer": "irish",
+    "landmark": "St. Patrick's Cathedral, Dublin",
+    "items": [
+      {
+        "concept": "dublin",
+        "label": "load_bearing",
+        "role": "silent visual bridge (city)"
+      },
+      {
+        "concept": "gloves",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "napkin",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "satchel",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  }
+]

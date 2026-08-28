@@ -1,0 +1,9 @@
+torch>=2.2
+transformers>=4.44
+accelerate>=0.30
+numpy>=1.26
+scikit-learn>=1.4
+scipy>=1.11
+peft>=0.13,<0.14
+# Needed only by src/experiments/general_eval.py (MMLU/ARC/GSM8K).
+datasets>=2.20

@@ -1,0 +1,1336 @@
+[
+  {
+    "context": "Aurelia arrived early and waited near the structure shown in the photo. A courier nearly knocked over a cyclist during a loud argument, and Aurelia stepped back, clutching a cyclist. After a while the commotion faded and Aurelia kept waiting.",
+    "image": "data/benchmarks/vlm_images/paris.jpg",
+    "probe_question": "What language should Aurelia use to chat with the locals?",
+    "answer": "french",
+    "landmark": "Eiffel Tower",
+    "items": [
+      {
+        "concept": "paris",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "courier",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "argument",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "cyclist",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Rohan arrived early and waited near the structure shown in the photo. A umbrella nearly knocked over a cyclist during a loud siren, and Rohan stepped back, clutching a puddle. After a while the commotion faded and Rohan kept waiting.",
+    "image": "data/benchmarks/vlm_images/beijing.jpg",
+    "probe_question": "What language should Rohan use to chat with the locals?",
+    "answer": "chinese",
+    "landmark": "Great Wall of China",
+    "items": [
+      {
+        "concept": "beijing",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "umbrella",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "siren",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "puddle",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Maribel arrived early and waited near the structure shown in the photo. A pigeons nearly knocked over a cyclist during a loud scaffolding, and Maribel stepped back, clutching a megaphone. After a while the commotion faded and Maribel kept waiting.",
+    "image": "data/benchmarks/vlm_images/newyork.jpg",
+    "probe_question": "What language should Maribel use to chat with the locals?",
+    "answer": "english",
+    "landmark": "Statue of Liberty",
+    "items": [
+      {
+        "concept": "newyork",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "pigeons",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "scaffolding",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "megaphone",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Sana arrived early and waited near the structure shown in the photo. A balloon nearly knocked over a cyclist during a loud stroller, and Sana stepped back, clutching a whistle. After a while the commotion faded and Sana kept waiting.",
+    "image": "data/benchmarks/vlm_images/agra.jpg",
+    "probe_question": "What language should Sana use to chat with the locals?",
+    "answer": "hindi",
+    "landmark": "Taj Mahal",
+    "items": [
+      {
+        "concept": "agra",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "balloon",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "stroller",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "whistle",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Liam arrived early and waited near the structure shown in the photo. A ladder nearly knocked over a cyclist during a loud barricade, and Liam stepped back, clutching a drone. After a while the commotion faded and Liam kept waiting.",
+    "image": "data/benchmarks/vlm_images/sydney.jpg",
+    "probe_question": "What language should Liam use to chat with the locals?",
+    "answer": "english",
+    "landmark": "Sydney Opera House",
+    "items": [
+      {
+        "concept": "sydney",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "ladder",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "barricade",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "drone",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Giulia arrived early and waited near the structure shown in the photo. A skateboard nearly knocked over a cyclist during a loud traffic, and Giulia stepped back, clutching a camera. After a while the commotion faded and Giulia kept waiting.",
+    "image": "data/benchmarks/vlm_images/rome.jpg",
+    "probe_question": "What language should Giulia use to chat with the locals?",
+    "answer": "italian",
+    "landmark": "Colosseum",
+    "items": [
+      {
+        "concept": "rome",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "skateboard",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "traffic",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "camera",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Mateus arrived early and waited near the structure shown in the photo. A backpack nearly knocked over a cyclist during a loud raincoat, and Mateus stepped back, clutching a scooter. After a while the commotion faded and Mateus kept waiting.",
+    "image": "data/benchmarks/vlm_images/rio.jpg",
+    "probe_question": "What language should Mateus use to chat with the locals?",
+    "answer": "portuguese",
+    "landmark": "Christ the Redeemer",
+    "items": [
+      {
+        "concept": "rio",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "backpack",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "raincoat",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "scooter",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Harper arrived early and waited near the structure shown in the photo. A crowd nearly knocked over a cyclist during a loud queue, and Harper stepped back, clutching a vendor. After a while the commotion faded and Harper kept waiting.",
+    "image": "data/benchmarks/vlm_images/london.jpg",
+    "probe_question": "What language should Harper use to chat with the locals?",
+    "answer": "english",
+    "landmark": "Big Ben",
+    "items": [
+      {
+        "concept": "london",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "crowd",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "queue",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "vendor",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Laia arrived early and waited near the structure shown in the photo. A microphone nearly knocked over a cyclist during a loud banner, and Laia stepped back, clutching a confetti. After a while the commotion faded and Laia kept waiting.",
+    "image": "data/benchmarks/vlm_images/barcelona.jpg",
+    "probe_question": "What language should Laia use to chat with the locals?",
+    "answer": "catalan",
+    "landmark": "Sagrada Familia",
+    "items": [
+      {
+        "concept": "barcelona",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "microphone",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "banner",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "confetti",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Damon arrived early and waited near the structure shown in the photo. A firetruck nearly knocked over a cyclist during a loud ambulance, and Damon stepped back, clutching a helicopter. After a while the commotion faded and Damon kept waiting.",
+    "image": "data/benchmarks/vlm_images/keystone.jpg",
+    "probe_question": "What language should Damon use to chat with the locals?",
+    "answer": "english",
+    "landmark": "Mount Rushmore",
+    "items": [
+      {
+        "concept": "keystone",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "firetruck",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "ambulance",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "helicopter",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Greta arrived early and waited near the structure shown in the photo. A protest nearly knocked over a cyclist during a loud parade, and Greta stepped back, clutching a puppet. After a while the commotion faded and Greta kept waiting.",
+    "image": "data/benchmarks/vlm_images/berlin.jpg",
+    "probe_question": "What language should Greta use to chat with the locals?",
+    "answer": "german",
+    "landmark": "Brandenburg Gate",
+    "items": [
+      {
+        "concept": "berlin",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "protest",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "parade",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "puppet",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Anika arrived early and waited near the structure shown in the photo. A accordion nearly knocked over a cyclist during a loud juggler, and Anika stepped back, clutching a magician. After a while the commotion faded and Anika kept waiting.",
+    "image": "data/benchmarks/vlm_images/schwangau.jpg",
+    "probe_question": "What language should Anika use to chat with the locals?",
+    "answer": "german",
+    "landmark": "Neuschwanstein Castle",
+    "items": [
+      {
+        "concept": "schwangau",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "accordion",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "juggler",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "magician",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Chenda arrived early and waited near the structure shown in the photo. A spill nearly knocked over a cyclist during a loud alarm, and Chenda stepped back, clutching a glitter. After a while the commotion faded and Chenda kept waiting.",
+    "image": "data/benchmarks/vlm_images/siemreap.jpg",
+    "probe_question": "What language should Chenda use to chat with the locals?",
+    "answer": "khmer",
+    "landmark": "Angkor Wat",
+    "items": [
+      {
+        "concept": "siemreap",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "spill",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "alarm",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "glitter",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Kirill arrived early and waited near the structure shown in the photo. A trombone nearly knocked over a cyclist during a loud unicycle, and Kirill stepped back, clutching a mascot. After a while the commotion faded and Kirill kept waiting.",
+    "image": "data/benchmarks/vlm_images/moscow.jpg",
+    "probe_question": "What language should Kirill use to chat with the locals?",
+    "answer": "russian",
+    "landmark": "St. Basil's Cathedral",
+    "items": [
+      {
+        "concept": "moscow",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "trombone",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "unicycle",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "mascot",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Yasmin arrived early and waited near the structure shown in the photo. A flashmob nearly knocked over a cyclist during a loud bullhorn, and Yasmin stepped back, clutching a tarp. After a while the commotion faded and Yasmin kept waiting.",
+    "image": "data/benchmarks/vlm_images/dubai.jpg",
+    "probe_question": "What language should Yasmin use to chat with the locals?",
+    "answer": "arabic",
+    "landmark": "Burj Khalifa",
+    "items": [
+      {
+        "concept": "dubai",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "flashmob",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "bullhorn",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "tarp",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Inti arrived early and waited near the structure shown in the photo. A crane nearly knocked over a cyclist during a loud jackhammer, and Inti stepped back, clutching a generator. After a while the commotion faded and Inti kept waiting.",
+    "image": "data/benchmarks/vlm_images/cusco.jpg",
+    "probe_question": "What language should Inti use to chat with the locals?",
+    "answer": "quechua",
+    "landmark": "Machu Picchu",
+    "items": [
+      {
+        "concept": "cusco",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "crane",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "jackhammer",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "generator",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "June arrived early and waited near the structure shown in the photo. A forklift nearly knocked over a cyclist during a loud billboard, and June stepped back, clutching a turnstile. After a while the commotion faded and June kept waiting.",
+    "image": "data/benchmarks/vlm_images/sanfrancisco.jpg",
+    "probe_question": "What language should June use to chat with the locals?",
+    "answer": "english",
+    "landmark": "Golden Gate Bridge",
+    "items": [
+      {
+        "concept": "sanfrancisco",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "forklift",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "billboard",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "turnstile",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Sotiris arrived early and waited near the structure shown in the photo. A kiosk nearly knocked over a cyclist during a loud fountain, and Sotiris stepped back, clutching a bench. After a while the commotion faded and Sotiris kept waiting.",
+    "image": "data/benchmarks/vlm_images/athens.jpg",
+    "probe_question": "What language should Sotiris use to chat with the locals?",
+    "answer": "greek",
+    "landmark": "Acropolis of Athens",
+    "items": [
+      {
+        "concept": "athens",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "kiosk",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "fountain",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "bench",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Edith arrived early and waited near the structure shown in the photo. A railing nearly knocked over a cyclist during a loud lamppost, and Edith stepped back, clutching a dumpster. After a while the commotion faded and Edith kept waiting.",
+    "image": "data/benchmarks/vlm_images/amesbury.jpg",
+    "probe_question": "What language should Edith use to chat with the locals?",
+    "answer": "english",
+    "landmark": "Stonehenge",
+    "items": [
+      {
+        "concept": "amesbury",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "railing",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "lamppost",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "dumpster",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Layla arrived early and waited near the structure shown in the photo. A hydrant nearly knocked over a cyclist during a loud mailbox, and Layla stepped back, clutching a signpost. After a while the commotion faded and Layla kept waiting.",
+    "image": "data/benchmarks/vlm_images/wadi.jpg",
+    "probe_question": "What language should Layla use to chat with the locals?",
+    "answer": "arabic",
+    "landmark": "Petra",
+    "items": [
+      {
+        "concept": "wadi",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "hydrant",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "mailbox",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "signpost",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Thabo arrived early and waited near the structure shown in the photo. A awning nearly knocked over a cyclist during a loud gutter, and Thabo stepped back, clutching a manhole. After a while the commotion faded and Thabo kept waiting.",
+    "image": "data/benchmarks/vlm_images/cape.jpg",
+    "probe_question": "What language should Thabo use to chat with the locals?",
+    "answer": "afrikaans",
+    "landmark": "Table Mountain",
+    "items": [
+      {
+        "concept": "cape",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "awning",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "gutter",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "manhole",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Bianca arrived early and waited near the structure shown in the photo. A pothole nearly knocked over a cyclist during a loud curb, and Bianca stepped back, clutching a crosswalk. After a while the commotion faded and Bianca kept waiting.",
+    "image": "data/benchmarks/vlm_images/pisa.jpg",
+    "probe_question": "What language should Bianca use to chat with the locals?",
+    "answer": "italian",
+    "landmark": "Leaning Tower of Pisa",
+    "items": [
+      {
+        "concept": "pisa",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "pothole",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "curb",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "crosswalk",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Juanita arrived early and waited near the structure shown in the photo. A overpass nearly knocked over a cyclist during a loud stairwell, and Juanita stepped back, clutching a escalator. After a while the commotion faded and Juanita kept waiting.",
+    "image": "data/benchmarks/vlm_images/valladolid.jpg",
+    "probe_question": "What language should Juanita use to chat with the locals?",
+    "answer": "spanish",
+    "landmark": "Chichen Itza",
+    "items": [
+      {
+        "concept": "valladolid",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "overpass",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "stairwell",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "escalator",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "C\u00e9leste arrived early and waited near the structure shown in the photo. A elevator nearly knocked over a cyclist during a loud cone, and C\u00e9leste stepped back, clutching a podium. After a while the commotion faded and C\u00e9leste kept waiting.",
+    "image": "data/benchmarks/vlm_images/versailles.jpg",
+    "probe_question": "What language should C\u00e9leste use to chat with the locals?",
+    "answer": "french",
+    "landmark": "Palace of Versailles",
+    "items": [
+      {
+        "concept": "versailles",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "elevator",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "cone",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "podium",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Aung arrived early and waited near the structure shown in the photo. A speaker nearly knocked over a cyclist during a loud amplifier, and Aung stepped back, clutching a tripod. After a while the commotion faded and Aung kept waiting.",
+    "image": "data/benchmarks/vlm_images/yangon.jpg",
+    "probe_question": "What language should Aung use to chat with the locals?",
+    "answer": "burmese",
+    "landmark": "Shwedagon Pagoda",
+    "items": [
+      {
+        "concept": "yangon",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "speaker",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "amplifier",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "tripod",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Zofie arrived early and waited near the structure shown in the photo. A easel nearly knocked over a cyclist during a loud sketchpad, and Zofie stepped back, clutching a notebook. After a while the commotion faded and Zofie kept waiting.",
+    "image": "data/benchmarks/vlm_images/prague.jpg",
+    "probe_question": "What language should Zofie use to chat with the locals?",
+    "answer": "czech",
+    "landmark": "Prague Astronomical Clock",
+    "items": [
+      {
+        "concept": "prague",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "easel",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "sketchpad",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "notebook",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Malik arrived early and waited near the structure shown in the photo. A pencil nearly knocked over a cyclist during a loud eraser, and Malik stepped back, clutching a wallet. After a while the commotion faded and Malik kept waiting.",
+    "image": "data/benchmarks/vlm_images/toronto.jpg",
+    "probe_question": "What language should Malik use to chat with the locals?",
+    "answer": "english",
+    "landmark": "CN Tower",
+    "items": [
+      {
+        "concept": "toronto",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "pencil",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "eraser",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "wallet",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Emi arrived early and waited near the structure shown in the photo. A keychain nearly knocked over a cyclist during a loud bottle, and Emi stepped back, clutching a thermos. After a while the commotion faded and Emi kept waiting.",
+    "image": "data/benchmarks/vlm_images/tokyo.jpg",
+    "probe_question": "What language should Emi use to chat with the locals?",
+    "answer": "japanese",
+    "landmark": "Tokyo Tower",
+    "items": [
+      {
+        "concept": "tokyo",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "keychain",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "bottle",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "thermos",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Elif arrived early and waited near the structure shown in the photo. A sandwich nearly knocked over a cyclist during a loud napkin, and Elif stepped back, clutching a receipt. After a while the commotion faded and Elif kept waiting.",
+    "image": "data/benchmarks/vlm_images/istanbul.jpg",
+    "probe_question": "What language should Elif use to chat with the locals?",
+    "answer": "turkish",
+    "landmark": "Blue Mosque",
+    "items": [
+      {
+        "concept": "istanbul",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "sandwich",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "napkin",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "receipt",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Lucia arrived early and waited near the structure shown in the photo. A ticket nearly knocked over a cyclist during a loud brochure, and Lucia stepped back, clutching a map. After a while the commotion faded and Lucia kept waiting.",
+    "image": "data/benchmarks/vlm_images/granada.jpg",
+    "probe_question": "What language should Lucia use to chat with the locals?",
+    "answer": "spanish",
+    "landmark": "Alhambra",
+    "items": [
+      {
+        "concept": "granada",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "ticket",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "brochure",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "map",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Jonah arrived early and waited near the structure shown in the photo. A compass nearly knocked over a cyclist during a loud watch, and Jonah stepped back, clutching a glove. After a while the commotion faded and Jonah kept waiting.",
+    "image": "data/benchmarks/vlm_images/seattle.jpg",
+    "probe_question": "What language should Jonah use to chat with the locals?",
+    "answer": "english",
+    "landmark": "Space Needle",
+    "items": [
+      {
+        "concept": "seattle",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "compass",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "watch",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "glove",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Yasser arrived early and waited near the structure shown in the photo. A scarf nearly knocked over a cyclist during a loud button, and Yasser stepped back, clutching a zipper. After a while the commotion faded and Yasser kept waiting.",
+    "image": "data/benchmarks/vlm_images/mecca.jpg",
+    "probe_question": "What language should Yasser use to chat with the locals?",
+    "answer": "arabic",
+    "landmark": "Mecca Clock Tower",
+    "items": [
+      {
+        "concept": "mecca",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "scarf",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "button",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "zipper",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Chipo arrived early and waited near the structure shown in the photo. A shoelace nearly knocked over a cyclist during a loud pocket, and Chipo stepped back, clutching a helmet. After a while the commotion faded and Chipo kept waiting.",
+    "image": "data/benchmarks/vlm_images/livingstone.jpg",
+    "probe_question": "What language should Chipo use to chat with the locals?",
+    "answer": "tonga",
+    "landmark": "Victoria Falls",
+    "items": [
+      {
+        "concept": "livingstone",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "shoelace",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "pocket",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "helmet",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Alba arrived early and waited near the structure shown in the photo. A vest nearly knocked over a cyclist during a loud clipboard, and Alba stepped back, clutching a whiteboard. After a while the commotion faded and Alba kept waiting.",
+    "image": "data/benchmarks/vlm_images/venice.jpg",
+    "probe_question": "What language should Alba use to chat with the locals?",
+    "answer": "italian",
+    "landmark": "Saint Mark's Basilica",
+    "items": [
+      {
+        "concept": "venice",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "vest",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "clipboard",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "whiteboard",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Omar arrived early and waited near the structure shown in the photo. A marker nearly knocked over a cyclist during a loud stapler, and Omar stepped back, clutching a folder. After a while the commotion faded and Omar kept waiting.",
+    "image": "data/benchmarks/vlm_images/giza.jpg",
+    "probe_question": "What language should Omar use to chat with the locals?",
+    "answer": "arabic",
+    "landmark": "Pyramids of Giza",
+    "items": [
+      {
+        "concept": "giza",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "marker",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "stapler",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "folder",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Kiri arrived early and waited near the structure shown in the photo. A envelope nearly knocked over a cyclist during a loud stamp, and Kiri stepped back, clutching a parcel. After a while the commotion faded and Kiri kept waiting.",
+    "image": "data/benchmarks/vlm_images/hanga.jpg",
+    "probe_question": "What language should Kiri use to chat with the locals?",
+    "answer": "rapanui",
+    "landmark": "Moai",
+    "items": [
+      {
+        "concept": "hanga",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "envelope",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "stamp",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "parcel",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Eleno arrived early and waited near the structure shown in the photo. A crate nearly knocked over a cyclist during a loud trolley, and Eleno stepped back, clutching a wheelbarrow. After a while the commotion faded and Eleno kept waiting.",
+    "image": "data/benchmarks/vlm_images/mexico.jpg",
+    "probe_question": "What language should Eleno use to chat with the locals?",
+    "answer": "spanish",
+    "landmark": "Metropolitan Cathedral (Mexico City)",
+    "items": [
+      {
+        "concept": "mexico",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "crate",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "trolley",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "wheelbarrow",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Bruno arrived early and waited near the structure shown in the photo. A shovel nearly knocked over a cyclist during a loud broom, and Bruno stepped back, clutching a bucket. After a while the commotion faded and Bruno kept waiting.",
+    "image": "data/benchmarks/vlm_images/brussels.jpg",
+    "probe_question": "What language should Bruno use to chat with the locals?",
+    "answer": "french",
+    "landmark": "Atomium",
+    "items": [
+      {
+        "concept": "brussels",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "shovel",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "broom",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "bucket",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Matthias arrived early and waited near the structure shown in the photo. A mop nearly knocked over a cyclist during a loud sponge, and Matthias stepped back, clutching a towel. After a while the commotion faded and Matthias kept waiting.",
+    "image": "data/benchmarks/vlm_images/vienna.jpg",
+    "probe_question": "What language should Matthias use to chat with the locals?",
+    "answer": "german",
+    "landmark": "St. Stephen's Cathedral, Vienna",
+    "items": [
+      {
+        "concept": "vienna",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "mop",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "sponge",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "towel",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Alessia arrived early and waited near the structure shown in the photo. A blanket nearly knocked over a cyclist during a loud pillow, and Alessia stepped back, clutching a curtain. After a while the commotion faded and Alessia kept waiting.",
+    "image": "data/benchmarks/vlm_images/milan.jpg",
+    "probe_question": "What language should Alessia use to chat with the locals?",
+    "answer": "italian",
+    "landmark": "Milan Cathedral",
+    "items": [
+      {
+        "concept": "milan",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "blanket",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "pillow",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "curtain",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Azhar arrived early and waited near the structure shown in the photo. A mirror nearly knocked over a cyclist during a loud frame, and Azhar stepped back, clutching a poster. After a while the commotion faded and Azhar kept waiting.",
+    "image": "data/benchmarks/vlm_images/muscat.jpg",
+    "probe_question": "What language should Azhar use to chat with the locals?",
+    "answer": "arabic",
+    "landmark": "Sultan Qaboos Grand Mosque",
+    "items": [
+      {
+        "concept": "muscat",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "mirror",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "frame",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "poster",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Haruka arrived early and waited near the structure shown in the photo. A sticker nearly knocked over a cyclist during a loud magnet, and Haruka stepped back, clutching a candle. After a while the commotion faded and Haruka kept waiting.",
+    "image": "data/benchmarks/vlm_images/fujiyoshida.jpg",
+    "probe_question": "What language should Haruka use to chat with the locals?",
+    "answer": "japanese",
+    "landmark": "Mount Fuji",
+    "items": [
+      {
+        "concept": "fujiyoshida",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "sticker",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "magnet",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "candle",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Maisie arrived early and waited near the structure shown in the photo. A lantern nearly knocked over a cyclist during a loud flashlight, and Maisie stepped back, clutching a battery. After a while the commotion faded and Maisie kept waiting.",
+    "image": "data/benchmarks/vlm_images/edinburgh.jpg",
+    "probe_question": "What language should Maisie use to chat with the locals?",
+    "answer": "scots",
+    "landmark": "Edinburgh Castle",
+    "items": [
+      {
+        "concept": "edinburgh",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "lantern",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "flashlight",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "battery",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Basil arrived early and waited near the structure shown in the photo. A charger nearly knocked over a cyclist during a loud cable, and Basil stepped back, clutching a headphones. After a while the commotion faded and Basil kept waiting.",
+    "image": "data/benchmarks/vlm_images/washington.jpg",
+    "probe_question": "What language should Basil use to chat with the locals?",
+    "answer": "english",
+    "landmark": "Capitol Hill",
+    "items": [
+      {
+        "concept": "washington",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "charger",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "cable",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "headphones",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Aarav arrived early and waited near the structure shown in the photo. A radio nearly knocked over a cyclist during a loud speakerphone, and Aarav stepped back, clutching a printer. After a while the commotion faded and Aarav kept waiting.",
+    "image": "data/benchmarks/vlm_images/delhi.jpg",
+    "probe_question": "What language should Aarav use to chat with the locals?",
+    "answer": "hindi",
+    "landmark": "Lotus Temple",
+    "items": [
+      {
+        "concept": "delhi",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "radio",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "speakerphone",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "printer",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  },
+  {
+    "context": "Sorcha arrived early and waited near the structure shown in the photo. A scanner nearly knocked over a cyclist during a loud keyboard, and Sorcha stepped back, clutching a mouse. After a while the commotion faded and Sorcha kept waiting.",
+    "image": "data/benchmarks/vlm_images/dublin.jpg",
+    "probe_question": "What language should Sorcha use to chat with the locals?",
+    "answer": "irish",
+    "landmark": "St. Patrick's Cathedral, Dublin",
+    "items": [
+      {
+        "concept": "dublin",
+        "label": "load_bearing",
+        "role": "silent visual bridge"
+      },
+      {
+        "concept": "scanner",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "keyboard",
+        "label": "distractor",
+        "role": "vivid in-text"
+      },
+      {
+        "concept": "mouse",
+        "label": "filler",
+        "role": "neutral in-text"
+      }
+    ]
+  }
+]

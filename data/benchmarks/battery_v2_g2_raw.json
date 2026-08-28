@@ -1,0 +1,2572 @@
+[
+  {
+    "context": "Marina looked out over the canal, the autumn leaves drifting silently on the water. Her favorite spot was the narrow footpath with its quaint benches nestled between the chestnut trees. While sipping her warm latte, she noticed a group of tourists taking pictures. They seemed fascinated by the reflections of the nearby historical buildings in the tranquil water.",
+    "probe_question": "In which country is Marina most likely located?",
+    "answer": "netherlands",
+    "items": [
+      {
+        "concept": "canal",
+        "label": "distractor",
+        "role": "Vivid because canals are visually appealing."
+      },
+      {
+        "concept": "latte",
+        "label": "distractor",
+        "role": "Aromatic and comforting, catching attention."
+      },
+      {
+        "concept": "bench",
+        "label": "filler",
+        "role": "A neutral object described in the scene."
+      },
+      {
+        "concept": "reflection",
+        "label": "filler",
+        "role": "A descriptive element of the scene."
+      },
+      {
+        "concept": "netherlands",
+        "label": "load_bearing",
+        "role": "The inference based on famous canals is Amsterdam."
+      }
+    ]
+  },
+  {
+    "context": "When Lilian visited the doctor, she was anxious about her recurring cough. The doctor wore a stethoscope around his neck and listened carefully to her chest. He recommended a series of tests and advised Lilian to get more rest. The clinic was bustling with patients and the soft hum of medical equipment in the background.",
+    "probe_question": "Which organ is the doctor most concerned about?",
+    "answer": "lungs",
+    "items": [
+      {
+        "concept": "doctor",
+        "label": "distractor",
+        "role": "An obvious role in the medical scene."
+      },
+      {
+        "concept": "cough",
+        "label": "distractor",
+        "role": "Focus of the patient's immediate concern."
+      },
+      {
+        "concept": "clinic",
+        "label": "filler",
+        "role": "A location where the event takes place."
+      },
+      {
+        "concept": "patients",
+        "label": "filler",
+        "role": "Generic reference to others in the scene."
+      },
+      {
+        "concept": "lungs",
+        "label": "load_bearing",
+        "role": "Implied from 'cough' and 'listening to chest'."
+      }
+    ]
+  },
+  {
+    "context": "Jake packed his snowboard and gear, ready for his winter adventure. He kept checking the forecast for fresh powder and clear skies. The chalet he booked promised breathtaking views of the mountains. Excitedly, he planned to meet up with his friends on the slopes.",
+    "probe_question": "Which country is Jake most likely visiting?",
+    "answer": "switzerland",
+    "items": [
+      {
+        "concept": "snowboard",
+        "label": "distractor",
+        "role": "Associated with winter sports and excitement."
+      },
+      {
+        "concept": "mountain",
+        "label": "distractor",
+        "role": "Grand and visually dominant in winter sports locations."
+      },
+      {
+        "concept": "forecast",
+        "label": "filler",
+        "role": "Generic element determining when to snowboard."
+      },
+      {
+        "concept": "gear",
+        "label": "filler",
+        "role": "Essential equipment for snowboarding."
+      },
+      {
+        "concept": "switzerland",
+        "label": "load_bearing",
+        "role": "Famous for alpine skiing and chalets."
+      }
+    ]
+  },
+  {
+    "context": "The chef diced the fresh tomatoes, their sweet aroma filling the kitchen. He added a pinch of garlic and generous slivers of basil. Simmering slowly, the sauce turned a rich, enticing red. His guests gathered around the table with eager anticipation.",
+    "probe_question": "What specific dish might the chef be preparing?",
+    "answer": "pasta",
+    "items": [
+      {
+        "concept": "basil",
+        "label": "distractor",
+        "role": "A distinctive herb with a strong aroma."
+      },
+      {
+        "concept": "tomato",
+        "label": "distractor",
+        "role": "A critical ingredient with a sweet smell."
+      },
+      {
+        "concept": "sauce",
+        "label": "filler",
+        "role": "An element that ties ingredients together."
+      },
+      {
+        "concept": "kitchen",
+        "label": "filler",
+        "role": "The place where the cooking occurs."
+      },
+      {
+        "concept": "pasta",
+        "label": "load_bearing",
+        "role": "Implied with sauce and Italian ingredients."
+      }
+    ]
+  },
+  {
+    "context": "Ayla read about the mysterious ruins uncovered by the archaeologists. The site was believed to be an ancient city buried under layers of sand. Artifacts such as pottery, jewelry, and primitive tools were discovered. Reports mentioned the city's proximity to a once-powerful river.",
+    "probe_question": "Which major river might have been near this city?",
+    "answer": "nile",
+    "items": [
+      {
+        "concept": "archaeologists",
+        "label": "distractor",
+        "role": "Intriguing profession involved in the discovery."
+      },
+      {
+        "concept": "jewelry",
+        "label": "distractor",
+        "role": "Valuable and interesting artifacts found."
+      },
+      {
+        "concept": "ruins",
+        "label": "filler",
+        "role": "General reference to the ancient site."
+      },
+      {
+        "concept": "city",
+        "label": "filler",
+        "role": "The main subject of the discovery."
+      },
+      {
+        "concept": "nile",
+        "label": "load_bearing",
+        "role": "Associated with historical Egyptian cities."
+      }
+    ]
+  },
+  {
+    "context": "Marie loves wandering through vast collections of paintings. One of her favorite locations is the Louvre, where she spends hours admiring works by famous artists. The museum is located in what she considers the art capital of the world.",
+    "probe_question": "In which city does Marie think the art capital of the world is located?",
+    "answer": "paris",
+    "items": [
+      {
+        "concept": "louvre",
+        "label": "distractor",
+        "role": "the museum Marie visits"
+      },
+      {
+        "concept": "paintings",
+        "label": "filler",
+        "role": "Marie loves browsing these"
+      },
+      {
+        "concept": "marie",
+        "label": "filler",
+        "role": "the main subject's name"
+      },
+      {
+        "concept": "paris",
+        "label": "load_bearing",
+        "role": "the city where the Louvre is located"
+      },
+      {
+        "concept": "artists",
+        "label": "distractor",
+        "role": "people who create art"
+      }
+    ]
+  },
+  {
+    "context": "James' fascination with technology led him to the headquarters of a company known for its innovative products. The massive glass building stands in Cupertino, drawing tech enthusiasts from around the globe.",
+    "probe_question": "Which company is associated with the headquarters in Cupertino where James visited?",
+    "answer": "apple",
+    "items": [
+      {
+        "concept": "cupertino",
+        "label": "distractor",
+        "role": "the location mentioned"
+      },
+      {
+        "concept": "headquarters",
+        "label": "filler",
+        "role": "the building type"
+      },
+      {
+        "concept": "technology",
+        "label": "filler",
+        "role": "James' interest"
+      },
+      {
+        "concept": "apple",
+        "label": "load_bearing",
+        "role": "the company known for innovation headquartered there"
+      },
+      {
+        "concept": "glass",
+        "label": "distractor",
+        "role": "material of the building mentioned"
+      }
+    ]
+  },
+  {
+    "context": "Sarah always enjoyed exploring geological formations. During her vacation, she visited the Grand Canyon, a vast and stunning natural wonder offering breathtaking views.",
+    "probe_question": "What country is Sarah visiting when she explores the Grand Canyon?",
+    "answer": "usa",
+    "items": [
+      {
+        "concept": "canyon",
+        "label": "filler",
+        "role": "geological feature Sarah enjoys"
+      },
+      {
+        "concept": "views",
+        "label": "distractor",
+        "role": "aspect Sarah finds breathtaking"
+      },
+      {
+        "concept": "usa",
+        "label": "load_bearing",
+        "role": "country where the Grand Canyon is located"
+      },
+      {
+        "concept": "vacation",
+        "label": "distractor",
+        "role": "Sarah's trip status"
+      },
+      {
+        "concept": "sarah",
+        "label": "filler",
+        "role": "the main subject's name"
+      }
+    ]
+  },
+  {
+    "context": "The tiny red fruit that Samuel savors with his morning yogurt packs a lot of vitamins. Despite their size, these fruits are full of flavor and often harvested from bushes.",
+    "probe_question": "What kind of fruit is Samuel having with his yogurt?",
+    "answer": "berries",
+    "items": [
+      {
+        "concept": "fruit",
+        "label": "filler",
+        "role": "general category of food mentioned"
+      },
+      {
+        "concept": "vitamins",
+        "label": "distractor",
+        "role": "provides nutritional value"
+      },
+      {
+        "concept": "flavor",
+        "label": "distractor",
+        "role": "describes taste experience"
+      },
+      {
+        "concept": "berries",
+        "label": "load_bearing",
+        "role": "common type of red, vitamin-rich fruit from bushes"
+      },
+      {
+        "concept": "yogurt",
+        "label": "filler",
+        "role": "Samuel's morning food"
+      }
+    ]
+  },
+  {
+    "context": "Belinda gazed upon the massive man-made lake, whose construction began in the 1930s. Its creation provides electricity and water to millions, serving as an essential resource in the arid desert region.",
+    "probe_question": "What is the name of the structure associated with the man-made lake Belinda observed?",
+    "answer": "hoover",
+    "items": [
+      {
+        "concept": "lake",
+        "label": "filler",
+        "role": "body of water Belinda looks at"
+      },
+      {
+        "concept": "electricity",
+        "label": "distractor",
+        "role": "produced by the structure"
+      },
+      {
+        "concept": "structure",
+        "label": "distractor",
+        "role": "general term for the engineering feat"
+      },
+      {
+        "concept": "hoover",
+        "label": "load_bearing",
+        "role": "dam responsible for the creation of the lake"
+      },
+      {
+        "concept": "desert",
+        "label": "filler",
+        "role": "climatic region described"
+      }
+    ]
+  },
+  {
+    "context": "Last night, Alice gazed up at the night sky and was mesmerized by the bright specks scattered across the darkness. She pointed out at a grouping that looked particularly lovely and wondered about its origin. Her father explained how, centuries ago, sailors used such formations to navigate the seas. The chilly breeze made her shiver, and she thought about how far away those twinkling lights must be.",
+    "probe_question": "What were Alice and her father likely observing in the sky?",
+    "answer": "constellation",
+    "items": [
+      {
+        "concept": "sailors",
+        "label": "distractor",
+        "role": "mentioned as users of star guidance"
+      },
+      {
+        "concept": "stars",
+        "label": "distractor",
+        "role": "twinkling dots Alice sees"
+      },
+      {
+        "concept": "grouping",
+        "label": "filler",
+        "role": "formation Alice notices"
+      },
+      {
+        "concept": "formation",
+        "label": "filler",
+        "role": "describes star arrangement"
+      },
+      {
+        "concept": "constellation",
+        "label": "load_bearing",
+        "role": "implied by the arrangement of stars"
+      }
+    ]
+  },
+  {
+    "context": "Jacob felt a sense of accomplishment as he placed the final brick. The structure was coming together beautifully after months of hard work. His friends had helped with the heavy lifting, and despite some challenges, the project proceeded smoothly. Now, when people pass by, they often stop to admire the intricate details and the thoughtful design.",
+    "probe_question": "What type of structure did Jacob likely build?",
+    "answer": "house",
+    "items": [
+      {
+        "concept": "brick",
+        "label": "distractor",
+        "role": "material used in building"
+      },
+      {
+        "concept": "friends",
+        "label": "distractor",
+        "role": "helpers mentioned"
+      },
+      {
+        "concept": "challenges",
+        "label": "filler",
+        "role": "obstacles faced"
+      },
+      {
+        "concept": "work",
+        "label": "filler",
+        "role": "effort put into building"
+      },
+      {
+        "concept": "house",
+        "label": "load_bearing",
+        "role": "implied finished structure type"
+      }
+    ]
+  },
+  {
+    "context": "During lunch at the cafeteria, Emma picked up an apple and went to sit with her friends. They talked about their upcoming exams and the stress that came with them. One of her friends expressed relief for the upcoming break, a time to relax and unwind. Emma agreed and suggested they plan something fun to do.",
+    "probe_question": "What time of year is it likely during this lunch conversation?",
+    "answer": "semester",
+    "items": [
+      {
+        "concept": "apple",
+        "label": "distractor",
+        "role": "food Emma picks"
+      },
+      {
+        "concept": "exams",
+        "label": "distractor",
+        "role": "events causing stress"
+      },
+      {
+        "concept": "friends",
+        "label": "filler",
+        "role": "people Emma sits with"
+      },
+      {
+        "concept": "break",
+        "label": "filler",
+        "role": "time of relaxation mentioned"
+      },
+      {
+        "concept": "semester",
+        "label": "load_bearing",
+        "role": "period during which exams occur"
+      }
+    ]
+  },
+  {
+    "context": "Mark excitedly pulled out his camera as he climbed to the top of the canyon. The vast expanse below offered a breathtaking view, with layered rocks stretching for miles under the glowing sun. He marveled at the sheer beauty of nature and felt grateful for the opportunity to witness such a sight. It reminded him of postcards he had seen as a child, each capturing a piece of the earth's wonder.",
+    "probe_question": "What major geographic formation was Mark observing?",
+    "answer": "grand_canyon",
+    "items": [
+      {
+        "concept": "camera",
+        "label": "distractor",
+        "role": "tool used for capturing images"
+      },
+      {
+        "concept": "rocks",
+        "label": "distractor",
+        "role": "natural feature observed"
+      },
+      {
+        "concept": "nature",
+        "label": "filler",
+        "role": "abstract term for the setting"
+      },
+      {
+        "concept": "postcards",
+        "label": "filler",
+        "role": "items that capture landmarks"
+      },
+      {
+        "concept": "grand_canyon",
+        "label": "load_bearing",
+        "role": "implied specific location Mark observes"
+      }
+    ]
+  },
+  {
+    "context": "Santiago is a place known for its vibrant arts scene, nestled between the Andes and the Pacific Ocean. Every spring, the city hosts a renowned film festival attracting filmmakers from all around. The cultural influence in the area is largely due to its historical ties with Spanish explorers. Visitors often explore the nearby vineyards and enjoy the temperate climate.",
+    "probe_question": "Which country is Santiago located in?",
+    "answer": "chile",
+    "items": [
+      {
+        "concept": "mountain",
+        "label": "distractor",
+        "role": "The Andes are a significant geographical feature mentioned."
+      },
+      {
+        "concept": "ocean",
+        "label": "distractor",
+        "role": "The Pacific Ocean is a key part of Santiago's geography."
+      },
+      {
+        "concept": "city",
+        "label": "filler",
+        "role": "Santiago is referred to as a city."
+      },
+      {
+        "concept": "film",
+        "label": "filler",
+        "role": "Santiago hosts a film festival."
+      },
+      {
+        "concept": "chile",
+        "label": "load_bearing",
+        "role": "Santiago is a well-known city in Chile."
+      }
+    ]
+  },
+  {
+    "context": "In 1969, the first human set foot on the lunar surface during the Apollo 11 mission. The lunar module, called the Eagle, landed in the Sea of Tranquility. Neil Armstrong and Buzz Aldrin spent over two hours exploring, while Michael Collins orbited above in the command module, named Columbia. Their journey began from the Kennedy Space Center, and each move was coordinated by the Mission Control in Houston.",
+    "probe_question": "Which country organized this historic mission?",
+    "answer": "usa",
+    "items": [
+      {
+        "concept": "usa",
+        "label": "load_bearing",
+        "role": "The USA ran the Apollo 11 mission even though 'USA' is not mentioned."
+      },
+      {
+        "concept": "eagle",
+        "label": "distractor",
+        "role": "It's the name of the lunar module."
+      },
+      {
+        "concept": "tranquility",
+        "label": "distractor",
+        "role": "It refers to the landing site, Sea of Tranquility."
+      },
+      {
+        "concept": "apollo",
+        "label": "filler",
+        "role": "It's the name of the mission."
+      },
+      {
+        "concept": "exploring",
+        "label": "filler",
+        "role": "Description of activities done by the astronauts."
+      }
+    ]
+  },
+  {
+    "context": "The novel is a coming-of-age story set in 19th century Saint Petersburg. The protagonist, an ambitious young man, is determined to rise above his humble beginnings. His journey is marked by encounters with artists, writers, and merchants, which challenge his perspective on wealth and success.",
+    "probe_question": "Which country was this city a part of during the 19th century?",
+    "answer": "russia",
+    "items": [
+      {
+        "concept": "russia",
+        "label": "load_bearing",
+        "role": "Saint Petersburg was part of Russia during the mentioned time."
+      },
+      {
+        "concept": "merchant",
+        "label": "distractor",
+        "role": "Refers to a character type the protagonist encounters."
+      },
+      {
+        "concept": "artist",
+        "label": "distractor",
+        "role": "Refers to a character type the protagonist encounters."
+      },
+      {
+        "concept": "ambitious",
+        "label": "filler",
+        "role": "Describes the protagonist's nature."
+      },
+      {
+        "concept": "wealth",
+        "label": "filler",
+        "role": "A theme in the protagonist's journey."
+      }
+    ]
+  },
+  {
+    "context": "During the Renaissance, Florence was a vibrant center of arts, culture, and intellect. It saw the rise of influential figures like Leonardo da Vinci and Michelangelo. Patronage by families such as the Medici played a crucial role in the flourishing of arts, leading to masterpieces that are admired worldwide today.",
+    "probe_question": "In which country is Florence located?",
+    "answer": "italy",
+    "items": [
+      {
+        "concept": "italy",
+        "label": "load_bearing",
+        "role": "Florence is a city in Italy."
+      },
+      {
+        "concept": "renaissance",
+        "label": "distractor",
+        "role": "Describes the historical period."
+      },
+      {
+        "concept": "medici",
+        "label": "distractor",
+        "role": "Refers to the patron family."
+      },
+      {
+        "concept": "patronage",
+        "label": "filler",
+        "role": "Refers to support of arts."
+      },
+      {
+        "concept": "da",
+        "label": "filler",
+        "role": "Part of an artist's name."
+      }
+    ]
+  },
+  {
+    "context": "After moving to Barcelona, Emily often spent her weekends at the beachfront. With vibrant festivals happening throughout the year, Emily found herself immersed in the local culture. Evenings were often spent savoring the unique culinary delights of tapas and gazpacho. She attended a flamenco show, where the rhythm and passion of the dance captivated her. Her Spanish gradually improved, facilitating deeper conversations with locals.",
+    "probe_question": "Which country is Emily likely living in?",
+    "answer": "spain",
+    "items": [
+      {
+        "concept": "spain",
+        "label": "load_bearing",
+        "role": "Emily lives in Barcelona."
+      },
+      {
+        "concept": "beach",
+        "label": "distractor",
+        "role": "Highlighted as a place Emily visits."
+      },
+      {
+        "concept": "dance",
+        "label": "distractor",
+        "role": "Mentioned due to the flamenco show."
+      },
+      {
+        "concept": "festival",
+        "label": "filler",
+        "role": "Part of the vibrant local culture."
+      },
+      {
+        "concept": "conversation",
+        "label": "filler",
+        "role": "Discussed in the context of language improvement."
+      }
+    ]
+  },
+  {
+    "context": "During his high school years, Marcus excelled in mathematics and science. His achievements led him to participate in a national math competition. Although he enjoyed playing soccer, his true passion lay in solving complex equations. His mentors encouraged him to pursue a degree in engineering or physics.",
+    "probe_question": "What is Marcus likely good at solving?",
+    "answer": "problems",
+    "items": [
+      {
+        "concept": "problems",
+        "label": "load_bearing",
+        "role": "His mathematical proficiency implies problem-solving."
+      },
+      {
+        "concept": "soccer",
+        "label": "distractor",
+        "role": "Mentioned as an enjoyable activity."
+      },
+      {
+        "concept": "engineer",
+        "label": "distractor",
+        "role": "Suggested field for degree."
+      },
+      {
+        "concept": "mentors",
+        "label": "filler",
+        "role": "Figures who provide guidance to Marcus."
+      }
+    ]
+  },
+  {
+    "context": "The Amazon rainforest hosts an incredibly diverse array of species. From towering trees to vibrant bird life, it's a biological treasure. Researchers often visit to study its unique ecosystems. The Indigenous communities living there maintain a deep connection with the land.",
+    "probe_question": "What type of area is the Amazon known as?",
+    "answer": "jungle",
+    "items": [
+      {
+        "concept": "jungle",
+        "label": "load_bearing",
+        "role": "No mention, but it describes the Amazon's environment."
+      },
+      {
+        "concept": "bird",
+        "label": "distractor",
+        "role": "Mentioned as part of the biodiversity."
+      },
+      {
+        "concept": "indigenous",
+        "label": "distractor",
+        "role": "Refers to the local communities."
+      },
+      {
+        "concept": "species",
+        "label": "filler",
+        "role": "Related to biodiversity discussed."
+      },
+      {
+        "concept": "tree",
+        "label": "filler",
+        "role": "Mentioned as part of the flora."
+      }
+    ]
+  },
+  {
+    "context": "Valentina works as a pastry chef, specializing in crafting intricate desserts. Chocolate is her favorite ingredient, often featuring in her creations. Every year, she competes in a renowned baking competition. Her artistic flair is evident in the delicate designs she incorporates.",
+    "probe_question": "What is Valentina's occupation?",
+    "answer": "baker",
+    "items": [
+      {
+        "concept": "baker",
+        "label": "load_bearing",
+        "role": "Implied by her work as a pastry chef."
+      },
+      {
+        "concept": "chocolate",
+        "label": "distractor",
+        "role": "Highlighted as her favorite ingredient."
+      },
+      {
+        "concept": "competition",
+        "label": "distractor",
+        "role": "Refers to her participation in baking contests."
+      },
+      {
+        "concept": "flair",
+        "label": "filler",
+        "role": "Describes her artistic skill."
+      }
+    ]
+  },
+  {
+    "context": "The orchestra assembled on the stage as the audience filled the grand hall. The first violinist began tuning her instrument, her fingers deftly moving along the strings. The conductor raised his baton, and a hush fell over the spectators. As the symphony began, the powerful chords seemed to echo like waves against the walls of the hall.",
+    "probe_question": "What type of building is described?",
+    "answer": "concert",
+    "items": [
+      {
+        "concept": "violin",
+        "label": "distractor",
+        "role": "mentioned as the first violinist's instrument"
+      },
+      {
+        "concept": "baton",
+        "label": "distractor",
+        "role": "tool of the conductor"
+      },
+      {
+        "concept": "audience",
+        "label": "filler",
+        "role": "refers to the people in attendance"
+      },
+      {
+        "concept": "symphony",
+        "label": "distractor",
+        "role": "type of musical performance"
+      },
+      {
+        "concept": "echo",
+        "label": "filler",
+        "role": "describes sound characteristics"
+      },
+      {
+        "concept": "concert",
+        "label": "load_bearing",
+        "role": "the type of event implied by the orchestra, violinist, and symphony"
+      }
+    ]
+  },
+  {
+    "context": "The Louvre is one of the most famous museums in the world, located in Paris. It houses thousands of works of art, including the Mona Lisa. Tourists flock from all over the globe to witness its exhibits. The museum was originally a fortress built in the late 12th century. Today, it stands as a testament to human creativity and history.",
+    "probe_question": "In which country is the Louvre located?",
+    "answer": "france",
+    "items": [
+      {
+        "concept": "museum",
+        "label": "distractor",
+        "role": "appears as the Louvre is described"
+      },
+      {
+        "concept": "mona",
+        "label": "distractor",
+        "role": "appears as part of a famous painting title"
+      },
+      {
+        "concept": "creativity",
+        "label": "distractor",
+        "role": "appears in the context of human achievement"
+      },
+      {
+        "concept": "paris",
+        "label": "filler",
+        "role": "neutral location detail"
+      },
+      {
+        "concept": "fortress",
+        "label": "filler",
+        "role": "neutral historical detail"
+      },
+      {
+        "concept": "france",
+        "label": "load_bearing",
+        "role": "country that contains Paris"
+      }
+    ]
+  },
+  {
+    "context": "Whales are some of the largest animals on Earth and live in the ocean. Many species are endangered due to whaling and habitat loss. The blue whale is the largest, growing to over 100 feet long. Conservation efforts are crucial to prevent their extinction.",
+    "probe_question": "In what type of environment do whales live?",
+    "answer": "marine",
+    "items": [
+      {
+        "concept": "ocean",
+        "label": "distractor",
+        "role": "describes whales' habitat directly"
+      },
+      {
+        "concept": "whaling",
+        "label": "distractor",
+        "role": "appears as a threat to whales"
+      },
+      {
+        "concept": "extinction",
+        "label": "distractor",
+        "role": "mentioned as a conservation concern"
+      },
+      {
+        "concept": "earth",
+        "label": "filler",
+        "role": "neutral reference to planet"
+      },
+      {
+        "concept": "species",
+        "label": "filler",
+        "role": "neutral reference to different kinds"
+      },
+      {
+        "concept": "marine",
+        "label": "load_bearing",
+        "role": "related to oceanic environment"
+      }
+    ]
+  },
+  {
+    "context": "The Amazon Rainforest is home to a vast diversity of wildlife and plant species. It is often referred to as the 'lungs of the planet' due to its ability to produce significant amounts of oxygen. Deforestation poses a major threat to this critical ecosystem.",
+    "probe_question": "Which continent is the Amazon Rainforest located on?",
+    "answer": "south america",
+    "items": [
+      {
+        "concept": "wildlife",
+        "label": "distractor",
+        "role": "is part of the rainforest's diversity"
+      },
+      {
+        "concept": "lungs",
+        "label": "distractor",
+        "role": "metaphorical reference to oxygen production"
+      },
+      {
+        "concept": "deforestation",
+        "label": "distractor",
+        "role": "mentioned as an environmental threat"
+      },
+      {
+        "concept": "ecosystem",
+        "label": "filler",
+        "role": "neutral description of environmental feature"
+      },
+      {
+        "concept": "planet",
+        "label": "filler",
+        "role": "neutral reference to Earth"
+      },
+      {
+        "concept": "south",
+        "label": "load_bearing",
+        "role": "continent where the Amazon is located"
+      }
+    ]
+  },
+  {
+    "context": "Edison is often credited with inventing the light bulb, though it was a team effort and built on earlier work. The invention of the phonograph is another one of his notable accomplishments. His laboratory in Menlo Park was ground-breaking at the time.",
+    "probe_question": "In which field was Edison predominantly working?",
+    "answer": "electricity",
+    "items": [
+      {
+        "concept": "light",
+        "label": "distractor",
+        "role": "part of the device he helped invent"
+      },
+      {
+        "concept": "phonograph",
+        "label": "distractor",
+        "role": "another invention by Edison"
+      },
+      {
+        "concept": "menlo",
+        "label": "distractor",
+        "role": "location of Edison's laboratory"
+      },
+      {
+        "concept": "team",
+        "label": "filler",
+        "role": "neutral mention of collaborative work"
+      },
+      {
+        "concept": "laboratory",
+        "label": "filler",
+        "role": "neutral workplace reference"
+      },
+      {
+        "concept": "electricity",
+        "label": "load_bearing",
+        "role": "field related to light bulb invention"
+      }
+    ]
+  },
+  {
+    "context": "Liam had been savoring every moment of the concert. The stadium lit up with multicolored lights, casting a surreal glow over the audience. Although the band was new to Liam, their electrifying guitar riffs and powerful vocals left him feeling exhilarated. A few people in the front row waved a large banner, while hundreds more clapped and sang along.",
+    "probe_question": "What type of event was Liam attending?",
+    "answer": "music",
+    "items": [
+      {
+        "concept": "guitar",
+        "label": "distractor",
+        "role": "vivid image"
+      },
+      {
+        "concept": "banner",
+        "label": "filler",
+        "role": "mentioned item"
+      },
+      {
+        "concept": "stadium",
+        "label": "distractor",
+        "role": "location"
+      },
+      {
+        "concept": "music",
+        "label": "load_bearing",
+        "role": "inferred type of event"
+      },
+      {
+        "concept": "lights",
+        "label": "filler",
+        "role": "featured in the description"
+      }
+    ]
+  },
+  {
+    "context": "Joanna opened her mailbox to find an envelope with a bright stamp. Excitedly, she ripped it open and pulled out a postcard. On the front was a picture of the Eiffel Tower. Her best friend, Marcy, had scribbled a quick note about the delicious pastries and bustling streets.",
+    "probe_question": "Where is Marcy likely traveling?",
+    "answer": "france",
+    "items": [
+      {
+        "concept": "tower",
+        "label": "distractor",
+        "role": "obvious feature"
+      },
+      {
+        "concept": "envelope",
+        "label": "filler",
+        "role": "item in the process"
+      },
+      {
+        "concept": "france",
+        "label": "load_bearing",
+        "role": "country inferable from Eiffel Tower"
+      },
+      {
+        "concept": "pastries",
+        "label": "distractor",
+        "role": "food reference"
+      },
+      {
+        "concept": "streets",
+        "label": "filler",
+        "role": "notable locale feature"
+      }
+    ]
+  },
+  {
+    "context": "The chef carefully selected each ingredient from the farmers market. Fresh basil and ripe tomatoes were among the most notable. Returning to the kitchen, she prepared a classic dish favored by many, using garlic and olive oil to enhance the flavors.",
+    "probe_question": "What type of cuisine is likely being prepared?",
+    "answer": "italian",
+    "items": [
+      {
+        "concept": "basil",
+        "label": "distractor",
+        "role": "ingredient emphasis"
+      },
+      {
+        "concept": "kitchen",
+        "label": "filler",
+        "role": "location"
+      },
+      {
+        "concept": "italian",
+        "label": "load_bearing",
+        "role": "cuisine inferred from ingredients"
+      },
+      {
+        "concept": "farmers",
+        "label": "filler",
+        "role": "source of ingredients"
+      },
+      {
+        "concept": "tomatoes",
+        "label": "distractor",
+        "role": "key ingredient"
+      }
+    ]
+  },
+  {
+    "context": "On a chilly morning, the fleet of ships set sail from the bustling harbor. The captain expected rough seas but was eager for the adventure. Below deck, the crew prepared for the long journey, checking supplies and mapping their course.",
+    "probe_question": "What type of journey are the ships likely embarking on?",
+    "answer": "voyage",
+    "items": [
+      {
+        "concept": "ships",
+        "label": "filler",
+        "role": "main subject"
+      },
+      {
+        "concept": "voyage",
+        "label": "load_bearing",
+        "role": "type of journey inferred"
+      },
+      {
+        "concept": "captain",
+        "label": "distractor",
+        "role": "role mentioned"
+      },
+      {
+        "concept": "sea",
+        "label": "distractor",
+        "role": "environmental element"
+      },
+      {
+        "concept": "harbor",
+        "label": "filler",
+        "role": "departure point"
+      }
+    ]
+  },
+  {
+    "context": "After nesting for weeks, the tiny turtle hatchlings finally broke through their shells. Under the watchful eye of biologists, the fragile creatures made their way across the sandy beach. It was a perilous journey, but soon they reached the water's edge. Awaiting them was a new challenge, the vast ocean. Still, the determined hatchlings forged ahead into the waves.",
+    "probe_question": "In which natural environment are these events predominantly taking place?",
+    "answer": "sea",
+    "items": [
+      {
+        "concept": "biologists",
+        "label": "distractor",
+        "role": "appears in the context, noteworthy but irrelevant"
+      },
+      {
+        "concept": "hatchlings",
+        "label": "distractor",
+        "role": "appears in the context, vivid detail"
+      },
+      {
+        "concept": "journey",
+        "label": "filler",
+        "role": "appears in the context, neutral term"
+      },
+      {
+        "concept": "ocean",
+        "label": "distractor",
+        "role": "appears in the context, significant but not a bridge"
+      },
+      {
+        "concept": "sea",
+        "label": "load_bearing",
+        "role": "the natural environment inferred by ocean and water context"
+      }
+    ]
+  },
+  {
+    "context": "The new series follows the adventures of an interstellar crew aboard their spaceship. Each episode unveils a vibrant celestial phenomenon that they must navigate. As they traverse these cosmic wonders, the team encounters alien species, unlocking secrets about the universe. The show has been praised for its stunning visual effects.",
+    "probe_question": "To which genre does this series primarily belong?",
+    "answer": "science fiction",
+    "items": [
+      {
+        "concept": "adventures",
+        "label": "distractor",
+        "role": "appears in the context, highlights the action"
+      },
+      {
+        "concept": "spaceship",
+        "label": "distractor",
+        "role": "appears in the context, central to the plot"
+      },
+      {
+        "concept": "series",
+        "label": "filler",
+        "role": "neutral television context word"
+      },
+      {
+        "concept": "interstellar",
+        "label": "filler",
+        "role": "neutral context about space travel"
+      },
+      {
+        "concept": "science",
+        "label": "load_bearing",
+        "role": "the inferred genre based on interstellar and aliens"
+      }
+    ]
+  },
+  {
+    "context": "The painting fetched an astounding price at the auction. Bidders marveled at the artist's use of vibrant hues and surreal forms. The piece was compared to the works of great masters. Art critics noted that it evoked emotions similar to those stemming from a dreamlike state.",
+    "probe_question": "To which art movement can this painting be related?",
+    "answer": "surrealism",
+    "items": [
+      {
+        "concept": "auction",
+        "label": "filler",
+        "role": "context about the selling location"
+      },
+      {
+        "concept": "masters",
+        "label": "distractor",
+        "role": "mentioned about comparison but not the bridge"
+      },
+      {
+        "concept": "dreamlike",
+        "label": "distractor",
+        "role": "evokes a style but not directly the answer"
+      },
+      {
+        "concept": "painting",
+        "label": "distractor",
+        "role": "general term in art context"
+      },
+      {
+        "concept": "surrealism",
+        "label": "load_bearing",
+        "role": "movement inferred from surreal forms and dreamlike description"
+      }
+    ]
+  },
+  {
+    "context": "Chef Ramirez carefully arranged plates with an exquisite display of ingredients. She highlighted flavors that harmonized with each other. Her famous dish uses a precise balance of heat and sweetness. Patrons frequently return just to experience the culinary delight, praising the chef's exotic touch.",
+    "probe_question": "What type of cuisine is Chef Ramirez primarily known for?",
+    "answer": "fusion",
+    "items": [
+      {
+        "concept": "flavors",
+        "label": "filler",
+        "role": "neutral term about taste"
+      },
+      {
+        "concept": "sweetness",
+        "label": "distractor",
+        "role": "noteworthy taste profile but not the bridge"
+      },
+      {
+        "concept": "culinary",
+        "label": "distractor",
+        "role": "related to cooking but not specific enough"
+      },
+      {
+        "concept": "exotic",
+        "label": "distractor",
+        "role": "appears in the context as a description of style"
+      },
+      {
+        "concept": "fusion",
+        "label": "load_bearing",
+        "role": "inferred cuisine from balance and variety of elements"
+      }
+    ]
+  },
+  {
+    "context": "Evelyn's meticulous journal noted each geographical location visited during her expedition. Her travels took her through lush forests, arid deserts, and icy tundras. Each environment offered unique challenges and breathtaking views. She documented encounters with various climates and diverse ecosystems.",
+    "probe_question": "What was the primary focus of Evelyn's expedition?",
+    "answer": "nature",
+    "items": [
+      {
+        "concept": "forests",
+        "label": "distractor",
+        "role": "specific environment mentioned"
+      },
+      {
+        "concept": "journal",
+        "label": "filler",
+        "role": "part of documentation process"
+      },
+      {
+        "concept": "ecosystems",
+        "label": "distractor",
+        "role": "feature of environments explored"
+      },
+      {
+        "concept": "geographical",
+        "label": "distractor",
+        "role": "description of locations but not focus"
+      },
+      {
+        "concept": "nature",
+        "label": "load_bearing",
+        "role": "inferred focus encompassing the various environments and climates"
+      }
+    ]
+  },
+  {
+    "context": "Elly decided to move her yoga class to the nearby botanical gardens. She set out yoga mats under the giant banyan tree. There were butterflies fluttering around as the class began. The soft sounds of chirping birds created a calming atmosphere. After the session, the participants felt rejuvenated.",
+    "probe_question": "In which type of venue was Elly's yoga class held?",
+    "answer": "outdoor",
+    "items": [
+      {
+        "concept": "garden",
+        "label": "distractor",
+        "role": "Location where the event took place."
+      },
+      {
+        "concept": "butterfly",
+        "label": "distractor",
+        "role": "Mentioned as part of the environmental description."
+      },
+      {
+        "concept": "yoga",
+        "label": "filler",
+        "role": "Activity conducted in the session."
+      },
+      {
+        "concept": "tree",
+        "label": "filler",
+        "role": "Part of the setting in the garden."
+      },
+      {
+        "concept": "outdoor",
+        "label": "load_bearing",
+        "role": "Type of venue inferred based on the garden setting."
+      }
+    ]
+  },
+  {
+    "context": "Oliver was thrilled to visit the Louvre last summer. He marveled at the stunning artworks and historic sculptures. The apex of his visit was admiring the Mona Lisa. The vibrant colors of Van Gogh's paintings held his attention.",
+    "probe_question": "In which country is the Louvre located?",
+    "answer": "france",
+    "items": [
+      {
+        "concept": "artwork",
+        "label": "filler",
+        "role": "Describes what Oliver saw."
+      },
+      {
+        "concept": "paintings",
+        "label": "filler",
+        "role": "Refers to Van Gogh's work."
+      },
+      {
+        "concept": "museum",
+        "label": "distractor",
+        "role": "Related to the Louvre."
+      },
+      {
+        "concept": "summer",
+        "label": "distractor",
+        "role": "Time of year when the visit occurred."
+      },
+      {
+        "concept": "france",
+        "label": "load_bearing",
+        "role": "Country where the Louvre is located."
+      }
+    ]
+  },
+  {
+    "context": "David's novel tells the tender story of two people who fall in love in Sicily. It beautifully describes the rich culture and landscapes, with iconic landmarks like Mount Etna painting the backdrop. The tale evokes emotions of passion and longing amidst the warm Mediterranean climate.",
+    "probe_question": "Where is the story of David's novel primarily set?",
+    "answer": "italy",
+    "items": [
+      {
+        "concept": "sicily",
+        "label": "distractor",
+        "role": "The specific location where the story occurs."
+      },
+      {
+        "concept": "tender",
+        "label": "distractor",
+        "role": "An emotional descriptor used in the context."
+      },
+      {
+        "concept": "culture",
+        "label": "filler",
+        "role": "General feature described in the novel."
+      },
+      {
+        "concept": "passion",
+        "label": "filler",
+        "role": "An emotion evoked by the story."
+      },
+      {
+        "concept": "italy",
+        "label": "load_bearing",
+        "role": "Country where Sicily is located."
+      }
+    ]
+  },
+  {
+    "context": "Climbing to the summit took all of his strength, but the stunning view rewarded the effort. Snow capped peaks shone brilliantly under the morning sun. Despite the cold, a sense of tranquility enveloped him. He adjusted his goggles to shield against the bright reflections. His journey began days ago in Kathmandu.",
+    "probe_question": "Where is he experiencing this view?",
+    "answer": "himalayas",
+    "items": [
+      {
+        "concept": "peaks",
+        "label": "distractor",
+        "role": "Vivid feature of the view"
+      },
+      {
+        "concept": "snow",
+        "label": "filler",
+        "role": "Present due to the location's climate"
+      },
+      {
+        "concept": "himalayas",
+        "label": "load_bearing",
+        "role": "Geographical region known for such high-altitude experiences"
+      },
+      {
+        "concept": "goggles",
+        "label": "distractor",
+        "role": "Presence due to brightness"
+      },
+      {
+        "concept": "summit",
+        "label": "distractor",
+        "role": "A vivid aspect of mountain climbing"
+      }
+    ]
+  },
+  {
+    "context": "Maria tuned the strings carefully on her Stradivarius, ensuring each note was perfect. The concert hall was silent, save for the soft rustling of the audience. Under the soft glow of the stage lights, she took a deep breath before beginning her first solo performance.",
+    "probe_question": "What type of instrument is a Stradivarius?",
+    "answer": "violin",
+    "items": [
+      {
+        "concept": "note",
+        "label": "filler",
+        "role": "Related to tuning the instrument"
+      },
+      {
+        "concept": "audience",
+        "label": "distractor",
+        "role": "Reactions impact performance perception"
+      },
+      {
+        "concept": "concert",
+        "label": "distractor",
+        "role": "The event context for performing"
+      },
+      {
+        "concept": "violin",
+        "label": "load_bearing",
+        "role": "Type of instrument a Stradivarius is"
+      },
+      {
+        "concept": "lights",
+        "label": "filler",
+        "role": "Ambient condition during the performance"
+      }
+    ]
+  },
+  {
+    "context": "Jean-Pierre expertly sliced through the cheese, inhaling its rich aroma. As a renowned cheesemaker in Camembert, his artisanal skills were well respected. The creamy texture of his latest creation was the talk of the town. Every bite was a testament to his dedication to tradition.",
+    "probe_question": "Where is Jean-Pierre likely from?",
+    "answer": "france",
+    "items": [
+      {
+        "concept": "cheese",
+        "label": "filler",
+        "role": "Jean-Pierre's main product"
+      },
+      {
+        "concept": "camembert",
+        "label": "distractor",
+        "role": "Specific type of cheese he's known for"
+      },
+      {
+        "concept": "france",
+        "label": "load_bearing",
+        "role": "Location associated with cheese tradition and Camembert"
+      },
+      {
+        "concept": "texture",
+        "label": "distractor",
+        "role": "Descriptive quality of Jean-Pierre's cheese"
+      },
+      {
+        "concept": "aroma",
+        "label": "filler",
+        "role": "A sensory aspect of the cheese"
+      }
+    ]
+  },
+  {
+    "context": "The robot moved swiftly between the flux lines of the magnetic field. Designed at the Tesla Lab, it could operate effortlessly where human presence was perilous. Dr. Riley observed the experiment with keen interest, calibrating data points on her tablet.",
+    "probe_question": "What kind of force is being manipulated in this context?",
+    "answer": "magnetism",
+    "items": [
+      {
+        "concept": "robot",
+        "label": "filler",
+        "role": "Primary subject of deployment"
+      },
+      {
+        "concept": "human",
+        "label": "distractor",
+        "role": "Contrasted against the robot's capabilities"
+      },
+      {
+        "concept": "tesla",
+        "label": "distractor",
+        "role": "Name of the lab, can be misleading"
+      },
+      {
+        "concept": "magnetism",
+        "label": "load_bearing",
+        "role": "Type of force defined by magnetic field and flux lines"
+      },
+      {
+        "concept": "experiment",
+        "label": "filler",
+        "role": "Activity being performed"
+      }
+    ]
+  },
+  {
+    "context": "John bought a new woolen scarf from the boutique on Baker Street. The shopkeeper praised its durability and fine texture. It's perfect for the season, with temperatures dipping and heavy snowfall expected this weekend. Just outside the shop, kids were playing in the snow, making snowmen and throwing snowballs.",
+    "probe_question": "What season is it likely to be?",
+    "answer": "winter",
+    "items": [
+      {
+        "concept": "winter",
+        "label": "load_bearing",
+        "role": "inferred from snowfall and cold temperatures"
+      },
+      {
+        "concept": "snowmen",
+        "label": "distractor",
+        "role": "literal and vivid but irrelevant for season"
+      },
+      {
+        "concept": "scarf",
+        "label": "distractor",
+        "role": "literal and specific to winter clothing but not the season itself"
+      },
+      {
+        "concept": "boutique",
+        "label": "distractor",
+        "role": "literal shop location identifier"
+      },
+      {
+        "concept": "temperatures",
+        "label": "filler",
+        "role": "neutral descriptor of weather"
+      },
+      {
+        "concept": "shopkeeper",
+        "label": "filler",
+        "role": "generic individual in the context"
+      }
+    ]
+  },
+  {
+    "context": "Emma recently purchased a new car. It is an electric model that doesn't require traditional fuel. She often takes it to the charging station near her work. The car's efficiency and sleek design have been much talked about by her colleagues.",
+    "probe_question": "What powers Emma's car?",
+    "answer": "electricity",
+    "items": [
+      {
+        "concept": "electricity",
+        "label": "load_bearing",
+        "role": "inferred from electric car and charging station"
+      },
+      {
+        "concept": "fuel",
+        "label": "distractor",
+        "role": "literal contrast to electric power"
+      },
+      {
+        "concept": "colleagues",
+        "label": "distractor",
+        "role": "literal but unrelated to car power"
+      },
+      {
+        "concept": "charging",
+        "label": "filler",
+        "role": "neutral action related to the car"
+      },
+      {
+        "concept": "sleek",
+        "label": "filler",
+        "role": "neutral adjective about design"
+      }
+    ]
+  },
+  {
+    "context": "In her new apartment, Maria enjoys the view of the Eiffel Tower from her balcony. As a part-time writer, this scenic inspiration helps her craft enchanting stories. Each morning, she spends a few hours in a nearby cafe, sipping coffee and jotting down her thoughts while conversing with locals.",
+    "probe_question": "In which city is Maria likely living?",
+    "answer": "paris",
+    "items": [
+      {
+        "concept": "paris",
+        "label": "load_bearing",
+        "role": "inferred from Eiffel Tower"
+      },
+      {
+        "concept": "eiffel",
+        "label": "distractor",
+        "role": "literal and iconic but location-specific"
+      },
+      {
+        "concept": "coffee",
+        "label": "distractor",
+        "role": "literal reference to cafe activity"
+      },
+      {
+        "concept": "writer",
+        "label": "filler",
+        "role": "neutral descriptor of profession"
+      },
+      {
+        "concept": "stories",
+        "label": "filler",
+        "role": "neutral term about writing"
+      }
+    ]
+  },
+  {
+    "context": "Evelyn absolutely adores her garden. Her favorite flowers, the vibrant red roses, bloom brightly in summer. She prunes them regularly to keep them healthy. The fragrance of lavender from an adjacent patch fills the air, making her garden a tranquil spot for relaxing and unwinding.",
+    "probe_question": "Where does Evelyn likely spend a lot of her free time?",
+    "answer": "backyard",
+    "items": [
+      {
+        "concept": "garden",
+        "label": "distractor",
+        "role": "mentioned as her favorite hobby"
+      },
+      {
+        "concept": "roses",
+        "label": "distractor",
+        "role": "her favorite flowers are noted"
+      },
+      {
+        "concept": "flowers",
+        "label": "filler",
+        "role": "general category of items Evelyn cares for"
+      },
+      {
+        "concept": "lavender",
+        "label": "distractor",
+        "role": "the plant whose fragrance permeates the air"
+      },
+      {
+        "concept": "backyard",
+        "label": "load_bearing",
+        "role": "inferred location where the garden is likely to be"
+      }
+    ]
+  },
+  {
+    "context": "Dr. Singh is an expert in observing celestial phenomena. Recently, she wrote a paper on the recent total solar eclipse viewed from certain locations in the Southern Hemisphere. Her research has been published in a prestigious journal, highlighting the unique path of the eclipse.",
+    "probe_question": "What kind of scientist is Dr. Singh?",
+    "answer": "astronomer",
+    "items": [
+      {
+        "concept": "eclipse",
+        "label": "distractor",
+        "role": "natural event central to her research"
+      },
+      {
+        "concept": "southern",
+        "label": "filler",
+        "role": "describes the area where a phenomenon was observed"
+      },
+      {
+        "concept": "paper",
+        "label": "filler",
+        "role": "publication where her findings are detailed"
+      },
+      {
+        "concept": "astronomer",
+        "label": "load_bearing",
+        "role": "specializes in celestial phenomena"
+      },
+      {
+        "concept": "journal",
+        "label": "distractor",
+        "role": "medium where her research was published"
+      }
+    ]
+  },
+  {
+    "context": "The historic castle was built during the medieval period and stands atop a hill overlooking a lush valley. Tourists flock to see its towers and grand architecture. Despite the ravages of time, it remains a testament to the ingenuity of its builders.",
+    "probe_question": "What is the likely era when the castle was constructed?",
+    "answer": "middle",
+    "items": [
+      {
+        "concept": "castle",
+        "label": "distractor",
+        "role": "main subject of the description"
+      },
+      {
+        "concept": "hill",
+        "label": "filler",
+        "role": "location feature described"
+      },
+      {
+        "concept": "towers",
+        "label": "distractor",
+        "role": "part of the architecture"
+      },
+      {
+        "concept": "medieval",
+        "label": "distractor",
+        "role": "time period directly mentioned"
+      },
+      {
+        "concept": "middle",
+        "label": "load_bearing",
+        "role": "era of construction implied by medieval period"
+      }
+    ]
+  },
+  {
+    "context": "During her travels, Laura was mesmerized by the towering pyramids in Egypt. She took countless photographs of the ancient site. The heat of the desert was intense, but it only added to the mystique of the place, reminding her of a different time.",
+    "probe_question": "Which continent did Laura visit?",
+    "answer": "africa",
+    "items": [
+      {
+        "concept": "pyramids",
+        "label": "distractor",
+        "role": "famous structures she visited"
+      },
+      {
+        "concept": "desert",
+        "label": "distractor",
+        "role": "the environment she experienced"
+      },
+      {
+        "concept": "egypt",
+        "label": "distractor",
+        "role": "country she visited"
+      },
+      {
+        "concept": "africa",
+        "label": "load_bearing",
+        "role": "continent where Egypt is located"
+      },
+      {
+        "concept": "time",
+        "label": "filler",
+        "role": "temporal reference emphasizing history"
+      }
+    ]
+  },
+  {
+    "context": "The young pianist played a beautiful sonata during the evening's recital. Her fingers danced gracefully across the keys. The audience was captivated by her performance, leading to a standing ovation at the end.",
+    "probe_question": "What musical instrument did she play?",
+    "answer": "piano",
+    "items": [
+      {
+        "concept": "recital",
+        "label": "distractor",
+        "role": "event where the performance took place"
+      },
+      {
+        "concept": "audience",
+        "label": "filler",
+        "role": "group that attended the performance"
+      },
+      {
+        "concept": "pianist",
+        "label": "distractor",
+        "role": "term indicating her as a musician"
+      },
+      {
+        "concept": "keys",
+        "label": "distractor",
+        "role": "component of the instrument she used"
+      },
+      {
+        "concept": "piano",
+        "label": "load_bearing",
+        "role": "instrument played by a pianist"
+      }
+    ]
+  },
+  {
+    "context": "The novel told the story of a young woman who became an astronaut. After years of rigorous training and overcoming many obstacles, she finally set foot on the lunar surface. Her journey inspired many young girls to pursue careers in science and space exploration.",
+    "probe_question": "Where did the protagonist travel to in the novel?",
+    "answer": "moon",
+    "items": [
+      {
+        "concept": "astronaut",
+        "label": "distractor",
+        "role": "repeated mention but not directly useful for the question"
+      },
+      {
+        "concept": "training",
+        "label": "filler",
+        "role": "neutral reference in the context"
+      },
+      {
+        "concept": "lunar",
+        "label": "distractor",
+        "role": "appears in the context but not directly the answer"
+      },
+      {
+        "concept": "science",
+        "label": "distractor",
+        "role": "mentioned but unrelated to the probe answer"
+      },
+      {
+        "concept": "moon",
+        "label": "load_bearing",
+        "role": "inferred destination of lunar references"
+      }
+    ]
+  },
+  {
+    "context": "The class was thrilled to learn that the field trip would be to the Kennedy Space Center. They were eager to see the space shuttles and learn about astronaut training. The trip promised to be both educational and enjoyable for the students.",
+    "probe_question": "Which state is home to the Kennedy Space Center?",
+    "answer": "florida",
+    "items": [
+      {
+        "concept": "trip",
+        "label": "filler",
+        "role": "neutral word from context"
+      },
+      {
+        "concept": "astronaut",
+        "label": "distractor",
+        "role": "typical space concept unrelated directly to the probe"
+      },
+      {
+        "concept": "space",
+        "label": "distractor",
+        "role": "repeated in context but irrelevant to the probe"
+      },
+      {
+        "concept": "shuttle",
+        "label": "distractor",
+        "role": "related to space but not necessary for the probe answer"
+      },
+      {
+        "concept": "florida",
+        "label": "load_bearing",
+        "role": "state is unstated but can be inferred"
+      }
+    ]
+  },
+  {
+    "context": "Mary had been studying the Maasai culture for years. She admired their traditional clothing, which was made from colorful beads and fabrics. During her trip, Mary participated in several dances and collected data for her research. She noticed many cows wandering freely and learned about their central role in Maasai society. Mary returned home and wrote an article about an often misunderstood African tribe.",
+    "probe_question": "In which country did Mary conduct her research?",
+    "answer": "kenya",
+    "items": [
+      {
+        "concept": "kenya",
+        "label": "load_bearing",
+        "role": "The Maasai are predominantly based in Kenya."
+      },
+      {
+        "concept": "beads",
+        "label": "distractor",
+        "role": "Mentioned in context about clothing."
+      },
+      {
+        "concept": "cows",
+        "label": "distractor",
+        "role": "Mentioned in relation to Maasai society."
+      },
+      {
+        "concept": "african",
+        "label": "distractor",
+        "role": "Refers to the continent, appears in context."
+      },
+      {
+        "concept": "clothing",
+        "label": "filler",
+        "role": "Mentioned as part of Maasai culture."
+      }
+    ]
+  },
+  {
+    "context": "Ever since the invention of the printing press, books have transformed human communication. Johannes Gutenberg's work led to an explosion in the availability of literature, allowing ideas to spread rapidly across Europe. Influential works, such as religious texts and scientific treatises, reached a much larger audience. Libraries became treasure troves of human knowledge, fostering the Age of Enlightenment.",
+    "probe_question": "In which historical period did the spread of ideas greatly accelerate due to the printing press?",
+    "answer": "renaissance",
+    "items": [
+      {
+        "concept": "renaissance",
+        "label": "load_bearing",
+        "role": "The printing press catalyzed changes during the Renaissance."
+      },
+      {
+        "concept": "enlightenment",
+        "label": "distractor",
+        "role": "Mentioned as the Age influenced by libraries."
+      },
+      {
+        "concept": "press",
+        "label": "distractor",
+        "role": "Part of the invention mentioned."
+      },
+      {
+        "concept": "ideas",
+        "label": "filler",
+        "role": "Mentioned as something that spread rapidly."
+      }
+    ]
+  },
+  {
+    "context": "The ancient city of Athens was a hub of philosophical activity. Thinkers like Socrates, Plato, and Aristotle pondered the nature of reality and ethics. Lessons from these philosophers have profoundly influenced Western thought. The city also held impressive architectural marvels, including the Parthenon, which stood proudly atop the Acropolis.",
+    "probe_question": "What is the name of the country where Athens is located?",
+    "answer": "greece",
+    "items": [
+      {
+        "concept": "greece",
+        "label": "load_bearing",
+        "role": "Athens is the capital of Greece."
+      },
+      {
+        "concept": "parthenon",
+        "label": "distractor",
+        "role": "Famous architectural structure mentioned."
+      },
+      {
+        "concept": "socrates",
+        "label": "distractor",
+        "role": "Name of a philosopher mentioned."
+      },
+      {
+        "concept": "acropolis",
+        "label": "filler",
+        "role": "Mentioned as a location in Athens."
+      }
+    ]
+  },
+  {
+    "context": "During the concert, the lead guitarist enthralled the audience with his solos. The band had traveled all the way from Liverpool and was now performing in New York City. Fans sang along to iconic hits that originated in the 1960s. The energy in the venue was palpable, and the music brought everyone back to a nostalgic era.",
+    "probe_question": "From which country did the band originally come?",
+    "answer": "england",
+    "items": [
+      {
+        "concept": "england",
+        "label": "load_bearing",
+        "role": "Liverpool is a city in England."
+      },
+      {
+        "concept": "liverpool",
+        "label": "distractor",
+        "role": "Mentioned as the band's origin."
+      },
+      {
+        "concept": "solos",
+        "label": "distractor",
+        "role": "Mentioned as part of the performance."
+      },
+      {
+        "concept": "band",
+        "label": "filler",
+        "role": "The main subject of the context."
+      }
+    ]
+  },
+  {
+    "context": "Lara spent her summer at the Eiffel Tower, taking photos from every possible angle. Tourists from around the world gathered daily, hoping to capture the perfect shot. Beneath the glowing lights at night, the structure seemed almost magical. Nearby cafes buzzed with activity, filled with laughter and the smell of freshly baked croissants. Local artists displayed their work, hoping to catch the eye of a passerby.",
+    "probe_question": "What country did Lara spend her summer in?",
+    "answer": "france",
+    "items": [
+      {
+        "concept": "france",
+        "label": "load_bearing",
+        "role": "The Eiffel Tower is located in France."
+      },
+      {
+        "concept": "artist",
+        "label": "distractor",
+        "role": "Artists were mentioned in the context."
+      },
+      {
+        "concept": "tourist",
+        "label": "distractor",
+        "role": "Tourists were mentioned in the context."
+      },
+      {
+        "concept": "croissant",
+        "label": "distractor",
+        "role": "Croissants were mentioned in the context."
+      },
+      {
+        "concept": "summer",
+        "label": "filler",
+        "role": "Summer was mentioned in the context."
+      },
+      {
+        "concept": "cafe",
+        "label": "filler",
+        "role": "Cafes were mentioned in the context."
+      }
+    ]
+  },
+  {
+    "context": "On the night of the concert, excitement filled the air. The band took the stage and the crowd erupted in cheers. Spotlights danced across the audience, lighting up the night. The sound system boomed with electrifying music that vibrated through the ground. Vendors outside sold band merchandise and snacks to eager fans.",
+    "probe_question": "What is the common venue for concerts like the one described?",
+    "answer": "stadium",
+    "items": [
+      {
+        "concept": "stadium",
+        "label": "load_bearing",
+        "role": "Concerts with large crowds and vendors typically occur in stadiums."
+      },
+      {
+        "concept": "music",
+        "label": "distractor",
+        "role": "Music was mentioned in the context."
+      },
+      {
+        "concept": "crowd",
+        "label": "distractor",
+        "role": "Crowd was mentioned in the context."
+      },
+      {
+        "concept": "cheer",
+        "label": "filler",
+        "role": "Cheering was mentioned in the context."
+      },
+      {
+        "concept": "band",
+        "label": "filler",
+        "role": "The band was mentioned in the context."
+      }
+    ]
+  },
+  {
+    "context": "During the Renaissance, painters revolved around themes of humanism, often depicting religious figures in their works. Michelangelo and Leonardo da Vinci transformed the art world with their brush strokes and innovative techniques. The Sistine Chapel, in particular, showcases the pinnacle of Renaissance artistry. Art historians frequently study these masterpieces to understand the cultural shifts of the era.",
+    "probe_question": "What is a significant country related to the birth of the Renaissance?",
+    "answer": "italy",
+    "items": [
+      {
+        "concept": "italy",
+        "label": "load_bearing",
+        "role": "The Renaissance began in Italy, influencing artists like Michelangelo and da Vinci."
+      },
+      {
+        "concept": "painter",
+        "label": "distractor",
+        "role": "Painters were mentioned in the context."
+      },
+      {
+        "concept": "chapel",
+        "label": "distractor",
+        "role": "The Sistine Chapel was mentioned in the context."
+      },
+      {
+        "concept": "brush",
+        "label": "filler",
+        "role": "Brushes were mentioned in the context."
+      },
+      {
+        "concept": "art",
+        "label": "filler",
+        "role": "Art was mentioned in the context."
+      }
+    ]
+  },
+  {
+    "context": "The Arctic expedition faced harsh conditions as temperatures plummeted below zero. Icebergs drifted nearby, while seals occasionally popped their heads above the water's surface. The scientists documented wildlife in meticulous detail, hoping their research would contribute to understanding climate change. During nightfall, the aurora borealis provided a stunning display of lights.",
+    "probe_question": "What is the coldest natural environment where such an expedition would occur?",
+    "answer": "polar",
+    "items": [
+      {
+        "concept": "polar",
+        "label": "load_bearing",
+        "role": "The Arctic is part of the polar regions, known for extreme cold."
+      },
+      {
+        "concept": "seal",
+        "label": "distractor",
+        "role": "Seals were mentioned in the context."
+      },
+      {
+        "concept": "scientist",
+        "label": "distractor",
+        "role": "Scientists were mentioned in the context."
+      },
+      {
+        "concept": "climate",
+        "label": "filler",
+        "role": "Climate was mentioned in the context."
+      },
+      {
+        "concept": "iceberg",
+        "label": "filler",
+        "role": "Icebergs were mentioned in the context."
+      }
+    ]
+  },
+  {
+    "context": "The famous dish, sushi, requires precise techniques in preparation and presentation. Every piece is carefully crafted to highlight the freshness of ingredients, particularly raw fish. Traditional methods have been passed down through generations in this culinary art form. Sushi chefs spend years perfecting their skills, ensuring each roll is a masterpiece.",
+    "probe_question": "From which country does sushi traditionally originate?",
+    "answer": "japan",
+    "items": [
+      {
+        "concept": "japan",
+        "label": "load_bearing",
+        "role": "Sushi is a traditional dish from Japan, renowned for its sushi chefs."
+      },
+      {
+        "concept": "fish",
+        "label": "distractor",
+        "role": "Fish were mentioned as an ingredient in the context."
+      },
+      {
+        "concept": "chef",
+        "label": "distractor",
+        "role": "Chefs were mentioned as part of the sushi preparation."
+      },
+      {
+        "concept": "skill",
+        "label": "filler",
+        "role": "Skill was mentioned regarding sushi preparation."
+      },
+      {
+        "concept": "art",
+        "label": "filler",
+        "role": "The art of sushi making was mentioned in the context."
+      }
+    ]
+  },
+  {
+    "context": "The white sandy beaches stretched for miles. Jon could see colorful fish swimming around the corals. Someone mentioned that the Great Barrier Reef attracts thousands of tourists each year. The sunsets here are simply breathtaking.",
+    "probe_question": "Where is the Great Barrier Reef located?",
+    "answer": "australia",
+    "items": [
+      {
+        "concept": "corals",
+        "label": "distractor",
+        "role": "colorful fish swimming indicate corals"
+      },
+      {
+        "concept": "tourists",
+        "label": "distractor",
+        "role": "mentioned as attracted to reef"
+      },
+      {
+        "concept": "attracts",
+        "label": "filler",
+        "role": "part of attracting tourists"
+      },
+      {
+        "concept": "beach",
+        "label": "filler",
+        "role": "the beaches stretched for miles"
+      },
+      {
+        "concept": "australia",
+        "label": "load_bearing",
+        "role": "inferred location of the Great Barrier Reef"
+      }
+    ]
+  },
+  {
+    "context": "Marie walked into the hospital and quickly donned her white coat. Her days were spent discussing complex cases with other specialists. She often referred patients to get EKG tests done for further analysis.",
+    "probe_question": "What organ is Marie likely to specialize in?",
+    "answer": "heart",
+    "items": [
+      {
+        "concept": "hospital",
+        "label": "filler",
+        "role": "the place where Marie works"
+      },
+      {
+        "concept": "specialists",
+        "label": "distractor",
+        "role": "Marie discusses cases with specialists"
+      },
+      {
+        "concept": "ekg",
+        "label": "distractor",
+        "role": "medical test mentioned in relation to her work"
+      },
+      {
+        "concept": "analysis",
+        "label": "filler",
+        "role": "part of Marie's work tasks"
+      },
+      {
+        "concept": "heart",
+        "label": "load_bearing",
+        "role": "inferred from the context of EKG tests"
+      }
+    ]
+  },
+  {
+    "context": "The opera performance ended with thunderous applause. Clara took a bow alongside her fellow performers. She had always dreamed of performing in La Scala, where the acoustics are renowned worldwide.",
+    "probe_question": "In which country is La Scala located?",
+    "answer": "italy",
+    "items": [
+      {
+        "concept": "applause",
+        "label": "distractor",
+        "role": "reaction of the audience to the performance"
+      },
+      {
+        "concept": "performers",
+        "label": "distractor",
+        "role": "Clara bows alongside them"
+      },
+      {
+        "concept": "dreamed",
+        "label": "filler",
+        "role": "Clara's aspiration to perform at La Scala"
+      },
+      {
+        "concept": "worldwide",
+        "label": "filler",
+        "role": "scope of La Scala's acoustics reputation"
+      },
+      {
+        "concept": "italy",
+        "label": "load_bearing",
+        "role": "country inferred from La Scala"
+      }
+    ]
+  },
+  {
+    "context": "The young musician practiced long hours daily. His fingers danced across the piano keys as the sun set outside his window. Enthralled, he didn't notice the time pass until it was deep into the night. The annual competition was in a week, and he wanted to win the grand prize to prove his talent.",
+    "probe_question": "Where is he likely preparing to perform?",
+    "answer": "concert",
+    "items": [
+      {
+        "concept": "musician",
+        "label": "filler",
+        "role": "neutral word appearing in the context"
+      },
+      {
+        "concept": "grand",
+        "label": "distractor",
+        "role": "vivid word appearing literally in the context"
+      },
+      {
+        "concept": "fingers",
+        "label": "distractor",
+        "role": "surprising word appearing literally in the context"
+      },
+      {
+        "concept": "concert",
+        "label": "load_bearing",
+        "role": "the performance setting implied by the competition"
+      },
+      {
+        "concept": "sun",
+        "label": "filler",
+        "role": "neutral word appearing in the context"
+      }
+    ]
+  },
+  {
+    "context": "During the exploration, they stumbled upon ancient ruins. The carvings in the stones were strange yet beautiful. Despite the scorching heat, the team pressed on further into the wild terrain. Their guide, an experienced archaeologist, noted that such architecture was indicative of an advanced civilization.",
+    "probe_question": "Where might they be conducting this exploration?",
+    "answer": "desert",
+    "items": [
+      {
+        "concept": "ruins",
+        "label": "distractor",
+        "role": "emotional word appearing literally in the context"
+      },
+      {
+        "concept": "stones",
+        "label": "filler",
+        "role": "neutral word appearing in the context"
+      },
+      {
+        "concept": "desert",
+        "label": "load_bearing",
+        "role": "the natural environment suggested by the scorching heat"
+      },
+      {
+        "concept": "civilization",
+        "label": "distractor",
+        "role": "vivid word appearing literally in the context"
+      },
+      {
+        "concept": "heat",
+        "label": "filler",
+        "role": "neutral word appearing in the context"
+      }
+    ]
+  },
+  {
+    "context": "Every year, the city is alive during the festival season. Streets are lined with colorful banners and vendors selling traditional food. Families gather in the main square to enjoy the performances. There's a sense of unity and joy that fills the air.",
+    "probe_question": "What is this city likely celebrating?",
+    "answer": "culture",
+    "items": [
+      {
+        "concept": "festival",
+        "label": "distractor",
+        "role": "surprising word appearing literally in the context"
+      },
+      {
+        "concept": "square",
+        "label": "filler",
+        "role": "neutral word appearing in the context"
+      },
+      {
+        "concept": "culture",
+        "label": "load_bearing",
+        "role": "underlying reason for the colorful and traditional elements"
+      },
+      {
+        "concept": "food",
+        "label": "distractor",
+        "role": "emotional word appearing literally in the context"
+      },
+      {
+        "concept": "families",
+        "label": "filler",
+        "role": "neutral word appearing in the context"
+      }
+    ]
+  },
+  {
+    "context": "The storm swept over the coastline without warning. Fishermen down at the docks rushed to secure their boats. The turbulent waves crashed mightily against the barrier, while the lighthouse stood firm. Times like these tested the mettle of everyone living by the sea.",
+    "probe_question": "What is an essential feature of this coastline area?",
+    "answer": "harbor",
+    "items": [
+      {
+        "concept": "storm",
+        "label": "distractor",
+        "role": "emotional word appearing literally in the context"
+      },
+      {
+        "concept": "barrier",
+        "label": "filler",
+        "role": "neutral word appearing in the context"
+      },
+      {
+        "concept": "harbor",
+        "label": "load_bearing",
+        "role": "implied feature given the mention of docked boats"
+      },
+      {
+        "concept": "sea",
+        "label": "distractor",
+        "role": "vivid word appearing literally in the context"
+      },
+      {
+        "concept": "boats",
+        "label": "filler",
+        "role": "neutral word appearing in the context"
+      }
+    ]
+  },
+  {
+    "context": "She laid out her carefully planned itinerary for the upcoming trip. Museums, landmarks, and local markets were on her list. Fluent in several languages, she was ready to explore and immerse herself in new experiences. Her passport, filled with stamps from around the world, sat on the table.",
+    "probe_question": "What is her upcoming trip primarily focused on?",
+    "answer": "travel",
+    "items": [
+      {
+        "concept": "trip",
+        "label": "distractor",
+        "role": "vivid word appearing literally in the context"
+      },
+      {
+        "concept": "passport",
+        "label": "filler",
+        "role": "neutral word appearing in the context"
+      },
+      {
+        "concept": "travel",
+        "label": "load_bearing",
+        "role": "central theme implied by the itinerary and stamps"
+      },
+      {
+        "concept": "markets",
+        "label": "distractor",
+        "role": "surprising word appearing literally in the context"
+      },
+      {
+        "concept": "museums",
+        "label": "filler",
+        "role": "neutral word appearing in the context"
+      }
+    ]
+  },
+  {
+    "context": "The annual regatta attracted sailors from all over the world. As the sun set, the boats glided across the water, their colorful sails alight with the evening glow. Spectators lined the shores, cheering for their favorite teams.",
+    "probe_question": "What type of event is the regatta?",
+    "answer": "sailing",
+    "items": [
+      {
+        "concept": "sailing",
+        "label": "load_bearing",
+        "role": "inferred type of sporting event based on context."
+      },
+      {
+        "concept": "boats",
+        "label": "distractor",
+        "role": "vivid element seen participating in the event."
+      },
+      {
+        "concept": "sunset",
+        "label": "distractor",
+        "role": "emotional natural occurrence in context."
+      },
+      {
+        "concept": "teams",
+        "label": "filler",
+        "role": "neutral participant description."
+      },
+      {
+        "concept": "shore",
+        "label": "filler",
+        "role": "neutral geographical location described."
+      }
+    ]
+  },
+  {
+    "context": "Michelangelo was one of the most renowned artists of the Renaissance period. He is best known for his sculptures, including the marble statue of David and the frescoes on the ceiling of the Sistine Chapel. His works were created in the vibrant city of Florence. The Medici family were major patrons of the arts during his time, funding many of his projects and contributing to the flourishing cultural scene.",
+    "probe_question": "Which country is the city Michelangelo worked in located in?",
+    "answer": "italy",
+    "items": [
+      {
+        "concept": "florence",
+        "label": "distractor",
+        "role": "Mentioned city associated with Michelangelo."
+      },
+      {
+        "concept": "sculpture",
+        "label": "filler",
+        "role": "A type of art Michelangelo was known for."
+      },
+      {
+        "concept": "italy",
+        "label": "load_bearing",
+        "role": "The country where Florence is located."
+      },
+      {
+        "concept": "medici",
+        "label": "distractor",
+        "role": "The name of the patron family."
+      },
+      {
+        "concept": "renaissance",
+        "label": "filler",
+        "role": "The historical period during which Michelangelo worked."
+      }
+    ]
+  },
+  {
+    "context": "The annual marathon in Boston is a significant event drawing runners and spectators from around the world. Participants train for several months to prepare for the grueling 26.2-mile race. The course takes them through some of the city's historic neighborhoods, finishing near Copley Square. Many local businesses and residents come out to support the runners along the way.",
+    "probe_question": "In which state does the Boston marathon take place?",
+    "answer": "massachusetts",
+    "items": [
+      {
+        "concept": "boston",
+        "label": "distractor",
+        "role": "The city which hosts the marathon."
+      },
+      {
+        "concept": "marathon",
+        "label": "filler",
+        "role": "The type of race discussed."
+      },
+      {
+        "concept": "massachusetts",
+        "label": "load_bearing",
+        "role": "The state where Boston is located."
+      },
+      {
+        "concept": "copley",
+        "label": "distractor",
+        "role": "A specific location mentioned in the marathon's route."
+      },
+      {
+        "concept": "race",
+        "label": "filler",
+        "role": "A general activity participants take part in."
+      }
+    ]
+  },
+  {
+    "context": "The Serengeti is a vast ecosystem in Africa, known for its massive annual migration of wildebeest and zebras. It's a significant point of interest for wildlife enthusiasts and researchers. The plains stretch over thousands of square kilometers, providing habitat to a rich diversity of species. Visitors often embark on safari tours to observe the wildlife in their natural habitat.",
+    "probe_question": "In which country is the Serengeti located?",
+    "answer": "tanzania",
+    "items": [
+      {
+        "concept": "serengeti",
+        "label": "distractor",
+        "role": "Location described by its ecological significance."
+      },
+      {
+        "concept": "africa",
+        "label": "filler",
+        "role": "Continent where the Serengeti is located."
+      },
+      {
+        "concept": "tanzania",
+        "label": "load_bearing",
+        "role": "The country encompassing the Serengeti region."
+      },
+      {
+        "concept": "wildebeest",
+        "label": "distractor",
+        "role": "Animal involved in the migration."
+      },
+      {
+        "concept": "safari",
+        "label": "filler",
+        "role": "Type of tour mentioned for observing wildlife."
+      }
+    ]
+  },
+  {
+    "context": "Maria carefully brushed Florence's hair as she sat in the wheelchair. The hospital room was filled with the scent of antiseptic. Despite the sterile smell, Maria always brought a little vase of daisies to brighten the space. Florence, who rarely spoke, had her eyes closed and seemed to drift away from reality.",
+    "probe_question": "Which family member is Florence likely related to?",
+    "answer": "mother",
+    "items": [
+      {
+        "concept": "hospital",
+        "label": "distractor",
+        "role": "appears in the context"
+      },
+      {
+        "concept": "daisies",
+        "label": "distractor",
+        "role": "emotional word in the context"
+      },
+      {
+        "concept": "wheelchair",
+        "label": "filler",
+        "role": "neutral word in the context"
+      },
+      {
+        "concept": "antiseptic",
+        "label": "filler",
+        "role": "neutral word in the context"
+      },
+      {
+        "concept": "mother",
+        "label": "load_bearing",
+        "role": "Maria's potential relation to Florence"
+      }
+    ]
+  },
+  {
+    "context": "The old lighthouse stood tall against the battering waves. On stormy nights, its light guided lost ships away from the perilous rocks. Though the paint was peeling, it remained an emblem of hope for sailors. Amidst the howling wind, the distant sound of a foghorn signaled a ship's approach.",
+    "probe_question": "What kind of structure is the lighthouse mainly important for?",
+    "answer": "navigation",
+    "items": [
+      {
+        "concept": "waves",
+        "label": "distractor",
+        "role": "appears in the context"
+      },
+      {
+        "concept": "sailors",
+        "label": "distractor",
+        "role": "emotional word in the context"
+      },
+      {
+        "concept": "paint",
+        "label": "filler",
+        "role": "neutral word in the context"
+      },
+      {
+        "concept": "foghorn",
+        "label": "filler",
+        "role": "neutral word in the context"
+      },
+      {
+        "concept": "navigation",
+        "label": "load_bearing",
+        "role": "implied function of the lighthouse"
+      }
+    ]
+  },
+  {
+    "context": "The students gathered around the science exhibit, watching the model of an erupting volcano. As it spewed red foam, they gasped and laughed, imagining the real force of nature. Their guide explained the different strata of the earth beneath their feet. Building anticipation, he spoke of tectonic shifts that shape our planet's face.",
+    "probe_question": "What geological process does the exhibit model focus on?",
+    "answer": "volcanism",
+    "items": [
+      {
+        "concept": "volcano",
+        "label": "distractor",
+        "role": "appears in the context"
+      },
+      {
+        "concept": "lava",
+        "label": "distractor",
+        "role": "emotional word in the context"
+      },
+      {
+        "concept": "foam",
+        "label": "filler",
+        "role": "neutral word in the context"
+      },
+      {
+        "concept": "strata",
+        "label": "filler",
+        "role": "neutral word in the context"
+      },
+      {
+        "concept": "volcanism",
+        "label": "load_bearing",
+        "role": "the cause of eruptions and shifts discussed"
+      }
+    ]
+  },
+  {
+    "context": "The chef meticulously arranged the sushi on gleaming plates. Each piece was a work of art with the finest cuts of salmon, tuna, and carefully cooked rice. Patrons eagerly awaited as they sat at the bar, admiring the chef's delicate craftsmanship. A warm, inviting aroma of soy sauce filled the air.",
+    "probe_question": "What is the chef's specialty in the context?",
+    "answer": "japanese",
+    "items": [
+      {
+        "concept": "sushi",
+        "label": "distractor",
+        "role": "appears in the context"
+      },
+      {
+        "concept": "salmon",
+        "label": "distractor",
+        "role": "emotional word in the context"
+      },
+      {
+        "concept": "rice",
+        "label": "filler",
+        "role": "neutral word in the context"
+      },
+      {
+        "concept": "soy",
+        "label": "filler",
+        "role": "neutral word in the context"
+      },
+      {
+        "concept": "japanese",
+        "label": "load_bearing",
+        "role": "implied nationality of the cuisine"
+      }
+    ]
+  },
+  {
+    "context": "The ceremony was held at Buckingham Palace, with guests enjoying views of the historic building. During the event, the queen gave a speech highlighting the nation's progress. Attendees were delighted by the evening's entertainment and exquisite cuisine. The weather was exceptionally sunny, adding to the day's success.",
+    "probe_question": "Where is Buckingham Palace located?",
+    "answer": "london",
+    "items": [
+      {
+        "concept": "london",
+        "label": "load_bearing",
+        "role": "Buckingham Palace is located in London."
+      },
+      {
+        "concept": "queen",
+        "label": "distractor",
+        "role": "Mentioned in the context because the queen gave a speech."
+      },
+      {
+        "concept": "palace",
+        "label": "distractor",
+        "role": "A location referenced as part of the event's venue."
+      },
+      {
+        "concept": "weather",
+        "label": "filler",
+        "role": "Described to relate the day's success."
+      },
+      {
+        "concept": "event",
+        "label": "filler",
+        "role": "Related to the type of gathering described."
+      }
+    ]
+  },
+  {
+    "context": "Since its release, the book about quantum mechanics has fascinated both scientists and curious readers. The author, a renowned physicist, uses clear explanations to demystify complex topics. Many commend her for making the subject accessible. The book reached bestseller status in a matter of weeks.",
+    "probe_question": "In which field is the book's author likely a specialist?",
+    "answer": "physics",
+    "items": [
+      {
+        "concept": "physics",
+        "label": "load_bearing",
+        "role": "Quantum mechanics is a part of physics."
+      },
+      {
+        "concept": "author",
+        "label": "distractor",
+        "role": "Discussed in the context as the writer of the book."
+      },
+      {
+        "concept": "book",
+        "label": "distractor",
+        "role": "Central to the context as the subject of discussion."
+      },
+      {
+        "concept": "weeks",
+        "label": "filler",
+        "role": "Describes the time it took for the book to become a bestseller."
+      },
+      {
+        "concept": "subject",
+        "label": "filler",
+        "role": "Refers to the topic of the book."
+      }
+    ]
+  }
+]

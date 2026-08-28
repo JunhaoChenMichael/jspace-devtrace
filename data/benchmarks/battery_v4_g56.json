@@ -1,0 +1,1381 @@
+[
+  {
+    "context": "Zelma climbed the stone steps to Kiyomizu-dera before dawn. A red umbrella snapped inside out when a sudden gust crossed the veranda. At a roadside shrine, a fox statue wore a bright cloth bib. Thunder startled a flock of pigeons from the tiled roof. She later sipped tea beneath flowering branches.",
+    "probe_question": "Which currency should Zelma obtain?",
+    "answer": "yen",
+    "items": [
+      {
+        "concept": "japan",
+        "label": "load_bearing",
+        "role": "The landmarks imply this nation, whose currency answers the probe."
+      },
+      {
+        "concept": "umbrella",
+        "label": "distractor",
+        "role": "A vivid mishap unrelated to the probe."
+      },
+      {
+        "concept": "fox",
+        "label": "distractor",
+        "role": "A memorable statue that does not determine the answer."
+      },
+      {
+        "concept": "thunder",
+        "label": "distractor",
+        "role": "A startling event irrelevant to the probe."
+      },
+      {
+        "concept": "stone",
+        "label": "filler",
+        "role": "A neutral material in the setting."
+      },
+      {
+        "concept": "tea",
+        "label": "filler",
+        "role": "A neutral beverage mentioned in passing."
+      }
+    ]
+  },
+  {
+    "context": "Aurelio aligned the telescope with the brightest object in his observatory window. Through the eyepiece, broad rings encircled the distant planet. A pale golden band was divided by the dark Cassini Division. Titan appeared as a tiny point beyond the rings. An alarm produced a sudden shriek when the tracking motor stalled. Before sunrise, he copied several measurements into his notes.",
+    "probe_question": "What type of giant was Aurelio examining?",
+    "answer": "gas",
+    "items": [
+      {
+        "concept": "saturn",
+        "label": "load_bearing",
+        "role": "The rings, Cassini Division, and Titan identify this planet."
+      },
+      {
+        "concept": "alarm",
+        "label": "distractor",
+        "role": "A disruptive event unrelated to planetary classification."
+      },
+      {
+        "concept": "shriek",
+        "label": "distractor",
+        "role": "A vivid sound that cannot answer the probe."
+      },
+      {
+        "concept": "golden",
+        "label": "distractor",
+        "role": "A striking visual detail with no classificatory value."
+      },
+      {
+        "concept": "telescope",
+        "label": "filler",
+        "role": "Neutral observational equipment."
+      },
+      {
+        "concept": "notes",
+        "label": "filler",
+        "role": "A routine record of the session."
+      }
+    ]
+  },
+  {
+    "context": "Briony opened the battered case on a velvet-covered table. She tucked the compact polished wooden body beneath her chin. A scarlet ribbon fluttered from the carved scroll. With a horsehair bow, she sounded four taut strands tuned to G, D, A, and E. When one strand snapped, she gasped as a splinter pricked her thumb.",
+    "probe_question": "Which orchestral family contains Briony's object?",
+    "answer": "string",
+    "items": [
+      {
+        "concept": "violin",
+        "label": "load_bearing",
+        "role": "The shape, bowing position, and tuning identify this object."
+      },
+      {
+        "concept": "splinter",
+        "label": "distractor",
+        "role": "A painful detail unrelated to classification."
+      },
+      {
+        "concept": "gasped",
+        "label": "distractor",
+        "role": "An emotional reaction that does not answer the probe."
+      },
+      {
+        "concept": "scarlet",
+        "label": "distractor",
+        "role": "A vivid color with no relevance to the probe."
+      },
+      {
+        "concept": "case",
+        "label": "filler",
+        "role": "A neutral storage object."
+      },
+      {
+        "concept": "bow",
+        "label": "filler",
+        "role": "A routine accessory used in the scene."
+      }
+    ]
+  },
+  {
+    "context": "Mireya heated a wide, shallow pan over orange-wood flames. She spread bomba rice across the surface and poured in a fragrant broth. Rabbit, snails, and flat green beans were arranged in separate sections. She refused to stir once the simmering began. At the end, the bottom crackled into a dark socarrat while the guests cheered.",
+    "probe_question": "Which nation is Mireya's specialty traditionally associated with?",
+    "answer": "spain",
+    "items": [
+      {
+        "concept": "paella",
+        "label": "load_bearing",
+        "role": "The pan, ingredients, and socarrat identify this food."
+      },
+      {
+        "concept": "rabbit",
+        "label": "distractor",
+        "role": "A conspicuous ingredient that does not establish the nation alone."
+      },
+      {
+        "concept": "snails",
+        "label": "distractor",
+        "role": "A surprising ingredient irrelevant once the bridge is known."
+      },
+      {
+        "concept": "flames",
+        "label": "distractor",
+        "role": "A vivid cooking detail with no bearing on the probe."
+      },
+      {
+        "concept": "pan",
+        "label": "filler",
+        "role": "Neutral cookware used during preparation."
+      },
+      {
+        "concept": "rice",
+        "label": "filler",
+        "role": "A basic ingredient in the scene."
+      }
+    ]
+  },
+  {
+    "context": "Quillon sat before a checkered board in a silent club room. A king, queen, rook, bishop, knight, and pawn faced matching forces across the squares. He pushed a pawn two squares and exposed his queen. His opponent slammed a clock after every move. A candle toppled beside the board, startling a green parrot on the windowsill.",
+    "probe_question": "How many pieces did Quillon control at the start?",
+    "answer": "sixteen",
+    "items": [
+      {
+        "concept": "chess",
+        "label": "load_bearing",
+        "role": "The board, named forces, and clock identify this game."
+      },
+      {
+        "concept": "parrot",
+        "label": "distractor",
+        "role": "A surprising animal unrelated to the probe."
+      },
+      {
+        "concept": "slammed",
+        "label": "distractor",
+        "role": "A forceful action that provides no numerical information."
+      },
+      {
+        "concept": "candle",
+        "label": "distractor",
+        "role": "A vivid hazard irrelevant to the starting count."
+      },
+      {
+        "concept": "board",
+        "label": "filler",
+        "role": "Neutral equipment used for play."
+      },
+      {
+        "concept": "opponent",
+        "label": "filler",
+        "role": "A routine participant in the game."
+      }
+    ]
+  },
+  {
+    "context": "Zorina checked into a tiny hotel after arriving by train. She watched an iron lattice tower sparkle above the rooftops after dusk. A vendor beside the Seine sold her a paper cone of chestnuts. Her map marked the Louvre and Montmartre for the following morning. A shouting tourist discovered that his wallet had been stolen while Zorina was drenched by sudden rain.",
+    "probe_question": "What currency would Zorina use?",
+    "answer": "euro",
+    "items": [
+      {
+        "concept": "paris",
+        "label": "load_bearing",
+        "role": "Unstated city identified by the landmarks."
+      },
+      {
+        "concept": "shouting",
+        "label": "distractor",
+        "role": "Vivid commotion irrelevant to the currency."
+      },
+      {
+        "concept": "stolen",
+        "label": "distractor",
+        "role": "Dramatic mishap irrelevant to the probe."
+      },
+      {
+        "concept": "drenched",
+        "label": "distractor",
+        "role": "Memorable discomfort unrelated to the answer."
+      },
+      {
+        "concept": "hotel",
+        "label": "filler",
+        "role": "Neutral lodging detail."
+      },
+      {
+        "concept": "map",
+        "label": "filler",
+        "role": "Neutral travel object."
+      }
+    ]
+  },
+  {
+    "context": "Tavian spent an afternoon in an archive comparing a delicate score with several letters. The pages included the opening of Eine kleine Nachtmusik and sketches for an unfinished Requiem. One letter described a child prodigy who toured royal courts with his sister. Another mentioned the opera The Magic Flute. A curator repeated feverish rumors about a midnight burial, then displayed a cracked skull once falsely attributed to the musician.",
+    "probe_question": "What nationality was Tavian's subject?",
+    "answer": "austrian",
+    "items": [
+      {
+        "concept": "mozart",
+        "label": "load_bearing",
+        "role": "Unstated musician identified by the works and biography."
+      },
+      {
+        "concept": "feverish",
+        "label": "distractor",
+        "role": "Sensational rumor irrelevant to nationality."
+      },
+      {
+        "concept": "midnight",
+        "label": "distractor",
+        "role": "Atmospheric burial detail unrelated to the probe."
+      },
+      {
+        "concept": "skull",
+        "label": "distractor",
+        "role": "Macabre object that does not determine the answer."
+      },
+      {
+        "concept": "archive",
+        "label": "filler",
+        "role": "Neutral research setting."
+      },
+      {
+        "concept": "score",
+        "label": "filler",
+        "role": "Neutral musical document."
+      }
+    ]
+  },
+  {
+    "context": "Marisol maintained a chilled aquarium in the laboratory basement. The pale animal had feathery external gills and a broad, almost smiling face. After a tankmate left one limb severed, the missing tissue slowly grew back without a scar. Marisol was startled by its ghostly appearance under the blue lights. Unlike related salamanders, it retained juvenile features throughout adulthood.",
+    "probe_question": "Which country is Marisol's specimen native to?",
+    "answer": "mexico",
+    "items": [
+      {
+        "concept": "axolotl",
+        "label": "load_bearing",
+        "role": "Unstated animal identified by its anatomy and regeneration."
+      },
+      {
+        "concept": "severed",
+        "label": "distractor",
+        "role": "Graphic injury detail irrelevant to native range."
+      },
+      {
+        "concept": "ghostly",
+        "label": "distractor",
+        "role": "Vivid appearance unrelated to the probe."
+      },
+      {
+        "concept": "startled",
+        "label": "distractor",
+        "role": "Emotional reaction that does not supply the answer."
+      },
+      {
+        "concept": "aquarium",
+        "label": "filler",
+        "role": "Neutral enclosure detail."
+      },
+      {
+        "concept": "gills",
+        "label": "filler",
+        "role": "Neutral anatomical detail."
+      }
+    ]
+  },
+  {
+    "context": "Nerys opened her laptop to repair a data script ending in .py. She aligned every block with four spaces because stray indentation stopped execution. A list comprehension condensed several repetitive lines into one. She also imported pandas before loading a table of measurements. When a whitespace error crashed the demonstration, a frantic alarm sounded in the hallway.",
+    "probe_question": "Who invented Nerys's programming language?",
+    "answer": "guido van rossum",
+    "items": [
+      {
+        "concept": "python",
+        "label": "load_bearing",
+        "role": "Unstated technology identified by the syntax and file suffix."
+      },
+      {
+        "concept": "crashed",
+        "label": "distractor",
+        "role": "Dramatic failure irrelevant to the inventor."
+      },
+      {
+        "concept": "frantic",
+        "label": "distractor",
+        "role": "Emotional intensity unrelated to the probe."
+      },
+      {
+        "concept": "laptop",
+        "label": "filler",
+        "role": "Neutral piece of equipment."
+      },
+      {
+        "concept": "script",
+        "label": "filler",
+        "role": "Neutral work artifact."
+      }
+    ]
+  },
+  {
+    "context": "Keziah aimed a telescope at the brightest point in the evening sky. Four large moons shifted position around it over successive nights. Dark belts crossed its enormous disk, and a raging oval storm appeared scarlet in her images. She calculated that this world outweighed all the other planets combined. The thought of its immense gravity left her feeling crushed.",
+    "probe_question": "Approximately how many Earth years does Keziah's target take to circle the Sun?",
+    "answer": "twelve years",
+    "items": [
+      {
+        "concept": "jupiter",
+        "label": "load_bearing",
+        "role": "Unstated world identified by its moons, mass, and storm."
+      },
+      {
+        "concept": "raging",
+        "label": "distractor",
+        "role": "Vivid storm description insufficient for the probe."
+      },
+      {
+        "concept": "crushed",
+        "label": "distractor",
+        "role": "Emotional image irrelevant to the calculation."
+      },
+      {
+        "concept": "moons",
+        "label": "filler",
+        "role": "Neutral astronomical detail."
+      }
+    ]
+  },
+  {
+    "context": "Brannoc slid a wooden frame from a box filled with neat wax cells. Workers clustered around a larger queen while capped honey gleamed along the edges. He watched one return and trace a waggle dance across the comb. A purple glove hid a splinter that made him wince. Nearby, an alarm shrieked in the shed beside a bucket.",
+    "probe_question": "How many legs does Brannoc's animal possess?",
+    "answer": "six",
+    "items": [
+      {
+        "concept": "bee",
+        "label": "load_bearing",
+        "role": "The colony clues identify this animal."
+      },
+      {
+        "concept": "purple",
+        "label": "distractor",
+        "role": "A vivid color unrelated to anatomy."
+      },
+      {
+        "concept": "shed",
+        "label": "filler",
+        "role": "A neutral location detail."
+      },
+      {
+        "concept": "bucket",
+        "label": "filler",
+        "role": "A neutral nearby object."
+      }
+    ]
+  },
+  {
+    "context": "Ruvian had spent months aboard a sailing ship eating mostly salted meat and hard biscuits. Dark bruises spread across his arms, his gums bled, and several teeth loosened. He grew exhausted and struggled to climb the rigging. At the next port, a healer added oranges and limes to his meals. Within weeks, his strength returned, though a furious parrot had shredded his blue hat.",
+    "probe_question": "Which vitamin would have prevented Ruvian's ailment?",
+    "answer": "vitamin C",
+    "items": [
+      {
+        "concept": "scurvy",
+        "label": "load_bearing",
+        "role": "The voyage, symptoms, and citrus imply this disease."
+      },
+      {
+        "concept": "furious",
+        "label": "distractor",
+        "role": "An emotional detail unrelated to nutrition."
+      },
+      {
+        "concept": "shredded",
+        "label": "distractor",
+        "role": "A vivid action unrelated to the ailment."
+      },
+      {
+        "concept": "arms",
+        "label": "filler",
+        "role": "A neutral body-location detail."
+      },
+      {
+        "concept": "weeks",
+        "label": "filler",
+        "role": "A neutral time reference."
+      }
+    ]
+  },
+  {
+    "context": "Tavian studied a delayed signal on a screen sent by the Curiosity rover. The transmission mapped Valles Marineris and described the immense Olympus Mons. Engineers also noted the thin carbon-dioxide atmosphere surrounding the rover. An alarm sounded when a spider dropped beside Tavian's coffee.",
+    "probe_question": "How many moons does Tavian's target have?",
+    "answer": "two",
+    "items": [
+      {
+        "concept": "mars",
+        "label": "load_bearing",
+        "role": "unstated world identified by the mission details"
+      },
+      {
+        "concept": "spider",
+        "label": "distractor",
+        "role": "startling control-room detail"
+      },
+      {
+        "concept": "coffee",
+        "label": "distractor",
+        "role": "vivid personal detail unrelated to the probe"
+      },
+      {
+        "concept": "signal",
+        "label": "filler",
+        "role": "neutral communications detail"
+      },
+      {
+        "concept": "screen",
+        "label": "filler",
+        "role": "neutral equipment detail"
+      }
+    ]
+  },
+  {
+    "context": "Brinley took a boat across the waters of the Great Barrier Reef. Her journal described the next leg of the itinerary as a visit to Uluru. The final stop was the Sydney Opera House. At the dock, a trumpet interrupted a quarrel and sent loose confetti swirling through the air.",
+    "probe_question": "Which national capital matches Brinley's inferred country?",
+    "answer": "canberra",
+    "items": [
+      {
+        "concept": "australia",
+        "label": "load_bearing",
+        "role": "unstated country identified by the itinerary"
+      },
+      {
+        "concept": "trumpet",
+        "label": "distractor",
+        "role": "noisy dockside detail unrelated to geography"
+      },
+      {
+        "concept": "quarrel",
+        "label": "distractor",
+        "role": "emotional incident unrelated to the capital"
+      },
+      {
+        "concept": "confetti",
+        "label": "distractor",
+        "role": "vivid debris unrelated to the probe"
+      },
+      {
+        "concept": "boat",
+        "label": "filler",
+        "role": "neutral mode of transport"
+      },
+      {
+        "concept": "journal",
+        "label": "filler",
+        "role": "neutral record of the journey"
+      }
+    ]
+  },
+  {
+    "context": "Nyxara arrived at a clinic with recurring chills that returned every forty-eight hours. A blood smear showed ring-shaped parasites inside red cells. She recorded in a notebook that the symptoms began after her return from humid equatorial wetlands. Outside, thunder startled a parrot perched on her suitcase.",
+    "probe_question": "Which insect usually spreads Nyxara's suspected illness?",
+    "answer": "mosquito",
+    "items": [
+      {
+        "concept": "malaria",
+        "label": "load_bearing",
+        "role": "unstated illness indicated by the clinical findings"
+      },
+      {
+        "concept": "suitcase",
+        "label": "distractor",
+        "role": "travel object unrelated to the vector"
+      },
+      {
+        "concept": "clinic",
+        "label": "filler",
+        "role": "neutral medical setting"
+      },
+      {
+        "concept": "notebook",
+        "label": "filler",
+        "role": "neutral record-keeping object"
+      }
+    ]
+  },
+  {
+    "context": "Odelia photographed Big Ben just after noon. She then boarded a red double-decker and kept the ticket in her pocket. A runaway ferret darted beneath a nearby cart. A vendor accidentally splashed mustard across the pavement. Confetti clung to Odelia's coat as she continued sightseeing.",
+    "probe_question": "Which river is linked to Odelia's inferred city?",
+    "answer": "thames",
+    "items": [
+      {
+        "concept": "london",
+        "label": "load_bearing",
+        "role": "inferred city needed to identify the river"
+      },
+      {
+        "concept": "ferret",
+        "label": "distractor",
+        "role": "surprising animal unrelated to the probe"
+      },
+      {
+        "concept": "mustard",
+        "label": "distractor",
+        "role": "vivid spill unrelated to the probe"
+      },
+      {
+        "concept": "ticket",
+        "label": "filler",
+        "role": "neutral travel object"
+      },
+      {
+        "concept": "pocket",
+        "label": "filler",
+        "role": "neutral clothing detail"
+      }
+    ]
+  },
+  {
+    "context": "Zephira observed a colony of black-and-white flightless seabirds waddling over the ice. One balanced an egg on its feet beneath a fold of skin. A yellow bucket rolled downhill and struck her tripod. A shrill whistle from the supply boat sent a loose ribbon whipping into the air. Zephira secured her camera strap and added a sketch to her notebook.",
+    "probe_question": "Which continent is most strongly associated with Zephira's inferred subject?",
+    "answer": "antarctica",
+    "items": [
+      {
+        "concept": "penguin",
+        "label": "load_bearing",
+        "role": "inferred creature needed to identify the continent"
+      },
+      {
+        "concept": "whistle",
+        "label": "distractor",
+        "role": "sharp sound unrelated to the probe"
+      },
+      {
+        "concept": "ribbon",
+        "label": "distractor",
+        "role": "windblown detail unrelated to the probe"
+      },
+      {
+        "concept": "strap",
+        "label": "filler",
+        "role": "neutral equipment component"
+      }
+    ]
+  },
+  {
+    "context": "Thessaly inspected a dense yellow metal sample in the laboratory. A technician told her that its atomic number was 79. Her purple glove squeaked against the scale. An alarm shrieked when a glass vial shattered beside the drawer. She calmly covered the sample and waited for help.",
+    "probe_question": "Which chemical symbol corresponds to Thessaly's substance?",
+    "answer": "Au",
+    "items": [
+      {
+        "concept": "gold",
+        "label": "load_bearing",
+        "role": "element implied by the stated properties"
+      },
+      {
+        "concept": "shattered",
+        "label": "distractor",
+        "role": "dramatic accident detail"
+      },
+      {
+        "concept": "sample",
+        "label": "filler",
+        "role": "neutral examined object"
+      },
+      {
+        "concept": "drawer",
+        "label": "filler",
+        "role": "neutral laboratory fixture"
+      }
+    ]
+  },
+  {
+    "context": "Ilyra followed a narrow trail through a misty reserve in Sichuan. She watched a bulky black-and-white animal strip leaves from bamboo stalks. It settled against a tree and chewed slowly while she raised her camera. Thunder rolled beyond the hills, and a scarlet poncho flapped from her backpack. She ignored the leeches near her boots and kept observing quietly.",
+    "probe_question": "Which familiar mammal category best fits Ilyra's subject?",
+    "answer": "bear",
+    "items": [
+      {
+        "concept": "panda",
+        "label": "load_bearing",
+        "role": "animal implied by its appearance, diet, and region"
+      },
+      {
+        "concept": "leeches",
+        "label": "distractor",
+        "role": "unpleasant trail detail"
+      },
+      {
+        "concept": "camera",
+        "label": "filler",
+        "role": "neutral observation tool"
+      },
+      {
+        "concept": "trail",
+        "label": "filler",
+        "role": "neutral route through the reserve"
+      }
+    ]
+  },
+  {
+    "context": "Corvian leaned over a faded parchment beginning with the words \u201cWe the People.\u201d The text distributed federal power among three separate branches. It was displayed behind protective glass at the National Archives. A visitor's neon umbrella clattered onto the floor nearby. Corvian suppressed a sneeze and continued reading.",
+    "probe_question": "In which year was Corvian's document signed?",
+    "answer": "1787",
+    "items": [
+      {
+        "concept": "constitution",
+        "label": "load_bearing",
+        "role": "founding text implied by its opening and structure"
+      },
+      {
+        "concept": "neon",
+        "label": "distractor",
+        "role": "vivid umbrella color"
+      },
+      {
+        "concept": "clattered",
+        "label": "distractor",
+        "role": "surprising nearby noise"
+      },
+      {
+        "concept": "sneeze",
+        "label": "distractor",
+        "role": "irrelevant bodily reaction"
+      },
+      {
+        "concept": "parchment",
+        "label": "filler",
+        "role": "neutral physical medium"
+      },
+      {
+        "concept": "glass",
+        "label": "filler",
+        "role": "neutral protective material"
+      }
+    ]
+  },
+  {
+    "context": "Zafira spent dawn walking beneath thousands of torii gates at Fushimi Inari. Later, she photographed the pavilion of Kinkaku-ji reflected in its pond. A guide pointed her toward the grove at Arashiyama. At her hostel, a burst zipper scattered purple socks across the floor. A clashing cymbal outside startled her while she updated her notebook.",
+    "probe_question": "What currency would Zafira use there?",
+    "answer": "yen",
+    "items": [
+      {
+        "concept": "kyoto",
+        "label": "load_bearing",
+        "role": "The landmarks identify this city, whose country uses the requested currency."
+      },
+      {
+        "concept": "socks",
+        "label": "distractor",
+        "role": "Surprising spilled belongings unrelated to the probe."
+      },
+      {
+        "concept": "cymbal",
+        "label": "distractor",
+        "role": "A startling sound source with no bearing on the answer."
+      },
+      {
+        "concept": "hostel",
+        "label": "filler",
+        "role": "A neutral lodging detail."
+      }
+    ]
+  },
+  {
+    "context": "Aveline took her seat among twelve jurors as a prosecutor asked them to convict a defendant of armed robbery. A tearful witness described sirens outside a shop and identified the accused. The defense attorney challenged her memory during questioning. A polished gavel rested beside the judge. After closing arguments, the judge instructed the panel before deliberations. Aveline opened her folder and reviewed her notes.",
+    "probe_question": "What standard of proof should Aveline apply?",
+    "answer": "beyond reasonable doubt",
+    "items": [
+      {
+        "concept": "criminal",
+        "label": "load_bearing",
+        "role": "unstated proceeding type inferred from the courtroom events"
+      },
+      {
+        "concept": "tearful",
+        "label": "distractor",
+        "role": "emotional detail irrelevant to the legal standard"
+      },
+      {
+        "concept": "sirens",
+        "label": "distractor",
+        "role": "dramatic sound irrelevant to the probe"
+      },
+      {
+        "concept": "gavel",
+        "label": "distractor",
+        "role": "vivid courtroom object irrelevant to the standard"
+      },
+      {
+        "concept": "seat",
+        "label": "filler",
+        "role": "neutral setting detail"
+      },
+      {
+        "concept": "folder",
+        "label": "filler",
+        "role": "neutral work object"
+      }
+    ]
+  },
+  {
+    "context": "Odelia began her shift by weighing a sleepy gray patient with round, furry ears. It spent most of the afternoon wedged in the fork of a eucalyptus tree, chewing leathery leaves. A tourist squealed when it briefly opened its eyes. Odelia replaced the water tray and logged sixteen hours of rest. Before closing, she brushed a burr from its silver coat.",
+    "probe_question": "Which mammalian category contains the creature Odelia cared for?",
+    "answer": "marsupial",
+    "items": [
+      {
+        "concept": "koala",
+        "label": "load_bearing",
+        "role": "unstated species inferred from its appearance and behavior"
+      },
+      {
+        "concept": "squealed",
+        "label": "distractor",
+        "role": "vivid reaction irrelevant to classification"
+      },
+      {
+        "concept": "burr",
+        "label": "distractor",
+        "role": "memorable nuisance irrelevant to the probe"
+      },
+      {
+        "concept": "leathery",
+        "label": "distractor",
+        "role": "sensory leaf detail irrelevant to classification"
+      },
+      {
+        "concept": "tray",
+        "label": "filler",
+        "role": "neutral care object"
+      },
+      {
+        "concept": "coat",
+        "label": "filler",
+        "role": "neutral physical detail"
+      }
+    ]
+  },
+  {
+    "context": "Celandine stepped onto a meticulously clipped grass court wearing the required all-white kit. Spectators ate strawberries with cream while she tightened her racket strings. A wasp circled her face during the opening game and drew a startled shout. Rain forced the players under a roof, and a blister troubled her serving hand. She wiped her grip with a towel before play resumed.",
+    "probe_question": "Which city hosts Celandine's championship?",
+    "answer": "london",
+    "items": [
+      {
+        "concept": "wimbledon",
+        "label": "load_bearing",
+        "role": "Unstated championship identified by its grass, dress code, and traditions."
+      },
+      {
+        "concept": "wasp",
+        "label": "distractor",
+        "role": "Surprising interruption unrelated to the host city."
+      },
+      {
+        "concept": "shout",
+        "label": "distractor",
+        "role": "Emotional reaction with no geographic value."
+      },
+      {
+        "concept": "blister",
+        "label": "distractor",
+        "role": "Painful detail irrelevant to the probe."
+      },
+      {
+        "concept": "racket",
+        "label": "filler",
+        "role": "Neutral sporting equipment."
+      },
+      {
+        "concept": "towel",
+        "label": "filler",
+        "role": "Neutral courtside object."
+      }
+    ]
+  },
+  {
+    "context": "Nerezza opened a velvet case before rehearsal and joined a blackwood tube in several sections. She fastened a single reed to the mouthpiece and tested the rows of silver keys. Her first note became a piercing squeal, prompting a flash of panic. A tiny splinter caught her thumb, but she continued after checking the clock. Soon the ensemble settled into a mellow, woody tone.",
+    "probe_question": "To which orchestral family does Nerezza's instrument belong?",
+    "answer": "woodwind",
+    "items": [
+      {
+        "concept": "clarinet",
+        "label": "load_bearing",
+        "role": "Unstated instrument identified by its body, reed, and keys."
+      },
+      {
+        "concept": "squeal",
+        "label": "distractor",
+        "role": "Vivid bad note unrelated to classification."
+      },
+      {
+        "concept": "panic",
+        "label": "distractor",
+        "role": "Emotional response that does not determine the family."
+      },
+      {
+        "concept": "clock",
+        "label": "filler",
+        "role": "Neutral rehearsal detail."
+      }
+    ]
+  },
+  {
+    "context": "Mireya checked her blood sugar before breakfast and dialed a dose on a refrigerated pen. The meter beeped just as a siren sounded in the hallway. She cleaned her skin, made the injection, and covered a small bruise. A coworker offered cake, which she declined with a grimace. She recorded the reading beside her meal plan.",
+    "probe_question": "Which organ ordinarily secretes what Mireya administers?",
+    "answer": "pancreas",
+    "items": [
+      {
+        "concept": "insulin",
+        "label": "load_bearing",
+        "role": "Unstated substance identified by the glucose check and injection."
+      },
+      {
+        "concept": "siren",
+        "label": "distractor",
+        "role": "Vivid noise unrelated to bodily secretion."
+      },
+      {
+        "concept": "bruise",
+        "label": "distractor",
+        "role": "Memorable injury with no bearing on the organ."
+      },
+      {
+        "concept": "cake",
+        "label": "distractor",
+        "role": "Salient food temptation irrelevant to the probe."
+      },
+      {
+        "concept": "pen",
+        "label": "filler",
+        "role": "Neutral delivery device."
+      },
+      {
+        "concept": "meter",
+        "label": "filler",
+        "role": "Neutral monitoring device."
+      }
+    ]
+  },
+  {
+    "context": "Zinnia craned her neck beneath the unfinished spires of the Sagrada Familia. The next morning, she followed Gaud\u00ed's mosaics through Park G\u00fcell and photographed a bright ceramic lizard. A sudden thunderstorm sent her running under an arcade. Her ticket also included a tour of Camp Nou, though the stadium was quiet. Before dinner, she rested on a stone bench overlooking the Mediterranean.",
+    "probe_question": "What tongue is Zinnia likely to encounter besides Spanish?",
+    "answer": "catalan",
+    "items": [
+      {
+        "concept": "barcelona",
+        "label": "load_bearing",
+        "role": "Unstated city identified by the landmarks."
+      },
+      {
+        "concept": "spires",
+        "label": "distractor",
+        "role": "Vivid architectural detail irrelevant to the probe."
+      },
+      {
+        "concept": "lizard",
+        "label": "distractor",
+        "role": "Colorful photographed object irrelevant to the probe."
+      },
+      {
+        "concept": "thunderstorm",
+        "label": "distractor",
+        "role": "Dramatic weather event irrelevant to the probe."
+      },
+      {
+        "concept": "bench",
+        "label": "filler",
+        "role": "Neutral resting-place detail."
+      }
+    ]
+  },
+  {
+    "context": "Corvella followed a footpath through a meadow beside the Thames. Her guide recounted how King John met rebellious barons there under pressure. Thick mud swallowed one boot as a goose hissed at her. A costumed actor waved a sword and startled the group. She copied the site map into her notebook before leaving.",
+    "probe_question": "What year is most famously associated with Corvella?",
+    "answer": "1215",
+    "items": [
+      {
+        "concept": "runnymede",
+        "label": "load_bearing",
+        "role": "unstated place implied by the historic meeting"
+      },
+      {
+        "concept": "mud",
+        "label": "distractor",
+        "role": "messy incident unrelated to the date"
+      },
+      {
+        "concept": "goose",
+        "label": "distractor",
+        "role": "vivid animal encounter irrelevant to the probe"
+      },
+      {
+        "concept": "sword",
+        "label": "distractor",
+        "role": "dramatic prop with no chronological value"
+      },
+      {
+        "concept": "meadow",
+        "label": "filler",
+        "role": "neutral landscape detail"
+      }
+    ]
+  },
+  {
+    "context": "Virella compared photographs of Monte Alb\u00e1n before packing. Her schedule placed the Guelaguetza celebration after a workshop on black clay pottery. She sketched agave rows beside a mountain road. A goat snatched a ribbon from her bag and raced through the courtyard. That night, fireworks rattled the windows while rain soaked her hat.",
+    "probe_question": "Which savory sauce is Virella's associated area especially renowned for?",
+    "answer": "mole",
+    "items": [
+      {
+        "concept": "oaxaca",
+        "label": "load_bearing",
+        "role": "unstated area indicated by the cultural clues"
+      },
+      {
+        "concept": "goat",
+        "label": "distractor",
+        "role": "comic animal incident unrelated to the cuisine"
+      },
+      {
+        "concept": "fireworks",
+        "label": "distractor",
+        "role": "dramatic nighttime detail irrelevant to the answer"
+      },
+      {
+        "concept": "pottery",
+        "label": "filler",
+        "role": "neutral craft mentioned in the account"
+      },
+      {
+        "concept": "schedule",
+        "label": "filler",
+        "role": "neutral planning detail"
+      }
+    ]
+  },
+  {
+    "context": "Calyx stood beneath white, shell-shaped roofs beside a glittering harbor. Across the water, an enormous steel arch carried trains and cars. A sudden downpour sent her laughing into a crowded ferry terminal. She later photographed a bold ibis stealing chips from an unattended tray. At dusk, the waterfront lights rippled across the bay.",
+    "probe_question": "Which nation should Calyx enter on her immigration card?",
+    "answer": "australia",
+    "items": [
+      {
+        "concept": "sydney",
+        "label": "load_bearing",
+        "role": "Inferred city whose nation answers the probe."
+      },
+      {
+        "concept": "downpour",
+        "label": "distractor",
+        "role": "Vivid weather event irrelevant to the nation."
+      },
+      {
+        "concept": "laughing",
+        "label": "distractor",
+        "role": "Emotional reaction irrelevant to the probe."
+      },
+      {
+        "concept": "stealing",
+        "label": "distractor",
+        "role": "Memorable bird behavior with no geographic value."
+      },
+      {
+        "concept": "ferry",
+        "label": "filler",
+        "role": "Neutral waterfront detail from the context."
+      },
+      {
+        "concept": "lights",
+        "label": "filler",
+        "role": "Neutral evening detail from the context."
+      }
+    ]
+  },
+  {
+    "context": "Vesper opened a paper parcel containing tightly curled brown quills. She grated one over an apple tart, releasing a warm, sweet aroma. The merchant said the fragrant cargo had arrived from Sri Lanka. A rat suddenly burst from a nearby crate, and an apprentice screamed. In the commotion, a glass jar fell and shattered across the floor.",
+    "probe_question": "Which tree layer provides Vesper's seasoning?",
+    "answer": "bark",
+    "items": [
+      {
+        "concept": "cinnamon",
+        "label": "load_bearing",
+        "role": "Inferred seasoning whose botanical source answers the probe."
+      },
+      {
+        "concept": "rat",
+        "label": "distractor",
+        "role": "Surprising animal irrelevant to the seasoning's source."
+      },
+      {
+        "concept": "screamed",
+        "label": "distractor",
+        "role": "Emotional reaction unrelated to botany."
+      },
+      {
+        "concept": "parcel",
+        "label": "filler",
+        "role": "Neutral container detail from the context."
+      },
+      {
+        "concept": "merchant",
+        "label": "filler",
+        "role": "Neutral person mentioned in the context."
+      }
+    ]
+  },
+  {
+    "context": "Tavik trained for a voyage to the Sea of Tranquility. His briefing reviewed the Apollo 11 landing and its famous bootprints. He practiced collecting gray dust without contaminating it. A simulated crater surrounded the training module. The cabin drills emphasized the profound silence outside.",
+    "probe_question": "Which planet does Tavik's destination circle?",
+    "answer": "earth",
+    "items": [
+      {
+        "concept": "moon",
+        "label": "load_bearing",
+        "role": "Destination implied by the clues"
+      },
+      {
+        "concept": "dust",
+        "label": "distractor",
+        "role": "Vivid material being collected"
+      },
+      {
+        "concept": "crater",
+        "label": "distractor",
+        "role": "Striking terrain feature"
+      },
+      {
+        "concept": "silence",
+        "label": "distractor",
+        "role": "Emotionally salient condition"
+      },
+      {
+        "concept": "briefing",
+        "label": "filler",
+        "role": "Neutral training detail"
+      }
+    ]
+  },
+  {
+    "context": "Orlena packed fresh basil into a stone mortar. She crushed it with garlic until an emerald paste coated the pestle. Grated parmesan brought a pungent aroma. She streamed olive oil into the blend while grinding it smooth. The finished sauce was spooned over warm pasta.",
+    "probe_question": "Which nuts traditionally belong in Orlena's recipe?",
+    "answer": "pine nuts",
+    "items": [
+      {
+        "concept": "pesto",
+        "label": "load_bearing",
+        "role": "Sauce implied by the ingredients"
+      },
+      {
+        "concept": "emerald",
+        "label": "distractor",
+        "role": "Vivid color description"
+      },
+      {
+        "concept": "pungent",
+        "label": "distractor",
+        "role": "Strong sensory detail"
+      },
+      {
+        "concept": "oil",
+        "label": "filler",
+        "role": "Neutral ingredient"
+      }
+    ]
+  },
+  {
+    "context": "Zareph climbed inside the Great Pyramid at Giza with an archaeological guide. Afterward, he followed the Nile south toward Luxor. A stubborn camel blocked the dusty path near his camp. At dusk, a scorpion appeared beneath his boot. He sketched a painted tomb before returning to the museum.",
+    "probe_question": "On which continent is the country Zareph visited?",
+    "answer": "africa",
+    "items": [
+      {
+        "concept": "egypt",
+        "label": "load_bearing",
+        "role": "Country implied by the places"
+      },
+      {
+        "concept": "camel",
+        "label": "distractor",
+        "role": "Memorable obstacle on the path"
+      },
+      {
+        "concept": "scorpion",
+        "label": "distractor",
+        "role": "Alarming animal encounter"
+      },
+      {
+        "concept": "tomb",
+        "label": "distractor",
+        "role": "Vivid archaeological feature"
+      },
+      {
+        "concept": "museum",
+        "label": "filler",
+        "role": "Neutral itinerary detail"
+      }
+    ]
+  },
+  {
+    "context": "Orlena pumped the bellows until the coal forge glowed orange. She gripped a dark bar with tongs and hammered it across an anvil. Orlena curved the heated piece into a horseshoe for a waiting stallion. A wasp stung her cheek, and she swore loudly without dropping the hammer. She cooled the finished shoe in a bucket and straightened her leather apron.",
+    "probe_question": "Which metal does Orlena's profession traditionally shape?",
+    "answer": "iron",
+    "items": [
+      {
+        "concept": "blacksmith",
+        "label": "load_bearing",
+        "role": "Unstated profession inferred from the work described."
+      },
+      {
+        "concept": "stung",
+        "label": "distractor",
+        "role": "Painful event unrelated to the probe."
+      },
+      {
+        "concept": "swore",
+        "label": "distractor",
+        "role": "Emotional reaction that does not identify the metal."
+      },
+      {
+        "concept": "apron",
+        "label": "filler",
+        "role": "Neutral clothing detail."
+      }
+    ]
+  },
+  {
+    "context": "Zorina changed trains on the Yamanote Line before entering the evening surge at Shibuya Crossing. Neon signs rippled across wet pavement as towering billboards flickered overhead. The next morning, she climbed the steps to Sens\u014d-ji and drew a paper fortune. A gull stole a pastry from her hand, making her furious. Later, Zorina watched commuter lines circle past dense towers from a high observation deck.",
+    "probe_question": "Which country contains Zorina's destination?",
+    "answer": "japan",
+    "items": [
+      {
+        "concept": "tokyo",
+        "label": "load_bearing",
+        "role": "Unstated destination identified by the named sites."
+      },
+      {
+        "concept": "gull",
+        "label": "distractor",
+        "role": "Salient animal unrelated to national location."
+      },
+      {
+        "concept": "stole",
+        "label": "distractor",
+        "role": "Surprising action irrelevant to the probe."
+      },
+      {
+        "concept": "pavement",
+        "label": "filler",
+        "role": "Neutral environmental detail."
+      },
+      {
+        "concept": "steps",
+        "label": "filler",
+        "role": "Neutral architectural detail."
+      }
+    ]
+  },
+  {
+    "context": "Calista spread vinegared rice across sheets of dark seaweed. She laid raw tuna in narrow strips along the center. Using a bamboo mat, she rolled each portion into a tight cylinder. A diner gasped after tasting fiery wasabi, but soon requested another serving. At closing, she wiped the counter clean.",
+    "probe_question": "What country originated Calista's specialty?",
+    "answer": "japan",
+    "items": [
+      {
+        "concept": "sushi",
+        "label": "load_bearing",
+        "role": "The ingredients and preparation identify the dish."
+      },
+      {
+        "concept": "tuna",
+        "label": "distractor",
+        "role": "A vivid ingredient that does not establish the country alone."
+      },
+      {
+        "concept": "wasabi",
+        "label": "distractor",
+        "role": "A fiery and memorable condiment."
+      },
+      {
+        "concept": "mat",
+        "label": "filler",
+        "role": "A neutral preparation tool."
+      },
+      {
+        "concept": "counter",
+        "label": "filler",
+        "role": "A neutral workspace detail."
+      }
+    ]
+  },
+  {
+    "context": "Thalric watched a soft-bodied creature squeeze through a narrow opening in the tank. Its eight sucker-lined arms explored a maze and unscrewed a jar. When startled, it released a black cloud of ink and vanished behind a rock. It changed color as the lighting shifted. An empty shell lay near the glass.",
+    "probe_question": "How many hearts does Thalric's specimen possess?",
+    "answer": "three",
+    "items": [
+      {
+        "concept": "octopus",
+        "label": "load_bearing",
+        "role": "The anatomy and behavior identify the animal."
+      },
+      {
+        "concept": "unscrewed",
+        "label": "distractor",
+        "role": "A surprising display of dexterity."
+      },
+      {
+        "concept": "ink",
+        "label": "distractor",
+        "role": "A vivid defensive cloud."
+      },
+      {
+        "concept": "vanished",
+        "label": "distractor",
+        "role": "A dramatic action irrelevant to anatomy."
+      },
+      {
+        "concept": "tank",
+        "label": "filler",
+        "role": "A neutral enclosure."
+      },
+      {
+        "concept": "shell",
+        "label": "filler",
+        "role": "A neutral object in the enclosure."
+      }
+    ]
+  },
+  {
+    "context": "Nerio followed an archaeologist through streets buried beneath layers of ash. Plaster casts preserved the poses of people who died while fleeing. A guide pointed toward Vesuvius and described the catastrophic eruption of 79 CE. Frescoes still colored the walls of villas near an old forum. At a harbor exhibit, Nerio saw carbonized loaves recovered from the ruins.",
+    "probe_question": "Which present-day nation contains the location inferred for Nerio?",
+    "answer": "italy",
+    "items": [
+      {
+        "concept": "pompeii",
+        "label": "load_bearing",
+        "role": "Unstated location needed to determine its present-day nation."
+      },
+      {
+        "concept": "ash",
+        "label": "distractor",
+        "role": "Vivid volcanic material that does not answer the probe."
+      },
+      {
+        "concept": "casts",
+        "label": "distractor",
+        "role": "Haunting archaeological detail irrelevant to the nation question."
+      },
+      {
+        "concept": "eruption",
+        "label": "distractor",
+        "role": "Dramatic disaster detail that is not the inferred location."
+      },
+      {
+        "concept": "guide",
+        "label": "filler",
+        "role": "Neutral person mentioned during the tour."
+      },
+      {
+        "concept": "villas",
+        "label": "filler",
+        "role": "Neutral structures described among the ruins."
+      }
+    ]
+  },
+  {
+    "context": "Elowen's bus crossed a black lava field under a pale morning sky. She watched geysers burst upward at regular intervals. Steam rose from the ground beside a path crusted with minerals. Later, Elowen floated in a warm lagoon surrounded by dark rock. At Thingvellir, a guide described an ancient assembly founded more than a thousand years ago.",
+    "probe_question": "What currency should Elowen acquire?",
+    "answer": "krona",
+    "items": [
+      {
+        "concept": "iceland",
+        "label": "load_bearing",
+        "role": "Unstated country whose monetary unit answers the probe."
+      },
+      {
+        "concept": "lava",
+        "label": "distractor",
+        "role": "Vivid landscape feature unrelated to the monetary unit."
+      },
+      {
+        "concept": "geysers",
+        "label": "distractor",
+        "role": "Memorable natural spectacle that does not answer the probe."
+      },
+      {
+        "concept": "steam",
+        "label": "distractor",
+        "role": "Sensory detail irrelevant to the currency question."
+      },
+      {
+        "concept": "bus",
+        "label": "filler",
+        "role": "Neutral transportation detail."
+      },
+      {
+        "concept": "lagoon",
+        "label": "filler",
+        "role": "Neutral destination mentioned during the journey."
+      }
+    ]
+  },
+  {
+    "context": "Zorina opened a score marked by four blunt notes often rendered as short-short-short-long. Another page carried sketches for a ninth symphony and its choral finale. A museum display described the master's worsening deafness. His stormy portrait appeared beside a battered notebook. During rehearsal, the motif returned with startling force.",
+    "probe_question": "What was Zorina's inferred artist's nationality?",
+    "answer": "german",
+    "items": [
+      {
+        "concept": "beethoven",
+        "label": "load_bearing",
+        "role": "Unstated artist whose nationality is required."
+      },
+      {
+        "concept": "deafness",
+        "label": "distractor",
+        "role": "Emotionally salient biographical detail that is not a nationality."
+      },
+      {
+        "concept": "stormy",
+        "label": "distractor",
+        "role": "Vivid portrait description irrelevant to the probe."
+      },
+      {
+        "concept": "battered",
+        "label": "distractor",
+        "role": "Striking description of an object with no bearing on nationality."
+      }
+    ]
+  },
+  {
+    "context": "Takumi monitored seismographs throughout the night. A sudden jolt rattled windows across the district. Cracks split several roads, and sirens echoed between buildings. Analysts compared the arrival times of P and S waves to triangulate an epicenter. A nearby fault had slipped after decades of accumulating stress.",
+    "probe_question": "Which magnitude scale was historically linked to Takumi's inferred phenomenon?",
+    "answer": "richter",
+    "items": [
+      {
+        "concept": "earthquake",
+        "label": "load_bearing",
+        "role": "Unstated phenomenon associated with the historical magnitude scale."
+      },
+      {
+        "concept": "jolt",
+        "label": "distractor",
+        "role": "Vivid physical sensation that does not name the scale."
+      },
+      {
+        "concept": "cracks",
+        "label": "distractor",
+        "role": "Striking damage detail irrelevant to the requested term."
+      },
+      {
+        "concept": "analysts",
+        "label": "filler",
+        "role": "Neutral people interpreting the measurements."
+      },
+      {
+        "concept": "fault",
+        "label": "filler",
+        "role": "Neutral geological feature mentioned in the account."
+      }
+    ]
+  }
+]
