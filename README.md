@@ -77,3 +77,11 @@ decision gate:
 ```bash
 bash scripts/run_memory_rl_mvp.sh dry-run rl-w
 ```
+
+## Next H100 campaigns
+
+The post-A5000 handoff is [`docs/H100_NEXT_CAMPAIGNS.md`](docs/H100_NEXT_CAMPAIGNS.md).
+It keeps two confirmatory tracks separate: a Qwen3-8B capable-scale RL-QA
+replication and Qwen3-8B Binary Metacognitive Alignment across seeds 0/1/2.
+The document freezes scope, gates, OOD isolation, and required reports; it does
+not itself authorize an unattended H100 launch.
