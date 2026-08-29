@@ -1,0 +1,17 @@
+{
+  "dropout_modules_zeroed": 0,
+  "config_fields_zeroed": [],
+  "dropout_modules_found": [],
+  "dropout_modules_modified": [],
+  "config_fields_found": [
+    {
+      "name": "attention_dropout",
+      "before": 0.0,
+      "after": 0.0,
+      "modified": false
+    }
+  ],
+  "config_fields_modified": [],
+  "remaining_nonzero": [],
+  "postcondition_satisfied": true
+}

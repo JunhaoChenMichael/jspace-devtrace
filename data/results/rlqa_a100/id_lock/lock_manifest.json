@@ -1,0 +1,109 @@
+{
+  "created_at_utc": "2026-08-29T06:22:07+00:00",
+  "locked_recipe": {
+    "beta": 0.03,
+    "budget": 2,
+    "group_size": 8,
+    "grpo_epochs": 2,
+    "lambda_qa": 1.0,
+    "lambda_w": 0.0,
+    "learning_rate": 1e-06,
+    "lora_rank": 32,
+    "max_steps": 300,
+    "mode": "rl-qa",
+    "split_seed": 0,
+    "temperature": 5.0
+  },
+  "manifest_sha256": "6b2e29d26e7965dd70acd2aa9a03fb66400f1f84511c67b8e5d9918f11d16cb5",
+  "model": "Qwen/Qwen3-8B",
+  "ood_authorization": {
+    "attempt_limit": 1,
+    "bootstrap_samples": 4000,
+    "conditions": [
+      "decoupled",
+      "compositional"
+    ]
+  },
+  "schema_version": "memory-rl-qa-id-lock/v1",
+  "seeds": [
+    {
+      "checkpoint_file_hashes": {
+        "README.md": "d9c7d31b4105f0870dcf81e9ea8c237b4d105e4c17cfec1ffb1a62fe15254eae",
+        "adapter_config.json": "5efa4f02020bba131340d76baeab19c675536c0b7cb4be8c3a9c7773bc31ffa5",
+        "adapter_model.safetensors": "136086a08def569d64937fd94df269b9bdc1c48dd3fb197b4989d2f61e883245",
+        "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+        "chat_template.jinja": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "tokenizer.json": "07471159d9326b5e068e6628d083e0acc9c9efa35c1143a4718a9c768a7e60eb",
+        "tokenizer_config.json": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+        "training_state.json": "e1be2e9bfa3ffc6400736f1772b4030644ddfe0e9a36710bb877f952f58f6b31",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "checkpoint_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/rlqa_a100/runs/formal_rl-qa_Qwen3-8B_rank_continuous_split0_s0_beta0p03_k2_lq1_lw0/best-step-300",
+      "checkpoint_tree_sha256": "1808d8df596a02f367dc6d18f9f22e1e0d1cd928bc55d0b71b63ee9a3254a417",
+      "run_config_sha256": "ffbcb5a50257e2db5657d98bbd498bd7ae5ea8c901f9d64af9258f9000a1030c",
+      "run_dir": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/rlqa_a100/runs/formal_rl-qa_Qwen3-8B_rank_continuous_split0_s0_beta0p03_k2_lq1_lw0",
+      "seed": 0,
+      "selection_metric": "id_qa",
+      "selection_scope": "id_validation",
+      "selection_value": 0.7333333333333333,
+      "split_manifest_sha256": "09e64597d095e6f0122b9e6ec291fbf44cdf2dda4559540fc3e087b420e3025b",
+      "step": 300,
+      "summary_sha256": "497ea4eaefd159895406b6c7924fb9754c9d0acdda72712c31d5be003779de19"
+    },
+    {
+      "checkpoint_file_hashes": {
+        "README.md": "d9c7d31b4105f0870dcf81e9ea8c237b4d105e4c17cfec1ffb1a62fe15254eae",
+        "adapter_config.json": "1d1080e6669744a4aeb48a7bc2f1233f4da40d0ba88c8954e3f3f26ed9e36b97",
+        "adapter_model.safetensors": "91ed73b40ff8b5f6c458d57938bd67c43ca3b89328b592560782f60cd6076277",
+        "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+        "chat_template.jinja": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "tokenizer.json": "07471159d9326b5e068e6628d083e0acc9c9efa35c1143a4718a9c768a7e60eb",
+        "tokenizer_config.json": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+        "training_state.json": "41eec1aa1cab95a372c8425ce8303f4583fea2bd2e86ee5824291bddad922556",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "checkpoint_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/rlqa_a100/runs/formal_rl-qa_Qwen3-8B_rank_continuous_split0_s1_beta0p03_k2_lq1_lw0/best-step-300",
+      "checkpoint_tree_sha256": "9fbe892bd5fe338a1d0bc258079ea80d63401025817bb2d0b6d9790afc074e7c",
+      "run_config_sha256": "e9f2545a2f2a19ef7912d74610a9e72349780986728acada2a0571ea2baa3f3c",
+      "run_dir": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/rlqa_a100/runs/formal_rl-qa_Qwen3-8B_rank_continuous_split0_s1_beta0p03_k2_lq1_lw0",
+      "seed": 1,
+      "selection_metric": "id_qa",
+      "selection_scope": "id_validation",
+      "selection_value": 0.7555555555555555,
+      "split_manifest_sha256": "09e64597d095e6f0122b9e6ec291fbf44cdf2dda4559540fc3e087b420e3025b",
+      "step": 300,
+      "summary_sha256": "decf5c3f17349eee86e926da0f95e7bb33474dbdff65d5c5739e60c94b05c951"
+    },
+    {
+      "checkpoint_file_hashes": {
+        "README.md": "d9c7d31b4105f0870dcf81e9ea8c237b4d105e4c17cfec1ffb1a62fe15254eae",
+        "adapter_config.json": "1e1a0e92e190085eace9c47d9365ec22675e9a9636ff06faaca399f165236dce",
+        "adapter_model.safetensors": "954c4890f3ec72d6765f3fa01fef45413892d20ce2a61f2f7cd1d5902d12801b",
+        "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+        "chat_template.jinja": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "tokenizer.json": "07471159d9326b5e068e6628d083e0acc9c9efa35c1143a4718a9c768a7e60eb",
+        "tokenizer_config.json": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+        "training_state.json": "f0b72eeaa875871ec895161e1e5eba214df1baf5bd59ce477c3b186ddaec8dfe",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "checkpoint_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/rlqa_a100/runs/formal_rl-qa_Qwen3-8B_rank_continuous_split0_s2_beta0p03_k2_lq1_lw0/best-step-200",
+      "checkpoint_tree_sha256": "3447b330539cd23402bb62bac71d216bf11c1a75061a5c644fd37cd6cf0e8d64",
+      "run_config_sha256": "60da3605ffb49e12c0c9051d6ee9bee2e42ed587bfc1b486e0da407174d4dbff",
+      "run_dir": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/rlqa_a100/runs/formal_rl-qa_Qwen3-8B_rank_continuous_split0_s2_beta0p03_k2_lq1_lw0",
+      "seed": 2,
+      "selection_metric": "id_qa",
+      "selection_scope": "id_validation",
+      "selection_value": 0.7333333333333333,
+      "split_manifest_sha256": "09e64597d095e6f0122b9e6ec291fbf44cdf2dda4559540fc3e087b420e3025b",
+      "step": 200,
+      "summary_sha256": "5f2fb099772fb206b9c6dde5018de9edc6827f7502e12faa101808614fc967ce"
+    }
+  ],
+  "shared_split_manifest_sha256": "09e64597d095e6f0122b9e6ec291fbf44cdf2dda4559540fc3e087b420e3025b"
+}

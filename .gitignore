@@ -35,3 +35,30 @@ data/benchmarks/*-metacog*/
 arXiv-*.tar.gz
 paper/
 exemplar_paper/
+
+# ---------------------------------------------------------------------------
+# A100 confirmatory campaigns (2026-08-29): track the evidence, never the weights.
+# Each directory level has to be re-included explicitly, because git does not
+# descend into an excluded directory and a bare "!.../**" would never match.
+!data/results/results_v1f_qwen3-8B.json
+!data/results/results_v2f_qwen3-8B.json
+!data/results/results_v2g2_qwen3-8B.json
+!data/results/results_v3f_qwen3-8B.json
+!data/results/results_v4f_qwen3-8B.json
+!data/results/results_v*_qwen3-8B.json.metadata
+!data/results/a100_handoff/
+!data/results/a100_handoff/**
+!data/results/metacog_a100_3seed/
+!data/results/metacog_a100_3seed/**
+!data/results/rlqa_a100/
+!data/results/rlqa_a100/**
+
+# LoRA adapters and checkpoint trees stay out: hundreds of MB each, and they
+# are project-trained outputs that cannot be reconstructed from Hugging Face.
+data/results/**/checkpoints/
+data/results/**/canary/
+data/results/**/best-step-*/
+data/results/**/final_adapter/
+# Copies of the upstream Qwen3-8B tokenizer: reconstructible from the pinned
+# revision, and their hashes are already recorded in the run provenance.
+data/results/**/tokenizer/

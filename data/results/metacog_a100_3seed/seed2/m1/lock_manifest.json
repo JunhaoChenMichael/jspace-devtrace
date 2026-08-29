@@ -1,0 +1,110 @@
+{
+  "campaign_stage": "M1",
+  "candidate_checkpoints": [
+    {
+      "checkpoint_path": "checkpoints/step-000000",
+      "checkpoint_tree_sha256": "1ca539cb5c2d8b6c1e1184a925755af7b560469b239942e54e5caff303605251",
+      "selection_metric": "verbal_auc",
+      "selection_scope": "id_validation",
+      "step": 0,
+      "verbal_auc": 0.5529100529100529,
+      "verbal_within_episode_auc": 0.48388888888888887,
+      "yes_rate": 0.413953488372093
+    },
+    {
+      "checkpoint_path": "checkpoints/step-000100",
+      "checkpoint_tree_sha256": "6323ae333ff4b2f6ca78587b5cc954effba8287999cd898f57df5080c973d133",
+      "selection_metric": "verbal_auc",
+      "selection_scope": "id_validation",
+      "step": 100,
+      "verbal_auc": 0.49798711755233493,
+      "verbal_within_episode_auc": 0.5577777777777778,
+      "yes_rate": 0.05116279069767442
+    },
+    {
+      "checkpoint_path": "checkpoints/step-000250",
+      "checkpoint_tree_sha256": "d17669b04e453f5633bf5da51667bc8c5b164e34e2794539d1c6f9636ff414da",
+      "selection_metric": "verbal_auc",
+      "selection_scope": "id_validation",
+      "step": 250,
+      "verbal_auc": 0.5850011502185415,
+      "verbal_within_episode_auc": 0.6542592592592592,
+      "yes_rate": 0.7906976744186046
+    },
+    {
+      "checkpoint_path": "checkpoints/step-000414",
+      "checkpoint_tree_sha256": "521fffe03a537d488c3b33f6753b2d1211925c5b43a84a8ac4b39f5d4994a0da",
+      "selection_metric": "verbal_auc",
+      "selection_scope": "id_validation",
+      "step": 414,
+      "verbal_auc": 0.5640671727628249,
+      "verbal_within_episode_auc": 0.682037037037037,
+      "yes_rate": 0.19069767441860466
+    }
+  ],
+  "candidate_steps": [
+    0,
+    100,
+    250,
+    414
+  ],
+  "checkpoint_path": "checkpoints/step-000250",
+  "checkpoint_tree_sha256": "d17669b04e453f5633bf5da51667bc8c5b164e34e2794539d1c6f9636ff414da",
+  "eligible_for_ood": true,
+  "id_selection_table": [
+    {
+      "checkpoint_path": "checkpoints/step-000000",
+      "checkpoint_tree_sha256": "1ca539cb5c2d8b6c1e1184a925755af7b560469b239942e54e5caff303605251",
+      "selection_metric": "verbal_auc",
+      "selection_scope": "id_validation",
+      "step": 0,
+      "verbal_auc": 0.5529100529100529,
+      "verbal_within_episode_auc": 0.48388888888888887,
+      "yes_rate": 0.413953488372093
+    },
+    {
+      "checkpoint_path": "checkpoints/step-000100",
+      "checkpoint_tree_sha256": "6323ae333ff4b2f6ca78587b5cc954effba8287999cd898f57df5080c973d133",
+      "selection_metric": "verbal_auc",
+      "selection_scope": "id_validation",
+      "step": 100,
+      "verbal_auc": 0.49798711755233493,
+      "verbal_within_episode_auc": 0.5577777777777778,
+      "yes_rate": 0.05116279069767442
+    },
+    {
+      "checkpoint_path": "checkpoints/step-000250",
+      "checkpoint_tree_sha256": "d17669b04e453f5633bf5da51667bc8c5b164e34e2794539d1c6f9636ff414da",
+      "selection_metric": "verbal_auc",
+      "selection_scope": "id_validation",
+      "step": 250,
+      "verbal_auc": 0.5850011502185415,
+      "verbal_within_episode_auc": 0.6542592592592592,
+      "yes_rate": 0.7906976744186046
+    },
+    {
+      "checkpoint_path": "checkpoints/step-000414",
+      "checkpoint_tree_sha256": "521fffe03a537d488c3b33f6753b2d1211925c5b43a84a8ac4b39f5d4994a0da",
+      "selection_metric": "verbal_auc",
+      "selection_scope": "id_validation",
+      "step": 414,
+      "verbal_auc": 0.5640671727628249,
+      "verbal_within_episode_auc": 0.682037037037037,
+      "yes_rate": 0.19069767441860466
+    }
+  ],
+  "manifest_sha256": "b1daeadfb625eb649e7326951e745680e72a8b1418c3417084ba923da7b86656",
+  "ood_evaluated": false,
+  "provenance_sha256": "3680e915de3b82bc0d05bce07e0bf9ecf8b7807e7e2c6720c6a7230e807105c9",
+  "run_config_sha256": "df2eca64746d59f3d28fcb24fa4034b96f3d73fe5fc22dc8d0c1fe5ccf21b586",
+  "schema_version": 1,
+  "selection_metric": "verbal_auc",
+  "selection_scope": "id_validation",
+  "split_manifest_sha256": "b9f0ece9e9ebd507ad326043405617aa2684d128b93f89ee5e0700607b74a7ae",
+  "status": "LOCKED",
+  "step": 250,
+  "tie_break": "earliest_step",
+  "validation_auc": 0.5850011502185415,
+  "validation_metrics_sha256": "df35f571f74b2aa22e2da8b7051f5871de04a95322f24a750f3f705cb61f2065",
+  "validation_yes_rate": 0.7906976744186046
+}

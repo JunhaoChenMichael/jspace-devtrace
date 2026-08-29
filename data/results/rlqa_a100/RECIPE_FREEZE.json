@@ -1,0 +1,70 @@
+{
+  "frozen_at_utc": "2026-08-29T05:47:58+00:00",
+  "id_only_evidence": {
+    "sealed_until_all_three_locks": [
+      "decoupled",
+      "compositional"
+    ],
+    "split_manifest_sha256": "5fc4d99e708744ebf4a872c86287c337d25a32c8725c5c1656740cb3a00cfb2a",
+    "train_episodes": 175,
+    "training_sources": [
+      "explicit",
+      "evoked",
+      "evoked_g2"
+    ],
+    "validation_episodes": 45
+  },
+  "method": "rl-qa",
+  "model": "Qwen/Qwen3-8B",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "recipe": {
+    "answer_tokens": 64,
+    "beta": 0.03,
+    "budget": 2,
+    "checkpoint_selection": "strict first maximum of ID QA on the fixed ID validation split",
+    "dtype": "bfloat16",
+    "eval_every": 100,
+    "group_size": 8,
+    "grpo_epochs": 2,
+    "lambda_qa": 1.0,
+    "lambda_w": 0.0,
+    "learning_rate": 1e-06,
+    "lora_rank": 32,
+    "max_length": 2048,
+    "max_steps": 300,
+    "optimisation_seeds": [
+      0,
+      1,
+      2
+    ],
+    "save_every": 300,
+    "split_seed": 0,
+    "temperature": 5.0
+  },
+  "schema_version": "rlqa-a100-recipe-freeze/v1",
+  "teacher_artifacts_sha256": {
+    "data/results/results_v1f_qwen3-8B.json": "2189e6e5333d33afdd1b56d9e4a20307ce83c51ba0ed45d13cebf2877a306488",
+    "data/results/results_v2f_qwen3-8B.json": "ffdf2e154bed18a44ab8411bc74d3db72a9557a85aed65db008419f08daad8ed",
+    "data/results/results_v2g2_qwen3-8B.json": "041028d1806f58baac05efe9f285559ad8cd7b1fc3496810f5e2864059f91fa3"
+  },
+  "temperature_decision": {
+    "decision": "temperature = 5.0",
+    "evidence": {
+      "T=0.7": {
+        "artifact": "data/results/rlqa_a100/b0_s0_k2_g16/summary.json",
+        "gate_b0": "GREEN",
+        "median_unique_selected_sets": 7.0,
+        "mixed_QA_reward_groups_fraction": 0.8742857142857143
+      },
+      "T=5.0": {
+        "artifact": "data/results/rlqa_a100/b0_s0_k2_g16_t5/summary.json",
+        "gate_b0": "GREEN",
+        "median_unique_selected_sets": 7.0,
+        "mixed_QA_reward_groups_fraction": 0.88
+      }
+    },
+    "note": "The preflight script's own selection rule (lowest candidate with median unique sets >= 4) returns 0.7 for Qwen3-8B. The controlling H100 plan overrides that rule for this campaign: 5.0 is retained because it passes both B0 gates. Neither temperature was chosen using Decoupled or Compositional data.",
+    "rule_applied": "docs/H100_NEXT_CAMPAIGNS.md: keep 5.0 if it satisfies the existing mixed reward/diversity gates; otherwise stop and write a pre-OOD amendment"
+  },
+  "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218"
+}

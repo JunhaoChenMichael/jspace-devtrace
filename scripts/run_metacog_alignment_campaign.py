@@ -38,7 +38,26 @@ CAMPAIGN_SCHEMA = "metacog-alignment-campaign/v1"
 PLAN_SCHEMA = "metacog-alignment-command-plan/v1"
 LOCK_SCHEMA = "metacog-alignment-id-lock/v1"
 EXPECTED_MODEL = "Qwen/Qwen3-8B"
-EXPECTED_GPU = "NVIDIA RTX A5000"
+# Campaign hardware is configurable but never permissive: the launcher still
+# matches ONE exact device name, drawn from a closed allowlist.  A5000 remains
+# the default so the completed seed-0 campaign reproduces byte-for-byte; the
+# A100 entries exist for the multi-seed replication that
+# docs/H100_NEXT_CAMPAIGNS.md authorises on capable-scale hardware.
+SUPPORTED_GPUS = {
+    "NVIDIA RTX A5000": "a5000",
+    "NVIDIA A100-SXM4-80GB": "a100",
+    "NVIDIA A100-SXM4-40GB": "a100",
+    "NVIDIA H100 80GB HBM3": "h100",
+    "NVIDIA H100 PCIe": "h100",
+}
+EXPECTED_GPU = os.environ.get("METACOG_EXPECTED_GPU", "NVIDIA RTX A5000")
+if EXPECTED_GPU not in SUPPORTED_GPUS:
+    raise SystemExit(
+        f"METACOG_EXPECTED_GPU={EXPECTED_GPU!r} is not an approved campaign device; "
+        f"choose one of {sorted(SUPPORTED_GPUS)}"
+    )
+GPU_LABEL = SUPPORTED_GPUS[EXPECTED_GPU]
+ALLOWED_SEEDS = (0, 1, 2)
 DEFAULT_MIN_FREE_MIB = 22_000
 DEFAULT_BOOTSTRAP_DRAWS = 4_000
 PINNED_REVISION_RE = re.compile(r"^[0-9a-fA-F]{40}$")
@@ -174,9 +193,13 @@ def require_within(path: Path, root: Path, label: str) -> Path:
 class DecisionLedger:
     """Append-only JSONL record of commands, decisions, statuses, and hashes."""
 
-    def __init__(self, path: Path) -> None:
+    def __init__(self, path: Path, *, append_existing: bool = False) -> None:
         self.path = path
         path.parent.mkdir(parents=True, exist_ok=True)
+        if append_existing:
+            if path.is_symlink() or not path.is_file():
+                raise CampaignError(f"cannot resume: missing decision ledger: {path}")
+            return
         try:
             with path.open("x", encoding="utf-8"):
                 pass
@@ -210,8 +233,11 @@ def _command_spec(name: str, argv: Sequence[str], outputs: Sequence[str]) -> dic
     return {"name": name, "argv": list(argv), "outputs": list(outputs)}
 
 
-def default_plan() -> dict[str, Any]:
-    """Return the fixed A5000 M0/M1 plan using repository-relative CLIs."""
+def default_plan(seed: int = 0) -> dict[str, Any]:
+    """Return the fixed M0/M1 plan for one optimisation seed."""
+
+    if seed not in ALLOWED_SEEDS:
+        raise CampaignError(f"campaign seed must be one of {ALLOWED_SEEDS}")
 
     measure_common = [
         "{python}",
@@ -274,7 +300,7 @@ def default_plan() -> dict[str, Any]:
         "--tokenizer-revision",
         "{tokenizer_revision}",
         "--seed",
-        "0",
+        str(seed),
         "--train-spec",
         "explicit={run_dir}/m0/explicit.json::{repo}/data/benchmarks/battery_v1_final.json",
         "--train-spec",
@@ -332,7 +358,7 @@ def default_plan() -> dict[str, Any]:
             },
             "m1": {
                 **_command_spec(
-                    "m1_seed0_formal_pilot",
+                    f"m1_seed{seed}_formal_pilot",
                     [*train_common, "--out-dir", "{run_dir}/m1"],
                     ["{run_dir}/m1"],
                 ),
@@ -459,8 +485,8 @@ def validate_plan(plan: Mapping[str, Any], run_dir: Path) -> None:
         for index, token in enumerate(argv[:-1]):
             if token == "--model" and argv[index + 1] != EXPECTED_MODEL:
                 raise CampaignError(f"only the primary target {EXPECTED_MODEL} is allowed")
-            if token == "--seed" and argv[index + 1] != "0":
-                raise CampaignError("the A5000 campaign is fixed to seed 0")
+            if token == "--seed" and argv[index + 1] not in {str(s) for s in ALLOWED_SEEDS}:
+                raise CampaignError(f"campaign seed must be one of {ALLOWED_SEEDS}")
         for output in outputs:
             require_within(Path(output), run_dir, f"declared output for {stage}/{name}")
 
@@ -547,7 +573,7 @@ def select_campaign_gpu(
     requested_index: str | None,
     allowed_existing_process_mib: int = 0,
 ) -> tuple[dict[str, Any], list[dict[str, str]], str]:
-    """Select one physical, idle A5000 from a possibly multi-GPU host."""
+    """Select one physical, idle campaign GPU from a possibly multi-GPU host."""
 
     by_index = {str(gpu["index"]): dict(gpu) for gpu in inventory}
     if requested_index is not None:
@@ -557,7 +583,7 @@ def select_campaign_gpu(
         mode = "explicit_index"
     else:
         candidates = [dict(gpu) for gpu in inventory]
-        mode = "auto_most_free_idle_a5000"
+        mode = f"auto_most_free_idle_{GPU_LABEL}"
 
     eligible: list[dict[str, Any]] = []
     rejection_reasons: list[str] = []
@@ -589,7 +615,7 @@ def select_campaign_gpu(
             eligible.append(gpu)
     if not eligible:
         raise CampaignError(
-            "no idle A5000 satisfies campaign preflight: " + " | ".join(rejection_reasons)
+            f"no idle {GPU_LABEL} satisfies campaign preflight: " + " | ".join(rejection_reasons)
         )
     # A deterministic auto-selection chooses one physical card; every child is
     # then pinned to only that index.  Explicit --gpu-index remains preferable.
@@ -803,6 +829,7 @@ def validate_trainer_lock(
     *,
     model_revision: str | None = None,
     tokenizer_revision: str | None = None,
+    seed: int = 0,
 ) -> tuple[dict[str, Any], Path, str, dict[str, str]]:
     payload = load_json_object(source_path, "trainer lock manifest")
     expected_fields = {
@@ -923,7 +950,7 @@ def validate_trainer_lock(
 
     run_config_path = m1_dir / "run_config.json"
     run_config = load_json_object(run_config_path, "M1 run config")
-    if run_config.get("model") != EXPECTED_MODEL or run_config.get("seed") != 0:
+    if run_config.get("model") != EXPECTED_MODEL or run_config.get("seed") != seed:
         raise CampaignError("M1 run config changed the fixed model or seed")
     if model_revision is not None and run_config.get("model_revision") != model_revision:
         raise CampaignError("M1 run config model revision differs from the campaign pin")
@@ -1434,7 +1461,7 @@ def validate_ood_result(
 REPORT_MARKERS = (
     "m0 baseline reproduction status",
     "model/tokenizer revisions",
-    "a5000 memory/throughput configuration",
+    f"{GPU_LABEL} memory/throughput configuration",
     "teacher-label construction audit",
     "training configuration",
     "loss/gradient health",
@@ -1476,6 +1503,8 @@ class CampaignRunner:
         requested_gpu_index: str | None,
         allowed_existing_process_mib: int,
         attempt_id: str,
+        seed: int = 0,
+        resume: bool = False,
     ) -> None:
         self.repo_root = repo_root.resolve()
         self.run_dir = run_dir.resolve()
@@ -1487,10 +1516,20 @@ class CampaignRunner:
         self.requested_gpu_index = requested_gpu_index
         self.allowed_existing_process_mib = allowed_existing_process_mib
         self.attempt_id = attempt_id
-        self.command_counter = 0
+        if seed not in ALLOWED_SEEDS:
+            raise CampaignError(f"campaign seed must be one of {ALLOWED_SEEDS}")
+        self.seed = seed
+        self.resume = resume
+        # A resumed OOD phase appends to the same ledger and must not reuse a
+        # command-log filename from the ID phase.
+        existing_logs = sorted((self.run_dir / "command_logs").glob("*.log")) if resume else []
+        self.command_counter = len(existing_logs)
         self.gpu_index: str | None = None
         self.gpu_lock_handle: Any | None = None
-        self.ledger = DecisionLedger(self.run_dir / "decision_ledger.jsonl")
+        self.gpu: dict[str, Any] | None = None
+        self.ledger = DecisionLedger(
+            self.run_dir / "decision_ledger.jsonl", append_existing=resume
+        )
 
     def _run_command(
         self,
@@ -1631,8 +1670,15 @@ class CampaignRunner:
 
         inherited = os.environ.get("CUDA_VISIBLE_DEVICES")
         self.gpu_index = str(gpu["index"])
-        lock_name = re.sub(r"[^A-Za-z0-9_.-]", "_", self.gpu_index)
-        lock_path = Path("/tmp") / f"metacog_alignment_a5000_{lock_name}.lock"
+        # Key the exclusion lock on the PHYSICAL GPU UUID, not on the visible
+        # index.  Under a cgroup-isolated scheduler every job sees its own card
+        # as index 0, so an index-keyed lock made two different physical GPUs
+        # on one node collide.  The UUID is what "one campaign per GPU"
+        # actually means.
+        lock_name = re.sub(r"[^A-Za-z0-9_.-]", "_", str(gpu.get("uuid") or self.gpu_index))
+        lock_root = Path(os.environ.get("METACOG_LOCK_DIR", "/tmp"))
+        lock_root.mkdir(parents=True, exist_ok=True)
+        lock_path = lock_root / f"metacog_alignment_{GPU_LABEL}_{lock_name}.lock"
         self.gpu_lock_handle = lock_path.open("a+", encoding="utf-8")
         try:
             fcntl.flock(self.gpu_lock_handle.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
@@ -1654,6 +1700,7 @@ class CampaignRunner:
             process_records_checked=len(processes),
             gpu_lock_path=str(lock_path),
         )
+        self.gpu = gpu
         return gpu
 
     def create_id_lock(self, source_path: Path) -> Path:
@@ -1662,6 +1709,7 @@ class CampaignRunner:
             self.run_dir / "m1",
             model_revision=self.model_revision,
             tokenizer_revision=self.tokenizer_revision,
+            seed=self.seed,
         )
         source_hash = sha256_file(source_path)
         m0_bindings = collect_m0_bindings(
@@ -1790,7 +1838,9 @@ class CampaignRunner:
             repo_root=self.repo_root,
         )
 
-    def run(self) -> str:
+    def run(self, *, stop_after: str = "report") -> str:
+        if stop_after not in {"id_lock", "report"}:
+            raise CampaignError("--stop-after must be 'id_lock' or 'report'")
         self.ledger.append(
             "campaign_started",
             schema_version=CAMPAIGN_SCHEMA,
@@ -1799,7 +1849,7 @@ class CampaignRunner:
             model=EXPECTED_MODEL,
             model_revision=self.model_revision,
             tokenizer_revision=self.tokenizer_revision,
-            seed=0,
+            seed=self.seed,
             h100_stage_present=False,
             rl_campaign_reused=False,
         )
@@ -1856,6 +1906,72 @@ class CampaignRunner:
         source_lock = Path(stages["m1"]["lock_manifest_path"])
         campaign_lock = self.create_id_lock(source_lock)
 
+        if stop_after == "id_lock":
+            return self._pause_at_id_lock(campaign_lock)
+
+        return self._ood_and_report(campaign_lock)
+
+    def _pause_at_id_lock(self, campaign_lock: Path) -> str:
+        """Stop with the ID lock in place and OOD still sealed.
+
+        The multi-seed contract requires every seed to hold an ID-only
+        checkpoint lock before ANY seed is allowed to touch Decoupled or
+        Compositional, so the campaign is deliberately run in two phases.
+        """
+
+        pause_path = self.run_dir / "ID_LOCK_STOP.json"
+        write_json_exclusive(
+            pause_path,
+            {
+                "schema_version": CAMPAIGN_SCHEMA,
+                "stopped_at_utc": utc_now(),
+                "reason": "id_lock_complete_ood_sealed",
+                "seed": self.seed,
+                "lock_manifest": campaign_lock.relative_to(self.run_dir).as_posix(),
+                "lock_manifest_sha256": sha256_file(campaign_lock),
+                "gpu": self.gpu,
+                "ood_opened": False,
+                "h100_launched": False,
+            },
+        )
+        self.ledger.append(
+            "campaign_paused_at_id_lock",
+            reason="all seeds must be locked before any OOD attempt",
+            seed=self.seed,
+            lock_manifest=campaign_lock.relative_to(self.run_dir).as_posix(),
+            lock_manifest_sha256=sha256_file(campaign_lock),
+            pause_marker=pause_path.relative_to(self.run_dir).as_posix(),
+            pause_marker_sha256=sha256_file(pause_path),
+            ood_opened=False,
+            h100_launched=False,
+        )
+        return "id_lock_complete_ood_sealed"
+
+    def resume_ood(self) -> str:
+        """Second phase: one-shot OOD plus report against an existing ID lock."""
+
+        campaign_lock = self.run_dir / "id_lock" / "lock_manifest.json"
+        if campaign_lock.is_symlink() or not campaign_lock.is_file():
+            raise CampaignError(f"cannot resume: missing ID lock manifest: {campaign_lock}")
+        if not (self.run_dir / "ID_LOCK_STOP.json").is_file():
+            raise CampaignError("cannot resume: the ID phase did not stop cleanly at its lock")
+        if (self.run_dir / "ood").exists() or (self.run_dir / "STOP.json").exists():
+            raise CampaignError("cannot resume: this run already consumed its OOD attempt")
+        for row in read_ledger_events(self.run_dir / "decision_ledger.jsonl"):
+            if row.get("event") in {"ood_attempt_started", "ood_attempt_finished"}:
+                raise CampaignError("cannot resume: the decision ledger already records an OOD attempt")
+        self.ledger.append(
+            "ood_phase_started",
+            schema_version=CAMPAIGN_SCHEMA,
+            seed=self.seed,
+            lock_manifest_sha256=sha256_file(campaign_lock),
+            attempt_id=self.attempt_id,
+        )
+        self.gpu_preflight()
+        return self._ood_and_report(campaign_lock)
+
+    def _ood_and_report(self, campaign_lock: Path) -> str:
+        stages = self.plan["stages"]
         ood = self.one_shot_ood(stages["ood"], campaign_lock)
         self.ledger.append(
             "m1_gate_decision",
@@ -1885,7 +2001,7 @@ class CampaignRunner:
                 "m1_decision": ood["decision"],
                 "report_path": report_path.relative_to(self.run_dir).as_posix(),
                 "report_sha256": report_hash,
-                "gpu": gpu,
+                "gpu": self.gpu,
                 "h100_launched": False,
                 "next_stage_launched": False,
             },
@@ -1901,19 +2017,52 @@ class CampaignRunner:
         return "manual_review_required"
 
 
-def _load_plan(path: Path | None) -> dict[str, Any]:
+def read_ledger_events(path: Path) -> list[dict[str, Any]]:
+    """Read an existing decision ledger; used to refuse a second OOD attempt."""
+
+    if path.is_symlink() or not path.is_file():
+        raise CampaignError(f"missing or unsafe decision ledger: {path}")
+    rows: list[dict[str, Any]] = []
+    for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+        if not line.strip():
+            continue
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError as exc:
+            raise CampaignError(f"decision ledger line {number} is not JSON: {exc}") from exc
+        if not isinstance(row, dict):
+            raise CampaignError(f"decision ledger line {number} is not an object")
+        rows.append(row)
+    return rows
+
+
+def _load_plan(path: Path | None, seed: int = 0) -> dict[str, Any]:
     if path is None:
-        return default_plan()
+        return default_plan(seed)
     return load_json_object(path, "command plan")
 
 
-def _default_run_dir(repo_root: Path, now: datetime | None = None) -> Path:
+def _default_run_dir(
+    repo_root: Path,
+    now: datetime | None = None,
+    *,
+    seed: int = 0,
+    gpu_label: str | None = None,
+) -> Path:
     stamp = (now or datetime.now(timezone.utc)).strftime("%Y-%m-%d")
-    return repo_root / "data" / "results" / "metacog_alignment" / f"{stamp}_qwen3-8b_a5000_seed0"
+    label = gpu_label or GPU_LABEL
+    return (
+        repo_root
+        / "data"
+        / "results"
+        / "metacog_alignment"
+        / f"{stamp}_qwen3-8b_{label}_seed{seed}"
+    )
 
 
-def _write_ledger_sidecar(ledger: DecisionLedger) -> Path:
-    sidecar = ledger.path.with_suffix(ledger.path.suffix + ".sha256")
+def _write_ledger_sidecar(ledger: DecisionLedger, *, phase: str = "") -> Path:
+    suffix = f".{phase}.sha256" if phase else ".sha256"
+    sidecar = ledger.path.with_suffix(ledger.path.suffix + suffix)
     if sidecar.exists() or sidecar.is_symlink():
         raise CampaignError(f"refusing to overwrite ledger hash: {sidecar}")
     digest = sha256_file(ledger.path)
@@ -1937,6 +2086,27 @@ def build_parser() -> argparse.ArgumentParser:
         help="immutable 40-hex tokenizer commit (may equal the model revision)",
     )
     parser.add_argument("--run-dir", type=Path, help="fresh output directory; default includes UTC date")
+    parser.add_argument(
+        "--seed",
+        type=int,
+        default=0,
+        choices=ALLOWED_SEEDS,
+        help="optimisation seed for this campaign run (split seed stays 0)",
+    )
+    parser.add_argument(
+        "--stop-after",
+        choices=("id_lock", "report"),
+        default="report",
+        help=(
+            "'id_lock' stops with Decoupled/Compositional still sealed so every "
+            "seed can be locked before any OOD attempt; resume later with --resume-ood"
+        ),
+    )
+    parser.add_argument(
+        "--resume-ood",
+        action="store_true",
+        help="run the one-shot OOD and report phases in an existing run directory that stopped at its ID lock",
+    )
     parser.add_argument("--plan", type=Path, help="optional JSON command plan implementing the fixed contracts")
     parser.add_argument(
         "--unsafe-test-plan",
@@ -1990,8 +2160,11 @@ def main(argv: Sequence[str] | None = None) -> int:
     if args.unsafe_test_plan and args.plan is None:
         parser.error("--unsafe-test-plan requires --plan")
 
+    if args.resume_ood and args.stop_after != "report":
+        parser.error("--resume-ood always runs through the report; drop --stop-after")
+
     repo_root = Path(__file__).resolve().parent.parent
-    run_dir = (args.run_dir or _default_run_dir(repo_root)).resolve()
+    run_dir = (args.run_dir or _default_run_dir(repo_root, seed=args.seed)).resolve()
     attempt_id = uuid.uuid4().hex
     context = {
         "python": sys.executable,
@@ -2001,7 +2174,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         "tokenizer_revision": args.tokenizer_revision.lower(),
         "ood_attempt_id": attempt_id,
     }
-    raw_plan = _load_plan(args.plan)
+    raw_plan = _load_plan(args.plan, args.seed)
     plan = _render(raw_plan, context)
     validate_plan(plan, run_dir)
     if args.print_plan:
@@ -2012,11 +2185,16 @@ def main(argv: Sequence[str] | None = None) -> int:
             "custom plans are test-only; pass --unsafe-test-plan explicitly or use --print-plan"
         )
 
-    if run_dir.exists() or run_dir.is_symlink():
-        print(f"error: refusing to overwrite existing campaign directory: {run_dir}", file=sys.stderr)
-        return 1
-    run_dir.parent.mkdir(parents=True, exist_ok=True)
-    run_dir.mkdir()
+    if args.resume_ood:
+        if run_dir.is_symlink() or not run_dir.is_dir():
+            print(f"error: --resume-ood needs an existing campaign directory: {run_dir}", file=sys.stderr)
+            return 1
+    else:
+        if run_dir.exists() or run_dir.is_symlink():
+            print(f"error: refusing to overwrite existing campaign directory: {run_dir}", file=sys.stderr)
+            return 1
+        run_dir.parent.mkdir(parents=True, exist_ok=True)
+        run_dir.mkdir()
 
     runner: CampaignRunner | None = None
     exit_code = 1
@@ -2032,15 +2210,22 @@ def main(argv: Sequence[str] | None = None) -> int:
             requested_gpu_index=args.gpu_index,
             allowed_existing_process_mib=args.allow_existing_processes_under_mib,
             attempt_id=attempt_id,
+            seed=args.seed,
+            resume=args.resume_ood,
         )
-        plan_path = run_dir / "campaign_plan.json"
+        plan_name = "campaign_plan_ood.json" if args.resume_ood else "campaign_plan.json"
+        plan_path = run_dir / plan_name
         write_json_exclusive(plan_path, plan)
         runner.ledger.append(
             "campaign_plan_locked",
             plan_path=plan_path.relative_to(run_dir).as_posix(),
             plan_sha256=sha256_file(plan_path),
+            phase="ood" if args.resume_ood else "id",
         )
-        reason = runner.run()
+        if args.resume_ood:
+            reason = runner.resume_ood()
+        else:
+            reason = runner.run(stop_after=args.stop_after)
         print(f"STOP: {reason}; no H100 job was launched. Artifacts: {run_dir}")
         exit_code = 0
     except ControlledStop as exc:
@@ -2067,7 +2252,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     finally:
         if runner is not None:
             try:
-                sidecar = _write_ledger_sidecar(runner.ledger)
+                sidecar = _write_ledger_sidecar(
+                    runner.ledger, phase="ood" if args.resume_ood else ""
+                )
                 print(f"decision ledger hash: {sidecar}")
             except CampaignError as exc:
                 print(f"error: could not seal decision ledger: {exc}", file=sys.stderr)

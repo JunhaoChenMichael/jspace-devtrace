@@ -79,6 +79,10 @@ KNOWN_TEACHER_MODELS = {
     "7B-Instruct": "Qwen/Qwen2.5-7B-Instruct",
     "7B-base": "Qwen/Qwen2.5-7B",
     "qwen3-1.7B": "Qwen/Qwen3-1.7B",
+    # Capable-scale replication target for the RL-QA track; its W_ref rows are
+    # measured by this project (data/results/results_v*_qwen3-8B.json), not
+    # inherited from the Qwen2.5 campaign.
+    "qwen3-8B": "Qwen/Qwen3-8B",
     "olmo1b-rlvr": "allenai/OLMo-2-0425-1B-Instruct",
     "olmo7b-Instruct": "allenai/OLMo-2-1124-7B-Instruct",
 }

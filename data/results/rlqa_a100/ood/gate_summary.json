@@ -1,0 +1,201 @@
+{
+  "baselines": {
+    "original": {
+      "matched_conditions": [
+        "original"
+      ],
+      "patterns": [
+        "original"
+      ],
+      "pooled_auc": {
+        "individual": {
+          "original": 0.3415399867812293
+        },
+        "mean": 0.3415399867812293,
+        "missing_conditions": [],
+        "n": 1,
+        "n_matched": 1,
+        "sample_std": null
+      },
+      "qa": {
+        "individual": {
+          "original": 0.0
+        },
+        "mean": 0.0,
+        "missing_conditions": [],
+        "n": 1,
+        "n_matched": 1,
+        "sample_std": null
+      }
+    }
+  },
+  "budget": 2,
+  "families": {
+    "hybrid": {
+      "matched_conditions": [],
+      "no_harm_adapter_minus_base_accuracy": {
+        "individual": {},
+        "mean": null,
+        "missing_conditions": [],
+        "n": 0,
+        "n_matched": 0,
+        "sample_std": null
+      },
+      "patterns": [
+        "*hybrid*"
+      ],
+      "pooled_auc": {
+        "individual": {},
+        "mean": null,
+        "missing_conditions": [],
+        "n": 0,
+        "n_matched": 0,
+        "sample_std": null
+      },
+      "qa": {
+        "individual": {},
+        "mean": null,
+        "missing_conditions": [],
+        "n": 0,
+        "n_matched": 0,
+        "sample_std": null
+      }
+    },
+    "rl_qa": {
+      "matched_conditions": [
+        "rl-qa-s0",
+        "rl-qa-s1",
+        "rl-qa-s2"
+      ],
+      "no_harm_adapter_minus_base_accuracy": {
+        "individual": {
+          "rl-qa-s0": -0.014705882352941166,
+          "rl-qa-s1": 0.0,
+          "rl-qa-s2": -0.014705882352941166
+        },
+        "mean": -0.009803921568627444,
+        "missing_conditions": [],
+        "n": 3,
+        "n_matched": 3,
+        "sample_std": 0.00849044513514155
+      },
+      "patterns": [
+        "rl-qa-s*"
+      ],
+      "pooled_auc": {
+        "individual": {
+          "rl-qa-s0": 0.8358669310420798,
+          "rl-qa-s1": 0.8236395681868253,
+          "rl-qa-s2": 0.8619189248733201
+        },
+        "mean": 0.8404751413674084,
+        "missing_conditions": [],
+        "n": 3,
+        "n_matched": 3,
+        "sample_std": 0.01955131680692693
+      },
+      "qa": {
+        "individual": {
+          "rl-qa-s0": 0.08823529411764706,
+          "rl-qa-s1": 0.07352941176470588,
+          "rl-qa-s2": 0.10294117647058823
+        },
+        "mean": 0.08823529411764706,
+        "missing_conditions": [],
+        "n": 3,
+        "n_matched": 3,
+        "sample_std": 0.014705882352941173
+      }
+    },
+    "rl_w": {
+      "matched_conditions": [],
+      "no_harm_adapter_minus_base_accuracy": {
+        "individual": {},
+        "mean": null,
+        "missing_conditions": [],
+        "n": 0,
+        "n_matched": 0,
+        "sample_std": null
+      },
+      "patterns": [
+        "rl-w*"
+      ],
+      "pooled_auc": {
+        "individual": {},
+        "mean": null,
+        "missing_conditions": [],
+        "n": 0,
+        "n_matched": 0,
+        "sample_std": null
+      },
+      "qa": {
+        "individual": {},
+        "mean": null,
+        "missing_conditions": [],
+        "n": 0,
+        "n_matched": 0,
+        "sample_std": null
+      }
+    },
+    "sft": {
+      "matched_conditions": [],
+      "no_harm_adapter_minus_base_accuracy": {
+        "individual": {},
+        "mean": null,
+        "missing_conditions": [],
+        "n": 0,
+        "n_matched": 0,
+        "sample_std": null
+      },
+      "patterns": [
+        "sft*"
+      ],
+      "pooled_auc": {
+        "individual": {},
+        "mean": null,
+        "missing_conditions": [],
+        "n": 0,
+        "n_matched": 0,
+        "sample_std": null
+      },
+      "qa": {
+        "individual": {},
+        "mean": null,
+        "missing_conditions": [],
+        "n": 0,
+        "n_matched": 0,
+        "sample_std": null
+      }
+    }
+  },
+  "gates": {
+    "A": {
+      "missing": [
+        "sft.pooled_auc",
+        "rl_w.pooled_auc"
+      ],
+      "rule": "RL-W mean pooled AUC minus SFT-W mean pooled AUC",
+      "status": "insufficient-data"
+    },
+    "B": {
+      "delta": 0.08823529411764706,
+      "original_mean": 0.0,
+      "pass_threshold": 0.05,
+      "rl_qa_mean": 0.08823529411764706,
+      "rule": "RL-QA mean QA minus original QA >= 0.05",
+      "status": "pass"
+    },
+    "C": {
+      "missing": [
+        "hybrid.qa",
+        "rl_w.qa"
+      ],
+      "rule": "hybrid mean QA is strictly greater than both RL-W and RL-QA mean QA",
+      "status": "insufficient-data"
+    }
+  },
+  "input": "data/results/rlqa_a100/ood/ood_qa.json",
+  "schema_version": 1,
+  "source": "decoupled",
+  "source_found": true
+}

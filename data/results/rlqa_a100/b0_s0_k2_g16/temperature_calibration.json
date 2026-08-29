@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "selection_uses_QA_or_OOD": false,
+  "common_random_numbers": true,
+  "sampling_seed": 0,
+  "sampling_seed_scheme": "sha256(seed:episode_id), first 63 bits",
+  "selection_rule": "lowest candidate with median unique selected sets >= 4; otherwise highest candidate",
+  "candidates": [
+    {
+      "temperature": 0.7,
+      "episodes": 175,
+      "group_size": 16,
+      "median_unique_selected_sets": 7.0,
+      "mean_unique_selected_sets": 6.868571428571428,
+      "min_unique_selected_sets": 4,
+      "max_unique_selected_sets": 12,
+      "groups_with_at_least_2_unique_sets": 175,
+      "groups_with_at_least_2_unique_sets_fraction": 1.0
+    },
+    {
+      "temperature": 1.0,
+      "episodes": 175,
+      "group_size": 16,
+      "median_unique_selected_sets": 7.0,
+      "mean_unique_selected_sets": 7.085714285714285,
+      "min_unique_selected_sets": 4,
+      "max_unique_selected_sets": 12,
+      "groups_with_at_least_2_unique_sets": 175,
+      "groups_with_at_least_2_unique_sets_fraction": 1.0
+    },
+    {
+      "temperature": 2.0,
+      "episodes": 175,
+      "group_size": 16,
+      "median_unique_selected_sets": 8.0,
+      "mean_unique_selected_sets": 7.348571428571429,
+      "min_unique_selected_sets": 4,
+      "max_unique_selected_sets": 12,
+      "groups_with_at_least_2_unique_sets": 175,
+      "groups_with_at_least_2_unique_sets_fraction": 1.0
+    },
+    {
+      "temperature": 3.0,
+      "episodes": 175,
+      "group_size": 16,
+      "median_unique_selected_sets": 7.0,
+      "mean_unique_selected_sets": 7.36,
+      "min_unique_selected_sets": 4,
+      "max_unique_selected_sets": 12,
+      "groups_with_at_least_2_unique_sets": 175,
+      "groups_with_at_least_2_unique_sets_fraction": 1.0
+    },
+    {
+      "temperature": 5.0,
+      "episodes": 175,
+      "group_size": 16,
+      "median_unique_selected_sets": 7.0,
+      "mean_unique_selected_sets": 7.377142857142857,
+      "min_unique_selected_sets": 3,
+      "max_unique_selected_sets": 12,
+      "groups_with_at_least_2_unique_sets": 175,
+      "groups_with_at_least_2_unique_sets_fraction": 1.0
+    }
+  ],
+  "selected_temperature": 0.7,
+  "selection_reason": "lowest candidate meeting the median diversity target"
+}

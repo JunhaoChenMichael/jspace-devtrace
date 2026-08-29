@@ -1,0 +1,28 @@
+{
+  "policy": "increase deterministically through 1024,1536,2048; never silently truncate",
+  "schema_version": 1,
+  "train": {
+    "actual_truncated_count": 0,
+    "actual_truncated_tokens": 0,
+    "auto_increased": false,
+    "effective_max_length": 1024,
+    "examples": 825,
+    "max_original_tokens": 148,
+    "mean_original_tokens": 112.54787878787879,
+    "requested_max_length": 1024,
+    "would_truncate_at_requested_count": 0,
+    "would_truncate_at_requested_tokens": 0
+  },
+  "validation": {
+    "actual_truncated_count": 0,
+    "actual_truncated_tokens": 0,
+    "auto_increased": false,
+    "effective_max_length": 1024,
+    "examples": 215,
+    "max_original_tokens": 146,
+    "mean_original_tokens": 112.8232558139535,
+    "requested_max_length": 1024,
+    "would_truncate_at_requested_count": 0,
+    "would_truncate_at_requested_tokens": 0
+  }
+}

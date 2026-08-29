@@ -1,0 +1,5 @@
+host=rohpcgpu37.mayo.edu job=4263928 gpu=NVIDIA A100-SXM4-80GB
+model=Qwen/Qwen3-8B adapter=None layers=36 verbal=True verbal_raw=False device=cuda episodes=2
+saved 8 item rows -> /tmp/claude-1536624804/-rodata-azradonc-dev-m253405/1f24e0a9-298b-4d17-a045-7cd7ef1d7d41/scratchpad/smoke_measure.json
+SMOKE_OK
+<class 'list'> 8

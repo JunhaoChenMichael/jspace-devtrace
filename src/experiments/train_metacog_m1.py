@@ -38,6 +38,11 @@ import torch
 SRC = Path(__file__).resolve().parents[1]
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
+SCRIPTS = Path(__file__).resolve().parents[2] / "scripts"
+if str(SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS))
+
+from run_metacog_alignment_campaign import EXPECTED_GPU  # noqa: E402
 
 from memory_rl.data import (  # noqa: E402
     ALLOWED_TRAIN_SOURCES,
@@ -60,6 +65,9 @@ PER_DEVICE_BATCH_SIZE = 1
 DTYPE_NAME = "bfloat16"
 CHECKPOINT_STEPS = (0, 100, 250, 500)
 LENGTH_LADDER = (1024, 1536, 2048)
+# Optimisation seeds authorised by docs/H100_NEXT_CAMPAIGNS.md for the
+# three-seed Binary Metacognitive Alignment replication; the split seed stays 0.
+ALLOWED_SEEDS = (0, 1, 2)
 TARGET_MODULES = (
     "q_proj",
     "k_proj",
@@ -865,9 +873,12 @@ def validate_device(device: str) -> dict[str, Any]:
         raise M1ProtocolError("CUDA is unavailable")
     index = torch.cuda.current_device()
     name = torch.cuda.get_device_name(index)
-    if "A5000" not in name.upper():
+    # One exact device name, taken from the campaign launcher's closed
+    # allowlist (METACOG_EXPECTED_GPU).  This is still a hard substitution
+    # guard: an unapproved accelerator fails closed exactly as before.
+    if name != EXPECTED_GPU:
         raise M1ProtocolError(
-            f"M1 pilot requires an NVIDIA RTX A5000, found {name!r}; do not silently substitute"
+            f"M1 requires {EXPECTED_GPU}, found {name!r}; do not silently substitute"
         )
     if not torch.cuda.is_bf16_supported():
         raise M1ProtocolError("the selected CUDA device does not report bf16 support")
@@ -1738,8 +1749,11 @@ def validate_args(parser: argparse.ArgumentParser, args: argparse.Namespace) -> 
         parser.error(
             f"M1 primary target is {PRIMARY_MODEL}; fallback substitution is not allowed"
         )
-    if args.seed != 0:
-        parser.error("the A5000 M1 pilot is preregistered for seed 0")
+    if args.seed not in ALLOWED_SEEDS:
+        parser.error(
+            f"M1 is preregistered for optimisation seeds {ALLOWED_SEEDS}; "
+            "the three-seed replication uses 0, 1 and 2 with split seed 0"
+        )
     if not _revision_is_commit(args.model_revision):
         parser.error("--model-revision must be a pinned 40-character commit SHA")
     effective_tokenizer_revision = args.tokenizer_revision or args.model_revision

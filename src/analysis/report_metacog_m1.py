@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the mandatory Markdown report for the A5000 M1 gate."""
+"""Generate the mandatory Markdown report for the M1 gate."""
 
 from __future__ import annotations
 
@@ -7,11 +7,17 @@ import argparse
 import json
 import math
 import os
+import sys
 from pathlib import Path
 from typing import Any, Iterable, Mapping, Sequence
 
+REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "scripts"))
+
+from run_metacog_alignment_campaign import EXPECTED_GPU, GPU_LABEL  # noqa: E402
 
 REPORT_SCHEMA = "metacog-alignment-m1-report/v1"
+GPU_TITLE = GPU_LABEL.upper()
 
 
 class ReportError(RuntimeError):
@@ -243,8 +249,14 @@ def _artifact_rows(ledger: Iterable[Mapping[str, Any]]) -> list[str]:
 
 def _assert_no_h100(ledger: Sequence[Mapping[str, Any]]) -> None:
     preflight = [row for row in ledger if row.get("event") == "gpu_preflight_passed"]
-    if len(preflight) != 1 or _get(preflight[0], "gpu", "name") != "NVIDIA RTX A5000":
-        raise ReportError("ledger does not prove exactly one passed A5000 preflight")
+    # A two-phase campaign (ID lock, then the sealed one-shot OOD) runs one
+    # preflight per phase.  Every one of them must have passed on the same
+    # approved device; anything else is not evidence of a clean allocation.
+    if not preflight:
+        raise ReportError(f"ledger does not prove a passed {GPU_TITLE} preflight")
+    for row in preflight:
+        if _get(row, "gpu", "name") != EXPECTED_GPU:
+            raise ReportError(f"ledger contains a preflight that is not {EXPECTED_GPU}")
     for row in ledger:
         if row.get("event") != "command_started":
             continue
@@ -324,9 +336,9 @@ def build_report(
         "gpu_memory": m1_summary.get("gpu_memory"),
     }
     lines: list[str] = [
-        "# Qwen3-8B A5000 Metacognitive Alignment M1 gate report",
+        f"# Qwen3-8B {GPU_TITLE} Metacognitive Alignment M1 gate report",
         "",
-        f"Report schema: `{REPORT_SCHEMA}`. Final A5000 decision: **{decision}**.",
+        f"Report schema: `{REPORT_SCHEMA}`. Final {GPU_TITLE} decision: **{decision}**.",
         "",
         "## 1. M0 baseline reproduction status",
         "",
@@ -348,7 +360,7 @@ def build_report(
         f"- Tokenizer revision: `{metadata.get('tokenizer_revision', ood.get('tokenizer_revision', 'N/A'))}`",
         f"- Chat-template SHA-256: `{metadata.get('chat_template_sha256', 'N/A')}`",
         "",
-        "## 3. A5000 memory/throughput configuration",
+        f"## 3. {GPU_TITLE} memory/throughput configuration",
         "",
         f"Preflight device: `{gpu.get('name')}`, total {gpu.get('total_mib')} MiB, "
         f"free {gpu.get('free_mib')} MiB. Canary runtime summary:",
@@ -448,7 +460,7 @@ def build_report(
         "## 18. No H100 job was launched",
         "",
         "No H100 job was launched. This invocation used the single verified NVIDIA RTX "
-        "A5000 and stops here for manual review; it launched no M2 or later stage.",
+        f"{GPU_TITLE} and stops here for manual review; it launched no M2 or later stage.",
         "",
     ]
     return "\n".join(lines)

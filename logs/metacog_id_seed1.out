@@ -1,0 +1,166 @@
+host=rohpcgpu26.mayo.edu job=4265044 gpu=NVIDIA A100-SXM4-80GB
+seed=1 run_dir=/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed1 CUDA_VISIBLE_DEVICES=0
+0, NVIDIA A100-SXM4-80GB, 81920 MiB, 81152 MiB
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 113.91it/s]
+model=Qwen/Qwen3-8B adapter=None layers=36 verbal=True verbal_raw=False device=cuda episodes=88
+  5/88 episodes
+  10/88 episodes
+  15/88 episodes
+  20/88 episodes
+  25/88 episodes
+  30/88 episodes
+  35/88 episodes
+  40/88 episodes
+  45/88 episodes
+  50/88 episodes
+  55/88 episodes
+  60/88 episodes
+  65/88 episodes
+  70/88 episodes
+  75/88 episodes
+  80/88 episodes
+  85/88 episodes
+saved 417 item rows -> /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed1/m0/explicit.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 113.01it/s]
+model=Qwen/Qwen3-8B adapter=None layers=36 verbal=True verbal_raw=False device=cuda episodes=75
+  5/75 episodes
+  10/75 episodes
+  15/75 episodes
+  20/75 episodes
+  25/75 episodes
+  30/75 episodes
+  35/75 episodes
+  40/75 episodes
+  45/75 episodes
+  50/75 episodes
+  55/75 episodes
+  60/75 episodes
+  65/75 episodes
+  70/75 episodes
+  75/75 episodes
+saved 352 item rows -> /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed1/m0/evoked.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 112.43it/s]
+model=Qwen/Qwen3-8B adapter=None layers=36 verbal=True verbal_raw=False device=cuda episodes=68
+  5/68 episodes
+  10/68 episodes
+  15/68 episodes
+  20/68 episodes
+  25/68 episodes
+  30/68 episodes
+  35/68 episodes
+  40/68 episodes
+  45/68 episodes
+  50/68 episodes
+  55/68 episodes
+  60/68 episodes
+  65/68 episodes
+saved 335 item rows -> /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed1/m0/decoupled.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 110.79it/s]
+model=Qwen/Qwen3-8B adapter=None layers=36 verbal=True verbal_raw=False device=cuda episodes=52
+  5/52 episodes
+  10/52 episodes
+  15/52 episodes
+  20/52 episodes
+  25/52 episodes
+  30/52 episodes
+  35/52 episodes
+  40/52 episodes
+  45/52 episodes
+  50/52 episodes
+saved 261 item rows -> /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed1/m0/compositional.json
+M0 GREEN -> /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed1/m0/gate.json ; /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed1/m0/gate.md
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 111.13it/s]
+model=Qwen/Qwen3-8B adapter=None layers=36 verbal=True verbal_raw=False device=cuda episodes=57
+  5/57 episodes
+  10/57 episodes
+  15/57 episodes
+  20/57 episodes
+  25/57 episodes
+  30/57 episodes
+  35/57 episodes
+  40/57 episodes
+  45/57 episodes
+  50/57 episodes
+  55/57 episodes
+saved 271 item rows -> /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed1/m0/evoked_g2.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 98.22it/s]
+/rodata/azradonc_dev/m253405/myconda/envs/jspace/lib/python3.12/site-packages/peft/utils/save_and_load.py:243: UserWarning: Could not find a config file in Qwen/Qwen3-8B - will assume that the vocabulary was not modified.
+  warnings.warn(
+[ID validation step=0] verbal_auc=0.5529100529100529 yes_rate=0.413953488372093
+step=1/10 loss=28.156251 grad=71.0362 tok/s=248.9
+step=10/10 loss=22.593759 grad=94.0692 tok/s=310.8
+[ID validation step=10] verbal_auc=0.5197837589141937 yes_rate=0.7209302325581395
+M1 PASS: /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed1/canary
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 112.52it/s]
+/rodata/azradonc_dev/m253405/myconda/envs/jspace/lib/python3.12/site-packages/peft/utils/save_and_load.py:243: UserWarning: Could not find a config file in Qwen/Qwen3-8B - will assume that the vocabulary was not modified.
+  warnings.warn(
+[ID validation step=0] verbal_auc=0.5529100529100529 yes_rate=0.413953488372093
+step=1/414 loss=28.156251 grad=71.0362 tok/s=291.1
+step=10/414 loss=22.593759 grad=94.0692 tok/s=309.5
+step=20/414 loss=4.546302 grad=104.7513 tok/s=287.4
+step=30/414 loss=2.032524 grad=140.4194 tok/s=341.0
+step=40/414 loss=1.248491 grad=93.1026 tok/s=304.1
+step=50/414 loss=1.229409 grad=57.1190 tok/s=337.3
+step=60/414 loss=1.356793 grad=72.0939 tok/s=323.8
+step=70/414 loss=0.642076 grad=34.9691 tok/s=316.2
+step=80/414 loss=0.682703 grad=29.7895 tok/s=323.4
+step=90/414 loss=1.693864 grad=83.6512 tok/s=344.4
+step=100/414 loss=0.802821 grad=26.7402 tok/s=345.0
+[ID validation step=100] verbal_auc=0.48775017253278125 yes_rate=0.8744186046511628
+step=110/414 loss=1.380187 grad=51.8616 tok/s=329.0
+step=120/414 loss=0.987350 grad=39.7669 tok/s=332.7
+step=130/414 loss=0.770096 grad=12.7416 tok/s=304.4
+step=140/414 loss=1.429887 grad=63.6652 tok/s=343.0
+step=150/414 loss=0.852015 grad=19.2320 tok/s=321.9
+step=160/414 loss=1.028079 grad=34.0185 tok/s=357.2
+step=170/414 loss=0.617435 grad=18.8200 tok/s=301.8
+step=180/414 loss=0.787200 grad=14.2472 tok/s=326.1
+step=190/414 loss=1.380808 grad=58.8775 tok/s=335.8
+step=200/414 loss=0.761685 grad=30.1438 tok/s=318.3
+step=210/414 loss=1.053405 grad=42.1943 tok/s=331.2
+step=220/414 loss=0.635773 grad=11.0393 tok/s=342.8
+step=230/414 loss=1.042663 grad=19.1992 tok/s=332.6
+step=240/414 loss=0.572508 grad=9.9876 tok/s=318.5
+step=250/414 loss=1.248195 grad=36.3838 tok/s=304.2
+[ID validation step=250] verbal_auc=0.5372670807453416 yes_rate=0.10697674418604651
+step=260/414 loss=1.248316 grad=53.0041 tok/s=311.0
+step=270/414 loss=1.207016 grad=20.7275 tok/s=317.8
+step=280/414 loss=0.731287 grad=11.6688 tok/s=335.3
+step=290/414 loss=0.445634 grad=6.7821 tok/s=304.1
+step=300/414 loss=1.144647 grad=15.1942 tok/s=297.5
+step=310/414 loss=1.650299 grad=49.6751 tok/s=294.0
+step=320/414 loss=0.733621 grad=8.3343 tok/s=287.3
+step=330/414 loss=0.222736 grad=13.0949 tok/s=302.4
+step=340/414 loss=0.506668 grad=5.6682 tok/s=301.0
+step=350/414 loss=0.629111 grad=12.4838 tok/s=324.2
+step=360/414 loss=0.388712 grad=19.4034 tok/s=325.2
+step=370/414 loss=0.702511 grad=14.0216 tok/s=339.2
+step=380/414 loss=0.804808 grad=10.8157 tok/s=349.6
+step=390/414 loss=0.525182 grad=6.7996 tok/s=323.7
+step=400/414 loss=0.692065 grad=18.5295 tok/s=330.5
+step=410/414 loss=0.635804 grad=14.2518 tok/s=291.3
+[ID validation step=414] verbal_auc=0.5752242926155969 yes_rate=0.3674418604651163
+M1 LOCKED: /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed1/m1
+STOP: id_lock_complete_ood_sealed; no H100 job was launched. Artifacts: /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed1
+decision ledger hash: /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed1/decision_ledger.jsonl.sha256

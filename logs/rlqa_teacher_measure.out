@@ -1,0 +1,51 @@
+host=rohpcgpu26.mayo.edu job=4264510 gpu=NVIDIA A100-SXM4-80GB
+model=Qwen/Qwen3-8B adapter=None layers=36 verbal=True verbal_raw=False device=cuda episodes=88
+  5/88 episodes
+  10/88 episodes
+  15/88 episodes
+  20/88 episodes
+  25/88 episodes
+  30/88 episodes
+  35/88 episodes
+  40/88 episodes
+  45/88 episodes
+  50/88 episodes
+  55/88 episodes
+  60/88 episodes
+  65/88 episodes
+  70/88 episodes
+  75/88 episodes
+  80/88 episodes
+  85/88 episodes
+saved 417 item rows -> data/results/results_v1f_qwen3-8B.json
+model=Qwen/Qwen3-8B adapter=None layers=36 verbal=True verbal_raw=False device=cuda episodes=75
+  5/75 episodes
+  10/75 episodes
+  15/75 episodes
+  20/75 episodes
+  25/75 episodes
+  30/75 episodes
+  35/75 episodes
+  40/75 episodes
+  45/75 episodes
+  50/75 episodes
+  55/75 episodes
+  60/75 episodes
+  65/75 episodes
+  70/75 episodes
+  75/75 episodes
+saved 352 item rows -> data/results/results_v2f_qwen3-8B.json
+model=Qwen/Qwen3-8B adapter=None layers=36 verbal=True verbal_raw=False device=cuda episodes=57
+  5/57 episodes
+  10/57 episodes
+  15/57 episodes
+  20/57 episodes
+  25/57 episodes
+  30/57 episodes
+  35/57 episodes
+  40/57 episodes
+  45/57 episodes
+  50/57 episodes
+  55/57 episodes
+saved 271 item rows -> data/results/results_v2g2_qwen3-8B.json
+TEACHER_MEASURE_OK
