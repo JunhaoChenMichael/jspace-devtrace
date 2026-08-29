@@ -177,6 +177,10 @@ bash scripts/run_memory_rl_mvp.sh dry-run rl-w
 
 ## Next H100 campaigns
 
+The H100 operator should begin with the
+[`H100 documentation guide`](docs/H100_DOCUMENT_GUIDE.md), which explains the
+role and precedence of every README/runbook in this repository.
+
 The post-A5000 handoff is [`docs/H100_NEXT_CAMPAIGNS.md`](docs/H100_NEXT_CAMPAIGNS.md).
 It keeps two confirmatory tracks separate: a Qwen3-8B capable-scale RL-QA
 replication and Qwen3-8B Binary Metacognitive Alignment across seeds 0/1/2.

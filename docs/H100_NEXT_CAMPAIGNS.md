@@ -1,5 +1,8 @@
 # Next H100 campaigns
 
+For a map of all repository documentation and the recommended operator reading
+order, first read [`H100_DOCUMENT_GUIDE.md`](H100_DOCUMENT_GUIDE.md).
+
 This is the single handoff entry point after the completed A5000 campaigns.
 Nothing in this document authorizes an unattended launch: verify the H100 host,
 implement and test the two launchers, print both plans, then obtain a final
@@ -180,4 +183,3 @@ predeclared Decoupled primary gate.
 - [ ] Both engineering canaries pass checkpoint reload and no-harm checks.
 - [ ] Seeds, split seed, gates, and one-shot OOD rules are frozen.
 - [ ] Operator explicitly authorizes the H100 allocation.
-
