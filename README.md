@@ -67,6 +67,103 @@ Experiments require the benchmark JSONs (in `data/benchmarks/`) and open-weight
 models (Qwen2.5 0.5B-7B, OLMo-2 1B/7B + stage checkpoints, Mistral-7B,
 Qwen2-VL-2B); see `scripts/` for the full measurement campaigns.
 
+## Verified model and dataset downloads
+
+The links and revisions below were checked against the Hugging Face API on
+2026-08-29. Every listed model repository is public and ungated. For a strict
+reproduction, use the recorded commit rather than a moving `main` branch.
+
+### Current H100 campaigns
+
+Both planned H100 tracks use
+[`Qwen/Qwen3-8B`](https://huggingface.co/Qwen/Qwen3-8B) at the frozen revision
+`b968826d9c46dd6066d109eabc6255188de91218`. This is the same revision used by
+the A5000 campaign and was also the repository's current API SHA when checked.
+
+```bash
+python - <<'PY'
+from huggingface_hub import snapshot_download
+
+snapshot_download(
+    repo_id="Qwen/Qwen3-8B",
+    revision="b968826d9c46dd6066d109eabc6255188de91218",
+)
+PY
+```
+
+### Paper-reproduction models
+
+| Experiment family | Verified Hugging Face repository |
+|---|---|
+| GPT-2 | [`openai-community/gpt2`](https://huggingface.co/openai-community/gpt2) |
+| Qwen2.5 base | [`Qwen/Qwen2.5-0.5B`](https://huggingface.co/Qwen/Qwen2.5-0.5B), [`1.5B`](https://huggingface.co/Qwen/Qwen2.5-1.5B), [`3B`](https://huggingface.co/Qwen/Qwen2.5-3B), [`7B`](https://huggingface.co/Qwen/Qwen2.5-7B) |
+| Qwen2.5 instruct | [`Qwen/Qwen2.5-0.5B-Instruct`](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct), [`1.5B-Instruct`](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct), [`3B-Instruct`](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct), [`7B-Instruct`](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct) |
+| Qwen3 | [`Qwen/Qwen3-0.6B`](https://huggingface.co/Qwen/Qwen3-0.6B), [`1.7B`](https://huggingface.co/Qwen/Qwen3-1.7B), [`4B`](https://huggingface.co/Qwen/Qwen3-4B), [`8B`](https://huggingface.co/Qwen/Qwen3-8B) |
+| OLMo-2 1B stages | [`allenai/OLMo-2-0425-1B`](https://huggingface.co/allenai/OLMo-2-0425-1B), [`SFT`](https://huggingface.co/allenai/OLMo-2-0425-1B-SFT), [`DPO`](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO), [`Instruct`](https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct) |
+| OLMo-2 7B stages | [`allenai/OLMo-2-1124-7B`](https://huggingface.co/allenai/OLMo-2-1124-7B), [`SFT`](https://huggingface.co/allenai/OLMo-2-1124-7B-SFT), [`Instruct`](https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct) |
+| Mistral replication | [`mistralai/Mistral-7B-Instruct-v0.3`](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3) |
+| Visual-language model | [`Qwen/Qwen2-VL-2B-Instruct`](https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct) |
+| Embedding baselines | [`BAAI/bge-small-en-v1.5`](https://huggingface.co/BAAI/bge-small-en-v1.5), [`sentence-transformers/all-MiniLM-L6-v2`](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) |
+
+The paper also reports a model labelled LLaVA-1.5-7B. The compatible
+Transformers conversion
+[`llava-hf/llava-1.5-7b-hf`](https://huggingface.co/llava-hf/llava-1.5-7b-hf)
+is available and passes the repository/API checks, but the old result files do
+not record their source model ID. Do not treat that ID as provenance-verified
+for the historical LLaVA numbers without the original launch log.
+
+Models can be cached by replacing `repo_id` in the `snapshot_download` example
+above. Keep the exact ID (including organization and capitalization); the old
+`gpt2` alias in `scripts/setup_server.sh` should be interpreted as
+`openai-community/gpt2`.
+
+### Datasets
+
+| Data used here | Verified source and exact configuration |
+|---|---|
+| MMLU | [`cais/mmlu`](https://huggingface.co/datasets/cais/mmlu), configuration `all` |
+| ARC | [`allenai/ai2_arc`](https://huggingface.co/datasets/allenai/ai2_arc), configurations `ARC-Easy` and `ARC-Challenge` |
+| GSM8K | [`openai/gsm8k`](https://huggingface.co/datasets/openai/gsm8k), configuration `main` |
+| LongMemEval oracle | [`xiaowu0162/longmemeval`](https://huggingface.co/datasets/xiaowu0162/longmemeval), file `longmemeval_oracle`, revision `2ec2a557f339b6c0369619b1ed5793734cc87533` |
+
+The LongMemEval download was validated byte-for-byte against the tracked file:
+both are 15,388,478 bytes with SHA-256
+`821a2034d219ab45846873dd14c14f12cfe7776e73527a483f9dac095d38620c`.
+To restore it explicitly:
+
+```bash
+python - <<'PY'
+from huggingface_hub import hf_hub_download
+
+hf_hub_download(
+    repo_id="xiaowu0162/longmemeval",
+    repo_type="dataset",
+    filename="longmemeval_oracle",
+    revision="2ec2a557f339b6c0369619b1ed5793734cc87533",
+    local_dir="data/benchmarks/longmemeval",
+)
+PY
+```
+
+The standard evaluation datasets are loaded directly by
+`src/experiments/general_eval.py`, for example
+`load_dataset("cais/mmlu", "all")`; no manual conversion is required.
+
+LoCoMo is deliberately **not** assigned a Hugging Face download command. The
+author repository [`adymaharana/locomo`](https://huggingface.co/datasets/adymaharana/locomo)
+currently contains a card but no downloadable data file, while available
+community mirrors use transformed schemas and do not byte-match this project's
+`data/benchmarks/locomo/locomo10.json`. The verified experiment copy is already
+tracked in this Git repository, as are the custom `battery*.json` files and
+`vlm_images/`; obtain them with `git clone`/`git pull`.
+
+Finally, directories named `*-metacog*`, LoRA adapters, and campaign
+checkpoints under `data/results/` are outputs trained by this project, not
+public Hugging Face base models. They are intentionally excluded from Git and
+cannot be reconstructed by downloading a similarly named HF repository; copy
+the required artifact from the originating server or publish it separately
+with its manifest and checksum.
+
 ## Workspace-guided RL extension
 
 The staged Workspace-SFT, RL-W, RL-QA, and hybrid implementation is documented
