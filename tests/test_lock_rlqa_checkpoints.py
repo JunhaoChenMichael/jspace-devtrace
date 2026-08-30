@@ -22,7 +22,7 @@ def _make_run(root: Path, seed: int, *, step: int = 300, **overrides) -> Path:
     checkpoint.mkdir(parents=True)
     (checkpoint / "adapter_model.safetensors").write_bytes(f"adapter-{seed}".encode())
     config = {
-        "model": "Qwen/Qwen3-8B",
+        "model": locker.EXPECTED_MODEL,
         "seed": seed,
         "mode": "rl-qa",
         "lambda_qa": 1.0,
@@ -36,7 +36,7 @@ def _make_run(root: Path, seed: int, *, step: int = 300, **overrides) -> Path:
         "beta": 0.03,
         "split_seed": 0,
         "temperature": 5.0,
-        "resolved_model_commit": "b968826d9c46dd6066d109eabc6255188de91218",
+        "resolved_model_commit": locker.EXPECTED_REVISION,
     }
     config.update(overrides)
     (run_dir / "run_config.json").write_text(json.dumps(config), encoding="utf-8")
@@ -65,7 +65,7 @@ def test_lock_binds_three_seeds_and_self_hashes(tmp_path: Path) -> None:
 
 def test_lock_refuses_partial_seeds_and_recipe_drift(tmp_path: Path) -> None:
     runs = {seed: _make_run(tmp_path, seed) for seed in (0, 1)}
-    with pytest.raises(locker.LockError, match="all three seeds"):
+    with pytest.raises(locker.LockError, match=r"seeds \[0, 1, 2\] must be locked together"):
         locker.build_lock(runs)
 
     drifted = tmp_path / "drift"
@@ -101,3 +101,17 @@ def test_lock_refuses_a_run_that_touched_sealed_conditions(tmp_path: Path) -> No
     }
     with pytest.raises(locker.LockError, match="sealed data"):
         locker.build_lock(runs)
+
+
+def test_single_seed_lock_is_allowed_when_the_plan_authorises_one_seed(tmp_path: Path) -> None:
+    """The 32B scaling gate authorises seed 0 alone, and nothing beyond it."""
+
+    runs = {0: _make_run(tmp_path, 0)}
+    payload = locker.build_lock(runs, [0])
+    assert [entry["seed"] for entry in payload["seeds"]] == [0]
+    assert payload["ood_authorization"]["attempt_limit"] == 1
+
+    # a seed that was not authorised is still refused
+    extra = {0: _make_run(tmp_path / "x", 0), 1: _make_run(tmp_path / "x", 1)}
+    with pytest.raises(locker.LockError, match="must be locked together"):
+        locker.build_lock(extra, [0])

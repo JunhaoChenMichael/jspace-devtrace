@@ -22,6 +22,11 @@ ALLOWED_LABELS = frozenset({"load_bearing", "distractor", "filler"})
 DEFAULT_PAPER_V = 0.337
 DEFAULT_PAPER_W_RR = 0.654
 DEFAULT_TOLERANCE = 0.05
+# A scale point is not a reproduction: a different model has no reason to land
+# within 0.05 of the paper's 8B AUCs, so the 32B seed-0 plans replace the
+# reproduction criterion with a repairable-reporting-gap criterion on Decoupled.
+DEFAULT_MIN_REPORTING_GAP = 0.10
+GATE_MODES = ("paper_reproduction", "scale_gap")
 
 
 class M0GateError(ValueError):
@@ -433,6 +438,8 @@ def analyze_files(
     paper_w_rr: float = DEFAULT_PAPER_W_RR,
     tolerance: float = DEFAULT_TOLERANCE,
     require_metadata: bool = True,
+    mode: str = "paper_reproduction",
+    min_reporting_gap: float = DEFAULT_MIN_REPORTING_GAP,
 ) -> dict[str, Any]:
     if set(paths) != set(CONDITIONS):
         raise M0GateError(f"expected exactly these conditions: {list(CONDITIONS)}")
@@ -449,6 +456,12 @@ def analyze_files(
         raise M0GateError("paper reference AUCs must be in [0, 1]")
     if tolerance < 0.0 or tolerance > 1.0:
         raise M0GateError("tolerance must be in [0, 1]")
+    if mode not in GATE_MODES:
+        raise M0GateError(f"gate mode must be one of {list(GATE_MODES)}")
+    if isinstance(min_reporting_gap, bool) or not isinstance(min_reporting_gap, (int, float)):
+        raise M0GateError("min_reporting_gap must be numeric")
+    if not math.isfinite(float(min_reporting_gap)) or not 0.0 <= float(min_reporting_gap) <= 1.0:
+        raise M0GateError("min_reporting_gap must be finite and in [0, 1]")
     resolved_inputs = [str(paths[name].resolve()) for name in CONDITIONS]
     if len(set(resolved_inputs)) != len(CONDITIONS):
         raise M0GateError("each M0 condition must use a distinct raw input file")
@@ -468,12 +481,11 @@ def analyze_files(
     delta_w = observed_w - float(paper_w_rr)
     v_pass = abs(delta_v) <= float(tolerance)
     w_pass = abs(delta_w) <= float(tolerance)
-    decision = "GREEN" if v_pass and w_pass else "INVESTIGATE"
-    return {
-        "schema_version": "metacog_m0_gate.v1",
-        "stage": "M0",
-        "decision": decision,
-        "gate": {
+    reporting_gap = observed_w - observed_v
+    if mode == "paper_reproduction":
+        decision = "GREEN" if v_pass and w_pass else "INVESTIGATE"
+        gate = {
+            "mode": mode,
             "condition": "decoupled",
             "criterion": "absolute pooled-AUC deviation <= tolerance for V and W_rr",
             "tolerance": float(tolerance),
@@ -482,7 +494,32 @@ def analyze_files(
             "delta": {"V": delta_v, "W_rr": delta_w},
             "absolute_delta": {"V": abs(delta_v), "W_rr": abs(delta_w)},
             "checks": {"V": v_pass, "W_rr": w_pass},
-        },
+        }
+    else:
+        # A new scale point only has to show that there IS a reporting gap to
+        # repair. Landing near the 8B numbers is not required, and must never
+        # be engineered by changing prompts, readout or thinking mode.
+        gap_pass = reporting_gap >= float(min_reporting_gap)
+        decision = "GREEN" if gap_pass else "SCALE_BOUNDARY"
+        gate = {
+            "mode": mode,
+            "condition": "decoupled",
+            "criterion": "W_before - V_before >= min_reporting_gap",
+            "min_reporting_gap": float(min_reporting_gap),
+            "observed": {"V": observed_v, "W_rr": observed_w},
+            "reporting_gap": reporting_gap,
+            "checks": {"reporting_gap": gap_pass},
+            "reference_only_paper_values": {
+                "V": float(paper_v),
+                "W_rr": float(paper_w_rr),
+                "note": "historical 8B/paper values, reported for context; not a gate",
+            },
+        }
+    return {
+        "schema_version": "metacog_m0_gate.v1",
+        "stage": "M0",
+        "decision": decision,
+        "gate": gate,
         "metric_definitions": {
             "positive_label": "load_bearing",
             "negative_labels": ["distractor", "filler"],
@@ -509,23 +546,48 @@ def render_markdown(result: Mapping[str, Any], json_path: Path) -> str:
         "",
         f"**Decision: {result['decision']}**",
         "",
-        "## Decoupled reproduction gate",
+        (
+            "## Decoupled reproduction gate"
+            if gate.get("mode", "paper_reproduction") == "paper_reproduction"
+            else "## Decoupled reporting-gap gate"
+        ),
         "",
-        "| Signal | Paper AUC | Observed AUC | Delta | |Delta| | Tolerance | Pass |",
-        "|---|---:|---:|---:|---:|---:|:---:|",
     ]
-    for signal in ("V", "W_rr"):
-        lines.append(
-            "| {signal} | {reference} | {observed} | {delta} | {absolute} | "
-            "{tolerance} | {passed} |".format(
-                signal=signal,
-                reference=_format_metric(gate["reference"][signal]),
-                observed=_format_metric(gate["observed"][signal]),
-                delta=f"{gate['delta'][signal]:+.6f}",
-                absolute=_format_metric(gate["absolute_delta"][signal]),
-                tolerance=_format_metric(gate["tolerance"]),
-                passed="yes" if gate["checks"][signal] else "no",
+    if gate.get("mode", "paper_reproduction") == "paper_reproduction":
+        lines.extend(
+            [
+                "| Signal | Paper AUC | Observed AUC | Delta | |Delta| | Tolerance | Pass |",
+                "|---|---:|---:|---:|---:|---:|:---:|",
+            ]
+        )
+        for signal in ("V", "W_rr"):
+            lines.append(
+                "| {signal} | {reference} | {observed} | {delta} | {absolute} | "
+                "{tolerance} | {passed} |".format(
+                    signal=signal,
+                    reference=_format_metric(gate["reference"][signal]),
+                    observed=_format_metric(gate["observed"][signal]),
+                    delta=f"{gate['delta'][signal]:+.6f}",
+                    absolute=_format_metric(gate["absolute_delta"][signal]),
+                    tolerance=_format_metric(gate["tolerance"]),
+                    passed="yes" if gate["checks"][signal] else "no",
+                )
             )
+    else:
+        reference = gate.get("reference_only_paper_values", {})
+        lines.extend(
+            [
+                "| Quantity | Value |",
+                "|---|---:|",
+                f"| Decoupled V (before) | {_format_metric(gate['observed']['V'])} |",
+                f"| Decoupled W_rr (before) | {_format_metric(gate['observed']['W_rr'])} |",
+                f"| Reporting gap (W - V) | {_format_metric(gate['reporting_gap'])} |",
+                f"| Required gap | {_format_metric(gate['min_reporting_gap'])} |",
+                f"| Pass | {'yes' if gate['checks']['reporting_gap'] else 'no'} |",
+                "",
+                "Historical 8B/paper values are context only and gate nothing: "
+                f"V {reference.get('V')}, W_rr {reference.get('W_rr')}.",
+            ]
         )
 
     lines.extend(
@@ -609,6 +671,21 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--paper-w-rr", type=float, default=DEFAULT_PAPER_W_RR)
     parser.add_argument("--tolerance", type=float, default=DEFAULT_TOLERANCE)
     parser.add_argument(
+        "--mode",
+        choices=GATE_MODES,
+        default="paper_reproduction",
+        help=(
+            "'paper_reproduction' reproduces the published 8B AUCs; "
+            "'scale_gap' gates a new scale point on a repairable reporting gap"
+        ),
+    )
+    parser.add_argument(
+        "--min-reporting-gap",
+        type=float,
+        default=DEFAULT_MIN_REPORTING_GAP,
+        help="scale_gap mode: required Decoupled W_before - V_before",
+    )
+    parser.add_argument(
         "--allow-missing-metadata",
         action="store_true",
         help="legacy-data escape hatch; strict campaign runs must not use this",
@@ -628,6 +705,8 @@ def main(argv: Sequence[str] | None = None) -> int:
             paper_w_rr=args.paper_w_rr,
             tolerance=args.tolerance,
             require_metadata=not args.allow_missing_metadata,
+            mode=args.mode,
+            min_reporting_gap=args.min_reporting_gap,
         )
         write_reports(result, args.out_json, args.out_md)
     except (FileExistsError, M0GateError, OSError) as exc:

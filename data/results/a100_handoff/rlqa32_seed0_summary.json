@@ -1,0 +1,110 @@
+{
+  "automatic_seed_expansion_authorized": false,
+  "budget": 2,
+  "checks": {
+    "admission_auc_ci_excludes_zero": false,
+    "admission_auc_delta_positive": true,
+    "compositional_no_secondary_harm": true,
+    "full_context_qa_drop_within_2pp": true,
+    "integrity_checks_pass": true,
+    "qa_delta_at_least_5pp": false,
+    "qa_delta_positive": false,
+    "w_rr_drop_within_0.03": true
+  },
+  "decision": "FAIL",
+  "diagnostic_compositional": {
+    "admission_auc_ci_95": [
+      -0.08182258250478139,
+      0.04714291038418941
+    ],
+    "admission_auc_delta": -0.01628634523371375,
+    "exact_mcnemar": {
+      "a": "original",
+      "a_only": 5,
+      "adapter_only_correct": 5,
+      "b": "rl-qa-s0",
+      "b_only": 5,
+      "discordant": 10,
+      "n": 52,
+      "original_only_correct": 5,
+      "p_value": 1.0
+    },
+    "full_context_exact_mcnemar_p_value": 1.0,
+    "full_context_qa_adapter": 0.17307692307692307,
+    "full_context_qa_drop_pp": -0.0,
+    "full_context_qa_original": 0.17307692307692307,
+    "qa_delta_pp": 0.0,
+    "qa_original": 0.15384615384615385,
+    "qa_rl_qa": 0.15384615384615385
+  },
+  "gate_thresholds": {
+    "max_full_context_qa_drop_pp": 2.0,
+    "max_w_rr_drop": 0.03,
+    "min_qa_delta_pp": 5.0
+  },
+  "id_trajectory": [
+    {
+      "containment": 0.4666666666666667,
+      "qa_accuracy": 0.4666666666666667,
+      "selected": false,
+      "step": 0,
+      "verbal_auc": 0.4916034046468829,
+      "yes_rate": 0.9906976744186047
+    },
+    {
+      "containment": 0.8888888888888888,
+      "qa_accuracy": 0.7777777777777778,
+      "selected": true,
+      "step": 100,
+      "verbal_auc": 0.5852311939268461,
+      "yes_rate": 1.0
+    },
+    {
+      "containment": 0.8444444444444444,
+      "qa_accuracy": 0.7777777777777778,
+      "selected": false,
+      "step": 200,
+      "verbal_auc": 0.6549344375431332,
+      "yes_rate": 0.7627906976744186
+    },
+    {
+      "containment": 0.8666666666666667,
+      "qa_accuracy": 0.7777777777777778,
+      "selected": false,
+      "step": 300,
+      "verbal_auc": 0.6629859673337934,
+      "yes_rate": 0.6930232558139535
+    }
+  ],
+  "model": "Qwen/Qwen3-32B",
+  "primary_decoupled": {
+    "admission_auc_ci_95": [
+      -0.01377716740639976,
+      0.10045494912926729
+    ],
+    "admission_auc_delta": 0.04483366380259968,
+    "exact_mcnemar": {
+      "a": "original",
+      "a_only": 3,
+      "adapter_only_correct": 3,
+      "b": "rl-qa-s0",
+      "b_only": 3,
+      "discordant": 6,
+      "n": 68,
+      "original_only_correct": 3,
+      "p_value": 1.0
+    },
+    "full_context_exact_mcnemar_p_value": 1.0,
+    "full_context_qa_adapter": 0.10294117647058823,
+    "full_context_qa_drop_pp": -0.0,
+    "full_context_qa_original": 0.10294117647058823,
+    "qa_delta_pp": 0.0,
+    "qa_original": 0.11764705882352941,
+    "qa_rl_qa": 0.11764705882352941,
+    "w_rr_after": 0.6919475655430711,
+    "w_rr_before": 0.6918649482264816,
+    "w_rr_drop": -8.261731658953941e-05
+  },
+  "schema_version": "rlqa-32b-seed0-gate/v1",
+  "seed": 0
+}

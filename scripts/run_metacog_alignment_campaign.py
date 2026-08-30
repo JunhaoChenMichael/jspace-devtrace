@@ -37,7 +37,22 @@ from typing import Any, Iterable, Mapping, Sequence
 CAMPAIGN_SCHEMA = "metacog-alignment-campaign/v1"
 PLAN_SCHEMA = "metacog-alignment-command-plan/v1"
 LOCK_SCHEMA = "metacog-alignment-id-lock/v1"
-EXPECTED_MODEL = "Qwen/Qwen3-8B"
+# The campaign target is configurable but never open: exactly one model per
+# campaign, drawn from a closed allowlist.  Qwen3-8B stays the default so the
+# completed 8B campaigns reproduce unchanged; Qwen3-32B is the scale point
+# authorised by the 32B seed-0 plans.  MoE variants are deliberately absent —
+# substituting Qwen3-30B-A3B would confound scale with architecture.
+SUPPORTED_MODELS = {
+    "Qwen/Qwen3-8B": "qwen3-8b",
+    "Qwen/Qwen3-32B": "qwen3-32b",
+}
+EXPECTED_MODEL = os.environ.get("METACOG_EXPECTED_MODEL", "Qwen/Qwen3-8B")
+if EXPECTED_MODEL not in SUPPORTED_MODELS:
+    raise SystemExit(
+        f"METACOG_EXPECTED_MODEL={EXPECTED_MODEL!r} is not an approved campaign model; "
+        f"choose one of {sorted(SUPPORTED_MODELS)}"
+    )
+MODEL_LABEL = SUPPORTED_MODELS[EXPECTED_MODEL]
 # Campaign hardware is configurable but never permissive: the launcher still
 # matches ONE exact device name, drawn from a closed allowlist.  A5000 remains
 # the default so the completed seed-0 campaign reproduces byte-for-byte; the
@@ -332,6 +347,14 @@ def default_plan(seed: int = 0) -> dict[str, Any]:
                         "0.654",
                         "--tolerance",
                         "0.05",
+                        # Qwen3-8B reproduces the published AUCs; a new scale
+                        # point has no reason to, and is gated instead on the
+                        # existence of a repairable reporting gap.
+                        *(
+                            ("--mode", "paper_reproduction")
+                            if EXPECTED_MODEL == "Qwen/Qwen3-8B"
+                            else ("--mode", "scale_gap", "--min-reporting-gap", "0.10")
+                        ),
                         "--out-json",
                         "{run_dir}/m0/gate.json",
                         "--out-md",
@@ -2056,7 +2079,7 @@ def _default_run_dir(
         / "data"
         / "results"
         / "metacog_alignment"
-        / f"{stamp}_qwen3-8b_{label}_seed{seed}"
+        / f"{stamp}_{MODEL_LABEL}_{label}_seed{seed}"
     )
 
 
@@ -2078,7 +2101,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--model-revision",
         required=True,
-        help="immutable 40-hex Hugging Face commit for Qwen/Qwen3-8B",
+        help=f"immutable 40-hex Hugging Face commit for {EXPECTED_MODEL}",
     )
     parser.add_argument(
         "--tokenizer-revision",

@@ -251,7 +251,7 @@ def test_parser_campaign_defaults():
     )
     m1.validate_args(parser, args)
 
-    assert args.model == "Qwen/Qwen3-8B"
+    assert args.model == m1.PRIMARY_MODEL
     assert args.seed == 0
     assert args.lora_rank == 16
     assert args.gradient_accumulation == 4
@@ -394,7 +394,7 @@ def _write_source_fixture(
     results_path.write_text(json.dumps(results), encoding="utf-8")
     metadata = {
         "schema_version": "workspace_measurement_metadata.v2",
-        "model": "Qwen/Qwen3-8B",
+        "model": m1.PRIMARY_MODEL,
         "adapter": None,
         "model_revision": revision,
         "tokenizer_revision": revision,

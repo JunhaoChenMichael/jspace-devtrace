@@ -53,12 +53,28 @@ exemplar_paper/
 !data/results/rlqa_a100/
 !data/results/rlqa_a100/**
 
-# LoRA adapters and checkpoint trees stay out: hundreds of MB each, and they
-# are project-trained outputs that cannot be reconstructed from Hugging Face.
+
+# 32B scaling gates and the scale sweep (2026-08-30): same rule, evidence in,
+# weights out. The checkpoint/tokenizer exclusions above already apply here.
+!data/results/results_v*_qwen3-32B.json
+!data/results/results_v*_qwen3-32B.json.metadata
+!data/results/metacog32_a100_seed0/
+!data/results/metacog32_a100_seed0/**
+!data/results/rlqa32_a100/
+!data/results/rlqa32_a100/**
+!data/results/scale_sweep/
+!data/results/scale_sweep/**
+!data/results/scale_sweep_diagnostic/
+!data/results/scale_sweep_diagnostic/**
+
+# ---------------------------------------------------------------------------
+# Trained artefacts stay out, and this block is LAST so it always wins over the
+# re-inclusion rules above. A negation placed after these would silently pull
+# every LoRA checkpoint back in.
 data/results/**/checkpoints/
 data/results/**/canary/
 data/results/**/best-step-*/
+# the RL trainer also emits periodic checkpoint-<step>/ saves (singular)
+data/results/**/checkpoint-*/
 data/results/**/final_adapter/
-# Copies of the upstream Qwen3-8B tokenizer: reconstructible from the pinned
-# revision, and their hashes are already recorded in the run provenance.
 data/results/**/tokenizer/

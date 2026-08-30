@@ -83,6 +83,9 @@ KNOWN_TEACHER_MODELS = {
     # measured by this project (data/results/results_v*_qwen3-8B.json), not
     # inherited from the Qwen2.5 campaign.
     "qwen3-8B": "Qwen/Qwen3-8B",
+    # 32B scale point for the seed-0 scaling gate; dense, same family. Its
+    # W_ref rows are measured by this project, never inherited from 8B.
+    "qwen3-32B": "Qwen/Qwen3-32B",
     "olmo1b-rlvr": "allenai/OLMo-2-0425-1B-Instruct",
     "olmo7b-Instruct": "allenai/OLMo-2-1124-7B-Instruct",
 }

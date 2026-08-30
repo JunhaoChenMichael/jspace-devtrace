@@ -1,0 +1,46 @@
+{
+  "authorisation_text": "\u7ee7\u7eed\u505a3seed\u5427",
+  "authorised_by": "operator (project owner), in session",
+  "declared_deviations": [
+    "ORDERING: seed 0 was locked, consumed its one-shot OOD, and its result was read before seeds 1 and 2 were authorised. A clean multi-seed campaign locks every seed before opening OOD for any of them. The frozen recipe is unchanged, so no recipe choice could have been informed by seed 0's outcome, but the ordering itself is a deviation and is declared rather than hidden.",
+    "Track B (metacognitive alignment) seeds 1/2 were NOT run: M0 is a measurement of the frozen base model and does not depend on the optimisation seed, so they would reproduce the identical SCALE_BOUNDARY."
+  ],
+  "issued_at_utc": "2026-08-30T14:32:45+00:00",
+  "outcome": {
+    "artifacts": [
+      "runs/formal_rl-qa_Qwen3-32B_..._s1_..._CANCELLED_BEFORE_COMPLETION",
+      "runs/formal_rl-qa_Qwen3-32B_..._s2_..._CANCELLED_BEFORE_COMPLETION"
+    ],
+    "elapsed_before_stop": "about 30 seconds of training on each seed",
+    "note": "Seeds 1 and 2 remain unrun. The seed-0 FAIL stands on one seed and is reported as such; nothing here claims multi-seed support for it.",
+    "ood_attempts_consumed_by_seeds_1_2": 0,
+    "results_produced": "none; both run directories were cancelled before any checkpoint, evaluation or OOD attempt existed",
+    "status": "AUTHORISED_THEN_STOPPED",
+    "stopped_at_utc": "2026-08-30T14:34:20+00:00",
+    "stopped_by": "operator, in session (\u5148\u505c\u6b62\u5427)"
+  },
+  "recipe_freeze_sha256": "c14108a2b3950a2305a4c903030fc427107641d544895bb41b13169162aeaad7",
+  "schema_version": "rlqa-32b-seed-expansion-release-note/v1",
+  "scope": {
+    "changes_permitted": [
+      "optimisation seed only"
+    ],
+    "everything_else": "frozen: split, base model and revision, temperature 5.0, G=8, budget 2, KL beta, LR, LoRA rank, steps, selection rule, recall, grader, gate thresholds and statistics",
+    "seeds_authorised": [
+      1,
+      2
+    ],
+    "track": "Track A, RL-QA, Qwen/Qwen3-32B"
+  },
+  "seed0_result_at_time_of_authorisation": {
+    "decision": "FAIL",
+    "decoupled_admission_auc_delta": 0.04483366380259968,
+    "decoupled_qa_delta_pp": 0.0,
+    "locked_step": 100
+  },
+  "what_this_is_not": [
+    "This is NOT the plan's PASS-gated seed expansion. Seed 0 returned FAIL (Decoupled QA delta +0.00 pp), and section 14 of the plan states that FAIL does not authorise a rescue sweep.",
+    "It is an operator-authorised multi-seed characterisation of a null result: whether the seed-0 null is stable across optimisation seeds.",
+    "No seed may be selected on its result. All three seeds are reported. An aggregate cannot convert a per-seed FAIL into a PASS."
+  ]
+}

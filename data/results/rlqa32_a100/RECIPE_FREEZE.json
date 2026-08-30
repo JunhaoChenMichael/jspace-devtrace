@@ -1,0 +1,77 @@
+{
+  "frozen_at_utc": "2026-08-30T09:19:37+00:00",
+  "id_only_evidence": {
+    "prompt_leak_audit": {
+      "episodes": 175,
+      "prompts": 825,
+      "prompts_where_concept_equals_answer": 128,
+      "unique_prompt_hashes": 825,
+      "violations": 0
+    },
+    "sealed_until_lock": [
+      "decoupled",
+      "compositional"
+    ],
+    "split_manifest_sha256": "d09d6dbdd4fe5d159de9d120963b6229dcffe337de64364cc03192f4198c6035",
+    "train_episodes": 175,
+    "training_sources": [
+      "explicit",
+      "evoked",
+      "evoked_g2"
+    ],
+    "validation_episodes": 45
+  },
+  "method": "rl-qa",
+  "model": "Qwen/Qwen3-32B",
+  "model_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+  "recipe": {
+    "answer_tokens": 64,
+    "beta": 0.03,
+    "budget": 2,
+    "checkpoint_selection": "strict first maximum of ID QA on the fixed ID validation split",
+    "dtype": "bfloat16",
+    "eval_every": 100,
+    "group_size": 8,
+    "grpo_epochs": 2,
+    "lambda_qa": 1.0,
+    "lambda_w": 0.0,
+    "learning_rate": 1e-06,
+    "lora_rank": 32,
+    "max_length": 2048,
+    "max_steps": 300,
+    "optimisation_seeds": [
+      0
+    ],
+    "save_every": 100,
+    "split_seed": 0,
+    "temperature": 5.0
+  },
+  "schema_version": "rlqa-a100-recipe-freeze/v1",
+  "teacher_artifacts_sha256": {
+    "data/results/results_v1f_qwen3-32B.json": "42dd3d50a8b2a97f3de68888440802a1557e8772435e6ad5876d9815fa3e8ae9",
+    "data/results/results_v2f_qwen3-32B.json": "e53887acd70bedb858222e9b204f9492ab078b53ec6625036a776897de5f9b26",
+    "data/results/results_v2g2_qwen3-32B.json": "612563d460bec979b71e279e7a1742b1ab9c0506db8126c2c7b9db889c6932c4"
+  },
+  "temperature_decision": {
+    "decision": "temperature = 5.0",
+    "gate_b0": {
+      "next_action": "run RL-QA, then run Hybrid",
+      "observed": {
+        "median_unique_selected_sets": 8.0,
+        "mixed_QA_reward_groups_fraction": 0.8742857142857143
+      },
+      "reasons": [
+        "both GREEN thresholds are satisfied"
+      ],
+      "status": "GREEN",
+      "thresholds": {
+        "green_median_unique_selected_sets_min": 4.0,
+        "green_mixed_QA_reward_groups_fraction_min": 0.4,
+        "red_mixed_QA_reward_groups_fraction_max_exclusive": 0.2
+      }
+    },
+    "note": "Diversity was evaluated before any QA reward was computed; no OOD data was used.",
+    "rule_applied": "README_32B_RLQA_A100 6.3: 5.0 is the first and only default candidate; lock it if selection diversity passes, then check reward viability. Searching temperature is forbidden."
+  },
+  "tokenizer_revision": "9216db5781bf21249d130ec9da846c4624c16137"
+}

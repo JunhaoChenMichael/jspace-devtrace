@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "id_containment": 0.4666666666666667,
+      "id_qa_accuracy": 0.4666666666666667,
+      "id_verbal_auc": 0.4916034046468829,
+      "selected": false,
+      "step": 0
+    },
+    {
+      "id_containment": 0.8888888888888888,
+      "id_qa_accuracy": 0.7777777777777778,
+      "id_verbal_auc": 0.5852311939268461,
+      "selected": true,
+      "step": 100
+    },
+    {
+      "id_containment": 0.8444444444444444,
+      "id_qa_accuracy": 0.7777777777777778,
+      "id_verbal_auc": 0.6549344375431332,
+      "selected": false,
+      "step": 200
+    },
+    {
+      "id_containment": 0.8666666666666667,
+      "id_qa_accuracy": 0.7777777777777778,
+      "id_verbal_auc": 0.6629859673337934,
+      "selected": false,
+      "step": 300
+    }
+  ],
+  "note": "Steps 200 and 300 tie with step 100 at 0.77778; the earliest-step tie-break selects 100. AUC, workspace, Compositional and OOD played no part in the choice.",
+  "schema_version": "rlqa-32b-id-selection/v1",
+  "selected_step": 100,
+  "selection_metric": "frozen_recall_QA",
+  "selection_rule": "strict_first_maximum",
+  "selection_scope": "id_validation_only",
+  "selection_tie_break": "earliest_step"
+}

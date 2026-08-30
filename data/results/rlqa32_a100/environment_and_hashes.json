@@ -1,0 +1,20 @@
+{
+  "collected_at_utc": "2026-08-30T07:57:18+00:00",
+  "git_commit": "4a5526d7d963cab765472d3f725dff9fc17f2b28",
+  "gpu_inventory": "0, GPU-1f184c0a-df97-4048-f4b5-e0a3923e1dbe, NVIDIA A100-SXM4-80GB, 580.159.04, 81920 MiB\n1, GPU-da080f5a-c107-1f33-2e8a-0dc554a830fc, NVIDIA A100-SXM4-80GB, 580.159.04, 81920 MiB\n2, GPU-67f94b0f-850b-648d-f760-5cc2601b21a2, NVIDIA A100-SXM4-80GB, 580.159.04, 81920 MiB\n3, GPU-dd7a83fd-cf45-e17f-6515-c81f3bf08606, NVIDIA A100-SXM4-80GB, 580.159.04, 81920 MiB",
+  "host": "rohpc11.mayo.edu",
+  "packages": {
+    "accelerate": "1.14.0",
+    "datasets": "5.0.1",
+    "numpy": "2.5.2",
+    "peft": "0.13.2",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.1",
+    "torch": "2.7.1+cu126",
+    "transformers": "4.57.6"
+  },
+  "platform": "Linux-4.18.0-553.132.1.el8_10.x86_64-x86_64-with-glibc2.28",
+  "python": "3.12.14",
+  "schema_version": "rlqa-32b-environment/v1",
+  "slurm_partitions": "PARTITION NODES GRES CPUS MEMORY TIMELIMIT\ntestcpu.p 5 (null) 104 384000 infinite\ngen-cpu.p* 9 (null) 104 384000 14-00:00:00\ncpu-noib 5 (null) 192 1540000 14-00:00:00\ngen-a100.p 19 gpu:a100:4(S:0-1) 96 1031000 14-00:00:00\ngen-h100 6 gpu:h100:4(S:0-1) 96+ 1031060+ 14-00:00:00"
+}

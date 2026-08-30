@@ -1,0 +1,1164 @@
+host=rohpcgpu37.mayo.edu job=4274233 gpu=NVIDIA A100-SXM4-80GB
+frozen temperature: 5.0
+profile=formal mode=rl-qa model=Qwen/Qwen3-32B teacher=qwen3-32B
+seeds=0 split_seed=0 betas=0.03 budgets=2
+This invocation runs only 'rl-qa'; it will not cross a scientific gate.
+
+Starting serial run: formal_rl-qa_Qwen3-32B_rank_continuous_split0_s0_beta0p03_k2_lq1_lw0
+  python  src/experiments/train_memory_rl.py  --mode  rl-qa  --model  Qwen/Qwen3-32B  --teacher-tag  qwen3-32B  --workspace-objective  rank-continuous  --workspace-top-k  2  --out-dir  data/results/rlqa32_a100/canary/formal_rl-qa_Qwen3-32B_rank_continuous_split0_s0_beta0p03_k2_lq1_lw0  --seed  0  --split-seed  0  --budget  2  --max-steps  10  --group-size  8  --temperature  5.0  --learning-rate  1e-6  --beta  0.03  --lambda-qa  1  --lambda-w  0  --workspace-set-reward  mean  --lora-rank  32  --dtype  bfloat16  --device  cuda  --answer-tokens  64  --diagnostic-every  25  --reporter-correlation-bootstrap-samples  4000  --reporter-correlation-bootstrap-seed  0  --max-length  2048  --eval-every  5  --save-every  0  --limit-train-episodes  0  --limit-validation-episodes  0  --val-eval-episodes  0
+mode=rl-qa train=175 val=45 seed=0 split_seed=0 out=data/results/rlqa32_a100/canary/formal_rl-qa_Qwen3-32B_rank_continuous_split0_s0_beta0p03_k2_lq1_lw0
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 195.02it/s]
+trainable params: 268,435,456 || all params: 33,030,558,720 || trainable%: 0.8127
+[baseline step=0] {"qa_accuracy": 0.4666666666666667, "containment": 0.4666666666666667, "workspace_set_reward": 0.5309259259259259, "verbal_auc": 0.4916034046468829, "verbal_within_episode_auc": 0.5083333333333333, "verbal_yes_rate": 0.9906976744186047, "reporter_correlations": {"schema_version": 1, "definitions": {"v_rl": "adapter-enabled P(Yes) over aggregated constrained No/Yes logits at temperature 1", "w_ref": "immutable raw W_rr from the matched frozen reference model", "y_utility": "1 iff candidate.label == load_bearing, else 0", "correlation_unit": "candidate", "uncertainty_unit": "episode"}, "bootstrap": {"method": "episode_cluster_percentile", "samples_requested": 4000, "seed": 0, "rng": "numpy.random.default_rng / PCG64", "confidence": 0.95, "stratified_by_source": true}, "n_episodes": 45, "n_candidates": 215, "utility_auc": 0.4916034046468829, "yes_rate": 0.9906976744186047, "targets": {"w_ref": {"pearson": {"pooled_candidates": {"estimate": -0.003022855175959866, "status": "ok", "n_candidates": 215, "ci_95": [-0.08689259856677178, 0.08116997899645785], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.47525}, "equal_episode_mean": {"estimate": -0.019369519433351114, "status": "ok", "n_valid_episodes": 45, "n_excluded_episodes": 0, "excluded_episode_reasons": {}, "ci_95": [-0.16039916754219743, 0.1265436942874173], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.406}}, "spearman": {"pooled_candidates": {"estimate": 0.06837926766786728, "status": "ok", "n_candidates": 215, "ci_95": [-0.08851131688790613, 0.223702314911159], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.8045}, "equal_episode_mean": {"estimate": 0.07470899470899471, "status": "ok", "n_valid_episodes": 45, "n_excluded_episodes": 0, "excluded_episode_reasons": {}, "ci_95": [-0.06328835978835978, 0.21693650793650798], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.85675}}}, "y_utility": {"pearson": {"pooled_candidates": {"estimate": -0.0639945469682223, "status": "ok", "n_candidates": 215, "ci_95": [-0.13800562064283567, 0.018901832421075085], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.06825}, "equal_episode_mean": {"estimate": 0.021112629898936343, "status": "ok", "n_valid_episodes": 45, "n_excluded_episodes": 0, "excluded_episode_reasons": {}, "ci_95": [-0.13817872755854516, 0.1735902059271962], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.58825}}, "spearman": {"pooled_candidates": {"estimate": -0.012614499795786426, "status": "ok", "n_candidates": 215, "ci_95": [-0.09396395636506646, 0.07000390578710743], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.38625}, "equal_episode_mean": {"estimate": 0.023401057722597804, "status": "ok", "n_valid_episodes": 45, "n_excluded_episodes": 0, "excluded_episode_reasons": {}, "ci_95": [-0.123147484912412, 0.1731963797684824], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.60625}}}}, "by_source": {"evoked": {"n_episodes": 15, "n_candidates": 72, "utility_auc": 0.4631578947368421, "targets": {"w_ref": {"pearson": {"pooled_candidates": {"estimate": -0.07665521710791648, "status": "ok", "n_candidates": 72}, "equal_episode_mean": {"estimate": -0.1791243067229588, "status": "ok", "n_valid_episodes": 15, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": 0.06138757135611398, "status": "ok", "n_candidates": 72}, "equal_episode_mean": {"estimate": 0.04, "status": "ok", "n_valid_episodes": 15, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}, "y_utility": {"pearson": {"pooled_candidates": {"estimate": -0.09621650718858565, "status": "ok", "n_candidates": 72}, "equal_episode_mean": {"estimate": -0.19241903546586994, "status": "ok", "n_valid_episodes": 15, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": -0.0518355266135887, "status": "ok", "n_candidates": 72}, "equal_episode_mean": {"estimate": -0.13506438951423533, "status": "ok", "n_valid_episodes": 15, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}}}, "evoked_g2": {"n_episodes": 12, "n_candidates": 56, "utility_auc": 0.4412878787878788, "targets": {"w_ref": {"pearson": {"pooled_candidates": {"estimate": 0.016974402435061625, "status": "ok", "n_candidates": 56}, "equal_episode_mean": {"estimate": 0.1685245381070303, "status": "ok", "n_valid_episodes": 12, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": -0.08298159573316384, "status": "ok", "n_candidates": 56}, "equal_episode_mean": {"estimate": 0.10833333333333334, "status": "ok", "n_valid_episodes": 12, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}, "y_utility": {"pearson": {"pooled_candidates": {"estimate": -0.1815555413479709, "status": "ok", "n_candidates": 56}, "equal_episode_mean": {"estimate": -0.263899962076474, "status": "ok", "n_valid_episodes": 12, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": -0.08346734186605392, "status": "ok", "n_candidates": 56}, "equal_episode_mean": {"estimate": -0.21748779252189898, "status": "ok", "n_valid_episodes": 12, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}}}, "explicit": {"n_episodes": 18, "n_candidates": 87, "utility_auc": 0.5561728395061728, "targets": {"w_ref": {"pearson": {"pooled_candidates": {"estimate": 0.11634567392516726, "status": "ok", "n_candidates": 87}, "equal_episode_mean": {"estimate": -0.011503235052265673, "status": "ok", "n_valid_episodes": 18, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": 0.10200027338588417, "status": "ok", "n_candidates": 87}, "equal_episode_mean": {"estimate": 0.08121693121693122, "status": "ok", "n_valid_episodes": 18, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}, "y_utility": {"pearson": {"pooled_candidates": {"estimate": 0.060268510836054244, "status": "ok", "n_candidates": 87}, "equal_episode_mean": {"estimate": 0.3890640790198818, "status": "ok", "n_valid_episodes": 18, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": 0.09002972533727055, "status": "ok", "n_candidates": 87}, "equal_episode_mean": {"estimate": 0.31604816391629, "status": "ok", "n_valid_episodes": 18, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}}}}}, "episodes": 45, "combined_reward": 0.4666666666666667, "event": "baseline", "step": 0, "selection_metric": 0.4666666666666667}
+[step 1/10] loss=0.0000 reward=0.750 std=0.433 kl=0.0000 grad=3.5745
+[selector-diagnostic step=1] {"start_step": 1, "end_step": 1, "groups": 1, "mean_training_reward": 0.75, "mean_reward_std": 0.4330126941204071, "mixed_QA_reward_groups": 1, "mixed_QA_reward_groups_fraction": 1.0, "groups_with_reward_std_gt_zero": 1, "groups_with_reward_std_gt_zero_fraction": 1.0, "median_unique_selected_sets": 6.0, "mean_unique_selected_sets": 6.0, "identical_set_groups": 0, "identical_set_groups_fraction": 0.0, "mean_containment_rate": 0.5, "mixed_containment_groups": 1, "mixed_containment_groups_fraction": 1.0, "mean_policy_set_entropy": 2.295109987258911, "mean_normalized_policy_set_entropy": 0.9967535734176636, "yes_probability_count": 5, "yes_probability_mean": 0.8191210150718689, "yes_probability_std": 0.06612561541252619, "yes_probability_min": 0.7336030006408691, "yes_probability_max": 0.8917660713195801, "mean_KL": 0.0, "max_KL": 0.0, "mean_gradient_norm": 3.5744895935058594, "nonzero_gradient_groups_fraction": 1.0}
+[validation step=5] {"qa_accuracy": 0.4222222222222222, "containment": 0.4444444444444444, "workspace_set_reward": 0.5281481481481481, "verbal_auc": 0.4990798251667817, "verbal_within_episode_auc": 0.5066666666666667, "verbal_yes_rate": 0.9906976744186047, "reporter_correlations": {"schema_version": 1, "definitions": {"v_rl": "adapter-enabled P(Yes) over aggregated constrained No/Yes logits at temperature 1", "w_ref": "immutable raw W_rr from the matched frozen reference model", "y_utility": "1 iff candidate.label == load_bearing, else 0", "correlation_unit": "candidate", "uncertainty_unit": "episode"}, "bootstrap": {"method": "episode_cluster_percentile", "samples_requested": 4000, "seed": 0, "rng": "numpy.random.default_rng / PCG64", "confidence": 0.95, "stratified_by_source": true}, "n_episodes": 45, "n_candidates": 215, "utility_auc": 0.4990798251667817, "yes_rate": 0.9906976744186047, "targets": {"w_ref": {"pearson": {"pooled_candidates": {"estimate": -0.015875939065392843, "status": "ok", "n_candidates": 215, "ci_95": [-0.12138224705335407, 0.08555023526511728], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.40775}, "equal_episode_mean": {"estimate": -0.0403784396146461, "status": "ok", "n_valid_episodes": 45, "n_excluded_episodes": 0, "excluded_episode_reasons": {}, "ci_95": [-0.1826715478366541, 0.11085751728542212], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.2965}}, "spearman": {"pooled_candidates": {"estimate": 0.06039122166297983, "status": "ok", "n_candidates": 215, "ci_95": [-0.09437772873147388, 0.21612247513715355], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.773}, "equal_episode_mean": {"estimate": 0.026455026455026454, "status": "ok", "n_valid_episodes": 45, "n_excluded_episodes": 0, "excluded_episode_reasons": {}, "ci_95": [-0.12455026455026454, 0.19312169312169314], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.6315}}}, "y_utility": {"pearson": {"pooled_candidates": {"estimate": -0.043190248972738786, "status": "ok", "n_candidates": 215, "ci_95": [-0.10843708692081253, 0.03033454106220502], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.1275}, "equal_episode_mean": {"estimate": 0.03902361133374077, "status": "ok", "n_valid_episodes": 45, "n_excluded_episodes": 0, "excluded_episode_reasons": {}, "ci_95": [-0.10059119561336846, 0.17029905010133367], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.70825}}, "spearman": {"pooled_candidates": {"estimate": -0.00138241093652454, "status": "ok", "n_candidates": 215, "ci_95": [-0.07674388320151841, 0.07818145251801857], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.48475}, "equal_episode_mean": {"estimate": 0.02219271870487958, "status": "ok", "n_valid_episodes": 45, "n_excluded_episodes": 0, "excluded_episode_reasons": {}, "ci_95": [-0.10251052329598727, 0.14473754242073703], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.62925}}}}, "by_source": {"evoked": {"n_episodes": 15, "n_candidates": 72, "utility_auc": 0.4678362573099415, "targets": {"w_ref": {"pearson": {"pooled_candidates": {"estimate": -0.10024613354357136, "status": "ok", "n_candidates": 72}, "equal_episode_mean": {"estimate": -0.17723325845449847, "status": "ok", "n_valid_episodes": 15, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": 0.05447383230867317, "status": "ok", "n_candidates": 72}, "equal_episode_mean": {"estimate": -0.039999999999999994, "status": "ok", "n_valid_episodes": 15, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}, "y_utility": {"pearson": {"pooled_candidates": {"estimate": -0.07892634970706759, "status": "ok", "n_candidates": 72}, "equal_episode_mean": {"estimate": -0.1331021617984475, "status": "ok", "n_valid_episodes": 15, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": -0.045253237519799656, "status": "ok", "n_candidates": 72}, "equal_episode_mean": {"estimate": -0.08792393743513216, "status": "ok", "n_valid_episodes": 15, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}}}, "evoked_g2": {"n_episodes": 12, "n_candidates": 56, "utility_auc": 0.4602272727272727, "targets": {"w_ref": {"pearson": {"pooled_candidates": {"estimate": 0.001050226517578311, "status": "ok", "n_candidates": 56}, "equal_episode_mean": {"estimate": 0.09505393986514105, "status": "ok", "n_valid_episodes": 12, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": -0.08017908714579998, "status": "ok", "n_candidates": 56}, "equal_episode_mean": {"estimate": 0.008333333333333331, "status": "ok", "n_valid_episodes": 12, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}, "y_utility": {"pearson": {"pooled_candidates": {"estimate": -0.1552219312316217, "status": "ok", "n_candidates": 56}, "equal_episode_mean": {"estimate": -0.269061691189293, "status": "ok", "n_valid_episodes": 12, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": -0.05654239287700427, "status": "ok", "n_candidates": 56}, "equal_episode_mean": {"estimate": -0.2605209408130925, "status": "ok", "n_valid_episodes": 12, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}}}, "explicit": {"n_episodes": 18, "n_candidates": 87, "utility_auc": 0.5567901234567901, "targets": {"w_ref": {"pearson": {"pooled_candidates": {"estimate": 0.12309300382085211, "status": "ok", "n_candidates": 87}, "equal_episode_mean": {"estimate": -0.016621010234627205, "status": "ok", "n_valid_episodes": 18, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": 0.10282043103841072, "status": "ok", "n_candidates": 87}, "equal_episode_mean": {"estimate": 0.09391534391534391, "status": "ok", "n_valid_episodes": 18, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}, "y_utility": {"pearson": {"pooled_candidates": {"estimate": 0.07287940093006318, "status": "ok", "n_candidates": 87}, "equal_episode_mean": {"estimate": 0.38785195729258687, "status": "ok", "n_valid_episodes": 18, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": 0.09101906297833946, "status": "ok", "n_candidates": 87}, "equal_episode_mean": {"estimate": 0.30243237183353744, "status": "ok", "n_valid_episodes": 18, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}}}}}, "episodes": 45, "combined_reward": 0.4222222222222222, "event": "validation", "step": 5, "selection_metric": 0.4222222222222222}
+/rodata/azradonc_dev/m253405/myconda/envs/jspace/lib/python3.12/site-packages/peft/utils/save_and_load.py:243: UserWarning: Could not find a config file in Qwen/Qwen3-32B - will assume that the vocabulary was not modified.
+  warnings.warn(
+[step 10/10] loss=0.0020 reward=0.375 std=0.484 kl=0.0007 grad=1.8928
+[selector-diagnostic step=10] {"start_step": 1, "end_step": 10, "groups": 10, "mean_training_reward": 0.55, "mean_reward_std": 0.4463954925537109, "mixed_QA_reward_groups": 10, "mixed_QA_reward_groups_fraction": 1.0, "groups_with_reward_std_gt_zero": 10, "groups_with_reward_std_gt_zero_fraction": 1.0, "median_unique_selected_sets": 5.0, "mean_unique_selected_sets": 5.2, "identical_set_groups": 0, "identical_set_groups_fraction": 0.0, "mean_containment_rate": 0.525, "mixed_containment_groups": 10, "mixed_containment_groups_fraction": 1.0, "mean_policy_set_entropy": 2.1844133615493773, "mean_normalized_policy_set_entropy": 0.9975470960140228, "yes_probability_count": 48, "yes_probability_mean": 0.8686204639573892, "yes_probability_std": 0.09958333339018412, "yes_probability_min": 0.5784777402877808, "yes_probability_max": 0.9899981617927551, "mean_KL": 0.0005855916388100013, "max_KL": 0.0012001288123428822, "mean_gradient_norm": 2.75739471912384, "nonzero_gradient_groups_fraction": 1.0}
+[validation step=10] {"qa_accuracy": 0.5111111111111111, "containment": 0.5555555555555556, "workspace_set_reward": 0.5224074074074073, "verbal_auc": 0.49562916954221303, "verbal_within_episode_auc": 0.4825925925925926, "verbal_yes_rate": 0.9906976744186047, "reporter_correlations": {"schema_version": 1, "definitions": {"v_rl": "adapter-enabled P(Yes) over aggregated constrained No/Yes logits at temperature 1", "w_ref": "immutable raw W_rr from the matched frozen reference model", "y_utility": "1 iff candidate.label == load_bearing, else 0", "correlation_unit": "candidate", "uncertainty_unit": "episode"}, "bootstrap": {"method": "episode_cluster_percentile", "samples_requested": 4000, "seed": 0, "rng": "numpy.random.default_rng / PCG64", "confidence": 0.95, "stratified_by_source": true}, "n_episodes": 45, "n_candidates": 215, "utility_auc": 0.49562916954221303, "yes_rate": 0.9906976744186047, "targets": {"w_ref": {"pearson": {"pooled_candidates": {"estimate": -0.011404403398341062, "status": "ok", "n_candidates": 215, "ci_95": [-0.10829623162113897, 0.08522762248965995], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.4265}, "equal_episode_mean": {"estimate": -0.02576297300570822, "status": "ok", "n_valid_episodes": 45, "n_excluded_episodes": 0, "excluded_episode_reasons": {}, "ci_95": [-0.1692733595821337, 0.12641405230513297], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.382}}, "spearman": {"pooled_candidates": {"estimate": 0.04708244030618603, "status": "ok", "n_candidates": 215, "ci_95": [-0.10709875599564458, 0.19858361477576436], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.72575}, "equal_episode_mean": {"estimate": 0.018835978835978838, "status": "ok", "n_valid_episodes": 45, "n_excluded_episodes": 0, "excluded_episode_reasons": {}, "ci_95": [-0.11588095238095238, 0.16042857142857145], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.62}}}, "y_utility": {"pearson": {"pooled_candidates": {"estimate": -0.04778390316215314, "status": "ok", "n_candidates": 215, "ci_95": [-0.11334561449849387, 0.027649160907149084], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.1075}, "equal_episode_mean": {"estimate": 0.001481099589697752, "status": "ok", "n_valid_episodes": 45, "n_excluded_episodes": 0, "excluded_episode_reasons": {}, "ci_95": [-0.13860244248365922, 0.13814213255128102], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.49425}}, "spearman": {"pooled_candidates": {"estimate": -0.006566451948491564, "status": "ok", "n_candidates": 215, "ci_95": [-0.08496700949444727, 0.073673692999674], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.4345}, "equal_episode_mean": {"estimate": -0.015040406380895883, "status": "ok", "n_valid_episodes": 45, "n_excluded_episodes": 0, "excluded_episode_reasons": {}, "ci_95": [-0.14132256542950314, 0.11036502999279933], "bootstrap_samples_effective": 4000, "probability_gt_zero": 0.40975}}}}, "by_source": {"evoked": {"n_episodes": 15, "n_candidates": 72, "utility_auc": 0.4760233918128655, "targets": {"w_ref": {"pearson": {"pooled_candidates": {"estimate": -0.08577406121028802, "status": "ok", "n_candidates": 72}, "equal_episode_mean": {"estimate": -0.18728829987540965, "status": "ok", "n_valid_episodes": 15, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": 0.02431063590635001, "status": "ok", "n_candidates": 72}, "equal_episode_mean": {"estimate": -0.11333333333333333, "status": "ok", "n_valid_episodes": 15, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}, "y_utility": {"pearson": {"pooled_candidates": {"estimate": -0.07480517204349008, "status": "ok", "n_candidates": 72}, "equal_episode_mean": {"estimate": -0.145653778521619, "status": "ok", "n_valid_episodes": 15, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": -0.03373423160566884, "status": "ok", "n_candidates": 72}, "equal_episode_mean": {"estimate": -0.13506438951423533, "status": "ok", "n_valid_episodes": 15, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}}}, "evoked_g2": {"n_episodes": 12, "n_candidates": 56, "utility_auc": 0.42424242424242425, "targets": {"w_ref": {"pearson": {"pooled_candidates": {"estimate": 0.011855684297706844, "status": "ok", "n_candidates": 56}, "equal_episode_mean": {"estimate": 0.18911600771944637, "status": "ok", "n_valid_episodes": 12, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": -0.06466275911332206, "status": "ok", "n_candidates": 56}, "equal_episode_mean": {"estimate": 0.11666666666666665, "status": "ok", "n_valid_episodes": 12, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}, "y_utility": {"pearson": {"pooled_candidates": {"estimate": -0.1656858201440641, "status": "ok", "n_candidates": 56}, "equal_episode_mean": {"estimate": -0.3781409099072157, "status": "ok", "n_valid_episodes": 12, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": -0.10769979595619861, "status": "ok", "n_candidates": 56}, "equal_episode_mean": {"estimate": -0.34890928846141095, "status": "ok", "n_valid_episodes": 12, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}}}, "explicit": {"n_episodes": 18, "n_candidates": 87, "utility_auc": 0.562962962962963, "targets": {"w_ref": {"pearson": {"pooled_candidates": {"estimate": 0.11946099031860317, "status": "ok", "n_candidates": 87}, "equal_episode_mean": {"estimate": -0.03441118776439339, "status": "ok", "n_valid_episodes": 18, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": 0.07591926003554017, "status": "ok", "n_candidates": 87}, "equal_episode_mean": {"estimate": 0.06375661375661376, "status": "ok", "n_valid_episodes": 18, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}, "y_utility": {"pearson": {"pooled_candidates": {"estimate": 0.07400524713048189, "status": "ok", "n_candidates": 87}, "equal_episode_mean": {"estimate": 0.37717483768040405, "status": "ok", "n_valid_episodes": 18, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}, "spearman": {"pooled_candidates": {"estimate": 0.10091243938902854, "status": "ok", "n_candidates": 87}, "equal_episode_mean": {"estimate": 0.3075588342838971, "status": "ok", "n_valid_episodes": 18, "n_excluded_episodes": 0, "excluded_episode_reasons": {}}}}}}}}, "episodes": 45, "combined_reward": 0.5111111111111111, "event": "validation", "step": 10, "selection_metric": 0.5111111111111111}
+{
+  "mode": "rl-qa",
+  "steps_completed": 10,
+  "best_validation_metric": 0.5111111111111111,
+  "best_checkpoint": "data/results/rlqa32_a100/canary/formal_rl-qa_Qwen3-32B_rank_continuous_split0_s0_beta0p03_k2_lq1_lw0/best-step-10",
+  "final_adapter": "data/results/rlqa32_a100/canary/formal_rl-qa_Qwen3-32B_rank_continuous_split0_s0_beta0p03_k2_lq1_lw0/final_adapter",
+  "baseline_validation": {
+    "qa_accuracy": 0.4666666666666667,
+    "containment": 0.4666666666666667,
+    "workspace_set_reward": 0.5309259259259259,
+    "verbal_auc": 0.4916034046468829,
+    "verbal_within_episode_auc": 0.5083333333333333,
+    "verbal_yes_rate": 0.9906976744186047,
+    "reporter_correlations": {
+      "schema_version": 1,
+      "definitions": {
+        "v_rl": "adapter-enabled P(Yes) over aggregated constrained No/Yes logits at temperature 1",
+        "w_ref": "immutable raw W_rr from the matched frozen reference model",
+        "y_utility": "1 iff candidate.label == load_bearing, else 0",
+        "correlation_unit": "candidate",
+        "uncertainty_unit": "episode"
+      },
+      "bootstrap": {
+        "method": "episode_cluster_percentile",
+        "samples_requested": 4000,
+        "seed": 0,
+        "rng": "numpy.random.default_rng / PCG64",
+        "confidence": 0.95,
+        "stratified_by_source": true
+      },
+      "n_episodes": 45,
+      "n_candidates": 215,
+      "utility_auc": 0.4916034046468829,
+      "yes_rate": 0.9906976744186047,
+      "targets": {
+        "w_ref": {
+          "pearson": {
+            "pooled_candidates": {
+              "estimate": -0.003022855175959866,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.08689259856677178,
+                0.08116997899645785
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.47525
+            },
+            "equal_episode_mean": {
+              "estimate": -0.019369519433351114,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.16039916754219743,
+                0.1265436942874173
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.406
+            }
+          },
+          "spearman": {
+            "pooled_candidates": {
+              "estimate": 0.06837926766786728,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.08851131688790613,
+                0.223702314911159
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.8045
+            },
+            "equal_episode_mean": {
+              "estimate": 0.07470899470899471,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.06328835978835978,
+                0.21693650793650798
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.85675
+            }
+          }
+        },
+        "y_utility": {
+          "pearson": {
+            "pooled_candidates": {
+              "estimate": -0.0639945469682223,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.13800562064283567,
+                0.018901832421075085
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.06825
+            },
+            "equal_episode_mean": {
+              "estimate": 0.021112629898936343,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.13817872755854516,
+                0.1735902059271962
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.58825
+            }
+          },
+          "spearman": {
+            "pooled_candidates": {
+              "estimate": -0.012614499795786426,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.09396395636506646,
+                0.07000390578710743
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.38625
+            },
+            "equal_episode_mean": {
+              "estimate": 0.023401057722597804,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.123147484912412,
+                0.1731963797684824
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.60625
+            }
+          }
+        }
+      },
+      "by_source": {
+        "evoked": {
+          "n_episodes": 15,
+          "n_candidates": 72,
+          "utility_auc": 0.4631578947368421,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": -0.07665521710791648,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.1791243067229588,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.06138757135611398,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.04,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": -0.09621650718858565,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.19241903546586994,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": -0.0518355266135887,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.13506438951423533,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        },
+        "evoked_g2": {
+          "n_episodes": 12,
+          "n_candidates": 56,
+          "utility_auc": 0.4412878787878788,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.016974402435061625,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.1685245381070303,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": -0.08298159573316384,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.10833333333333334,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": -0.1815555413479709,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.263899962076474,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": -0.08346734186605392,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.21748779252189898,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        },
+        "explicit": {
+          "n_episodes": 18,
+          "n_candidates": 87,
+          "utility_auc": 0.5561728395061728,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.11634567392516726,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.011503235052265673,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.10200027338588417,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.08121693121693122,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.060268510836054244,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.3890640790198818,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.09002972533727055,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.31604816391629,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "episodes": 45,
+    "combined_reward": 0.4666666666666667,
+    "event": "baseline",
+    "step": 0,
+    "selection_metric": 0.4666666666666667
+  },
+  "last_validation": {
+    "qa_accuracy": 0.5111111111111111,
+    "containment": 0.5555555555555556,
+    "workspace_set_reward": 0.5224074074074073,
+    "verbal_auc": 0.49562916954221303,
+    "verbal_within_episode_auc": 0.4825925925925926,
+    "verbal_yes_rate": 0.9906976744186047,
+    "reporter_correlations": {
+      "schema_version": 1,
+      "definitions": {
+        "v_rl": "adapter-enabled P(Yes) over aggregated constrained No/Yes logits at temperature 1",
+        "w_ref": "immutable raw W_rr from the matched frozen reference model",
+        "y_utility": "1 iff candidate.label == load_bearing, else 0",
+        "correlation_unit": "candidate",
+        "uncertainty_unit": "episode"
+      },
+      "bootstrap": {
+        "method": "episode_cluster_percentile",
+        "samples_requested": 4000,
+        "seed": 0,
+        "rng": "numpy.random.default_rng / PCG64",
+        "confidence": 0.95,
+        "stratified_by_source": true
+      },
+      "n_episodes": 45,
+      "n_candidates": 215,
+      "utility_auc": 0.49562916954221303,
+      "yes_rate": 0.9906976744186047,
+      "targets": {
+        "w_ref": {
+          "pearson": {
+            "pooled_candidates": {
+              "estimate": -0.011404403398341062,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.10829623162113897,
+                0.08522762248965995
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.4265
+            },
+            "equal_episode_mean": {
+              "estimate": -0.02576297300570822,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.1692733595821337,
+                0.12641405230513297
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.382
+            }
+          },
+          "spearman": {
+            "pooled_candidates": {
+              "estimate": 0.04708244030618603,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.10709875599564458,
+                0.19858361477576436
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.72575
+            },
+            "equal_episode_mean": {
+              "estimate": 0.018835978835978838,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.11588095238095238,
+                0.16042857142857145
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.62
+            }
+          }
+        },
+        "y_utility": {
+          "pearson": {
+            "pooled_candidates": {
+              "estimate": -0.04778390316215314,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.11334561449849387,
+                0.027649160907149084
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.1075
+            },
+            "equal_episode_mean": {
+              "estimate": 0.001481099589697752,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.13860244248365922,
+                0.13814213255128102
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.49425
+            }
+          },
+          "spearman": {
+            "pooled_candidates": {
+              "estimate": -0.006566451948491564,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.08496700949444727,
+                0.073673692999674
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.4345
+            },
+            "equal_episode_mean": {
+              "estimate": -0.015040406380895883,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.14132256542950314,
+                0.11036502999279933
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.40975
+            }
+          }
+        }
+      },
+      "by_source": {
+        "evoked": {
+          "n_episodes": 15,
+          "n_candidates": 72,
+          "utility_auc": 0.4760233918128655,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": -0.08577406121028802,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.18728829987540965,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.02431063590635001,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.11333333333333333,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": -0.07480517204349008,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.145653778521619,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": -0.03373423160566884,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.13506438951423533,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        },
+        "evoked_g2": {
+          "n_episodes": 12,
+          "n_candidates": 56,
+          "utility_auc": 0.42424242424242425,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.011855684297706844,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.18911600771944637,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": -0.06466275911332206,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.11666666666666665,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": -0.1656858201440641,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.3781409099072157,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": -0.10769979595619861,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.34890928846141095,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        },
+        "explicit": {
+          "n_episodes": 18,
+          "n_candidates": 87,
+          "utility_auc": 0.562962962962963,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.11946099031860317,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.03441118776439339,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.07591926003554017,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.06375661375661376,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.07400524713048189,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.37717483768040405,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.10091243938902854,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.3075588342838971,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "episodes": 45,
+    "combined_reward": 0.5111111111111111,
+    "event": "validation",
+    "step": 10,
+    "selection_metric": 0.5111111111111111
+  },
+  "best_validation": {
+    "qa_accuracy": 0.5111111111111111,
+    "containment": 0.5555555555555556,
+    "workspace_set_reward": 0.5224074074074073,
+    "verbal_auc": 0.49562916954221303,
+    "verbal_within_episode_auc": 0.4825925925925926,
+    "verbal_yes_rate": 0.9906976744186047,
+    "reporter_correlations": {
+      "schema_version": 1,
+      "definitions": {
+        "v_rl": "adapter-enabled P(Yes) over aggregated constrained No/Yes logits at temperature 1",
+        "w_ref": "immutable raw W_rr from the matched frozen reference model",
+        "y_utility": "1 iff candidate.label == load_bearing, else 0",
+        "correlation_unit": "candidate",
+        "uncertainty_unit": "episode"
+      },
+      "bootstrap": {
+        "method": "episode_cluster_percentile",
+        "samples_requested": 4000,
+        "seed": 0,
+        "rng": "numpy.random.default_rng / PCG64",
+        "confidence": 0.95,
+        "stratified_by_source": true
+      },
+      "n_episodes": 45,
+      "n_candidates": 215,
+      "utility_auc": 0.49562916954221303,
+      "yes_rate": 0.9906976744186047,
+      "targets": {
+        "w_ref": {
+          "pearson": {
+            "pooled_candidates": {
+              "estimate": -0.011404403398341062,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.10829623162113897,
+                0.08522762248965995
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.4265
+            },
+            "equal_episode_mean": {
+              "estimate": -0.02576297300570822,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.1692733595821337,
+                0.12641405230513297
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.382
+            }
+          },
+          "spearman": {
+            "pooled_candidates": {
+              "estimate": 0.04708244030618603,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.10709875599564458,
+                0.19858361477576436
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.72575
+            },
+            "equal_episode_mean": {
+              "estimate": 0.018835978835978838,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.11588095238095238,
+                0.16042857142857145
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.62
+            }
+          }
+        },
+        "y_utility": {
+          "pearson": {
+            "pooled_candidates": {
+              "estimate": -0.04778390316215314,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.11334561449849387,
+                0.027649160907149084
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.1075
+            },
+            "equal_episode_mean": {
+              "estimate": 0.001481099589697752,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.13860244248365922,
+                0.13814213255128102
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.49425
+            }
+          },
+          "spearman": {
+            "pooled_candidates": {
+              "estimate": -0.006566451948491564,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.08496700949444727,
+                0.073673692999674
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.4345
+            },
+            "equal_episode_mean": {
+              "estimate": -0.015040406380895883,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.14132256542950314,
+                0.11036502999279933
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.40975
+            }
+          }
+        }
+      },
+      "by_source": {
+        "evoked": {
+          "n_episodes": 15,
+          "n_candidates": 72,
+          "utility_auc": 0.4760233918128655,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": -0.08577406121028802,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.18728829987540965,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.02431063590635001,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.11333333333333333,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": -0.07480517204349008,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.145653778521619,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": -0.03373423160566884,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.13506438951423533,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        },
+        "evoked_g2": {
+          "n_episodes": 12,
+          "n_candidates": 56,
+          "utility_auc": 0.42424242424242425,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.011855684297706844,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.18911600771944637,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": -0.06466275911332206,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.11666666666666665,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": -0.1656858201440641,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.3781409099072157,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": -0.10769979595619861,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.34890928846141095,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        },
+        "explicit": {
+          "n_episodes": 18,
+          "n_candidates": 87,
+          "utility_auc": 0.562962962962963,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.11946099031860317,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.03441118776439339,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.07591926003554017,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.06375661375661376,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.07400524713048189,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.37717483768040405,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.10091243938902854,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.3075588342838971,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "episodes": 45,
+    "combined_reward": 0.5111111111111111,
+    "event": "validation",
+    "step": 10,
+    "selection_metric": 0.5111111111111111
+  },
+  "reporter_correlation_artifact": "data/results/rlqa32_a100/canary/formal_rl-qa_Qwen3-32B_rank_continuous_split0_s0_beta0p03_k2_lq1_lw0/reporter_correlations.jsonl",
+  "workspace_teacher_model": "Qwen/Qwen3-32B",
+  "teacher_matches_policy_reference": true,
+  "effective_advantage_normalization": "zscore",
+  "dropout_audit": {
+    "dropout_modules_zeroed": 0,
+    "config_fields_zeroed": [],
+    "dropout_modules_found": [],
+    "dropout_modules_modified": [],
+    "config_fields_found": [
+      {
+        "name": "attention_dropout",
+        "before": 0.0,
+        "after": 0.0,
+        "modified": false
+      }
+    ],
+    "config_fields_modified": [],
+    "remaining_nonzero": [],
+    "postcondition_satisfied": true
+  },
+  "elapsed_seconds": 280.25417256355286,
+  "diagnostics": [],
+  "selector_training_diagnostics": {
+    "window_size": 25,
+    "overall": {
+      "start_step": 1,
+      "end_step": 10,
+      "groups": 10,
+      "mean_training_reward": 0.55,
+      "mean_reward_std": 0.4463954925537109,
+      "mixed_QA_reward_groups": 10,
+      "mixed_QA_reward_groups_fraction": 1.0,
+      "groups_with_reward_std_gt_zero": 10,
+      "groups_with_reward_std_gt_zero_fraction": 1.0,
+      "median_unique_selected_sets": 5.0,
+      "mean_unique_selected_sets": 5.2,
+      "identical_set_groups": 0,
+      "identical_set_groups_fraction": 0.0,
+      "mean_containment_rate": 0.525,
+      "mixed_containment_groups": 10,
+      "mixed_containment_groups_fraction": 1.0,
+      "mean_policy_set_entropy": 2.1844133615493773,
+      "mean_normalized_policy_set_entropy": 0.9975470960140228,
+      "yes_probability_count": 48,
+      "yes_probability_mean": 0.8686204639573892,
+      "yes_probability_std": 0.09958333339018412,
+      "yes_probability_min": 0.5784777402877808,
+      "yes_probability_max": 0.9899981617927551,
+      "mean_KL": 0.0005855916388100013,
+      "max_KL": 0.0012001288123428822,
+      "mean_gradient_norm": 2.75739471912384,
+      "nonzero_gradient_groups_fraction": 1.0
+    },
+    "windows": [
+      {
+        "start_step": 1,
+        "end_step": 10,
+        "groups": 10,
+        "mean_training_reward": 0.55,
+        "mean_reward_std": 0.4463954925537109,
+        "mixed_QA_reward_groups": 10,
+        "mixed_QA_reward_groups_fraction": 1.0,
+        "groups_with_reward_std_gt_zero": 10,
+        "groups_with_reward_std_gt_zero_fraction": 1.0,
+        "median_unique_selected_sets": 5.0,
+        "mean_unique_selected_sets": 5.2,
+        "identical_set_groups": 0,
+        "identical_set_groups_fraction": 0.0,
+        "mean_containment_rate": 0.525,
+        "mixed_containment_groups": 10,
+        "mixed_containment_groups_fraction": 1.0,
+        "mean_policy_set_entropy": 2.1844133615493773,
+        "mean_normalized_policy_set_entropy": 0.9975470960140228,
+        "yes_probability_count": 48,
+        "yes_probability_mean": 0.8686204639573892,
+        "yes_probability_std": 0.09958333339018412,
+        "yes_probability_min": 0.5784777402877808,
+        "yes_probability_max": 0.9899981617927551,
+        "mean_KL": 0.0005855916388100013,
+        "max_KL": 0.0012001288123428822,
+        "mean_gradient_norm": 2.75739471912384,
+        "nonzero_gradient_groups_fraction": 1.0
+      }
+    ]
+  }
+}
+Completed: formal_rl-qa_Qwen3-32B_rank_continuous_split0_s0_beta0p03_k2_lq1_lw0
+
+STOP: inspect summary.json, metrics.jsonl, and rollouts.jsonl.
+No later stage has been launched. Start it only after the manual gate passes.
+PEAK_ALLOCATED_GIB 0.0
+RLQA32_CANARY_OK
