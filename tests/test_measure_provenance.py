@@ -126,7 +126,7 @@ def test_measure_revision_pins_and_complete_metadata(
     raw_rows = json.loads(output.read_text(encoding="utf-8"))
     assert [row["candidate_index"] for row in raw_rows] == [0, 1]
     metadata = json.loads(Path(f"{output}.metadata").read_text(encoding="utf-8"))
-    assert metadata["schema_version"] == "workspace_measurement_metadata.v2"
+    assert metadata["schema_version"] == "workspace_measurement_metadata.v3"
     assert metadata["model_revision"] == "model-commit"
     assert metadata["tokenizer_revision"] == "tokenizer-commit"
     assert metadata["chat_template_sha256"] == hashlib.sha256(
@@ -148,3 +148,136 @@ def test_measure_revision_pins_and_complete_metadata(
     assert metadata["hashes"]["raw_output_sha256"] == hashlib.sha256(
         output.read_bytes()
     ).hexdigest()
+
+
+def test_verbal_score_is_the_ratio_not_the_absolute_mass():
+    """Regression: the guard epsilon must not dominate a tiny yes/no mass.
+
+    Before the fix, verbal_salience returned py/(py+pn+1e-9) computed on
+    full-vocabulary softmax probabilities. Real probes put ~1e-13 of mass on
+    the yes/no tokens, so the epsilon swamped the denominator and the function
+    returned py*1e9 -- a monotone function of the ABSOLUTE yes probability
+    rather than the documented yes-versus-no ratio. On the logits below the old
+    form returns about 5.9e-4 while the true ratio is about 0.92.
+    """
+    import math
+    import torch
+
+    from experiments.measure import _yes_vs_no
+
+    logits = torch.full((256,), -50.0)
+    logits[0] = 30.0          # some other token holds essentially all the mass
+    yes_ids, no_ids = [1, 2], [3, 4]
+    logits[yes_ids[0]] = 1.3125
+    logits[yes_ids[1]] = -0.7539
+    logits[no_ids[0]] = -0.8423
+    logits[no_ids[1]] = -4.625
+
+    value = _yes_vs_no(logits, yes_ids, no_ids)
+
+    yes = torch.logsumexp(logits[yes_ids], dim=0)
+    no = torch.logsumexp(logits[no_ids], dim=0)
+    assert value == pytest.approx(float(torch.sigmoid(yes - no)), abs=1e-9)
+    assert value > 0.9
+
+    probabilities = torch.softmax(logits, dim=-1)
+    py = float(sum(probabilities[i] for i in yes_ids))
+    pn = float(sum(probabilities[i] for i in no_ids))
+    assert py + pn < 1e-9, "fixture must sit in the regime where the epsilon bit"
+    old_form = py / (py + pn + 1e-9)
+    assert old_form < 0.01
+    assert not math.isclose(old_form, value, abs_tol=0.5)
+
+
+def test_verbal_score_matches_the_rl_admission_policy_exactly():
+    """The metacognitive probe and the RL policy must agree on identical logits.
+
+    They are two implementations of the same quantity; before the fix they
+    disagreed by up to 0.98 on real prompts.
+    """
+    import torch
+    import torch.nn.functional as F
+
+    from experiments.measure import _yes_vs_no
+
+    torch.manual_seed(0)
+    for _ in range(20):
+        logits = torch.randn(512) * 6.0
+        yes_ids, no_ids = [7, 11, 13], [17, 19]
+        probe = _yes_vs_no(logits, yes_ids, no_ids)
+        # the RL path: logsumexp per action, then softmax over [no, yes]
+        actions = torch.stack(
+            (torch.logsumexp(logits[no_ids], 0), torch.logsumexp(logits[yes_ids], 0))
+        )
+        policy = float(F.softmax(actions, dim=-1)[1])
+        assert probe == pytest.approx(policy, abs=1e-6)
+
+
+def test_verbal_score_is_invariant_to_the_absolute_probability_mass():
+    """Epsilon-independence: shifting all other logits must not move the score.
+
+    Adding a constant to an unrelated token changes how much absolute mass
+    lands on yes/no while leaving their relative preference untouched. The
+    corrected score must be flat across that shift; the old form was not.
+    """
+    import torch
+
+    from experiments.measure import _yes_vs_no
+
+    yes_ids, no_ids = [1, 2], [3, 4]
+    scores, old_scores = [], []
+    for other in (0.0, 10.0, 20.0, 30.0, 40.0):
+        logits = torch.full((256,), -50.0)
+        logits[0] = other
+        logits[yes_ids[0]], logits[yes_ids[1]] = 1.3125, -0.7539
+        logits[no_ids[0]], logits[no_ids[1]] = -0.8423, -4.625
+        scores.append(_yes_vs_no(logits, yes_ids, no_ids))
+        probabilities = torch.softmax(logits, dim=-1)
+        py = float(sum(probabilities[i] for i in yes_ids))
+        pn = float(sum(probabilities[i] for i in no_ids))
+        old_scores.append(py / (py + pn + 1e-9))
+
+    assert max(scores) - min(scores) < 1e-6, "corrected score must not track total mass"
+    assert max(old_scores) - min(old_scores) > 0.5, "the old form did track total mass"
+
+
+def test_verbal_score_token_sets_agree_between_probe_and_policy():
+    """The probe's 5 variants and the policy's 6 must not change the ranking.
+
+    The policy adds ' YES' and ' NO'. Measured on real prompts the two sets
+    differ by under 1e-5, so a disagreement between the tracks can never be
+    blamed on the token set.
+    """
+    import torch
+
+    from experiments.measure import _yes_vs_no
+
+    torch.manual_seed(3)
+    probe_yes, probe_no = [11, 12, 13, 14, 15], [21, 22, 23, 24, 25]
+    policy_yes, policy_no = probe_yes + [16], probe_no + [26]
+    for _ in range(10):
+        logits = torch.randn(64) * 4.0
+        # the extra variants are rare continuations, far below the common ones
+        logits[16] = logits[probe_yes].min() - 6.0
+        logits[26] = logits[probe_no].min() - 6.0
+        assert _yes_vs_no(logits, probe_yes, probe_no) == pytest.approx(
+            _yes_vs_no(logits, policy_yes, policy_no), abs=1e-3
+        )
+
+
+def test_verbal_score_ranking_is_deterministic_and_orders_by_preference():
+    """Same logits give the same score, and a stronger yes ranks higher."""
+    import torch
+
+    from experiments.measure import _yes_vs_no
+
+    yes_ids, no_ids = [1], [2]
+    previous = -1.0
+    for yes_logit in (-4.0, -2.0, 0.0, 2.0, 4.0):
+        logits = torch.full((32,), -50.0)
+        logits[1], logits[2] = yes_logit, 0.0
+        value = _yes_vs_no(logits, yes_ids, no_ids)
+        assert value == _yes_vs_no(logits.clone(), yes_ids, no_ids)
+        assert value > previous
+        previous = value
+    assert 0.0 < previous < 1.0

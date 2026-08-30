@@ -26,6 +26,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from jlens import WorkspaceLens
 from measure import concept_token_ids, workspace_salience, yes_no_ids
 from locomo_gate import content_words, score_embedding, f1, answer, QA_PROMPT, QA_FULL
+from experiments.measure import _yes_vs_no
 
 V_PROMPT = ("{ctx}\n\nBased only on the conversation above, is the following "
             "exchange one of the most important things to remember in order "
@@ -88,10 +89,8 @@ def score_verbal(lens, ep, yes_ids, no_ids):
         prompt = lens.tok.apply_chat_template(msgs, tokenize=False,
                                               add_generation_prompt=True)
         enc = lens.tok(prompt, return_tensors="pt").to(lens.device)
-        p = F.softmax(lens.model(**enc).logits[0, -1].float(), dim=-1)
-        py = sum(p[i].item() for i in yes_ids)
-        pn = sum(p[i].item() for i in no_ids)
-        n["V"] = py / (py + pn + 1e-9)
+        logits = lens.model(**enc).logits[0, -1].float()
+        n["V"] = _yes_vs_no(logits, yes_ids, no_ids)
 
 
 def main():

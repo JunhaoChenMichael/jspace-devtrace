@@ -9,6 +9,7 @@ import torch.nn.functional as F
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from jlens import WorkspaceLens
 from measure import yes_no_ids
+from experiments.measure import _yes_vs_no
 
 PARAPHRASES = [
     ("P1", "{ctx}\n\nBased only on the passage above, is the concept \"{c}\" one of the "
@@ -46,10 +47,7 @@ def main():
                                                       add_generation_prompt=True)
                 enc = lens.tok(prompt, return_tensors="pt").to(lens.device)
                 logits = lens.model(**enc).logits[0, -1].float()
-                p = F.softmax(logits, dim=-1)
-                py = sum(p[i].item() for i in yes_ids)
-                pn = sum(p[i].item() for i in no_ids)
-                row[f"V_{tag}"] = py / (py + pn + 1e-9)
+                row[f"V_{tag}"] = _yes_vs_no(logits, yes_ids, no_ids)
             row["V_ens"] = sum(row[f"V_{t}"] for t, _ in PARAPHRASES) / len(PARAPHRASES)
             rows.append(row)
         if (ei + 1) % 10 == 0:

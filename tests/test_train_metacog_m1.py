@@ -393,7 +393,7 @@ def _write_source_fixture(
     battery_path.write_text(json.dumps(battery), encoding="utf-8")
     results_path.write_text(json.dumps(results), encoding="utf-8")
     metadata = {
-        "schema_version": "workspace_measurement_metadata.v2",
+        "schema_version": "workspace_measurement_metadata.v3",
         "model": m1.PRIMARY_MODEL,
         "adapter": None,
         "model_revision": revision,

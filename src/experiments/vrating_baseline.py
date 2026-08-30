@@ -44,14 +44,18 @@ def main():
                                                   add_generation_prompt=True)
             enc = lens.tok(prompt, return_tensors="pt").to(lens.device)
             logits = lens.model(**enc).logits[0, -1].float()
-            p = F.softmax(logits, dim=-1)
-            num, den = 0.0, 0.0
-            for d, ids in digit_ids.items():
-                pd = sum(p[i].item() for i in ids)
-                num += d * pd; den += pd
+            # Same defect class as the yes/no probe: when the digit mass falls
+            # below the guard epsilon the rating collapses toward zero instead of
+            # being the mass-weighted mean it documents. Renormalise in log space
+            # over the digit logits only.
+            digit_logsums = {
+                d: torch.logsumexp(logits[list(ids)], dim=0) for d, ids in digit_ids.items()
+            }
+            keys = sorted(digit_logsums)
+            weights = torch.softmax(torch.stack([digit_logsums[d] for d in keys]), dim=0)
             rows.append({"episode": ei, "concept": it["concept"],
                          "label": it["label"],
-                         "V_rating": num / (den + 1e-9)})
+                         "V_rating": float(sum(float(w) * d for w, d in zip(weights, keys)))})
         if (ei + 1) % 10 == 0:
             print(f"  {ei+1}/{len(battery)}", flush=True)
 

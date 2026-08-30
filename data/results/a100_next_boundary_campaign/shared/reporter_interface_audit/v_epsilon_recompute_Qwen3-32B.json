@@ -1,0 +1,3367 @@
+{
+  "auc_V_as_reported": 0.6570830579422781,
+  "auc_V_true_ratio": 0.3365829477858559,
+  "auc_p_yes_absolute": 0.6571381361533377,
+  "battery": "data/benchmarks/battery_v4_final.json",
+  "model": "Qwen/Qwen3-32B",
+  "n_candidates": 335,
+  "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+  "rows": [
+    {
+      "V_as_reported": 0.0005856951142011987,
+      "V_true_ratio": 0.9188610911369324,
+      "candidate_index": 0,
+      "episode": 0,
+      "label": "distractor",
+      "p_no_absolute": 5.175212743156049e-14,
+      "p_yes_absolute": 5.860686827334483e-13,
+      "yes_plus_no_mass": 6.378208101650087e-13
+    },
+    {
+      "V_as_reported": 0.00043619782868417747,
+      "V_true_ratio": 0.8812445402145386,
+      "candidate_index": 1,
+      "episode": 0,
+      "label": "filler",
+      "p_no_absolute": 5.881060883509287e-14,
+      "p_yes_absolute": 4.364138445154403e-13,
+      "yes_plus_no_mass": 4.952244533505332e-13
+    },
+    {
+      "V_as_reported": 0.00042011425054483555,
+      "V_true_ratio": 0.9301270246505737,
+      "candidate_index": 2,
+      "episode": 0,
+      "label": "distractor",
+      "p_no_absolute": 3.157409500954139e-14,
+      "p_yes_absolute": 4.2030409101029287e-13,
+      "yes_plus_no_mass": 4.5187818601983426e-13
+    },
+    {
+      "V_as_reported": 0.0011369711978862292,
+      "V_true_ratio": 0.8747736811637878,
+      "candidate_index": 3,
+      "episode": 0,
+      "label": "load_bearing",
+      "p_no_absolute": 1.629724323158263e-13,
+      "p_yes_absolute": 1.1384508787071201e-12,
+      "yes_plus_no_mass": 1.3014233110229464e-12
+    },
+    {
+      "V_as_reported": 0.00048063421114442076,
+      "V_true_ratio": 0.9060538411140442,
+      "candidate_index": 4,
+      "episode": 0,
+      "label": "filler",
+      "p_no_absolute": 4.9862058113057245e-14,
+      "p_yes_absolute": 4.808893084087829e-13,
+      "yes_plus_no_mass": 5.307513665218401e-13
+    },
+    {
+      "V_as_reported": 0.00036531700448549096,
+      "V_true_ratio": 0.9356386661529541,
+      "candidate_index": 0,
+      "episode": 1,
+      "label": "distractor",
+      "p_no_absolute": 2.513948894704559e-14,
+      "p_yes_absolute": 3.654596970100593e-13,
+      "yes_plus_no_mass": 3.905991859571049e-13
+    },
+    {
+      "V_as_reported": 0.00039148725128432233,
+      "V_true_ratio": 0.9272273182868958,
+      "candidate_index": 1,
+      "episode": 1,
+      "label": "distractor",
+      "p_no_absolute": 3.073853766465649e-14,
+      "p_yes_absolute": 3.9165261203448487e-13,
+      "yes_plus_no_mass": 4.2239114969914136e-13
+    },
+    {
+      "V_as_reported": 0.00046231850226203066,
+      "V_true_ratio": 0.9410309791564941,
+      "candidate_index": 2,
+      "episode": 1,
+      "label": "filler",
+      "p_no_absolute": 2.8985091372413577e-14,
+      "p_yes_absolute": 4.625457460626092e-13,
+      "yes_plus_no_mass": 4.915308374350228e-13
+    },
+    {
+      "V_as_reported": 0.00031719924856300964,
+      "V_true_ratio": 0.9282645583152771,
+      "candidate_index": 3,
+      "episode": 1,
+      "label": "filler",
+      "p_no_absolute": 2.452125992763541e-14,
+      "p_yes_absolute": 3.173076764447641e-13,
+      "yes_plus_no_mass": 3.418289363723995e-13
+    },
+    {
+      "V_as_reported": 0.0006035972023029975,
+      "V_true_ratio": 0.8750239610671997,
+      "candidate_index": 4,
+      "episode": 1,
+      "label": "load_bearing",
+      "p_no_absolute": 8.626881489986332e-14,
+      "p_yes_absolute": 6.040138549913421e-13,
+      "yes_plus_no_mass": 6.902826698912054e-13
+    },
+    {
+      "V_as_reported": 0.0006280416036736178,
+      "V_true_ratio": 0.9644384980201721,
+      "candidate_index": 0,
+      "episode": 2,
+      "label": "distractor",
+      "p_no_absolute": 2.317272248923436e-14,
+      "p_yes_absolute": 6.284508503873187e-13,
+      "yes_plus_no_mass": 6.516235728765531e-13
+    },
+    {
+      "V_as_reported": 0.000617534116947829,
+      "V_true_ratio": 0.982671320438385,
+      "candidate_index": 1,
+      "episode": 2,
+      "label": "distractor",
+      "p_no_absolute": 1.08965774229218e-14,
+      "p_yes_absolute": 6.179224341408551e-13,
+      "yes_plus_no_mass": 6.288190115637769e-13
+    },
+    {
+      "V_as_reported": 0.0006174400217325013,
+      "V_true_ratio": 0.972770094871521,
+      "candidate_index": 2,
+      "episode": 2,
+      "label": "filler",
+      "p_no_absolute": 1.7294418867374976e-14,
+      "p_yes_absolute": 6.178321743099957e-13,
+      "yes_plus_no_mass": 6.351265931773707e-13
+    },
+    {
+      "V_as_reported": 0.00036401065183438666,
+      "V_true_ratio": 0.9558388590812683,
+      "candidate_index": 3,
+      "episode": 2,
+      "label": "load_bearing",
+      "p_no_absolute": 1.6824219019892853e-14,
+      "p_yes_absolute": 3.6414933026439333e-13,
+      "yes_plus_no_mass": 3.809735492842862e-13
+    },
+    {
+      "V_as_reported": 0.0005782738474645841,
+      "V_true_ratio": 0.9857686161994934,
+      "candidate_index": 0,
+      "episode": 3,
+      "label": "distractor",
+      "p_no_absolute": 8.35335252846129e-15,
+      "p_yes_absolute": 5.786132749145689e-13,
+      "yes_plus_no_mass": 5.869666274430302e-13
+    },
+    {
+      "V_as_reported": 0.00047881669327037705,
+      "V_true_ratio": 0.9698117971420288,
+      "candidate_index": 1,
+      "episode": 3,
+      "label": "filler",
+      "p_no_absolute": 1.491193710938081e-14,
+      "p_yes_absolute": 4.790532120296787e-13,
+      "yes_plus_no_mass": 4.939651491390595e-13
+    },
+    {
+      "V_as_reported": 0.00022664608207748215,
+      "V_true_ratio": 0.961770236492157,
+      "candidate_index": 2,
+      "episode": 3,
+      "label": "filler",
+      "p_no_absolute": 9.011176102990872e-15,
+      "p_yes_absolute": 2.2669950497985342e-13,
+      "yes_plus_no_mass": 2.357106810828443e-13
+    },
+    {
+      "V_as_reported": 0.000944778372599885,
+      "V_true_ratio": 0.9827303886413574,
+      "candidate_index": 3,
+      "episode": 3,
+      "label": "distractor",
+      "p_no_absolute": 1.6618671228648546e-14,
+      "p_yes_absolute": 9.456875386948393e-13,
+      "yes_plus_no_mass": 9.623062099234879e-13
+    },
+    {
+      "V_as_reported": 0.001876705455971163,
+      "V_true_ratio": 0.9629302024841309,
+      "candidate_index": 4,
+      "episode": 3,
+      "label": "load_bearing",
+      "p_no_absolute": 7.238828948156334e-14,
+      "p_yes_absolute": 1.8803702084985163e-12,
+      "yes_plus_no_mass": 1.9527584979800797e-12
+    },
+    {
+      "V_as_reported": 0.0007662313446927808,
+      "V_true_ratio": 0.9744945764541626,
+      "candidate_index": 0,
+      "episode": 4,
+      "label": "load_bearing",
+      "p_no_absolute": 2.0070372840357183e-14,
+      "p_yes_absolute": 7.668342957151131e-13,
+      "yes_plus_no_mass": 7.869046685554703e-13
+    },
+    {
+      "V_as_reported": 0.0008746471394249369,
+      "V_true_ratio": 0.9654567837715149,
+      "candidate_index": 1,
+      "episode": 4,
+      "label": "distractor",
+      "p_no_absolute": 3.1322427968384983e-14,
+      "p_yes_absolute": 8.754402367958103e-13,
+      "yes_plus_no_mass": 9.067626647641953e-13
+    },
+    {
+      "V_as_reported": 0.0005639945557360626,
+      "V_true_ratio": 0.9622064232826233,
+      "candidate_index": 2,
+      "episode": 4,
+      "label": "filler",
+      "p_no_absolute": 2.2165591844619525e-14,
+      "p_yes_absolute": 5.643253334249032e-13,
+      "yes_plus_no_mass": 5.864909252695227e-13
+    },
+    {
+      "V_as_reported": 0.00035125007303779185,
+      "V_true_ratio": 0.9534879922866821,
+      "candidate_index": 3,
+      "episode": 4,
+      "label": "distractor",
+      "p_no_absolute": 1.714061801294433e-14,
+      "p_yes_absolute": 3.5137951576169613e-13,
+      "yes_plus_no_mass": 3.6852013377464046e-13
+    },
+    {
+      "V_as_reported": 0.0008890593671986351,
+      "V_true_ratio": 0.9748650193214417,
+      "candidate_index": 4,
+      "episode": 4,
+      "label": "distractor",
+      "p_no_absolute": 2.294361024139744e-14,
+      "p_yes_absolute": 8.898709135014837e-13,
+      "yes_plus_no_mass": 9.128145237428812e-13
+    },
+    {
+      "V_as_reported": 0.0006679503750846312,
+      "V_true_ratio": 0.9832116961479187,
+      "candidate_index": 5,
+      "episode": 4,
+      "label": "filler",
+      "p_no_absolute": 1.141296004778707e-14,
+      "p_yes_absolute": 6.684044593849303e-13,
+      "yes_plus_no_mass": 6.798174194327174e-13
+    },
+    {
+      "V_as_reported": 0.0009401819055905503,
+      "V_true_ratio": 0.8388132452964783,
+      "candidate_index": 0,
+      "episode": 5,
+      "label": "load_bearing",
+      "p_no_absolute": 1.808685037678337e-13,
+      "p_yes_absolute": 9.412368887767864e-13,
+      "yes_plus_no_mass": 1.12210539254462e-12
+    },
+    {
+      "V_as_reported": 0.00021353037965532635,
+      "V_true_ratio": 0.9633951187133789,
+      "candidate_index": 1,
+      "episode": 5,
+      "label": "distractor",
+      "p_no_absolute": 8.115041502817187e-15,
+      "p_yes_absolute": 2.1357771779438595e-13,
+      "yes_plus_no_mass": 2.2169275929720313e-13
+    },
+    {
+      "V_as_reported": 0.00040692081166083014,
+      "V_true_ratio": 0.966124415397644,
+      "candidate_index": 2,
+      "episode": 5,
+      "label": "filler",
+      "p_no_absolute": 1.4274048455264858e-14,
+      "p_yes_absolute": 4.0709227438692763e-13,
+      "yes_plus_no_mass": 4.213663228421925e-13
+    },
+    {
+      "V_as_reported": 0.0002548605321770038,
+      "V_true_ratio": 0.9744004011154175,
+      "candidate_index": 3,
+      "episode": 5,
+      "label": "distractor",
+      "p_no_absolute": 6.6974772319620176e-15,
+      "p_yes_absolute": 2.549272099840183e-13,
+      "yes_plus_no_mass": 2.616246872159803e-13
+    },
+    {
+      "V_as_reported": 0.00019796675227336304,
+      "V_true_ratio": 0.9689847826957703,
+      "candidate_index": 4,
+      "episode": 5,
+      "label": "filler",
+      "p_no_absolute": 6.337808831349476e-15,
+      "p_yes_absolute": 1.9800720579225134e-13,
+      "yes_plus_no_mass": 2.0434501462360082e-13
+    },
+    {
+      "V_as_reported": 0.00017566192861984836,
+      "V_true_ratio": 0.9582709670066833,
+      "candidate_index": 5,
+      "episode": 5,
+      "label": "distractor",
+      "p_no_absolute": 7.650813237613206e-15,
+      "p_yes_absolute": 1.7569413534711947e-13,
+      "yes_plus_no_mass": 1.8334494858473268e-13
+    },
+    {
+      "V_as_reported": 0.0003246338410994849,
+      "V_true_ratio": 0.9455909729003906,
+      "candidate_index": 0,
+      "episode": 6,
+      "label": "distractor",
+      "p_no_absolute": 1.868575857466668e-14,
+      "p_yes_absolute": 3.2474533045306897e-13,
+      "yes_plus_no_mass": 3.4343108902773565e-13
+    },
+    {
+      "V_as_reported": 0.00022790269062035484,
+      "V_true_ratio": 0.9141196012496948,
+      "candidate_index": 1,
+      "episode": 6,
+      "label": "distractor",
+      "p_no_absolute": 2.1416499622990345e-14,
+      "p_yes_absolute": 2.279595240871346e-13,
+      "yes_plus_no_mass": 2.4937602371012495e-13
+    },
+    {
+      "V_as_reported": 0.00021290466716085126,
+      "V_true_ratio": 0.9152076244354248,
+      "candidate_index": 2,
+      "episode": 6,
+      "label": "filler",
+      "p_no_absolute": 1.972982663204538e-14,
+      "p_yes_absolute": 2.129542066775167e-13,
+      "yes_plus_no_mass": 2.3268403330956207e-13
+    },
+    {
+      "V_as_reported": 0.000709784237368725,
+      "V_true_ratio": 0.8668331503868103,
+      "candidate_index": 3,
+      "episode": 6,
+      "label": "load_bearing",
+      "p_no_absolute": 1.0912963783506202e-13,
+      "p_yes_absolute": 7.103659023857678e-13,
+      "yes_plus_no_mass": 8.194955402208298e-13
+    },
+    {
+      "V_as_reported": 0.00018613930459099583,
+      "V_true_ratio": 0.9279735684394836,
+      "candidate_index": 4,
+      "episode": 6,
+      "label": "filler",
+      "p_no_absolute": 1.4450473559716667e-14,
+      "p_yes_absolute": 1.8617664918410548e-13,
+      "yes_plus_no_mass": 2.0062712274382215e-13
+    },
+    {
+      "V_as_reported": 0.000323555389674427,
+      "V_true_ratio": 0.9471846222877502,
+      "candidate_index": 0,
+      "episode": 7,
+      "label": "distractor",
+      "p_no_absolute": 1.804773608934506e-14,
+      "p_yes_absolute": 3.2366595298025103e-13,
+      "yes_plus_no_mass": 3.417136890695961e-13
+    },
+    {
+      "V_as_reported": 0.0009091686983507431,
+      "V_true_ratio": 0.9761038422584534,
+      "candidate_index": 1,
+      "episode": 7,
+      "label": "distractor",
+      "p_no_absolute": 2.2278309907042444e-14,
+      "p_yes_absolute": 9.10016311438111e-13,
+      "yes_plus_no_mass": 9.322946213451535e-13
+    },
+    {
+      "V_as_reported": 0.0007408034033369911,
+      "V_true_ratio": 0.9712305665016174,
+      "candidate_index": 2,
+      "episode": 7,
+      "label": "filler",
+      "p_no_absolute": 2.1960511615562103e-14,
+      "p_yes_absolute": 7.413688803484253e-13,
+      "yes_plus_no_mass": 7.633293919639874e-13
+    },
+    {
+      "V_as_reported": 0.00038793099019972563,
+      "V_true_ratio": 0.9479111433029175,
+      "candidate_index": 3,
+      "episode": 7,
+      "label": "filler",
+      "p_no_absolute": 2.1325982294114962e-14,
+      "p_yes_absolute": 3.8808981527548025e-13,
+      "yes_plus_no_mass": 4.094157975695952e-13
+    },
+    {
+      "V_as_reported": 0.0020183875083664574,
+      "V_true_ratio": 0.9283983111381531,
+      "candidate_index": 4,
+      "episode": 7,
+      "label": "load_bearing",
+      "p_no_absolute": 1.560049967897284e-13,
+      "p_yes_absolute": 2.0227851511844808e-12,
+      "yes_plus_no_mass": 2.178790147974209e-12
+    },
+    {
+      "V_as_reported": 0.001830585213951978,
+      "V_true_ratio": 0.9458277821540833,
+      "candidate_index": 0,
+      "episode": 8,
+      "label": "filler",
+      "p_no_absolute": 1.050499612428521e-13,
+      "p_yes_absolute": 1.8341350573741755e-12,
+      "yes_plus_no_mass": 1.9391850186170276e-12
+    },
+    {
+      "V_as_reported": 0.0005906784421463296,
+      "V_true_ratio": 0.9502936601638794,
+      "candidate_index": 1,
+      "episode": 8,
+      "label": "filler",
+      "p_no_absolute": 3.091539136777961e-14,
+      "p_yes_absolute": 5.910458212264602e-13,
+      "yes_plus_no_mass": 6.219612125942398e-13
+    },
+    {
+      "V_as_reported": 0.0007638595797904219,
+      "V_true_ratio": 0.9486722946166992,
+      "candidate_index": 2,
+      "episode": 8,
+      "label": "distractor",
+      "p_no_absolute": 4.136173689791786e-14,
+      "p_yes_absolute": 7.644751259978932e-13,
+      "yes_plus_no_mass": 8.058368628958111e-13
+    },
+    {
+      "V_as_reported": 0.0007479648917263152,
+      "V_true_ratio": 0.946928858757019,
+      "candidate_index": 3,
+      "episode": 8,
+      "label": "distractor",
+      "p_no_absolute": 4.195318951179944e-14,
+      "p_yes_absolute": 7.48556164970049e-13,
+      "yes_plus_no_mass": 7.905093544818484e-13
+    },
+    {
+      "V_as_reported": 0.0009491140634223092,
+      "V_true_ratio": 0.9322066903114319,
+      "candidate_index": 4,
+      "episode": 8,
+      "label": "distractor",
+      "p_no_absolute": 6.909327710663549e-14,
+      "p_yes_absolute": 9.500813764190541e-13,
+      "yes_plus_no_mass": 1.0191746535256896e-12
+    },
+    {
+      "V_as_reported": 0.0024678501549855927,
+      "V_true_ratio": 0.9548766016960144,
+      "candidate_index": 5,
+      "episode": 8,
+      "label": "load_bearing",
+      "p_no_absolute": 1.1692244937001883e-13,
+      "p_yes_absolute": 2.4742447674031e-12,
+      "yes_plus_no_mass": 2.5911672167731187e-12
+    },
+    {
+      "V_as_reported": 0.0026315646721749584,
+      "V_true_ratio": 0.9541716575622559,
+      "candidate_index": 0,
+      "episode": 9,
+      "label": "distractor",
+      "p_no_absolute": 1.2674197357852995e-13,
+      "p_yes_absolute": 2.6388424865381177e-12,
+      "yes_plus_no_mass": 2.7655844601166477e-12
+    },
+    {
+      "V_as_reported": 0.003342053378453166,
+      "V_true_ratio": 0.9646941423416138,
+      "candidate_index": 1,
+      "episode": 9,
+      "label": "distractor",
+      "p_no_absolute": 1.227376083797263e-13,
+      "p_yes_absolute": 3.3536717240073566e-12,
+      "yes_plus_no_mass": 3.476409332387083e-12
+    },
+    {
+      "V_as_reported": 0.002341194351572925,
+      "V_true_ratio": 0.919797956943512,
+      "candidate_index": 2,
+      "episode": 9,
+      "label": "filler",
+      "p_no_absolute": 2.04662092937076e-13,
+      "p_yes_absolute": 2.3471686833725913e-12,
+      "yes_plus_no_mass": 2.5518307763096673e-12
+    },
+    {
+      "V_as_reported": 0.001077881748367381,
+      "V_true_ratio": 0.9399542808532715,
+      "candidate_index": 3,
+      "episode": 9,
+      "label": "filler",
+      "p_no_absolute": 6.893574930723692e-14,
+      "p_yes_absolute": 1.0791192158604579e-12,
+      "yes_plus_no_mass": 1.1480549651676948e-12
+    },
+    {
+      "V_as_reported": 0.0019290449838865003,
+      "V_true_ratio": 0.8282829523086548,
+      "candidate_index": 4,
+      "episode": 9,
+      "label": "load_bearing",
+      "p_no_absolute": 4.0085710900812643e-13,
+      "p_yes_absolute": 1.9335481566545853e-12,
+      "yes_plus_no_mass": 2.3344052656627118e-12
+    },
+    {
+      "V_as_reported": 0.0009267513446428176,
+      "V_true_ratio": 0.9601323008537292,
+      "candidate_index": 0,
+      "episode": 10,
+      "label": "distractor",
+      "p_no_absolute": 3.851874534935816e-14,
+      "p_yes_absolute": 9.276467398053323e-13,
+      "yes_plus_no_mass": 9.661654851546905e-13
+    },
+    {
+      "V_as_reported": 0.0011878892268268129,
+      "V_true_ratio": 0.9516177773475647,
+      "candidate_index": 1,
+      "episode": 10,
+      "label": "distractor",
+      "p_no_absolute": 6.047021065304359e-14,
+      "p_yes_absolute": 1.1893739031848538e-12,
+      "yes_plus_no_mass": 1.2498441138378974e-12
+    },
+    {
+      "V_as_reported": 0.0015289098679524247,
+      "V_true_ratio": 0.9712483882904053,
+      "candidate_index": 2,
+      "episode": 10,
+      "label": "distractor",
+      "p_no_absolute": 4.533131953577546e-14,
+      "p_yes_absolute": 1.531320426365057e-12,
+      "yes_plus_no_mass": 1.5766517459008325e-12
+    },
+    {
+      "V_as_reported": 0.0008192685846925139,
+      "V_true_ratio": 0.964651346206665,
+      "candidate_index": 3,
+      "episode": 10,
+      "label": "filler",
+      "p_no_absolute": 3.004682684300611e-14,
+      "p_yes_absolute": 8.199649726564617e-13,
+      "yes_plus_no_mass": 8.500117994994678e-13
+    },
+    {
+      "V_as_reported": 0.0007883174249633575,
+      "V_true_ratio": 0.9544840455055237,
+      "candidate_index": 4,
+      "episode": 10,
+      "label": "load_bearing",
+      "p_no_absolute": 3.762317063796261e-14,
+      "p_yes_absolute": 7.889690420079254e-13,
+      "yes_plus_no_mass": 8.26592212645888e-13
+    },
+    {
+      "V_as_reported": 0.00108125036268385,
+      "V_true_ratio": 0.9416311979293823,
+      "candidate_index": 0,
+      "episode": 11,
+      "label": "distractor",
+      "p_no_absolute": 6.710047963228924e-14,
+      "p_yes_absolute": 1.08249336144145e-12,
+      "yes_plus_no_mass": 1.1495938410737393e-12
+    },
+    {
+      "V_as_reported": 0.00032979802642923886,
+      "V_true_ratio": 0.9347478747367859,
+      "candidate_index": 1,
+      "episode": 11,
+      "label": "distractor",
+      "p_no_absolute": 2.3030412483766166e-14,
+      "p_yes_absolute": 3.299144269407195e-13,
+      "yes_plus_no_mass": 3.5294483942448565e-13
+    },
+    {
+      "V_as_reported": 0.0005593844629437366,
+      "V_true_ratio": 0.9321626424789429,
+      "candidate_index": 2,
+      "episode": 11,
+      "label": "filler",
+      "p_no_absolute": 4.07331977934737e-14,
+      "p_yes_absolute": 5.597203473275969e-13,
+      "yes_plus_no_mass": 6.004535451210706e-13
+    },
+    {
+      "V_as_reported": 0.0003455623247840821,
+      "V_true_ratio": 0.9571499824523926,
+      "candidate_index": 3,
+      "episode": 11,
+      "label": "filler",
+      "p_no_absolute": 1.5475828965224626e-14,
+      "p_yes_absolute": 3.456871290954955e-13,
+      "yes_plus_no_mass": 3.611629580607201e-13
+    },
+    {
+      "V_as_reported": 0.000849969094818127,
+      "V_true_ratio": 0.9041392803192139,
+      "candidate_index": 4,
+      "episode": 11,
+      "label": "load_bearing",
+      "p_no_absolute": 9.02021241987877e-14,
+      "p_yes_absolute": 8.507688911002509e-13,
+      "yes_plus_no_mass": 9.409710152990386e-13
+    },
+    {
+      "V_as_reported": 0.0006550755444625658,
+      "V_true_ratio": 0.9634209275245667,
+      "candidate_index": 0,
+      "episode": 12,
+      "label": "filler",
+      "p_no_absolute": 2.488877566498779e-14,
+      "p_yes_absolute": 6.555212644400454e-13,
+      "yes_plus_no_mass": 6.804100401050332e-13
+    },
+    {
+      "V_as_reported": 0.0013812967676842002,
+      "V_true_ratio": 0.979428231716156,
+      "candidate_index": 1,
+      "episode": 12,
+      "label": "distractor",
+      "p_no_absolute": 2.9053535022683513e-14,
+      "p_yes_absolute": 1.383247574641977e-12,
+      "yes_plus_no_mass": 1.4123011096646605e-12
+    },
+    {
+      "V_as_reported": 0.0010536938968247471,
+      "V_true_ratio": 0.9801403880119324,
+      "candidate_index": 2,
+      "episode": 12,
+      "label": "distractor",
+      "p_no_absolute": 2.137290453126106e-14,
+      "p_yes_absolute": 1.0548278830263547e-12,
+      "yes_plus_no_mass": 1.0762007875576157e-12
+    },
+    {
+      "V_as_reported": 0.0011292881075813104,
+      "V_true_ratio": 0.9753575921058655,
+      "candidate_index": 3,
+      "episode": 12,
+      "label": "filler",
+      "p_no_absolute": 2.8564481915861403e-14,
+      "p_yes_absolute": 1.1305971350100696e-12,
+      "yes_plus_no_mass": 1.159161616925931e-12
+    },
+    {
+      "V_as_reported": 0.0012411186396891474,
+      "V_true_ratio": 0.958807647228241,
+      "candidate_index": 4,
+      "episode": 12,
+      "label": "load_bearing",
+      "p_no_absolute": 5.339020444825558e-14,
+      "p_yes_absolute": 1.242727275252431e-12,
+      "yes_plus_no_mass": 1.2961174797006866e-12
+    },
+    {
+      "V_as_reported": 0.0004742044719754674,
+      "V_true_ratio": 0.9498159289360046,
+      "candidate_index": 0,
+      "episode": 13,
+      "label": "distractor",
+      "p_no_absolute": 2.506738780850941e-14,
+      "p_yes_absolute": 4.744413412485771e-13,
+      "yes_plus_no_mass": 4.995087290570865e-13
+    },
+    {
+      "V_as_reported": 0.0009271754897298838,
+      "V_true_ratio": 0.9495301246643066,
+      "candidate_index": 1,
+      "episode": 13,
+      "label": "filler",
+      "p_no_absolute": 4.9329779220870854e-14,
+      "p_yes_absolute": 9.280817217169335e-13,
+      "yes_plus_no_mass": 9.774115009378043e-13
+    },
+    {
+      "V_as_reported": 0.000354514353110777,
+      "V_true_ratio": 0.9273571968078613,
+      "candidate_index": 2,
+      "episode": 13,
+      "label": "filler",
+      "p_no_absolute": 2.7780817197457092e-14,
+      "p_yes_absolute": 3.546499302998357e-13,
+      "yes_plus_no_mass": 3.824307474972928e-13
+    },
+    {
+      "V_as_reported": 0.0005570527342890837,
+      "V_true_ratio": 0.8647421002388,
+      "candidate_index": 3,
+      "episode": 13,
+      "label": "load_bearing",
+      "p_no_absolute": 8.718705960105919e-14,
+      "p_yes_absolute": 5.574118098518321e-13,
+      "yes_plus_no_mass": 6.445988694528913e-13
+    },
+    {
+      "V_as_reported": 0.0005082511652881093,
+      "V_true_ratio": 0.9537613987922668,
+      "candidate_index": 4,
+      "episode": 13,
+      "label": "distractor",
+      "p_no_absolute": 2.465331067004646e-14,
+      "p_yes_absolute": 5.085221523384864e-13,
+      "yes_plus_no_mass": 5.331754630085329e-13
+    },
+    {
+      "V_as_reported": 0.000296597856818576,
+      "V_true_ratio": 0.7824493050575256,
+      "candidate_index": 0,
+      "episode": 14,
+      "label": "distractor",
+      "p_no_absolute": 8.249677389783258e-14,
+      "p_yes_absolute": 2.9671032883253623e-13,
+      "yes_plus_no_mass": 3.792071027303688e-13
+    },
+    {
+      "V_as_reported": 0.0005622068382251503,
+      "V_true_ratio": 0.7801207304000854,
+      "candidate_index": 1,
+      "episode": 14,
+      "label": "filler",
+      "p_no_absolute": 1.5857382410205262e-13,
+      "p_yes_absolute": 5.626122939923761e-13,
+      "yes_plus_no_mass": 7.211861180944287e-13
+    },
+    {
+      "V_as_reported": 0.0003871738391895435,
+      "V_true_ratio": 0.8943367004394531,
+      "candidate_index": 2,
+      "episode": 14,
+      "label": "distractor",
+      "p_no_absolute": 4.576328262195263e-14,
+      "p_yes_absolute": 3.8734152604108507e-13,
+      "yes_plus_no_mass": 4.331048086630377e-13
+    },
+    {
+      "V_as_reported": 0.000646953356922206,
+      "V_true_ratio": 0.7255423665046692,
+      "candidate_index": 3,
+      "episode": 14,
+      "label": "filler",
+      "p_no_absolute": 2.4494737293177804e-13,
+      "p_yes_absolute": 6.475307486389359e-13,
+      "yes_plus_no_mass": 8.924781215707139e-13
+    },
+    {
+      "V_as_reported": 0.0012935909521292267,
+      "V_true_ratio": 0.8882451057434082,
+      "candidate_index": 4,
+      "episode": 14,
+      "label": "load_bearing",
+      "p_no_absolute": 1.6299110769824737e-13,
+      "p_yes_absolute": 1.2954776140716717e-12,
+      "yes_plus_no_mass": 1.458468721769919e-12
+    },
+    {
+      "V_as_reported": 0.0003284320741235183,
+      "V_true_ratio": 0.963176965713501,
+      "candidate_index": 0,
+      "episode": 15,
+      "label": "filler",
+      "p_no_absolute": 1.2560496567804672e-14,
+      "p_yes_absolute": 3.2854410381491506e-13,
+      "yes_plus_no_mass": 3.4110460038271973e-13
+    },
+    {
+      "V_as_reported": 0.0007662868974449022,
+      "V_true_ratio": 0.9682656526565552,
+      "candidate_index": 1,
+      "episode": 15,
+      "label": "distractor",
+      "p_no_absolute": 2.5134560909358464e-14,
+      "p_yes_absolute": 7.668938184143825e-13,
+      "yes_plus_no_mass": 7.92028379323741e-13
+    },
+    {
+      "V_as_reported": 0.0005300404977592427,
+      "V_true_ratio": 0.9682074189186096,
+      "candidate_index": 2,
+      "episode": 15,
+      "label": "load_bearing",
+      "p_no_absolute": 1.741424353622536e-14,
+      "p_yes_absolute": 5.303308248279237e-13,
+      "yes_plus_no_mass": 5.477450683641491e-13
+    },
+    {
+      "V_as_reported": 0.00034343871774440184,
+      "V_true_ratio": 0.9574236273765564,
+      "candidate_index": 3,
+      "episode": 15,
+      "label": "distractor",
+      "p_no_absolute": 1.5278095899951688e-14,
+      "p_yes_absolute": 3.4356195731215233e-13,
+      "yes_plus_no_mass": 3.58840053212104e-13
+    },
+    {
+      "V_as_reported": 0.0009408296821606017,
+      "V_true_ratio": 0.931561291217804,
+      "candidate_index": 0,
+      "episode": 16,
+      "label": "filler",
+      "p_no_absolute": 6.918944583933495e-14,
+      "p_yes_absolute": 9.417808330067223e-13,
+      "yes_plus_no_mass": 1.0109702788460573e-12
+    },
+    {
+      "V_as_reported": 0.0012106897029349332,
+      "V_true_ratio": 0.9473832845687866,
+      "candidate_index": 1,
+      "episode": 16,
+      "label": "distractor",
+      "p_no_absolute": 6.732658321909751e-14,
+      "p_yes_absolute": 1.2122388596408351e-12,
+      "yes_plus_no_mass": 1.2795654428599326e-12
+    },
+    {
+      "V_as_reported": 0.0015550388843094047,
+      "V_true_ratio": 0.9190592169761658,
+      "candidate_index": 2,
+      "episode": 16,
+      "label": "load_bearing",
+      "p_no_absolute": 1.3718317931274426e-13,
+      "p_yes_absolute": 1.557674453832314e-12,
+      "yes_plus_no_mass": 1.6948576331450582e-12
+    },
+    {
+      "V_as_reported": 0.0006960594801374968,
+      "V_true_ratio": 0.9578080177307129,
+      "candidate_index": 3,
+      "episode": 16,
+      "label": "filler",
+      "p_no_absolute": 3.0684093774938775e-14,
+      "p_yes_absolute": 6.965656892433947e-13,
+      "yes_plus_no_mass": 7.272497830183335e-13
+    },
+    {
+      "V_as_reported": 0.0008424151889130397,
+      "V_true_ratio": 0.9494223594665527,
+      "candidate_index": 4,
+      "episode": 16,
+      "label": "distractor",
+      "p_no_absolute": 4.491701878061444e-14,
+      "p_yes_absolute": 8.431633212804823e-13,
+      "yes_plus_no_mass": 8.880803400610968e-13
+    },
+    {
+      "V_as_reported": 0.0027178780850392035,
+      "V_true_ratio": 0.9477158188819885,
+      "candidate_index": 0,
+      "episode": 17,
+      "label": "filler",
+      "p_no_absolute": 1.5037295952695373e-13,
+      "p_yes_absolute": 2.7256948868098485e-12,
+      "yes_plus_no_mass": 2.8760678463368022e-12
+    },
+    {
+      "V_as_reported": 0.0009808477757023287,
+      "V_true_ratio": 0.9473768472671509,
+      "candidate_index": 1,
+      "episode": 17,
+      "label": "filler",
+      "p_no_absolute": 5.453881839418209e-14,
+      "p_yes_absolute": 9.818643294245977e-13,
+      "yes_plus_no_mass": 1.0364031478187798e-12
+    },
+    {
+      "V_as_reported": 0.00278198253778871,
+      "V_true_ratio": 0.9689392447471619,
+      "candidate_index": 2,
+      "episode": 17,
+      "label": "distractor",
+      "p_no_absolute": 8.94373686438979e-14,
+      "p_yes_absolute": 2.7899930629682324e-12,
+      "yes_plus_no_mass": 2.8794304316121302e-12
+    },
+    {
+      "V_as_reported": 0.0013082217055259305,
+      "V_true_ratio": 0.9566314220428467,
+      "candidate_index": 3,
+      "episode": 17,
+      "label": "distractor",
+      "p_no_absolute": 5.938911200927682e-14,
+      "p_yes_absolute": 1.3100131873375331e-12,
+      "yes_plus_no_mass": 1.36940229934681e-12
+    },
+    {
+      "V_as_reported": 0.003299962284156313,
+      "V_true_ratio": 0.9553026556968689,
+      "candidate_index": 4,
+      "episode": 17,
+      "label": "load_bearing",
+      "p_no_absolute": 1.5493624449820081e-13,
+      "p_yes_absolute": 3.3114010665469262e-12,
+      "yes_plus_no_mass": 3.466337311045127e-12
+    },
+    {
+      "V_as_reported": 0.0023851102358693416,
+      "V_true_ratio": 0.9453521966934204,
+      "candidate_index": 5,
+      "episode": 17,
+      "label": "distractor",
+      "p_no_absolute": 1.3822441997414503e-13,
+      "p_yes_absolute": 2.3911430561268654e-12,
+      "yes_plus_no_mass": 2.5293674761010104e-12
+    },
+    {
+      "V_as_reported": 0.0007811202491595732,
+      "V_true_ratio": 0.930455207824707,
+      "candidate_index": 0,
+      "episode": 18,
+      "label": "filler",
+      "p_no_absolute": 5.843218161931396e-14,
+      "p_yes_absolute": 7.817765532158738e-13,
+      "yes_plus_no_mass": 8.402087348351878e-13
+    },
+    {
+      "V_as_reported": 0.001872523784789997,
+      "V_true_ratio": 0.9363348484039307,
+      "candidate_index": 1,
+      "episode": 18,
+      "label": "distractor",
+      "p_no_absolute": 1.275753862359924e-13,
+      "p_yes_absolute": 1.8762760442547766e-12,
+      "yes_plus_no_mass": 2.003851430490769e-12
+    },
+    {
+      "V_as_reported": 0.00088523025317086,
+      "V_true_ratio": 0.937176525592804,
+      "candidate_index": 2,
+      "episode": 18,
+      "label": "distractor",
+      "p_no_absolute": 5.939737227457845e-14,
+      "p_yes_absolute": 8.860672070197528e-13,
+      "yes_plus_no_mass": 9.454645792943313e-13
+    },
+    {
+      "V_as_reported": 0.0028060360641538875,
+      "V_true_ratio": 0.9454101324081421,
+      "candidate_index": 3,
+      "episode": 18,
+      "label": "load_bearing",
+      "p_no_absolute": 1.6250839378600251e-13,
+      "p_yes_absolute": 2.814389346572632e-12,
+      "yes_plus_no_mass": 2.9768977403586347e-12
+    },
+    {
+      "V_as_reported": 0.0012615739224743942,
+      "V_true_ratio": 0.9328070878982544,
+      "candidate_index": 4,
+      "episode": 18,
+      "label": "filler",
+      "p_no_absolute": 9.099802346108216e-14,
+      "p_yes_absolute": 1.2632824474001492e-12,
+      "yes_plus_no_mass": 1.3542804708612313e-12
+    },
+    {
+      "V_as_reported": 0.002448841769330794,
+      "V_true_ratio": 0.9875182509422302,
+      "candidate_index": 0,
+      "episode": 19,
+      "label": "distractor",
+      "p_no_absolute": 3.1029222431495224e-14,
+      "p_yes_absolute": 2.454929488859836e-12,
+      "yes_plus_no_mass": 2.4859587112913313e-12
+    },
+    {
+      "V_as_reported": 0.0026787224388158002,
+      "V_true_ratio": 0.9781304597854614,
+      "candidate_index": 1,
+      "episode": 19,
+      "label": "distractor",
+      "p_no_absolute": 6.005674337830266e-14,
+      "p_yes_absolute": 2.686078573108097e-12,
+      "yes_plus_no_mass": 2.7461353164864e-12
+    },
+    {
+      "V_as_reported": 0.0023654188491864713,
+      "V_true_ratio": 0.9832210540771484,
+      "candidate_index": 2,
+      "episode": 19,
+      "label": "filler",
+      "p_no_absolute": 4.0463939572068716e-14,
+      "p_yes_absolute": 2.3711232630119206e-12,
+      "yes_plus_no_mass": 2.4115872025839893e-12
+    },
+    {
+      "V_as_reported": 0.005382464280953486,
+      "V_true_ratio": 0.9905034303665161,
+      "candidate_index": 3,
+      "episode": 19,
+      "label": "filler",
+      "p_no_absolute": 5.1887012346213054e-14,
+      "p_yes_absolute": 5.411872772836945e-12,
+      "yes_plus_no_mass": 5.463759785183158e-12
+    },
+    {
+      "V_as_reported": 0.0016067326569852696,
+      "V_true_ratio": 0.9820894002914429,
+      "candidate_index": 4,
+      "episode": 19,
+      "label": "distractor",
+      "p_no_absolute": 2.935039635377362e-14,
+      "p_yes_absolute": 1.6093656355492536e-12,
+      "yes_plus_no_mass": 1.6387160319030272e-12
+    },
+    {
+      "V_as_reported": 0.0045627625364296496,
+      "V_true_ratio": 0.9706133008003235,
+      "candidate_index": 5,
+      "episode": 19,
+      "label": "load_bearing",
+      "p_no_absolute": 1.3879663477572857e-13,
+      "p_yes_absolute": 4.584312963962223e-12,
+      "yes_plus_no_mass": 4.723109598737951e-12
+    },
+    {
+      "V_as_reported": 0.06024433057051025,
+      "V_true_ratio": 0.9874565005302429,
+      "candidate_index": 0,
+      "episode": 20,
+      "label": "distractor",
+      "p_no_absolute": 8.149979172436539e-13,
+      "p_yes_absolute": 6.415862285891194e-11,
+      "yes_plus_no_mass": 6.49736207761556e-11
+    },
+    {
+      "V_as_reported": 0.015574766075657895,
+      "V_true_ratio": 0.9844868779182434,
+      "candidate_index": 1,
+      "episode": 20,
+      "label": "filler",
+      "p_no_absolute": 2.493653070492763e-13,
+      "p_yes_absolute": 1.5825122462453933e-11,
+      "yes_plus_no_mass": 1.607448776950321e-11
+    },
+    {
+      "V_as_reported": 0.014933291305032067,
+      "V_true_ratio": 0.9803352355957031,
+      "candidate_index": 2,
+      "episode": 20,
+      "label": "filler",
+      "p_no_absolute": 3.041848186096513e-13,
+      "p_yes_absolute": 1.5164286493174473e-11,
+      "yes_plus_no_mass": 1.5468471311784124e-11
+    },
+    {
+      "V_as_reported": 0.030336864475509557,
+      "V_true_ratio": 0.978333592414856,
+      "candidate_index": 3,
+      "episode": 20,
+      "label": "load_bearing",
+      "p_no_absolute": 6.933487529774129e-13,
+      "p_yes_absolute": 3.130767520231892e-11,
+      "yes_plus_no_mass": 3.200102395529633e-11
+    },
+    {
+      "V_as_reported": 0.0003443579096298978,
+      "V_true_ratio": 0.9441211223602295,
+      "candidate_index": 0,
+      "episode": 21,
+      "label": "distractor",
+      "p_no_absolute": 2.0388660716881037e-14,
+      "p_yes_absolute": 3.444835562638193e-13,
+      "yes_plus_no_mass": 3.6487221698070036e-13
+    },
+    {
+      "V_as_reported": 0.00040048051339635574,
+      "V_true_ratio": 0.914680004119873,
+      "candidate_index": 1,
+      "episode": 21,
+      "label": "filler",
+      "p_no_absolute": 3.7372614904033e-14,
+      "p_yes_absolute": 4.0065593529502175e-13,
+      "yes_plus_no_mass": 4.3802855019905475e-13
+    },
+    {
+      "V_as_reported": 0.00027855530035877625,
+      "V_true_ratio": 0.9215455651283264,
+      "candidate_index": 2,
+      "episode": 21,
+      "label": "filler",
+      "p_no_absolute": 2.3721582898396203e-14,
+      "p_yes_absolute": 2.7863952464790565e-13,
+      "yes_plus_no_mass": 3.0236110754630185e-13
+    },
+    {
+      "V_as_reported": 0.00031179984951952317,
+      "V_true_ratio": 0.912287712097168,
+      "candidate_index": 3,
+      "episode": 21,
+      "label": "distractor",
+      "p_no_absolute": 2.9988364628986616e-14,
+      "p_yes_absolute": 3.1190645227198444e-13,
+      "yes_plus_no_mass": 3.4189481690097105e-13
+    },
+    {
+      "V_as_reported": 0.0005493517229077438,
+      "V_true_ratio": 0.8391589522361755,
+      "candidate_index": 4,
+      "episode": 21,
+      "label": "load_bearing",
+      "p_no_absolute": 1.0536285521356784e-13,
+      "p_yes_absolute": 5.497115891824056e-13,
+      "yes_plus_no_mass": 6.550744443959734e-13
+    },
+    {
+      "V_as_reported": 0.0004554821944200043,
+      "V_true_ratio": 0.9025201201438904,
+      "candidate_index": 0,
+      "episode": 22,
+      "label": "distractor",
+      "p_no_absolute": 4.922079318561354e-14,
+      "p_yes_absolute": 4.55712182399759e-13,
+      "yes_plus_no_mass": 5.049329755853725e-13
+    },
+    {
+      "V_as_reported": 0.0006109394322775262,
+      "V_true_ratio": 0.9319674968719482,
+      "candidate_index": 1,
+      "episode": 22,
+      "label": "distractor",
+      "p_no_absolute": 4.462706923837392e-14,
+      "p_yes_absolute": 6.11340188541587e-13,
+      "yes_plus_no_mass": 6.559672577799609e-13
+    },
+    {
+      "V_as_reported": 0.0005394705661084261,
+      "V_true_ratio": 0.909453272819519,
+      "candidate_index": 2,
+      "episode": 22,
+      "label": "filler",
+      "p_no_absolute": 5.374250239167759e-14,
+      "p_yes_absolute": 5.397907598334029e-13,
+      "yes_plus_no_mass": 5.935332622250804e-13
+    },
+    {
+      "V_as_reported": 0.00041054009150684007,
+      "V_true_ratio": 0.8973014950752258,
+      "candidate_index": 3,
+      "episode": 22,
+      "label": "filler",
+      "p_no_absolute": 4.70088682878126e-14,
+      "p_yes_absolute": 4.107280108470862e-13,
+      "yes_plus_no_mass": 4.577368791348988e-13
+    },
+    {
+      "V_as_reported": 0.0016547679188975938,
+      "V_true_ratio": 0.7768566608428955,
+      "candidate_index": 4,
+      "episode": 22,
+      "label": "load_bearing",
+      "p_no_absolute": 4.763280156590277e-13,
+      "p_yes_absolute": 1.6583002332426489e-12,
+      "yes_plus_no_mass": 2.1346282489016766e-12
+    },
+    {
+      "V_as_reported": 0.00026483937470159305,
+      "V_true_ratio": 0.9229069948196411,
+      "candidate_index": 0,
+      "episode": 23,
+      "label": "distractor",
+      "p_no_absolute": 2.2129125382174333e-14,
+      "p_yes_absolute": 2.649153953929867e-13,
+      "yes_plus_no_mass": 2.8704452077516103e-13
+    },
+    {
+      "V_as_reported": 0.00030337241816280337,
+      "V_true_ratio": 0.9149649143218994,
+      "candidate_index": 1,
+      "episode": 23,
+      "label": "filler",
+      "p_no_absolute": 2.8204181205153736e-14,
+      "p_yes_absolute": 3.0347303988341456e-13,
+      "yes_plus_no_mass": 3.316772210885683e-13
+    },
+    {
+      "V_as_reported": 0.0005765827950745642,
+      "V_true_ratio": 0.9397527575492859,
+      "candidate_index": 2,
+      "episode": 23,
+      "label": "filler",
+      "p_no_absolute": 3.698723524182303e-14,
+      "p_yes_absolute": 5.769367730952546e-13,
+      "yes_plus_no_mass": 6.139240083370776e-13
+    },
+    {
+      "V_as_reported": 0.0005372357806673711,
+      "V_true_ratio": 0.9408581852912903,
+      "candidate_index": 3,
+      "episode": 23,
+      "label": "distractor",
+      "p_no_absolute": 3.3789611327038685e-14,
+      "p_yes_absolute": 5.375427208388628e-13,
+      "yes_plus_no_mass": 5.713323321659015e-13
+    },
+    {
+      "V_as_reported": 0.0008666345094626903,
+      "V_true_ratio": 0.902091383934021,
+      "candidate_index": 4,
+      "episode": 23,
+      "label": "load_bearing",
+      "p_no_absolute": 9.415078173471633e-14,
+      "p_yes_absolute": 8.674678813810899e-13,
+      "yes_plus_no_mass": 9.616186631158062e-13
+    },
+    {
+      "V_as_reported": 0.00027218927525908505,
+      "V_true_ratio": 0.7776251435279846,
+      "candidate_index": 0,
+      "episode": 24,
+      "label": "filler",
+      "p_no_absolute": 7.786431682798092e-14,
+      "p_yes_absolute": 2.722845820340991e-13,
+      "yes_plus_no_mass": 3.5014889886208003e-13
+    },
+    {
+      "V_as_reported": 0.0003106750287229167,
+      "V_true_ratio": 0.8566080927848816,
+      "candidate_index": 1,
+      "episode": 24,
+      "label": "distractor",
+      "p_no_absolute": 5.202429944630403e-14,
+      "p_yes_absolute": 3.107877453653596e-13,
+      "yes_plus_no_mass": 3.628120448116636e-13
+    },
+    {
+      "V_as_reported": 0.0005406039497776315,
+      "V_true_ratio": 0.843389630317688,
+      "candidate_index": 2,
+      "episode": 24,
+      "label": "filler",
+      "p_no_absolute": 1.0045000313312069e-13,
+      "p_yes_absolute": 5.409506935276365e-13,
+      "yes_plus_no_mass": 6.414006966607572e-13
+    },
+    {
+      "V_as_reported": 0.0005110734086935786,
+      "V_true_ratio": 0.35459303855895996,
+      "candidate_index": 3,
+      "episode": 24,
+      "label": "load_bearing",
+      "p_no_absolute": 9.31564612775826e-13,
+      "p_yes_absolute": 5.118110796287212e-13,
+      "yes_plus_no_mass": 1.4433756924045471e-12
+    },
+    {
+      "V_as_reported": 0.0010688718447317224,
+      "V_true_ratio": 0.934150218963623,
+      "candidate_index": 0,
+      "episode": 25,
+      "label": "distractor",
+      "p_no_absolute": 7.543283760211988e-14,
+      "p_yes_absolute": 1.070096268540599e-12,
+      "yes_plus_no_mass": 1.145529106142719e-12
+    },
+    {
+      "V_as_reported": 0.0005747224070577267,
+      "V_true_ratio": 0.9336855411529541,
+      "candidate_index": 1,
+      "episode": 25,
+      "label": "filler",
+      "p_no_absolute": 4.084448775834755e-14,
+      "p_yes_absolute": 5.750763905874867e-13,
+      "yes_plus_no_mass": 6.159208783458343e-13
+    },
+    {
+      "V_as_reported": 0.0009216837774397875,
+      "V_true_ratio": 0.9523088932037354,
+      "candidate_index": 2,
+      "episode": 25,
+      "label": "distractor",
+      "p_no_absolute": 4.6202160885111185e-14,
+      "p_yes_absolute": 9.225766851861383e-13,
+      "yes_plus_no_mass": 9.687788460712495e-13
+    },
+    {
+      "V_as_reported": 0.00058629854081387,
+      "V_true_ratio": 0.9539949297904968,
+      "candidate_index": 3,
+      "episode": 25,
+      "label": "filler",
+      "p_no_absolute": 2.82907869358787e-14,
+      "p_yes_absolute": 5.866590850264752e-13,
+      "yes_plus_no_mass": 6.149498719623539e-13
+    },
+    {
+      "V_as_reported": 0.001214237892859375,
+      "V_true_ratio": 0.8831484913825989,
+      "candidate_index": 4,
+      "episode": 25,
+      "label": "load_bearing",
+      "p_no_absolute": 1.6087993567545644e-13,
+      "p_yes_absolute": 1.2159096429362193e-12,
+      "yes_plus_no_mass": 1.3767895786116757e-12
+    },
+    {
+      "V_as_reported": 0.0006395088458720677,
+      "V_true_ratio": 0.8515536189079285,
+      "candidate_index": 5,
+      "episode": 25,
+      "label": "distractor",
+      "p_no_absolute": 1.1156563005246603e-13,
+      "p_yes_absolute": 6.399894720079957e-13,
+      "yes_plus_no_mass": 7.515551020604617e-13
+    },
+    {
+      "V_as_reported": 0.00036981656317276924,
+      "V_true_ratio": 0.9643939137458801,
+      "candidate_index": 0,
+      "episode": 26,
+      "label": "distractor",
+      "p_no_absolute": 1.3659112699953603e-14,
+      "p_yes_absolute": 3.6995843129446204e-13,
+      "yes_plus_no_mass": 3.8361754399441565e-13
+    },
+    {
+      "V_as_reported": 0.0004556954774960767,
+      "V_true_ratio": 0.9085837006568909,
+      "candidate_index": 1,
+      "episode": 26,
+      "label": "filler",
+      "p_no_absolute": 4.587242789940403e-14,
+      "p_yes_absolute": 4.559241439244799e-13,
+      "yes_plus_no_mass": 5.017965718238839e-13
+    },
+    {
+      "V_as_reported": 0.0006843196583215168,
+      "V_true_ratio": 0.9380815029144287,
+      "candidate_index": 2,
+      "episode": 26,
+      "label": "distractor",
+      "p_no_absolute": 4.520180819814028e-14,
+      "p_yes_absolute": 6.848192260662522e-13,
+      "yes_plus_no_mass": 7.300210342643925e-13
+    },
+    {
+      "V_as_reported": 0.0003654972513353929,
+      "V_true_ratio": 0.9431766867637634,
+      "candidate_index": 3,
+      "episode": 26,
+      "label": "distractor",
+      "p_no_absolute": 2.202853852562199e-14,
+      "p_yes_absolute": 3.656389427342255e-13,
+      "yes_plus_no_mass": 3.8766748125984747e-13
+    },
+    {
+      "V_as_reported": 0.0003052192891931015,
+      "V_true_ratio": 0.9345718026161194,
+      "candidate_index": 4,
+      "episode": 26,
+      "label": "load_bearing",
+      "p_no_absolute": 2.137499331450899e-14,
+      "p_yes_absolute": 3.053190025022884e-13,
+      "yes_plus_no_mass": 3.2669399581679737e-13
+    },
+    {
+      "V_as_reported": 0.0005261099469188055,
+      "V_true_ratio": 0.9359384179115295,
+      "candidate_index": 0,
+      "episode": 27,
+      "label": "filler",
+      "p_no_absolute": 3.603060639558939e-14,
+      "p_yes_absolute": 5.264058503332003e-13,
+      "yes_plus_no_mass": 5.624364567287897e-13
+    },
+    {
+      "V_as_reported": 0.0004893253312531565,
+      "V_true_ratio": 0.9197435975074768,
+      "candidate_index": 1,
+      "episode": 27,
+      "label": "filler",
+      "p_no_absolute": 4.272099777343115e-14,
+      "p_yes_absolute": 4.895858024545063e-13,
+      "yes_plus_no_mass": 5.323068002279375e-13
+    },
+    {
+      "V_as_reported": 0.00036366745207690057,
+      "V_true_ratio": 0.9516510367393494,
+      "candidate_index": 2,
+      "episode": 27,
+      "label": "distractor",
+      "p_no_absolute": 1.8483316006207007e-14,
+      "p_yes_absolute": 3.638064784323991e-13,
+      "yes_plus_no_mass": 3.822897944386061e-13
+    },
+    {
+      "V_as_reported": 0.0002898906645319512,
+      "V_true_ratio": 0.9180566072463989,
+      "candidate_index": 3,
+      "episode": 27,
+      "label": "distractor",
+      "p_no_absolute": 2.588307714858351e-14,
+      "p_yes_absolute": 2.899822309360145e-13,
+      "yes_plus_no_mass": 3.15865308084598e-13
+    },
+    {
+      "V_as_reported": 0.00044560264539972045,
+      "V_true_ratio": 0.941670835018158,
+      "candidate_index": 4,
+      "episode": 27,
+      "label": "distractor",
+      "p_no_absolute": 2.7614688625512106e-14,
+      "p_yes_absolute": 4.458136063003465e-13,
+      "yes_plus_no_mass": 4.734282949258586e-13
+    },
+    {
+      "V_as_reported": 0.0010798199039496516,
+      "V_true_ratio": 0.6987798810005188,
+      "candidate_index": 5,
+      "episode": 27,
+      "label": "load_bearing",
+      "p_no_absolute": 4.661938153224798e-13,
+      "p_yes_absolute": 1.0814911249532044e-12,
+      "yes_plus_no_mass": 1.5476849402756843e-12
+    },
+    {
+      "V_as_reported": 0.0012272341042398461,
+      "V_true_ratio": 0.920741081237793,
+      "candidate_index": 0,
+      "episode": 28,
+      "label": "distractor",
+      "p_no_absolute": 1.0578334947363918e-13,
+      "p_yes_absolute": 1.2288720388498042e-12,
+      "yes_plus_no_mass": 1.3346553883234434e-12
+    },
+    {
+      "V_as_reported": 0.0010221689371870558,
+      "V_true_ratio": 0.8741934895515442,
+      "candidate_index": 1,
+      "episode": 28,
+      "label": "distractor",
+      "p_no_absolute": 1.472740522199742e-13,
+      "p_yes_absolute": 1.023365528603215e-12,
+      "yes_plus_no_mass": 1.1706395808231893e-12
+    },
+    {
+      "V_as_reported": 0.0010765368965274496,
+      "V_true_ratio": 0.8958228826522827,
+      "candidate_index": 2,
+      "episode": 28,
+      "label": "filler",
+      "p_no_absolute": 1.2534344764371375e-13,
+      "p_yes_absolute": 1.0778321594615003e-12,
+      "yes_plus_no_mass": 1.203175607105214e-12
+    },
+    {
+      "V_as_reported": 0.0021837740275640165,
+      "V_true_ratio": 0.8458161354064941,
+      "candidate_index": 3,
+      "episode": 28,
+      "label": "load_bearing",
+      "p_no_absolute": 3.9911056772846953e-13,
+      "p_yes_absolute": 2.1894268082550683e-12,
+      "yes_plus_no_mass": 2.588537375983538e-12
+    },
+    {
+      "V_as_reported": 0.0008685945572898912,
+      "V_true_ratio": 0.9758427739143372,
+      "candidate_index": 0,
+      "episode": 29,
+      "label": "distractor",
+      "p_no_absolute": 2.152147580427536e-14,
+      "p_yes_absolute": 8.693683793692397e-13,
+      "yes_plus_no_mass": 8.908898551735151e-13
+    },
+    {
+      "V_as_reported": 0.0003648336348707188,
+      "V_true_ratio": 0.9417136311531067,
+      "candidate_index": 1,
+      "episode": 29,
+      "label": "filler",
+      "p_no_absolute": 2.2589736816693538e-14,
+      "p_yes_absolute": 3.64975031533904e-13,
+      "yes_plus_no_mass": 3.875647683505975e-13
+    },
+    {
+      "V_as_reported": 0.000611654276352992,
+      "V_true_ratio": 0.9596465229988098,
+      "candidate_index": 2,
+      "episode": 29,
+      "label": "filler",
+      "p_no_absolute": 2.5736660727387027e-14,
+      "p_yes_absolute": 6.120443778526163e-13,
+      "yes_plus_no_mass": 6.377810385800034e-13
+    },
+    {
+      "V_as_reported": 0.0006107034484534346,
+      "V_true_ratio": 0.9677298069000244,
+      "candidate_index": 3,
+      "episode": 29,
+      "label": "distractor",
+      "p_no_absolute": 2.037756966746969e-14,
+      "p_yes_absolute": 6.110890873184394e-13,
+      "yes_plus_no_mass": 6.31466656985909e-13
+    },
+    {
+      "V_as_reported": 0.0002575383144330099,
+      "V_true_ratio": 0.9061335921287537,
+      "candidate_index": 4,
+      "episode": 29,
+      "label": "load_bearing",
+      "p_no_absolute": 2.668597120895639e-14,
+      "p_yes_absolute": 2.5761153193276654e-13,
+      "yes_plus_no_mass": 2.842975031417229e-13
+    },
+    {
+      "V_as_reported": 0.0007208007843170507,
+      "V_true_ratio": 0.9719088077545166,
+      "candidate_index": 0,
+      "episode": 30,
+      "label": "distractor",
+      "p_no_absolute": 2.084883169426767e-14,
+      "p_yes_absolute": 7.213357515467589e-13,
+      "yes_plus_no_mass": 7.421845832410266e-13
+    },
+    {
+      "V_as_reported": 0.000316313028206715,
+      "V_true_ratio": 0.9608412384986877,
+      "candidate_index": 1,
+      "episode": 30,
+      "label": "distractor",
+      "p_no_absolute": 1.2895478616685961e-14,
+      "p_yes_absolute": 3.1641719409544744e-13,
+      "yes_plus_no_mass": 3.293126727121334e-13
+    },
+    {
+      "V_as_reported": 0.0005114120087907995,
+      "V_true_ratio": 0.9427140355110168,
+      "candidate_index": 2,
+      "episode": 30,
+      "label": "distractor",
+      "p_no_absolute": 3.109387476229325e-14,
+      "p_yes_absolute": 5.116895947752942e-13,
+      "yes_plus_no_mass": 5.427834695375874e-13
+    },
+    {
+      "V_as_reported": 0.0003834903126878762,
+      "V_true_ratio": 0.936388373374939,
+      "candidate_index": 3,
+      "episode": 30,
+      "label": "load_bearing",
+      "p_no_absolute": 2.606229407362947e-14,
+      "p_yes_absolute": 3.8364743239899246e-13,
+      "yes_plus_no_mass": 4.0970972647262193e-13
+    },
+    {
+      "V_as_reported": 0.0002641049421746553,
+      "V_true_ratio": 0.9267891049385071,
+      "candidate_index": 0,
+      "episode": 31,
+      "label": "filler",
+      "p_no_absolute": 2.086870139314436e-14,
+      "p_yes_absolute": 2.641802250048786e-13,
+      "yes_plus_no_mass": 2.8504892639802295e-13
+    },
+    {
+      "V_as_reported": 0.00023714585015593672,
+      "V_true_ratio": 0.9393305778503418,
+      "candidate_index": 1,
+      "episode": 31,
+      "label": "distractor",
+      "p_no_absolute": 1.532064575302406e-14,
+      "p_yes_absolute": 2.3720573573936254e-13,
+      "yes_plus_no_mass": 2.525263814923866e-13
+    },
+    {
+      "V_as_reported": 0.00024286147317837702,
+      "V_true_ratio": 0.9164249897003174,
+      "candidate_index": 2,
+      "episode": 31,
+      "label": "distractor",
+      "p_no_absolute": 2.2154060338075605e-14,
+      "p_yes_absolute": 2.429258508761245e-13,
+      "yes_plus_no_mass": 2.650799112142001e-13
+    },
+    {
+      "V_as_reported": 0.00033746075060144443,
+      "V_true_ratio": 0.94198077917099,
+      "candidate_index": 3,
+      "episode": 31,
+      "label": "distractor",
+      "p_no_absolute": 2.0792619199756085e-14,
+      "p_yes_absolute": 3.375816878641025e-13,
+      "yes_plus_no_mass": 3.5837430706385856e-13
+    },
+    {
+      "V_as_reported": 0.0005718314506184054,
+      "V_true_ratio": 0.8552451729774475,
+      "candidate_index": 4,
+      "episode": 31,
+      "label": "load_bearing",
+      "p_no_absolute": 9.685028251387937e-14,
+      "p_yes_absolute": 5.722140426420164e-13,
+      "yes_plus_no_mass": 6.690643251558957e-13
+    },
+    {
+      "V_as_reported": 0.000614689869808788,
+      "V_true_ratio": 0.9549774527549744,
+      "candidate_index": 0,
+      "episode": 32,
+      "label": "filler",
+      "p_no_absolute": 2.899832880331327e-14,
+      "p_yes_absolute": 6.150857817868727e-13,
+      "yes_plus_no_mass": 6.440841105901859e-13
+    },
+    {
+      "V_as_reported": 0.0009718652973892744,
+      "V_true_ratio": 0.9673479199409485,
+      "candidate_index": 1,
+      "episode": 32,
+      "label": "filler",
+      "p_no_absolute": 3.283759034003811e-14,
+      "p_yes_absolute": 9.728426831473458e-13,
+      "yes_plus_no_mass": 1.0056802734873839e-12
+    },
+    {
+      "V_as_reported": 0.0007003063613580673,
+      "V_true_ratio": 0.945559561252594,
+      "candidate_index": 2,
+      "episode": 32,
+      "label": "distractor",
+      "p_no_absolute": 4.034992216110471e-14,
+      "p_yes_absolute": 7.00825411158873e-13,
+      "yes_plus_no_mass": 7.411753333199777e-13
+    },
+    {
+      "V_as_reported": 0.0003943076504222198,
+      "V_true_ratio": 0.9501857757568359,
+      "candidate_index": 3,
+      "episode": 32,
+      "label": "distractor",
+      "p_no_absolute": 2.0680438156221725e-14,
+      "p_yes_absolute": 3.94471347947567e-13,
+      "yes_plus_no_mass": 4.151517861037887e-13
+    },
+    {
+      "V_as_reported": 0.00042235402883977774,
+      "V_true_ratio": 0.9409059286117554,
+      "candidate_index": 4,
+      "episode": 32,
+      "label": "load_bearing",
+      "p_no_absolute": 2.6538065703838633e-14,
+      "p_yes_absolute": 4.2254370033294186e-13,
+      "yes_plus_no_mass": 4.490817660367805e-13
+    },
+    {
+      "V_as_reported": 0.0005850163915062381,
+      "V_true_ratio": 0.9494744539260864,
+      "candidate_index": 0,
+      "episode": 33,
+      "label": "filler",
+      "p_no_absolute": 3.11503752480069e-14,
+      "p_yes_absolute": 5.853770701676198e-13,
+      "yes_plus_no_mass": 6.165274454156267e-13
+    },
+    {
+      "V_as_reported": 0.0003090294589566452,
+      "V_true_ratio": 0.9612999558448792,
+      "candidate_index": 1,
+      "episode": 33,
+      "label": "distractor",
+      "p_no_absolute": 1.2444940097975504e-14,
+      "p_yes_absolute": 3.091288347262938e-13,
+      "yes_plus_no_mass": 3.2157377482426933e-13
+    },
+    {
+      "V_as_reported": 0.0006726424679409475,
+      "V_true_ratio": 0.8483853936195374,
+      "candidate_index": 2,
+      "episode": 33,
+      "label": "load_bearing",
+      "p_no_absolute": 1.2030304595393726e-13,
+      "p_yes_absolute": 6.731761957763649e-13,
+      "yes_plus_no_mass": 7.934792417303022e-13
+    },
+    {
+      "V_as_reported": 0.00044949958554767633,
+      "V_true_ratio": 0.9631215929985046,
+      "candidate_index": 3,
+      "episode": 33,
+      "label": "distractor",
+      "p_no_absolute": 1.7219590282748637e-14,
+      "p_yes_absolute": 4.4970946996673866e-13,
+      "yes_plus_no_mass": 4.669290602494873e-13
+    },
+    {
+      "V_as_reported": 0.0003001998100764641,
+      "V_true_ratio": 0.9576764702796936,
+      "candidate_index": 0,
+      "episode": 34,
+      "label": "distractor",
+      "p_no_absolute": 1.3271202103297235e-14,
+      "p_yes_absolute": 3.0029394227325257e-13,
+      "yes_plus_no_mass": 3.135651443765498e-13
+    },
+    {
+      "V_as_reported": 0.00045366194968369947,
+      "V_true_ratio": 0.9663345217704773,
+      "candidate_index": 1,
+      "episode": 34,
+      "label": "distractor",
+      "p_no_absolute": 1.581223487649025e-14,
+      "p_yes_absolute": 4.538750289235366e-13,
+      "yes_plus_no_mass": 4.696872638000268e-13
+    },
+    {
+      "V_as_reported": 0.0006318084608963661,
+      "V_true_ratio": 0.9751670956611633,
+      "candidate_index": 2,
+      "episode": 34,
+      "label": "filler",
+      "p_no_absolute": 1.6099565392857854e-14,
+      "p_yes_absolute": 6.322180734659455e-13,
+      "yes_plus_no_mass": 6.483176388588033e-13
+    },
+    {
+      "V_as_reported": 0.00045643321354430465,
+      "V_true_ratio": 0.9666926860809326,
+      "candidate_index": 3,
+      "episode": 34,
+      "label": "load_bearing",
+      "p_no_absolute": 1.573378437898145e-14,
+      "p_yes_absolute": 4.566488246565692e-13,
+      "yes_plus_no_mass": 4.723826090355506e-13
+    },
+    {
+      "V_as_reported": 0.0005655937196855918,
+      "V_true_ratio": 0.8911007046699524,
+      "candidate_index": 0,
+      "episode": 35,
+      "label": "filler",
+      "p_no_absolute": 6.916380445795567e-14,
+      "p_yes_absolute": 5.659529377262384e-13,
+      "yes_plus_no_mass": 6.351167421841941e-13
+    },
+    {
+      "V_as_reported": 0.0008365723717497134,
+      "V_true_ratio": 0.8749919533729553,
+      "candidate_index": 1,
+      "episode": 35,
+      "label": "distractor",
+      "p_no_absolute": 1.1963352400737315e-13,
+      "p_yes_absolute": 8.373729769479976e-13,
+      "yes_plus_no_mass": 9.570065009553708e-13
+    },
+    {
+      "V_as_reported": 0.0006809784559671594,
+      "V_true_ratio": 0.8593173623085022,
+      "candidate_index": 2,
+      "episode": 35,
+      "label": "filler",
+      "p_no_absolute": 1.1157441886632674e-13,
+      "p_yes_absolute": 6.81518535182446e-13,
+      "yes_plus_no_mass": 7.930929540487727e-13
+    },
+    {
+      "V_as_reported": 0.0010573492076655225,
+      "V_true_ratio": 0.8291075229644775,
+      "candidate_index": 3,
+      "episode": 35,
+      "label": "distractor",
+      "p_no_absolute": 2.1821509443159526e-13,
+      "p_yes_absolute": 1.058699352143866e-12,
+      "yes_plus_no_mass": 1.2769144465754612e-12
+    },
+    {
+      "V_as_reported": 0.0009053896958725125,
+      "V_true_ratio": 0.7388928532600403,
+      "candidate_index": 4,
+      "episode": 35,
+      "label": "load_bearing",
+      "p_no_absolute": 3.203356362720816e-13,
+      "p_yes_absolute": 9.06500460633175e-13,
+      "yes_plus_no_mass": 1.2268360969052566e-12
+    },
+    {
+      "V_as_reported": 0.00030052360285783556,
+      "V_true_ratio": 0.9558484554290771,
+      "candidate_index": 0,
+      "episode": 36,
+      "label": "filler",
+      "p_no_absolute": 1.3885847326307581e-14,
+      "p_yes_absolute": 3.0061811872282573e-13,
+      "yes_plus_no_mass": 3.145039660491333e-13
+    },
+    {
+      "V_as_reported": 0.0006851886707767228,
+      "V_true_ratio": 0.9754170179367065,
+      "candidate_index": 1,
+      "episode": 36,
+      "label": "distractor",
+      "p_no_absolute": 1.728057834901684e-14,
+      "p_yes_absolute": 6.856703247716534e-13,
+      "yes_plus_no_mass": 7.029509031206702e-13
+    },
+    {
+      "V_as_reported": 0.0012203150483606818,
+      "V_true_ratio": 0.9731868505477905,
+      "candidate_index": 2,
+      "episode": 36,
+      "label": "distractor",
+      "p_no_absolute": 3.366414880689138e-14,
+      "p_yes_absolute": 1.2218471677136189e-12,
+      "yes_plus_no_mass": 1.2555113165205103e-12
+    },
+    {
+      "V_as_reported": 0.00021369143232050986,
+      "V_true_ratio": 0.9573377370834351,
+      "candidate_index": 3,
+      "episode": 36,
+      "label": "filler",
+      "p_no_absolute": 9.52495579560923e-15,
+      "p_yes_absolute": 2.1373914194534188e-13,
+      "yes_plus_no_mass": 2.232640977409511e-13
+    },
+    {
+      "V_as_reported": 0.0009118514371251272,
+      "V_true_ratio": 0.8876070380210876,
+      "candidate_index": 4,
+      "episode": 36,
+      "label": "load_bearing",
+      "p_no_absolute": 1.15581616543306e-13,
+      "p_yes_absolute": 9.127891584942427e-13,
+      "yes_plus_no_mass": 1.0283707750375487e-12
+    },
+    {
+      "V_as_reported": 0.0011036728963556418,
+      "V_true_ratio": 0.9765893816947937,
+      "candidate_index": 0,
+      "episode": 37,
+      "label": "distractor",
+      "p_no_absolute": 2.6486908301956262e-14,
+      "p_yes_absolute": 1.1049216012623542e-12,
+      "yes_plus_no_mass": 1.1314085095643104e-12
+    },
+    {
+      "V_as_reported": 0.0008940771892801873,
+      "V_true_ratio": 0.9471775889396667,
+      "candidate_index": 1,
+      "episode": 37,
+      "label": "filler",
+      "p_no_absolute": 4.9908218020550815e-14,
+      "p_yes_absolute": 8.949219403725506e-13,
+      "yes_plus_no_mass": 9.448301583931014e-13
+    },
+    {
+      "V_as_reported": 0.0009118325688202627,
+      "V_true_ratio": 0.9662548303604126,
+      "candidate_index": 2,
+      "episode": 37,
+      "label": "distractor",
+      "p_no_absolute": 3.187462229922722e-14,
+      "p_yes_absolute": 9.126938571232812e-13,
+      "yes_plus_no_mass": 9.445684794225084e-13
+    },
+    {
+      "V_as_reported": 0.0007397326221430671,
+      "V_true_ratio": 0.9173357486724854,
+      "candidate_index": 3,
+      "episode": 37,
+      "label": "load_bearing",
+      "p_no_absolute": 6.671362274461926e-14,
+      "p_yes_absolute": 7.403296183559893e-13,
+      "yes_plus_no_mass": 8.070432411006086e-13
+    },
+    {
+      "V_as_reported": 0.00040205270714924044,
+      "V_true_ratio": 0.9327815771102905,
+      "candidate_index": 4,
+      "episode": 37,
+      "label": "filler",
+      "p_no_absolute": 2.8985375975483854e-14,
+      "p_yes_absolute": 4.0222607688121526e-13,
+      "yes_plus_no_mass": 4.312114528566991e-13
+    },
+    {
+      "V_as_reported": 0.0018780516303127234,
+      "V_true_ratio": 0.9000160098075867,
+      "candidate_index": 0,
+      "episode": 38,
+      "label": "distractor",
+      "p_no_absolute": 2.0907162448773747e-13,
+      "p_yes_absolute": 1.881978730841616e-12,
+      "yes_plus_no_mass": 2.0910503553293533e-12
+    },
+    {
+      "V_as_reported": 0.0016355478906074105,
+      "V_true_ratio": 0.8992375731468201,
+      "candidate_index": 1,
+      "episode": 38,
+      "label": "distractor",
+      "p_no_absolute": 1.8360218402048434e-13,
+      "p_yes_absolute": 1.6385280719038997e-12,
+      "yes_plus_no_mass": 1.822130255924384e-12
+    },
+    {
+      "V_as_reported": 0.0010944489371983361,
+      "V_true_ratio": 0.8677834868431091,
+      "candidate_index": 2,
+      "episode": 38,
+      "label": "filler",
+      "p_no_absolute": 1.6696206591761131e-13,
+      "p_yes_absolute": 1.0958309997269322e-12,
+      "yes_plus_no_mass": 1.2627930656445435e-12
+    },
+    {
+      "V_as_reported": 0.001256110102416658,
+      "V_true_ratio": 0.869858980178833,
+      "candidate_index": 3,
+      "episode": 38,
+      "label": "distractor",
+      "p_no_absolute": 1.8820035319663114e-13,
+      "p_yes_absolute": 1.257926597088288e-12,
+      "yes_plus_no_mass": 1.4461269502849192e-12
+    },
+    {
+      "V_as_reported": 0.002077324575404672,
+      "V_true_ratio": 0.72911536693573,
+      "candidate_index": 4,
+      "episode": 38,
+      "label": "load_bearing",
+      "p_no_absolute": 7.739831453697221e-13,
+      "p_yes_absolute": 2.0832599968018117e-12,
+      "yes_plus_no_mass": 2.857243142171534e-12
+    },
+    {
+      "V_as_reported": 0.00034197927262794123,
+      "V_true_ratio": 0.9465953707695007,
+      "candidate_index": 0,
+      "episode": 39,
+      "label": "distractor",
+      "p_no_absolute": 1.9300633343605732e-14,
+      "p_yes_absolute": 3.4210286513347565e-13,
+      "yes_plus_no_mass": 3.614034984770814e-13
+    },
+    {
+      "V_as_reported": 0.0006967715770550836,
+      "V_true_ratio": 0.9456881880760193,
+      "candidate_index": 1,
+      "episode": 39,
+      "label": "distractor",
+      "p_no_absolute": 4.0045810227986103e-14,
+      "p_yes_absolute": 6.972853284353819e-13,
+      "yes_plus_no_mass": 7.37331138663368e-13
+    },
+    {
+      "V_as_reported": 0.0002868417414140645,
+      "V_true_ratio": 0.9598003625869751,
+      "candidate_index": 2,
+      "episode": 39,
+      "label": "filler",
+      "p_no_absolute": 1.2017496779604883e-14,
+      "p_yes_absolute": 2.869274913150366e-13,
+      "yes_plus_no_mass": 2.9894498809464147e-13
+    },
+    {
+      "V_as_reported": 0.0006853694928936209,
+      "V_true_ratio": 0.8909233212471008,
+      "candidate_index": 3,
+      "episode": 39,
+      "label": "load_bearing",
+      "p_no_absolute": 8.397513777012519e-14,
+      "p_yes_absolute": 6.858971398661373e-13,
+      "yes_plus_no_mass": 7.698722776362625e-13
+    },
+    {
+      "V_as_reported": 0.0010855743161613013,
+      "V_true_ratio": 0.9269194602966309,
+      "candidate_index": 0,
+      "episode": 40,
+      "label": "filler",
+      "p_no_absolute": 8.568970863822092e-14,
+      "p_yes_absolute": 1.0868471921055e-12,
+      "yes_plus_no_mass": 1.172536900743721e-12
+    },
+    {
+      "V_as_reported": 0.001314974931288537,
+      "V_true_ratio": 0.9587340950965881,
+      "candidate_index": 1,
+      "episode": 40,
+      "label": "distractor",
+      "p_no_absolute": 5.6677014156122224e-14,
+      "p_yes_absolute": 1.3167809941386222e-12,
+      "yes_plus_no_mass": 1.3734580082947444e-12
+    },
+    {
+      "V_as_reported": 0.0023299340326002407,
+      "V_true_ratio": 0.9734377861022949,
+      "candidate_index": 2,
+      "episode": 40,
+      "label": "distractor",
+      "p_no_absolute": 6.372945790880657e-14,
+      "p_yes_absolute": 2.3355241351996625e-12,
+      "yes_plus_no_mass": 2.399253593108469e-12
+    },
+    {
+      "V_as_reported": 0.004997985592314908,
+      "V_true_ratio": 0.9429826736450195,
+      "candidate_index": 3,
+      "episode": 40,
+      "label": "load_bearing",
+      "p_no_absolute": 3.0381269331899996e-13,
+      "p_yes_absolute": 5.024617007187704e-12,
+      "yes_plus_no_mass": 5.328429700506704e-12
+    },
+    {
+      "V_as_reported": 0.001273179524535884,
+      "V_true_ratio": 0.9508070945739746,
+      "candidate_index": 4,
+      "episode": 40,
+      "label": "filler",
+      "p_no_absolute": 6.596015644485045e-14,
+      "p_yes_absolute": 1.2748866632522615e-12,
+      "yes_plus_no_mass": 1.340846819697112e-12
+    },
+    {
+      "V_as_reported": 0.0042599977577970705,
+      "V_true_ratio": 0.9776606559753418,
+      "candidate_index": 0,
+      "episode": 41,
+      "label": "distractor",
+      "p_no_absolute": 9.77661284177686e-14,
+      "p_yes_absolute": 4.2786412433881704e-12,
+      "yes_plus_no_mass": 4.376407371805939e-12
+    },
+    {
+      "V_as_reported": 0.006418148604945261,
+      "V_true_ratio": 0.985027551651001,
+      "candidate_index": 1,
+      "episode": 41,
+      "label": "distractor",
+      "p_no_absolute": 9.819562155587158e-14,
+      "p_yes_absolute": 6.460241629840935e-12,
+      "yes_plus_no_mass": 6.5584372513968064e-12
+    },
+    {
+      "V_as_reported": 0.003765780585135591,
+      "V_true_ratio": 0.9860198497772217,
+      "candidate_index": 2,
+      "episode": 41,
+      "label": "filler",
+      "p_no_absolute": 5.359736160209967e-14,
+      "p_yes_absolute": 3.7802178921853e-12,
+      "yes_plus_no_mass": 3.8338152537874e-12
+    },
+    {
+      "V_as_reported": 0.006795247890728161,
+      "V_true_ratio": 0.9651486873626709,
+      "candidate_index": 3,
+      "episode": 41,
+      "label": "load_bearing",
+      "p_no_absolute": 2.471152351756628e-13,
+      "p_yes_absolute": 6.84342990261988e-12,
+      "yes_plus_no_mass": 7.0905451377955425e-12
+    },
+    {
+      "V_as_reported": 0.003407327765751845,
+      "V_true_ratio": 0.9809136986732483,
+      "candidate_index": 4,
+      "episode": 41,
+      "label": "filler",
+      "p_no_absolute": 6.652991146275516e-14,
+      "p_yes_absolute": 3.4192048064402014e-12,
+      "yes_plus_no_mass": 3.4857347179029566e-12
+    },
+    {
+      "V_as_reported": 0.0008571396851792432,
+      "V_true_ratio": 0.908139169216156,
+      "candidate_index": 0,
+      "episode": 42,
+      "label": "distractor",
+      "p_no_absolute": 8.67839464570655e-14,
+      "p_yes_absolute": 8.579494536684051e-13,
+      "yes_plus_no_mass": 9.447334001254706e-13
+    },
+    {
+      "V_as_reported": 0.0004773268164160774,
+      "V_true_ratio": 0.8099180459976196,
+      "candidate_index": 1,
+      "episode": 42,
+      "label": "filler",
+      "p_no_absolute": 1.120911902793148e-13,
+      "p_yes_absolute": 4.776082957944072e-13,
+      "yes_plus_no_mass": 5.89699486073722e-13
+    },
+    {
+      "V_as_reported": 0.0021894468781712612,
+      "V_true_ratio": 0.8615641593933105,
+      "candidate_index": 2,
+      "episode": 42,
+      "label": "filler",
+      "p_no_absolute": 3.526959269344737e-13,
+      "p_yes_absolute": 2.19502497775248e-12,
+      "yes_plus_no_mass": 2.5477209046869537e-12
+    },
+    {
+      "V_as_reported": 0.0008794847166728236,
+      "V_true_ratio": 0.9435293674468994,
+      "candidate_index": 3,
+      "episode": 42,
+      "label": "load_bearing",
+      "p_no_absolute": 5.268662500094827e-14,
+      "p_yes_absolute": 8.803052687841872e-13,
+      "yes_plus_no_mass": 9.329918937851355e-13
+    },
+    {
+      "V_as_reported": 0.003026175212920572,
+      "V_true_ratio": 0.9650646448135376,
+      "candidate_index": 0,
+      "episode": 43,
+      "label": "filler",
+      "p_no_absolute": 1.0989217755176181e-13,
+      "p_yes_absolute": 3.035694308775594e-12,
+      "yes_plus_no_mass": 3.1455864863273557e-12
+    },
+    {
+      "V_as_reported": 0.0014104618150492143,
+      "V_true_ratio": 0.9544104337692261,
+      "candidate_index": 1,
+      "episode": 43,
+      "label": "distractor",
+      "p_no_absolute": 6.747366879632233e-14,
+      "p_yes_absolute": 1.4125493309757875e-12,
+      "yes_plus_no_mass": 1.4800229997721098e-12
+    },
+    {
+      "V_as_reported": 0.0021083440768265758,
+      "V_true_ratio": 0.9459538459777832,
+      "candidate_index": 2,
+      "episode": 43,
+      "label": "distractor",
+      "p_no_absolute": 1.2072729426403084e-13,
+      "p_yes_absolute": 2.113053655661279e-12,
+      "yes_plus_no_mass": 2.2337809499253097e-12
+    },
+    {
+      "V_as_reported": 0.0022975906344797443,
+      "V_true_ratio": 0.9160224795341492,
+      "candidate_index": 3,
+      "episode": 43,
+      "label": "load_bearing",
+      "p_no_absolute": 2.1116406691799872e-13,
+      "p_yes_absolute": 2.3033679998063494e-12,
+      "yes_plus_no_mass": 2.514532066724348e-12
+    },
+    {
+      "V_as_reported": 0.0023645177453750104,
+      "V_true_ratio": 0.9258959293365479,
+      "candidate_index": 4,
+      "episode": 43,
+      "label": "filler",
+      "p_no_absolute": 1.897287123416025e-13,
+      "p_yes_absolute": 2.37057162094656e-12,
+      "yes_plus_no_mass": 2.5603003332881624e-12
+    },
+    {
+      "V_as_reported": 0.0003937415060314396,
+      "V_true_ratio": 0.9458878040313721,
+      "candidate_index": 0,
+      "episode": 44,
+      "label": "distractor",
+      "p_no_absolute": 2.253448485754414e-14,
+      "p_yes_absolute": 3.939054757286925e-13,
+      "yes_plus_no_mass": 4.1643996058623664e-13
+    },
+    {
+      "V_as_reported": 0.00029154913753180024,
+      "V_true_ratio": 0.9490503072738647,
+      "candidate_index": 1,
+      "episode": 44,
+      "label": "distractor",
+      "p_no_absolute": 1.565661798342069e-14,
+      "p_yes_absolute": 2.9163872922524647e-13,
+      "yes_plus_no_mass": 3.0729534720866716e-13
+    },
+    {
+      "V_as_reported": 0.0004709482588161697,
+      "V_true_ratio": 0.9429605603218079,
+      "candidate_index": 2,
+      "episode": 44,
+      "label": "distractor",
+      "p_no_absolute": 2.850178453710564e-14,
+      "p_yes_absolute": 4.711835847708012e-13,
+      "yes_plus_no_mass": 4.996853693079069e-13
+    },
+    {
+      "V_as_reported": 0.0004951796441377717,
+      "V_true_ratio": 0.9515786170959473,
+      "candidate_index": 3,
+      "episode": 44,
+      "label": "filler",
+      "p_no_absolute": 2.521052282406823e-14,
+      "p_yes_absolute": 4.954374584198451e-13,
+      "yes_plus_no_mass": 5.206479812439133e-13
+    },
+    {
+      "V_as_reported": 0.00045908879608198513,
+      "V_true_ratio": 0.9481517672538757,
+      "candidate_index": 4,
+      "episode": 44,
+      "label": "filler",
+      "p_no_absolute": 2.5116725783621077e-14,
+      "p_yes_absolute": 4.593111915113246e-13,
+      "yes_plus_no_mass": 4.844279172949457e-13
+    },
+    {
+      "V_as_reported": 0.0011309344849261493,
+      "V_true_ratio": 0.8633135557174683,
+      "candidate_index": 5,
+      "episode": 44,
+      "label": "load_bearing",
+      "p_no_absolute": 1.7929306314352217e-13,
+      "p_yes_absolute": 1.1324179441385418e-12,
+      "yes_plus_no_mass": 1.311711007282064e-12
+    },
+    {
+      "V_as_reported": 0.0005881766857537782,
+      "V_true_ratio": 0.9053799510002136,
+      "candidate_index": 0,
+      "episode": 45,
+      "label": "distractor",
+      "p_no_absolute": 6.150949975053388e-14,
+      "p_yes_absolute": 5.885590409135388e-13,
+      "yes_plus_no_mass": 6.500685406640727e-13
+    },
+    {
+      "V_as_reported": 0.0010789285090821834,
+      "V_true_ratio": 0.8929172158241272,
+      "candidate_index": 1,
+      "episode": 45,
+      "label": "distractor",
+      "p_no_absolute": 1.295466690734784e-13,
+      "p_yes_absolute": 1.080233775693773e-12,
+      "yes_plus_no_mass": 1.2097804447672514e-12
+    },
+    {
+      "V_as_reported": 0.000964536475925797,
+      "V_true_ratio": 0.9206392765045166,
+      "candidate_index": 2,
+      "episode": 45,
+      "label": "distractor",
+      "p_no_absolute": 8.323195783846785e-14,
+      "p_yes_absolute": 9.65548062510646e-13,
+      "yes_plus_no_mass": 1.048780020349114e-12
+    },
+    {
+      "V_as_reported": 0.0009070463288237948,
+      "V_true_ratio": 0.8725072145462036,
+      "candidate_index": 3,
+      "episode": 45,
+      "label": "filler",
+      "p_no_absolute": 1.3267765521223635e-13,
+      "p_yes_absolute": 9.079902628383874e-13,
+      "yes_plus_no_mass": 1.0406679180506237e-12
+    },
+    {
+      "V_as_reported": 0.0005133948946693982,
+      "V_true_ratio": 0.8361003994941711,
+      "candidate_index": 4,
+      "episode": 45,
+      "label": "filler",
+      "p_no_absolute": 1.0070192428416128e-13,
+      "p_yes_absolute": 5.137103307843727e-13,
+      "yes_plus_no_mass": 6.144122550685339e-13
+    },
+    {
+      "V_as_reported": 0.0011958838490742797,
+      "V_true_ratio": 0.821597158908844,
+      "candidate_index": 5,
+      "episode": 45,
+      "label": "load_bearing",
+      "p_no_absolute": 2.600545375829738e-13,
+      "p_yes_absolute": 1.197627066962248e-12,
+      "yes_plus_no_mass": 1.4576816045452218e-12
+    },
+    {
+      "V_as_reported": 0.0003667436771631439,
+      "V_true_ratio": 0.9400911331176758,
+      "candidate_index": 0,
+      "episode": 46,
+      "label": "distractor",
+      "p_no_absolute": 2.3380486118668685e-14,
+      "p_yes_absolute": 3.6688680522464767e-13,
+      "yes_plus_no_mass": 3.9026729134331636e-13
+    },
+    {
+      "V_as_reported": 0.00020697066746575704,
+      "V_true_ratio": 0.9507481455802917,
+      "candidate_index": 1,
+      "episode": 46,
+      "label": "distractor",
+      "p_no_absolute": 1.0724094409806512e-14,
+      "p_yes_absolute": 2.0701573322321615e-13,
+      "yes_plus_no_mass": 2.1773982763302266e-13
+    },
+    {
+      "V_as_reported": 0.0003119894401743064,
+      "V_true_ratio": 0.9507735967636108,
+      "candidate_index": 2,
+      "episode": 46,
+      "label": "filler",
+      "p_no_absolute": 1.6158583260490744e-14,
+      "p_yes_absolute": 3.1209185084347946e-13,
+      "yes_plus_no_mass": 3.282504341039702e-13
+    },
+    {
+      "V_as_reported": 0.0003612284118805084,
+      "V_true_ratio": 0.7891841530799866,
+      "candidate_index": 3,
+      "episode": 46,
+      "label": "load_bearing",
+      "p_no_absolute": 9.653959082882649e-14,
+      "p_yes_absolute": 3.613938304430214e-13,
+      "yes_plus_no_mass": 4.579334212718479e-13
+    },
+    {
+      "V_as_reported": 0.0009475038011650929,
+      "V_true_ratio": 0.9840260148048401,
+      "candidate_index": 0,
+      "episode": 47,
+      "label": "distractor",
+      "p_no_absolute": 1.5396001192143592e-14,
+      "p_yes_absolute": 9.484170176640716e-13,
+      "yes_plus_no_mass": 9.638130188562152e-13
+    },
+    {
+      "V_as_reported": 0.0007625713621810258,
+      "V_true_ratio": 0.978951632976532,
+      "candidate_index": 1,
+      "episode": 47,
+      "label": "distractor",
+      "p_no_absolute": 1.6408767993989458e-14,
+      "p_yes_absolute": 7.631658434543998e-13,
+      "yes_plus_no_mass": 7.795746114483892e-13
+    },
+    {
+      "V_as_reported": 0.0008060440850336653,
+      "V_true_ratio": 0.9818906784057617,
+      "candidate_index": 2,
+      "episode": 47,
+      "label": "filler",
+      "p_no_absolute": 1.487835394708807e-14,
+      "p_yes_absolute": 8.067063184992451e-13,
+      "yes_plus_no_mass": 8.215846724463332e-13
+    },
+    {
+      "V_as_reported": 0.0008490433311171684,
+      "V_true_ratio": 0.9790619015693665,
+      "candidate_index": 3,
+      "episode": 47,
+      "label": "filler",
+      "p_no_absolute": 1.8173357851686452e-14,
+      "p_yes_absolute": 8.4978026134927e-13,
+      "yes_plus_no_mass": 8.679536192009564e-13
+    },
+    {
+      "V_as_reported": 0.0019677980552453133,
+      "V_true_ratio": 0.9825986623764038,
+      "candidate_index": 4,
+      "episode": 47,
+      "label": "load_bearing",
+      "p_no_absolute": 3.491867236441078e-14,
+      "p_yes_absolute": 1.9717467675955946e-12,
+      "yes_plus_no_mass": 2.0066654399600054e-12
+    },
+    {
+      "V_as_reported": 0.0014493431673338719,
+      "V_true_ratio": 0.7889454364776611,
+      "candidate_index": 0,
+      "episode": 48,
+      "label": "filler",
+      "p_no_absolute": 3.8843442893600477e-13,
+      "p_yes_absolute": 1.4520106037668734e-12,
+      "yes_plus_no_mass": 1.840445032702878e-12
+    },
+    {
+      "V_as_reported": 0.0009555991521318665,
+      "V_true_ratio": 0.834083080291748,
+      "candidate_index": 1,
+      "episode": 48,
+      "label": "distractor",
+      "p_no_absolute": 1.9030702578040626e-13,
+      "p_yes_absolute": 9.566952265116502e-13,
+      "yes_plus_no_mass": 1.1470022522920564e-12
+    },
+    {
+      "V_as_reported": 0.0017528003151660732,
+      "V_true_ratio": 0.8418522477149963,
+      "candidate_index": 2,
+      "episode": 48,
+      "label": "filler",
+      "p_no_absolute": 3.2996256551717784e-13,
+      "p_yes_absolute": 1.7564573927264515e-12,
+      "yes_plus_no_mass": 2.0864199582436294e-12
+    },
+    {
+      "V_as_reported": 0.0017065974467389085,
+      "V_true_ratio": 0.8477847576141357,
+      "candidate_index": 3,
+      "episode": 48,
+      "label": "distractor",
+      "p_no_absolute": 3.070285453828092e-13,
+      "p_yes_absolute": 1.7100397703764814e-12,
+      "yes_plus_no_mass": 2.0170683157592906e-12
+    },
+    {
+      "V_as_reported": 0.010363918089198143,
+      "V_true_ratio": 0.8394820094108582,
+      "candidate_index": 4,
+      "episode": 48,
+      "label": "load_bearing",
+      "p_no_absolute": 2.006463571679884e-12,
+      "p_yes_absolute": 1.0493466338912238e-11,
+      "yes_plus_no_mass": 1.2499929910592122e-11
+    },
+    {
+      "V_as_reported": 0.0005097408527633939,
+      "V_true_ratio": 0.9333969354629517,
+      "candidate_index": 0,
+      "episode": 49,
+      "label": "distractor",
+      "p_no_absolute": 3.639270959240881e-14,
+      "p_yes_absolute": 5.100193813285803e-13,
+      "yes_plus_no_mass": 5.464120909209891e-13
+    },
+    {
+      "V_as_reported": 0.001214577641675871,
+      "V_true_ratio": 0.9452092051506042,
+      "candidate_index": 1,
+      "episode": 49,
+      "label": "distractor",
+      "p_no_absolute": 7.049577393190842e-14,
+      "p_yes_absolute": 1.2161403611585242e-12,
+      "yes_plus_no_mass": 1.2866361350904326e-12
+    },
+    {
+      "V_as_reported": 0.002182121711967676,
+      "V_true_ratio": 0.8659781217575073,
+      "candidate_index": 2,
+      "episode": 49,
+      "label": "load_bearing",
+      "p_no_absolute": 3.385660621215564e-13,
+      "p_yes_absolute": 2.1876341883830808e-12,
+      "yes_plus_no_mass": 2.526200250504637e-12
+    },
+    {
+      "V_as_reported": 0.00036404657733393503,
+      "V_true_ratio": 0.9161852598190308,
+      "candidate_index": 3,
+      "episode": 49,
+      "label": "distractor",
+      "p_no_absolute": 3.331706181016088e-14,
+      "p_yes_absolute": 3.641912888884685e-13,
+      "yes_plus_no_mass": 3.975083506986294e-13
+    },
+    {
+      "V_as_reported": 0.0017551678343117223,
+      "V_true_ratio": 0.9412022233009338,
+      "candidate_index": 0,
+      "episode": 50,
+      "label": "distractor",
+      "p_no_absolute": 1.0985170970567379e-13,
+      "p_yes_absolute": 1.7584470121331797e-12,
+      "yes_plus_no_mass": 1.8682987218388535e-12
+    },
+    {
+      "V_as_reported": 0.002121120521854974,
+      "V_true_ratio": 0.9540635943412781,
+      "candidate_index": 1,
+      "episode": 50,
+      "label": "filler",
+      "p_no_absolute": 1.0235555621389975e-13,
+      "p_yes_absolute": 2.125846807615739e-12,
+      "yes_plus_no_mass": 2.2282023638296386e-12
+    },
+    {
+      "V_as_reported": 0.002694970936103024,
+      "V_true_ratio": 0.9752228856086731,
+      "candidate_index": 2,
+      "episode": 50,
+      "label": "load_bearing",
+      "p_no_absolute": 6.865991472202945e-14,
+      "p_yes_absolute": 2.702438967050469e-12,
+      "yes_plus_no_mass": 2.7710988817724984e-12
+    },
+    {
+      "V_as_reported": 0.0019426606655229583,
+      "V_true_ratio": 0.9669132828712463,
+      "candidate_index": 3,
+      "episode": 50,
+      "label": "distractor",
+      "p_no_absolute": 6.660945124463413e-14,
+      "p_yes_absolute": 1.9465715931504812e-12,
+      "yes_plus_no_mass": 2.0131810443951154e-12
+    },
+    {
+      "V_as_reported": 0.0005318413503522211,
+      "V_true_ratio": 0.9373393654823303,
+      "candidate_index": 0,
+      "episode": 51,
+      "label": "distractor",
+      "p_no_absolute": 3.557347287835161e-14,
+      "p_yes_absolute": 5.321432855996677e-13,
+      "yes_plus_no_mass": 5.677167584780193e-13
+    },
+    {
+      "V_as_reported": 0.0004217243160510448,
+      "V_true_ratio": 0.9368582367897034,
+      "candidate_index": 1,
+      "episode": 51,
+      "label": "distractor",
+      "p_no_absolute": 2.84359023144682e-14,
+      "p_yes_absolute": 4.219142396566511e-13,
+      "yes_plus_no_mass": 4.503501419711193e-13
+    },
+    {
+      "V_as_reported": 0.0007635921850190267,
+      "V_true_ratio": 0.9208186268806458,
+      "candidate_index": 2,
+      "episode": 51,
+      "label": "filler",
+      "p_no_absolute": 6.571592635297094e-14,
+      "p_yes_absolute": 7.642259221285475e-13,
+      "yes_plus_no_mass": 8.299418484815184e-13
+    },
+    {
+      "V_as_reported": 0.0012159292447821214,
+      "V_true_ratio": 0.9601084589958191,
+      "candidate_index": 3,
+      "episode": 51,
+      "label": "load_bearing",
+      "p_no_absolute": 5.058468224915062e-14,
+      "p_yes_absolute": 1.217471110905033e-12,
+      "yes_plus_no_mass": 1.2680557931541835e-12
+    },
+    {
+      "V_as_reported": 0.0005025521640966449,
+      "V_true_ratio": 0.9083408117294312,
+      "candidate_index": 4,
+      "episode": 51,
+      "label": "filler",
+      "p_no_absolute": 5.0739807863110775e-14,
+      "p_yes_absolute": 5.028303619834806e-13,
+      "yes_plus_no_mass": 5.535701698465914e-13
+    },
+    {
+      "V_as_reported": 0.0007144234163765671,
+      "V_true_ratio": 0.9759741425514221,
+      "candidate_index": 0,
+      "episode": 52,
+      "label": "distractor",
+      "p_no_absolute": 1.7600063930128113e-14,
+      "p_yes_absolute": 7.149467649847363e-13,
+      "yes_plus_no_mass": 7.325468289148644e-13
+    },
+    {
+      "V_as_reported": 0.0006619102113330058,
+      "V_true_ratio": 0.9702207446098328,
+      "candidate_index": 1,
+      "episode": 52,
+      "label": "filler",
+      "p_no_absolute": 2.0330086694512507e-14,
+      "p_yes_absolute": 6.623620922574514e-13,
+      "yes_plus_no_mass": 6.826921789519639e-13
+    },
+    {
+      "V_as_reported": 0.0006094277096110474,
+      "V_true_ratio": 0.969929039478302,
+      "candidate_index": 2,
+      "episode": 52,
+      "label": "filler",
+      "p_no_absolute": 1.8906124360290252e-14,
+      "p_yes_absolute": 6.098108671671876e-13,
+      "yes_plus_no_mass": 6.287169915274778e-13
+    },
+    {
+      "V_as_reported": 0.000616327199866909,
+      "V_true_ratio": 0.9787409901618958,
+      "candidate_index": 3,
+      "episode": 52,
+      "label": "distractor",
+      "p_no_absolute": 1.3395571103909636e-14,
+      "p_yes_absolute": 6.167155544925529e-13,
+      "yes_plus_no_mass": 6.301111255964625e-13
+    },
+    {
+      "V_as_reported": 0.0015158005953586164,
+      "V_true_ratio": 0.9790480732917786,
+      "candidate_index": 4,
+      "episode": 52,
+      "label": "load_bearing",
+      "p_no_absolute": 3.248885332312636e-14,
+      "p_yes_absolute": 1.5181510562567446e-12,
+      "yes_plus_no_mass": 1.550639909579871e-12
+    },
+    {
+      "V_as_reported": 0.00061791060037407,
+      "V_true_ratio": 0.9699175357818604,
+      "candidate_index": 0,
+      "episode": 53,
+      "label": "filler",
+      "p_no_absolute": 1.917705123660133e-14,
+      "p_yes_absolute": 6.18304506986439e-13,
+      "yes_plus_no_mass": 6.374815582230403e-13
+    },
+    {
+      "V_as_reported": 0.00029672245944185205,
+      "V_true_ratio": 0.9524575471878052,
+      "candidate_index": 1,
+      "episode": 53,
+      "label": "distractor",
+      "p_no_absolute": 1.4815663344595886e-14,
+      "p_yes_absolute": 2.9681492723712677e-13,
+      "yes_plus_no_mass": 3.1163059058172266e-13
+    },
+    {
+      "V_as_reported": 0.00043697028355736917,
+      "V_true_ratio": 0.9533021450042725,
+      "candidate_index": 2,
+      "episode": 53,
+      "label": "distractor",
+      "p_no_absolute": 2.1414939388301503e-14,
+      "p_yes_absolute": 4.371706718419438e-13,
+      "yes_plus_no_mass": 4.585856112302453e-13
+    },
+    {
+      "V_as_reported": 0.0005507353493354211,
+      "V_true_ratio": 0.9482320547103882,
+      "candidate_index": 3,
+      "episode": 53,
+      "label": "load_bearing",
+      "p_no_absolute": 3.008439444828273e-14,
+      "p_yes_absolute": 5.510554035650927e-13,
+      "yes_plus_no_mass": 5.811397980133755e-13
+    },
+    {
+      "V_as_reported": 0.0009343561845289694,
+      "V_true_ratio": 0.9491117000579834,
+      "candidate_index": 4,
+      "episode": 53,
+      "label": "distractor",
+      "p_no_absolute": 5.014651888179955e-14,
+      "p_yes_absolute": 9.352769210144163e-13,
+      "yes_plus_no_mass": 9.854234398962158e-13
+    },
+    {
+      "V_as_reported": 0.0004339754225480203,
+      "V_true_ratio": 0.787788987159729,
+      "candidate_index": 0,
+      "episode": 54,
+      "label": "distractor",
+      "p_no_absolute": 1.1696676613381918e-13,
+      "p_yes_absolute": 4.342146217237164e-13,
+      "yes_plus_no_mass": 5.511813878575356e-13
+    },
+    {
+      "V_as_reported": 0.0005631166686020174,
+      "V_true_ratio": 0.7477237582206726,
+      "candidate_index": 1,
+      "episode": 54,
+      "label": "filler",
+      "p_no_absolute": 1.9013432592685647e-13,
+      "p_yes_absolute": 5.635410757834358e-13,
+      "yes_plus_no_mass": 7.536754017102923e-13
+    },
+    {
+      "V_as_reported": 0.0006437688939370566,
+      "V_true_ratio": 0.8152481913566589,
+      "candidate_index": 2,
+      "episode": 54,
+      "label": "distractor",
+      "p_no_absolute": 1.4600640303990414e-13,
+      "p_yes_absolute": 6.442776542305018e-13,
+      "yes_plus_no_mass": 7.902840572704059e-13
+    },
+    {
+      "V_as_reported": 0.0006485155652726673,
+      "V_true_ratio": 0.6891433000564575,
+      "candidate_index": 3,
+      "episode": 54,
+      "label": "load_bearing",
+      "p_no_absolute": 2.9280611680941593e-13,
+      "p_yes_absolute": 6.491264231862914e-13,
+      "yes_plus_no_mass": 9.419325399957074e-13
+    },
+    {
+      "V_as_reported": 0.00041659411021143276,
+      "V_true_ratio": 0.8557166457176208,
+      "candidate_index": 0,
+      "episode": 55,
+      "label": "distractor",
+      "p_no_absolute": 7.027667022537626e-14,
+      "p_yes_absolute": 4.16797022242954e-13,
+      "yes_plus_no_mass": 4.870736924683303e-13
+    },
+    {
+      "V_as_reported": 0.0003121879789051198,
+      "V_true_ratio": 0.8379797339439392,
+      "candidate_index": 1,
+      "episode": 55,
+      "label": "filler",
+      "p_no_absolute": 6.038285783925915e-14,
+      "p_yes_absolute": 3.123043273642323e-13,
+      "yes_plus_no_mass": 3.7268718520349145e-13
+    },
+    {
+      "V_as_reported": 0.00045349863279141355,
+      "V_true_ratio": 0.7964981198310852,
+      "candidate_index": 2,
+      "episode": 55,
+      "label": "load_bearing",
+      "p_no_absolute": 1.1593297936235425e-13,
+      "p_yes_absolute": 4.5375698641200723e-13,
+      "yes_plus_no_mass": 5.696899657743615e-13
+    },
+    {
+      "V_as_reported": 0.0003010586578328023,
+      "V_true_ratio": 0.7923212647438049,
+      "candidate_index": 3,
+      "episode": 55,
+      "label": "filler",
+      "p_no_absolute": 7.894179017073344e-14,
+      "p_yes_absolute": 3.0117309470986675e-13,
+      "yes_plus_no_mass": 3.801148848806002e-13
+    },
+    {
+      "V_as_reported": 0.00034580220953576,
+      "V_true_ratio": 0.7946326732635498,
+      "candidate_index": 4,
+      "episode": 55,
+      "label": "distractor",
+      "p_no_absolute": 8.940909807225034e-14,
+      "p_yes_absolute": 3.4595275862775443e-13,
+      "yes_plus_no_mass": 4.3536185670000477e-13
+    },
+    {
+      "V_as_reported": 0.0004218808164930508,
+      "V_true_ratio": 0.5703206658363342,
+      "candidate_index": 0,
+      "episode": 56,
+      "label": "distractor",
+      "p_no_absolute": 3.180800891774971e-13,
+      "p_yes_absolute": 4.221931235604687e-13,
+      "yes_plus_no_mass": 7.402732127379658e-13
+    },
+    {
+      "V_as_reported": 0.00027085560509887885,
+      "V_true_ratio": 0.6093262434005737,
+      "candidate_index": 1,
+      "episode": 56,
+      "label": "filler",
+      "p_no_absolute": 1.7373813976026553e-13,
+      "p_yes_absolute": 2.7097605843212635e-13,
+      "yes_plus_no_mass": 4.447141981923919e-13
+    },
+    {
+      "V_as_reported": 0.0004281761533114707,
+      "V_true_ratio": 0.6907475590705872,
+      "candidate_index": 2,
+      "episode": 56,
+      "label": "filler",
+      "p_no_absolute": 1.918163842823048e-13,
+      "p_yes_absolute": 4.284417330462087e-13,
+      "yes_plus_no_mass": 6.202581173285135e-13
+    },
+    {
+      "V_as_reported": 0.0009365941998710388,
+      "V_true_ratio": 0.6441758275032043,
+      "candidate_index": 3,
+      "episode": 56,
+      "label": "distractor",
+      "p_no_absolute": 5.1810091590207e-13,
+      "p_yes_absolute": 9.379579361465384e-13,
+      "yes_plus_no_mass": 1.4560588520486084e-12
+    },
+    {
+      "V_as_reported": 0.0005261803054673218,
+      "V_true_ratio": 0.5135841965675354,
+      "candidate_index": 4,
+      "episode": 56,
+      "label": "load_bearing",
+      "p_no_absolute": 4.988567068112126e-13,
+      "p_yes_absolute": 5.267199437025694e-13,
+      "yes_plus_no_mass": 1.025576650513782e-12
+    },
+    {
+      "V_as_reported": 0.00026315365565081594,
+      "V_true_ratio": 0.9572415351867676,
+      "candidate_index": 0,
+      "episode": 57,
+      "label": "distractor",
+      "p_no_absolute": 1.1757894733798596e-14,
+      "p_yes_absolute": 2.632260186728741e-13,
+      "yes_plus_no_mass": 2.749839134066727e-13
+    },
+    {
+      "V_as_reported": 0.0004586976496821381,
+      "V_true_ratio": 0.9659825563430786,
+      "candidate_index": 1,
+      "episode": 57,
+      "label": "filler",
+      "p_no_absolute": 1.616089566043675e-14,
+      "p_yes_absolute": 4.589155661385846e-13,
+      "yes_plus_no_mass": 4.750764617990214e-13
+    },
+    {
+      "V_as_reported": 0.00018057288226740347,
+      "V_true_ratio": 0.9316263794898987,
+      "candidate_index": 2,
+      "episode": 57,
+      "label": "filler",
+      "p_no_absolute": 1.3255125417958348e-14,
+      "p_yes_absolute": 1.806078886706225e-13,
+      "yes_plus_no_mass": 1.9386301408858084e-13
+    },
+    {
+      "V_as_reported": 0.0004652626146742048,
+      "V_true_ratio": 0.847617506980896,
+      "candidate_index": 3,
+      "episode": 57,
+      "label": "load_bearing",
+      "p_no_absolute": 8.36896537855826e-14,
+      "p_yes_absolute": 4.655181405285869e-13,
+      "yes_plus_no_mass": 5.492077943141695e-13
+    },
+    {
+      "V_as_reported": 0.003876756605193753,
+      "V_true_ratio": 0.988455057144165,
+      "candidate_index": 0,
+      "episode": 58,
+      "label": "distractor",
+      "p_no_absolute": 4.5457998395235025e-14,
+      "p_yes_absolute": 3.8920212538928745e-12,
+      "yes_plus_no_mass": 3.9374792522881095e-12
+    },
+    {
+      "V_as_reported": 0.00408113427609367,
+      "V_true_ratio": 0.983807384967804,
+      "candidate_index": 1,
+      "episode": 58,
+      "label": "filler",
+      "p_no_absolute": 6.745145620431353e-14,
+      "p_yes_absolute": 4.098134592095404e-12,
+      "yes_plus_no_mass": 4.165586048299717e-12
+    },
+    {
+      "V_as_reported": 0.00215863027395173,
+      "V_true_ratio": 0.9826776385307312,
+      "candidate_index": 2,
+      "episode": 58,
+      "label": "distractor",
+      "p_no_absolute": 3.81354595525938e-14,
+      "p_yes_absolute": 2.1633825373484905e-12,
+      "yes_plus_no_mass": 2.2015179969010843e-12
+    },
+    {
+      "V_as_reported": 0.00270466317204234,
+      "V_true_ratio": 0.9793916344642639,
+      "candidate_index": 3,
+      "episode": 58,
+      "label": "distractor",
+      "p_no_absolute": 5.706902778037509e-14,
+      "p_yes_absolute": 2.71215298483507e-12,
+      "yes_plus_no_mass": 2.769222012615445e-12
+    },
+    {
+      "V_as_reported": 0.001981413135996868,
+      "V_true_ratio": 0.9690638184547424,
+      "candidate_index": 4,
+      "episode": 58,
+      "label": "load_bearing",
+      "p_no_absolute": 6.338369228347379e-14,
+      "p_yes_absolute": 1.985472767099261e-12,
+      "yes_plus_no_mass": 2.048856459382735e-12
+    },
+    {
+      "V_as_reported": 0.0002451198895571836,
+      "V_true_ratio": 0.9268583059310913,
+      "candidate_index": 0,
+      "episode": 59,
+      "label": "distractor",
+      "p_no_absolute": 1.9348412778094452e-14,
+      "p_yes_absolute": 2.4518473189238943e-13,
+      "yes_plus_no_mass": 2.645331446704839e-13
+    },
+    {
+      "V_as_reported": 0.00016427847505468313,
+      "V_true_ratio": 0.9156903028488159,
+      "candidate_index": 1,
+      "episode": 59,
+      "label": "distractor",
+      "p_no_absolute": 1.512819817334199e-14,
+      "p_yes_absolute": 1.6430795255189395e-13,
+      "yes_plus_no_mass": 1.7943615072523594e-13
+    },
+    {
+      "V_as_reported": 0.00025357559737221953,
+      "V_true_ratio": 0.9263062477111816,
+      "candidate_index": 2,
+      "episode": 59,
+      "label": "distractor",
+      "p_no_absolute": 2.017911831825748e-14,
+      "p_yes_absolute": 2.5364503249483694e-13,
+      "yes_plus_no_mass": 2.738241508130944e-13
+    },
+    {
+      "V_as_reported": 0.00011943037618135644,
+      "V_true_ratio": 0.8343107104301453,
+      "candidate_index": 3,
+      "episode": 59,
+      "label": "filler",
+      "p_no_absolute": 2.3721572734000836e-14,
+      "p_yes_absolute": 1.1944747491457464e-13,
+      "yes_plus_no_mass": 1.4316904764857547e-13
+    },
+    {
+      "V_as_reported": 0.0006498359264044849,
+      "V_true_ratio": 0.9057082533836365,
+      "candidate_index": 4,
+      "episode": 59,
+      "label": "load_bearing",
+      "p_no_absolute": 6.770194078747557e-14,
+      "p_yes_absolute": 6.503025114928951e-13,
+      "yes_plus_no_mass": 7.180044522803707e-13
+    },
+    {
+      "V_as_reported": 0.000708396771081219,
+      "V_true_ratio": 0.9125483632087708,
+      "candidate_index": 0,
+      "episode": 60,
+      "label": "distractor",
+      "p_no_absolute": 6.794002480828981e-14,
+      "p_yes_absolute": 7.089471154228533e-13,
+      "yes_plus_no_mass": 7.768871402311431e-13
+    },
+    {
+      "V_as_reported": 0.0004652197189728733,
+      "V_true_ratio": 0.8605467677116394,
+      "candidate_index": 1,
+      "episode": 60,
+      "label": "distractor",
+      "p_no_absolute": 7.543054722503051e-14,
+      "p_yes_absolute": 4.654713572048441e-13,
+      "yes_plus_no_mass": 5.409019044298746e-13
+    },
+    {
+      "V_as_reported": 0.000583069159231134,
+      "V_true_ratio": 0.8083862066268921,
+      "candidate_index": 2,
+      "episode": 60,
+      "label": "distractor",
+      "p_no_absolute": 1.3830610105531466e-13,
+      "p_yes_absolute": 5.834900162864087e-13,
+      "yes_plus_no_mass": 7.217961173417234e-13
+    },
+    {
+      "V_as_reported": 0.0003476410560253168,
+      "V_true_ratio": 0.8443545699119568,
+      "candidate_index": 3,
+      "episode": 60,
+      "label": "filler",
+      "p_no_absolute": 6.410934202125476e-14,
+      "p_yes_absolute": 3.4778424714762557e-13,
+      "yes_plus_no_mass": 4.1189358916888033e-13
+    },
+    {
+      "V_as_reported": 0.0004307802244597859,
+      "V_true_ratio": 0.8171395063400269,
+      "candidate_index": 4,
+      "episode": 60,
+      "label": "filler",
+      "p_no_absolute": 9.645135032451332e-14,
+      "p_yes_absolute": 4.31007443277287e-13,
+      "yes_plus_no_mass": 5.274587936018003e-13
+    },
+    {
+      "V_as_reported": 0.000634181286697248,
+      "V_true_ratio": 0.8161702752113342,
+      "candidate_index": 5,
+      "episode": 60,
+      "label": "load_bearing",
+      "p_no_absolute": 1.4295053855917228e-13,
+      "p_yes_absolute": 6.346744419079287e-13,
+      "yes_plus_no_mass": 7.776249804671009e-13
+    },
+    {
+      "V_as_reported": 0.00047497813810198344,
+      "V_true_ratio": 0.9572131037712097,
+      "candidate_index": 0,
+      "episode": 61,
+      "label": "distractor",
+      "p_no_absolute": 2.1241778748828412e-14,
+      "p_yes_absolute": 4.752139437166902e-13,
+      "yes_plus_no_mass": 4.964557224655186e-13
+    },
+    {
+      "V_as_reported": 0.000256858714246369,
+      "V_true_ratio": 0.9211931824684143,
+      "candidate_index": 1,
+      "episode": 61,
+      "label": "distractor",
+      "p_no_absolute": 2.1980044195325787e-14,
+      "p_yes_absolute": 2.569303548128482e-13,
+      "yes_plus_no_mass": 2.78910399008174e-13
+    },
+    {
+      "V_as_reported": 0.0005815102830918635,
+      "V_true_ratio": 0.9510910511016846,
+      "candidate_index": 2,
+      "episode": 61,
+      "label": "distractor",
+      "p_no_absolute": 2.992188270702252e-14,
+      "p_yes_absolute": 5.818660440623513e-13,
+      "yes_plus_no_mass": 6.117879267693738e-13
+    },
+    {
+      "V_as_reported": 0.0004090381974426229,
+      "V_true_ratio": 0.935372531414032,
+      "candidate_index": 3,
+      "episode": 61,
+      "label": "filler",
+      "p_no_absolute": 2.8273954697150862e-14,
+      "p_yes_absolute": 4.0921714801467335e-13,
+      "yes_plus_no_mass": 4.374911027118242e-13
+    },
+    {
+      "V_as_reported": 0.0006628450074023011,
+      "V_true_ratio": 0.9710928797721863,
+      "candidate_index": 4,
+      "episode": 61,
+      "label": "filler",
+      "p_no_absolute": 1.974476998730084e-14,
+      "p_yes_absolute": 6.632977587323063e-13,
+      "yes_plus_no_mass": 6.830425287196072e-13
+    },
+    {
+      "V_as_reported": 0.00040110433552929895,
+      "V_true_ratio": 0.9433150291442871,
+      "candidate_index": 5,
+      "episode": 61,
+      "label": "load_bearing",
+      "p_no_absolute": 2.4113101855407874e-14,
+      "p_yes_absolute": 4.0127496052540235e-13,
+      "yes_plus_no_mass": 4.253880623808102e-13
+    },
+    {
+      "V_as_reported": 0.003963826177479377,
+      "V_true_ratio": 0.9696612358093262,
+      "candidate_index": 0,
+      "episode": 62,
+      "label": "distractor",
+      "p_no_absolute": 1.245295641778832e-13,
+      "p_yes_absolute": 3.9800962005343e-12,
+      "yes_plus_no_mass": 4.104625764712183e-12
+    },
+    {
+      "V_as_reported": 0.002497928240510532,
+      "V_true_ratio": 0.9646807312965393,
+      "candidate_index": 1,
+      "episode": 62,
+      "label": "distractor",
+      "p_no_absolute": 9.169268534552077e-14,
+      "p_yes_absolute": 2.504413126533378e-12,
+      "yes_plus_no_mass": 2.5961058118788988e-12
+    },
+    {
+      "V_as_reported": 0.0012128900989494197,
+      "V_true_ratio": 0.9618588089942932,
+      "candidate_index": 2,
+      "episode": 62,
+      "label": "filler",
+      "p_no_absolute": 4.815630994014011e-14,
+      "p_yes_absolute": 1.2144214670342657e-12,
+      "yes_plus_no_mass": 1.2625777769744058e-12
+    },
+    {
+      "V_as_reported": 0.0021872752622989584,
+      "V_true_ratio": 0.9609002470970154,
+      "candidate_index": 3,
+      "episode": 62,
+      "label": "load_bearing",
+      "p_no_absolute": 8.920507832844288e-14,
+      "p_yes_absolute": 2.19226546638307e-12,
+      "yes_plus_no_mass": 2.2814705447115127e-12
+    },
+    {
+      "V_as_reported": 0.0013988397125247666,
+      "V_true_ratio": 0.9233409762382507,
+      "candidate_index": 4,
+      "episode": 62,
+      "label": "distractor",
+      "p_no_absolute": 1.1631289735612033e-13,
+      "p_yes_absolute": 1.4009621370977832e-12,
+      "yes_plus_no_mass": 1.5172750344539035e-12
+    },
+    {
+      "V_as_reported": 9.282986099019597e-05,
+      "V_true_ratio": 0.8504473567008972,
+      "candidate_index": 0,
+      "episode": 63,
+      "label": "distractor",
+      "p_no_absolute": 1.632606877921723e-14,
+      "p_yes_absolute": 9.283999486070851e-14,
+      "yes_plus_no_mass": 1.0916606363992575e-13
+    },
+    {
+      "V_as_reported": 0.0001322647011477046,
+      "V_true_ratio": 0.8802617192268372,
+      "candidate_index": 1,
+      "episode": 63,
+      "label": "filler",
+      "p_no_absolute": 1.7994118903783864e-14,
+      "p_yes_absolute": 1.3228457771460173e-13,
+      "yes_plus_no_mass": 1.502786966183856e-13
+    },
+    {
+      "V_as_reported": 0.00012839795982126526,
+      "V_true_ratio": 0.9128466844558716,
+      "candidate_index": 2,
+      "episode": 63,
+      "label": "distractor",
+      "p_no_absolute": 1.2260427522943311e-14,
+      "p_yes_absolute": 1.2841602239042904e-13,
+      "yes_plus_no_mass": 1.4067644991337235e-13
+    },
+    {
+      "V_as_reported": 0.0001082538981665016,
+      "V_true_ratio": 0.8978643417358398,
+      "candidate_index": 3,
+      "episode": 63,
+      "label": "distractor",
+      "p_no_absolute": 1.2315795525606483e-14,
+      "p_yes_absolute": 1.0826695171894246e-13,
+      "yes_plus_no_mass": 1.2058274724454894e-13
+    },
+    {
+      "V_as_reported": 0.00010387303147979987,
+      "V_true_ratio": 0.8855922818183899,
+      "candidate_index": 4,
+      "episode": 63,
+      "label": "filler",
+      "p_no_absolute": 1.3420705112553513e-14,
+      "p_yes_absolute": 1.0388521640147808e-13,
+      "yes_plus_no_mass": 1.173059215140316e-13
+    },
+    {
+      "V_as_reported": 0.00020226531668248335,
+      "V_true_ratio": 0.6869187355041504,
+      "candidate_index": 5,
+      "episode": 63,
+      "label": "load_bearing",
+      "p_no_absolute": 9.2214898098162e-14,
+      "p_yes_absolute": 2.0232489186637614e-13,
+      "yes_plus_no_mass": 2.9453978996453814e-13
+    },
+    {
+      "V_as_reported": 0.0015712744424623733,
+      "V_true_ratio": 0.8617134690284729,
+      "candidate_index": 0,
+      "episode": 64,
+      "label": "distractor",
+      "p_no_absolute": 2.526165583140172e-13,
+      "p_yes_absolute": 1.5741447858749757e-12,
+      "yes_plus_no_mass": 1.826761344188993e-12
+    },
+    {
+      "V_as_reported": 0.0023638881004396646,
+      "V_true_ratio": 0.8878896236419678,
+      "candidate_index": 1,
+      "episode": 64,
+      "label": "filler",
+      "p_no_absolute": 2.992756866979085e-13,
+      "p_yes_absolute": 2.3701984385587904e-12,
+      "yes_plus_no_mass": 2.669474125256699e-12
+    },
+    {
+      "V_as_reported": 0.0007981243956243387,
+      "V_true_ratio": 0.8485736846923828,
+      "candidate_index": 2,
+      "episode": 64,
+      "label": "filler",
+      "p_no_absolute": 1.4255779987471656e-13,
+      "p_yes_absolute": 7.988757767286858e-13,
+      "yes_plus_no_mass": 9.414335766034024e-13
+    },
+    {
+      "V_as_reported": 0.0024873228906962686,
+      "V_true_ratio": 0.6286606192588806,
+      "candidate_index": 3,
+      "episode": 64,
+      "label": "load_bearing",
+      "p_no_absolute": 1.4750560798845735e-12,
+      "p_yes_absolute": 2.4972031820863494e-12,
+      "yes_plus_no_mass": 3.972259261970923e-12
+    },
+    {
+      "V_as_reported": 0.0026591193002384068,
+      "V_true_ratio": 0.8978742957115173,
+      "candidate_index": 0,
+      "episode": 65,
+      "label": "distractor",
+      "p_no_absolute": 3.033509316137384e-13,
+      "p_yes_absolute": 2.667017865234933e-12,
+      "yes_plus_no_mass": 2.9703687968486714e-12
+    },
+    {
+      "V_as_reported": 0.0015477177841977947,
+      "V_true_ratio": 0.9272173047065735,
+      "candidate_index": 1,
+      "episode": 65,
+      "label": "filler",
+      "p_no_absolute": 1.2169250524808606e-13,
+      "p_yes_absolute": 1.550305565346799e-12,
+      "yes_plus_no_mass": 1.671998070594885e-12
+    },
+    {
+      "V_as_reported": 0.0016112464799037938,
+      "V_true_ratio": 0.9279046654701233,
+      "candidate_index": 2,
+      "episode": 65,
+      "label": "filler",
+      "p_no_absolute": 1.2540672439300543e-13,
+      "p_yes_absolute": 1.6140491720939565e-12,
+      "yes_plus_no_mass": 1.739455896486962e-12
+    },
+    {
+      "V_as_reported": 0.003120874034300223,
+      "V_true_ratio": 0.8593894839286804,
+      "candidate_index": 3,
+      "episode": 65,
+      "label": "load_bearing",
+      "p_no_absolute": 5.124885975663074e-13,
+      "p_yes_absolute": 3.1322488006080285e-12,
+      "yes_plus_no_mass": 3.644737398174336e-12
+    },
+    {
+      "V_as_reported": 0.0007795263140448483,
+      "V_true_ratio": 0.9136255979537964,
+      "candidate_index": 0,
+      "episode": 66,
+      "label": "distractor",
+      "p_no_absolute": 7.375954773174154e-14,
+      "p_yes_absolute": 7.801919917407862e-13,
+      "yes_plus_no_mass": 8.539515394725278e-13
+    },
+    {
+      "V_as_reported": 0.0005550283390571689,
+      "V_true_ratio": 0.9399465918540955,
+      "candidate_index": 1,
+      "episode": 66,
+      "label": "filler",
+      "p_no_absolute": 3.548184085411764e-14,
+      "p_yes_absolute": 5.553562709530169e-13,
+      "yes_plus_no_mass": 5.908381118071345e-13
+    },
+    {
+      "V_as_reported": 0.0008323854762447378,
+      "V_true_ratio": 0.9353874325752258,
+      "candidate_index": 2,
+      "episode": 66,
+      "label": "distractor",
+      "p_no_absolute": 5.754884822807213e-14,
+      "p_yes_absolute": 8.33126861769784e-13,
+      "yes_plus_no_mass": 8.906757099978561e-13
+    },
+    {
+      "V_as_reported": 0.0007652092996463166,
+      "V_true_ratio": 0.8925670981407166,
+      "candidate_index": 3,
+      "episode": 66,
+      "label": "load_bearing",
+      "p_no_absolute": 9.218260920221266e-14,
+      "p_yes_absolute": 7.65865886334649e-13,
+      "yes_plus_no_mass": 8.580484955368617e-13
+    },
+    {
+      "V_as_reported": 0.00036203967219648476,
+      "V_true_ratio": 0.9259235262870789,
+      "candidate_index": 4,
+      "episode": 66,
+      "label": "distractor",
+      "p_no_absolute": 2.897552667637318e-14,
+      "p_yes_absolute": 3.6218128648089765e-13,
+      "yes_plus_no_mass": 3.9115681315727083e-13
+    },
+    {
+      "V_as_reported": 0.0008588122681460959,
+      "V_true_ratio": 0.9480646848678589,
+      "candidate_index": 0,
+      "episode": 67,
+      "label": "filler",
+      "p_no_absolute": 4.708871977781616e-14,
+      "p_yes_absolute": 8.595909357575482e-13,
+      "yes_plus_no_mass": 9.066796555353644e-13
+    },
+    {
+      "V_as_reported": 0.001509121420237817,
+      "V_true_ratio": 0.9389854669570923,
+      "candidate_index": 1,
+      "episode": 67,
+      "label": "distractor",
+      "p_no_absolute": 9.821928426828608e-14,
+      "p_yes_absolute": 1.5115507586913046e-12,
+      "yes_plus_no_mass": 1.6097700429595907e-12
+    },
+    {
+      "V_as_reported": 0.0018736031804656996,
+      "V_true_ratio": 0.9537417888641357,
+      "candidate_index": 2,
+      "episode": 67,
+      "label": "distractor",
+      "p_no_absolute": 9.105200995300836e-14,
+      "p_yes_absolute": 1.8772910743286575e-12,
+      "yes_plus_no_mass": 1.968343084281666e-12
+    },
+    {
+      "V_as_reported": 0.0008830838774693577,
+      "V_true_ratio": 0.9437145590782166,
+      "candidate_index": 3,
+      "episode": 67,
+      "label": "filler",
+      "p_no_absolute": 5.271857847185049e-14,
+      "p_yes_absolute": 8.839109999492223e-13,
+      "yes_plus_no_mass": 9.366295784210728e-13
+    },
+    {
+      "V_as_reported": 0.0021932242950138256,
+      "V_true_ratio": 0.8972874283790588,
+      "candidate_index": 4,
+      "episode": 67,
+      "label": "load_bearing",
+      "p_no_absolute": 2.516737903149324e-13,
+      "p_yes_absolute": 2.1985982912725577e-12,
+      "yes_plus_no_mass": 2.45027208158749e-12
+    }
+  ],
+  "yes_plus_no_mass": {
+    "fraction_below_1e-9": 1.0,
+    "max": 6.49736207761556e-11,
+    "median": 7.515551020604617e-13,
+    "min": 1.0916606363992575e-13
+  }
+}
