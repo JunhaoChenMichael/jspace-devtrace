@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "counts": {
+    "episodes": 175,
+    "groups": 175,
+    "samples": 2800,
+    "references": 175
+  },
+  "selection_diversity": {
+    "groups_with_at_least_2_unique_sets": 175,
+    "groups_with_at_least_2_unique_sets_fraction": 1.0,
+    "groups_with_at_least_2_unique_sets_percent": 100.0,
+    "median_unique_selected_sets": 7.0,
+    "mean_unique_selected_sets": 6.868571428571428
+  },
+  "reward_diversity": {
+    "mixed_QA_reward_groups": 153,
+    "mixed_QA_reward_groups_fraction": 0.8742857142857143,
+    "mixed_QA_reward_groups_percent": 87.42857142857143,
+    "groups_with_QA_reward_std_gt_zero": 153,
+    "groups_with_QA_reward_std_gt_zero_fraction": 0.8742857142857143,
+    "groups_with_QA_reward_std_gt_zero_percent": 87.42857142857143,
+    "mean_within_group_QA_reward_std": 0.39474600451841313,
+    "mean_QA_reward": 0.42857142857142855
+  },
+  "containment_diversity": {
+    "mixed_containment_groups": 172,
+    "mixed_containment_groups_fraction": 0.9828571428571429,
+    "mixed_containment_groups_percent": 98.28571428571429
+  },
+  "containment_QA_relationship": {
+    "retained_samples": 1326,
+    "retained_correct": 1030,
+    "not_retained_samples": 1474,
+    "not_retained_correct": 170,
+    "P_QA_correct_given_load_bearing_retained": 0.7767722473604827,
+    "P_QA_correct_given_load_bearing_not_retained": 0.11533242876526459,
+    "difference": 0.661439818595218
+  },
+  "references": {
+    "exploitable_episode_definition": "oracle-selected memory produces a correct downstream answer",
+    "exploitable_episodes": 157,
+    "exploitable_fraction": 0.8971428571428571,
+    "oracle_QA_accuracy": 0.8971428571428571,
+    "full_context_QA_accuracy": 0.4228571428571429,
+    "no_memory_QA_accuracy": 0.14285714285714285,
+    "memory_dependent_exploitable_episodes_secondary": 132,
+    "memory_dependent_exploitable_fraction_secondary": 0.7542857142857143
+  },
+  "gate_b0": {
+    "status": "GREEN",
+    "observed": {
+      "mixed_QA_reward_groups_fraction": 0.8742857142857143,
+      "median_unique_selected_sets": 7.0
+    },
+    "thresholds": {
+      "green_mixed_QA_reward_groups_fraction_min": 0.4,
+      "green_median_unique_selected_sets_min": 4.0,
+      "red_mixed_QA_reward_groups_fraction_max_exclusive": 0.2
+    },
+    "reasons": [
+      "both GREEN thresholds are satisfied"
+    ],
+    "next_action": "run RL-QA, then run Hybrid"
+  },
+  "by_source": {
+    "evoked": {
+      "schema_version": 1,
+      "counts": {
+        "episodes": 60,
+        "groups": 60,
+        "samples": 960,
+        "references": 60
+      },
+      "selection_diversity": {
+        "groups_with_at_least_2_unique_sets": 60,
+        "groups_with_at_least_2_unique_sets_fraction": 1.0,
+        "groups_with_at_least_2_unique_sets_percent": 100.0,
+        "median_unique_selected_sets": 7.0,
+        "mean_unique_selected_sets": 6.933333333333334
+      },
+      "reward_diversity": {
+        "mixed_QA_reward_groups": 60,
+        "mixed_QA_reward_groups_fraction": 1.0,
+        "mixed_QA_reward_groups_percent": 100.0,
+        "groups_with_QA_reward_std_gt_zero": 60,
+        "groups_with_QA_reward_std_gt_zero_fraction": 1.0,
+        "groups_with_QA_reward_std_gt_zero_percent": 100.0,
+        "mean_within_group_QA_reward_std": 0.44328133855785534,
+        "mean_QA_reward": 0.4666666666666667
+      },
+      "containment_diversity": {
+        "mixed_containment_groups": 60,
+        "mixed_containment_groups_fraction": 1.0,
+        "mixed_containment_groups_percent": 100.0
+      },
+      "containment_QA_relationship": {
+        "retained_samples": 389,
+        "retained_correct": 389,
+        "not_retained_samples": 571,
+        "not_retained_correct": 59,
+        "P_QA_correct_given_load_bearing_retained": 1.0,
+        "P_QA_correct_given_load_bearing_not_retained": 0.10332749562171628,
+        "difference": 0.8966725043782837
+      },
+      "references": {
+        "exploitable_episode_definition": "oracle-selected memory produces a correct downstream answer",
+        "exploitable_episodes": 60,
+        "exploitable_fraction": 1.0,
+        "oracle_QA_accuracy": 1.0,
+        "full_context_QA_accuracy": 0.23333333333333334,
+        "no_memory_QA_accuracy": 0.06666666666666667
+      },
+      "gate_b0": {
+        "status": "GREEN",
+        "observed": {
+          "mixed_QA_reward_groups_fraction": 1.0,
+          "median_unique_selected_sets": 7.0
+        },
+        "thresholds": {
+          "green_mixed_QA_reward_groups_fraction_min": 0.4,
+          "green_median_unique_selected_sets_min": 4.0,
+          "red_mixed_QA_reward_groups_fraction_max_exclusive": 0.2
+        },
+        "reasons": [
+          "both GREEN thresholds are satisfied"
+        ],
+        "next_action": "run RL-QA, then run Hybrid"
+      }
+    },
+    "evoked_g2": {
+      "schema_version": 1,
+      "counts": {
+        "episodes": 45,
+        "groups": 45,
+        "samples": 720,
+        "references": 45
+      },
+      "selection_diversity": {
+        "groups_with_at_least_2_unique_sets": 45,
+        "groups_with_at_least_2_unique_sets_fraction": 1.0,
+        "groups_with_at_least_2_unique_sets_percent": 100.0,
+        "median_unique_selected_sets": 7.0,
+        "mean_unique_selected_sets": 6.888888888888889
+      },
+      "reward_diversity": {
+        "mixed_QA_reward_groups": 44,
+        "mixed_QA_reward_groups_fraction": 0.9777777777777777,
+        "mixed_QA_reward_groups_percent": 97.77777777777777,
+        "groups_with_QA_reward_std_gt_zero": 44,
+        "groups_with_QA_reward_std_gt_zero_fraction": 0.9777777777777777,
+        "groups_with_QA_reward_std_gt_zero_percent": 97.77777777777777,
+        "mean_within_group_QA_reward_std": 0.44655726755042735,
+        "mean_QA_reward": 0.4527777777777778
+      },
+      "containment_diversity": {
+        "mixed_containment_groups": 45,
+        "mixed_containment_groups_fraction": 1.0,
+        "mixed_containment_groups_percent": 100.0
+      },
+      "containment_QA_relationship": {
+        "retained_samples": 254,
+        "retained_correct": 254,
+        "not_retained_samples": 466,
+        "not_retained_correct": 72,
+        "P_QA_correct_given_load_bearing_retained": 1.0,
+        "P_QA_correct_given_load_bearing_not_retained": 0.15450643776824036,
+        "difference": 0.8454935622317596
+      },
+      "references": {
+        "exploitable_episode_definition": "oracle-selected memory produces a correct downstream answer",
+        "exploitable_episodes": 45,
+        "exploitable_fraction": 1.0,
+        "oracle_QA_accuracy": 1.0,
+        "full_context_QA_accuracy": 0.2,
+        "no_memory_QA_accuracy": 0.2222222222222222
+      },
+      "gate_b0": {
+        "status": "GREEN",
+        "observed": {
+          "mixed_QA_reward_groups_fraction": 0.9777777777777777,
+          "median_unique_selected_sets": 7.0
+        },
+        "thresholds": {
+          "green_mixed_QA_reward_groups_fraction_min": 0.4,
+          "green_median_unique_selected_sets_min": 4.0,
+          "red_mixed_QA_reward_groups_fraction_max_exclusive": 0.2
+        },
+        "reasons": [
+          "both GREEN thresholds are satisfied"
+        ],
+        "next_action": "run RL-QA, then run Hybrid"
+      }
+    },
+    "explicit": {
+      "schema_version": 1,
+      "counts": {
+        "episodes": 70,
+        "groups": 70,
+        "samples": 1120,
+        "references": 70
+      },
+      "selection_diversity": {
+        "groups_with_at_least_2_unique_sets": 70,
+        "groups_with_at_least_2_unique_sets_fraction": 1.0,
+        "groups_with_at_least_2_unique_sets_percent": 100.0,
+        "median_unique_selected_sets": 6.0,
+        "mean_unique_selected_sets": 6.8
+      },
+      "reward_diversity": {
+        "mixed_QA_reward_groups": 49,
+        "mixed_QA_reward_groups_fraction": 0.7,
+        "mixed_QA_reward_groups_percent": 70.0,
+        "groups_with_QA_reward_std_gt_zero": 49,
+        "groups_with_QA_reward_std_gt_zero_fraction": 0.7,
+        "groups_with_QA_reward_std_gt_zero_percent": 70.0,
+        "mean_within_group_QA_reward_std": 0.31983704910688204,
+        "mean_QA_reward": 0.38035714285714284
+      },
+      "containment_diversity": {
+        "mixed_containment_groups": 67,
+        "mixed_containment_groups_fraction": 0.9571428571428572,
+        "mixed_containment_groups_percent": 95.71428571428572
+      },
+      "containment_QA_relationship": {
+        "retained_samples": 683,
+        "retained_correct": 387,
+        "not_retained_samples": 437,
+        "not_retained_correct": 39,
+        "P_QA_correct_given_load_bearing_retained": 0.5666178623718887,
+        "P_QA_correct_given_load_bearing_not_retained": 0.08924485125858124,
+        "difference": 0.4773730111133075
+      },
+      "references": {
+        "exploitable_episode_definition": "oracle-selected memory produces a correct downstream answer",
+        "exploitable_episodes": 52,
+        "exploitable_fraction": 0.7428571428571429,
+        "oracle_QA_accuracy": 0.7428571428571429,
+        "full_context_QA_accuracy": 0.7285714285714285,
+        "no_memory_QA_accuracy": 0.15714285714285714
+      },
+      "gate_b0": {
+        "status": "GREEN",
+        "observed": {
+          "mixed_QA_reward_groups_fraction": 0.7,
+          "median_unique_selected_sets": 6.0
+        },
+        "thresholds": {
+          "green_mixed_QA_reward_groups_fraction_min": 0.4,
+          "green_median_unique_selected_sets_min": 4.0,
+          "red_mixed_QA_reward_groups_fraction_max_exclusive": 0.2
+        },
+        "reasons": [
+          "both GREEN thresholds are satisfied"
+        ],
+        "next_action": "run RL-QA, then run Hybrid"
+      }
+    }
+  },
+  "g8_sensitivity": {
+    "role": "secondary sensitivity for the planned B1 group size; does not replace the G16 B0 gate",
+    "groups": 350,
+    "mixed_QA_reward_groups": 287,
+    "mixed_QA_reward_groups_fraction": 0.82,
+    "mixed_QA_reward_groups_percent": 82.0,
+    "median_unique_selected_sets": 5.0,
+    "mean_unique_selected_sets": 4.96,
+    "mean_within_group_QA_reward_std": 0.36624063640714705,
+    "gate_if_G8_thresholds_were_applied": {
+      "status": "GREEN",
+      "observed": {
+        "mixed_QA_reward_groups_fraction": 0.82,
+        "median_unique_selected_sets": 5.0
+      },
+      "thresholds": {
+        "green_mixed_QA_reward_groups_fraction_min": 0.4,
+        "green_median_unique_selected_sets_min": 4.0,
+        "red_mixed_QA_reward_groups_fraction_max_exclusive": 0.2
+      },
+      "reasons": [
+        "both GREEN thresholds are satisfied"
+      ],
+      "next_action": "run RL-QA, then run Hybrid"
+    }
+  },
+  "stage": "B0",
+  "status": "complete",
+  "training_performed": false,
+  "selected_temperature": 0.7,
+  "split_manifest_sha256": "5fc4d99e708744ebf4a872c86287c337d25a32c8725c5c1656740cb3a00cfb2a",
+  "elapsed_seconds": 1051.855412721634,
+  "artifacts": {
+    "samples.jsonl": "6a5c7bd05dc0ec7da30ae6a5528bef4aacdfe6a4e96a6ff3cdd9475bfe8125c1",
+    "groups.jsonl": "4448edb26cee850fa273239efc2ac9a32309ba923afe969b28aed1e889d1d8c3",
+    "references.jsonl": "55886305b5dbc1f879a0d20b460781541cf83ef10dbbc84433cf2516719c7738",
+    "temperature_calibration.json": "2fc4c78815763ddb03188c3a390d54230f6e93cd2c38b99c3e5426c41c4a1e75",
+    "split_manifest.json": "09e64597d095e6f0122b9e6ec291fbf44cdf2dda4559540fc3e087b420e3025b"
+  }
+}

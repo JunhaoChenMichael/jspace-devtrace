@@ -1,0 +1,279 @@
+{
+  "schema_version": "workspace_measurement_metadata.v2",
+  "model": "Qwen/Qwen3-8B",
+  "adapter": "data/results/rlqa_a100/runs/formal_rl-qa_Qwen3-8B_rank_continuous_split0_s1_beta0p03_k2_lq1_lw0/best-step-300",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "model_revision_requested": "b968826d9c46dd6066d109eabc6255188de91218",
+  "model_revision_resolved": "b968826d9c46dd6066d109eabc6255188de91218",
+  "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "tokenizer_revision_requested": "b968826d9c46dd6066d109eabc6255188de91218",
+  "tokenizer_revision_effective": "b968826d9c46dd6066d109eabc6255188de91218",
+  "tokenizer_revision_resolved": null,
+  "revisions": {
+    "model": {
+      "identifier": "Qwen/Qwen3-8B",
+      "revision_requested": "b968826d9c46dd6066d109eabc6255188de91218",
+      "revision_resolved": "b968826d9c46dd6066d109eabc6255188de91218"
+    },
+    "tokenizer": {
+      "identifier": "Qwen/Qwen3-8B",
+      "revision_requested": "b968826d9c46dd6066d109eabc6255188de91218",
+      "revision_effective": "b968826d9c46dd6066d109eabc6255188de91218",
+      "revision_resolved": null
+    }
+  },
+  "battery": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v4_final.json",
+  "output": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/rlqa_a100/ood/workspace_rl-qa-s1_decoupled_end_only.json",
+  "dtype": "bfloat16",
+  "device": "cuda",
+  "rows": 335,
+  "episodes": 68,
+  "candidates": 335,
+  "counts": {
+    "episodes_in_battery": 68,
+    "episodes_evaluated": 68,
+    "episodes_with_output": 68,
+    "candidates_in_battery": 335,
+    "candidates_evaluated": 335,
+    "candidate_rows_written": 335,
+    "candidates_skipped_no_token": 0,
+    "input_labels": {
+      "distractor": 153,
+      "filler": 114,
+      "load_bearing": 68
+    },
+    "output_labels": {
+      "distractor": 153,
+      "filler": 114,
+      "load_bearing": 68
+    }
+  },
+  "end_only": true,
+  "limit_episodes": 0,
+  "verbal_enabled": true,
+  "verbal_raw_enabled": false,
+  "policy_input_includes_probe": false,
+  "workspace_readout": {
+    "position": "final context token",
+    "layer_aggregation": "maximum over transformer layers 1..n",
+    "candidate_token_variants": [
+      "space+lowercase",
+      "space+capitalized",
+      "lowercase",
+      "capitalized"
+    ],
+    "final_norm": "Qwen3RMSNorm",
+    "unembedding": "Linear",
+    "n_layers": 36
+  },
+  "yes_no_token_sets": {
+    "scoring": "sum next-token probability over unique first-token ids",
+    "yes": {
+      "ids": [
+        7414,
+        9454,
+        9693,
+        9834,
+        14004
+      ],
+      "tokens": [
+        {
+          "id": 7414,
+          "vocab_token": "\u0120Yes",
+          "decoded": " Yes"
+        },
+        {
+          "id": 9454,
+          "vocab_token": "Yes",
+          "decoded": "Yes"
+        },
+        {
+          "id": 9693,
+          "vocab_token": "yes",
+          "decoded": "yes"
+        },
+        {
+          "id": 9834,
+          "vocab_token": "\u0120yes",
+          "decoded": " yes"
+        },
+        {
+          "id": 14004,
+          "vocab_token": "YES",
+          "decoded": "YES"
+        }
+      ],
+      "variants": [
+        {
+          "text": "yes",
+          "encoded_ids": [
+            9693
+          ],
+          "scored_first_token_id": 9693
+        },
+        {
+          "text": " yes",
+          "encoded_ids": [
+            9834
+          ],
+          "scored_first_token_id": 9834
+        },
+        {
+          "text": "Yes",
+          "encoded_ids": [
+            9454
+          ],
+          "scored_first_token_id": 9454
+        },
+        {
+          "text": " Yes",
+          "encoded_ids": [
+            7414
+          ],
+          "scored_first_token_id": 7414
+        },
+        {
+          "text": "YES",
+          "encoded_ids": [
+            14004
+          ],
+          "scored_first_token_id": 14004
+        }
+      ]
+    },
+    "no": {
+      "ids": [
+        902,
+        2152,
+        2308,
+        2753,
+        8996
+      ],
+      "tokens": [
+        {
+          "id": 902,
+          "vocab_token": "\u0120no",
+          "decoded": " no"
+        },
+        {
+          "id": 2152,
+          "vocab_token": "no",
+          "decoded": "no"
+        },
+        {
+          "id": 2308,
+          "vocab_token": "\u0120No",
+          "decoded": " No"
+        },
+        {
+          "id": 2753,
+          "vocab_token": "No",
+          "decoded": "No"
+        },
+        {
+          "id": 8996,
+          "vocab_token": "NO",
+          "decoded": "NO"
+        }
+      ],
+      "variants": [
+        {
+          "text": "no",
+          "encoded_ids": [
+            2152
+          ],
+          "scored_first_token_id": 2152
+        },
+        {
+          "text": " no",
+          "encoded_ids": [
+            902
+          ],
+          "scored_first_token_id": 902
+        },
+        {
+          "text": "No",
+          "encoded_ids": [
+            2753
+          ],
+          "scored_first_token_id": 2753
+        },
+        {
+          "text": " No",
+          "encoded_ids": [
+            2308
+          ],
+          "scored_first_token_id": 2308
+        },
+        {
+          "text": "NO",
+          "encoded_ids": [
+            8996
+          ],
+          "scored_first_token_id": 8996
+        }
+      ]
+    }
+  },
+  "yes_token_ids": [
+    7414,
+    9454,
+    9693,
+    9834,
+    14004
+  ],
+  "no_token_ids": [
+    902,
+    2152,
+    2308,
+    2753,
+    8996
+  ],
+  "chat_template": {
+    "present": true,
+    "source": "tokenizer.chat_template",
+    "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "bytes": 4168,
+    "template_type": "str",
+    "tokenizer_class": "Qwen2TokenizerFast",
+    "tokenizer_name_or_path": "Qwen/Qwen3-8B",
+    "declared_in_tokenizer_init_kwargs": true
+  },
+  "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+  "runtime": {
+    "device_requested": "cuda",
+    "device_resolved": "cuda",
+    "platform": "Linux-4.18.0-553.132.1.el8_10.x86_64-x86_64-with-glibc2.28",
+    "versions": {
+      "python": "3.12.14",
+      "torch": "2.7.1+cu126",
+      "transformers": "4.57.6",
+      "tokenizers": "0.22.2",
+      "accelerate": "1.14.0",
+      "peft": "0.13.2",
+      "cuda_runtime": "12.6",
+      "cudnn": 90501,
+      "nvidia_driver": "NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  580.159.04  Release Build  (dvs-builder@U22-I3-AF04-09-6)  Wed Apr 29 17:15:53 UTC 2026\nGCC version:  gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)"
+    },
+    "gpu": {
+      "available": true,
+      "count": 1,
+      "devices": [
+        {
+          "index": 0,
+          "name": "NVIDIA A100-SXM4-80GB",
+          "compute_capability": "8.0",
+          "total_memory_bytes": 85093777408
+        }
+      ]
+    }
+  },
+  "hashes": {
+    "battery_file_sha256": "4550cf11c9b7d837b0b1d921c9151d997cb1e421c800fc21da2ebafe4203bf25",
+    "effective_battery_canonical_sha256": "287a344343d2f27a996369cbdc1258de92d6eb68889ae5b4a5355b0c436346cf",
+    "candidate_order_sha256": "c567ae232f3d77a34ebec6c6d89fb2360e20dbc6afd2e357d23e4128c5e0f5ca",
+    "raw_output_sha256": "fc99b55604d3860eb5dcaf801b40e8e6bc4a295863958435dddc271970068c97",
+    "measure_source_sha256": "b886cd27352a796feea3d4801aca651dd68d255920d83e19271eb7da20137cf9",
+    "workspace_lens_source_sha256": "5251f792f44c8e2846564036ec2a945290ec74fbb86e67aef2cb74690c5582c4"
+  }
+}

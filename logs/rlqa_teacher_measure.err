@@ -1,0 +1,22 @@
++ for spec in "battery_v1_final:results_v1f_qwen3-8B" "battery_v2_final:results_v2f_qwen3-8B" "battery_v2_g2:results_v2g2_qwen3-8B"
++ BATTERY=battery_v1_final
++ OUT=results_v1f_qwen3-8B
++ [[ -e data/results/results_v1f_qwen3-8B.json ]]
++ python src/experiments/measure.py --model Qwen/Qwen3-8B --model-revision b968826d9c46dd6066d109eabc6255188de91218 --tokenizer-revision b968826d9c46dd6066d109eabc6255188de91218 --dtype bfloat16 --device cuda --end-only --no-verbal-raw --battery data/benchmarks/battery_v1_final.json --out data/results/results_v1f_qwen3-8B.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 111.93it/s]
++ for spec in "battery_v1_final:results_v1f_qwen3-8B" "battery_v2_final:results_v2f_qwen3-8B" "battery_v2_g2:results_v2g2_qwen3-8B"
++ BATTERY=battery_v2_final
++ OUT=results_v2f_qwen3-8B
++ [[ -e data/results/results_v2f_qwen3-8B.json ]]
++ python src/experiments/measure.py --model Qwen/Qwen3-8B --model-revision b968826d9c46dd6066d109eabc6255188de91218 --tokenizer-revision b968826d9c46dd6066d109eabc6255188de91218 --dtype bfloat16 --device cuda --end-only --no-verbal-raw --battery data/benchmarks/battery_v2_final.json --out data/results/results_v2f_qwen3-8B.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 111.49it/s]
++ for spec in "battery_v1_final:results_v1f_qwen3-8B" "battery_v2_final:results_v2f_qwen3-8B" "battery_v2_g2:results_v2g2_qwen3-8B"
++ BATTERY=battery_v2_g2
++ OUT=results_v2g2_qwen3-8B
++ [[ -e data/results/results_v2g2_qwen3-8B.json ]]
++ python src/experiments/measure.py --model Qwen/Qwen3-8B --model-revision b968826d9c46dd6066d109eabc6255188de91218 --tokenizer-revision b968826d9c46dd6066d109eabc6255188de91218 --dtype bfloat16 --device cuda --end-only --no-verbal-raw --battery data/benchmarks/battery_v2_g2.json --out data/results/results_v2g2_qwen3-8B.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 117.91it/s]
++ echo TEACHER_MEASURE_OK

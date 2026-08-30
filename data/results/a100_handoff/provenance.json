@@ -1,0 +1,63 @@
+{
+  "battery_sha256": {
+    "battery_v1_final.json": "35d973619080a7606b0a3046ffcc7169fd919fac950ebb0d38b67ac13b017525",
+    "battery_v2_final.json": "e8ce4db85d3a0c09879575850e36b91821af8be155e86495cd059ae35485e7d6",
+    "battery_v2_g2.json": "32b96a17bc35c895ee1fd6f6b49b6dc7c7a888b1a83e247925b1d9c8c8660cf3",
+    "battery_v3d.json": "483d3fb6a72970c99c1cba2ed118dd6289825b7f73332af07300205ceb361432",
+    "battery_v4_final.json": "4550cf11c9b7d837b0b1d921c9151d997cb1e421c800fc21da2ebafe4203bf25"
+  },
+  "collected_on_host": "rohpc11.mayo.edu",
+  "conda_prefix": "/rodata/azradonc_dev/m253405/myconda/envs/jspace",
+  "expected_gpu": "NVIDIA A100-SXM4-80GB",
+  "git_commit": "b85e5b59612c3a835f6d3fefc8923dcc386781f0",
+  "git_dirty": [
+    "M scripts/run_metacog_alignment_campaign.py",
+    " M src/analysis/report_metacog_m1.py",
+    " M src/experiments/train_memory_rl.py",
+    " M src/experiments/train_metacog_m1.py",
+    " M tests/test_metacog_alignment_campaign.py",
+    "?? logs/",
+    "?? scripts/collect_a100_provenance.py",
+    "?? scripts/lock_rlqa_checkpoints.py",
+    "?? scripts/report_metacog_three_seed.py",
+    "?? slurm/",
+    "?? tests/test_lock_rlqa_checkpoints.py",
+    "?? tests/test_report_metacog_three_seed.py"
+  ],
+  "model": {
+    "cache_snapshot": "/rodata/azradonc_dev/m253405/cache/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218",
+    "repo_id": "Qwen/Qwen3-8B",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "nvidia_smi": "0, GPU-1f184c0a-df97-4048-f4b5-e0a3923e1dbe, NVIDIA A100-SXM4-80GB, 580.159.04, 81920 MiB\n1, GPU-da080f5a-c107-1f33-2e8a-0dc554a830fc, NVIDIA A100-SXM4-80GB, 580.159.04, 81920 MiB\n2, GPU-67f94b0f-850b-648d-f760-5cc2601b21a2, NVIDIA A100-SXM4-80GB, 580.159.04, 81920 MiB\n3, GPU-dd7a83fd-cf45-e17f-6515-c81f3bf08606, NVIDIA A100-SXM4-80GB, 580.159.04, 81920 MiB",
+  "packages": {
+    "accelerate": "1.14.0",
+    "datasets": "5.0.1",
+    "numpy": "2.5.2",
+    "peft": "0.13.2",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.1",
+    "torch": "2.7.1+cu126",
+    "transformers": "4.57.6"
+  },
+  "platform": "Linux-4.18.0-553.132.1.el8_10.x86_64-x86_64-with-glibc2.28",
+  "python": "3.12.14",
+  "slurm_job_id": null,
+  "slurm_partitions": "PARTITION NODES GRES CPUS MEMORY TIMELIMIT\ntestcpu.p 5 (null) 104 384000 infinite\ngen-cpu.p* 9 (null) 104 384000 14-00:00:00\ncpu-noib 5 (null) 192 1540000 14-00:00:00\ngen-a100.p 19 gpu:a100:4(S:0-1) 96 1031000 14-00:00:00\ngen-h100 6 gpu:h100:4(S:0-1) 96+ 1031060+ 14-00:00:00",
+  "source_sha256": {
+    "scripts/lock_rlqa_checkpoints.py": "abf5ac95cf6fe6d7d0b545f33469ce664969fb8b2908c9b1227e4fbea399bbd1",
+    "scripts/report_metacog_three_seed.py": "1f7eeb48c8419dd92c614aa74cbc937ae6f7abdb4179deb6c6775ccc56fb8c1f",
+    "scripts/run_metacog_alignment_campaign.py": "17f96a12b96cf06ad3d032b0ca95696a8f6691b9a0a46cfe2e00c266d48dc00f",
+    "src/analysis/evaluate_metacog_m1_ood.py": "89bab654707aa2a7b0f0ba38d5bca3e76b5a8f0f07a3d51db975cbc76ec69b41",
+    "src/analysis/gate_metacog_m0.py": "df589f5b26d90abdbdcd413bac9029e5b0dde8c5b4ff3d577c000d3aa26ff70e",
+    "src/analysis/memory_rl_gates.py": "f5f9e0e9b4eb92ba163f2bdb7e6b5b8ce8ee357df8f3fa2c0eb68783d79703d2",
+    "src/analysis/report_metacog_m1.py": "f231b6f95e0de6f5ede61b4dff2a62b5b7c6b4fb61a88eb243067619e4ecb24a",
+    "src/experiments/evaluate_memory_rl.py": "ee1b054422860bc62950a448ef3cb15bf31dbd2234e29bc2bd82fccb27ea7874",
+    "src/experiments/measure.py": "b886cd27352a796feea3d4801aca651dd68d255920d83e19271eb7da20137cf9",
+    "src/experiments/preflight_qa_reward.py": "ba19e91ef77fed94f99d8650913893ecb9f073d9d16b0dd6209d95ef8eeb81b0",
+    "src/experiments/train_memory_rl.py": "ff3ee5f3c37437e60eda9c29af4aedc5c9f942ae26d922f4530ba4e77aef9b71",
+    "src/experiments/train_metacog_m1.py": "e4ee5efdde3ee5a868cc4d2d7e0af12b2b717805aaa1c478a97a0e0a50ef12de",
+    "src/jlens.py": "5251f792f44c8e2846564036ec2a945290ec74fbb86e67aef2cb74690c5582c4",
+    "src/memory_rl/recall.py": "b402272dc457b7b7a87a6cb40fd01051af2f817e32b9ba0bd21d6eed9170f238"
+  }
+}

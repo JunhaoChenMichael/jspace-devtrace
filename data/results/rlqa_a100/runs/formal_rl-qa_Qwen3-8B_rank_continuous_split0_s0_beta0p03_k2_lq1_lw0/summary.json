@@ -1,0 +1,1456 @@
+{
+  "mode": "rl-qa",
+  "steps_completed": 300,
+  "best_validation_metric": 0.7333333333333333,
+  "best_checkpoint": "data/results/rlqa_a100/runs/formal_rl-qa_Qwen3-8B_rank_continuous_split0_s0_beta0p03_k2_lq1_lw0/best-step-300",
+  "final_adapter": "data/results/rlqa_a100/runs/formal_rl-qa_Qwen3-8B_rank_continuous_split0_s0_beta0p03_k2_lq1_lw0/final_adapter",
+  "baseline_validation": {
+    "qa_accuracy": 0.4,
+    "containment": 0.4666666666666667,
+    "workspace_set_reward": 0.5060185185185185,
+    "verbal_auc": 0.5580860363469059,
+    "verbal_within_episode_auc": 0.5375925925925926,
+    "verbal_yes_rate": 0.4,
+    "reporter_correlations": {
+      "schema_version": 1,
+      "definitions": {
+        "v_rl": "adapter-enabled P(Yes) over aggregated constrained No/Yes logits at temperature 1",
+        "w_ref": "immutable raw W_rr from the matched frozen reference model",
+        "y_utility": "1 iff candidate.label == load_bearing, else 0",
+        "correlation_unit": "candidate",
+        "uncertainty_unit": "episode"
+      },
+      "bootstrap": {
+        "method": "episode_cluster_percentile",
+        "samples_requested": 4000,
+        "seed": 0,
+        "rng": "numpy.random.default_rng / PCG64",
+        "confidence": 0.95,
+        "stratified_by_source": true
+      },
+      "n_episodes": 45,
+      "n_candidates": 215,
+      "utility_auc": 0.5580860363469059,
+      "yes_rate": 0.4,
+      "targets": {
+        "w_ref": {
+          "pearson": {
+            "pooled_candidates": {
+              "estimate": -0.11290966801767018,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.21016717994329834,
+                0.026645888809991462
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.08075
+            },
+            "equal_episode_mean": {
+              "estimate": 0.07008232364423198,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.08972421564740497,
+                0.22120259963550568
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.80675
+            }
+          },
+          "spearman": {
+            "pooled_candidates": {
+              "estimate": -0.09161669976923385,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.26049776112278417,
+                0.06771529489913315
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.136
+            },
+            "equal_episode_mean": {
+              "estimate": 0.05417512743619545,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.08611362158275666,
+                0.18808743661830155
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.774
+            }
+          }
+        },
+        "y_utility": {
+          "pearson": {
+            "pooled_candidates": {
+              "estimate": 0.08133433128197813,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                0.011508250722467486,
+                0.1535538221538979
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.98875
+            },
+            "equal_episode_mean": {
+              "estimate": 0.041403839892495416,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.11318323016171854,
+                0.19063000560697616
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.702
+            }
+          },
+          "spearman": {
+            "pooled_candidates": {
+              "estimate": 0.08726469036811157,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                0.01652140347506651,
+                0.15797759596642466
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.99175
+            },
+            "equal_episode_mean": {
+              "estimate": 0.06682384922060085,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.07582139532470913,
+                0.2104812303755485
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.8195
+            }
+          }
+        }
+      },
+      "by_source": {
+        "evoked": {
+          "n_episodes": 15,
+          "n_candidates": 72,
+          "utility_auc": 0.5111111111111111,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": -0.03736234149608905,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.23366540469245134,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": -0.015194391749824947,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.20411268389588794,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.006638607914030303,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.010916563014641046,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.015632936597748972,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.03892584450328388,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        },
+        "evoked_g2": {
+          "n_episodes": 12,
+          "n_candidates": 56,
+          "utility_auc": 0.45075757575757575,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": -0.10072733768116306,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.02534819194687811,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.07395762132604237,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.15,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": -0.10333497220123596,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.16322854273777992,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": -0.0700048673715291,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.05892556509887895,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        },
+        "explicit": {
+          "n_episodes": 18,
+          "n_candidates": 87,
+          "utility_auc": 0.5969135802469135,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": -0.022594354269092003,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.002616566835210753,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.18858673866997552,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.06534391534391534,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.14846104167159693,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.22142576406862602,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.15532600964781842,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.23878153687015796,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "episodes": 45,
+    "combined_reward": 0.4,
+    "event": "baseline",
+    "step": 0,
+    "selection_metric": 0.4
+  },
+  "last_validation": {
+    "qa_accuracy": 0.7333333333333333,
+    "containment": 0.8444444444444444,
+    "workspace_set_reward": 0.5308333333333333,
+    "verbal_auc": 0.7562686910512998,
+    "verbal_within_episode_auc": 0.8457407407407407,
+    "verbal_yes_rate": 0.11162790697674418,
+    "reporter_correlations": {
+      "schema_version": 1,
+      "definitions": {
+        "v_rl": "adapter-enabled P(Yes) over aggregated constrained No/Yes logits at temperature 1",
+        "w_ref": "immutable raw W_rr from the matched frozen reference model",
+        "y_utility": "1 iff candidate.label == load_bearing, else 0",
+        "correlation_unit": "candidate",
+        "uncertainty_unit": "episode"
+      },
+      "bootstrap": {
+        "method": "episode_cluster_percentile",
+        "samples_requested": 4000,
+        "seed": 0,
+        "rng": "numpy.random.default_rng / PCG64",
+        "confidence": 0.95,
+        "stratified_by_source": true
+      },
+      "n_episodes": 45,
+      "n_candidates": 215,
+      "utility_auc": 0.7562686910512998,
+      "yes_rate": 0.11162790697674418,
+      "targets": {
+        "w_ref": {
+          "pearson": {
+            "pooled_candidates": {
+              "estimate": -0.005838580336000686,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.05908753117775017,
+                0.16170564411897317
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.47925
+            },
+            "equal_episode_mean": {
+              "estimate": 0.07203115622724633,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.0690321659856894,
+                0.2197268233990178
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.83675
+            }
+          },
+          "spearman": {
+            "pooled_candidates": {
+              "estimate": 0.09992957391748247,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.047480146087842276,
+                0.25060942753367726
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.90925
+            },
+            "equal_episode_mean": {
+              "estimate": 0.12107260703868036,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.01809077069515605,
+                0.25862934634895685
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.954
+            }
+          }
+        },
+        "y_utility": {
+          "pearson": {
+            "pooled_candidates": {
+              "estimate": 0.3602849292222467,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                0.263192151261671,
+                0.48389623837438095
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 1.0
+            },
+            "equal_episode_mean": {
+              "estimate": 0.6725338763692066,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                0.5476822253341055,
+                0.7845392204011216
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 1.0
+            }
+          },
+          "spearman": {
+            "pooled_candidates": {
+              "estimate": 0.38500144582208434,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                0.3025297240471342,
+                0.46932619764540146
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 1.0
+            },
+            "equal_episode_mean": {
+              "estimate": 0.5170903185133866,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                0.39663451027257807,
+                0.6208113689033684
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 1.0
+            }
+          }
+        }
+      },
+      "by_source": {
+        "evoked": {
+          "n_episodes": 15,
+          "n_candidates": 72,
+          "utility_auc": 0.9017543859649123,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.10135852689893216,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.20050325051325005,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.29327587885376405,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.24290036079858077,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.5954289117324763,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.9075381531492742,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.5652540759291339,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.651751721531625,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        },
+        "evoked_g2": {
+          "n_episodes": 12,
+          "n_candidates": 56,
+          "utility_auc": 0.803030303030303,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": -0.013972671790747215,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.19368987868938983,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.14285714285714285,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.13333333333333333,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.41203960021880387,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.7957533402828454,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.43079918382479443,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.6117522803404348,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        },
+        "explicit": {
+          "n_episodes": 18,
+          "n_candidates": 87,
+          "utility_auc": 0.6216049382716049,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.11100398424395225,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.14211843426666734,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.14732256776547908,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.18915343915343918,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.19709388613097972,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.39455066977672426,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.19489951529057473,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.3417645081134893,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "episodes": 45,
+    "combined_reward": 0.7333333333333333,
+    "event": "validation",
+    "step": 300,
+    "selection_metric": 0.7333333333333333
+  },
+  "best_validation": {
+    "qa_accuracy": 0.7333333333333333,
+    "containment": 0.8444444444444444,
+    "workspace_set_reward": 0.5308333333333333,
+    "verbal_auc": 0.7562686910512998,
+    "verbal_within_episode_auc": 0.8457407407407407,
+    "verbal_yes_rate": 0.11162790697674418,
+    "reporter_correlations": {
+      "schema_version": 1,
+      "definitions": {
+        "v_rl": "adapter-enabled P(Yes) over aggregated constrained No/Yes logits at temperature 1",
+        "w_ref": "immutable raw W_rr from the matched frozen reference model",
+        "y_utility": "1 iff candidate.label == load_bearing, else 0",
+        "correlation_unit": "candidate",
+        "uncertainty_unit": "episode"
+      },
+      "bootstrap": {
+        "method": "episode_cluster_percentile",
+        "samples_requested": 4000,
+        "seed": 0,
+        "rng": "numpy.random.default_rng / PCG64",
+        "confidence": 0.95,
+        "stratified_by_source": true
+      },
+      "n_episodes": 45,
+      "n_candidates": 215,
+      "utility_auc": 0.7562686910512998,
+      "yes_rate": 0.11162790697674418,
+      "targets": {
+        "w_ref": {
+          "pearson": {
+            "pooled_candidates": {
+              "estimate": -0.005838580336000686,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.05908753117775017,
+                0.16170564411897317
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.47925
+            },
+            "equal_episode_mean": {
+              "estimate": 0.07203115622724633,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.0690321659856894,
+                0.2197268233990178
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.83675
+            }
+          },
+          "spearman": {
+            "pooled_candidates": {
+              "estimate": 0.09992957391748247,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                -0.047480146087842276,
+                0.25060942753367726
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.90925
+            },
+            "equal_episode_mean": {
+              "estimate": 0.12107260703868036,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                -0.01809077069515605,
+                0.25862934634895685
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 0.954
+            }
+          }
+        },
+        "y_utility": {
+          "pearson": {
+            "pooled_candidates": {
+              "estimate": 0.3602849292222467,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                0.263192151261671,
+                0.48389623837438095
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 1.0
+            },
+            "equal_episode_mean": {
+              "estimate": 0.6725338763692066,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                0.5476822253341055,
+                0.7845392204011216
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 1.0
+            }
+          },
+          "spearman": {
+            "pooled_candidates": {
+              "estimate": 0.38500144582208434,
+              "status": "ok",
+              "n_candidates": 215,
+              "ci_95": [
+                0.3025297240471342,
+                0.46932619764540146
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 1.0
+            },
+            "equal_episode_mean": {
+              "estimate": 0.5170903185133866,
+              "status": "ok",
+              "n_valid_episodes": 45,
+              "n_excluded_episodes": 0,
+              "excluded_episode_reasons": {},
+              "ci_95": [
+                0.39663451027257807,
+                0.6208113689033684
+              ],
+              "bootstrap_samples_effective": 4000,
+              "probability_gt_zero": 1.0
+            }
+          }
+        }
+      },
+      "by_source": {
+        "evoked": {
+          "n_episodes": 15,
+          "n_candidates": 72,
+          "utility_auc": 0.9017543859649123,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.10135852689893216,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.20050325051325005,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.29327587885376405,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.24290036079858077,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.5954289117324763,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.9075381531492742,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.5652540759291339,
+                  "status": "ok",
+                  "n_candidates": 72
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.651751721531625,
+                  "status": "ok",
+                  "n_valid_episodes": 15,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        },
+        "evoked_g2": {
+          "n_episodes": 12,
+          "n_candidates": 56,
+          "utility_auc": 0.803030303030303,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": -0.013972671790747215,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.19368987868938983,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.14285714285714285,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": -0.13333333333333333,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.41203960021880387,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.7957533402828454,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.43079918382479443,
+                  "status": "ok",
+                  "n_candidates": 56
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.6117522803404348,
+                  "status": "ok",
+                  "n_valid_episodes": 12,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        },
+        "explicit": {
+          "n_episodes": 18,
+          "n_candidates": 87,
+          "utility_auc": 0.6216049382716049,
+          "targets": {
+            "w_ref": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.11100398424395225,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.14211843426666734,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.14732256776547908,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.18915343915343918,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            },
+            "y_utility": {
+              "pearson": {
+                "pooled_candidates": {
+                  "estimate": 0.19709388613097972,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.39455066977672426,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              },
+              "spearman": {
+                "pooled_candidates": {
+                  "estimate": 0.19489951529057473,
+                  "status": "ok",
+                  "n_candidates": 87
+                },
+                "equal_episode_mean": {
+                  "estimate": 0.3417645081134893,
+                  "status": "ok",
+                  "n_valid_episodes": 18,
+                  "n_excluded_episodes": 0,
+                  "excluded_episode_reasons": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "episodes": 45,
+    "combined_reward": 0.7333333333333333,
+    "event": "validation",
+    "step": 300,
+    "selection_metric": 0.7333333333333333
+  },
+  "reporter_correlation_artifact": "data/results/rlqa_a100/runs/formal_rl-qa_Qwen3-8B_rank_continuous_split0_s0_beta0p03_k2_lq1_lw0/reporter_correlations.jsonl",
+  "workspace_teacher_model": "Qwen/Qwen3-8B",
+  "teacher_matches_policy_reference": true,
+  "effective_advantage_normalization": "zscore",
+  "dropout_audit": {
+    "dropout_modules_zeroed": 0,
+    "config_fields_zeroed": [],
+    "dropout_modules_found": [],
+    "dropout_modules_modified": [],
+    "config_fields_found": [
+      {
+        "name": "attention_dropout",
+        "before": 0.0,
+        "after": 0.0,
+        "modified": false
+      }
+    ],
+    "config_fields_modified": [],
+    "remaining_nonzero": [],
+    "postcondition_satisfied": true
+  },
+  "elapsed_seconds": 1445.4735040664673,
+  "diagnostics": [],
+  "selector_training_diagnostics": {
+    "window_size": 25,
+    "overall": {
+      "start_step": 1,
+      "end_step": 300,
+      "groups": 300,
+      "mean_training_reward": 0.5416666666666666,
+      "mean_reward_std": 0.3806414432326953,
+      "mixed_QA_reward_groups": 258,
+      "mixed_QA_reward_groups_fraction": 0.86,
+      "groups_with_reward_std_gt_zero": 258,
+      "groups_with_reward_std_gt_zero_fraction": 0.86,
+      "median_unique_selected_sets": 5.0,
+      "mean_unique_selected_sets": 5.283333333333333,
+      "identical_set_groups": 0,
+      "identical_set_groups_fraction": 0.0,
+      "mean_containment_rate": 0.5754166666666667,
+      "mixed_containment_groups": 290,
+      "mixed_containment_groups_fraction": 0.9666666666666667,
+      "mean_policy_set_entropy": 2.076323081254959,
+      "mean_normalized_policy_set_entropy": 0.9672325158119202,
+      "yes_probability_count": 1413,
+      "yes_probability_mean": 0.21019734085902464,
+      "yes_probability_std": 0.26916018351871807,
+      "yes_probability_min": 3.3788076052587712e-06,
+      "yes_probability_max": 0.9885067939758301,
+      "mean_KL": 0.06494588498530598,
+      "max_KL": 0.5039629936218262,
+      "mean_gradient_norm": 8.744844996228737,
+      "nonzero_gradient_groups_fraction": 1.0
+    },
+    "windows": [
+      {
+        "start_step": 1,
+        "end_step": 25,
+        "groups": 25,
+        "mean_training_reward": 0.57,
+        "mean_reward_std": 0.38607707381248474,
+        "mixed_QA_reward_groups": 21,
+        "mixed_QA_reward_groups_fraction": 0.84,
+        "groups_with_reward_std_gt_zero": 21,
+        "groups_with_reward_std_gt_zero_fraction": 0.84,
+        "median_unique_selected_sets": 5.0,
+        "mean_unique_selected_sets": 5.28,
+        "identical_set_groups": 0,
+        "identical_set_groups_fraction": 0.0,
+        "mean_containment_rate": 0.54,
+        "mixed_containment_groups": 25,
+        "mixed_containment_groups_fraction": 1.0,
+        "mean_policy_set_entropy": 2.069582004547119,
+        "mean_normalized_policy_set_entropy": 0.997955687046051,
+        "yes_probability_count": 114,
+        "yes_probability_mean": 0.49528571819527106,
+        "yes_probability_std": 0.2012063064036496,
+        "yes_probability_min": 0.12291581928730011,
+        "yes_probability_max": 0.9333007335662842,
+        "mean_KL": 0.0008077440038323403,
+        "max_KL": 0.0021187709644436836,
+        "mean_gradient_norm": 2.810602484731935,
+        "nonzero_gradient_groups_fraction": 1.0
+      },
+      {
+        "start_step": 26,
+        "end_step": 50,
+        "groups": 25,
+        "mean_training_reward": 0.48,
+        "mean_reward_std": 0.37852572083473207,
+        "mixed_QA_reward_groups": 21,
+        "mixed_QA_reward_groups_fraction": 0.84,
+        "groups_with_reward_std_gt_zero": 21,
+        "groups_with_reward_std_gt_zero_fraction": 0.84,
+        "median_unique_selected_sets": 6.0,
+        "mean_unique_selected_sets": 5.68,
+        "identical_set_groups": 0,
+        "identical_set_groups_fraction": 0.0,
+        "mean_containment_rate": 0.5,
+        "mixed_containment_groups": 24,
+        "mixed_containment_groups_fraction": 0.96,
+        "mean_policy_set_entropy": 2.208658151626587,
+        "mean_normalized_policy_set_entropy": 0.9982299780845643,
+        "yes_probability_count": 121,
+        "yes_probability_mean": 0.45029217072508554,
+        "yes_probability_std": 0.2325709928530821,
+        "yes_probability_min": 0.07135044783353806,
+        "yes_probability_max": 0.8919634819030762,
+        "mean_KL": 0.0011326888506300748,
+        "max_KL": 0.0028833819087594748,
+        "mean_gradient_norm": 3.016419318895787,
+        "nonzero_gradient_groups_fraction": 1.0
+      },
+      {
+        "start_step": 51,
+        "end_step": 75,
+        "groups": 25,
+        "mean_training_reward": 0.39,
+        "mean_reward_std": 0.41379888653755187,
+        "mixed_QA_reward_groups": 23,
+        "mixed_QA_reward_groups_fraction": 0.92,
+        "groups_with_reward_std_gt_zero": 23,
+        "groups_with_reward_std_gt_zero_fraction": 0.92,
+        "median_unique_selected_sets": 5.0,
+        "mean_unique_selected_sets": 5.56,
+        "identical_set_groups": 0,
+        "identical_set_groups_fraction": 0.0,
+        "mean_containment_rate": 0.45,
+        "mixed_containment_groups": 24,
+        "mixed_containment_groups_fraction": 0.96,
+        "mean_policy_set_entropy": 2.1507621812820434,
+        "mean_normalized_policy_set_entropy": 0.9978524661064148,
+        "yes_probability_count": 118,
+        "yes_probability_mean": 0.31810458257036694,
+        "yes_probability_std": 0.17935894453027867,
+        "yes_probability_min": 0.0746069923043251,
+        "yes_probability_max": 0.8369832634925842,
+        "mean_KL": 0.002393208781722933,
+        "max_KL": 0.00538904033601284,
+        "mean_gradient_norm": 3.94643609973602,
+        "nonzero_gradient_groups_fraction": 1.0
+      },
+      {
+        "start_step": 76,
+        "end_step": 100,
+        "groups": 25,
+        "mean_training_reward": 0.54,
+        "mean_reward_std": 0.3889387559890747,
+        "mixed_QA_reward_groups": 22,
+        "mixed_QA_reward_groups_fraction": 0.88,
+        "groups_with_reward_std_gt_zero": 22,
+        "groups_with_reward_std_gt_zero_fraction": 0.88,
+        "median_unique_selected_sets": 6.0,
+        "mean_unique_selected_sets": 5.56,
+        "identical_set_groups": 0,
+        "identical_set_groups_fraction": 0.0,
+        "mean_containment_rate": 0.53,
+        "mixed_containment_groups": 24,
+        "mixed_containment_groups_fraction": 0.96,
+        "mean_policy_set_entropy": 2.159879388809204,
+        "mean_normalized_policy_set_entropy": 0.9965035939216613,
+        "yes_probability_count": 119,
+        "yes_probability_mean": 0.1833038011354496,
+        "yes_probability_std": 0.17034964553054316,
+        "yes_probability_min": 0.0026080268435180187,
+        "yes_probability_max": 0.8289722204208374,
+        "mean_KL": 0.007047465285286308,
+        "max_KL": 0.025957901030778885,
+        "mean_gradient_norm": 4.578486533714458,
+        "nonzero_gradient_groups_fraction": 1.0
+      },
+      {
+        "start_step": 101,
+        "end_step": 125,
+        "groups": 25,
+        "mean_training_reward": 0.515,
+        "mean_reward_std": 0.37049017667770384,
+        "mixed_QA_reward_groups": 21,
+        "mixed_QA_reward_groups_fraction": 0.84,
+        "groups_with_reward_std_gt_zero": 21,
+        "groups_with_reward_std_gt_zero_fraction": 0.84,
+        "median_unique_selected_sets": 5.0,
+        "mean_unique_selected_sets": 5.28,
+        "identical_set_groups": 0,
+        "identical_set_groups_fraction": 0.0,
+        "mean_containment_rate": 0.59,
+        "mixed_containment_groups": 25,
+        "mixed_containment_groups_fraction": 1.0,
+        "mean_policy_set_entropy": 2.117426552772522,
+        "mean_normalized_policy_set_entropy": 0.989031171798706,
+        "yes_probability_count": 118,
+        "yes_probability_mean": 0.17658510452266624,
+        "yes_probability_std": 0.2453127761767283,
+        "yes_probability_min": 0.0014360161731019616,
+        "yes_probability_max": 0.7997028827667236,
+        "mean_KL": 0.01644255457445979,
+        "max_KL": 0.07253290712833405,
+        "mean_gradient_norm": 5.30830140709877,
+        "nonzero_gradient_groups_fraction": 1.0
+      },
+      {
+        "start_step": 126,
+        "end_step": 150,
+        "groups": 25,
+        "mean_training_reward": 0.575,
+        "mean_reward_std": 0.40420898914337156,
+        "mixed_QA_reward_groups": 23,
+        "mixed_QA_reward_groups_fraction": 0.92,
+        "groups_with_reward_std_gt_zero": 23,
+        "groups_with_reward_std_gt_zero_fraction": 0.92,
+        "median_unique_selected_sets": 5.0,
+        "mean_unique_selected_sets": 5.16,
+        "identical_set_groups": 0,
+        "identical_set_groups_fraction": 0.0,
+        "mean_containment_rate": 0.57,
+        "mixed_containment_groups": 24,
+        "mixed_containment_groups_fraction": 0.96,
+        "mean_policy_set_entropy": 2.0890323448181154,
+        "mean_normalized_policy_set_entropy": 0.9800459027290345,
+        "yes_probability_count": 117,
+        "yes_probability_mean": 0.06313289681963949,
+        "yes_probability_std": 0.1526638977428316,
+        "yes_probability_min": 0.0002785924298223108,
+        "yes_probability_max": 0.823738694190979,
+        "mean_KL": 0.03884746372699738,
+        "max_KL": 0.08349747583270073,
+        "mean_gradient_norm": 8.323204162046313,
+        "nonzero_gradient_groups_fraction": 1.0
+      },
+      {
+        "start_step": 151,
+        "end_step": 175,
+        "groups": 25,
+        "mean_training_reward": 0.56,
+        "mean_reward_std": 0.43976927518844605,
+        "mixed_QA_reward_groups": 25,
+        "mixed_QA_reward_groups_fraction": 1.0,
+        "groups_with_reward_std_gt_zero": 25,
+        "groups_with_reward_std_gt_zero_fraction": 1.0,
+        "median_unique_selected_sets": 5.0,
+        "mean_unique_selected_sets": 5.28,
+        "identical_set_groups": 0,
+        "identical_set_groups_fraction": 0.0,
+        "mean_containment_rate": 0.58,
+        "mixed_containment_groups": 25,
+        "mixed_containment_groups_fraction": 1.0,
+        "mean_policy_set_entropy": 2.0466482925415037,
+        "mean_normalized_policy_set_entropy": 0.9654165053367615,
+        "yes_probability_count": 117,
+        "yes_probability_mean": 0.09872554782704643,
+        "yes_probability_std": 0.22451055090883057,
+        "yes_probability_min": 6.669635331491008e-05,
+        "yes_probability_max": 0.9770522117614746,
+        "mean_KL": 0.0671384391374886,
+        "max_KL": 0.19818604737520218,
+        "mean_gradient_norm": 11.047599391937256,
+        "nonzero_gradient_groups_fraction": 1.0
+      },
+      {
+        "start_step": 176,
+        "end_step": 200,
+        "groups": 25,
+        "mean_training_reward": 0.53,
+        "mean_reward_std": 0.26847237825393677,
+        "mixed_QA_reward_groups": 15,
+        "mixed_QA_reward_groups_fraction": 0.6,
+        "groups_with_reward_std_gt_zero": 15,
+        "groups_with_reward_std_gt_zero_fraction": 0.6,
+        "median_unique_selected_sets": 5.0,
+        "mean_unique_selected_sets": 5.28,
+        "identical_set_groups": 0,
+        "identical_set_groups_fraction": 0.0,
+        "mean_containment_rate": 0.575,
+        "mixed_containment_groups": 24,
+        "mixed_containment_groups_fraction": 0.96,
+        "mean_policy_set_entropy": 2.0859843397140505,
+        "mean_normalized_policy_set_entropy": 0.951888439655304,
+        "yes_probability_count": 120,
+        "yes_probability_mean": 0.08254902607895928,
+        "yes_probability_std": 0.21011695579407494,
+        "yes_probability_min": 1.80635106517002e-05,
+        "yes_probability_max": 0.9263420701026917,
+        "mean_KL": 0.11029111508280039,
+        "max_KL": 0.3748362064361572,
+        "mean_gradient_norm": 8.702413528971373,
+        "nonzero_gradient_groups_fraction": 1.0
+      },
+      {
+        "start_step": 201,
+        "end_step": 225,
+        "groups": 25,
+        "mean_training_reward": 0.53,
+        "mean_reward_std": 0.39253458619117737,
+        "mixed_QA_reward_groups": 22,
+        "mixed_QA_reward_groups_fraction": 0.88,
+        "groups_with_reward_std_gt_zero": 22,
+        "groups_with_reward_std_gt_zero_fraction": 0.88,
+        "median_unique_selected_sets": 5.0,
+        "mean_unique_selected_sets": 5.32,
+        "identical_set_groups": 0,
+        "identical_set_groups_fraction": 0.0,
+        "mean_containment_rate": 0.58,
+        "mixed_containment_groups": 25,
+        "mixed_containment_groups_fraction": 1.0,
+        "mean_policy_set_entropy": 1.9786553478240967,
+        "mean_normalized_policy_set_entropy": 0.9537089323997497,
+        "yes_probability_count": 114,
+        "yes_probability_mean": 0.15539832819922994,
+        "yes_probability_std": 0.27733612927680634,
+        "yes_probability_min": 6.076480076444568e-06,
+        "yes_probability_max": 0.9614882469177246,
+        "mean_KL": 0.08937546174973249,
+        "max_KL": 0.25446565449237823,
+        "mean_gradient_norm": 13.56132442817092,
+        "nonzero_gradient_groups_fraction": 1.0
+      },
+      {
+        "start_step": 226,
+        "end_step": 250,
+        "groups": 25,
+        "mean_training_reward": 0.62,
+        "mean_reward_std": 0.35066943407058715,
+        "mixed_QA_reward_groups": 21,
+        "mixed_QA_reward_groups_fraction": 0.84,
+        "groups_with_reward_std_gt_zero": 21,
+        "groups_with_reward_std_gt_zero_fraction": 0.84,
+        "median_unique_selected_sets": 5.0,
+        "mean_unique_selected_sets": 4.96,
+        "identical_set_groups": 0,
+        "identical_set_groups_fraction": 0.0,
+        "mean_containment_rate": 0.7,
+        "mixed_containment_groups": 22,
+        "mixed_containment_groups_fraction": 0.88,
+        "mean_policy_set_entropy": 1.9385166692733764,
+        "mean_normalized_policy_set_entropy": 0.9151020312309265,
+        "yes_probability_count": 116,
+        "yes_probability_mean": 0.14172086335226736,
+        "yes_probability_std": 0.28036861024116644,
+        "yes_probability_min": 4.338052804087056e-06,
+        "yes_probability_max": 0.9885067939758301,
+        "mean_KL": 0.1609325670450926,
+        "max_KL": 0.5039629936218262,
+        "mean_gradient_norm": 13.368512625694274,
+        "nonzero_gradient_groups_fraction": 1.0
+      },
+      {
+        "start_step": 251,
+        "end_step": 275,
+        "groups": 25,
+        "mean_training_reward": 0.6,
+        "mean_reward_std": 0.3596301138401031,
+        "mixed_QA_reward_groups": 21,
+        "mixed_QA_reward_groups_fraction": 0.84,
+        "groups_with_reward_std_gt_zero": 21,
+        "groups_with_reward_std_gt_zero_fraction": 0.84,
+        "median_unique_selected_sets": 5.0,
+        "mean_unique_selected_sets": 4.72,
+        "identical_set_groups": 0,
+        "identical_set_groups_fraction": 0.0,
+        "mean_containment_rate": 0.715,
+        "mixed_containment_groups": 23,
+        "mixed_containment_groups_fraction": 0.92,
+        "mean_policy_set_entropy": 1.9906806325912476,
+        "mean_normalized_policy_set_entropy": 0.9151392269134522,
+        "yes_probability_count": 119,
+        "yes_probability_mean": 0.2109794733245997,
+        "yes_probability_std": 0.31388407723397915,
+        "yes_probability_min": 9.514200428384356e-06,
+        "yes_probability_max": 0.9831525087356567,
+        "mean_KL": 0.18039134182035924,
+        "max_KL": 0.39898744225502014,
+        "mean_gradient_norm": 14.8646997281909,
+        "nonzero_gradient_groups_fraction": 1.0
+      },
+      {
+        "start_step": 276,
+        "end_step": 300,
+        "groups": 25,
+        "mean_training_reward": 0.59,
+        "mean_reward_std": 0.4145819282531738,
+        "mixed_QA_reward_groups": 23,
+        "mixed_QA_reward_groups_fraction": 0.92,
+        "groups_with_reward_std_gt_zero": 23,
+        "groups_with_reward_std_gt_zero_fraction": 0.92,
+        "median_unique_selected_sets": 5.0,
+        "mean_unique_selected_sets": 5.32,
+        "identical_set_groups": 0,
+        "identical_set_groups_fraction": 0.0,
+        "mean_containment_rate": 0.575,
+        "mixed_containment_groups": 25,
+        "mixed_containment_groups_fraction": 1.0,
+        "mean_policy_set_entropy": 2.0800510692596434,
+        "mean_normalized_policy_set_entropy": 0.9459162545204163,
+        "yes_probability_count": 120,
+        "yes_probability_mean": 0.14807895539474317,
+        "yes_probability_std": 0.26143303287633124,
+        "yes_probability_min": 3.3788076052587712e-06,
+        "yes_probability_max": 0.9855288863182068,
+        "mean_KL": 0.10455056976526976,
+        "max_KL": 0.4590556025505066,
+        "mean_gradient_norm": 15.410140245556832,
+        "nonzero_gradient_groups_fraction": 1.0
+      }
+    ]
+  }
+}

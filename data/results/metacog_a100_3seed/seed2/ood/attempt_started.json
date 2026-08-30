@@ -1,0 +1,62 @@
+{
+  "attempt_id": "911e40f4e819484ca749ef3353ad62ab",
+  "attempt_limit": 1,
+  "bootstrap": {
+    "samples": 4000,
+    "seed": 0,
+    "unit": "episode_cluster"
+  },
+  "command_protocol": {
+    "argv": [
+      "/rodata/azradonc_dev/m253405/myconda/envs/jspace/bin/python",
+      "/rodata/azradonc_dev/m253405/jspace-devtrace/src/analysis/evaluate_metacog_m1_ood.py",
+      "--lock-manifest",
+      "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/id_lock/lock_manifest.json",
+      "--attempt-id",
+      "911e40f4e819484ca749ef3353ad62ab",
+      "--baseline-decoupled",
+      "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/decoupled.json",
+      "--baseline-compositional",
+      "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/compositional.json",
+      "--decoupled-battery",
+      "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v4_final.json",
+      "--compositional-battery",
+      "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v3d.json",
+      "--bootstrap-samples",
+      "4000",
+      "--bootstrap-seed",
+      "0",
+      "--out-json",
+      "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/ood/result.json"
+    ],
+    "argv_sha256": "c38027e372b1e727dc9175aaeb552f1642c5e5b8b6be9fc762772305bd97dce3",
+    "name": "m1_one_shot_ood"
+  },
+  "conditions": [
+    "decoupled",
+    "compositional"
+  ],
+  "lock_manifest": "id_lock/lock_manifest.json",
+  "lock_manifest_sha256": "c00c32c6b1badce993b80d5340c75f57096c6ad766fed81b90aa201a1b93490d",
+  "m0_artifacts": {
+    "compositional": {
+      "battery_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v3d.json",
+      "battery_sha256": "483d3fb6a72970c99c1cba2ed118dd6289825b7f73332af07300205ceb361432",
+      "metadata_path": "m0/compositional.json.metadata",
+      "metadata_sha256": "176e0977db27cce4e4423b3d78a5923529ecce011040b9a17a365cf6dc46b943",
+      "raw_path": "m0/compositional.json",
+      "raw_sha256": "2dbc1faedda196a4248dec6d5efc6c31a0fe94230940efe593fb84f68abd69e7"
+    },
+    "decoupled": {
+      "battery_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v4_final.json",
+      "battery_sha256": "4550cf11c9b7d837b0b1d921c9151d997cb1e421c800fc21da2ebafe4203bf25",
+      "metadata_path": "m0/decoupled.json.metadata",
+      "metadata_sha256": "d0d6bbaa6a74477e249d270ff8d8402253f292e79b1797dd54c1144696b55b35",
+      "raw_path": "m0/decoupled.json",
+      "raw_sha256": "09179319ad4f255faf88f0863036be7271beb56790e665d77812e8712cbe62a8"
+    }
+  },
+  "schema_version": "metacog-alignment-campaign/v1",
+  "stage": "M1_OOD",
+  "started_at_utc": "2026-08-29T05:21:33+00:00"
+}

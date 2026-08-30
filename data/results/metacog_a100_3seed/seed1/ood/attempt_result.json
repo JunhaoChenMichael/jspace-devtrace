@@ -1,0 +1,12 @@
+{
+  "artifact_hashes": {
+    "ood/result.json": "d869e06996faf53b5e295daa31a184734df73e400213fa7232d4750190098ff6"
+  },
+  "attempt_id": "6d0c7d29e4df4563935a6ce79b788fbf",
+  "command_log": "command_logs/13_m1_one_shot_ood.log",
+  "command_log_sha256": "013ba272c9e74758b0ebea0ce0ad9c42d3ce81b86817a0ebfd69f6dfa7483f90",
+  "exit_code": 0,
+  "finished_at_utc": "2026-08-29T05:24:05+00:00",
+  "retry_permitted": false,
+  "schema_version": "metacog-alignment-campaign/v1"
+}

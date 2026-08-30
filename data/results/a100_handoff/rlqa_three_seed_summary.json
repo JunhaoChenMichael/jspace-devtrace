@@ -1,0 +1,180 @@
+{
+  "aggregate": {
+    "admission_auc_delta": {
+      "mean": 0.49893515458617904,
+      "sample_sd": 0.01955131680692693,
+      "values": [
+        0.49432694426085044,
+        0.48209958140559594,
+        0.5203789380920908
+      ]
+    },
+    "full_context_qa_drop_pp": {
+      "mean": 0.9803921568627444,
+      "sample_sd": 0.849044513514155,
+      "values": [
+        1.4705882352941166,
+        -0.0,
+        1.4705882352941166
+      ]
+    },
+    "qa_delta_pp": {
+      "mean": 8.823529411764705,
+      "sample_sd": 1.4705882352941169,
+      "values": [
+        8.823529411764707,
+        7.352941176470589,
+        10.294117647058822
+      ]
+    },
+    "w_rr_drop": {
+      "mean": 0.0005875009179702554,
+      "sample_sd": 0.0004610915897361596,
+      "values": [
+        0.0008537122714254997,
+        5.507821105976696e-05,
+        0.0008537122714254997
+      ]
+    }
+  },
+  "budget": 2,
+  "compositional_diagnostic": {
+    "seed0": {
+      "admission_auc_delta": 0.5356091277143908,
+      "qa_delta_pp": 7.6923076923076925
+    },
+    "seed1": {
+      "admission_auc_delta": 0.5429701877070299,
+      "qa_delta_pp": 7.6923076923076925
+    },
+    "seed2": {
+      "admission_auc_delta": 0.5455465587044535,
+      "qa_delta_pp": 13.461538461538463
+    }
+  },
+  "decision": "PASS",
+  "per_seed": {
+    "0": {
+      "admission_auc_delta": 0.49432694426085044,
+      "admission_auc_delta_ci_95": [
+        0.4196081424310023,
+        0.5741253096492607
+      ],
+      "checks": {
+        "admission_auc_delta_positive": true,
+        "decoupled_qa_delta_positive": true,
+        "full_context_qa_drop_at_most_2pp": true,
+        "w_rr_drop_at_most_0.03": true
+      },
+      "exact_mcnemar": {
+        "a": "original",
+        "a_only": 0,
+        "adapter_only_correct": 6,
+        "b": "rl-qa-s0",
+        "b_only": 6,
+        "discordant": 6,
+        "n": 68,
+        "original_only_correct": 0,
+        "p_value": 0.03125
+      },
+      "full_context_exact_mcnemar_p_value": 1.0,
+      "full_context_qa_adapter": 0.08823529411764706,
+      "full_context_qa_drop_pp": 1.4705882352941166,
+      "full_context_qa_original": 0.10294117647058823,
+      "qa_delta_pp": 8.823529411764707,
+      "qa_original": 0.0,
+      "qa_seed": 0.08823529411764706,
+      "w_rr_after": 0.6536957479621062,
+      "w_rr_before": 0.6545494602335317,
+      "w_rr_drop": 0.0008537122714254997
+    },
+    "1": {
+      "admission_auc_delta": 0.48209958140559594,
+      "admission_auc_delta_ci_95": [
+        0.40877543006474976,
+        0.5627703316018138
+      ],
+      "checks": {
+        "admission_auc_delta_positive": true,
+        "decoupled_qa_delta_positive": true,
+        "full_context_qa_drop_at_most_2pp": true,
+        "w_rr_drop_at_most_0.03": true
+      },
+      "exact_mcnemar": {
+        "a": "original",
+        "a_only": 0,
+        "adapter_only_correct": 5,
+        "b": "rl-qa-s1",
+        "b_only": 5,
+        "discordant": 5,
+        "n": 68,
+        "original_only_correct": 0,
+        "p_value": 0.0625
+      },
+      "full_context_exact_mcnemar_p_value": 1.0,
+      "full_context_qa_adapter": 0.10294117647058823,
+      "full_context_qa_drop_pp": -0.0,
+      "full_context_qa_original": 0.10294117647058823,
+      "qa_delta_pp": 7.352941176470589,
+      "qa_original": 0.0,
+      "qa_seed": 0.07352941176470588,
+      "w_rr_after": 0.6544943820224719,
+      "w_rr_before": 0.6545494602335317,
+      "w_rr_drop": 5.507821105976696e-05
+    },
+    "2": {
+      "admission_auc_delta": 0.5203789380920908,
+      "admission_auc_delta_ci_95": [
+        0.4494596902614975,
+        0.5962148670965712
+      ],
+      "checks": {
+        "admission_auc_delta_positive": true,
+        "decoupled_qa_delta_positive": true,
+        "full_context_qa_drop_at_most_2pp": true,
+        "w_rr_drop_at_most_0.03": true
+      },
+      "exact_mcnemar": {
+        "a": "original",
+        "a_only": 0,
+        "adapter_only_correct": 7,
+        "b": "rl-qa-s2",
+        "b_only": 7,
+        "discordant": 7,
+        "n": 68,
+        "original_only_correct": 0,
+        "p_value": 0.015625
+      },
+      "full_context_exact_mcnemar_p_value": 1.0,
+      "full_context_qa_adapter": 0.08823529411764706,
+      "full_context_qa_drop_pp": 1.4705882352941166,
+      "full_context_qa_original": 0.10294117647058823,
+      "qa_delta_pp": 10.294117647058822,
+      "qa_original": 0.0,
+      "qa_seed": 0.10294117647058823,
+      "w_rr_after": 0.6536957479621062,
+      "w_rr_before": 0.6545494602335317,
+      "w_rr_drop": 0.0008537122714254997
+    }
+  },
+  "schema_version": "rlqa-three-seed-report/v1",
+  "shared_draw_mean_qa_effect": {
+    "ci_95_pp": [
+      2.941176470588235,
+      15.686274509803921
+    ],
+    "draws": 4000,
+    "estimate_pp": 8.823529411764707,
+    "n_episodes": 68,
+    "shared_draws_across_seeds": true,
+    "unit": "episode_cluster"
+  },
+  "source": "decoupled",
+  "success_criteria": {
+    "admission_every_seed_auc_delta_positive": true,
+    "no_harm_full_context_qa": true,
+    "no_harm_workspace_w_rr": true,
+    "primary_every_seed_qa_delta_positive": true,
+    "primary_mean_effect_ci_excludes_zero": true
+  }
+}

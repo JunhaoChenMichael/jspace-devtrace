@@ -1,0 +1,88 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "teacher_tag": "qwen3-8B",
+  "workspace_teacher_model": "Qwen/Qwen3-8B",
+  "expected_model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "expected_split_sha256": "5fc4d99e708744ebf4a872c86287c337d25a32c8725c5c1656740cb3a00cfb2a",
+  "train_spec": [
+    {
+      "source": "explicit",
+      "results_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/results_v1f_qwen3-8B.json",
+      "battery_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v1_final.json"
+    },
+    {
+      "source": "evoked",
+      "results_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/results_v2f_qwen3-8B.json",
+      "battery_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v2_final.json"
+    },
+    {
+      "source": "evoked_g2",
+      "results_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/results_v2g2_qwen3-8B.json",
+      "battery_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v2_g2.json"
+    }
+  ],
+  "out_dir": "data/results/rlqa_a100/b0_s0_k2_g16",
+  "seed": 0,
+  "split_seed": 0,
+  "val_fraction": 0.2,
+  "workspace_top_k": 2,
+  "budget": 2,
+  "group_size": 16,
+  "temperature_candidates": [
+    0.7,
+    1.0,
+    2.0,
+    3.0,
+    5.0
+  ],
+  "min_median_unique_sets": 4.0,
+  "policy_batch_size": 16,
+  "recall_batch_size": 8,
+  "lora_rank": 32,
+  "lora_alpha": 0,
+  "lora_dropout": 0.0,
+  "dtype": "bfloat16",
+  "device": "cuda",
+  "max_length": 2048,
+  "answer_tokens": 64,
+  "limit_episodes": 0,
+  "dry_run": false,
+  "schema_version": 1,
+  "stage": "B0",
+  "training_performed": false,
+  "optimizer_created": false,
+  "policy_initialization": "fresh zero-initialized LoRA over frozen base",
+  "policy_input_fields": [
+    "context",
+    "candidate.concept"
+  ],
+  "probe_visible_to_policy": false,
+  "gold_answer_visible_to_policy": false,
+  "sets_sampled_before_reward_prompts": true,
+  "sampling": "exact-budget Gumbel top-k",
+  "selection_probability_semantics": "softmax(logit/temperature) is the first-draw Plackett-Luce weight; selected_set_probability is the exact unordered set probability",
+  "frozen_recall_adapter_disabled": true,
+  "grader": "memory_rl.recall.grade_answer",
+  "train_episode_count": 175,
+  "validation_episode_count": 45,
+  "full_train_episode_count": 175,
+  "split_manifest_sha256": "5fc4d99e708744ebf4a872c86287c337d25a32c8725c5c1656740cb3a00cfb2a",
+  "teacher_matches_policy_reference": true,
+  "teacher_mismatch_override": false,
+  "software_versions": {
+    "python": "3.12.14",
+    "cuda": "12.6",
+    "torch": "2.7.1+cu126",
+    "transformers": "4.57.6",
+    "peft": "0.13.2",
+    "numpy": "2.5.2"
+  },
+  "resolved_model_name_or_path": "Qwen/Qwen3-8B",
+  "resolved_model_commit": "b968826d9c46dd6066d109eabc6255188de91218",
+  "resolved_tokenizer_commit": "b968826d9c46dd6066d109eabc6255188de91218",
+  "resolved_tokenizer_config_path": "/rodata/azradonc_dev/m253405/cache/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218/tokenizer_config.json",
+  "trainable_parameter_count": 87293952,
+  "total_parameter_count": 8278029312,
+  "selected_temperature": 0.7,
+  "temperature_selection_uses_QA_or_OOD": false
+}

@@ -121,7 +121,7 @@ def _make_m0_artifacts(run_dir: Path) -> None:
     )
 
 
-def test_default_plan_is_fixed_to_a5000_m0_m1_and_date_stamped(tmp_path: Path) -> None:
+def test_default_plan_is_fixed_to_m0_m1_and_date_stamped(tmp_path: Path) -> None:
     context = {
         "python": sys.executable,
         "repo": str(REPO_ROOT),
@@ -145,13 +145,25 @@ def test_default_plan_is_fixed_to_a5000_m0_m1_and_date_stamped(tmp_path: Path) -
     dated = campaign._default_run_dir(
         tmp_path, datetime(2026, 8, 27, tzinfo=timezone.utc)
     )
-    assert dated.name == "2026-08-27_qwen3-8b_a5000_seed0"
+    assert dated.name == f"2026-08-27_qwen3-8b_{campaign.GPU_LABEL}_seed0"
+    for seed in campaign.ALLOWED_SEEDS:
+        seeded = campaign._render(campaign.default_plan(seed), context)
+        campaign.validate_plan(seeded, tmp_path / "run")
+        assert seeded["stages"]["m1"]["name"] == f"m1_seed{seed}_formal_pilot"
+        assert ["--seed", str(seed)] == [
+            token
+            for index, token in enumerate(seeded["stages"]["m1"]["argv"])
+            if token == "--seed" or seeded["stages"]["m1"]["argv"][index - 1] == "--seed"
+        ]
+    with pytest.raises(campaign.CampaignError, match="campaign seed"):
+        campaign.default_plan(3)
 
 
-def test_gpu_preflight_parsers_require_one_free_unoccupied_a5000() -> None:
+def test_gpu_preflight_parsers_require_one_free_unoccupied_campaign_gpu() -> None:
+    gpu_name = campaign.EXPECTED_GPU
     inventory = campaign.parse_gpu_inventory(
-        "0, GPU-A, NVIDIA RTX A5000, 24564, 23100\n"
-        "1, GPU-B, NVIDIA RTX A5000, 24564, 21500\n"
+        f"0, GPU-A, {gpu_name}, 24564, 23100\n"
+        f"1, GPU-B, {gpu_name}, 24564, 21500\n"
     )
     gpu, processes, mode = campaign.select_campaign_gpu(
         inventory,
@@ -162,7 +174,7 @@ def test_gpu_preflight_parsers_require_one_free_unoccupied_a5000() -> None:
     assert gpu == {
         "index": "0",
         "uuid": "GPU-A",
-        "name": "NVIDIA RTX A5000",
+        "name": gpu_name,
         "total_mib": 24564,
         "free_mib": 23100,
     }
@@ -172,7 +184,7 @@ def test_gpu_preflight_parsers_require_one_free_unoccupied_a5000() -> None:
     resident = [
         {"gpu_uuid": "GPU-A", "pid": "7", "process_name": "daemon", "used_memory_mib": "227"}
     ]
-    with pytest.raises(campaign.CampaignError, match="no idle A5000"):
+    with pytest.raises(campaign.CampaignError, match="no idle"):
         campaign.select_campaign_gpu(
             inventory,
             resident,
@@ -188,15 +200,17 @@ def test_gpu_preflight_parsers_require_one_free_unoccupied_a5000() -> None:
     )
     assert selected["index"] == "0"
     assert observed == resident
-    h100 = campaign.parse_gpu_inventory("0, GPU-H, NVIDIA H100 80GB HBM3, 81559, 80000\n")
-    with pytest.raises(campaign.CampaignError, match="no idle A5000"):
+    wrong_device = campaign.parse_gpu_inventory(
+        "0, GPU-X, NVIDIA GeForce RTX 4090, 24564, 24000\n"
+    )
+    with pytest.raises(campaign.CampaignError, match="no idle"):
         campaign.select_campaign_gpu(
-            h100, [], min_free_mib=22_000, requested_index="0"
+            wrong_device, [], min_free_mib=22_000, requested_index="0"
         )
     low_memory = campaign.parse_gpu_inventory(
-        "0, GPU-A, NVIDIA RTX A5000, 24564, 21000\n"
+        f"0, GPU-A, {gpu_name}, 24564, 21000\n"
     )
-    with pytest.raises(campaign.CampaignError, match="no idle A5000"):
+    with pytest.raises(campaign.CampaignError, match="no idle"):
         campaign.select_campaign_gpu(
             low_memory, [], min_free_mib=22_000, requested_index="0"
         )
@@ -308,3 +322,77 @@ def test_ood_attempt_is_consumed_before_command_and_cannot_repeat(
     assert finished[0]["artifact_hashes"]["ood/result.json"] == campaign.sha256_file(
         result_path
     )
+
+
+def _runner_for(run_dir: Path, *, seed: int = 0, resume: bool = False):
+    return campaign.CampaignRunner(
+        repo_root=REPO_ROOT,
+        run_dir=run_dir,
+        plan={},
+        model_revision=MODEL_REVISION,
+        tokenizer_revision=TOKENIZER_REVISION,
+        nvidia_smi="nvidia-smi",
+        min_free_mib=22_000,
+        requested_gpu_index="0",
+        allowed_existing_process_mib=0,
+        attempt_id="e" * 32,
+        seed=seed,
+        resume=resume,
+    )
+
+
+def test_id_lock_phase_pauses_with_ood_still_sealed(tmp_path: Path) -> None:
+    """The multi-seed contract locks every seed BEFORE any seed sees OOD."""
+
+    run_dir = tmp_path / "campaign"
+    run_dir.mkdir()
+    _make_m0_artifacts(run_dir)
+    source = _make_trainer_lock(run_dir / "m1", selected_step=137)
+    runner = _runner_for(run_dir)
+    lock_path = runner.create_id_lock(source)
+
+    assert runner._pause_at_id_lock(lock_path) == "id_lock_complete_ood_sealed"
+    marker = json.loads((run_dir / "ID_LOCK_STOP.json").read_text())
+    assert marker["ood_opened"] is False
+    assert marker["lock_manifest_sha256"] == campaign.sha256_file(lock_path)
+    assert not (run_dir / "ood").exists()
+    events = [row["event"] for row in campaign.read_ledger_events(run_dir / "decision_ledger.jsonl")]
+    assert "campaign_paused_at_id_lock" in events
+
+    # A resumed phase appends to the same ledger and keeps command-log names unique.
+    (run_dir / "command_logs").mkdir(exist_ok=True)
+    (run_dir / "command_logs" / "01_existing.log").write_text("x", encoding="utf-8")
+    resumed = _runner_for(run_dir, resume=True)
+    assert resumed.command_counter == 1
+    assert resumed.ledger.path == runner.ledger.path
+
+
+def test_resume_refuses_a_second_ood_attempt(tmp_path: Path) -> None:
+    run_dir = tmp_path / "campaign"
+    run_dir.mkdir()
+    _make_m0_artifacts(run_dir)
+    source = _make_trainer_lock(run_dir / "m1", selected_step=137)
+    lock_path = _runner_for(run_dir).create_id_lock(source)
+
+    # No pause marker yet: the ID phase never stopped cleanly at its lock.
+    with pytest.raises(campaign.CampaignError, match="did not stop cleanly"):
+        _runner_for(run_dir, resume=True).resume_ood()
+
+    _write_json(run_dir / "ID_LOCK_STOP.json", {"ood_opened": False})
+    (run_dir / "ood").mkdir()
+    with pytest.raises(campaign.CampaignError, match="already consumed its OOD attempt"):
+        _runner_for(run_dir, resume=True).resume_ood()
+
+    (run_dir / "ood").rmdir()
+    with (run_dir / "decision_ledger.jsonl").open("a", encoding="utf-8") as handle:
+        handle.write(json.dumps({"event": "ood_attempt_started"}) + "\n")
+    with pytest.raises(campaign.CampaignError, match="already records an OOD attempt"):
+        _runner_for(run_dir, resume=True).resume_ood()
+    assert lock_path.is_file()
+
+
+def test_seeds_beyond_the_preregistered_set_are_refused(tmp_path: Path) -> None:
+    run_dir = tmp_path / "campaign"
+    run_dir.mkdir()
+    with pytest.raises(campaign.CampaignError, match="campaign seed must be one of"):
+        _runner_for(run_dir, seed=7)

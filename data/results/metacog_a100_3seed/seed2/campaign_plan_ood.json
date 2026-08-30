@@ -1,0 +1,282 @@
+{
+  "schema_version": "metacog-alignment-command-plan/v1",
+  "stages": {
+    "canary": {
+      "argv": [
+        "/rodata/azradonc_dev/m253405/myconda/envs/jspace/bin/python",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/src/experiments/train_metacog_m1.py",
+        "--model",
+        "Qwen/Qwen3-8B",
+        "--model-revision",
+        "b968826d9c46dd6066d109eabc6255188de91218",
+        "--tokenizer-revision",
+        "b968826d9c46dd6066d109eabc6255188de91218",
+        "--seed",
+        "2",
+        "--train-spec",
+        "explicit=/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/explicit.json::/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v1_final.json",
+        "--train-spec",
+        "evoked=/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/evoked.json::/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v2_final.json",
+        "--train-spec",
+        "evoked_g2=/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/evoked_g2.json::/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v2_g2.json",
+        "--out-dir",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/canary",
+        "--canary-steps",
+        "10"
+      ],
+      "manifest_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/canary/canary_manifest.json",
+      "name": "m1_training_canary",
+      "outputs": [
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/canary"
+      ]
+    },
+    "m0": [
+      {
+        "argv": [
+          "/rodata/azradonc_dev/m253405/myconda/envs/jspace/bin/python",
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/src/experiments/measure.py",
+          "--model",
+          "Qwen/Qwen3-8B",
+          "--model-revision",
+          "b968826d9c46dd6066d109eabc6255188de91218",
+          "--tokenizer-revision",
+          "b968826d9c46dd6066d109eabc6255188de91218",
+          "--dtype",
+          "bfloat16",
+          "--device",
+          "cuda",
+          "--end-only",
+          "--no-verbal-raw",
+          "--battery",
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v1_final.json",
+          "--out",
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/explicit.json"
+        ],
+        "name": "m0_measure_explicit",
+        "outputs": [
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/explicit.json",
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/explicit.json.metadata"
+        ]
+      },
+      {
+        "argv": [
+          "/rodata/azradonc_dev/m253405/myconda/envs/jspace/bin/python",
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/src/experiments/measure.py",
+          "--model",
+          "Qwen/Qwen3-8B",
+          "--model-revision",
+          "b968826d9c46dd6066d109eabc6255188de91218",
+          "--tokenizer-revision",
+          "b968826d9c46dd6066d109eabc6255188de91218",
+          "--dtype",
+          "bfloat16",
+          "--device",
+          "cuda",
+          "--end-only",
+          "--no-verbal-raw",
+          "--battery",
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v2_final.json",
+          "--out",
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/evoked.json"
+        ],
+        "name": "m0_measure_evoked",
+        "outputs": [
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/evoked.json",
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/evoked.json.metadata"
+        ]
+      },
+      {
+        "argv": [
+          "/rodata/azradonc_dev/m253405/myconda/envs/jspace/bin/python",
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/src/experiments/measure.py",
+          "--model",
+          "Qwen/Qwen3-8B",
+          "--model-revision",
+          "b968826d9c46dd6066d109eabc6255188de91218",
+          "--tokenizer-revision",
+          "b968826d9c46dd6066d109eabc6255188de91218",
+          "--dtype",
+          "bfloat16",
+          "--device",
+          "cuda",
+          "--end-only",
+          "--no-verbal-raw",
+          "--battery",
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v4_final.json",
+          "--out",
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/decoupled.json"
+        ],
+        "name": "m0_measure_decoupled",
+        "outputs": [
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/decoupled.json",
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/decoupled.json.metadata"
+        ]
+      },
+      {
+        "argv": [
+          "/rodata/azradonc_dev/m253405/myconda/envs/jspace/bin/python",
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/src/experiments/measure.py",
+          "--model",
+          "Qwen/Qwen3-8B",
+          "--model-revision",
+          "b968826d9c46dd6066d109eabc6255188de91218",
+          "--tokenizer-revision",
+          "b968826d9c46dd6066d109eabc6255188de91218",
+          "--dtype",
+          "bfloat16",
+          "--device",
+          "cuda",
+          "--end-only",
+          "--no-verbal-raw",
+          "--battery",
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v3d.json",
+          "--out",
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/compositional.json"
+        ],
+        "name": "m0_measure_compositional",
+        "outputs": [
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/compositional.json",
+          "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/compositional.json.metadata"
+        ]
+      }
+    ],
+    "m0_gate": {
+      "argv": [
+        "/rodata/azradonc_dev/m253405/myconda/envs/jspace/bin/python",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/src/analysis/gate_metacog_m0.py",
+        "--explicit",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/explicit.json",
+        "--evoked",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/evoked.json",
+        "--decoupled",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/decoupled.json",
+        "--compositional",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/compositional.json",
+        "--paper-v",
+        "0.337",
+        "--paper-w-rr",
+        "0.654",
+        "--tolerance",
+        "0.05",
+        "--out-json",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/gate.json",
+        "--out-md",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/gate.md"
+      ],
+      "decision_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/gate.json",
+      "name": "m0_reproduction_gate",
+      "outputs": [
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/gate.json",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/gate.md"
+      ]
+    },
+    "m1": {
+      "argv": [
+        "/rodata/azradonc_dev/m253405/myconda/envs/jspace/bin/python",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/src/experiments/train_metacog_m1.py",
+        "--model",
+        "Qwen/Qwen3-8B",
+        "--model-revision",
+        "b968826d9c46dd6066d109eabc6255188de91218",
+        "--tokenizer-revision",
+        "b968826d9c46dd6066d109eabc6255188de91218",
+        "--seed",
+        "2",
+        "--train-spec",
+        "explicit=/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/explicit.json::/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v1_final.json",
+        "--train-spec",
+        "evoked=/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/evoked.json::/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v2_final.json",
+        "--train-spec",
+        "evoked_g2=/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/evoked_g2.json::/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v2_g2.json",
+        "--out-dir",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m1"
+      ],
+      "lock_manifest_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m1/lock_manifest.json",
+      "name": "m1_seed2_formal_pilot",
+      "outputs": [
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m1"
+      ]
+    },
+    "ood": {
+      "argv": [
+        "/rodata/azradonc_dev/m253405/myconda/envs/jspace/bin/python",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/src/analysis/evaluate_metacog_m1_ood.py",
+        "--lock-manifest",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/id_lock/lock_manifest.json",
+        "--attempt-id",
+        "911e40f4e819484ca749ef3353ad62ab",
+        "--baseline-decoupled",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/decoupled.json",
+        "--baseline-compositional",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/compositional.json",
+        "--decoupled-battery",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v4_final.json",
+        "--compositional-battery",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v3d.json",
+        "--bootstrap-samples",
+        "4000",
+        "--bootstrap-seed",
+        "0",
+        "--out-json",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/ood/result.json"
+      ],
+      "name": "m1_one_shot_ood",
+      "outputs": [
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/ood/result.json"
+      ],
+      "result_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/ood/result.json"
+    },
+    "report": {
+      "argv": [
+        "/rodata/azradonc_dev/m253405/myconda/envs/jspace/bin/python",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/src/analysis/report_metacog_m1.py",
+        "--m0-gate",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/gate.json",
+        "--canary-manifest",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/canary/canary_manifest.json",
+        "--m1-summary",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m1/summary.json",
+        "--lock-manifest",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/id_lock/lock_manifest.json",
+        "--ood-result",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/ood/result.json",
+        "--decision-ledger",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/decision_ledger.jsonl",
+        "--out",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/report/M1_GATE_REPORT.md"
+      ],
+      "name": "m1_gate_report",
+      "outputs": [
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/report/M1_GATE_REPORT.md"
+      ],
+      "report_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/report/M1_GATE_REPORT.md"
+    },
+    "teacher_prep": {
+      "argv": [
+        "/rodata/azradonc_dev/m253405/myconda/envs/jspace/bin/python",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/src/experiments/measure.py",
+        "--model",
+        "Qwen/Qwen3-8B",
+        "--model-revision",
+        "b968826d9c46dd6066d109eabc6255188de91218",
+        "--tokenizer-revision",
+        "b968826d9c46dd6066d109eabc6255188de91218",
+        "--dtype",
+        "bfloat16",
+        "--device",
+        "cuda",
+        "--end-only",
+        "--no-verbal-raw",
+        "--battery",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v2_g2.json",
+        "--out",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/evoked_g2.json"
+      ],
+      "name": "m1_prepare_frozen_teacher_evoked_g2",
+      "outputs": [
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/evoked_g2.json",
+        "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m0/evoked_g2.json.metadata"
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00, 12.35it/s]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:00<00:00, 12.23it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 15.20it/s]
+model=Qwen/Qwen3-8B adapter=None layers=36 verbal=True verbal_raw=False device=cuda episodes=88
+  5/88 episodes
+  10/88 episodes
+  15/88 episodes
+  20/88 episodes
+  25/88 episodes
+  30/88 episodes
+  35/88 episodes
+  40/88 episodes
+  45/88 episodes
+  50/88 episodes
+  55/88 episodes
+  60/88 episodes
+  65/88 episodes
+  70/88 episodes
+  75/88 episodes
+  80/88 episodes
+  85/88 episodes
+saved 417 item rows -> /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed1/m0/explicit.json

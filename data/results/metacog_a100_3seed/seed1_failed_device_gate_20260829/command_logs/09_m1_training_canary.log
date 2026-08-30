@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/rodata/azradonc_dev/m253405/jspace-devtrace/src/experiments/train_metacog_m1.py", line 2158, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/rodata/azradonc_dev/m253405/jspace-devtrace/src/experiments/train_metacog_m1.py", line 1949, in main
+    device_provenance = validate_device(args.device)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rodata/azradonc_dev/m253405/jspace-devtrace/src/experiments/train_metacog_m1.py", line 872, in validate_device
+    raise M1ProtocolError(
+M1ProtocolError: M1 pilot requires an NVIDIA RTX A5000, found 'NVIDIA A100-SXM4-80GB'; do not silently substitute

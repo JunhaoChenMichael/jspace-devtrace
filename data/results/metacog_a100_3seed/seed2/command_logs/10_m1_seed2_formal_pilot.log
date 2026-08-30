@@ -1,0 +1,53 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 109.63it/s]
+/rodata/azradonc_dev/m253405/myconda/envs/jspace/lib/python3.12/site-packages/peft/utils/save_and_load.py:243: UserWarning: Could not find a config file in Qwen/Qwen3-8B - will assume that the vocabulary was not modified.
+  warnings.warn(
+[ID validation step=0] verbal_auc=0.5529100529100529 yes_rate=0.413953488372093
+step=1/414 loss=27.625002 grad=73.2260 tok/s=301.4
+step=10/414 loss=24.203135 grad=94.1040 tok/s=353.8
+step=20/414 loss=5.764502 grad=102.2268 tok/s=323.5
+step=30/414 loss=1.288750 grad=85.5135 tok/s=348.0
+step=40/414 loss=0.888384 grad=50.1060 tok/s=297.7
+step=50/414 loss=0.908216 grad=75.6179 tok/s=333.8
+step=60/414 loss=0.738585 grad=43.2583 tok/s=330.8
+step=70/414 loss=0.736506 grad=24.2681 tok/s=302.7
+step=80/414 loss=3.656764 grad=108.5170 tok/s=320.8
+step=90/414 loss=1.082623 grad=48.5028 tok/s=341.8
+step=100/414 loss=0.686681 grad=18.3778 tok/s=330.5
+[ID validation step=100] verbal_auc=0.49798711755233493 yes_rate=0.05116279069767442
+step=110/414 loss=1.224297 grad=43.5120 tok/s=328.3
+step=120/414 loss=0.285942 grad=18.3887 tok/s=321.4
+step=130/414 loss=0.134483 grad=9.4314 tok/s=329.3
+step=140/414 loss=0.608084 grad=15.7068 tok/s=331.0
+step=150/414 loss=0.796527 grad=24.4344 tok/s=319.4
+step=160/414 loss=1.359341 grad=32.6208 tok/s=330.2
+step=170/414 loss=0.925501 grad=42.0996 tok/s=340.2
+step=180/414 loss=0.299448 grad=21.3984 tok/s=345.1
+step=190/414 loss=1.029502 grad=23.8360 tok/s=369.6
+step=200/414 loss=0.685186 grad=15.6722 tok/s=352.0
+step=210/414 loss=0.539626 grad=9.9465 tok/s=301.5
+step=220/414 loss=0.734054 grad=15.1345 tok/s=354.0
+step=230/414 loss=1.036140 grad=27.4752 tok/s=351.6
+step=240/414 loss=0.819606 grad=10.3741 tok/s=317.4
+step=250/414 loss=1.041189 grad=16.6074 tok/s=325.3
+[ID validation step=250] verbal_auc=0.5850011502185415 yes_rate=0.7906976744186046
+step=260/414 loss=1.337112 grad=28.6296 tok/s=346.3
+step=270/414 loss=3.297097 grad=47.5303 tok/s=330.6
+step=280/414 loss=1.066965 grad=28.4826 tok/s=362.7
+step=290/414 loss=0.646691 grad=18.2524 tok/s=271.0
+step=300/414 loss=1.265446 grad=28.4117 tok/s=311.9
+step=310/414 loss=0.769515 grad=28.4783 tok/s=306.0
+step=320/414 loss=0.957496 grad=27.5729 tok/s=337.4
+step=330/414 loss=1.512204 grad=42.4409 tok/s=335.8
+step=340/414 loss=0.718092 grad=16.1461 tok/s=309.7
+step=350/414 loss=0.689897 grad=10.7029 tok/s=309.1
+step=360/414 loss=0.833340 grad=8.9944 tok/s=314.5
+step=370/414 loss=0.501528 grad=22.5737 tok/s=334.7
+step=380/414 loss=0.586396 grad=14.3462 tok/s=336.6
+step=390/414 loss=1.300379 grad=32.4222 tok/s=322.0
+step=400/414 loss=0.523681 grad=11.3084 tok/s=337.1
+step=410/414 loss=1.042410 grad=24.4833 tok/s=331.9
+[ID validation step=414] verbal_auc=0.5640671727628249 yes_rate=0.19069767441860466
+M1 LOCKED: /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/m1

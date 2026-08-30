@@ -1,0 +1,11 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 109.86it/s]
+/rodata/azradonc_dev/m253405/myconda/envs/jspace/lib/python3.12/site-packages/peft/utils/save_and_load.py:243: UserWarning: Could not find a config file in Qwen/Qwen3-8B - will assume that the vocabulary was not modified.
+  warnings.warn(
+[ID validation step=0] verbal_auc=0.5529100529100529 yes_rate=0.413953488372093
+step=1/10 loss=27.625002 grad=73.2260 tok/s=305.4
+step=10/10 loss=24.203135 grad=94.1040 tok/s=359.8
+[ID validation step=10] verbal_auc=0.530250747642052 yes_rate=0.8604651162790697
+M1 PASS: /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog_a100_3seed/seed2/canary

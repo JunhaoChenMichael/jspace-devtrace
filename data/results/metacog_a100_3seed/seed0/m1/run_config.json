@@ -1,0 +1,98 @@
+{
+  "campaign_stage": "M1",
+  "checkpoint_steps": [
+    0,
+    100,
+    250,
+    414
+  ],
+  "device": {
+    "bf16_supported": true,
+    "compute_capability": [
+      8,
+      0
+    ],
+    "index": 0,
+    "name": "NVIDIA A100-SXM4-80GB",
+    "total_memory_bytes": 85093777408,
+    "type": "cuda"
+  },
+  "dry_run": false,
+  "effective_max_sequence_length": 1024,
+  "epochs": 2,
+  "gradient_accumulation": 4,
+  "gradient_checkpointing": true,
+  "learning_rate": 1e-05,
+  "lora_alpha": 32,
+  "lora_dropout": 0.0,
+  "lora_rank": 16,
+  "lora_target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "max_grad_norm": 1.0,
+  "max_steps": 500,
+  "max_steps_is_cap": true,
+  "mode": "formal_seed_0_pilot",
+  "model": "Qwen/Qwen3-8B",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "no_token_ids": [
+    902,
+    2152,
+    2308,
+    2753,
+    8996
+  ],
+  "ood_evaluation_enabled": false,
+  "optimizer": "torch.optim.AdamW",
+  "per_device_batch_size": 1,
+  "precision": "bfloat16",
+  "requested_max_sequence_length": 1024,
+  "resolved_model_commit": "b968826d9c46dd6066d109eabc6255188de91218",
+  "resolved_tokenizer_commit": "b968826d9c46dd6066d109eabc6255188de91218",
+  "scheduler": "constant",
+  "schema_version": 1,
+  "seed": 0,
+  "selection_metric": "verbal_auc",
+  "selection_scope": "id_validation",
+  "selection_tie_break": "earliest_step",
+  "sequence_length_auto_increased": false,
+  "software_versions": {
+    "accelerate": "1.14.0",
+    "cuda": "12.6",
+    "peft": "0.13.2",
+    "python": "3.12.14",
+    "safetensors": "0.8.0",
+    "torch": "2.7.1+cu126",
+    "transformers": "4.57.6"
+  },
+  "split_seed": 0,
+  "target_optimizer_steps": 414,
+  "teacher_top_k": 2,
+  "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "total_parameter_count": 8234382336,
+  "train_candidate_count": 825,
+  "train_episode_count": 175,
+  "trainable_parameter_count": 43646976,
+  "training_sources": [
+    "explicit",
+    "evoked",
+    "evoked_g2"
+  ],
+  "validation_candidate_count": 215,
+  "validation_episode_count": 45,
+  "validation_fraction": 0.2,
+  "weight_decay": 0.0,
+  "yes_token_ids": [
+    7414,
+    9454,
+    9693,
+    9834,
+    14004
+  ]
+}
