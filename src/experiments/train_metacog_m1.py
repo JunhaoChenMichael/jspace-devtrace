@@ -42,7 +42,10 @@ SCRIPTS = Path(__file__).resolve().parents[2] / "scripts"
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
-from run_metacog_alignment_campaign import EXPECTED_GPU  # noqa: E402
+from run_metacog_alignment_campaign import (  # noqa: E402
+    EXPECTED_GPU,
+    EXPECTED_MODEL,
+)
 
 from memory_rl.data import (  # noqa: E402
     ALLOWED_TRAIN_SOURCES,
@@ -59,7 +62,9 @@ from memory_rl.modeling import (  # noqa: E402
 )
 
 
-PRIMARY_MODEL = "Qwen/Qwen3-8B"
+# One model per campaign, selected by METACOG_EXPECTED_MODEL from the
+# launcher's closed allowlist. Substitution is still refused below.
+PRIMARY_MODEL = EXPECTED_MODEL
 TOP_K = 2
 PER_DEVICE_BATCH_SIZE = 1
 DTYPE_NAME = "bfloat16"

@@ -1,0 +1,279 @@
+{
+  "schema_version": "workspace_measurement_metadata.v2",
+  "model": "Qwen/Qwen3-32B",
+  "adapter": null,
+  "model_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+  "model_revision_requested": "9216db5781bf21249d130ec9da846c4624c16137",
+  "model_revision_resolved": "9216db5781bf21249d130ec9da846c4624c16137",
+  "tokenizer_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+  "tokenizer_revision_requested": "9216db5781bf21249d130ec9da846c4624c16137",
+  "tokenizer_revision_effective": "9216db5781bf21249d130ec9da846c4624c16137",
+  "tokenizer_revision_resolved": null,
+  "revisions": {
+    "model": {
+      "identifier": "Qwen/Qwen3-32B",
+      "revision_requested": "9216db5781bf21249d130ec9da846c4624c16137",
+      "revision_resolved": "9216db5781bf21249d130ec9da846c4624c16137"
+    },
+    "tokenizer": {
+      "identifier": "Qwen/Qwen3-32B",
+      "revision_requested": "9216db5781bf21249d130ec9da846c4624c16137",
+      "revision_effective": "9216db5781bf21249d130ec9da846c4624c16137",
+      "revision_resolved": null
+    }
+  },
+  "battery": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v2_final.json",
+  "output": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/scale_sweep/Qwen3-32B/evoked.json",
+  "dtype": "bfloat16",
+  "device": "cuda",
+  "rows": 352,
+  "episodes": 75,
+  "candidates": 352,
+  "counts": {
+    "episodes_in_battery": 75,
+    "episodes_evaluated": 75,
+    "episodes_with_output": 75,
+    "candidates_in_battery": 352,
+    "candidates_evaluated": 352,
+    "candidate_rows_written": 352,
+    "candidates_skipped_no_token": 0,
+    "input_labels": {
+      "distractor": 146,
+      "filler": 131,
+      "load_bearing": 75
+    },
+    "output_labels": {
+      "distractor": 146,
+      "filler": 131,
+      "load_bearing": 75
+    }
+  },
+  "end_only": true,
+  "limit_episodes": 0,
+  "verbal_enabled": true,
+  "verbal_raw_enabled": true,
+  "policy_input_includes_probe": false,
+  "workspace_readout": {
+    "position": "final context token",
+    "layer_aggregation": "maximum over transformer layers 1..n",
+    "candidate_token_variants": [
+      "space+lowercase",
+      "space+capitalized",
+      "lowercase",
+      "capitalized"
+    ],
+    "final_norm": "Qwen3RMSNorm",
+    "unembedding": "Linear",
+    "n_layers": 64
+  },
+  "yes_no_token_sets": {
+    "scoring": "sum next-token probability over unique first-token ids",
+    "yes": {
+      "ids": [
+        7414,
+        9454,
+        9693,
+        9834,
+        14004
+      ],
+      "tokens": [
+        {
+          "id": 7414,
+          "vocab_token": "\u0120Yes",
+          "decoded": " Yes"
+        },
+        {
+          "id": 9454,
+          "vocab_token": "Yes",
+          "decoded": "Yes"
+        },
+        {
+          "id": 9693,
+          "vocab_token": "yes",
+          "decoded": "yes"
+        },
+        {
+          "id": 9834,
+          "vocab_token": "\u0120yes",
+          "decoded": " yes"
+        },
+        {
+          "id": 14004,
+          "vocab_token": "YES",
+          "decoded": "YES"
+        }
+      ],
+      "variants": [
+        {
+          "text": "yes",
+          "encoded_ids": [
+            9693
+          ],
+          "scored_first_token_id": 9693
+        },
+        {
+          "text": " yes",
+          "encoded_ids": [
+            9834
+          ],
+          "scored_first_token_id": 9834
+        },
+        {
+          "text": "Yes",
+          "encoded_ids": [
+            9454
+          ],
+          "scored_first_token_id": 9454
+        },
+        {
+          "text": " Yes",
+          "encoded_ids": [
+            7414
+          ],
+          "scored_first_token_id": 7414
+        },
+        {
+          "text": "YES",
+          "encoded_ids": [
+            14004
+          ],
+          "scored_first_token_id": 14004
+        }
+      ]
+    },
+    "no": {
+      "ids": [
+        902,
+        2152,
+        2308,
+        2753,
+        8996
+      ],
+      "tokens": [
+        {
+          "id": 902,
+          "vocab_token": "\u0120no",
+          "decoded": " no"
+        },
+        {
+          "id": 2152,
+          "vocab_token": "no",
+          "decoded": "no"
+        },
+        {
+          "id": 2308,
+          "vocab_token": "\u0120No",
+          "decoded": " No"
+        },
+        {
+          "id": 2753,
+          "vocab_token": "No",
+          "decoded": "No"
+        },
+        {
+          "id": 8996,
+          "vocab_token": "NO",
+          "decoded": "NO"
+        }
+      ],
+      "variants": [
+        {
+          "text": "no",
+          "encoded_ids": [
+            2152
+          ],
+          "scored_first_token_id": 2152
+        },
+        {
+          "text": " no",
+          "encoded_ids": [
+            902
+          ],
+          "scored_first_token_id": 902
+        },
+        {
+          "text": "No",
+          "encoded_ids": [
+            2753
+          ],
+          "scored_first_token_id": 2753
+        },
+        {
+          "text": " No",
+          "encoded_ids": [
+            2308
+          ],
+          "scored_first_token_id": 2308
+        },
+        {
+          "text": "NO",
+          "encoded_ids": [
+            8996
+          ],
+          "scored_first_token_id": 8996
+        }
+      ]
+    }
+  },
+  "yes_token_ids": [
+    7414,
+    9454,
+    9693,
+    9834,
+    14004
+  ],
+  "no_token_ids": [
+    902,
+    2152,
+    2308,
+    2753,
+    8996
+  ],
+  "chat_template": {
+    "present": true,
+    "source": "tokenizer.chat_template",
+    "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "bytes": 4168,
+    "template_type": "str",
+    "tokenizer_class": "Qwen2TokenizerFast",
+    "tokenizer_name_or_path": "Qwen/Qwen3-32B",
+    "declared_in_tokenizer_init_kwargs": true
+  },
+  "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+  "runtime": {
+    "device_requested": "cuda",
+    "device_resolved": "cuda",
+    "platform": "Linux-4.18.0-553.132.1.el8_10.x86_64-x86_64-with-glibc2.28",
+    "versions": {
+      "python": "3.12.14",
+      "torch": "2.7.1+cu126",
+      "transformers": "4.57.6",
+      "tokenizers": "0.22.2",
+      "accelerate": "1.14.0",
+      "peft": "0.13.2",
+      "cuda_runtime": "12.6",
+      "cudnn": 90501,
+      "nvidia_driver": "NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  580.159.04  Release Build  (dvs-builder@U22-I3-AF04-09-6)  Wed Apr 29 17:15:53 UTC 2026\nGCC version:  gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)"
+    },
+    "gpu": {
+      "available": true,
+      "count": 1,
+      "devices": [
+        {
+          "index": 0,
+          "name": "NVIDIA A100-SXM4-80GB",
+          "compute_capability": "8.0",
+          "total_memory_bytes": 85093777408
+        }
+      ]
+    }
+  },
+  "hashes": {
+    "battery_file_sha256": "e8ce4db85d3a0c09879575850e36b91821af8be155e86495cd059ae35485e7d6",
+    "effective_battery_canonical_sha256": "a3a0b7916e30c242fe628574edbdca39d205c5f1cddd3721d281b50ef7548706",
+    "candidate_order_sha256": "f81a8b1d13b3657b86320476075bb75c1102c14e116d4c22df3e68b1aed1f61a",
+    "raw_output_sha256": "17090f42a4901085986dcb2cf27fad362caa78978831675809d56b893e610811",
+    "measure_source_sha256": "b886cd27352a796feea3d4801aca651dd68d255920d83e19271eb7da20137cf9",
+    "workspace_lens_source_sha256": "5251f792f44c8e2846564036ec2a945290ec74fbb86e67aef2cb74690c5582c4"
+  }
+}

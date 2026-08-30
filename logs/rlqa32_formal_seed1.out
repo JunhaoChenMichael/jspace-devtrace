@@ -1,0 +1,10 @@
+host=rohpcgpu24.mayo.edu job=4274576 gpu=NVIDIA A100-SXM4-80GB
+profile=formal mode=rl-qa model=Qwen/Qwen3-32B teacher=qwen3-32B
+seeds=1 split_seed=0 betas=0.03 budgets=2
+This invocation runs only 'rl-qa'; it will not cross a scientific gate.
+
+Starting serial run: formal_rl-qa_Qwen3-32B_rank_continuous_split0_s1_beta0p03_k2_lq1_lw0
+  python  src/experiments/train_memory_rl.py  --mode  rl-qa  --model  Qwen/Qwen3-32B  --teacher-tag  qwen3-32B  --workspace-objective  rank-continuous  --workspace-top-k  2  --out-dir  data/results/rlqa32_a100/runs/formal_rl-qa_Qwen3-32B_rank_continuous_split0_s1_beta0p03_k2_lq1_lw0  --seed  1  --split-seed  0  --budget  2  --max-steps  300  --group-size  8  --temperature  5.0  --learning-rate  1e-6  --beta  0.03  --lambda-qa  1  --lambda-w  0  --workspace-set-reward  mean  --lora-rank  32  --dtype  bfloat16  --device  cuda  --answer-tokens  64  --diagnostic-every  25  --reporter-correlation-bootstrap-samples  4000  --reporter-correlation-bootstrap-seed  0  --max-length  2048  --eval-every  100  --save-every  100  --limit-train-episodes  0  --limit-validation-episodes  0  --val-eval-episodes  0
+mode=rl-qa train=175 val=45 seed=1 split_seed=0 out=data/results/rlqa32_a100/runs/formal_rl-qa_Qwen3-32B_rank_continuous_split0_s1_beta0p03_k2_lq1_lw0
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:  18%|█▊        | 3/17 [00:00<00:00, 28.24it/s]Loading checkpoint shards:  35%|███▌      | 6/17 [00:00<00:00, 26.63it/s]Loading checkpoint shards:  53%|█████▎    | 9/17 [00:00<00:00, 26.08it/s]Loading checkpoint shards:  71%|███████   | 12/17 [00:00<00:00, 25.97it/s]Loading checkpoint shards:  88%|████████▊ | 15/17 [00:00<00:00, 25.86it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 27.08it/s]

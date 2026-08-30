@@ -1,0 +1,12 @@
+{
+  "automatic_seed_expansion_authorized": false,
+  "decision": "FAIL",
+  "next_stage_launched": false,
+  "ood_attempts_consumed": 1,
+  "primary_admission_auc_delta": 0.04483366380259968,
+  "primary_decoupled_qa_delta_pp": 0.0,
+  "reason": "seed-0 scaling gate complete; campaign stops for human review",
+  "schema_version": "rlqa-32b-stop/v1",
+  "seed": 0,
+  "stopped_at_utc": "2026-08-30T11:03:22+00:00"
+}

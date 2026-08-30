@@ -1,0 +1,22 @@
++ for spec in "battery_v1_final:results_v1f_qwen3-32B" "battery_v2_final:results_v2f_qwen3-32B" "battery_v2_g2:results_v2g2_qwen3-32B"
++ BATTERY=battery_v1_final
++ OUT=results_v1f_qwen3-32B
++ [[ -e data/results/results_v1f_qwen3-32B.json ]]
++ python src/experiments/measure.py --model Qwen/Qwen3-32B --model-revision 9216db5781bf21249d130ec9da846c4624c16137 --tokenizer-revision 9216db5781bf21249d130ec9da846c4624c16137 --dtype bfloat16 --device cuda --end-only --no-verbal-raw --battery data/benchmarks/battery_v1_final.json --out data/results/results_v1f_qwen3-32B.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:  18%|█▊        | 3/17 [00:00<00:00, 22.64it/s]Loading checkpoint shards:  35%|███▌      | 6/17 [00:00<00:00, 22.07it/s]Loading checkpoint shards:  53%|█████▎    | 9/17 [00:00<00:00, 21.53it/s]Loading checkpoint shards:  71%|███████   | 12/17 [00:00<00:00, 21.20it/s]Loading checkpoint shards:  88%|████████▊ | 15/17 [00:00<00:00, 21.24it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 22.19it/s]
++ for spec in "battery_v1_final:results_v1f_qwen3-32B" "battery_v2_final:results_v2f_qwen3-32B" "battery_v2_g2:results_v2g2_qwen3-32B"
++ BATTERY=battery_v2_final
++ OUT=results_v2f_qwen3-32B
++ [[ -e data/results/results_v2f_qwen3-32B.json ]]
++ python src/experiments/measure.py --model Qwen/Qwen3-32B --model-revision 9216db5781bf21249d130ec9da846c4624c16137 --tokenizer-revision 9216db5781bf21249d130ec9da846c4624c16137 --dtype bfloat16 --device cuda --end-only --no-verbal-raw --battery data/benchmarks/battery_v2_final.json --out data/results/results_v2f_qwen3-32B.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:  76%|███████▋  | 13/17 [00:00<00:00, 129.55it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 142.66it/s]
++ for spec in "battery_v1_final:results_v1f_qwen3-32B" "battery_v2_final:results_v2f_qwen3-32B" "battery_v2_g2:results_v2g2_qwen3-32B"
++ BATTERY=battery_v2_g2
++ OUT=results_v2g2_qwen3-32B
++ [[ -e data/results/results_v2g2_qwen3-32B.json ]]
++ python src/experiments/measure.py --model Qwen/Qwen3-32B --model-revision 9216db5781bf21249d130ec9da846c4624c16137 --tokenizer-revision 9216db5781bf21249d130ec9da846c4624c16137 --dtype bfloat16 --device cuda --end-only --no-verbal-raw --battery data/benchmarks/battery_v2_g2.json --out data/results/results_v2g2_qwen3-32B.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:  47%|████▋     | 8/17 [00:00<00:00, 72.07it/s]Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 104.39it/s]
++ set +x

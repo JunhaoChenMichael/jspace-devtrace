@@ -136,7 +136,7 @@ def test_default_plan_is_fixed_to_m0_m1_and_date_stamped(tmp_path: Path) -> None
     rendered = " ".join(token for spec in commands for token in spec["argv"]).lower()
     assert "h100" not in rendered
     assert "train_memory_rl" not in rendered
-    assert "qwen/qwen3-8b" in rendered
+    assert campaign.EXPECTED_MODEL.lower() in rendered
     assert len(plan["stages"]["m0"]) == 4
     assert plan["stages"]["teacher_prep"]["name"] == "m1_prepare_frozen_teacher_evoked_g2"
     assert "evoked_g2" not in " ".join(
@@ -145,7 +145,7 @@ def test_default_plan_is_fixed_to_m0_m1_and_date_stamped(tmp_path: Path) -> None
     dated = campaign._default_run_dir(
         tmp_path, datetime(2026, 8, 27, tzinfo=timezone.utc)
     )
-    assert dated.name == f"2026-08-27_qwen3-8b_{campaign.GPU_LABEL}_seed0"
+    assert dated.name == f"2026-08-27_{campaign.MODEL_LABEL}_{campaign.GPU_LABEL}_seed0"
     for seed in campaign.ALLOWED_SEEDS:
         seeded = campaign._render(campaign.default_plan(seed), context)
         campaign.validate_plan(seeded, tmp_path / "run")

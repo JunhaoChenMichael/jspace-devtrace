@@ -13,9 +13,10 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
-from typing import Any, Mapping
+from typing import Any, Mapping, Sequence
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
@@ -28,7 +29,8 @@ from run_metacog_alignment_campaign import (  # noqa: E402
 )
 
 LOCK_SCHEMA = "memory-rl-qa-id-lock/v1"
-EXPECTED_MODEL = "Qwen/Qwen3-8B"
+# One model per campaign, from the launcher's closed allowlist.
+EXPECTED_MODEL = os.environ.get("METACOG_EXPECTED_MODEL", "Qwen/Qwen3-8B")
 # Everything the H100/A100 Track A specification freezes before formal seeds.
 LOCKED_RECIPE = {
     "mode": "rl-qa",
@@ -46,7 +48,12 @@ LOCKED_RECIPE = {
     # that 5.0 still satisfies both B0 gates on Qwen3-8B.
     "temperature": 5.0,
 }
-EXPECTED_REVISION = "b968826d9c46dd6066d109eabc6255188de91218"
+# Pinned commit per approved model; a run that resolved anything else is refused.
+PINNED_REVISIONS = {
+    "Qwen/Qwen3-8B": "b968826d9c46dd6066d109eabc6255188de91218",
+    "Qwen/Qwen3-32B": "9216db5781bf21249d130ec9da846c4624c16137",
+}
+EXPECTED_REVISION = PINNED_REVISIONS.get(EXPECTED_MODEL)
 # Any of these appearing in a training run's configuration means the sealed
 # conditions were opened before the lock existed.
 SEALED_TOKENS = ("battery_v4", "battery_v3", "decoupled", "compositional")
@@ -80,7 +87,7 @@ def _check_recipe(run_config: Mapping[str, Any], seed: int) -> None:
         elif str(observed) != str(expected):
             raise LockError(f"seed {seed} changed {field}: {observed!r} != {expected!r}")
     resolved = run_config.get("resolved_model_commit")
-    if resolved is not None and str(resolved) != EXPECTED_REVISION:
+    if EXPECTED_REVISION and resolved is not None and str(resolved) != EXPECTED_REVISION:
         raise LockError(f"seed {seed} resolved a different model commit: {resolved}")
     blob = json.dumps(run_config, sort_keys=True).lower()
     for token in SEALED_TOKENS:
@@ -127,13 +134,16 @@ def lock_run(run_dir: Path, seed: int) -> dict[str, Any]:
     }
 
 
-def build_lock(runs: Mapping[int, Path]) -> dict[str, Any]:
-    if sorted(runs) != [0, 1, 2]:
-        raise LockError(f"all three seeds must be locked together, got {sorted(runs)}")
+def build_lock(runs: Mapping[int, Path], expected_seeds: Sequence[int] = (0, 1, 2)) -> dict[str, Any]:
+    if sorted(runs) != sorted(expected_seeds):
+        raise LockError(
+            f"seeds {sorted(expected_seeds)} must be locked together, got {sorted(runs)}"
+        )
     seeds = [lock_run(runs[seed], seed) for seed in sorted(runs)]
     splits = {entry["split_manifest_sha256"] for entry in seeds}
     if len(splits) != 1:
         raise LockError("seeds do not share one split manifest; split seed must stay 0")
+    del expected_seeds  # consumed above
     payload = {
         "schema_version": LOCK_SCHEMA,
         "created_at_utc": utc_now(),
@@ -161,6 +171,12 @@ def main(argv: list[str] | None = None) -> int:
         help="repeat once per seed, e.g. --run 0=data/results/rlqa_a100/runs/formal_rl-qa_...",
     )
     parser.add_argument("--out", type=Path, required=True)
+    parser.add_argument(
+        "--seeds",
+        default="0,1,2",
+        help="comma-separated seed set that must be locked together; the 32B "
+             "scaling gate authorises seed 0 alone",
+    )
     args = parser.parse_args(argv)
 
     runs: dict[int, Path] = {}
@@ -171,7 +187,7 @@ def main(argv: list[str] | None = None) -> int:
         runs[int(seed_text)] = Path(path).resolve()
 
     try:
-        payload = build_lock(runs)
+        payload = build_lock(runs, [int(s) for s in args.seeds.split(",") if s.strip()])
     except (LockError, OSError, ValueError) as exc:
         print(f"error: {exc}\nSTOP: no OOD battery was opened.", file=sys.stderr)
         return 1

@@ -1,0 +1,5 @@
+{
+  "path": "data/results/rlqa32_a100/runs/formal_rl-qa_Qwen3-32B_rank_continuous_split0_s0_beta0p03_k2_lq1_lw0/best-step-100",
+  "step": 100,
+  "metric": 0.7777777777777778
+}

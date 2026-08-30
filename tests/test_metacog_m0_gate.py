@@ -222,3 +222,76 @@ def test_m0_gate_requires_sidecars_by_default_but_has_legacy_escape_hatch(
     assert result["provenance_audit"]["metadata_missing"] == list(
         m0_gate.CONDITIONS
     )
+
+
+def _rewrite_decoupled(paths: dict[str, Path], rows: list[dict]) -> None:
+    paths["decoupled"].write_text(json.dumps(rows), encoding="utf-8")
+    Path(f"{paths['decoupled']}.metadata").write_text(
+        json.dumps(_metadata_for(paths["decoupled"], len(rows))), encoding="utf-8"
+    )
+
+
+def test_scale_gap_mode_gates_on_a_repairable_reporting_gap(tmp_path: Path) -> None:
+    """A new scale point is gated on W - V, not on matching the 8B numbers."""
+
+    paths = _write_inputs(tmp_path)
+    result = m0_gate.analyze_files(paths, mode="scale_gap")
+
+    gate = result["gate"]
+    assert gate["mode"] == "scale_gap"
+    assert gate["criterion"] == "W_before - V_before >= min_reporting_gap"
+    # the shared fixture is V≈0.333 / W≈0.667, a gap of ≈0.333
+    assert gate["reporting_gap"] == pytest.approx(1 / 3, abs=1e-6)
+    assert result["decision"] == "GREEN"
+    # paper values survive only as context, never as a check
+    assert "reference_only_paper_values" in gate
+    assert set(gate["checks"]) == {"reporting_gap"}
+
+
+def test_scale_gap_mode_reports_scale_boundary_instead_of_investigate(tmp_path: Path) -> None:
+    paths = _write_inputs(tmp_path)
+    rows = _green_rows()
+    # A model whose verbal report already tracks utility has nothing to repair.
+    for row in rows:
+        row["V"] = row["W_rr"]
+    _rewrite_decoupled(paths, rows)
+
+    result = m0_gate.analyze_files(paths, mode="scale_gap")
+
+    assert result["decision"] == "SCALE_BOUNDARY"
+    assert result["gate"]["checks"]["reporting_gap"] is False
+    assert result["gate"]["reporting_gap"] == pytest.approx(0.0, abs=1e-9)
+
+
+def test_scale_gap_does_not_change_the_paper_reproduction_gate(tmp_path: Path) -> None:
+    """The 8B contract must be untouched by the new mode."""
+
+    paths = _write_inputs(tmp_path)
+    rows = _green_rows()
+    for row in rows:
+        row["V"] = 1.0 if row["label"] == "load_bearing" else 0.0
+    _rewrite_decoupled(paths, rows)
+
+    reproduction = m0_gate.analyze_files(paths)
+    assert reproduction["decision"] == "INVESTIGATE"
+    assert reproduction["gate"]["mode"] == "paper_reproduction"
+
+    # The same measurement passes the scale gate: a perfectly-reporting model
+    # has V above W, so the gap is negative and must still fail scale_gap.
+    scale = m0_gate.analyze_files(paths, mode="scale_gap")
+    assert scale["decision"] == "SCALE_BOUNDARY"
+
+
+def test_scale_gap_threshold_and_mode_are_validated(tmp_path: Path) -> None:
+    paths = _write_inputs(tmp_path)
+    with pytest.raises(m0_gate.M0GateError, match="gate mode must be one of"):
+        m0_gate.analyze_files(paths, mode="whatever")
+    with pytest.raises(m0_gate.M0GateError, match="min_reporting_gap must be"):
+        m0_gate.analyze_files(paths, mode="scale_gap", min_reporting_gap=1.5)
+
+
+def test_scale_gap_renders_markdown_without_a_tolerance(tmp_path: Path) -> None:
+    paths = _write_inputs(tmp_path)
+    result = m0_gate.analyze_files(paths, mode="scale_gap")
+    text = m0_gate.render_markdown(result, tmp_path / "gate.json")
+    assert "GREEN" in text

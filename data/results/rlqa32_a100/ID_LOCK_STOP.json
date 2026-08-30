@@ -1,0 +1,11 @@
+{
+  "automatic_seed_expansion_authorized": false,
+  "checkpoint_tree_sha256": "38ba39d13ed4240442ed3d709298ed994478fee322e1b8ff835538b21090b829",
+  "manifest_sha256": "5c9e7d451a453631737eb16a7a512e37c3ba25c0c2adab9249d53fc7833b81b8",
+  "ood_opened": false,
+  "reason": "id_lock_complete_ood_sealed",
+  "schema_version": "rlqa-id-lock-stop/v1",
+  "seed": 0,
+  "selected_step": 100,
+  "stopped_at_utc": "2026-08-30T10:18:54+00:00"
+}

@@ -1,0 +1,19 @@
+host=rohpcgpu37.mayo.edu job=4274144 gpu=NVIDIA A100-SXM4-80GB
+########## Qwen3-8B (should reproduce V=0.3415 on the full battery)
+   V=0.006972 distractor     pastry
+   V=0.011136 filler         museum
+   V=0.010047 distractor     waffle
+   V=0.002248 load_bearing   brussels
+   V=0.020423 filler         coffee
+MODEL Qwen/Qwen3-8B rev b968826d9c46
+EPISODES 68 CANDIDATES 335 POS 68
+INDEPENDENT_V_AUC 0.341540
+########## Qwen3-32B (should reproduce V=0.6571)
+   V=0.000586 distractor     pastry
+   V=0.000436 filler         museum
+   V=0.000420 distractor     waffle
+   V=0.001137 load_bearing   brussels
+   V=0.000481 filler         coffee
+MODEL Qwen/Qwen3-32B rev 9216db5781bf
+EPISODES 68 CANDIDATES 335 POS 68
+INDEPENDENT_V_AUC 0.657083

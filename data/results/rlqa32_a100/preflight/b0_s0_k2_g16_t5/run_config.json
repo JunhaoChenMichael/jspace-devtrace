@@ -1,0 +1,84 @@
+{
+  "model": "Qwen/Qwen3-32B",
+  "teacher_tag": "qwen3-32B",
+  "workspace_teacher_model": "Qwen/Qwen3-32B",
+  "expected_model_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+  "expected_split_sha256": "d09d6dbdd4fe5d159de9d120963b6229dcffe337de64364cc03192f4198c6035",
+  "train_spec": [
+    {
+      "source": "explicit",
+      "results_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/results_v1f_qwen3-32B.json",
+      "battery_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v1_final.json"
+    },
+    {
+      "source": "evoked",
+      "results_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/results_v2f_qwen3-32B.json",
+      "battery_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v2_final.json"
+    },
+    {
+      "source": "evoked_g2",
+      "results_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/results_v2g2_qwen3-32B.json",
+      "battery_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v2_g2.json"
+    }
+  ],
+  "out_dir": "data/results/rlqa32_a100/preflight/b0_s0_k2_g16_t5",
+  "seed": 0,
+  "split_seed": 0,
+  "val_fraction": 0.2,
+  "workspace_top_k": 2,
+  "budget": 2,
+  "group_size": 16,
+  "temperature_candidates": [
+    5.0
+  ],
+  "min_median_unique_sets": 4.0,
+  "policy_batch_size": 16,
+  "recall_batch_size": 1,
+  "lora_rank": 32,
+  "lora_alpha": 0,
+  "lora_dropout": 0.0,
+  "dtype": "bfloat16",
+  "device": "cuda",
+  "max_length": 2048,
+  "answer_tokens": 64,
+  "limit_episodes": 0,
+  "dry_run": false,
+  "schema_version": 1,
+  "stage": "B0",
+  "training_performed": false,
+  "optimizer_created": false,
+  "policy_initialization": "fresh zero-initialized LoRA over frozen base",
+  "policy_input_fields": [
+    "context",
+    "candidate.concept"
+  ],
+  "probe_visible_to_policy": false,
+  "gold_answer_visible_to_policy": false,
+  "sets_sampled_before_reward_prompts": true,
+  "sampling": "exact-budget Gumbel top-k",
+  "selection_probability_semantics": "softmax(logit/temperature) is the first-draw Plackett-Luce weight; selected_set_probability is the exact unordered set probability",
+  "frozen_recall_adapter_disabled": true,
+  "grader": "memory_rl.recall.grade_answer",
+  "train_episode_count": 175,
+  "validation_episode_count": 45,
+  "full_train_episode_count": 175,
+  "split_manifest_sha256": "d09d6dbdd4fe5d159de9d120963b6229dcffe337de64364cc03192f4198c6035",
+  "teacher_matches_policy_reference": true,
+  "teacher_mismatch_override": false,
+  "software_versions": {
+    "python": "3.12.14",
+    "cuda": "12.6",
+    "torch": "2.7.1+cu126",
+    "transformers": "4.57.6",
+    "peft": "0.13.2",
+    "numpy": "2.5.2"
+  },
+  "resolved_model_name_or_path": "Qwen/Qwen3-32B",
+  "resolved_model_commit": "9216db5781bf21249d130ec9da846c4624c16137",
+  "resolved_tokenizer_commit": "9216db5781bf21249d130ec9da846c4624c16137",
+  "resolved_tokenizer_config_path": "/rodata/azradonc_dev/m253405/cache/hub/models--Qwen--Qwen3-32B/snapshots/9216db5781bf21249d130ec9da846c4624c16137/tokenizer_config.json",
+  "trainable_parameter_count": 268435456,
+  "total_parameter_count": 33030558720,
+  "selected_temperature": 5.0,
+  "temperature_selection_uses_QA_or_OOD": false
+}

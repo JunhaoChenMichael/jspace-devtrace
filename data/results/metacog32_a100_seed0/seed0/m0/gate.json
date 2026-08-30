@@ -1,0 +1,530 @@
+{
+  "artifacts": {
+    "json": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog32_a100_seed0/seed0/m0/gate.json",
+    "markdown": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog32_a100_seed0/seed0/m0/gate.md"
+  },
+  "conditions": {
+    "compositional": {
+      "condition": "compositional",
+      "counts": {
+        "candidates": 261,
+        "episodes": 52,
+        "labels": {
+          "distractor": 119,
+          "filler": 90,
+          "load_bearing": 52
+        },
+        "within_episode_auc_episodes": 52
+      },
+      "pooled_auc": {
+        "V": 0.6827383143172617,
+        "W_rr": 0.5532296650717703
+      },
+      "signals": {
+        "V": {
+          "mean_score": 0.001114543890847012,
+          "pooled_auc": 0.6827383143172617,
+          "within_episode_auc": 0.8442307692307692,
+          "within_episode_auc_episode_count": 52,
+          "yes_rate": 0.0,
+          "yes_threshold": 0.5
+        },
+        "W_rr": {
+          "mean_score": 0.03810360952350016,
+          "pooled_auc": 0.5532296650717703,
+          "within_episode_auc": 0.5838141025641026,
+          "within_episode_auc_episode_count": 52
+        }
+      },
+      "source": {
+        "candidate_identity": "episode+candidate_index",
+        "metadata": {
+          "adapter": null,
+          "candidate_rows_written": 261,
+          "candidates_skipped_no_token": 0,
+          "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+          "device": "cuda",
+          "dtype": "bfloat16",
+          "end_only": true,
+          "gpu": {
+            "available": true,
+            "count": 1,
+            "devices": [
+              {
+                "compute_capability": "8.0",
+                "index": 0,
+                "name": "NVIDIA A100-SXM4-80GB",
+                "total_memory_bytes": 85093777408
+              }
+            ]
+          },
+          "limit_episodes": 0,
+          "measure_source_sha256": "b886cd27352a796feea3d4801aca651dd68d255920d83e19271eb7da20137cf9",
+          "model": "Qwen/Qwen3-32B",
+          "model_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+          "model_revision_recorded": true,
+          "no_token_ids": [
+            902,
+            2152,
+            2308,
+            2753,
+            8996
+          ],
+          "path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog32_a100_seed0/seed0/m0/compositional.json.metadata",
+          "policy_input_includes_probe": false,
+          "raw_output_hash_verified": true,
+          "runtime_versions": {
+            "accelerate": "1.14.0",
+            "cuda_runtime": "12.6",
+            "cudnn": 90501,
+            "nvidia_driver": "NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  580.159.04  Release Build  (dvs-builder@U22-I3-AF04-09-6)  Wed Apr 29 17:15:53 UTC 2026\nGCC version:  gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)",
+            "peft": "0.13.2",
+            "python": "3.12.14",
+            "tokenizers": "0.22.2",
+            "torch": "2.7.1+cu126",
+            "transformers": "4.57.6"
+          },
+          "schema_version": "workspace_measurement_metadata.v2",
+          "sha256": "f1499ff3366b689aa6ff6b6e5e676cc734b89d1a5dd842d2922d54958e2f1bcf",
+          "tokenizer_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+          "tokenizer_revision_recorded": true,
+          "verbal_enabled": true,
+          "workspace_lens_source_sha256": "5251f792f44c8e2846564036ec2a945290ec74fbb86e67aef2cb74690c5582c4",
+          "workspace_readout": {
+            "candidate_token_variants": [
+              "space+lowercase",
+              "space+capitalized",
+              "lowercase",
+              "capitalized"
+            ],
+            "final_norm": "Qwen3RMSNorm",
+            "layer_aggregation": "maximum over transformer layers 1..n",
+            "n_layers": 64,
+            "position": "final context token",
+            "unembedding": "Linear"
+          },
+          "yes_token_ids": [
+            7414,
+            9454,
+            9693,
+            9834,
+            14004
+          ]
+        },
+        "path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog32_a100_seed0/seed0/m0/compositional.json",
+        "sha256": "3c527a612364ca3c7c8b5555a538a25463ffbbd68421e03e926c06f0361463dd"
+      },
+      "within_episode_auc": {
+        "V": 0.8442307692307692,
+        "W_rr": 0.5838141025641026
+      },
+      "yes_rate": 0.0
+    },
+    "decoupled": {
+      "condition": "decoupled",
+      "counts": {
+        "candidates": 335,
+        "episodes": 68,
+        "labels": {
+          "distractor": 153,
+          "filler": 114,
+          "load_bearing": 68
+        },
+        "within_episode_auc_episodes": 68
+      },
+      "pooled_auc": {
+        "V": 0.6570830579422781,
+        "W_rr": 0.6918649482264816
+      },
+      "signals": {
+        "V": {
+          "mean_score": 0.00139081326671687,
+          "pooled_auc": 0.6570830579422781,
+          "within_episode_auc": 0.774264705882353,
+          "within_episode_auc_episode_count": 68,
+          "yes_rate": 0.0,
+          "yes_threshold": 0.5
+        },
+        "W_rr": {
+          "mean_score": 0.014957403831540593,
+          "pooled_auc": 0.6918649482264816,
+          "within_episode_auc": 0.7049019607843137,
+          "within_episode_auc_episode_count": 68
+        }
+      },
+      "source": {
+        "candidate_identity": "episode+candidate_index",
+        "metadata": {
+          "adapter": null,
+          "candidate_rows_written": 335,
+          "candidates_skipped_no_token": 0,
+          "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+          "device": "cuda",
+          "dtype": "bfloat16",
+          "end_only": true,
+          "gpu": {
+            "available": true,
+            "count": 1,
+            "devices": [
+              {
+                "compute_capability": "8.0",
+                "index": 0,
+                "name": "NVIDIA A100-SXM4-80GB",
+                "total_memory_bytes": 85093777408
+              }
+            ]
+          },
+          "limit_episodes": 0,
+          "measure_source_sha256": "b886cd27352a796feea3d4801aca651dd68d255920d83e19271eb7da20137cf9",
+          "model": "Qwen/Qwen3-32B",
+          "model_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+          "model_revision_recorded": true,
+          "no_token_ids": [
+            902,
+            2152,
+            2308,
+            2753,
+            8996
+          ],
+          "path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog32_a100_seed0/seed0/m0/decoupled.json.metadata",
+          "policy_input_includes_probe": false,
+          "raw_output_hash_verified": true,
+          "runtime_versions": {
+            "accelerate": "1.14.0",
+            "cuda_runtime": "12.6",
+            "cudnn": 90501,
+            "nvidia_driver": "NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  580.159.04  Release Build  (dvs-builder@U22-I3-AF04-09-6)  Wed Apr 29 17:15:53 UTC 2026\nGCC version:  gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)",
+            "peft": "0.13.2",
+            "python": "3.12.14",
+            "tokenizers": "0.22.2",
+            "torch": "2.7.1+cu126",
+            "transformers": "4.57.6"
+          },
+          "schema_version": "workspace_measurement_metadata.v2",
+          "sha256": "99bdcf1f2afae7f6d0dccee2e0a033482118d55ea9fae4e7916980c01c81581b",
+          "tokenizer_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+          "tokenizer_revision_recorded": true,
+          "verbal_enabled": true,
+          "workspace_lens_source_sha256": "5251f792f44c8e2846564036ec2a945290ec74fbb86e67aef2cb74690c5582c4",
+          "workspace_readout": {
+            "candidate_token_variants": [
+              "space+lowercase",
+              "space+capitalized",
+              "lowercase",
+              "capitalized"
+            ],
+            "final_norm": "Qwen3RMSNorm",
+            "layer_aggregation": "maximum over transformer layers 1..n",
+            "n_layers": 64,
+            "position": "final context token",
+            "unembedding": "Linear"
+          },
+          "yes_token_ids": [
+            7414,
+            9454,
+            9693,
+            9834,
+            14004
+          ]
+        },
+        "path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog32_a100_seed0/seed0/m0/decoupled.json",
+        "sha256": "01feb19bc7a840a7444f55e534e50999cff8726b72fb19e36881a8e1df3c1383"
+      },
+      "within_episode_auc": {
+        "V": 0.774264705882353,
+        "W_rr": 0.7049019607843137
+      },
+      "yes_rate": 0.0
+    },
+    "evoked": {
+      "condition": "evoked",
+      "counts": {
+        "candidates": 352,
+        "episodes": 75,
+        "labels": {
+          "distractor": 146,
+          "filler": 131,
+          "load_bearing": 75
+        },
+        "within_episode_auc_episodes": 75
+      },
+      "pooled_auc": {
+        "V": 0.6292659446450061,
+        "W_rr": 0.6138628158844766
+      },
+      "signals": {
+        "V": {
+          "mean_score": 0.0010792725750709354,
+          "pooled_auc": 0.6292659446450061,
+          "within_episode_auc": 0.7044444444444444,
+          "within_episode_auc_episode_count": 75,
+          "yes_rate": 0.0,
+          "yes_threshold": 0.5
+        },
+        "W_rr": {
+          "mean_score": 0.021531644925963992,
+          "pooled_auc": 0.6138628158844766,
+          "within_episode_auc": 0.5937777777777777,
+          "within_episode_auc_episode_count": 75
+        }
+      },
+      "source": {
+        "candidate_identity": "episode+candidate_index",
+        "metadata": {
+          "adapter": null,
+          "candidate_rows_written": 352,
+          "candidates_skipped_no_token": 0,
+          "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+          "device": "cuda",
+          "dtype": "bfloat16",
+          "end_only": true,
+          "gpu": {
+            "available": true,
+            "count": 1,
+            "devices": [
+              {
+                "compute_capability": "8.0",
+                "index": 0,
+                "name": "NVIDIA A100-SXM4-80GB",
+                "total_memory_bytes": 85093777408
+              }
+            ]
+          },
+          "limit_episodes": 0,
+          "measure_source_sha256": "b886cd27352a796feea3d4801aca651dd68d255920d83e19271eb7da20137cf9",
+          "model": "Qwen/Qwen3-32B",
+          "model_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+          "model_revision_recorded": true,
+          "no_token_ids": [
+            902,
+            2152,
+            2308,
+            2753,
+            8996
+          ],
+          "path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog32_a100_seed0/seed0/m0/evoked.json.metadata",
+          "policy_input_includes_probe": false,
+          "raw_output_hash_verified": true,
+          "runtime_versions": {
+            "accelerate": "1.14.0",
+            "cuda_runtime": "12.6",
+            "cudnn": 90501,
+            "nvidia_driver": "NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  580.159.04  Release Build  (dvs-builder@U22-I3-AF04-09-6)  Wed Apr 29 17:15:53 UTC 2026\nGCC version:  gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)",
+            "peft": "0.13.2",
+            "python": "3.12.14",
+            "tokenizers": "0.22.2",
+            "torch": "2.7.1+cu126",
+            "transformers": "4.57.6"
+          },
+          "schema_version": "workspace_measurement_metadata.v2",
+          "sha256": "3366f38b0dc8ddc59db5c6f6436146a43d74201df3a2694fd90925c16a887e77",
+          "tokenizer_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+          "tokenizer_revision_recorded": true,
+          "verbal_enabled": true,
+          "workspace_lens_source_sha256": "5251f792f44c8e2846564036ec2a945290ec74fbb86e67aef2cb74690c5582c4",
+          "workspace_readout": {
+            "candidate_token_variants": [
+              "space+lowercase",
+              "space+capitalized",
+              "lowercase",
+              "capitalized"
+            ],
+            "final_norm": "Qwen3RMSNorm",
+            "layer_aggregation": "maximum over transformer layers 1..n",
+            "n_layers": 64,
+            "position": "final context token",
+            "unembedding": "Linear"
+          },
+          "yes_token_ids": [
+            7414,
+            9454,
+            9693,
+            9834,
+            14004
+          ]
+        },
+        "path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog32_a100_seed0/seed0/m0/evoked.json",
+        "sha256": "e53887acd70bedb858222e9b204f9492ab078b53ec6625036a776897de5f9b26"
+      },
+      "within_episode_auc": {
+        "V": 0.7044444444444444,
+        "W_rr": 0.5937777777777777
+      },
+      "yes_rate": 0.0
+    },
+    "explicit": {
+      "condition": "explicit",
+      "counts": {
+        "candidates": 417,
+        "episodes": 88,
+        "labels": {
+          "distractor": 164,
+          "filler": 122,
+          "load_bearing": 131
+        },
+        "within_episode_auc_episodes": 88
+      },
+      "pooled_auc": {
+        "V": 0.5327230021886511,
+        "W_rr": 0.5084076229114397
+      },
+      "signals": {
+        "V": {
+          "mean_score": 0.0007639559827554647,
+          "pooled_auc": 0.5327230021886511,
+          "within_episode_auc": 0.5910984848484848,
+          "within_episode_auc_episode_count": 88,
+          "yes_rate": 0.0,
+          "yes_threshold": 0.5
+        },
+        "W_rr": {
+          "mean_score": 0.018761216570404877,
+          "pooled_auc": 0.5084076229114397,
+          "within_episode_auc": 0.5255208333333333,
+          "within_episode_auc_episode_count": 88
+        }
+      },
+      "source": {
+        "candidate_identity": "episode+candidate_index",
+        "metadata": {
+          "adapter": null,
+          "candidate_rows_written": 417,
+          "candidates_skipped_no_token": 0,
+          "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+          "device": "cuda",
+          "dtype": "bfloat16",
+          "end_only": true,
+          "gpu": {
+            "available": true,
+            "count": 1,
+            "devices": [
+              {
+                "compute_capability": "8.0",
+                "index": 0,
+                "name": "NVIDIA A100-SXM4-80GB",
+                "total_memory_bytes": 85093777408
+              }
+            ]
+          },
+          "limit_episodes": 0,
+          "measure_source_sha256": "b886cd27352a796feea3d4801aca651dd68d255920d83e19271eb7da20137cf9",
+          "model": "Qwen/Qwen3-32B",
+          "model_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+          "model_revision_recorded": true,
+          "no_token_ids": [
+            902,
+            2152,
+            2308,
+            2753,
+            8996
+          ],
+          "path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog32_a100_seed0/seed0/m0/explicit.json.metadata",
+          "policy_input_includes_probe": false,
+          "raw_output_hash_verified": true,
+          "runtime_versions": {
+            "accelerate": "1.14.0",
+            "cuda_runtime": "12.6",
+            "cudnn": 90501,
+            "nvidia_driver": "NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  580.159.04  Release Build  (dvs-builder@U22-I3-AF04-09-6)  Wed Apr 29 17:15:53 UTC 2026\nGCC version:  gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)",
+            "peft": "0.13.2",
+            "python": "3.12.14",
+            "tokenizers": "0.22.2",
+            "torch": "2.7.1+cu126",
+            "transformers": "4.57.6"
+          },
+          "schema_version": "workspace_measurement_metadata.v2",
+          "sha256": "009ec77b30b47518511a4d5e3dcc300cfed2fb9022a226bfc6d2e3c4cc41a17f",
+          "tokenizer_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+          "tokenizer_revision_recorded": true,
+          "verbal_enabled": true,
+          "workspace_lens_source_sha256": "5251f792f44c8e2846564036ec2a945290ec74fbb86e67aef2cb74690c5582c4",
+          "workspace_readout": {
+            "candidate_token_variants": [
+              "space+lowercase",
+              "space+capitalized",
+              "lowercase",
+              "capitalized"
+            ],
+            "final_norm": "Qwen3RMSNorm",
+            "layer_aggregation": "maximum over transformer layers 1..n",
+            "n_layers": 64,
+            "position": "final context token",
+            "unembedding": "Linear"
+          },
+          "yes_token_ids": [
+            7414,
+            9454,
+            9693,
+            9834,
+            14004
+          ]
+        },
+        "path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/metacog32_a100_seed0/seed0/m0/explicit.json",
+        "sha256": "42dd3d50a8b2a97f3de68888440802a1557e8772435e6ad5876d9815fa3e8ae9"
+      },
+      "within_episode_auc": {
+        "V": 0.5910984848484848,
+        "W_rr": 0.5255208333333333
+      },
+      "yes_rate": 0.0
+    }
+  },
+  "decision": "SCALE_BOUNDARY",
+  "gate": {
+    "checks": {
+      "reporting_gap": false
+    },
+    "condition": "decoupled",
+    "criterion": "W_before - V_before >= min_reporting_gap",
+    "min_reporting_gap": 0.1,
+    "mode": "scale_gap",
+    "observed": {
+      "V": 0.6570830579422781,
+      "W_rr": 0.6918649482264816
+    },
+    "reference_only_paper_values": {
+      "V": 0.337,
+      "W_rr": 0.654,
+      "note": "historical 8B/paper values, reported for context; not a gate"
+    },
+    "reporting_gap": 0.03478189028420353
+  },
+  "metric_definitions": {
+    "negative_labels": [
+      "distractor",
+      "filler"
+    ],
+    "pooled_auc": "tie-aware ROC AUC over every candidate",
+    "positive_label": "load_bearing",
+    "within_episode_auc": "unweighted mean of tie-aware per-episode AUCs over episodes containing both classes",
+    "yes_rate": "fraction of V scores >= 0.5"
+  },
+  "provenance_audit": {
+    "consistent_fields": [
+      "model",
+      "model_revision",
+      "tokenizer_revision",
+      "chat_template_sha256",
+      "dtype",
+      "device",
+      "end_only",
+      "workspace_readout",
+      "yes_token_ids",
+      "no_token_ids",
+      "runtime_versions",
+      "gpu",
+      "measure_source_sha256",
+      "workspace_lens_source_sha256"
+    ],
+    "metadata_missing": [],
+    "metadata_present": [
+      "compositional",
+      "decoupled",
+      "evoked",
+      "explicit"
+    ],
+    "mode": "strict"
+  },
+  "schema_version": "metacog_m0_gate.v1",
+  "stage": "M0"
+}
