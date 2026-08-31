@@ -1,3 +1,13 @@
+> **WITHDRAWN — this verdict was produced by a defective measurement.**
+> The `SCALE_BOUNDARY` decision rested on a Decoupled `V` of 0.6571. Corrected,
+> `V` is **0.3366** and the gap is **+0.3553**, far above the 0.10 threshold, so
+> the decision should have been `MISALIGNMENT_REGIME` and the campaign should
+> have trained. Re-run under the corrected score it did train, and returned
+> **AMBER** (`delta V` +0.0954, CI [+0.024, +0.176], below the +0.15 gate with
+> `V_after` 0.432).
+> Corrected campaign: `data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/`.
+> Root cause: [`CORRECTIONS.md`](../../../CORRECTIONS.md).
+
 # Qwen3-32B Binary Metacognitive Alignment: seed-0 scaling gate
 
 Report schema: `metacog-32b-scale-boundary/v1`. M0 decision: **SCALE_BOUNDARY**.

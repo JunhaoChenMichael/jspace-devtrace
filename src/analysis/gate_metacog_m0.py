@@ -320,9 +320,17 @@ def validate_provenance(
         if metadata is not None
     }
     for condition, metadata in present.items():
-        if metadata["schema_version"] != "workspace_measurement_metadata.v2":
+        if metadata["schema_version"] == "workspace_measurement_metadata.v2":
             raise M0GateError(
-                f"{condition} metadata schema must be workspace_measurement_metadata.v2"
+                f"{condition} was measured under schema v2, whose verbal score used "
+                "py/(py+pn+1e-9): the guard epsilon dominated whenever the yes/no "
+                "mass fell below 1e-9, so the value ranked absolute yes-probability "
+                "rather than the yes-versus-no ratio. Re-measure under v3; v2 and v3 "
+                "verbal scores are not comparable and must not be mixed."
+            )
+        if metadata["schema_version"] != "workspace_measurement_metadata.v3":
+            raise M0GateError(
+                f"{condition} metadata schema must be workspace_measurement_metadata.v3"
             )
         if not metadata["raw_output_hash_verified"]:
             raise M0GateError(f"{condition} metadata does not bind the raw output hash")

@@ -47,7 +47,7 @@ def _green_rows() -> list[dict]:
 
 def _metadata_for(path: Path, row_count: int) -> dict:
     return {
-        "schema_version": "workspace_measurement_metadata.v2",
+        "schema_version": "workspace_measurement_metadata.v3",
         "model": "Qwen/Qwen3-8B",
         "model_revision": "model-commit",
         "tokenizer_revision": "tokenizer-commit",
@@ -295,3 +295,22 @@ def test_scale_gap_renders_markdown_without_a_tolerance(tmp_path: Path) -> None:
     result = m0_gate.analyze_files(paths, mode="scale_gap")
     text = m0_gate.render_markdown(result, tmp_path / "gate.json")
     assert "GREEN" in text
+
+
+def test_v2_measurement_artifacts_are_refused(tmp_path: Path) -> None:
+    """v2 and v3 verbal scores are different measurements and must not mix.
+
+    v2 used py/(py+pn+1e-9); with a real probe the yes/no mass sits far below
+    the guard epsilon, so v2 values rank absolute yes-probability instead of the
+    yes-versus-no ratio. Gating a v3 campaign on a v2 artifact would compare two
+    different quantities.
+    """
+    paths = _write_inputs(tmp_path)
+    for condition in m0_gate.CONDITIONS:
+        meta_path = Path(f"{paths[condition]}.metadata")
+        meta = json.loads(meta_path.read_text())
+        meta["schema_version"] = "workspace_measurement_metadata.v2"
+        meta_path.write_text(json.dumps(meta), encoding="utf-8")
+
+    with pytest.raises(m0_gate.M0GateError, match="schema v2"):
+        m0_gate.analyze_files(paths)

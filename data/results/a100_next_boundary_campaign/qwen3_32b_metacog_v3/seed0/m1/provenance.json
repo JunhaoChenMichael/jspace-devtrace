@@ -1,0 +1,137 @@
+{
+  "campaign_stage": "M1",
+  "data_isolation": {
+    "allowed_sources": [
+      "evoked",
+      "evoked_g2",
+      "explicit"
+    ],
+    "observed_sources": [
+      "evoked",
+      "evoked_g2",
+      "explicit"
+    ],
+    "ood_evaluated": false,
+    "ood_loaded": false
+  },
+  "resolved": {
+    "chat_template": {
+      "present": true,
+      "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "source": "tokenizer.chat_template"
+    },
+    "device": {
+      "bf16_supported": true,
+      "compute_capability": [
+        8,
+        0
+      ],
+      "index": 0,
+      "name": "NVIDIA A100-SXM4-80GB",
+      "total_memory_bytes": 85093777408,
+      "type": "cuda"
+    },
+    "model_commit": "9216db5781bf21249d130ec9da846c4624c16137",
+    "model_name_or_path": "Qwen/Qwen3-32B",
+    "tokenizer_class": "Qwen2TokenizerFast",
+    "tokenizer_commit": "9216db5781bf21249d130ec9da846c4624c16137",
+    "tokenizer_name_or_path": "Qwen/Qwen3-32B",
+    "verbal_readout": {
+      "no_token_ids": [
+        902,
+        2152,
+        2308,
+        2753,
+        8996
+      ],
+      "no_variants": [
+        "no",
+        " no",
+        "No",
+        " No",
+        "NO"
+      ],
+      "scoring": "sum next-token probability over unique first-token ids",
+      "yes_token_ids": [
+        7414,
+        9454,
+        9693,
+        9834,
+        14004
+      ],
+      "yes_variants": [
+        "yes",
+        " yes",
+        "Yes",
+        " Yes",
+        "YES"
+      ]
+    }
+  },
+  "schema_version": 1,
+  "split_manifest_self_hash": "b3065a618a11f496a3c3e35221690639e3f4ed1670c5971401143ac10df4beb4",
+  "split_manifest_sha256": "ed4bfa34aa3674c2d5df924969cf9bb98b39b3dcf3ded2d874a928939b5a9670",
+  "student": {
+    "adapter": "LoRA",
+    "model": "Qwen/Qwen3-32B",
+    "requested_model_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+    "requested_tokenizer_revision": "9216db5781bf21249d130ec9da846c4624c16137"
+  },
+  "teacher": {
+    "frozen_original": true,
+    "label_rule": "within episode W_rr descending; original candidate order at ties; top-2 yes, rest no",
+    "metadata_sidecars_verified": true,
+    "model": "Qwen/Qwen3-32B",
+    "requested_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+    "resolved_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+    "source_artifacts": [
+      {
+        "adapter": null,
+        "battery_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v2_final.json",
+        "battery_sha256": "e8ce4db85d3a0c09879575850e36b91821af8be155e86495cd059ae35485e7d6",
+        "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "metadata_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/m0/evoked.json.metadata",
+        "metadata_sha256": "3ca57f8f024dac4f0e8d6377b7215c24807be0b8f8430b1f1a6cc14109047f93",
+        "model": "Qwen/Qwen3-32B",
+        "model_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+        "results_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/m0/evoked.json",
+        "results_sha256": "3e6fec2b2c364e11d523fc8d6a8b9e334bcc46b3be8a9e46a3dec24dad9d0611",
+        "source": "evoked",
+        "tokenizer_revision": "9216db5781bf21249d130ec9da846c4624c16137"
+      },
+      {
+        "adapter": null,
+        "battery_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v2_g2.json",
+        "battery_sha256": "32b96a17bc35c895ee1fd6f6b49b6dc7c7a888b1a83e247925b1d9c8c8660cf3",
+        "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "metadata_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/m0/evoked_g2.json.metadata",
+        "metadata_sha256": "385500013cdef46c338031475b59a8ea164f546fe35636033f9d12d5721fcd2f",
+        "model": "Qwen/Qwen3-32B",
+        "model_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+        "results_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/m0/evoked_g2.json",
+        "results_sha256": "b26f17e09e758df3a0aabc14b4798872aaee114591c0d31f5602ad357c10a10a",
+        "source": "evoked_g2",
+        "tokenizer_revision": "9216db5781bf21249d130ec9da846c4624c16137"
+      },
+      {
+        "adapter": null,
+        "battery_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v1_final.json",
+        "battery_sha256": "35d973619080a7606b0a3046ffcc7169fd919fac950ebb0d38b67ac13b017525",
+        "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "metadata_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/m0/explicit.json.metadata",
+        "metadata_sha256": "637f9767701d14d236510ee8ad6f16721b3a2333b4a37c5edf242888d0a12338",
+        "model": "Qwen/Qwen3-32B",
+        "model_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+        "results_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/m0/explicit.json",
+        "results_sha256": "7a4e98ea01965d44d3fadd115af55bb6b66596b3a6a3e777be6c7a7f2219a638",
+        "source": "explicit",
+        "tokenizer_revision": "9216db5781bf21249d130ec9da846c4624c16137"
+      }
+    ],
+    "student_workspace_used_for_labels": false,
+    "workspace_scores": "precomputed_W_rr",
+    "workspace_scores_recomputed_during_training": false
+  },
+  "teacher_label_audit_sha256": "7be5339d5ff18c984de97c583107d224b551a3070e38596ddacb3a742233d3d3",
+  "teacher_labels_sha256": "281ab4f47754a2b23e7c06aba91f5f75354b6cd90296fb253193a353fb33a0d0"
+}

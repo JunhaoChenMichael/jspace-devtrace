@@ -1,3 +1,14 @@
+> **WITHDRAWN — the transition reported here does not exist.**
+> Every `V` in this document was computed with the defective probe. Corrected,
+> the 14B->32B step is **-0.0115 with a confidence interval spanning zero**, and
+> `V` has no scale trend at all (slope -0.026 per decade, R^2 0.034). The
+> chat-pathway localisation and the sparse-model interpretation built on these
+> values are withdrawn with it.
+> The corrected sweep shows the workspace-report gap **widening** with scale
+> (+0.152 per decade), the opposite of the claim made here.
+> Corrected report: `data/results/a100_next_boundary_campaign/shared/CORRECTED_SCALE_SWEEP_REPORT.md`.
+> Root cause: [`CORRECTIONS.md`](../../../CORRECTIONS.md).
+
 # Metacognitive reporting gap across Qwen3 scale
 
 Measurement only, no training. `V` is the verbal report AUC, `W_rr` the workspace readout AUC, and `gap = W_rr - V` is what Binary Metacognitive Alignment repairs. `V_raw` is the template-free readout.

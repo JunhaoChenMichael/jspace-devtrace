@@ -66,6 +66,13 @@ exemplar_paper/
 !data/results/scale_sweep/**
 !data/results/scale_sweep_diagnostic/
 !data/results/scale_sweep_diagnostic/**
+# Correction campaign after the verbal-salience epsilon defect.
+!data/results/a100_next_boundary_campaign/
+!data/results/a100_next_boundary_campaign/**
+!data/results/scale_sweep_v3/
+!data/results/scale_sweep_v3/**
+!data/results/scale_sweep_v3_diagnostic/
+!data/results/scale_sweep_v3_diagnostic/**
 
 # ---------------------------------------------------------------------------
 # Trained artefacts stay out, and this block is LAST so it always wins over the

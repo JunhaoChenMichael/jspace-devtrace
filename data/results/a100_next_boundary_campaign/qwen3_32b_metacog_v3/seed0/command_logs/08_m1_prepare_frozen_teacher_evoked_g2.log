@@ -1,0 +1,17 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 210.70it/s]
+model=Qwen/Qwen3-32B adapter=None layers=64 verbal=True verbal_raw=False device=cuda episodes=57
+  5/57 episodes
+  10/57 episodes
+  15/57 episodes
+  20/57 episodes
+  25/57 episodes
+  30/57 episodes
+  35/57 episodes
+  40/57 episodes
+  45/57 episodes
+  50/57 episodes
+  55/57 episodes
+saved 271 item rows -> /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/m0/evoked_g2.json
