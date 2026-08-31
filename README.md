@@ -6,6 +6,11 @@
 > and one verdict reverses. Read `CORRECTIONS.md` before citing any number from
 > `data/results/a100_handoff/`.
 
+> **Paper results index:** use
+> [`docs/PAPER_RESULTS_MASTER_README.md`](docs/PAPER_RESULTS_MASTER_README.md)
+> for the consolidated A5000/A100, Alignment/RL result tables, report
+> precedence, model inventory, limitations, and paper-safe claims.
+
 
 Experiment repository for the paper *"Remember What You Thought, Not What You
 Said: Workspace-Gated Episodic Memory for LLMs"* (under review).
