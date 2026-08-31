@@ -128,6 +128,22 @@ def yes_no_ids(lens):
     return sorted(set(yes)), sorted(set(no))
 
 
+def _yes_vs_no(logits, yes_ids, no_ids):
+    """P(yes) normalised against P(no), from logits, with no epsilon.
+
+    The previous form was ``py / (py + pn + 1e-9)`` on full-vocabulary softmax
+    probabilities.  For this probe the yes/no mass is often 1e-13 or smaller --
+    the model spends its probability elsewhere -- so the guard epsilon dominated
+    the denominator and the function silently returned ``py * 1e9``: a monotone
+    function of the ABSOLUTE yes probability, not the yes-versus-no ratio it
+    documented.  Working in log space removes the epsilon and is exact at any
+    scale of the underlying mass.
+    """
+    yes = torch.logsumexp(logits[yes_ids], dim=0)
+    no = torch.logsumexp(logits[no_ids], dim=0)
+    return float(torch.sigmoid(yes - no))
+
+
 @torch.no_grad()
 def verbal_salience(lens, context, concept, yes_ids, no_ids):
     """P(yes)/(P(yes)+P(no)) to 'is <concept> important to remember?'"""
@@ -138,10 +154,7 @@ def verbal_salience(lens, context, concept, yes_ids, no_ids):
     prompt = lens.tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
     enc = lens.tok(prompt, return_tensors="pt").to(lens.device)
     logits = lens.model(**enc).logits[0, -1].float()
-    p = F.softmax(logits, dim=-1)
-    py = sum(p[i].item() for i in yes_ids)
-    pn = sum(p[i].item() for i in no_ids)
-    return py / (py + pn + 1e-9)
+    return _yes_vs_no(logits, yes_ids, no_ids)
 
 
 @torch.no_grad()
@@ -155,10 +168,7 @@ def verbal_salience_raw(lens, context, concept, yes_ids, no_ids):
          f"answer possible future questions? Answer yes or no.\nAnswer:")
     enc = lens.tok(q, return_tensors="pt").to(lens.device)
     logits = lens.model(**enc).logits[0, -1].float()
-    p = F.softmax(logits, dim=-1)
-    py = sum(p[i].item() for i in yes_ids)
-    pn = sum(p[i].item() for i in no_ids)
-    return py / (py + pn + 1e-9)
+    return _yes_vs_no(logits, yes_ids, no_ids)
 
 
 def has_chat_template(lens):
@@ -481,7 +491,13 @@ def main():
         for candidate_index, item in enumerate(episode.get("items", []))
     ]
     metadata = {
-        "schema_version": "workspace_measurement_metadata.v2",
+        "schema_version": "workspace_measurement_metadata.v3",
+        "verbal_score_definition": (
+            "sigmoid(logsumexp(logits[yes_ids]) - logsumexp(logits[no_ids])); "
+            "exact yes-vs-no ratio, no guard epsilon. v2 artifacts used "
+            "py/(py+pn+1e-9) on full-vocabulary probabilities, which the guard "
+            "epsilon dominated whenever py+pn << 1e-9, and are NOT comparable."
+        ),
         "model": args.model,
         "adapter": args.adapter,
         "model_revision": revisions["model"]["revision_resolved"]

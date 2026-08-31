@@ -1,0 +1,12 @@
+host=rohpcgpu37.mayo.edu job=4275127 gpu=NVIDIA A100-SXM4-80GB
+probe tokens yes/no: [7414, 9454, 9693, 9834, 14004] [902, 2152, 2308, 2753, 8996]
+rl    tokens yes/no: [7414, 9454, 9693, 9834, 14004, 14080] [902, 2152, 2308, 2753, 5664, 8996]
+A probe-math+probe-tok     mean=0.000607 min=0.000227 max=0.00188 yes_rate=0.0000
+B probe-math+rl-tok        mean=0.000609 min=0.000228 max=0.00188 yes_rate=0.0000
+C rl-math+rl-tok           mean=0.936416 min=0.86 max=0.985 yes_rate=1.0000
+D rl-math+probe-tok        mean=0.939841 min=0.875 max=0.986 yes_rate=1.0000
+
+max|A - B| = 0.000004
+max|B - C| = 0.984428
+max|A - C| = 0.984429
+max|C - D| = 0.015139

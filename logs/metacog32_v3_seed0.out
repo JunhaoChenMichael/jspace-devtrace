@@ -1,0 +1,166 @@
+host=rohpcgpu26.mayo.edu job=4275201 gpu=NVIDIA A100-SXM4-80GB
+corrected (v3) 32B campaign -> /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0
+0, GPU-b837d708-c140-f2f9-fb51-ac226654d931, NVIDIA A100-SXM4-80GB, 81152 MiB
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 200.22it/s]
+model=Qwen/Qwen3-32B adapter=None layers=64 verbal=True verbal_raw=False device=cuda episodes=88
+  5/88 episodes
+  10/88 episodes
+  15/88 episodes
+  20/88 episodes
+  25/88 episodes
+  30/88 episodes
+  35/88 episodes
+  40/88 episodes
+  45/88 episodes
+  50/88 episodes
+  55/88 episodes
+  60/88 episodes
+  65/88 episodes
+  70/88 episodes
+  75/88 episodes
+  80/88 episodes
+  85/88 episodes
+saved 417 item rows -> /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/m0/explicit.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 202.60it/s]
+model=Qwen/Qwen3-32B adapter=None layers=64 verbal=True verbal_raw=False device=cuda episodes=75
+  5/75 episodes
+  10/75 episodes
+  15/75 episodes
+  20/75 episodes
+  25/75 episodes
+  30/75 episodes
+  35/75 episodes
+  40/75 episodes
+  45/75 episodes
+  50/75 episodes
+  55/75 episodes
+  60/75 episodes
+  65/75 episodes
+  70/75 episodes
+  75/75 episodes
+saved 352 item rows -> /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/m0/evoked.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 201.06it/s]
+model=Qwen/Qwen3-32B adapter=None layers=64 verbal=True verbal_raw=False device=cuda episodes=68
+  5/68 episodes
+  10/68 episodes
+  15/68 episodes
+  20/68 episodes
+  25/68 episodes
+  30/68 episodes
+  35/68 episodes
+  40/68 episodes
+  45/68 episodes
+  50/68 episodes
+  55/68 episodes
+  60/68 episodes
+  65/68 episodes
+saved 335 item rows -> /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/m0/decoupled.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 204.03it/s]
+model=Qwen/Qwen3-32B adapter=None layers=64 verbal=True verbal_raw=False device=cuda episodes=52
+  5/52 episodes
+  10/52 episodes
+  15/52 episodes
+  20/52 episodes
+  25/52 episodes
+  30/52 episodes
+  35/52 episodes
+  40/52 episodes
+  45/52 episodes
+  50/52 episodes
+saved 261 item rows -> /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/m0/compositional.json
+M0 GREEN -> /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/m0/gate.json ; /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/m0/gate.md
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 210.70it/s]
+model=Qwen/Qwen3-32B adapter=None layers=64 verbal=True verbal_raw=False device=cuda episodes=57
+  5/57 episodes
+  10/57 episodes
+  15/57 episodes
+  20/57 episodes
+  25/57 episodes
+  30/57 episodes
+  35/57 episodes
+  40/57 episodes
+  45/57 episodes
+  50/57 episodes
+  55/57 episodes
+saved 271 item rows -> /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/m0/evoked_g2.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 208.19it/s]
+/rodata/azradonc_dev/m253405/myconda/envs/jspace/lib/python3.12/site-packages/peft/utils/save_and_load.py:243: UserWarning: Could not find a config file in Qwen/Qwen3-32B - will assume that the vocabulary was not modified.
+  warnings.warn(
+[ID validation step=0] verbal_auc=0.499194847020934 yes_rate=0.986046511627907
+step=1/10 loss=29.745605 grad=51.0572 tok/s=170.0
+step=10/10 loss=24.083990 grad=85.2196 tok/s=203.2
+[ID validation step=10] verbal_auc=0.5659075224292616 yes_rate=0.8511627906976744
+M1 PASS: /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/canary
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:00<00:00, 201.92it/s]
+/rodata/azradonc_dev/m253405/myconda/envs/jspace/lib/python3.12/site-packages/peft/utils/save_and_load.py:243: UserWarning: Could not find a config file in Qwen/Qwen3-32B - will assume that the vocabulary was not modified.
+  warnings.warn(
+[ID validation step=0] verbal_auc=0.499194847020934 yes_rate=0.986046511627907
+step=1/414 loss=29.745605 grad=51.0572 tok/s=167.2
+step=10/414 loss=24.083990 grad=85.2196 tok/s=204.5
+step=20/414 loss=2.300555 grad=62.0069 tok/s=167.8
+step=30/414 loss=1.115116 grad=45.7225 tok/s=184.8
+step=40/414 loss=1.217945 grad=39.8352 tok/s=183.9
+step=50/414 loss=0.902065 grad=30.4405 tok/s=172.0
+step=60/414 loss=0.688792 grad=17.2680 tok/s=178.2
+step=70/414 loss=0.546925 grad=13.4149 tok/s=180.9
+step=80/414 loss=0.495727 grad=12.1074 tok/s=189.7
+step=90/414 loss=0.636204 grad=12.8259 tok/s=187.5
+step=100/414 loss=0.321353 grad=11.7003 tok/s=201.1
+[ID validation step=100] verbal_auc=0.6369910282953761 yes_rate=0.004651162790697674
+step=110/414 loss=0.263789 grad=9.0949 tok/s=178.9
+step=120/414 loss=0.117453 grad=4.5852 tok/s=191.9
+step=130/414 loss=0.728551 grad=10.6381 tok/s=170.3
+step=140/414 loss=0.787282 grad=10.6503 tok/s=178.3
+step=150/414 loss=0.606627 grad=5.7940 tok/s=172.5
+step=160/414 loss=0.676305 grad=4.8035 tok/s=176.8
+step=170/414 loss=0.730531 grad=7.4626 tok/s=192.0
+step=180/414 loss=0.710422 grad=6.8396 tok/s=166.2
+step=190/414 loss=1.153401 grad=10.7425 tok/s=189.3
+step=200/414 loss=0.869531 grad=5.9505 tok/s=154.1
+step=210/414 loss=1.019165 grad=16.4730 tok/s=177.2
+step=220/414 loss=0.660655 grad=5.2921 tok/s=181.1
+step=230/414 loss=0.575827 grad=3.7884 tok/s=177.7
+step=240/414 loss=0.952782 grad=9.4086 tok/s=187.1
+step=250/414 loss=0.931877 grad=8.9612 tok/s=168.5
+[ID validation step=250] verbal_auc=0.587186565447435 yes_rate=0.05581395348837209
+step=260/414 loss=0.486020 grad=7.9751 tok/s=170.9
+step=270/414 loss=0.792985 grad=7.5871 tok/s=193.0
+step=280/414 loss=0.761852 grad=5.3663 tok/s=180.0
+step=290/414 loss=0.614957 grad=2.5331 tok/s=188.1
+step=300/414 loss=0.904086 grad=6.7477 tok/s=190.5
+step=310/414 loss=0.729379 grad=4.8979 tok/s=197.3
+step=320/414 loss=0.695258 grad=4.9890 tok/s=184.1
+step=330/414 loss=0.822746 grad=5.8623 tok/s=168.3
+step=340/414 loss=0.422696 grad=5.9786 tok/s=168.0
+step=350/414 loss=0.307485 grad=4.2473 tok/s=175.7
+step=360/414 loss=0.670001 grad=3.3544 tok/s=167.5
+step=370/414 loss=0.644604 grad=2.7998 tok/s=180.3
+step=380/414 loss=1.004286 grad=6.4510 tok/s=195.4
+step=390/414 loss=0.774641 grad=2.4026 tok/s=168.5
+step=400/414 loss=0.715718 grad=3.7436 tok/s=194.2
+step=410/414 loss=0.672134 grad=2.9516 tok/s=185.3
+[ID validation step=414] verbal_auc=0.5473314929836669 yes_rate=0.3674418604651163
+M1 LOCKED: /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/m1
+STOP: id_lock_complete_ood_sealed; no H100 job was launched. Artifacts: /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0
+decision ledger hash: /rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0/decision_ledger.jsonl.sha256

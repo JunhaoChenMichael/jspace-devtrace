@@ -24,6 +24,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from jlens import WorkspaceLens
 from measure import concept_token_ids, workspace_salience, yes_no_ids
+from experiments.measure import _yes_vs_no
 
 STOP = set("""a an the and or but if then than so of to in on at for from by with
 about as is are was were be been being do does did done have has had having i
@@ -132,10 +133,8 @@ def score_verbal(lens, ep, yes_ids, no_ids):
         prompt = lens.tok.apply_chat_template(msgs, tokenize=False,
                                               add_generation_prompt=True)
         enc = lens.tok(prompt, return_tensors="pt").to(lens.device)
-        p = F.softmax(lens.model(**enc).logits[0, -1].float(), dim=-1)
-        py = sum(p[i].item() for i in yes_ids)
-        pn = sum(p[i].item() for i in no_ids)
-        n["V"] = py / (py + pn + 1e-9)
+        logits = lens.model(**enc).logits[0, -1].float()
+        n["V"] = _yes_vs_no(logits, yes_ids, no_ids)
 
 
 @torch.no_grad()

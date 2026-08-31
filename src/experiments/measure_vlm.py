@@ -13,6 +13,7 @@ from PIL import Image
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from measure import yes_no_ids as _yes_no_ids  # reuse variants logic below
+from experiments.measure import _yes_vs_no
 
 
 def concept_token_ids(tok, concept):
@@ -111,11 +112,8 @@ def main():
                      f"word: yes or no.")
                 vin = encode(ep, extra_text=q, gen_prompt=True)
                 vlogits = model(**vin).logits[0, -1].float()
-                p = F.softmax(vlogits, dim=-1)
-                py = sum(p[i].item() for i in yes_ids)
-                pn = sum(p[i].item() for i in no_ids)
                 rows.append({"episode": ei, "concept": c, "label": it["label"],
-                             "W_rr": rr[c], "V": py / (py + pn + 1e-9)})
+                             "W_rr": rr[c], "V": _yes_vs_no(vlogits, yes_ids, no_ids)})
             if (ei + 1) % 5 == 0:
                 print(f"  {ei+1}/{len(battery)}", flush=True)
 
