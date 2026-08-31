@@ -1,0 +1,185 @@
+{
+  "components": [
+    {
+      "classification": "DONE",
+      "component": "measure.py verbal_salience / verbal_salience_raw",
+      "evidence": "src/experiments/measure.py",
+      "evidence_exists": true,
+      "evidence_sha256": "2659d331427b38c95606f4ebe0b63da5e7c1a2ec2d3810add482dc5aa216de68",
+      "reason": "the defect itself; corrected to a log-space ratio with no guard epsilon"
+    },
+    {
+      "classification": "DONE",
+      "component": "locomo_gate / longmemeval_gate / vprobe_robust / measure_vlm verbal scores",
+      "evidence": null,
+      "evidence_exists": false,
+      "evidence_sha256": null,
+      "reason": "same defect, corrected through the shared helper"
+    },
+    {
+      "classification": "DONE",
+      "component": "vrating_baseline 1-10 rating",
+      "evidence": "src/experiments/vrating_baseline.py",
+      "evidence_exists": true,
+      "evidence_sha256": "af622b2ccba1245f0e5dcba09147637e28be4950ede8845b3695c35bdd4ecb14",
+      "reason": "same defect class: the digit mass sat under its own guard; renormalised in log space"
+    },
+    {
+      "classification": "UNAFFECTED",
+      "component": "W_rr workspace readout",
+      "evidence": "src/experiments/measure.py",
+      "evidence_exists": true,
+      "evidence_sha256": "2659d331427b38c95606f4ebe0b63da5e7c1a2ec2d3810add482dc5aa216de68",
+      "reason": "reciprocal rank over layers; no epsilon anywhere in the path"
+    },
+    {
+      "classification": "UNAFFECTED",
+      "component": "frozen teacher labels",
+      "evidence": null,
+      "evidence_exists": false,
+      "evidence_sha256": null,
+      "reason": "derived from W_rr, never from the verbal score"
+    },
+    {
+      "classification": "UNAFFECTED",
+      "component": "RL admission policy scoring",
+      "evidence": "src/memory_rl/modeling.py",
+      "evidence_exists": true,
+      "evidence_sha256": "52a9870f915c42d06b9a1f423ebf3533d096b71a562d301c88bb36cb64ca0793",
+      "reason": "binary_action_logits normalises in log space over two actions"
+    },
+    {
+      "classification": "UNAFFECTED",
+      "component": "metacognitive ID checkpoint selection",
+      "evidence": "src/experiments/train_metacog_m1.py",
+      "evidence_exists": true,
+      "evidence_sha256": "92f5b3a3d735506ee6eb7342850b1125f56d85cb6b23e876b79838bfd8deb512",
+      "reason": "train_metacog_m1.py scores through binary_action_logits, so the locked checkpoints were selected on an unaffected quantity"
+    },
+    {
+      "classification": "DONE",
+      "component": "Qwen3-8B metacognitive three-seed report",
+      "evidence": "data/results/a100_next_boundary_campaign/qwen3_8b_metacog_v3/reports/CORRECTED_8B_METACOG_THREE_SEED_REPORT.md",
+      "evidence_exists": true,
+      "evidence_sha256": "aa9551edee52633106406ffdb3517022585f0f6d19216247bc3b3cac9c134ad7",
+      "reason": "re-measured from the locked adapters: mean delta V +0.273 -> +0.213, all seeds still pass"
+    },
+    {
+      "classification": "DONE",
+      "component": "Qwen3-32B metacognitive M0 gate and seed 0",
+      "evidence": "data/results/a100_next_boundary_campaign/qwen3_32b_metacog_v3/seed0",
+      "evidence_exists": true,
+      "evidence_sha256": null,
+      "reason": "gate reversed to MISALIGNMENT_REGIME; the re-run trained and returned AMBER"
+    },
+    {
+      "classification": "DONE",
+      "component": "Qwen3 scale sweep",
+      "evidence": "data/results/a100_next_boundary_campaign/shared/CORRECTED_SCALE_SWEEP_REPORT.md",
+      "evidence_exists": true,
+      "evidence_sha256": "61a655806ae0b37972bf6423d4cd408cdd98bd401678026c63faab455a7dcc8b",
+      "reason": "re-measured under v3 across five dense sizes plus the sparse diagnostic"
+    },
+    {
+      "classification": "DONE",
+      "component": "Qwen3-8B and Qwen3-32B RL-QA Original arms",
+      "evidence": "data/results/a100_next_boundary_campaign/qwen3_rlqa_v3",
+      "evidence_exists": true,
+      "evidence_sha256": null,
+      "reason": "Original arm re-scored and its budget-2 sets regenerated; 8B survives, 32B reclassified from FAIL to ADMISSION_POSITIVE_QA_UNRESOLVED"
+    },
+    {
+      "classification": "RESCORE_ONLY",
+      "component": "cross-family predictive grid (Qwen2.5, OLMo-2, Mistral, GPT-2)",
+      "evidence": null,
+      "evidence_exists": false,
+      "evidence_sha256": null,
+      "reason": "measurement only, and re-runnable from scratch: the batteries are tracked, the checkpoints are public. The ORIGINAL result files are not in this repository, so this is a fresh measurement rather than a correction of a stored one"
+    },
+    {
+      "classification": "RETRAIN_REQUIRED",
+      "component": "Qwen3-14B Binary metacognitive seed 0",
+      "evidence": null,
+      "evidence_exists": false,
+      "evidence_sha256": null,
+      "reason": "never run; the corrected gate decides whether it may train"
+    },
+    {
+      "classification": "INPUTS_ABSENT_FROM_THIS_REPOSITORY",
+      "component": "verbal-gated downstream policies (binary-verbal gating, top-k containment, mixed-pool, case studies, naturalistic streams)",
+      "evidence": null,
+      "evidence_exists": false,
+      "evidence_sha256": null,
+      "reason": "requires the original downstream run artifacts, which are project outputs excluded from git by repository policy"
+    },
+    {
+      "classification": "INPUTS_ABSENT_FROM_THIS_REPOSITORY",
+      "component": "Qwen2.5-7B RL-QA Original arm",
+      "evidence": null,
+      "evidence_exists": false,
+      "evidence_sha256": null,
+      "reason": "the completed Qwen2.5-7B campaign directory is not tracked here"
+    },
+    {
+      "classification": "NOT_PRESENT",
+      "component": "metacognitive objective study (Binary / Soft / Pairwise / Listwise)",
+      "evidence": null,
+      "evidence_exists": false,
+      "evidence_sha256": null,
+      "reason": "no such study exists in this repository; mixed_pool.py is a different analysis and does not use the verbal probe for winner classification"
+    },
+    {
+      "classification": "INPUTS_ABSENT_FROM_THIS_REPOSITORY",
+      "component": "paper tables and figures",
+      "evidence": null,
+      "evidence_exists": false,
+      "evidence_sha256": null,
+      "reason": "paper/ is a separate git repository and is not checked out here"
+    },
+    {
+      "classification": "RESCORE_ONLY",
+      "component": "multimodal verbal probing",
+      "evidence": null,
+      "evidence_exists": false,
+      "evidence_sha256": null,
+      "reason": "measure_vlm is corrected, but no stored VLM result files exist here to compare against; a fresh measurement is possible"
+    }
+  ],
+  "counts": {
+    "DONE": 7,
+    "INPUTS_ABSENT_FROM_THIS_REPOSITORY": 3,
+    "NOT_PRESENT": 1,
+    "RESCORE_ONLY": 2,
+    "RETRAIN_REQUIRED": 1,
+    "UNAFFECTED": 4
+  },
+  "schema_version": "v3-impact-inventory/v1",
+  "source_files_referencing_the_verbal_score": [
+    "scripts/audit_reporter_interface_equivalence.py",
+    "scripts/build_v3_impact_inventory.py",
+    "scripts/recompute_v_without_epsilon.py",
+    "scripts/write_correction_final_summary.py",
+    "src/analysis/audit_unified_ood_shared_conditions.py",
+    "src/analysis/evaluate_metacog_m1_ood.py",
+    "src/analysis/gate_metacog_m0.py",
+    "src/analysis/stage_b_rlqa_multiseed_ood.py",
+    "src/analysis/stage_c_ood_analysis.py",
+    "src/experiments/absent_foils.py",
+    "src/experiments/evaluate_memory_rl.py",
+    "src/experiments/measure.py",
+    "src/experiments/preflight_qa_reward.py",
+    "src/experiments/train_memory_rl.py",
+    "src/memory_rl/data.py"
+  ],
+  "validation": {
+    "blocked_components": [
+      "verbal-gated downstream policies (binary-verbal gating, top-k containment, mixed-pool, case studies, naturalistic streams)",
+      "Qwen2.5-7B RL-QA Original arm",
+      "metacognitive objective study (Binary / Soft / Pairwise / Listwise)",
+      "paper tables and figures"
+    ],
+    "every_component_classified": true,
+    "no_unknown_left": true
+  },
+  "verbal_score_schema_required": "workspace_measurement_metadata.v3"
+}

@@ -1,0 +1,98 @@
+{
+  "method": "stable W_rr descending equivalent: (-W_rr, candidate_index)",
+  "schema_version": 1,
+  "target_text": {
+    "negative": "no",
+    "positive": "yes"
+  },
+  "top_k": 2,
+  "train": {
+    "episode_audit": [
+      {
+        "boundary_score": null,
+        "episode_id": "evoked:episode:000055",
+        "source": "evoked",
+        "tie_break": "candidate_index_ascending_original_order",
+        "tie_groups": 1,
+        "tied_candidates": 2,
+        "top_k_boundary_tie": false
+      },
+      {
+        "boundary_score": null,
+        "episode_id": "evoked_g2:episode:000001",
+        "source": "evoked_g2",
+        "tie_break": "candidate_index_ascending_original_order",
+        "tie_groups": 1,
+        "tied_candidates": 2,
+        "top_k_boundary_tie": false
+      },
+      {
+        "boundary_score": null,
+        "episode_id": "evoked_g2:episode:000014",
+        "source": "evoked_g2",
+        "tie_break": "candidate_index_ascending_original_order",
+        "tie_groups": 1,
+        "tied_candidates": 2,
+        "top_k_boundary_tie": false
+      },
+      {
+        "boundary_score": 0.006097560975609756,
+        "episode_id": "evoked_g2:episode:000053",
+        "source": "evoked_g2",
+        "tie_break": "candidate_index_ascending_original_order",
+        "tie_groups": 1,
+        "tied_candidates": 2,
+        "top_k_boundary_tie": true
+      },
+      {
+        "boundary_score": null,
+        "episode_id": "explicit:episode:000046",
+        "source": "explicit",
+        "tie_break": "candidate_index_ascending_original_order",
+        "tie_groups": 1,
+        "tied_candidates": 2,
+        "top_k_boundary_tie": false
+      }
+    ],
+    "episodes": 175,
+    "episodes_with_any_tie": 5,
+    "episodes_with_top_k_boundary_tie": 1,
+    "tie_groups": 5,
+    "tied_candidates": 10
+  },
+  "train_target_counts": {
+    "no": 475,
+    "yes": 350
+  },
+  "validation": {
+    "episode_audit": [
+      {
+        "boundary_score": 0.005494505494505495,
+        "episode_id": "evoked_g2:episode:000046",
+        "source": "evoked_g2",
+        "tie_break": "candidate_index_ascending_original_order",
+        "tie_groups": 1,
+        "tied_candidates": 2,
+        "top_k_boundary_tie": true
+      },
+      {
+        "boundary_score": null,
+        "episode_id": "explicit:episode:000047",
+        "source": "explicit",
+        "tie_break": "candidate_index_ascending_original_order",
+        "tie_groups": 1,
+        "tied_candidates": 2,
+        "top_k_boundary_tie": false
+      }
+    ],
+    "episodes": 45,
+    "episodes_with_any_tie": 2,
+    "episodes_with_top_k_boundary_tie": 1,
+    "tie_groups": 2,
+    "tied_candidates": 4
+  },
+  "validation_target_counts": {
+    "no": 125,
+    "yes": 90
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "attempt_id": "0247d8b6a4a34a4fa0415885e4e8a6e8",
+  "attempt_limit": 1,
+  "bootstrap": {
+    "samples": 4000,
+    "seed": 0,
+    "unit": "episode_cluster"
+  },
+  "command_protocol": {
+    "argv": [
+      "/rodata/azradonc_dev/m253405/myconda/envs/jspace/bin/python",
+      "/rodata/azradonc_dev/m253405/jspace-devtrace/src/analysis/evaluate_metacog_m1_ood.py",
+      "--lock-manifest",
+      "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/id_lock/lock_manifest.json",
+      "--attempt-id",
+      "0247d8b6a4a34a4fa0415885e4e8a6e8",
+      "--baseline-decoupled",
+      "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/decoupled.json",
+      "--baseline-compositional",
+      "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/compositional.json",
+      "--decoupled-battery",
+      "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v4_final.json",
+      "--compositional-battery",
+      "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v3d.json",
+      "--bootstrap-samples",
+      "4000",
+      "--bootstrap-seed",
+      "0",
+      "--out-json",
+      "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/ood/result.json"
+    ],
+    "argv_sha256": "e0225a9c8a064ac4494e8783b94e15aa8e9ad83a2904e034830ded76162b9582",
+    "name": "m1_one_shot_ood"
+  },
+  "conditions": [
+    "decoupled",
+    "compositional"
+  ],
+  "lock_manifest": "id_lock/lock_manifest.json",
+  "lock_manifest_sha256": "fd63c2b6ccbafcb925114659d05fd246dfb8be1d5fbd2f0a21bba3a4ef1840ab",
+  "m0_artifacts": {
+    "compositional": {
+      "battery_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v3d.json",
+      "battery_sha256": "483d3fb6a72970c99c1cba2ed118dd6289825b7f73332af07300205ceb361432",
+      "metadata_path": "m0/compositional.json.metadata",
+      "metadata_sha256": "97569f66a4d1363a4f4cec62131e047702663d3aa41ce6eea80f39f8a292eec1",
+      "raw_path": "m0/compositional.json",
+      "raw_sha256": "cb15f78cde58a92aecfb85d9bb822c03bc50645f2e0f782a140f318a96218f30"
+    },
+    "decoupled": {
+      "battery_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v4_final.json",
+      "battery_sha256": "4550cf11c9b7d837b0b1d921c9151d997cb1e421c800fc21da2ebafe4203bf25",
+      "metadata_path": "m0/decoupled.json.metadata",
+      "metadata_sha256": "eb1b8d585728278d555f4a9f96da44009d226af3cca0be094f452c871cd97977",
+      "raw_path": "m0/decoupled.json",
+      "raw_sha256": "e93ab75d2cfd48b3d8b423ca6684d6c211c3a02919175491eacd384544f7c56d"
+    }
+  },
+  "schema_version": "metacog-alignment-campaign/v1",
+  "stage": "M1_OOD",
+  "started_at_utc": "2026-08-31T03:55:48+00:00"
+}

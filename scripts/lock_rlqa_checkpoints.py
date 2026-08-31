@@ -51,6 +51,7 @@ LOCKED_RECIPE = {
 # Pinned commit per approved model; a run that resolved anything else is refused.
 PINNED_REVISIONS = {
     "Qwen/Qwen3-8B": "b968826d9c46dd6066d109eabc6255188de91218",
+    "Qwen/Qwen3-14B": "40c069824f4251a91eefaf281ebe4c544efd3e18",
     "Qwen/Qwen3-32B": "9216db5781bf21249d130ec9da846c4624c16137",
 }
 EXPECTED_REVISION = PINNED_REVISIONS.get(EXPECTED_MODEL)
@@ -86,8 +87,15 @@ def _check_recipe(run_config: Mapping[str, Any], seed: int) -> None:
                 raise LockError(f"seed {seed} changed {field}: {observed} != {expected}")
         elif str(observed) != str(expected):
             raise LockError(f"seed {seed} changed {field}: {observed!r} != {expected!r}")
+    # Fail closed on an unpinned model: without a recorded revision this check
+    # would silently pass anything, which is worse than refusing to lock.
+    if EXPECTED_REVISION is None:
+        raise LockError(
+            f"{EXPECTED_MODEL} has no pinned revision in PINNED_REVISIONS; refusing to "
+            "lock a checkpoint whose model commit cannot be verified"
+        )
     resolved = run_config.get("resolved_model_commit")
-    if EXPECTED_REVISION and resolved is not None and str(resolved) != EXPECTED_REVISION:
+    if resolved is not None and str(resolved) != EXPECTED_REVISION:
         raise LockError(f"seed {seed} resolved a different model commit: {resolved}")
     blob = json.dumps(run_config, sort_keys=True).lower()
     for token in SEALED_TOKENS:

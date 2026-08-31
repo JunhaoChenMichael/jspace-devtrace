@@ -44,6 +44,7 @@ LOCK_SCHEMA = "metacog-alignment-id-lock/v1"
 # substituting Qwen3-30B-A3B would confound scale with architecture.
 SUPPORTED_MODELS = {
     "Qwen/Qwen3-8B": "qwen3-8b",
+    "Qwen/Qwen3-14B": "qwen3-14b",
     "Qwen/Qwen3-32B": "qwen3-32b",
 }
 EXPECTED_MODEL = os.environ.get("METACOG_EXPECTED_MODEL", "Qwen/Qwen3-8B")

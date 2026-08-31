@@ -1,0 +1,17 @@
+{
+  "gpu": {
+    "free_mib": 81152,
+    "index": "0",
+    "name": "NVIDIA A100-SXM4-80GB",
+    "total_mib": 81920,
+    "uuid": "GPU-a2e17de9-910f-0ea9-1d3a-3ae5c9d89452"
+  },
+  "h100_launched": false,
+  "lock_manifest": "id_lock/lock_manifest.json",
+  "lock_manifest_sha256": "fd63c2b6ccbafcb925114659d05fd246dfb8be1d5fbd2f0a21bba3a4ef1840ab",
+  "ood_opened": false,
+  "reason": "id_lock_complete_ood_sealed",
+  "schema_version": "metacog-alignment-campaign/v1",
+  "seed": 0,
+  "stopped_at_utc": "2026-08-31T02:50:59+00:00"
+}
