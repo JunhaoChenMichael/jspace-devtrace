@@ -1,0 +1,36 @@
+{
+  "artifacts": {
+    "canary_manifest": null,
+    "lock_manifest": "lock_manifest.json",
+    "provenance": "provenance.json",
+    "run_config": "run_config.json",
+    "split_manifest": "split_manifest.json",
+    "teacher_label_audit": "teacher_label_audit.json",
+    "teacher_labels": "teacher_labels.jsonl",
+    "training_metrics": "training_metrics.jsonl",
+    "truncation_stats": "truncation_stats.json",
+    "validation_metrics": "validation_metrics.jsonl"
+  },
+  "checkpoint_steps": [
+    0,
+    100,
+    250,
+    414
+  ],
+  "completed_optimizer_steps": 414,
+  "gpu_memory": {
+    "allocated_bytes": 30098914816,
+    "peak_allocated_bytes": 31031703552,
+    "peak_reserved_bytes": 31799115776,
+    "reserved_bytes": 31799115776
+  },
+  "locked_checkpoint": "checkpoints/step-000250",
+  "mode": "formal_seed_0_pilot",
+  "ood_evaluated": false,
+  "schema_version": 1,
+  "status": "LOCKED",
+  "throughput": {
+    "mean_examples_per_second": 2.623173073805992,
+    "mean_tokens_per_second": 295.25274947020426
+  }
+}

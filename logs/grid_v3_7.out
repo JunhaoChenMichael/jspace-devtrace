@@ -1,0 +1,66 @@
+host=rohpcgpu37.mayo.edu job=4276856 gpu=NVIDIA A100-SXM4-80GB
+model=Qwen/Qwen2.5-3B-Instruct rev=aa8e72537993ba99e69dfaafa59ed015b17504d1
+model=Qwen/Qwen2.5-3B-Instruct adapter=None layers=36 verbal=True verbal_raw=True device=cuda episodes=88
+  5/88 episodes
+  10/88 episodes
+  15/88 episodes
+  20/88 episodes
+  25/88 episodes
+  30/88 episodes
+  35/88 episodes
+  40/88 episodes
+  45/88 episodes
+  50/88 episodes
+  55/88 episodes
+  60/88 episodes
+  65/88 episodes
+  70/88 episodes
+  75/88 episodes
+  80/88 episodes
+  85/88 episodes
+saved 417 item rows -> data/results/a100_next_boundary_campaign/predictive_grid_v3/Qwen_Qwen2.5-3B-Instruct/explicit.json
+model=Qwen/Qwen2.5-3B-Instruct adapter=None layers=36 verbal=True verbal_raw=True device=cuda episodes=75
+  5/75 episodes
+  10/75 episodes
+  15/75 episodes
+  20/75 episodes
+  25/75 episodes
+  30/75 episodes
+  35/75 episodes
+  40/75 episodes
+  45/75 episodes
+  50/75 episodes
+  55/75 episodes
+  60/75 episodes
+  65/75 episodes
+  70/75 episodes
+  75/75 episodes
+saved 352 item rows -> data/results/a100_next_boundary_campaign/predictive_grid_v3/Qwen_Qwen2.5-3B-Instruct/evoked.json
+model=Qwen/Qwen2.5-3B-Instruct adapter=None layers=36 verbal=True verbal_raw=True device=cuda episodes=68
+  5/68 episodes
+  10/68 episodes
+  15/68 episodes
+  20/68 episodes
+  25/68 episodes
+  30/68 episodes
+  35/68 episodes
+  40/68 episodes
+  45/68 episodes
+  50/68 episodes
+  55/68 episodes
+  60/68 episodes
+  65/68 episodes
+saved 335 item rows -> data/results/a100_next_boundary_campaign/predictive_grid_v3/Qwen_Qwen2.5-3B-Instruct/decoupled.json
+model=Qwen/Qwen2.5-3B-Instruct adapter=None layers=36 verbal=True verbal_raw=True device=cuda episodes=52
+  5/52 episodes
+  10/52 episodes
+  15/52 episodes
+  20/52 episodes
+  25/52 episodes
+  30/52 episodes
+  35/52 episodes
+  40/52 episodes
+  45/52 episodes
+  50/52 episodes
+saved 261 item rows -> data/results/a100_next_boundary_campaign/predictive_grid_v3/Qwen_Qwen2.5-3B-Instruct/compositional.json
+GRID_V3_OK Qwen/Qwen2.5-3B-Instruct

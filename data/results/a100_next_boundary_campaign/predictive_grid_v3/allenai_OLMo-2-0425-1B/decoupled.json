@@ -1,0 +1,3352 @@
+[
+  {
+    "episode": 0,
+    "candidate_index": 0,
+    "concept": "pastry",
+    "label": "distractor",
+    "W_end": 0.0007682852447032928,
+    "W_max": 0.0,
+    "W_rr": 0.007352941176470588,
+    "V_raw": 0.5813680291175842
+  },
+  {
+    "episode": 0,
+    "candidate_index": 1,
+    "concept": "museum",
+    "label": "filler",
+    "W_end": 2.1709212887799367e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0002918855808523059,
+    "V_raw": 0.5603602528572083
+  },
+  {
+    "episode": 0,
+    "candidate_index": 2,
+    "concept": "waffle",
+    "label": "distractor",
+    "W_end": 0.004788875114172697,
+    "W_max": 0.0,
+    "W_rr": 0.043478260869565216,
+    "V_raw": 0.5312646627426147
+  },
+  {
+    "episode": 0,
+    "candidate_index": 3,
+    "concept": "brussels",
+    "label": "load_bearing",
+    "W_end": 0.00013079911877866834,
+    "W_max": 0.0,
+    "W_rr": 0.0009930486593843098,
+    "V_raw": 0.5332361459732056
+  },
+  {
+    "episode": 0,
+    "candidate_index": 4,
+    "concept": "coffee",
+    "label": "filler",
+    "W_end": 0.002154709305614233,
+    "W_max": 0.0,
+    "W_rr": 0.014285714285714285,
+    "V_raw": 0.5794606804847717
+  },
+  {
+    "episode": 1,
+    "candidate_index": 0,
+    "concept": "skates",
+    "label": "distractor",
+    "W_end": 9.858574776444584e-05,
+    "W_max": 0.0,
+    "W_rr": 0.003745318352059925,
+    "V_raw": 0.6151392459869385
+  },
+  {
+    "episode": 1,
+    "candidate_index": 1,
+    "concept": "medal",
+    "label": "distractor",
+    "W_end": 1.797986806195695e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0006056935190793458,
+    "V_raw": 0.6133430600166321
+  },
+  {
+    "episode": 1,
+    "candidate_index": 2,
+    "concept": "judges",
+    "label": "filler",
+    "W_end": 4.093837196705863e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0005773672055427252,
+    "V_raw": 0.605867862701416
+  },
+  {
+    "episode": 1,
+    "candidate_index": 3,
+    "concept": "event",
+    "label": "filler",
+    "W_end": 0.0002292948483955115,
+    "W_max": 0.0,
+    "W_rr": 0.0035714285714285713,
+    "V_raw": 0.667228102684021
+  },
+  {
+    "episode": 1,
+    "candidate_index": 4,
+    "concept": "olympics",
+    "label": "load_bearing",
+    "W_end": 8.175924449460581e-05,
+    "W_max": 0.0,
+    "W_rr": 0.002053388090349076,
+    "V_raw": 0.6133129596710205
+  },
+  {
+    "episode": 2,
+    "candidate_index": 0,
+    "concept": "symbols",
+    "label": "distractor",
+    "W_end": 1.1715049367921893e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0004424778761061947,
+    "V_raw": 0.6335055232048035
+  },
+  {
+    "episode": 2,
+    "candidate_index": 1,
+    "concept": "parchment",
+    "label": "distractor",
+    "W_end": 3.723034751601517e-05,
+    "W_max": 0.0,
+    "W_rr": 0.003968253968253968,
+    "V_raw": 0.5852077603340149
+  },
+  {
+    "episode": 2,
+    "candidate_index": 2,
+    "concept": "translation",
+    "label": "filler",
+    "W_end": 2.0711020624730736e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0005027652086475615,
+    "V_raw": 0.6003759503364563
+  },
+  {
+    "episode": 2,
+    "candidate_index": 3,
+    "concept": "hieroglyphs",
+    "label": "load_bearing",
+    "W_end": 1.4057716725801583e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0003215434083601286,
+    "V_raw": 0.6058988571166992
+  },
+  {
+    "episode": 3,
+    "candidate_index": 0,
+    "concept": "steam",
+    "label": "distractor",
+    "W_end": 0.0004597601655405015,
+    "W_max": 0.0,
+    "W_rr": 0.005263157894736842,
+    "V_raw": 0.6944988965988159
+  },
+  {
+    "episode": 3,
+    "candidate_index": 1,
+    "concept": "towel",
+    "label": "filler",
+    "W_end": 2.8598698918358423e-05,
+    "W_max": 0.0,
+    "W_rr": 0.000757002271006813,
+    "V_raw": 0.5662423968315125
+  },
+  {
+    "episode": 3,
+    "candidate_index": 2,
+    "concept": "bench",
+    "label": "filler",
+    "W_end": 1.2064941756761982e-06,
+    "W_max": 0.0,
+    "W_rr": 9.245562130177515e-05,
+    "V_raw": 0.583332896232605
+  },
+  {
+    "episode": 3,
+    "candidate_index": 3,
+    "concept": "valve",
+    "label": "distractor",
+    "W_end": 0.00017744018987286836,
+    "W_max": 0.0,
+    "W_rr": 0.0016,
+    "V_raw": 0.6742432117462158
+  },
+  {
+    "episode": 3,
+    "candidate_index": 4,
+    "concept": "finland",
+    "label": "load_bearing",
+    "W_end": 0.0006235272740013897,
+    "W_max": 0.0,
+    "W_rr": 0.00641025641025641,
+    "V_raw": 0.6004120707511902
+  },
+  {
+    "episode": 4,
+    "candidate_index": 0,
+    "concept": "opera",
+    "label": "load_bearing",
+    "W_end": 0.004264893010258675,
+    "W_max": 0.0,
+    "W_rr": 0.03125,
+    "V_raw": 0.6442747712135315
+  },
+  {
+    "episode": 4,
+    "candidate_index": 1,
+    "concept": "espresso",
+    "label": "distractor",
+    "W_end": 1.7816377294366248e-05,
+    "W_max": 0.0,
+    "W_rr": 0.00041017227235438887,
+    "V_raw": 0.5756403803825378
+  },
+  {
+    "episode": 4,
+    "candidate_index": 2,
+    "concept": "violinist",
+    "label": "filler",
+    "W_end": 0.0011770784622058272,
+    "W_max": 0.0,
+    "W_rr": 0.012048192771084338,
+    "V_raw": 0.5351343154907227
+  },
+  {
+    "episode": 4,
+    "candidate_index": 3,
+    "concept": "scooter",
+    "label": "distractor",
+    "W_end": 1.5186808013822883e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0006418485237483953,
+    "V_raw": 0.5000277161598206
+  },
+  {
+    "episode": 4,
+    "candidate_index": 4,
+    "concept": "teatro",
+    "label": "distractor",
+    "W_end": 0.00020261292229406536,
+    "W_max": 0.0,
+    "W_rr": 0.0029154518950437317,
+    "V_raw": 0.6442748308181763
+  },
+  {
+    "episode": 4,
+    "candidate_index": 5,
+    "concept": "city",
+    "label": "filler",
+    "W_end": 4.3625976104522124e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0024937655860349127,
+    "V_raw": 0.6460698843002319
+  },
+  {
+    "episode": 5,
+    "candidate_index": 0,
+    "concept": "ghana",
+    "label": "load_bearing",
+    "W_end": 9.855225653154776e-05,
+    "W_max": 0.0,
+    "W_rr": 0.00228310502283105,
+    "V_raw": 0.6040207147598267
+  },
+  {
+    "episode": 5,
+    "candidate_index": 1,
+    "concept": "turtle",
+    "label": "distractor",
+    "W_end": 0.0005369470454752445,
+    "W_max": 0.0,
+    "W_rr": 0.006622516556291391,
+    "V_raw": 0.6225259304046631
+  },
+  {
+    "episode": 5,
+    "candidate_index": 2,
+    "concept": "beach",
+    "label": "filler",
+    "W_end": 0.0002238328306702897,
+    "W_max": 0.0,
+    "W_rr": 0.00392156862745098,
+    "V_raw": 0.6280234456062317
+  },
+  {
+    "episode": 5,
+    "candidate_index": 3,
+    "concept": "bonfire",
+    "label": "distractor",
+    "W_end": 1.9459386749076657e-05,
+    "W_max": 0.0,
+    "W_rr": 0.00129366106080207,
+    "V_raw": 0.5079062581062317
+  },
+  {
+    "episode": 5,
+    "candidate_index": 4,
+    "concept": "drum",
+    "label": "filler",
+    "W_end": 6.232683517737314e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0008833922261484099,
+    "V_raw": 0.5506923794746399
+  },
+  {
+    "episode": 5,
+    "candidate_index": 5,
+    "concept": "net",
+    "label": "distractor",
+    "W_end": 2.0614290860976325e-06,
+    "W_max": 0.0,
+    "W_rr": 0.0005717552887364208,
+    "V_raw": 0.5506917834281921
+  },
+  {
+    "episode": 6,
+    "candidate_index": 0,
+    "concept": "canal",
+    "label": "distractor",
+    "W_end": 2.675342511793133e-05,
+    "W_max": 0.0,
+    "W_rr": 0.000505050505050505,
+    "V_raw": 0.6859898567199707
+  },
+  {
+    "episode": 6,
+    "candidate_index": 1,
+    "concept": "gondola",
+    "label": "distractor",
+    "W_end": 0.0005089630139991641,
+    "W_max": 0.0,
+    "W_rr": 0.01818181818181818,
+    "V_raw": 0.6298125386238098
+  },
+  {
+    "episode": 6,
+    "candidate_index": 2,
+    "concept": "balcony",
+    "label": "filler",
+    "W_end": 0.00010441683843964711,
+    "W_max": 0.0,
+    "W_rr": 0.002066115702479339,
+    "V_raw": 0.5699084401130676
+  },
+  {
+    "episode": 6,
+    "candidate_index": 3,
+    "concept": "italy",
+    "label": "load_bearing",
+    "W_end": 0.0008888064185157418,
+    "W_max": 0.0,
+    "W_rr": 0.010309278350515464,
+    "V_raw": 0.6757968068122864
+  },
+  {
+    "episode": 6,
+    "candidate_index": 4,
+    "concept": "tower",
+    "label": "filler",
+    "W_end": 0.0002710706612560898,
+    "W_max": 0.0,
+    "W_rr": 0.0028653295128939827,
+    "V_raw": 0.5622335076332092
+  },
+  {
+    "episode": 7,
+    "candidate_index": 0,
+    "concept": "fruit",
+    "label": "distractor",
+    "W_end": 5.0183632993139327e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0011261261261261261,
+    "V_raw": 0.640708863735199
+  },
+  {
+    "episode": 7,
+    "candidate_index": 1,
+    "concept": "monk",
+    "label": "distractor",
+    "W_end": 0.0002443022676743567,
+    "W_max": 0.0,
+    "W_rr": 0.005555555555555556,
+    "V_raw": 0.496222585439682
+  },
+  {
+    "episode": 7,
+    "candidate_index": 2,
+    "concept": "vendor",
+    "label": "filler",
+    "W_end": 0.0002559483691584319,
+    "W_max": 0.0,
+    "W_rr": 0.0029239766081871343,
+    "V_raw": 0.6261983513832092
+  },
+  {
+    "episode": 7,
+    "candidate_index": 3,
+    "concept": "stall",
+    "label": "filler",
+    "W_end": 5.701881309505552e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0005449591280653951,
+    "V_raw": 0.6077405214309692
+  },
+  {
+    "episode": 7,
+    "candidate_index": 4,
+    "concept": "bangkok",
+    "label": "load_bearing",
+    "W_end": 0.00010987906716763973,
+    "W_max": 0.0,
+    "W_rr": 0.0018796992481203006,
+    "V_raw": 0.65850430727005
+  },
+  {
+    "episode": 8,
+    "candidate_index": 0,
+    "concept": "telescope",
+    "label": "filler",
+    "W_end": 6.40378420939669e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0006238303181534623,
+    "V_raw": 0.5471186637878418
+  },
+  {
+    "episode": 8,
+    "candidate_index": 1,
+    "concept": "notebook",
+    "label": "filler",
+    "W_end": 4.831728438148275e-05,
+    "W_max": 0.0,
+    "W_rr": 0.000468384074941452,
+    "V_raw": 0.5082044005393982
+  },
+  {
+    "episode": 8,
+    "candidate_index": 2,
+    "concept": "planet",
+    "label": "distractor",
+    "W_end": 0.00031615106854587793,
+    "W_max": 0.0,
+    "W_rr": 0.004098360655737705,
+    "V_raw": 0.6116401553153992
+  },
+  {
+    "episode": 8,
+    "candidate_index": 3,
+    "concept": "spot",
+    "label": "distractor",
+    "W_end": 0.0017771793063730001,
+    "W_max": 0.0,
+    "W_rr": 0.014925373134328358,
+    "V_raw": 0.5891197323799133
+  },
+  {
+    "episode": 8,
+    "candidate_index": 4,
+    "concept": "mirror",
+    "label": "distractor",
+    "W_end": 8.545240234525409e-06,
+    "W_max": 0.0,
+    "W_rr": 0.00041999160016799666,
+    "V_raw": 0.5701316595077515
+  },
+  {
+    "episode": 8,
+    "candidate_index": 5,
+    "concept": "jovian",
+    "label": "load_bearing",
+    "W_end": 0.00016156130004674196,
+    "W_max": 0.0,
+    "W_rr": 0.010869565217391304,
+    "V_raw": 0.527525782585144
+  },
+  {
+    "episode": 9,
+    "candidate_index": 0,
+    "concept": "meat",
+    "label": "distractor",
+    "W_end": 9.055462578544393e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0014619883040935672,
+    "V_raw": 0.5889546871185303
+  },
+  {
+    "episode": 9,
+    "candidate_index": 1,
+    "concept": "egg",
+    "label": "distractor",
+    "W_end": 3.364010262885131e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0006949270326615705,
+    "V_raw": 0.5964844822883606
+  },
+  {
+    "episode": 9,
+    "candidate_index": 2,
+    "concept": "wine",
+    "label": "filler",
+    "W_end": 0.0002844292321242392,
+    "W_max": 0.0,
+    "W_rr": 0.0036231884057971015,
+    "V_raw": 0.5889612436294556
+  },
+  {
+    "episode": 9,
+    "candidate_index": 3,
+    "concept": "meal",
+    "label": "filler",
+    "W_end": 4.8565158067503944e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0009140767824497258,
+    "V_raw": 0.6002538204193115
+  },
+  {
+    "episode": 9,
+    "candidate_index": 4,
+    "concept": "empanada",
+    "label": "load_bearing",
+    "W_end": 0.00026305404026061296,
+    "W_max": 0.0,
+    "W_rr": 0.003389830508474576,
+    "V_raw": 0.5737260580062866
+  },
+  {
+    "episode": 10,
+    "candidate_index": 0,
+    "concept": "horse",
+    "label": "distractor",
+    "W_end": 0.0014659631997346878,
+    "W_max": 0.0,
+    "W_rr": 0.02040816326530612,
+    "V_raw": 0.583374559879303
+  },
+  {
+    "episode": 10,
+    "candidate_index": 1,
+    "concept": "monarch",
+    "label": "distractor",
+    "W_end": 0.0012821496929973364,
+    "W_max": 0.0,
+    "W_rr": 0.010309278350515464,
+    "V_raw": 0.5890112519264221
+  },
+  {
+    "episode": 10,
+    "candidate_index": 2,
+    "concept": "trumpet",
+    "label": "distractor",
+    "W_end": 0.01730962097644806,
+    "W_max": 0.0,
+    "W_rr": 0.16666666666666666,
+    "V_raw": 0.5352346897125244
+  },
+  {
+    "episode": 10,
+    "candidate_index": 3,
+    "concept": "uniform",
+    "label": "filler",
+    "W_end": 5.773668453912251e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0016181229773462784,
+    "V_raw": 0.573864221572876
+  },
+  {
+    "episode": 10,
+    "candidate_index": 4,
+    "concept": "trooping",
+    "label": "load_bearing",
+    "W_end": 0.0005564168677665293,
+    "W_max": 0.0,
+    "W_rr": 0.00847457627118644,
+    "V_raw": 0.544915497303009
+  },
+  {
+    "episode": 11,
+    "candidate_index": 0,
+    "concept": "cheese",
+    "label": "distractor",
+    "W_end": 0.001298092887736857,
+    "W_max": 0.0,
+    "W_rr": 0.009900990099009901,
+    "V_raw": 0.5964776873588562
+  },
+  {
+    "episode": 11,
+    "candidate_index": 1,
+    "concept": "basil",
+    "label": "distractor",
+    "W_end": 0.00014678426668979228,
+    "W_max": 0.0,
+    "W_rr": 0.001564945226917058,
+    "V_raw": 0.5622107982635498
+  },
+  {
+    "episode": 11,
+    "candidate_index": 2,
+    "concept": "sauce",
+    "label": "filler",
+    "W_end": 0.0003307834849692881,
+    "W_max": 0.0,
+    "W_rr": 0.003367003367003367,
+    "V_raw": 0.6132909059524536
+  },
+  {
+    "episode": 11,
+    "candidate_index": 3,
+    "concept": "bowl",
+    "label": "filler",
+    "W_end": 4.691507274401374e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0005998800239952009,
+    "V_raw": 0.6020996570587158
+  },
+  {
+    "episode": 11,
+    "candidate_index": 4,
+    "concept": "gnocchi",
+    "label": "load_bearing",
+    "W_end": 0.0003412836813367903,
+    "W_max": 0.0,
+    "W_rr": 0.006622516556291391,
+    "V_raw": 0.5775294899940491
+  },
+  {
+    "episode": 12,
+    "candidate_index": 0,
+    "concept": "helmet",
+    "label": "filler",
+    "W_end": 5.3392806876217946e-05,
+    "W_max": 0.0,
+    "W_rr": 0.000555247084952804,
+    "V_raw": 0.5930238962173462
+  },
+  {
+    "episode": 12,
+    "candidate_index": 1,
+    "concept": "wall",
+    "label": "distractor",
+    "W_end": 3.268246291554533e-05,
+    "W_max": 0.0,
+    "W_rr": 0.000550357732526142,
+    "V_raw": 0.5892283916473389
+  },
+  {
+    "episode": 12,
+    "candidate_index": 2,
+    "concept": "grip",
+    "label": "distractor",
+    "W_end": 3.8013638459233334e-06,
+    "W_max": 0.0,
+    "W_rr": 0.0002642706131078224,
+    "V_raw": 0.6189727187156677
+  },
+  {
+    "episode": 12,
+    "candidate_index": 3,
+    "concept": "bell",
+    "label": "filler",
+    "W_end": 0.00035236121038906276,
+    "W_max": 0.0,
+    "W_rr": 0.0044444444444444444,
+    "V_raw": 0.5854542851448059
+  },
+  {
+    "episode": 12,
+    "candidate_index": 4,
+    "concept": "gym",
+    "label": "load_bearing",
+    "W_end": 1.8710969015955925e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0006830601092896175,
+    "V_raw": 0.5586366057395935
+  },
+  {
+    "episode": 13,
+    "candidate_index": 0,
+    "concept": "fish",
+    "label": "distractor",
+    "W_end": 0.00020523686544038355,
+    "W_max": 0.0,
+    "W_rr": 0.0024813895781637717,
+    "V_raw": 0.6244034171104431
+  },
+  {
+    "episode": 13,
+    "candidate_index": 1,
+    "concept": "rice",
+    "label": "filler",
+    "W_end": 0.0006997528835199773,
+    "W_max": 0.0,
+    "W_rr": 0.006622516556291391,
+    "V_raw": 0.6133252382278442
+  },
+  {
+    "episode": 13,
+    "candidate_index": 2,
+    "concept": "counter",
+    "label": "filler",
+    "W_end": 5.837818025611341e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0007716049382716049,
+    "V_raw": 0.5889802575111389
+  },
+  {
+    "episode": 13,
+    "candidate_index": 3,
+    "concept": "sushi",
+    "label": "load_bearing",
+    "W_end": 0.0003716359497047961,
+    "W_max": 0.0,
+    "W_rr": 0.0049261083743842365,
+    "V_raw": 0.5927674770355225
+  },
+  {
+    "episode": 13,
+    "candidate_index": 4,
+    "concept": "ginger",
+    "label": "distractor",
+    "W_end": 7.495144382119179e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0010834236186348862,
+    "V_raw": 0.521580696105957
+  },
+  {
+    "episode": 14,
+    "candidate_index": 0,
+    "concept": "credits",
+    "label": "distractor",
+    "W_end": 6.882098386995494e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0015037593984962407,
+    "V_raw": 0.6225152015686035
+  },
+  {
+    "episode": 14,
+    "candidate_index": 1,
+    "concept": "audience",
+    "label": "filler",
+    "W_end": 0.0006478739669546485,
+    "W_max": 0.0,
+    "W_rr": 0.006896551724137931,
+    "V_raw": 0.6243700981140137
+  },
+  {
+    "episode": 14,
+    "candidate_index": 2,
+    "concept": "snack",
+    "label": "distractor",
+    "W_end": 4.735051697934978e-05,
+    "W_max": 0.0,
+    "W_rr": 0.002136752136752137,
+    "V_raw": 0.5870485305786133
+  },
+  {
+    "episode": 14,
+    "candidate_index": 3,
+    "concept": "screen",
+    "label": "filler",
+    "W_end": 1.2147625056968536e-05,
+    "W_max": 0.0,
+    "W_rr": 0.00047551117451260106,
+    "V_raw": 0.6225467920303345
+  },
+  {
+    "episode": 14,
+    "candidate_index": 4,
+    "concept": "premiere",
+    "label": "load_bearing",
+    "W_end": 7.181031833169982e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0005512679162072767,
+    "V_raw": 0.6637356281280518
+  },
+  {
+    "episode": 15,
+    "candidate_index": 0,
+    "concept": "slide",
+    "label": "filler",
+    "W_end": 3.0345590857905336e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0003633720930232558,
+    "V_raw": 0.6077345013618469
+  },
+  {
+    "episode": 15,
+    "candidate_index": 1,
+    "concept": "refrigerator",
+    "label": "distractor",
+    "W_end": 2.234406565548852e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0008620689655172414,
+    "V_raw": 0.6388748288154602
+  },
+  {
+    "episode": 15,
+    "candidate_index": 2,
+    "concept": "laboratory",
+    "label": "load_bearing",
+    "W_end": 0.00020547221356537193,
+    "W_max": 0.0,
+    "W_rr": 0.0037735849056603774,
+    "V_raw": 0.679230809211731
+  },
+  {
+    "episode": 15,
+    "candidate_index": 3,
+    "concept": "badge",
+    "label": "distractor",
+    "W_end": 0.004605208057910204,
+    "W_max": 0.0,
+    "W_rr": 0.058823529411764705,
+    "V_raw": 0.5908536911010742
+  },
+  {
+    "episode": 16,
+    "candidate_index": 0,
+    "concept": "icon",
+    "label": "filler",
+    "W_end": 0.0002846709394361824,
+    "W_max": 0.0,
+    "W_rr": 0.003389830508474576,
+    "V_raw": 0.5965207815170288
+  },
+  {
+    "episode": 16,
+    "candidate_index": 1,
+    "concept": "glass",
+    "label": "distractor",
+    "W_end": 2.8780086722690612e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0006901311249137336,
+    "V_raw": 0.6298462748527527
+  },
+  {
+    "episode": 16,
+    "candidate_index": 2,
+    "concept": "church",
+    "label": "load_bearing",
+    "W_end": 9.73617861745879e-05,
+    "W_max": 0.0,
+    "W_rr": 0.003134796238244514,
+    "V_raw": 0.6225519180297852
+  },
+  {
+    "episode": 16,
+    "candidate_index": 3,
+    "concept": "runner",
+    "label": "filler",
+    "W_end": 4.146164883422898e-06,
+    "W_max": 0.0,
+    "W_rr": 0.00021367521367521368,
+    "V_raw": 0.5660761594772339
+  },
+  {
+    "episode": 16,
+    "candidate_index": 4,
+    "concept": "ballet",
+    "label": "distractor",
+    "W_end": 2.252097510790918e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0002962962962962963,
+    "V_raw": 0.5983988642692566
+  },
+  {
+    "episode": 17,
+    "candidate_index": 0,
+    "concept": "facility",
+    "label": "filler",
+    "W_end": 1.0436934644530993e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0001626280696048138,
+    "V_raw": 0.6827026009559631
+  },
+  {
+    "episode": 17,
+    "candidate_index": 1,
+    "concept": "bag",
+    "label": "filler",
+    "W_end": 0.002334154676645994,
+    "W_max": 0.0,
+    "W_rr": 0.019230769230769232,
+    "V_raw": 0.604081392288208
+  },
+  {
+    "episode": 17,
+    "candidate_index": 2,
+    "concept": "chlorine",
+    "label": "distractor",
+    "W_end": 0.0002162858727388084,
+    "W_max": 0.0,
+    "W_rr": 0.002127659574468085,
+    "V_raw": 0.6911062598228455
+  },
+  {
+    "episode": 17,
+    "candidate_index": 3,
+    "concept": "sunrise",
+    "label": "distractor",
+    "W_end": 0.0007293993257917464,
+    "W_max": 0.0,
+    "W_rr": 0.007042253521126761,
+    "V_raw": 0.6443749666213989
+  },
+  {
+    "episode": 17,
+    "candidate_index": 4,
+    "concept": "pool",
+    "label": "load_bearing",
+    "W_end": 0.0001956602354766801,
+    "W_max": 0.0,
+    "W_rr": 0.0027100271002710027,
+    "V_raw": 0.6672647595405579
+  },
+  {
+    "episode": 17,
+    "candidate_index": 5,
+    "concept": "goggles",
+    "label": "distractor",
+    "W_end": 0.000374111084965989,
+    "W_max": 0.0,
+    "W_rr": 0.011627906976744186,
+    "V_raw": 0.6443357467651367
+  },
+  {
+    "episode": 18,
+    "candidate_index": 0,
+    "concept": "chair",
+    "label": "filler",
+    "W_end": 4.226812052365858e-06,
+    "W_max": 0.0,
+    "W_rr": 8.071676487206392e-05,
+    "V_raw": 0.523960530757904
+  },
+  {
+    "episode": 18,
+    "candidate_index": 1,
+    "concept": "guitar",
+    "label": "distractor",
+    "W_end": 2.8398597351042554e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0024390243902439024,
+    "V_raw": 0.5317521095275879
+  },
+  {
+    "episode": 18,
+    "candidate_index": 2,
+    "concept": "marshmallow",
+    "label": "distractor",
+    "W_end": 1.0144113957721856e-06,
+    "W_max": 0.0,
+    "W_rr": 0.0001556420233463035,
+    "V_raw": 0.5043594241142273
+  },
+  {
+    "episode": 18,
+    "candidate_index": 3,
+    "concept": "outdoors",
+    "label": "load_bearing",
+    "W_end": 0.0001432366989320144,
+    "W_max": 0.0,
+    "W_rr": 0.006756756756756757,
+    "V_raw": 0.6118531823158264
+  },
+  {
+    "episode": 18,
+    "candidate_index": 4,
+    "concept": "shore",
+    "label": "filler",
+    "W_end": 2.227219965789118e-06,
+    "W_max": 0.0,
+    "W_rr": 0.0001645548790521639,
+    "V_raw": 0.5854222774505615
+  },
+  {
+    "episode": 19,
+    "candidate_index": 0,
+    "concept": "cake",
+    "label": "distractor",
+    "W_end": 0.00017898988153319806,
+    "W_max": 0.0,
+    "W_rr": 0.00228310502283105,
+    "V_raw": 0.5661597847938538
+  },
+  {
+    "episode": 19,
+    "candidate_index": 1,
+    "concept": "waiter",
+    "label": "distractor",
+    "W_end": 0.0005644019111059606,
+    "W_max": 0.0,
+    "W_rr": 0.0056179775280898875,
+    "V_raw": 0.5079734325408936
+  },
+  {
+    "episode": 19,
+    "candidate_index": 2,
+    "concept": "hall",
+    "label": "filler",
+    "W_end": 3.0451714337687008e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0014771048744460858,
+    "V_raw": 0.5623061060905457
+  },
+  {
+    "episode": 19,
+    "candidate_index": 3,
+    "concept": "quartet",
+    "label": "filler",
+    "W_end": 5.438500011223368e-06,
+    "W_max": 0.0,
+    "W_rr": 0.00013147515119642388,
+    "V_raw": 0.5040053725242615
+  },
+  {
+    "episode": 19,
+    "candidate_index": 4,
+    "concept": "food",
+    "label": "distractor",
+    "W_end": 0.0016849929234012961,
+    "W_max": 0.0,
+    "W_rr": 0.016666666666666666,
+    "V_raw": 0.6262483596801758
+  },
+  {
+    "episode": 19,
+    "candidate_index": 5,
+    "concept": "catering",
+    "label": "load_bearing",
+    "W_end": 0.0003940160677302629,
+    "W_max": 0.0,
+    "W_rr": 0.0041841004184100415,
+    "V_raw": 0.6078112125396729
+  },
+  {
+    "episode": 20,
+    "candidate_index": 0,
+    "concept": "racquet",
+    "label": "distractor",
+    "W_end": 4.3886000639759004e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0008703220191470844,
+    "V_raw": 0.6152474284172058
+  },
+  {
+    "episode": 20,
+    "candidate_index": 1,
+    "concept": "ball",
+    "label": "filler",
+    "W_end": 0.00018048683705274016,
+    "W_max": 0.0,
+    "W_rr": 0.0027548209366391185,
+    "V_raw": 0.6152576208114624
+  },
+  {
+    "episode": 20,
+    "candidate_index": 2,
+    "concept": "opponent",
+    "label": "filler",
+    "W_end": 0.0002996613329742104,
+    "W_max": 0.0,
+    "W_rr": 0.0037735849056603774,
+    "V_raw": 0.6976764798164368
+  },
+  {
+    "episode": 20,
+    "candidate_index": 3,
+    "concept": "tennis",
+    "label": "load_bearing",
+    "W_end": 7.158268999774009e-05,
+    "W_max": 0.0,
+    "W_rr": 0.001303780964797914,
+    "V_raw": 0.6408156156539917
+  },
+  {
+    "episode": 21,
+    "candidate_index": 0,
+    "concept": "statue",
+    "label": "distractor",
+    "W_end": 0.0001984436239581555,
+    "W_max": 0.0,
+    "W_rr": 0.0020242914979757085,
+    "V_raw": 0.5984647274017334
+  },
+  {
+    "episode": 21,
+    "candidate_index": 1,
+    "concept": "harbor",
+    "label": "filler",
+    "W_end": 1.3749575373367406e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0004098360655737705,
+    "V_raw": 0.6619749665260315
+  },
+  {
+    "episode": 21,
+    "candidate_index": 2,
+    "concept": "coconut",
+    "label": "filler",
+    "W_end": 5.4433759942185134e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0010559662090813093,
+    "V_raw": 0.5487617254257202
+  },
+  {
+    "episode": 21,
+    "candidate_index": 3,
+    "concept": "mountain",
+    "label": "distractor",
+    "W_end": 8.042697299970314e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0010416666666666667,
+    "V_raw": 0.6040360331535339
+  },
+  {
+    "episode": 21,
+    "candidate_index": 4,
+    "concept": "brazil",
+    "label": "load_bearing",
+    "W_end": 4.550331868813373e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0009328358208955224,
+    "V_raw": 0.6425194144248962
+  },
+  {
+    "episode": 22,
+    "candidate_index": 0,
+    "concept": "monkey",
+    "label": "distractor",
+    "W_end": 1.2954117210028926e-06,
+    "W_max": 0.0,
+    "W_rr": 0.00014353380221042057,
+    "V_raw": 0.486489474773407
+  },
+  {
+    "episode": 22,
+    "candidate_index": 1,
+    "concept": "palace",
+    "label": "distractor",
+    "W_end": 0.0005797891644760966,
+    "W_max": 0.0,
+    "W_rr": 0.006060606060606061,
+    "V_raw": 0.6461682319641113
+  },
+  {
+    "episode": 22,
+    "candidate_index": 2,
+    "concept": "queen",
+    "label": "filler",
+    "W_end": 5.662738476530649e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0009970089730807576,
+    "V_raw": 0.5814939737319946
+  },
+  {
+    "episode": 22,
+    "candidate_index": 3,
+    "concept": "marble",
+    "label": "filler",
+    "W_end": 1.4425316294364166e-05,
+    "W_max": 0.0,
+    "W_rr": 0.00019083969465648855,
+    "V_raw": 0.5871352553367615
+  },
+  {
+    "episode": 22,
+    "candidate_index": 4,
+    "concept": "india",
+    "label": "load_bearing",
+    "W_end": 5.785715256934054e-05,
+    "W_max": 0.0,
+    "W_rr": 0.001017293997965412,
+    "V_raw": 0.5585622787475586
+  },
+  {
+    "episode": 23,
+    "candidate_index": 0,
+    "concept": "pizza",
+    "label": "distractor",
+    "W_end": 1.4515879229293205e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0005767012687427913,
+    "V_raw": 0.6114211678504944
+  },
+  {
+    "episode": 23,
+    "candidate_index": 1,
+    "concept": "hat",
+    "label": "filler",
+    "W_end": 3.891940195899224e-06,
+    "W_max": 0.0,
+    "W_rr": 0.00019076688286913393,
+    "V_raw": 0.5927098989486694
+  },
+  {
+    "episode": 23,
+    "candidate_index": 2,
+    "concept": "stadium",
+    "label": "filler",
+    "W_end": 4.266878750058822e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0006561679790026247,
+    "V_raw": 0.6783731579780579
+  },
+  {
+    "episode": 23,
+    "candidate_index": 3,
+    "concept": "fireworks",
+    "label": "distractor",
+    "W_end": 1.2319467714405619e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0008084074373484236,
+    "V_raw": 0.5861298441886902
+  },
+  {
+    "episode": 23,
+    "candidate_index": 4,
+    "concept": "yankees",
+    "label": "load_bearing",
+    "W_end": 4.367630390333943e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0012033694344163659,
+    "V_raw": 0.6156116724014282
+  },
+  {
+    "episode": 24,
+    "candidate_index": 0,
+    "concept": "tram",
+    "label": "filler",
+    "W_end": 0.0003156454476993531,
+    "W_max": 0.0,
+    "W_rr": 0.006060606060606061,
+    "V_raw": 0.5391942858695984
+  },
+  {
+    "episode": 24,
+    "candidate_index": 1,
+    "concept": "bread",
+    "label": "distractor",
+    "W_end": 0.0035563663113862276,
+    "W_max": 0.0,
+    "W_rr": 0.024390243902439025,
+    "V_raw": 0.61528480052948
+  },
+  {
+    "episode": 24,
+    "candidate_index": 2,
+    "concept": "river",
+    "label": "filler",
+    "W_end": 2.575838334450964e-05,
+    "W_max": 0.0,
+    "W_rr": 0.00037650602409638556,
+    "V_raw": 0.607836127281189
+  },
+  {
+    "episode": 24,
+    "candidate_index": 3,
+    "concept": "ukraine",
+    "label": "load_bearing",
+    "W_end": 0.00013365269114729017,
+    "W_max": 0.0,
+    "W_rr": 0.001152073732718894,
+    "V_raw": 0.5832976698875427
+  },
+  {
+    "episode": 25,
+    "candidate_index": 0,
+    "concept": "flood",
+    "label": "distractor",
+    "W_end": 0.00011216373968636617,
+    "W_max": 0.0,
+    "W_rr": 0.002145922746781116,
+    "V_raw": 0.7009333968162537
+  },
+  {
+    "episode": 25,
+    "candidate_index": 1,
+    "concept": "jacket",
+    "label": "filler",
+    "W_end": 7.068425475154072e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0007496251874062968,
+    "V_raw": 0.5622168779373169
+  },
+  {
+    "episode": 25,
+    "candidate_index": 2,
+    "concept": "levee",
+    "label": "distractor",
+    "W_end": 0.0003195247845724225,
+    "W_max": 0.0,
+    "W_rr": 0.005714285714285714,
+    "V_raw": 0.6531574726104736
+  },
+  {
+    "episode": 25,
+    "candidate_index": 3,
+    "concept": "hydrologist",
+    "label": "filler",
+    "W_end": 0.0005309390835464001,
+    "W_max": 0.0,
+    "W_rr": 0.005917159763313609,
+    "V_raw": 0.6252352595329285
+  },
+  {
+    "episode": 25,
+    "candidate_index": 4,
+    "concept": "rhine",
+    "label": "load_bearing",
+    "W_end": 7.524446573370369e-06,
+    "W_max": 0.0,
+    "W_rr": 0.00028368794326241134,
+    "V_raw": 0.5679699182510376
+  },
+  {
+    "episode": 25,
+    "candidate_index": 5,
+    "concept": "truck",
+    "label": "distractor",
+    "W_end": 6.561649206560105e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0014992503748125937,
+    "V_raw": 0.5273724794387817
+  },
+  {
+    "episode": 26,
+    "candidate_index": 0,
+    "concept": "frond",
+    "label": "distractor",
+    "W_end": 6.948730879230425e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0037593984962406013,
+    "V_raw": 0.5698719620704651
+  },
+  {
+    "episode": 26,
+    "candidate_index": 1,
+    "concept": "lens",
+    "label": "filler",
+    "W_end": 3.46095725944906e-06,
+    "W_max": 0.0,
+    "W_rr": 0.00012547051442910915,
+    "V_raw": 0.5679640173912048
+  },
+  {
+    "episode": 26,
+    "candidate_index": 2,
+    "concept": "atacama",
+    "label": "distractor",
+    "W_end": 0.006065385416150093,
+    "W_max": 0.0,
+    "W_rr": 0.14285714285714285,
+    "V_raw": 0.6076890826225281
+  },
+  {
+    "episode": 26,
+    "candidate_index": 3,
+    "concept": "tweezers",
+    "label": "distractor",
+    "W_end": 8.331557182827964e-06,
+    "W_max": 0.0,
+    "W_rr": 0.0003354579000335458,
+    "V_raw": 0.5273411273956299
+  },
+  {
+    "episode": 26,
+    "candidate_index": 4,
+    "concept": "chile",
+    "label": "load_bearing",
+    "W_end": 0.00015118252485990524,
+    "W_max": 0.0,
+    "W_rr": 0.002347417840375587,
+    "V_raw": 0.5698819160461426
+  },
+  {
+    "episode": 27,
+    "candidate_index": 0,
+    "concept": "battery",
+    "label": "filler",
+    "W_end": 1.3987436432216782e-05,
+    "W_max": 0.0,
+    "W_rr": 0.00016388069485414618,
+    "V_raw": 0.6514859199523926
+  },
+  {
+    "episode": 27,
+    "candidate_index": 1,
+    "concept": "rickshaw",
+    "label": "filler",
+    "W_end": 1.831514782679733e-05,
+    "W_max": 0.0,
+    "W_rr": 0.001519756838905775,
+    "V_raw": 0.577591598033905
+  },
+  {
+    "episode": 27,
+    "candidate_index": 2,
+    "concept": "scarf",
+    "label": "distractor",
+    "W_end": 2.1329096853150986e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0005047955577990914,
+    "V_raw": 0.5776157975196838
+  },
+  {
+    "episode": 27,
+    "candidate_index": 3,
+    "concept": "market",
+    "label": "distractor",
+    "W_end": 0.00040402571903541684,
+    "W_max": 0.0,
+    "W_rr": 0.00411522633744856,
+    "V_raw": 0.6152194142341614
+  },
+  {
+    "episode": 27,
+    "candidate_index": 4,
+    "concept": "temple",
+    "label": "distractor",
+    "W_end": 0.0005352470907382667,
+    "W_max": 0.0,
+    "W_rr": 0.0051813471502590676,
+    "V_raw": 0.550773024559021
+  },
+  {
+    "episode": 27,
+    "candidate_index": 5,
+    "concept": "delhi",
+    "label": "load_bearing",
+    "W_end": 0.00037116208113729954,
+    "W_max": 0.0,
+    "W_rr": 0.00392156862745098,
+    "V_raw": 0.6317106485366821
+  },
+  {
+    "episode": 28,
+    "candidate_index": 0,
+    "concept": "gravity",
+    "label": "distractor",
+    "W_end": 0.00017457286594435573,
+    "W_max": 0.0,
+    "W_rr": 0.0029585798816568047,
+    "V_raw": 0.5929215550422668
+  },
+  {
+    "episode": 28,
+    "candidate_index": 1,
+    "concept": "astronauts",
+    "label": "distractor",
+    "W_end": 0.003046404104679823,
+    "W_max": 0.0,
+    "W_rr": 0.021739130434782608,
+    "V_raw": 0.5738664865493774
+  },
+  {
+    "episode": 28,
+    "candidate_index": 2,
+    "concept": "density",
+    "label": "filler",
+    "W_end": 0.00014932008343748748,
+    "W_max": 0.0,
+    "W_rr": 0.002688172043010753,
+    "V_raw": 0.5929204821586609
+  },
+  {
+    "episode": 28,
+    "candidate_index": 3,
+    "concept": "microgravity",
+    "label": "load_bearing",
+    "W_end": 2.068750291073229e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0012853470437017994,
+    "V_raw": 0.5778473615646362
+  },
+  {
+    "episode": 29,
+    "candidate_index": 0,
+    "concept": "trapeze",
+    "label": "distractor",
+    "W_end": 8.574030653107911e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0017574692442882249,
+    "V_raw": 0.5526894330978394
+  },
+  {
+    "episode": 29,
+    "candidate_index": 1,
+    "concept": "festival",
+    "label": "filler",
+    "W_end": 5.4015570640331134e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0008285004142502071,
+    "V_raw": 0.626304030418396
+  },
+  {
+    "episode": 29,
+    "candidate_index": 2,
+    "concept": "tent",
+    "label": "filler",
+    "W_end": 0.00016072850849013776,
+    "W_max": 0.0,
+    "W_rr": 0.002066115702479339,
+    "V_raw": 0.5468976497650146
+  },
+  {
+    "episode": 29,
+    "candidate_index": 3,
+    "concept": "acrobats",
+    "label": "distractor",
+    "W_end": 1.8398341126157902e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0022271714922048997,
+    "V_raw": 0.5814007520675659
+  },
+  {
+    "episode": 29,
+    "candidate_index": 4,
+    "concept": "big",
+    "label": "load_bearing",
+    "W_end": 3.7708949093939736e-05,
+    "W_max": 0.0,
+    "W_rr": 0.002380952380952381,
+    "V_raw": 0.5313597321510315
+  },
+  {
+    "episode": 30,
+    "candidate_index": 0,
+    "concept": "orchestra",
+    "label": "distractor",
+    "W_end": 4.7278095735237e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0005063291139240507,
+    "V_raw": 0.6151612997055054
+  },
+  {
+    "episode": 30,
+    "candidate_index": 1,
+    "concept": "altos",
+    "label": "distractor",
+    "W_end": 4.6482753532473e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0019646365422396855,
+    "V_raw": 0.5813565850257874
+  },
+  {
+    "episode": 30,
+    "candidate_index": 2,
+    "concept": "lyrics",
+    "label": "distractor",
+    "W_end": 7.847917004255578e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0018726591760299626,
+    "V_raw": 0.6334928870201111
+  },
+  {
+    "episode": 30,
+    "candidate_index": 3,
+    "concept": "choir",
+    "label": "load_bearing",
+    "W_end": 3.318854942335747e-05,
+    "W_max": 0.0,
+    "W_rr": 0.000564652738565782,
+    "V_raw": 0.5927248597145081
+  },
+  {
+    "episode": 31,
+    "candidate_index": 0,
+    "concept": "varnish",
+    "label": "filler",
+    "W_end": 0.00028186372946947813,
+    "W_max": 0.0,
+    "W_rr": 0.015625,
+    "V_raw": 0.5927484035491943
+  },
+  {
+    "episode": 31,
+    "candidate_index": 1,
+    "concept": "chisels",
+    "label": "distractor",
+    "W_end": 9.119603055296466e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0055248618784530384,
+    "V_raw": 0.5215206742286682
+  },
+  {
+    "episode": 31,
+    "candidate_index": 2,
+    "concept": "canvas",
+    "label": "distractor",
+    "W_end": 0.0006232117884792387,
+    "W_max": 0.0,
+    "W_rr": 0.005714285714285714,
+    "V_raw": 0.5852265357971191
+  },
+  {
+    "episode": 31,
+    "candidate_index": 3,
+    "concept": "frame",
+    "label": "distractor",
+    "W_end": 5.424333721748553e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0006418485237483953,
+    "V_raw": 0.6443260312080383
+  },
+  {
+    "episode": 31,
+    "candidate_index": 4,
+    "concept": "woodworking",
+    "label": "load_bearing",
+    "W_end": 0.00023287723888643086,
+    "W_max": 0.0,
+    "W_rr": 0.002320185614849188,
+    "V_raw": 0.6002533435821533
+  },
+  {
+    "episode": 32,
+    "candidate_index": 0,
+    "concept": "boil",
+    "label": "filler",
+    "W_end": 3.487502544885501e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0008143322475570033,
+    "V_raw": 0.5927429795265198
+  },
+  {
+    "episode": 32,
+    "candidate_index": 1,
+    "concept": "kettle",
+    "label": "filler",
+    "W_end": 0.0001820196775952354,
+    "W_max": 0.0,
+    "W_rr": 0.008403361344537815,
+    "V_raw": 0.542949378490448
+  },
+  {
+    "episode": 32,
+    "candidate_index": 2,
+    "concept": "grandmother",
+    "label": "distractor",
+    "W_end": 0.00015447809710167348,
+    "W_max": 0.0,
+    "W_rr": 0.0028169014084507044,
+    "V_raw": 0.4728034734725952
+  },
+  {
+    "episode": 32,
+    "candidate_index": 3,
+    "concept": "amber",
+    "label": "distractor",
+    "W_end": 3.520096288411878e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0006844626967830253,
+    "V_raw": 0.5274063348770142
+  },
+  {
+    "episode": 32,
+    "candidate_index": 4,
+    "concept": "sri",
+    "label": "load_bearing",
+    "W_end": 0.0007427539094351232,
+    "W_max": 0.0,
+    "W_rr": 0.009900990099009901,
+    "V_raw": 0.5040748715400696
+  },
+  {
+    "episode": 33,
+    "candidate_index": 0,
+    "concept": "whistle",
+    "label": "filler",
+    "W_end": 0.00010234344517812133,
+    "W_max": 0.0,
+    "W_rr": 0.0025575447570332483,
+    "V_raw": 0.6343576312065125
+  },
+  {
+    "episode": 33,
+    "candidate_index": 1,
+    "concept": "rivalry",
+    "label": "distractor",
+    "W_end": 0.00010762074089143425,
+    "W_max": 0.0,
+    "W_rr": 0.006802721088435374,
+    "V_raw": 0.7398217916488647
+  },
+  {
+    "episode": 33,
+    "candidate_index": 2,
+    "concept": "barcelona",
+    "label": "load_bearing",
+    "W_end": 0.001615819870494306,
+    "W_max": 0.0,
+    "W_rr": 0.014285714285714285,
+    "V_raw": 0.6505284905433655
+  },
+  {
+    "episode": 33,
+    "candidate_index": 3,
+    "concept": "jersey",
+    "label": "distractor",
+    "W_end": 2.063363353954628e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0002549069589599796,
+    "V_raw": 0.635277271270752
+  },
+  {
+    "episode": 34,
+    "candidate_index": 0,
+    "concept": "blocks",
+    "label": "distractor",
+    "W_end": 0.0001107742718886584,
+    "W_max": 0.0,
+    "W_rr": 0.001076426264800861,
+    "V_raw": 0.6760241389274597
+  },
+  {
+    "episode": 34,
+    "candidate_index": 1,
+    "concept": "tiles",
+    "label": "distractor",
+    "W_end": 4.5339420466916636e-06,
+    "W_max": 0.0,
+    "W_rr": 0.00016666666666666666,
+    "V_raw": 0.6622757911682129
+  },
+  {
+    "episode": 34,
+    "candidate_index": 2,
+    "concept": "structure",
+    "label": "filler",
+    "W_end": 4.289900061849039e-06,
+    "W_max": 0.0,
+    "W_rr": 0.00011368804001819008,
+    "V_raw": 0.6762543320655823
+  },
+  {
+    "episode": 34,
+    "candidate_index": 3,
+    "concept": "stacking",
+    "label": "load_bearing",
+    "W_end": 1.6884749129530974e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0009852216748768472,
+    "V_raw": 0.6483572125434875
+  },
+  {
+    "episode": 35,
+    "candidate_index": 0,
+    "concept": "worksheet",
+    "label": "filler",
+    "W_end": 2.039164974121377e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0004701457451810061,
+    "V_raw": 0.4776036739349365
+  },
+  {
+    "episode": 35,
+    "candidate_index": 1,
+    "concept": "formula",
+    "label": "distractor",
+    "W_end": 1.3942668374511413e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0005892751915144372,
+    "V_raw": 0.5479488372802734
+  },
+  {
+    "episode": 35,
+    "candidate_index": 2,
+    "concept": "teacher",
+    "label": "filler",
+    "W_end": 6.381134153343737e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0015748031496062992,
+    "V_raw": 0.4547591805458069
+  },
+  {
+    "episode": 35,
+    "candidate_index": 3,
+    "concept": "calculator",
+    "label": "distractor",
+    "W_end": 8.3329096014495e-06,
+    "W_max": 0.0,
+    "W_rr": 0.0005844535359438924,
+    "V_raw": 0.5014508962631226
+  },
+  {
+    "episode": 35,
+    "candidate_index": 4,
+    "concept": "geometry",
+    "label": "load_bearing",
+    "W_end": 0.00016812048852443695,
+    "W_max": 0.0,
+    "W_rr": 0.0030303030303030303,
+    "V_raw": 0.5092315077781677
+  },
+  {
+    "episode": 36,
+    "candidate_index": 0,
+    "concept": "shelves",
+    "label": "filler",
+    "W_end": 5.0820468459278345e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0034482758620689655,
+    "V_raw": 0.6370806097984314
+  },
+  {
+    "episode": 36,
+    "candidate_index": 1,
+    "concept": "stones",
+    "label": "distractor",
+    "W_end": 6.221108924364671e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0015384615384615385,
+    "V_raw": 0.64067542552948
+  },
+  {
+    "episode": 36,
+    "candidate_index": 2,
+    "concept": "auction",
+    "label": "distractor",
+    "W_end": 4.59264665551018e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0009191176470588235,
+    "V_raw": 0.6298508644104004
+  },
+  {
+    "episode": 36,
+    "candidate_index": 3,
+    "concept": "artifact",
+    "label": "filler",
+    "W_end": 0.00015409129264298826,
+    "W_max": 0.0,
+    "W_rr": 0.001455604075691412,
+    "V_raw": 0.679249107837677
+  },
+  {
+    "episode": 36,
+    "candidate_index": 4,
+    "concept": "numismatics",
+    "label": "load_bearing",
+    "W_end": 4.180063115200028e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0006618133686300463,
+    "V_raw": 0.6689195036888123
+  },
+  {
+    "episode": 37,
+    "candidate_index": 0,
+    "concept": "buttresses",
+    "label": "distractor",
+    "W_end": 5.305144441081211e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0005045408678102926,
+    "V_raw": 0.5506311655044556
+  },
+  {
+    "episode": 37,
+    "candidate_index": 1,
+    "concept": "arches",
+    "label": "filler",
+    "W_end": 6.939218292245641e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0024875621890547263,
+    "V_raw": 0.6132686138153076
+  },
+  {
+    "episode": 37,
+    "candidate_index": 2,
+    "concept": "spires",
+    "label": "distractor",
+    "W_end": 0.00037421920569613576,
+    "W_max": 0.0,
+    "W_rr": 0.010101010101010102,
+    "V_raw": 0.5851255655288696
+  },
+  {
+    "episode": 37,
+    "candidate_index": 3,
+    "concept": "cathedral",
+    "label": "load_bearing",
+    "W_end": 6.956176548555959e-06,
+    "W_max": 0.0,
+    "W_rr": 0.0002642007926023778,
+    "V_raw": 0.57563316822052
+  },
+  {
+    "episode": 37,
+    "candidate_index": 4,
+    "concept": "windows",
+    "label": "filler",
+    "W_end": 2.2804137188359164e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0005952380952380953,
+    "V_raw": 0.6243364810943604
+  },
+  {
+    "episode": 38,
+    "candidate_index": 0,
+    "concept": "gi",
+    "label": "distractor",
+    "W_end": 5.9398935263743624e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0012610340479192938,
+    "V_raw": 0.5392763614654541
+  },
+  {
+    "episode": 38,
+    "candidate_index": 1,
+    "concept": "sensei",
+    "label": "distractor",
+    "W_end": 0.004805838689208031,
+    "W_max": 0.0,
+    "W_rr": 0.027777777777777776,
+    "V_raw": 0.5549306273460388
+  },
+  {
+    "episode": 38,
+    "candidate_index": 2,
+    "concept": "dojo",
+    "label": "filler",
+    "W_end": 8.091961353784427e-05,
+    "W_max": 0.0,
+    "W_rr": 0.008130081300813009,
+    "V_raw": 0.5470680594444275
+  },
+  {
+    "episode": 38,
+    "candidate_index": 3,
+    "concept": "bowing",
+    "label": "distractor",
+    "W_end": 3.967462180298753e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0012468827930174563,
+    "V_raw": 0.5704395771026611
+  },
+  {
+    "episode": 38,
+    "candidate_index": 4,
+    "concept": "japan",
+    "label": "load_bearing",
+    "W_end": 0.0005921954871155322,
+    "W_max": 0.0,
+    "W_rr": 0.006211180124223602,
+    "V_raw": 0.5625384449958801
+  },
+  {
+    "episode": 39,
+    "candidate_index": 0,
+    "concept": "gelato",
+    "label": "distractor",
+    "W_end": 0.00018705619731917977,
+    "W_max": 0.0,
+    "W_rr": 0.0021321961620469083,
+    "V_raw": 0.531268835067749
+  },
+  {
+    "episode": 39,
+    "candidate_index": 1,
+    "concept": "leather",
+    "label": "distractor",
+    "W_end": 2.002605287998449e-05,
+    "W_max": 0.0,
+    "W_rr": 0.00034281796366129587,
+    "V_raw": 0.5698947310447693
+  },
+  {
+    "episode": 39,
+    "candidate_index": 2,
+    "concept": "dome",
+    "label": "filler",
+    "W_end": 2.7977382615063107e-06,
+    "W_max": 0.0,
+    "W_rr": 0.000282326369282891,
+    "V_raw": 0.5927352905273438
+  },
+  {
+    "episode": 39,
+    "candidate_index": 3,
+    "concept": "florence",
+    "label": "load_bearing",
+    "W_end": 0.001831076224334538,
+    "W_max": 0.0,
+    "W_rr": 0.0196078431372549,
+    "V_raw": 0.6114163398742676
+  },
+  {
+    "episode": 40,
+    "candidate_index": 0,
+    "concept": "simulator",
+    "label": "filler",
+    "W_end": 1.6586476704105735e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0003972983710766786,
+    "V_raw": 0.6039741635322571
+  },
+  {
+    "episode": 40,
+    "candidate_index": 1,
+    "concept": "mission",
+    "label": "distractor",
+    "W_end": 0.002303492045029998,
+    "W_max": 0.0,
+    "W_rr": 0.019230769230769232,
+    "V_raw": 0.6132742762565613
+  },
+  {
+    "episode": 40,
+    "candidate_index": 2,
+    "concept": "space",
+    "label": "distractor",
+    "W_end": 0.00286674196831882,
+    "W_max": 0.0,
+    "W_rr": 0.024390243902439025,
+    "V_raw": 0.6352603435516357
+  },
+  {
+    "episode": 40,
+    "candidate_index": 3,
+    "concept": "houston",
+    "label": "load_bearing",
+    "W_end": 0.00018908212950918823,
+    "W_max": 0.0,
+    "W_rr": 0.0031746031746031746,
+    "V_raw": 0.5775502324104309
+  },
+  {
+    "episode": 40,
+    "candidate_index": 4,
+    "concept": "compartment",
+    "label": "filler",
+    "W_end": 2.374163523199968e-05,
+    "W_max": 0.0,
+    "W_rr": 0.001037344398340249,
+    "V_raw": 0.6169663667678833
+  },
+  {
+    "episode": 41,
+    "candidate_index": 0,
+    "concept": "lantern",
+    "label": "distractor",
+    "W_end": 9.29304223973304e-05,
+    "W_max": 0.0,
+    "W_rr": 0.001876172607879925,
+    "V_raw": 0.5197262167930603
+  },
+  {
+    "episode": 41,
+    "candidate_index": 1,
+    "concept": "priest",
+    "label": "distractor",
+    "W_end": 0.00019596672791521996,
+    "W_max": 0.0,
+    "W_rr": 0.003289473684210526,
+    "V_raw": 0.5002415776252747
+  },
+  {
+    "episode": 41,
+    "candidate_index": 2,
+    "concept": "pilgrim",
+    "label": "filler",
+    "W_end": 0.0010845087235793471,
+    "W_max": 0.0,
+    "W_rr": 0.011494252873563218,
+    "V_raw": 0.5508124232292175
+  },
+  {
+    "episode": 41,
+    "candidate_index": 3,
+    "concept": "ganges",
+    "label": "load_bearing",
+    "W_end": 0.0002859957457985729,
+    "W_max": 0.0,
+    "W_rr": 0.02,
+    "V_raw": 0.5984248518943787
+  },
+  {
+    "episode": 41,
+    "candidate_index": 4,
+    "concept": "marigold",
+    "label": "filler",
+    "W_end": 4.400452598929405e-05,
+    "W_max": 0.0,
+    "W_rr": 0.00196078431372549,
+    "V_raw": 0.5002478957176208
+  },
+  {
+    "episode": 42,
+    "candidate_index": 0,
+    "concept": "painting",
+    "label": "distractor",
+    "W_end": 0.001450800453312695,
+    "W_max": 0.0,
+    "W_rr": 0.015151515151515152,
+    "V_raw": 0.6619564890861511
+  },
+  {
+    "episode": 42,
+    "candidate_index": 1,
+    "concept": "bidder",
+    "label": "filler",
+    "W_end": 4.964365507476032e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0009025270758122744,
+    "V_raw": 0.6151266098022461
+  },
+  {
+    "episode": 42,
+    "candidate_index": 2,
+    "concept": "vermeer",
+    "label": "filler",
+    "W_end": 0.0004784231714438647,
+    "W_max": 0.0,
+    "W_rr": 0.007407407407407408,
+    "V_raw": 0.6095452308654785
+  },
+  {
+    "episode": 42,
+    "candidate_index": 3,
+    "concept": "art",
+    "label": "load_bearing",
+    "W_end": 0.0007887865067459643,
+    "W_max": 0.0,
+    "W_rr": 0.007874015748031496,
+    "V_raw": 0.6566802263259888
+  },
+  {
+    "episode": 43,
+    "candidate_index": 0,
+    "concept": "script",
+    "label": "filler",
+    "W_end": 5.298113319440745e-05,
+    "W_max": 0.0,
+    "W_rr": 0.001303780964797914,
+    "V_raw": 0.6298017501831055
+  },
+  {
+    "episode": 43,
+    "candidate_index": 1,
+    "concept": "canyon",
+    "label": "distractor",
+    "W_end": 1.1282846571702976e-05,
+    "W_max": 0.0,
+    "W_rr": 0.00020283975659229209,
+    "V_raw": 0.6334294080734253
+  },
+  {
+    "episode": 43,
+    "candidate_index": 2,
+    "concept": "actor",
+    "label": "distractor",
+    "W_end": 1.3956585462437943e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0009652509652509653,
+    "V_raw": 0.5756189227104187
+  },
+  {
+    "episode": 43,
+    "candidate_index": 3,
+    "concept": "film",
+    "label": "load_bearing",
+    "W_end": 0.0003960952162742615,
+    "W_max": 0.0,
+    "W_rr": 0.006578947368421052,
+    "V_raw": 0.6151372194290161
+  },
+  {
+    "episode": 43,
+    "candidate_index": 4,
+    "concept": "studio",
+    "label": "filler",
+    "W_end": 9.334871720056981e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0021008403361344537,
+    "V_raw": 0.6298013925552368
+  },
+  {
+    "episode": 44,
+    "candidate_index": 0,
+    "concept": "snowboard",
+    "label": "distractor",
+    "W_end": 0.0014125538291409612,
+    "W_max": 0.0,
+    "W_rr": 0.014705882352941176,
+    "V_raw": 0.6910264492034912
+  },
+  {
+    "episode": 44,
+    "candidate_index": 1,
+    "concept": "chocolate",
+    "label": "distractor",
+    "W_end": 0.00031518342439085245,
+    "W_max": 0.0,
+    "W_rr": 0.004629629629629629,
+    "V_raw": 0.6325604319572449
+  },
+  {
+    "episode": 44,
+    "candidate_index": 2,
+    "concept": "alpine",
+    "label": "distractor",
+    "W_end": 0.00010591041791485623,
+    "W_max": 0.0,
+    "W_rr": 0.0015873015873015873,
+    "V_raw": 0.6992961168289185
+  },
+  {
+    "episode": 44,
+    "candidate_index": 3,
+    "concept": "slope",
+    "label": "filler",
+    "W_end": 0.0001488820998929441,
+    "W_max": 0.0,
+    "W_rr": 0.002457002457002457,
+    "V_raw": 0.6809255480766296
+  },
+  {
+    "episode": 44,
+    "candidate_index": 4,
+    "concept": "chalet",
+    "label": "filler",
+    "W_end": 7.824927160982043e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0009615384615384616,
+    "V_raw": 0.6279842257499695
+  },
+  {
+    "episode": 44,
+    "candidate_index": 5,
+    "concept": "switzerland",
+    "label": "load_bearing",
+    "W_end": 5.876034265384078e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0011074197120708748,
+    "V_raw": 0.698470413684845
+  },
+  {
+    "episode": 45,
+    "candidate_index": 0,
+    "concept": "sandstone",
+    "label": "distractor",
+    "W_end": 0.0004811350954696536,
+    "W_max": 0.0,
+    "W_rr": 0.005050505050505051,
+    "V_raw": 0.6077485680580139
+  },
+  {
+    "episode": 45,
+    "candidate_index": 1,
+    "concept": "sphinx",
+    "label": "distractor",
+    "W_end": 0.00025753307272680104,
+    "W_max": 0.0,
+    "W_rr": 0.005154639175257732,
+    "V_raw": 0.5313525199890137
+  },
+  {
+    "episode": 45,
+    "candidate_index": 2,
+    "concept": "camel",
+    "label": "distractor",
+    "W_end": 0.00026989233447238803,
+    "W_max": 0.0,
+    "W_rr": 0.0031645569620253164,
+    "V_raw": 0.5430096983909607
+  },
+  {
+    "episode": 45,
+    "candidate_index": 3,
+    "concept": "desert",
+    "label": "filler",
+    "W_end": 0.002016575774177909,
+    "W_max": 0.0,
+    "W_rr": 0.02564102564102564,
+    "V_raw": 0.5928358435630798
+  },
+  {
+    "episode": 45,
+    "candidate_index": 4,
+    "concept": "professor",
+    "label": "filler",
+    "W_end": 6.022111847414635e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0012468827930174563,
+    "V_raw": 0.4650458097457886
+  },
+  {
+    "episode": 45,
+    "candidate_index": 5,
+    "concept": "egypt",
+    "label": "load_bearing",
+    "W_end": 0.0014141345163807273,
+    "W_max": 0.0,
+    "W_rr": 0.011627906976744186,
+    "V_raw": 0.629887044429779
+  },
+  {
+    "episode": 46,
+    "candidate_index": 0,
+    "concept": "kanji",
+    "label": "distractor",
+    "W_end": 2.4533514078939334e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0008532423208191126,
+    "V_raw": 0.5433914661407471
+  },
+  {
+    "episode": 46,
+    "candidate_index": 1,
+    "concept": "blossoms",
+    "label": "distractor",
+    "W_end": 3.1013267289381474e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0009633911368015414,
+    "V_raw": 0.5044090151786804
+  },
+  {
+    "episode": 46,
+    "candidate_index": 2,
+    "concept": "soup",
+    "label": "filler",
+    "W_end": 9.758758096722886e-06,
+    "W_max": 0.0,
+    "W_rr": 0.0004803073967339097,
+    "V_raw": 0.4731884300708771
+  },
+  {
+    "episode": 46,
+    "candidate_index": 3,
+    "concept": "tokyo",
+    "label": "load_bearing",
+    "W_end": 2.611578929645475e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0010604453870625664,
+    "V_raw": 0.49300000071525574
+  },
+  {
+    "episode": 47,
+    "candidate_index": 0,
+    "concept": "battlement",
+    "label": "distractor",
+    "W_end": 0.00022295591770671308,
+    "W_max": 0.0,
+    "W_rr": 0.0026041666666666665,
+    "V_raw": 0.5274448394775391
+  },
+  {
+    "episode": 47,
+    "candidate_index": 1,
+    "concept": "rampart",
+    "label": "distractor",
+    "W_end": 7.842325430829078e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0007621951219512195,
+    "V_raw": 0.5928341746330261
+  },
+  {
+    "episode": 47,
+    "candidate_index": 2,
+    "concept": "glove",
+    "label": "filler",
+    "W_end": 7.367183570750058e-05,
+    "W_max": 0.0,
+    "W_rr": 0.000724112961622013,
+    "V_raw": 0.504083514213562
+  },
+  {
+    "episode": 47,
+    "candidate_index": 3,
+    "concept": "banner",
+    "label": "filler",
+    "W_end": 4.004884249297902e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0004332755632582322,
+    "V_raw": 0.5196966528892517
+  },
+  {
+    "episode": 47,
+    "candidate_index": 4,
+    "concept": "fortress",
+    "label": "load_bearing",
+    "W_end": 4.070293653057888e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0008340283569641367,
+    "V_raw": 0.592816948890686
+  },
+  {
+    "episode": 48,
+    "candidate_index": 0,
+    "concept": "dashboard",
+    "label": "filler",
+    "W_end": 1.5786382618898642e-06,
+    "W_max": 0.0,
+    "W_rr": 0.00010503098414032139,
+    "V_raw": 0.6462141275405884
+  },
+  {
+    "episode": 48,
+    "candidate_index": 1,
+    "concept": "avatar",
+    "label": "distractor",
+    "W_end": 0.00032998021924868226,
+    "W_max": 0.0,
+    "W_rr": 0.003355704697986577,
+    "V_raw": 0.5976312756538391
+  },
+  {
+    "episode": 48,
+    "candidate_index": 2,
+    "concept": "analytics",
+    "label": "filler",
+    "W_end": 4.026223177788779e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0004246284501061571,
+    "V_raw": 0.6835748553276062
+  },
+  {
+    "episode": 48,
+    "candidate_index": 3,
+    "concept": "server",
+    "label": "distractor",
+    "W_end": 2.2940726921660826e-05,
+    "W_max": 0.0,
+    "W_rr": 0.00039856516540454366,
+    "V_raw": 0.6801759600639343
+  },
+  {
+    "episode": 48,
+    "candidate_index": 4,
+    "concept": "developer",
+    "label": "load_bearing",
+    "W_end": 7.693668635511131e-07,
+    "W_max": 0.0,
+    "W_rr": 7.95798185580137e-05,
+    "V_raw": 0.6041824817657471
+  },
+  {
+    "episode": 49,
+    "candidate_index": 0,
+    "concept": "mural",
+    "label": "distractor",
+    "W_end": 9.18055884540081e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0038022813688212928,
+    "V_raw": 0.5775436758995056
+  },
+  {
+    "episode": 49,
+    "candidate_index": 1,
+    "concept": "jaguar",
+    "label": "distractor",
+    "W_end": 0.0001331842504441738,
+    "W_max": 0.0,
+    "W_rr": 0.0013605442176870747,
+    "V_raw": 0.5737066864967346
+  },
+  {
+    "episode": 49,
+    "candidate_index": 2,
+    "concept": "mexico",
+    "label": "load_bearing",
+    "W_end": 6.800101255066693e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0016835016835016834,
+    "V_raw": 0.5964698195457458
+  },
+  {
+    "episode": 49,
+    "candidate_index": 3,
+    "concept": "taco",
+    "label": "distractor",
+    "W_end": 8.114514457702171e-06,
+    "W_max": 0.0,
+    "W_rr": 0.0002345765892563922,
+    "V_raw": 0.5351467728614807
+  },
+  {
+    "episode": 50,
+    "candidate_index": 0,
+    "concept": "blade",
+    "label": "distractor",
+    "W_end": 1.685069037193898e-05,
+    "W_max": 0.0,
+    "W_rr": 0.00026845637583892615,
+    "V_raw": 0.6169861555099487
+  },
+  {
+    "episode": 50,
+    "candidate_index": 1,
+    "concept": "mask",
+    "label": "filler",
+    "W_end": 9.553549170959741e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0016722408026755853,
+    "V_raw": 0.5679788589477539
+  },
+  {
+    "episode": 50,
+    "candidate_index": 2,
+    "concept": "duel",
+    "label": "load_bearing",
+    "W_end": 6.98952644597739e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0012121212121212121,
+    "V_raw": 0.6261676549911499
+  },
+  {
+    "episode": 50,
+    "candidate_index": 3,
+    "concept": "salute",
+    "label": "distractor",
+    "W_end": 0.0002615378762129694,
+    "W_max": 0.0,
+    "W_rr": 0.0051813471502590676,
+    "V_raw": 0.5765710473060608
+  },
+  {
+    "episode": 51,
+    "candidate_index": 0,
+    "concept": "chanting",
+    "label": "distractor",
+    "W_end": 8.576243999414146e-05,
+    "W_max": 0.0,
+    "W_rr": 0.003003003003003003,
+    "V_raw": 0.5478532314300537
+  },
+  {
+    "episode": 51,
+    "candidate_index": 1,
+    "concept": "poses",
+    "label": "distractor",
+    "W_end": 3.3258671464864165e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0010504201680672268,
+    "V_raw": 0.5630506873130798
+  },
+  {
+    "episode": 51,
+    "candidate_index": 2,
+    "concept": "mat",
+    "label": "filler",
+    "W_end": 0.00013083642988931388,
+    "W_max": 0.0,
+    "W_rr": 0.0016750418760469012,
+    "V_raw": 0.5473909378051758
+  },
+  {
+    "episode": 51,
+    "candidate_index": 3,
+    "concept": "meditation",
+    "label": "load_bearing",
+    "W_end": 0.00013026228407397866,
+    "W_max": 0.0,
+    "W_rr": 0.0028735632183908046,
+    "V_raw": 0.604815661907196
+  },
+  {
+    "episode": 51,
+    "candidate_index": 4,
+    "concept": "knees",
+    "label": "filler",
+    "W_end": 0.0002001840912271291,
+    "W_max": 0.0,
+    "W_rr": 0.006211180124223602,
+    "V_raw": 0.5472248196601868
+  },
+  {
+    "episode": 52,
+    "candidate_index": 0,
+    "concept": "flock",
+    "label": "distractor",
+    "W_end": 4.430876288097352e-05,
+    "W_max": 0.0,
+    "W_rr": 0.004329004329004329,
+    "V_raw": 0.670647919178009
+  },
+  {
+    "episode": 52,
+    "candidate_index": 1,
+    "concept": "dog",
+    "label": "filler",
+    "W_end": 8.58964540384477e-06,
+    "W_max": 0.0,
+    "W_rr": 0.00044603033006244426,
+    "V_raw": 0.620690107345581
+  },
+  {
+    "episode": 52,
+    "candidate_index": 2,
+    "concept": "gate",
+    "label": "filler",
+    "W_end": 1.4088805983192287e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0005313496280552603,
+    "V_raw": 0.6514068841934204
+  },
+  {
+    "episode": 52,
+    "candidate_index": 3,
+    "concept": "pasture",
+    "label": "distractor",
+    "W_end": 3.804762673098594e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0012135922330097086,
+    "V_raw": 0.6826160550117493
+  },
+  {
+    "episode": 52,
+    "candidate_index": 4,
+    "concept": "livestock",
+    "label": "load_bearing",
+    "W_end": 2.7545542252482846e-05,
+    "W_max": 0.0,
+    "W_rr": 0.000966183574879227,
+    "V_raw": 0.6876750588417053
+  },
+  {
+    "episode": 53,
+    "candidate_index": 0,
+    "concept": "runway",
+    "label": "filler",
+    "W_end": 2.9237844501039945e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0012135922330097086,
+    "V_raw": 0.6197434067726135
+  },
+  {
+    "episode": 53,
+    "candidate_index": 1,
+    "concept": "cockpit",
+    "label": "distractor",
+    "W_end": 0.0005960690905340016,
+    "W_max": 0.0,
+    "W_rr": 0.005681818181818182,
+    "V_raw": 0.630730926990509
+  },
+  {
+    "episode": 53,
+    "candidate_index": 2,
+    "concept": "hangar",
+    "label": "distractor",
+    "W_end": 0.00014047704462427646,
+    "W_max": 0.0,
+    "W_rr": 0.0020964360587002098,
+    "V_raw": 0.586097002029419
+  },
+  {
+    "episode": 53,
+    "candidate_index": 3,
+    "concept": "pilot",
+    "label": "load_bearing",
+    "W_end": 0.0008809329592622817,
+    "W_max": 0.0,
+    "W_rr": 0.008547008547008548,
+    "V_raw": 0.6325687170028687
+  },
+  {
+    "episode": 53,
+    "candidate_index": 4,
+    "concept": "jet",
+    "label": "distractor",
+    "W_end": 0.0003343644493725151,
+    "W_max": 0.0,
+    "W_rr": 0.003937007874015748,
+    "V_raw": 0.6011773943901062
+  },
+  {
+    "episode": 54,
+    "candidate_index": 0,
+    "concept": "forest",
+    "label": "distractor",
+    "W_end": 0.0001821812184061855,
+    "W_max": 0.0,
+    "W_rr": 0.0029585798816568047,
+    "V_raw": 0.6352871060371399
+  },
+  {
+    "episode": 54,
+    "candidate_index": 1,
+    "concept": "permit",
+    "label": "filler",
+    "W_end": 1.929446625581477e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0003824091778202677,
+    "V_raw": 0.6262508034706116
+  },
+  {
+    "episode": 54,
+    "candidate_index": 2,
+    "concept": "volcano",
+    "label": "distractor",
+    "W_end": 4.46454287157394e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0014577259475218659,
+    "V_raw": 0.6496622562408447
+  },
+  {
+    "episode": 54,
+    "candidate_index": 3,
+    "concept": "rwanda",
+    "label": "load_bearing",
+    "W_end": 8.957184036262333e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0018484288354898336,
+    "V_raw": 0.5908472537994385
+  },
+  {
+    "episode": 55,
+    "candidate_index": 0,
+    "concept": "chocolat",
+    "label": "distractor",
+    "W_end": 0.00011237396392971277,
+    "W_max": 0.0,
+    "W_rr": 0.002881844380403458,
+    "V_raw": 0.5468031167984009
+  },
+  {
+    "episode": 55,
+    "candidate_index": 1,
+    "concept": "vacation",
+    "label": "filler",
+    "W_end": 0.00019912673451472074,
+    "W_max": 0.0,
+    "W_rr": 0.003236245954692557,
+    "V_raw": 0.5737696290016174
+  },
+  {
+    "episode": 55,
+    "candidate_index": 2,
+    "concept": "paris",
+    "label": "load_bearing",
+    "W_end": 0.000499140121974051,
+    "W_max": 0.0,
+    "W_rr": 0.0058823529411764705,
+    "V_raw": 0.5584054589271545
+  },
+  {
+    "episode": 55,
+    "candidate_index": 3,
+    "concept": "baker",
+    "label": "filler",
+    "W_end": 7.009467935858993e-06,
+    "W_max": 0.0,
+    "W_rr": 0.0004192872117400419,
+    "V_raw": 0.5641652941703796
+  },
+  {
+    "episode": 55,
+    "candidate_index": 4,
+    "concept": "boat",
+    "label": "distractor",
+    "W_end": 3.916891273547662e-06,
+    "W_max": 0.0,
+    "W_rr": 0.0001839587932303164,
+    "V_raw": 0.511788010597229
+  },
+  {
+    "episode": 56,
+    "candidate_index": 0,
+    "concept": "trophy",
+    "label": "distractor",
+    "W_end": 5.716277155443095e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0011185682326621924,
+    "V_raw": 0.5039757490158081
+  },
+  {
+    "episode": 56,
+    "candidate_index": 1,
+    "concept": "student",
+    "label": "filler",
+    "W_end": 5.409085497376509e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0018726591760299626,
+    "V_raw": 0.5078874230384827
+  },
+  {
+    "episode": 56,
+    "candidate_index": 2,
+    "concept": "university",
+    "label": "filler",
+    "W_end": 9.838488040259108e-06,
+    "W_max": 0.0,
+    "W_rr": 0.0005903187721369539,
+    "V_raw": 0.5098962187767029
+  },
+  {
+    "episode": 56,
+    "candidate_index": 3,
+    "concept": "algorithm",
+    "label": "distractor",
+    "W_end": 9.812271855480503e-06,
+    "W_max": 0.0,
+    "W_rr": 0.0006195786864931846,
+    "V_raw": 0.583341658115387
+  },
+  {
+    "episode": 56,
+    "candidate_index": 4,
+    "concept": "carnegie",
+    "label": "load_bearing",
+    "W_end": 2.3710822460998315e-06,
+    "W_max": 0.0,
+    "W_rr": 0.0001635858007524947,
+    "V_raw": 0.46887096762657166
+  },
+  {
+    "episode": 57,
+    "candidate_index": 0,
+    "concept": "strings",
+    "label": "distractor",
+    "W_end": 3.800875856541097e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0017391304347826088,
+    "V_raw": 0.672454297542572
+  },
+  {
+    "episode": 57,
+    "candidate_index": 1,
+    "concept": "pegs",
+    "label": "filler",
+    "W_end": 2.0882333046756685e-05,
+    "W_max": 0.0,
+    "W_rr": 0.00032583903551645487,
+    "V_raw": 0.5927829742431641
+  },
+  {
+    "episode": 57,
+    "candidate_index": 2,
+    "concept": "recital",
+    "label": "filler",
+    "W_end": 5.563755257753655e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0021321961620469083,
+    "V_raw": 0.6189566254615784
+  },
+  {
+    "episode": 57,
+    "candidate_index": 3,
+    "concept": "bowed",
+    "label": "load_bearing",
+    "W_end": 2.869051786547061e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0017953321364452424,
+    "V_raw": 0.5624904036521912
+  },
+  {
+    "episode": 58,
+    "candidate_index": 0,
+    "concept": "jury",
+    "label": "distractor",
+    "W_end": 0.00012290886661503464,
+    "W_max": 0.0,
+    "W_rr": 0.0011074197120708748,
+    "V_raw": 0.6373022198677063
+  },
+  {
+    "episode": 58,
+    "candidate_index": 1,
+    "concept": "courtroom",
+    "label": "filler",
+    "W_end": 0.0013770953519269824,
+    "W_max": 0.0,
+    "W_rr": 0.011764705882352941,
+    "V_raw": 0.6153515577316284
+  },
+  {
+    "episode": 58,
+    "candidate_index": 2,
+    "concept": "argument",
+    "label": "distractor",
+    "W_end": 4.5226274778542574e-06,
+    "W_max": 0.0,
+    "W_rr": 0.00011615750958299454,
+    "V_raw": 0.5740889310836792
+  },
+  {
+    "episode": 58,
+    "candidate_index": 3,
+    "concept": "judge",
+    "label": "distractor",
+    "W_end": 0.0017173991072922945,
+    "W_max": 0.0,
+    "W_rr": 0.02702702702702703,
+    "V_raw": 0.5432610511779785
+  },
+  {
+    "episode": 58,
+    "candidate_index": 4,
+    "concept": "attorney",
+    "label": "load_bearing",
+    "W_end": 0.00028865484637208283,
+    "W_max": 0.0,
+    "W_rr": 0.004651162790697674,
+    "V_raw": 0.5432965159416199
+  },
+  {
+    "episode": 59,
+    "candidate_index": 0,
+    "concept": "planner",
+    "label": "distractor",
+    "W_end": 6.8820163505733944e-06,
+    "W_max": 0.0,
+    "W_rr": 9.46073793755913e-05,
+    "V_raw": 0.46932074427604675
+  },
+  {
+    "episode": 59,
+    "candidate_index": 1,
+    "concept": "technician",
+    "label": "distractor",
+    "W_end": 8.075146070041228e-06,
+    "W_max": 0.0,
+    "W_rr": 0.00021399529210357372,
+    "V_raw": 0.5005718469619751
+  },
+  {
+    "episode": 59,
+    "candidate_index": 2,
+    "concept": "gloves",
+    "label": "distractor",
+    "W_end": 1.0155129530176055e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0004108463434675431,
+    "V_raw": 0.5471228361129761
+  },
+  {
+    "episode": 59,
+    "candidate_index": 3,
+    "concept": "clipboard",
+    "label": "filler",
+    "W_end": 5.369712016545236e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0004752851711026616,
+    "V_raw": 0.4461791515350342
+  },
+  {
+    "episode": 59,
+    "candidate_index": 4,
+    "concept": "surgery",
+    "label": "load_bearing",
+    "W_end": 0.0005902103730477393,
+    "W_max": 0.0,
+    "W_rr": 0.007462686567164179,
+    "V_raw": 0.551149845123291
+  },
+  {
+    "episode": 60,
+    "candidate_index": 0,
+    "concept": "headphones",
+    "label": "distractor",
+    "W_end": 2.857517210941296e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0008431703204047217,
+    "V_raw": 0.5197311043739319
+  },
+  {
+    "episode": 60,
+    "candidate_index": 1,
+    "concept": "microphone",
+    "label": "distractor",
+    "W_end": 0.00022439555323217064,
+    "W_max": 0.0,
+    "W_rr": 0.007692307692307693,
+    "V_raw": 0.5431174635887146
+  },
+  {
+    "episode": 60,
+    "candidate_index": 2,
+    "concept": "producer",
+    "label": "distractor",
+    "W_end": 1.287983832298778e-05,
+    "W_max": 0.0,
+    "W_rr": 0.000434593654932638,
+    "V_raw": 0.5431211590766907
+  },
+  {
+    "episode": 60,
+    "candidate_index": 3,
+    "concept": "booth",
+    "label": "filler",
+    "W_end": 3.546477455529384e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0004008016032064128,
+    "V_raw": 0.4925590753555298
+  },
+  {
+    "episode": 60,
+    "candidate_index": 4,
+    "concept": "window",
+    "label": "filler",
+    "W_end": 2.62012272287393e-05,
+    "W_max": 0.0,
+    "W_rr": 0.00045167118337850043,
+    "V_raw": 0.5392475128173828
+  },
+  {
+    "episode": 60,
+    "candidate_index": 5,
+    "concept": "radio",
+    "label": "load_bearing",
+    "W_end": 0.0001269675267394632,
+    "W_max": 0.0,
+    "W_rr": 0.0037593984962406013,
+    "V_raw": 0.5816919207572937
+  },
+  {
+    "episode": 61,
+    "candidate_index": 0,
+    "concept": "flour",
+    "label": "distractor",
+    "W_end": 0.0073292991146445274,
+    "W_max": 0.0,
+    "W_rr": 0.07692307692307693,
+    "V_raw": 0.6300392150878906
+  },
+  {
+    "episode": 61,
+    "candidate_index": 1,
+    "concept": "apron",
+    "label": "distractor",
+    "W_end": 1.0033055332314689e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0005707762557077625,
+    "V_raw": 0.5701561570167542
+  },
+  {
+    "episode": 61,
+    "candidate_index": 2,
+    "concept": "oven",
+    "label": "distractor",
+    "W_end": 0.00017923499399330467,
+    "W_max": 0.0,
+    "W_rr": 0.002288329519450801,
+    "V_raw": 0.6337673664093018
+  },
+  {
+    "episode": 61,
+    "candidate_index": 3,
+    "concept": "kitchen",
+    "label": "filler",
+    "W_end": 3.32849049300421e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0008605851979345956,
+    "V_raw": 0.6373605132102966
+  },
+  {
+    "episode": 61,
+    "candidate_index": 4,
+    "concept": "timer",
+    "label": "filler",
+    "W_end": 0.00010662007116479799,
+    "W_max": 0.0,
+    "W_rr": 0.0012903225806451613,
+    "V_raw": 0.5779088139533997
+  },
+  {
+    "episode": 61,
+    "candidate_index": 5,
+    "concept": "baking",
+    "label": "load_bearing",
+    "W_end": 0.00217873090878129,
+    "W_max": 0.0,
+    "W_rr": 0.03333333333333333,
+    "V_raw": 0.6373850703239441
+  },
+  {
+    "episode": 62,
+    "candidate_index": 0,
+    "concept": "knife",
+    "label": "distractor",
+    "W_end": 1.1172827498739935e-06,
+    "W_max": 0.0,
+    "W_rr": 0.0001364442625187611,
+    "V_raw": 0.5469620227813721
+  },
+  {
+    "episode": 62,
+    "candidate_index": 1,
+    "concept": "ocean",
+    "label": "distractor",
+    "W_end": 3.4496999433031306e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0005878894767783657,
+    "V_raw": 0.5928918123245239
+  },
+  {
+    "episode": 62,
+    "candidate_index": 2,
+    "concept": "tea",
+    "label": "filler",
+    "W_end": 1.7577322068973444e-06,
+    "W_max": 0.0,
+    "W_rr": 0.00017123287671232877,
+    "V_raw": 0.49629703164100647
+  },
+  {
+    "episode": 62,
+    "candidate_index": 3,
+    "concept": "chef",
+    "label": "load_bearing",
+    "W_end": 0.0005028411978855729,
+    "W_max": 0.0,
+    "W_rr": 0.0064516129032258064,
+    "V_raw": 0.5197094678878784
+  },
+  {
+    "episode": 62,
+    "candidate_index": 4,
+    "concept": "guest",
+    "label": "distractor",
+    "W_end": 3.5592052881838754e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0006042296072507553,
+    "V_raw": 0.573928713798523
+  },
+  {
+    "episode": 63,
+    "candidate_index": 0,
+    "concept": "peak",
+    "label": "distractor",
+    "W_end": 6.106851287768222e-06,
+    "W_max": 0.0,
+    "W_rr": 0.00031887755102040814,
+    "V_raw": 0.6262096762657166
+  },
+  {
+    "episode": 63,
+    "candidate_index": 1,
+    "concept": "pine",
+    "label": "filler",
+    "W_end": 8.027482545003295e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0025906735751295338,
+    "V_raw": 0.6225296258926392
+  },
+  {
+    "episode": 63,
+    "candidate_index": 2,
+    "concept": "fireplace",
+    "label": "distractor",
+    "W_end": 0.0001699249551165849,
+    "W_max": 0.0,
+    "W_rr": 0.0018450184501845018,
+    "V_raw": 0.5965051651000977
+  },
+  {
+    "episode": 63,
+    "candidate_index": 3,
+    "concept": "sled",
+    "label": "distractor",
+    "W_end": 9.703155956231058e-05,
+    "W_max": 0.0,
+    "W_rr": 0.008771929824561403,
+    "V_raw": 0.5983842611312866
+  },
+  {
+    "episode": 63,
+    "candidate_index": 4,
+    "concept": "goat",
+    "label": "filler",
+    "W_end": 6.437284901039675e-05,
+    "W_max": 0.0,
+    "W_rr": 0.002173913043478261,
+    "V_raw": 0.5737654566764832
+  },
+  {
+    "episode": 63,
+    "candidate_index": 5,
+    "concept": "alps",
+    "label": "load_bearing",
+    "W_end": 1.766015157045331e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0003254149040026033,
+    "V_raw": 0.5775474905967712
+  },
+  {
+    "episode": 64,
+    "candidate_index": 0,
+    "concept": "scroll",
+    "label": "distractor",
+    "W_end": 0.00019912300922442228,
+    "W_max": 0.0,
+    "W_rr": 0.001876172607879925,
+    "V_raw": 0.5702906847000122
+  },
+  {
+    "episode": 64,
+    "candidate_index": 1,
+    "concept": "jade",
+    "label": "filler",
+    "W_end": 4.7480963985435665e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0006325110689437065,
+    "V_raw": 0.6079734563827515
+  },
+  {
+    "episode": 64,
+    "candidate_index": 2,
+    "concept": "characters",
+    "label": "filler",
+    "W_end": 0.0003060076851397753,
+    "W_max": 0.0,
+    "W_rr": 0.0027472527472527475,
+    "V_raw": 0.6042145490646362
+  },
+  {
+    "episode": 64,
+    "candidate_index": 3,
+    "concept": "china",
+    "label": "load_bearing",
+    "W_end": 4.80195194541011e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0005285412262156448,
+    "V_raw": 0.6154738664627075
+  },
+  {
+    "episode": 65,
+    "candidate_index": 0,
+    "concept": "guide",
+    "label": "distractor",
+    "W_end": 2.058257450698875e-06,
+    "W_max": 0.0,
+    "W_rr": 0.00030807147258163895,
+    "V_raw": 0.5470011234283447
+  },
+  {
+    "episode": 65,
+    "candidate_index": 1,
+    "concept": "village",
+    "label": "filler",
+    "W_end": 8.005982090253383e-05,
+    "W_max": 0.0,
+    "W_rr": 0.000741839762611276,
+    "V_raw": 0.5548513531684875
+  },
+  {
+    "episode": 65,
+    "candidate_index": 2,
+    "concept": "trek",
+    "label": "filler",
+    "W_end": 6.839964771643281e-05,
+    "W_max": 0.0,
+    "W_rr": 0.003278688524590164,
+    "V_raw": 0.543112576007843
+  },
+  {
+    "episode": 65,
+    "candidate_index": 3,
+    "concept": "nepal",
+    "label": "load_bearing",
+    "W_end": 1.1979300325037912e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0012330456226880395,
+    "V_raw": 0.554739236831665
+  },
+  {
+    "episode": 66,
+    "candidate_index": 0,
+    "concept": "redwood",
+    "label": "distractor",
+    "W_end": 1.2294237421883736e-05,
+    "W_max": 0.0,
+    "W_rr": 0.001092896174863388,
+    "V_raw": 0.5736921429634094
+  },
+  {
+    "episode": 66,
+    "candidate_index": 1,
+    "concept": "wharf",
+    "label": "filler",
+    "W_end": 7.089165592333302e-05,
+    "W_max": 0.0,
+    "W_rr": 0.002257336343115124,
+    "V_raw": 0.5945590734481812
+  },
+  {
+    "episode": 66,
+    "candidate_index": 2,
+    "concept": "fog",
+    "label": "distractor",
+    "W_end": 9.154794497590046e-06,
+    "W_max": 0.0,
+    "W_rr": 0.0002559508574353724,
+    "V_raw": 0.6058146357536316
+  },
+  {
+    "episode": 66,
+    "candidate_index": 3,
+    "concept": "golden",
+    "label": "load_bearing",
+    "W_end": 1.1835069017251953e-05,
+    "W_max": 0.0,
+    "W_rr": 0.0005012531328320802,
+    "V_raw": 0.5515921115875244
+  },
+  {
+    "episode": 66,
+    "candidate_index": 4,
+    "concept": "sourdough",
+    "label": "distractor",
+    "W_end": 6.628275150433183e-05,
+    "W_max": 0.0,
+    "W_rr": 0.01282051282051282,
+    "V_raw": 0.5621868371963501
+  },
+  {
+    "episode": 67,
+    "candidate_index": 0,
+    "concept": "farmland",
+    "label": "filler",
+    "W_end": 3.396105967112817e-05,
+    "W_max": 0.0,
+    "W_rr": 0.006369426751592357,
+    "V_raw": 0.5195618867874146
+  },
+  {
+    "episode": 67,
+    "candidate_index": 1,
+    "concept": "rain",
+    "label": "distractor",
+    "W_end": 8.77448619576171e-05,
+    "W_max": 0.0,
+    "W_rr": 0.002638522427440633,
+    "V_raw": 0.5156818628311157
+  },
+  {
+    "episode": 67,
+    "candidate_index": 2,
+    "concept": "race",
+    "label": "distractor",
+    "W_end": 0.00032095739152282476,
+    "W_max": 0.0,
+    "W_rr": 0.006622516556291391,
+    "V_raw": 0.5851951241493225
+  },
+  {
+    "episode": 67,
+    "candidate_index": 3,
+    "concept": "baguette",
+    "label": "filler",
+    "W_end": 0.00021673717128578573,
+    "W_max": 0.0,
+    "W_rr": 0.002066115702479339,
+    "V_raw": 0.5078648328781128
+  },
+  {
+    "episode": 67,
+    "candidate_index": 4,
+    "concept": "france",
+    "label": "load_bearing",
+    "W_end": 0.00041211742791347206,
+    "W_max": 0.0,
+    "W_rr": 0.007575757575757576,
+    "V_raw": 0.564166784286499
+  }
+]

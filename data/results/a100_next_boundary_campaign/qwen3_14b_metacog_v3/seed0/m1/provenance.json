@@ -1,0 +1,137 @@
+{
+  "campaign_stage": "M1",
+  "data_isolation": {
+    "allowed_sources": [
+      "evoked",
+      "evoked_g2",
+      "explicit"
+    ],
+    "observed_sources": [
+      "evoked",
+      "evoked_g2",
+      "explicit"
+    ],
+    "ood_evaluated": false,
+    "ood_loaded": false
+  },
+  "resolved": {
+    "chat_template": {
+      "present": true,
+      "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "source": "tokenizer.chat_template"
+    },
+    "device": {
+      "bf16_supported": true,
+      "compute_capability": [
+        8,
+        0
+      ],
+      "index": 0,
+      "name": "NVIDIA A100-SXM4-80GB",
+      "total_memory_bytes": 85093777408,
+      "type": "cuda"
+    },
+    "model_commit": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "model_name_or_path": "Qwen/Qwen3-14B",
+    "tokenizer_class": "Qwen2TokenizerFast",
+    "tokenizer_commit": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "tokenizer_name_or_path": "Qwen/Qwen3-14B",
+    "verbal_readout": {
+      "no_token_ids": [
+        902,
+        2152,
+        2308,
+        2753,
+        8996
+      ],
+      "no_variants": [
+        "no",
+        " no",
+        "No",
+        " No",
+        "NO"
+      ],
+      "scoring": "sum next-token probability over unique first-token ids",
+      "yes_token_ids": [
+        7414,
+        9454,
+        9693,
+        9834,
+        14004
+      ],
+      "yes_variants": [
+        "yes",
+        " yes",
+        "Yes",
+        " Yes",
+        "YES"
+      ]
+    }
+  },
+  "schema_version": 1,
+  "split_manifest_self_hash": "2e5b9a104bdef3a4ee33865b3da488405089c742855d5292ad82ae7426d92f31",
+  "split_manifest_sha256": "dbd96fdc8c679927b712acd7f98a22e42a233dfbcd8d573fca9f39bbe271faae",
+  "student": {
+    "adapter": "LoRA",
+    "model": "Qwen/Qwen3-14B",
+    "requested_model_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "requested_tokenizer_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18"
+  },
+  "teacher": {
+    "frozen_original": true,
+    "label_rule": "within episode W_rr descending; original candidate order at ties; top-2 yes, rest no",
+    "metadata_sidecars_verified": true,
+    "model": "Qwen/Qwen3-14B",
+    "requested_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "resolved_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "source_artifacts": [
+      {
+        "adapter": null,
+        "battery_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v2_final.json",
+        "battery_sha256": "e8ce4db85d3a0c09879575850e36b91821af8be155e86495cd059ae35485e7d6",
+        "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "metadata_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/evoked.json.metadata",
+        "metadata_sha256": "0539edf88405356dae908457b2a2db7bfd88ed23abf28056e1db642b76af5921",
+        "model": "Qwen/Qwen3-14B",
+        "model_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+        "results_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/evoked.json",
+        "results_sha256": "37ad6d1ad4b3d39a1c1ac04adfce98470aa9e383f99298b547eed42f0ebd54ef",
+        "source": "evoked",
+        "tokenizer_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18"
+      },
+      {
+        "adapter": null,
+        "battery_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v2_g2.json",
+        "battery_sha256": "32b96a17bc35c895ee1fd6f6b49b6dc7c7a888b1a83e247925b1d9c8c8660cf3",
+        "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "metadata_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/evoked_g2.json.metadata",
+        "metadata_sha256": "2fc0b42a9a4eb17ad6439696e1ad8753e6ad34889b238841cad2ce2dc04360ca",
+        "model": "Qwen/Qwen3-14B",
+        "model_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+        "results_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/evoked_g2.json",
+        "results_sha256": "53c9ab4cf46437bb3030c8e60e552ac6e0b8d2d3a2e615cc5b09dea94b4a188e",
+        "source": "evoked_g2",
+        "tokenizer_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18"
+      },
+      {
+        "adapter": null,
+        "battery_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v1_final.json",
+        "battery_sha256": "35d973619080a7606b0a3046ffcc7169fd919fac950ebb0d38b67ac13b017525",
+        "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "metadata_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/explicit.json.metadata",
+        "metadata_sha256": "6e709dc2daa10eab006f50ec116926143dacfbada0f843b6e68e3d7663796c5d",
+        "model": "Qwen/Qwen3-14B",
+        "model_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+        "results_path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/explicit.json",
+        "results_sha256": "9711fdb145934a9cd36e7b4fcbea9ae9832cf82fbea0345d0db54448a0cb062c",
+        "source": "explicit",
+        "tokenizer_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18"
+      }
+    ],
+    "student_workspace_used_for_labels": false,
+    "workspace_scores": "precomputed_W_rr",
+    "workspace_scores_recomputed_during_training": false
+  },
+  "teacher_label_audit_sha256": "18222dff686e587e101213e8503b3f6f412e2df09e3d7a4b2809ae1403878464",
+  "teacher_labels_sha256": "a4a4a9b19979ac2c05be236991a981152674523a34b32154dd04744a684cd7f3"
+}

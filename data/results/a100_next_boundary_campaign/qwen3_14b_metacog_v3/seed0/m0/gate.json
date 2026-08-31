@@ -1,0 +1,530 @@
+{
+  "artifacts": {
+    "json": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/gate.json",
+    "markdown": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/gate.md"
+  },
+  "conditions": {
+    "compositional": {
+      "condition": "compositional",
+      "counts": {
+        "candidates": 261,
+        "episodes": 52,
+        "labels": {
+          "distractor": 119,
+          "filler": 90,
+          "load_bearing": 52
+        },
+        "within_episode_auc_episodes": 52
+      },
+      "pooled_auc": {
+        "V": 0.3215863084284137,
+        "W_rr": 0.5086032388663968
+      },
+      "signals": {
+        "V": {
+          "mean_score": 0.0032697830937305017,
+          "pooled_auc": 0.3215863084284137,
+          "within_episode_auc": 0.2246794871794872,
+          "within_episode_auc_episode_count": 52,
+          "yes_rate": 0.0,
+          "yes_threshold": 0.5
+        },
+        "W_rr": {
+          "mean_score": 0.03305560873661213,
+          "pooled_auc": 0.5086032388663968,
+          "within_episode_auc": 0.5022435897435897,
+          "within_episode_auc_episode_count": 52
+        }
+      },
+      "source": {
+        "candidate_identity": "episode+candidate_index",
+        "metadata": {
+          "adapter": null,
+          "candidate_rows_written": 261,
+          "candidates_skipped_no_token": 0,
+          "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+          "device": "cuda",
+          "dtype": "bfloat16",
+          "end_only": true,
+          "gpu": {
+            "available": true,
+            "count": 1,
+            "devices": [
+              {
+                "compute_capability": "8.0",
+                "index": 0,
+                "name": "NVIDIA A100-SXM4-80GB",
+                "total_memory_bytes": 85093777408
+              }
+            ]
+          },
+          "limit_episodes": 0,
+          "measure_source_sha256": "2659d331427b38c95606f4ebe0b63da5e7c1a2ec2d3810add482dc5aa216de68",
+          "model": "Qwen/Qwen3-14B",
+          "model_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+          "model_revision_recorded": true,
+          "no_token_ids": [
+            902,
+            2152,
+            2308,
+            2753,
+            8996
+          ],
+          "path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/compositional.json.metadata",
+          "policy_input_includes_probe": false,
+          "raw_output_hash_verified": true,
+          "runtime_versions": {
+            "accelerate": "1.14.0",
+            "cuda_runtime": "12.6",
+            "cudnn": 90501,
+            "nvidia_driver": "NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  580.159.04  Release Build  (dvs-builder@U22-I3-AF04-09-6)  Wed Apr 29 17:15:53 UTC 2026\nGCC version:  gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)",
+            "peft": "0.13.2",
+            "python": "3.12.14",
+            "tokenizers": "0.22.2",
+            "torch": "2.7.1+cu126",
+            "transformers": "4.57.6"
+          },
+          "schema_version": "workspace_measurement_metadata.v3",
+          "sha256": "97569f66a4d1363a4f4cec62131e047702663d3aa41ce6eea80f39f8a292eec1",
+          "tokenizer_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+          "tokenizer_revision_recorded": true,
+          "verbal_enabled": true,
+          "workspace_lens_source_sha256": "5251f792f44c8e2846564036ec2a945290ec74fbb86e67aef2cb74690c5582c4",
+          "workspace_readout": {
+            "candidate_token_variants": [
+              "space+lowercase",
+              "space+capitalized",
+              "lowercase",
+              "capitalized"
+            ],
+            "final_norm": "Qwen3RMSNorm",
+            "layer_aggregation": "maximum over transformer layers 1..n",
+            "n_layers": 40,
+            "position": "final context token",
+            "unembedding": "Linear"
+          },
+          "yes_token_ids": [
+            7414,
+            9454,
+            9693,
+            9834,
+            14004
+          ]
+        },
+        "path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/compositional.json",
+        "sha256": "cb15f78cde58a92aecfb85d9bb822c03bc50645f2e0f782a140f318a96218f30"
+      },
+      "within_episode_auc": {
+        "V": 0.2246794871794872,
+        "W_rr": 0.5022435897435897
+      },
+      "yes_rate": 0.0
+    },
+    "decoupled": {
+      "condition": "decoupled",
+      "counts": {
+        "candidates": 335,
+        "episodes": 68,
+        "labels": {
+          "distractor": 153,
+          "filler": 114,
+          "load_bearing": 68
+        },
+        "within_episode_auc_episodes": 68
+      },
+      "pooled_auc": {
+        "V": 0.3480392156862745,
+        "W_rr": 0.6676580744657413
+      },
+      "signals": {
+        "V": {
+          "mean_score": 0.003468081834743411,
+          "pooled_auc": 0.3480392156862745,
+          "within_episode_auc": 0.33284313725490194,
+          "within_episode_auc_episode_count": 68,
+          "yes_rate": 0.0,
+          "yes_threshold": 0.5
+        },
+        "W_rr": {
+          "mean_score": 0.017523900970489812,
+          "pooled_auc": 0.6676580744657413,
+          "within_episode_auc": 0.6848039215686275,
+          "within_episode_auc_episode_count": 68
+        }
+      },
+      "source": {
+        "candidate_identity": "episode+candidate_index",
+        "metadata": {
+          "adapter": null,
+          "candidate_rows_written": 335,
+          "candidates_skipped_no_token": 0,
+          "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+          "device": "cuda",
+          "dtype": "bfloat16",
+          "end_only": true,
+          "gpu": {
+            "available": true,
+            "count": 1,
+            "devices": [
+              {
+                "compute_capability": "8.0",
+                "index": 0,
+                "name": "NVIDIA A100-SXM4-80GB",
+                "total_memory_bytes": 85093777408
+              }
+            ]
+          },
+          "limit_episodes": 0,
+          "measure_source_sha256": "2659d331427b38c95606f4ebe0b63da5e7c1a2ec2d3810add482dc5aa216de68",
+          "model": "Qwen/Qwen3-14B",
+          "model_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+          "model_revision_recorded": true,
+          "no_token_ids": [
+            902,
+            2152,
+            2308,
+            2753,
+            8996
+          ],
+          "path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/decoupled.json.metadata",
+          "policy_input_includes_probe": false,
+          "raw_output_hash_verified": true,
+          "runtime_versions": {
+            "accelerate": "1.14.0",
+            "cuda_runtime": "12.6",
+            "cudnn": 90501,
+            "nvidia_driver": "NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  580.159.04  Release Build  (dvs-builder@U22-I3-AF04-09-6)  Wed Apr 29 17:15:53 UTC 2026\nGCC version:  gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)",
+            "peft": "0.13.2",
+            "python": "3.12.14",
+            "tokenizers": "0.22.2",
+            "torch": "2.7.1+cu126",
+            "transformers": "4.57.6"
+          },
+          "schema_version": "workspace_measurement_metadata.v3",
+          "sha256": "eb1b8d585728278d555f4a9f96da44009d226af3cca0be094f452c871cd97977",
+          "tokenizer_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+          "tokenizer_revision_recorded": true,
+          "verbal_enabled": true,
+          "workspace_lens_source_sha256": "5251f792f44c8e2846564036ec2a945290ec74fbb86e67aef2cb74690c5582c4",
+          "workspace_readout": {
+            "candidate_token_variants": [
+              "space+lowercase",
+              "space+capitalized",
+              "lowercase",
+              "capitalized"
+            ],
+            "final_norm": "Qwen3RMSNorm",
+            "layer_aggregation": "maximum over transformer layers 1..n",
+            "n_layers": 40,
+            "position": "final context token",
+            "unembedding": "Linear"
+          },
+          "yes_token_ids": [
+            7414,
+            9454,
+            9693,
+            9834,
+            14004
+          ]
+        },
+        "path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/decoupled.json",
+        "sha256": "e93ab75d2cfd48b3d8b423ca6684d6c211c3a02919175491eacd384544f7c56d"
+      },
+      "within_episode_auc": {
+        "V": 0.33284313725490194,
+        "W_rr": 0.6848039215686275
+      },
+      "yes_rate": 0.0
+    },
+    "evoked": {
+      "condition": "evoked",
+      "counts": {
+        "candidates": 352,
+        "episodes": 75,
+        "labels": {
+          "distractor": 146,
+          "filler": 131,
+          "load_bearing": 75
+        },
+        "within_episode_auc_episodes": 75
+      },
+      "pooled_auc": {
+        "V": 0.3992779783393502,
+        "W_rr": 0.6389651022864019
+      },
+      "signals": {
+        "V": {
+          "mean_score": 0.0031871941612073647,
+          "pooled_auc": 0.3992779783393502,
+          "within_episode_auc": 0.3646666666666667,
+          "within_episode_auc_episode_count": 75,
+          "yes_rate": 0.0,
+          "yes_threshold": 0.5
+        },
+        "W_rr": {
+          "mean_score": 0.025631755004862852,
+          "pooled_auc": 0.6389651022864019,
+          "within_episode_auc": 0.619,
+          "within_episode_auc_episode_count": 75
+        }
+      },
+      "source": {
+        "candidate_identity": "episode+candidate_index",
+        "metadata": {
+          "adapter": null,
+          "candidate_rows_written": 352,
+          "candidates_skipped_no_token": 0,
+          "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+          "device": "cuda",
+          "dtype": "bfloat16",
+          "end_only": true,
+          "gpu": {
+            "available": true,
+            "count": 1,
+            "devices": [
+              {
+                "compute_capability": "8.0",
+                "index": 0,
+                "name": "NVIDIA A100-SXM4-80GB",
+                "total_memory_bytes": 85093777408
+              }
+            ]
+          },
+          "limit_episodes": 0,
+          "measure_source_sha256": "2659d331427b38c95606f4ebe0b63da5e7c1a2ec2d3810add482dc5aa216de68",
+          "model": "Qwen/Qwen3-14B",
+          "model_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+          "model_revision_recorded": true,
+          "no_token_ids": [
+            902,
+            2152,
+            2308,
+            2753,
+            8996
+          ],
+          "path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/evoked.json.metadata",
+          "policy_input_includes_probe": false,
+          "raw_output_hash_verified": true,
+          "runtime_versions": {
+            "accelerate": "1.14.0",
+            "cuda_runtime": "12.6",
+            "cudnn": 90501,
+            "nvidia_driver": "NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  580.159.04  Release Build  (dvs-builder@U22-I3-AF04-09-6)  Wed Apr 29 17:15:53 UTC 2026\nGCC version:  gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)",
+            "peft": "0.13.2",
+            "python": "3.12.14",
+            "tokenizers": "0.22.2",
+            "torch": "2.7.1+cu126",
+            "transformers": "4.57.6"
+          },
+          "schema_version": "workspace_measurement_metadata.v3",
+          "sha256": "0539edf88405356dae908457b2a2db7bfd88ed23abf28056e1db642b76af5921",
+          "tokenizer_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+          "tokenizer_revision_recorded": true,
+          "verbal_enabled": true,
+          "workspace_lens_source_sha256": "5251f792f44c8e2846564036ec2a945290ec74fbb86e67aef2cb74690c5582c4",
+          "workspace_readout": {
+            "candidate_token_variants": [
+              "space+lowercase",
+              "space+capitalized",
+              "lowercase",
+              "capitalized"
+            ],
+            "final_norm": "Qwen3RMSNorm",
+            "layer_aggregation": "maximum over transformer layers 1..n",
+            "n_layers": 40,
+            "position": "final context token",
+            "unembedding": "Linear"
+          },
+          "yes_token_ids": [
+            7414,
+            9454,
+            9693,
+            9834,
+            14004
+          ]
+        },
+        "path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/evoked.json",
+        "sha256": "37ad6d1ad4b3d39a1c1ac04adfce98470aa9e383f99298b547eed42f0ebd54ef"
+      },
+      "within_episode_auc": {
+        "V": 0.3646666666666667,
+        "W_rr": 0.619
+      },
+      "yes_rate": 0.0
+    },
+    "explicit": {
+      "condition": "explicit",
+      "counts": {
+        "candidates": 417,
+        "episodes": 88,
+        "labels": {
+          "distractor": 164,
+          "filler": 122,
+          "load_bearing": 131
+        },
+        "within_episode_auc_episodes": 88
+      },
+      "pooled_auc": {
+        "V": 0.4453904873752202,
+        "W_rr": 0.5083008594458976
+      },
+      "signals": {
+        "V": {
+          "mean_score": 0.0030473113139980745,
+          "pooled_auc": 0.4453904873752202,
+          "within_episode_auc": 0.4237689393939394,
+          "within_episode_auc_episode_count": 88,
+          "yes_rate": 0.0,
+          "yes_threshold": 0.5
+        },
+        "W_rr": {
+          "mean_score": 0.021692817881351256,
+          "pooled_auc": 0.5083008594458976,
+          "within_episode_auc": 0.5191287878787878,
+          "within_episode_auc_episode_count": 88
+        }
+      },
+      "source": {
+        "candidate_identity": "episode+candidate_index",
+        "metadata": {
+          "adapter": null,
+          "candidate_rows_written": 417,
+          "candidates_skipped_no_token": 0,
+          "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+          "device": "cuda",
+          "dtype": "bfloat16",
+          "end_only": true,
+          "gpu": {
+            "available": true,
+            "count": 1,
+            "devices": [
+              {
+                "compute_capability": "8.0",
+                "index": 0,
+                "name": "NVIDIA A100-SXM4-80GB",
+                "total_memory_bytes": 85093777408
+              }
+            ]
+          },
+          "limit_episodes": 0,
+          "measure_source_sha256": "2659d331427b38c95606f4ebe0b63da5e7c1a2ec2d3810add482dc5aa216de68",
+          "model": "Qwen/Qwen3-14B",
+          "model_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+          "model_revision_recorded": true,
+          "no_token_ids": [
+            902,
+            2152,
+            2308,
+            2753,
+            8996
+          ],
+          "path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/explicit.json.metadata",
+          "policy_input_includes_probe": false,
+          "raw_output_hash_verified": true,
+          "runtime_versions": {
+            "accelerate": "1.14.0",
+            "cuda_runtime": "12.6",
+            "cudnn": 90501,
+            "nvidia_driver": "NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  580.159.04  Release Build  (dvs-builder@U22-I3-AF04-09-6)  Wed Apr 29 17:15:53 UTC 2026\nGCC version:  gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)",
+            "peft": "0.13.2",
+            "python": "3.12.14",
+            "tokenizers": "0.22.2",
+            "torch": "2.7.1+cu126",
+            "transformers": "4.57.6"
+          },
+          "schema_version": "workspace_measurement_metadata.v3",
+          "sha256": "6e709dc2daa10eab006f50ec116926143dacfbada0f843b6e68e3d7663796c5d",
+          "tokenizer_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+          "tokenizer_revision_recorded": true,
+          "verbal_enabled": true,
+          "workspace_lens_source_sha256": "5251f792f44c8e2846564036ec2a945290ec74fbb86e67aef2cb74690c5582c4",
+          "workspace_readout": {
+            "candidate_token_variants": [
+              "space+lowercase",
+              "space+capitalized",
+              "lowercase",
+              "capitalized"
+            ],
+            "final_norm": "Qwen3RMSNorm",
+            "layer_aggregation": "maximum over transformer layers 1..n",
+            "n_layers": 40,
+            "position": "final context token",
+            "unembedding": "Linear"
+          },
+          "yes_token_ids": [
+            7414,
+            9454,
+            9693,
+            9834,
+            14004
+          ]
+        },
+        "path": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/qwen3_14b_metacog_v3/seed0/m0/explicit.json",
+        "sha256": "9711fdb145934a9cd36e7b4fcbea9ae9832cf82fbea0345d0db54448a0cb062c"
+      },
+      "within_episode_auc": {
+        "V": 0.4237689393939394,
+        "W_rr": 0.5191287878787878
+      },
+      "yes_rate": 0.0
+    }
+  },
+  "decision": "GREEN",
+  "gate": {
+    "checks": {
+      "reporting_gap": true
+    },
+    "condition": "decoupled",
+    "criterion": "W_before - V_before >= min_reporting_gap",
+    "min_reporting_gap": 0.1,
+    "mode": "scale_gap",
+    "observed": {
+      "V": 0.3480392156862745,
+      "W_rr": 0.6676580744657413
+    },
+    "reference_only_paper_values": {
+      "V": 0.337,
+      "W_rr": 0.654,
+      "note": "historical 8B/paper values, reported for context; not a gate"
+    },
+    "reporting_gap": 0.31961885877946683
+  },
+  "metric_definitions": {
+    "negative_labels": [
+      "distractor",
+      "filler"
+    ],
+    "pooled_auc": "tie-aware ROC AUC over every candidate",
+    "positive_label": "load_bearing",
+    "within_episode_auc": "unweighted mean of tie-aware per-episode AUCs over episodes containing both classes",
+    "yes_rate": "fraction of V scores >= 0.5"
+  },
+  "provenance_audit": {
+    "consistent_fields": [
+      "model",
+      "model_revision",
+      "tokenizer_revision",
+      "chat_template_sha256",
+      "dtype",
+      "device",
+      "end_only",
+      "workspace_readout",
+      "yes_token_ids",
+      "no_token_ids",
+      "runtime_versions",
+      "gpu",
+      "measure_source_sha256",
+      "workspace_lens_source_sha256"
+    ],
+    "metadata_missing": [],
+    "metadata_present": [
+      "compositional",
+      "decoupled",
+      "evoked",
+      "explicit"
+    ],
+    "mode": "strict"
+  },
+  "schema_version": "metacog_m0_gate.v1",
+  "stage": "M0"
+}

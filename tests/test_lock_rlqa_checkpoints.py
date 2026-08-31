@@ -115,3 +115,16 @@ def test_single_seed_lock_is_allowed_when_the_plan_authorises_one_seed(tmp_path:
     extra = {0: _make_run(tmp_path / "x", 0), 1: _make_run(tmp_path / "x", 1)}
     with pytest.raises(locker.LockError, match="must be locked together"):
         locker.build_lock(extra, [0])
+
+
+def test_lock_refuses_a_model_with_no_pinned_revision(tmp_path: Path, monkeypatch) -> None:
+    """An unpinned model must not silently skip the commit check.
+
+    Before this guard, a model absent from PINNED_REVISIONS left EXPECTED_REVISION
+    as None, and the commit comparison was skipped entirely -- so any resolved
+    commit would have been accepted.
+    """
+    monkeypatch.setattr(locker, "EXPECTED_REVISION", None)
+    runs = {0: _make_run(tmp_path, 0), 1: _make_run(tmp_path, 1), 2: _make_run(tmp_path, 2)}
+    with pytest.raises(locker.LockError, match="no pinned revision"):
+        locker.build_lock(runs)

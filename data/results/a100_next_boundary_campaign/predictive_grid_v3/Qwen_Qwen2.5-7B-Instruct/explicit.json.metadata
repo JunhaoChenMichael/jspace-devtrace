@@ -1,0 +1,280 @@
+{
+  "schema_version": "workspace_measurement_metadata.v3",
+  "verbal_score_definition": "sigmoid(logsumexp(logits[yes_ids]) - logsumexp(logits[no_ids])); exact yes-vs-no ratio, no guard epsilon. v2 artifacts used py/(py+pn+1e-9) on full-vocabulary probabilities, which the guard epsilon dominated whenever py+pn << 1e-9, and are NOT comparable.",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter": null,
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "model_revision_requested": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "model_revision_resolved": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "tokenizer_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "tokenizer_revision_requested": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "tokenizer_revision_effective": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "tokenizer_revision_resolved": null,
+  "revisions": {
+    "model": {
+      "identifier": "Qwen/Qwen2.5-7B-Instruct",
+      "revision_requested": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "revision_resolved": "a09a35458c702b33eeacc393d103063234e8bc28"
+    },
+    "tokenizer": {
+      "identifier": "Qwen/Qwen2.5-7B-Instruct",
+      "revision_requested": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "revision_effective": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "revision_resolved": null
+    }
+  },
+  "battery": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/benchmarks/battery_v1_final.json",
+  "output": "/rodata/azradonc_dev/m253405/jspace-devtrace/data/results/a100_next_boundary_campaign/predictive_grid_v3/Qwen_Qwen2.5-7B-Instruct/explicit.json",
+  "dtype": "bfloat16",
+  "device": "cuda",
+  "rows": 417,
+  "episodes": 88,
+  "candidates": 417,
+  "counts": {
+    "episodes_in_battery": 88,
+    "episodes_evaluated": 88,
+    "episodes_with_output": 88,
+    "candidates_in_battery": 417,
+    "candidates_evaluated": 417,
+    "candidate_rows_written": 417,
+    "candidates_skipped_no_token": 0,
+    "input_labels": {
+      "distractor": 164,
+      "filler": 122,
+      "load_bearing": 131
+    },
+    "output_labels": {
+      "distractor": 164,
+      "filler": 122,
+      "load_bearing": 131
+    }
+  },
+  "end_only": true,
+  "limit_episodes": 0,
+  "verbal_enabled": true,
+  "verbal_raw_enabled": true,
+  "policy_input_includes_probe": false,
+  "workspace_readout": {
+    "position": "final context token",
+    "layer_aggregation": "maximum over transformer layers 1..n",
+    "candidate_token_variants": [
+      "space+lowercase",
+      "space+capitalized",
+      "lowercase",
+      "capitalized"
+    ],
+    "final_norm": "Qwen2RMSNorm",
+    "unembedding": "Linear",
+    "n_layers": 28
+  },
+  "yes_no_token_sets": {
+    "scoring": "sum next-token probability over unique first-token ids",
+    "yes": {
+      "ids": [
+        7414,
+        9454,
+        9693,
+        9834,
+        14004
+      ],
+      "tokens": [
+        {
+          "id": 7414,
+          "vocab_token": "\u0120Yes",
+          "decoded": " Yes"
+        },
+        {
+          "id": 9454,
+          "vocab_token": "Yes",
+          "decoded": "Yes"
+        },
+        {
+          "id": 9693,
+          "vocab_token": "yes",
+          "decoded": "yes"
+        },
+        {
+          "id": 9834,
+          "vocab_token": "\u0120yes",
+          "decoded": " yes"
+        },
+        {
+          "id": 14004,
+          "vocab_token": "YES",
+          "decoded": "YES"
+        }
+      ],
+      "variants": [
+        {
+          "text": "yes",
+          "encoded_ids": [
+            9693
+          ],
+          "scored_first_token_id": 9693
+        },
+        {
+          "text": " yes",
+          "encoded_ids": [
+            9834
+          ],
+          "scored_first_token_id": 9834
+        },
+        {
+          "text": "Yes",
+          "encoded_ids": [
+            9454
+          ],
+          "scored_first_token_id": 9454
+        },
+        {
+          "text": " Yes",
+          "encoded_ids": [
+            7414
+          ],
+          "scored_first_token_id": 7414
+        },
+        {
+          "text": "YES",
+          "encoded_ids": [
+            14004
+          ],
+          "scored_first_token_id": 14004
+        }
+      ]
+    },
+    "no": {
+      "ids": [
+        902,
+        2152,
+        2308,
+        2753,
+        8996
+      ],
+      "tokens": [
+        {
+          "id": 902,
+          "vocab_token": "\u0120no",
+          "decoded": " no"
+        },
+        {
+          "id": 2152,
+          "vocab_token": "no",
+          "decoded": "no"
+        },
+        {
+          "id": 2308,
+          "vocab_token": "\u0120No",
+          "decoded": " No"
+        },
+        {
+          "id": 2753,
+          "vocab_token": "No",
+          "decoded": "No"
+        },
+        {
+          "id": 8996,
+          "vocab_token": "NO",
+          "decoded": "NO"
+        }
+      ],
+      "variants": [
+        {
+          "text": "no",
+          "encoded_ids": [
+            2152
+          ],
+          "scored_first_token_id": 2152
+        },
+        {
+          "text": " no",
+          "encoded_ids": [
+            902
+          ],
+          "scored_first_token_id": 902
+        },
+        {
+          "text": "No",
+          "encoded_ids": [
+            2753
+          ],
+          "scored_first_token_id": 2753
+        },
+        {
+          "text": " No",
+          "encoded_ids": [
+            2308
+          ],
+          "scored_first_token_id": 2308
+        },
+        {
+          "text": "NO",
+          "encoded_ids": [
+            8996
+          ],
+          "scored_first_token_id": 8996
+        }
+      ]
+    }
+  },
+  "yes_token_ids": [
+    7414,
+    9454,
+    9693,
+    9834,
+    14004
+  ],
+  "no_token_ids": [
+    902,
+    2152,
+    2308,
+    2753,
+    8996
+  ],
+  "chat_template": {
+    "present": true,
+    "source": "tokenizer.chat_template",
+    "sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "bytes": 2507,
+    "template_type": "str",
+    "tokenizer_class": "Qwen2TokenizerFast",
+    "tokenizer_name_or_path": "Qwen/Qwen2.5-7B-Instruct",
+    "declared_in_tokenizer_init_kwargs": true
+  },
+  "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "runtime": {
+    "device_requested": "cuda",
+    "device_resolved": "cuda",
+    "platform": "Linux-4.18.0-553.132.1.el8_10.x86_64-x86_64-with-glibc2.28",
+    "versions": {
+      "python": "3.12.14",
+      "torch": "2.7.1+cu126",
+      "transformers": "4.57.6",
+      "tokenizers": "0.22.2",
+      "accelerate": "1.14.0",
+      "peft": "0.13.2",
+      "cuda_runtime": "12.6",
+      "cudnn": 90501,
+      "nvidia_driver": "NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  580.159.04  Release Build  (dvs-builder@U22-I3-AF04-09-6)  Wed Apr 29 17:15:53 UTC 2026\nGCC version:  gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)"
+    },
+    "gpu": {
+      "available": true,
+      "count": 1,
+      "devices": [
+        {
+          "index": 0,
+          "name": "NVIDIA A100-SXM4-80GB",
+          "compute_capability": "8.0",
+          "total_memory_bytes": 85093777408
+        }
+      ]
+    }
+  },
+  "hashes": {
+    "battery_file_sha256": "35d973619080a7606b0a3046ffcc7169fd919fac950ebb0d38b67ac13b017525",
+    "effective_battery_canonical_sha256": "5d0958f3c94085fee8dd24a2628afe1134db0ed107f49561b6647837e3f0cc0f",
+    "candidate_order_sha256": "8f1a6d3db268e6acde281b986e95a52993cfa6a5351ad9b2520c0abcee4206a4",
+    "raw_output_sha256": "a57dcd6ed83b3c982d63d18a16440fa627ce4b3383ada2f9b75e152f0876921b",
+    "measure_source_sha256": "2659d331427b38c95606f4ebe0b63da5e7c1a2ec2d3810add482dc5aa216de68",
+    "workspace_lens_source_sha256": "5251f792f44c8e2846564036ec2a945290ec74fbb86e67aef2cb74690c5582c4"
+  }
+}
