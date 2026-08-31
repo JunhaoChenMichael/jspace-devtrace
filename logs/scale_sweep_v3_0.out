@@ -1,0 +1,19 @@
+host=rohpcgpu37.mayo.edu job=4275203 gpu=NVIDIA A100-SXM4-80GB
+model=Qwen/Qwen3-1.7B revision=70d244cc86ccca08cf5af4e1e306ecf908b1ad5e
+NVIDIA A100-SXM4-80GB, 81920 MiB
+exists, skipping explicit
+exists, skipping evoked
+exists, skipping decoupled
+model=Qwen/Qwen3-1.7B adapter=None layers=28 verbal=True verbal_raw=True device=cuda episodes=52
+  5/52 episodes
+  10/52 episodes
+  15/52 episodes
+  20/52 episodes
+  25/52 episodes
+  30/52 episodes
+  35/52 episodes
+  40/52 episodes
+  45/52 episodes
+  50/52 episodes
+saved 261 item rows -> data/results/scale_sweep_v3/Qwen3-1.7B/compositional.json
+SWEEP_OK Qwen3-1.7B

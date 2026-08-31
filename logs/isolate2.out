@@ -1,0 +1,15 @@
+host=rohpcgpu37.mayo.edu job=4275129 gpu=NVIDIA A100-SXM4-80GB
+probe input_ids shape: (1, 141)
+rl    input_ids shape: (1, 141)
+identical ids: True
+probe last 8 ids: [476, 902, 13, 151645, 198, 151644, 77091, 198]
+rl    last 8 ids: [476, 902, 13, 151645, 198, 151644, 77091, 198]
+probe keys: ['attention_mask', 'input_ids']  rl keys: ['attention_mask', 'input_ids']
+
+max|logits_a - logits_b| = 0.0
+logit at yes ids (probe path): [-3.0, -0.7539, 1.3125, -1.6016, -0.8203]
+logit at no  ids (probe path): [-2.1094, -1.4219, -4.625, -3.2812, -3.875]
+
+softmax-over-vocab  P(yes)= 5.860686827334483e-13  P(no)= 5.175212743156049e-14
+probe V = 0.9188610315322876
+logsumexp yes = 1.5846611261367798  no = -0.8423104286193848  -> P(Yes) = 0.9188610911369324
