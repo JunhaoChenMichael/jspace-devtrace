@@ -1,3 +1,13 @@
+> **CORRECTED — the numbers below are superseded.**
+> Every `delta V` in this report was computed with a verbal score whose guard
+> epsilon dominated the denominator, so it ranked absolute yes-probability
+> rather than the yes-versus-no ratio. The conclusion survives; the effect sizes
+> do not. Corrected mean `delta V` is **+0.213**, not +0.273, and per seed
+> **+0.1642 / +0.2868 / +0.1873**. All three seeds still pass the predeclared
+> gate and seed 1 remains Strong GREEN.
+> Corrected report: `data/results/a100_next_boundary_campaign/qwen3_8b_metacog_v3/reports/CORRECTED_8B_METACOG_THREE_SEED_REPORT.md`.
+> Root cause: [`CORRECTIONS.md`](../../../CORRECTIONS.md).
+
 # Qwen3-8B Binary Metacognitive Alignment: three-seed NVIDIA A100-SXM4-80GB replication
 
 Report schema: `metacog-alignment-three-seed-report/v1`. Replication decision: **GREEN**.

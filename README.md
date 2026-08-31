@@ -1,5 +1,12 @@
 # Remember What You Thought, Not What You Said
 
+> **[Corrections](CORRECTIONS.md)** — a measurement defect in the verbal-salience
+> probe (a guard epsilon that dominated its denominator) invalidated several
+> reported results. Some survive with smaller effect sizes, some are withdrawn,
+> and one verdict reverses. Read `CORRECTIONS.md` before citing any number from
+> `data/results/a100_handoff/`.
+
+
 Experiment repository for the paper *"Remember What You Thought, Not What You
 Said: Workspace-Gated Episodic Memory for LLMs"* (under review).
 

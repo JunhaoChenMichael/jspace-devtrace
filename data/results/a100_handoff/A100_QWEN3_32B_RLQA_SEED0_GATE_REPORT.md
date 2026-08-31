@@ -1,3 +1,13 @@
+> **RECLASSIFIED — the FAIL verdict does not hold.**
+> The Original arm was scored with the defective verbal probe. Re-evaluated, the
+> admission delta is **+0.36533** with a 95% CI of [+0.3056, +0.4423], where this
+> report has +0.04483 with an interval spanning zero, and the QA delta is
+> **+4.41 pp**, not +0.00. Against a +5 pp threshold that is the plan's
+> **`ADMISSION_POSITIVE_QA_UNRESOLVED`** boundary classification, not an absence
+> of transfer.
+> Corrected data: `data/results/a100_next_boundary_campaign/qwen3_rlqa_v3/Qwen3-32B/`.
+> Root cause: [`CORRECTIONS.md`](../../../CORRECTIONS.md).
+
 # Qwen3-32B RL-QA seed-0 scaling gate
 
 Report schema: `rlqa-32b-seed0-gate/v1`. Decision: **FAIL**.

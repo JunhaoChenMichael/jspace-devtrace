@@ -1,3 +1,13 @@
+> **CORRECTED — the numbers below are superseded.**
+> The Original arm was scored with the defective verbal probe, which also chose
+> its budget-2 selected sets, so both its admission AUC and its QA accuracy were
+> wrong. Re-evaluated against the same locked adapters the conclusion survives at
+> smaller effect sizes: QA deltas **+7.35 / +5.88 / +8.82 pp** (was +8.82 / +7.35
+> / +10.29) and admission deltas **+0.434 / +0.422 / +0.460** (was +0.494 / +0.482
+> / +0.520). All three seeds still clear +5 pp.
+> Corrected data: `data/results/a100_next_boundary_campaign/qwen3_rlqa_v3/Qwen3-8B/`.
+> Root cause: [`CORRECTIONS.md`](../../../CORRECTIONS.md).
+
 # Qwen3-8B RL-QA: three-seed NVIDIA A100-SXM4-80GB replication
 
 Report schema: `rlqa-three-seed-report/v1`. Decision: **PASS**.
